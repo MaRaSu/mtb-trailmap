@@ -1,0 +1,28 @@
+layers
+----------------------------------
+hw-path-case-w_n	path cases, path width = narrow  (X < 0.6)
+hw-path-case-w_m	path cases, path width = medium  (0.6 <= X < 0.9)
+hw-path-case-w_w	path cases, path width = wide    (0.9 <= X)
+hw-path-case-w_m	path cases, path width = unknown (no width value)
+
+hw-path-line-bv		path lines, bad visibility (trail_visibility intermediate or worse)
+hw-path-line-gv		path lines, good visibility (trail_visibility good or better, appears to also match when no value)
+
+
+
+way line colors
+----------------------------------
+cycleway		#3046D7
+
+
+
+mtb:scale casing colors
+----------------------------------
+mtb_scale=0-		#8BD7AE
+mtb_scale=0		#75E009
+mtb_scale=1		#E3E800
+mtb_scale=2		#FEB13E
+mtb_scale=3		#FF4454
+mtb_scale=4		#F20BAB
+mtb_scale=5		#BF1CF5
+mtb_scale=6		#8100AC
