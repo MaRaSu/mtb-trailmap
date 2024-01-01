@@ -925,7 +925,7 @@
       }
     },
     {
-      "id": "highway-cycleway-casing",
+      "id": "highway-cw-casing",
       "type": "line",
       "metadata": {"mapbox:group": "1444849345966.4436"},
       "source": "openmaptiles",
@@ -984,7 +984,7 @@
       "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [5, 1.5],
+        "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [[14, 1], [15, 1.1], [16, 1.5], [17, 2.5]]
@@ -992,21 +992,110 @@
       }
     },
     {
-      "id": "highway-cycleway-line",
+      "id": "highway-cw-uk-line",
       "type": "line",
-      "metadata": {"mapbox:group": "1444849345966.4436"},
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway with surface unknown line."
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": [
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "subclass", "cycleway"]
+        ["==", "subclass", "cycleway"],
+        ["!has", "surface_raw"]
       ],
       "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [5, 1.5],
+        "line-dasharray": [2.5, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [[14, 1], [15, 1.1], [16, 1.5], [17, 2.5]]
+        }
+      }
+    },
+    {
+      "id": "highway-cw-p-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway paved line."
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "subclass", "cycleway"],
+        [
+          "in",
+          "surface_raw",
+          "paved",
+          "asphalt",
+          "concrete",
+          "paving_stones",
+          "sett",
+          "unhewn_cobblestone",
+          "cobblestone",
+          "bricks",
+          "wood"
+        ]
+      ],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [[14, 1], [15, 1.1], [16, 1.5], [17, 2.5]]
+        }
+      }
+    },
+    {
+      "id": "highway-cw-up-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway unpaved line."
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "subclass", "cycleway"],
+        [
+          "in",
+          "surface_raw",
+          "unpaved",
+          "compacted",
+          "fine_gravel",
+          "gravel",
+          "shells",
+          "rock",
+          "pebblestone",
+          "ground",
+          "dirt",
+          "earth",
+          "grass",
+          "grass_paver",
+          "metal_grid",
+          "mud",
+          "sand",
+          "woodchips",
+          "snow",
+          "ice"
+        ]
+      ],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [1.5, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [[14, 1], [15, 1.1], [16, 1.5], [17, 2.5]]
