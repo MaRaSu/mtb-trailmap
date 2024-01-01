@@ -908,7 +908,7 @@
       }
     },
     {
-      "id": "tunnel-service-track-casing",
+      "id": "tunnel-service-track-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -958,7 +958,7 @@
       }
     },
     {
-      "id": "tunnel-motorway-link-casing",
+      "id": "tunnel-motorway-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1017,7 +1017,7 @@
       }
     },
     {
-      "id": "tunnel-minor-casing",
+      "id": "tunnel-minor-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1082,7 +1082,7 @@
       }
     },
     {
-      "id": "tunnel-link-casing",
+      "id": "tunnel-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1144,7 +1144,7 @@
       }
     },
     {
-      "id": "tunnel-secondary-tertiary-casing",
+      "id": "tunnel-secondary-tertiary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1196,7 +1196,7 @@
       }
     },
     {
-      "id": "tunnel-trunk-primary-casing",
+      "id": "tunnel-trunk-primary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1251,7 +1251,7 @@
       }
     },
     {
-      "id": "tunnel-motorway-casing",
+      "id": "tunnel-motorway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904"
@@ -1786,7 +1786,7 @@
       }
     },
     {
-      "id": "aeroway-taxiway-casing",
+      "id": "aeroway-taxiway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -1826,7 +1826,7 @@
       }
     },
     {
-      "id": "aeroway-runway-casing",
+      "id": "aeroway-runway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2121,7 +2121,7 @@
       }
     },
     {
-      "id": "hw-path-casing",
+      "id": "hw-path-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2235,7 +2235,22 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 2.2], [15, 2.8], [16, 3.5], [17, 5.0]
+            [
+              14,
+              2.2
+            ],
+            [
+              15,
+              2.8
+            ],
+            [
+              16,
+              3.5
+            ],
+            [
+              17,
+              5
+            ]
           ]
         },
         "line-opacity": [
@@ -2250,7 +2265,7 @@
       }
     },
     {
-      "id": "hw-track-casing",
+      "id": "hw-track-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2389,7 +2404,7 @@
       }
     },
     {
-      "id": "hw-cw-casing",
+      "id": "hw-cw-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2444,7 +2459,7 @@
       }
     },
     {
-      "id": "hw-path-bv-line",
+      "id": "hw-path-line-bv",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -2517,7 +2532,7 @@
       }
     },
     {
-      "id": "hw-path-nv-line",
+      "id": "hw-path-line-gv",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -2654,75 +2669,11 @@
       }
     },
     {
-      "id": "hw-cw-uk-line",
+      "id": "hw-cw-line-p",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway with surface unknown line."
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!in",
-          "brunnel",
-          "bridge",
-          "tunnel"
-        ],
-        [
-          "==",
-          "subclass",
-          "cycleway"
-        ],
-        [
-          "!has",
-          "surface_raw"
-        ]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#3046D7",
-        "line-dasharray": [
-          2.5,
-          1.5
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              14,
-              1
-            ],
-            [
-              15,
-              1.2
-            ],
-            [
-              16,
-              1.5
-            ],
-            [
-              17,
-              2.5
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-cw-p-line",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway paved line."
+        "maputnik:comment": "Cycleway line for paved ways."
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2791,11 +2742,11 @@
       }
     },
     {
-      "id": "hw-cw-up-line",
+      "id": "hw-cw-line-up",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway unpaved line."
+        "maputnik:comment": "Cycleway line for unpaved ways."
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2873,7 +2824,71 @@
       }
     },
     {
-      "id": "hw-motorway-link-casing",
+      "id": "hw-cw-line-uk",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway line for ways with unknown surface."
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "subclass",
+          "cycleway"
+        ],
+        [
+          "!has",
+          "surface_raw"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [
+          2.5,
+          1.5
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1
+            ],
+            [
+              15,
+              1.2
+            ],
+            [
+              16,
+              1.5
+            ],
+            [
+              17,
+              2.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-motorway-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2931,7 +2946,7 @@
       }
     },
     {
-      "id": "hw-link-casing",
+      "id": "hw-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2993,7 +3008,7 @@
       }
     },
     {
-      "id": "hw-minor-casing",
+      "id": "hw-minor-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -3061,7 +3076,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-casing",
+      "id": "hw-secondary-tertiary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -3112,7 +3127,7 @@
       }
     },
     {
-      "id": "hw-primary-casing",
+      "id": "hw-primary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -3182,7 +3197,7 @@
       }
     },
     {
-      "id": "hw-trunk-casing",
+      "id": "hw-trunk-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -3252,7 +3267,7 @@
       }
     },
     {
-      "id": "hw-motorway-casing",
+      "id": "hw-motorway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -4030,7 +4045,7 @@
       }
     },
     {
-      "id": "bridge-motorway-link-casing",
+      "id": "bridge-motorway-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
@@ -4085,7 +4100,7 @@
       }
     },
     {
-      "id": "bridge-link-casing",
+      "id": "bridge-link-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
@@ -4143,7 +4158,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-casing",
+      "id": "bridge-secondary-tertiary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
@@ -4199,7 +4214,7 @@
       }
     },
     {
-      "id": "bridge-trunk-primary-casing",
+      "id": "bridge-trunk-primary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
@@ -4254,7 +4269,7 @@
       }
     },
     {
-      "id": "bridge-motorway-casing",
+      "id": "bridge-motorway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
@@ -4308,7 +4323,7 @@
       }
     },
     {
-      "id": "bridge-minor-casing",
+      "id": "bridge-minor-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -4377,7 +4392,7 @@
       }
     },
     {
-      "id": "bridge-path-casing",
+      "id": "bridge-path-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902"
