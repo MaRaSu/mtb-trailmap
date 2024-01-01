@@ -2158,7 +2158,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2304,7 +2304,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2445,7 +2445,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2549,7 +2549,7 @@
       }
     },
     {
-      "id": "hw-path-case-w_uk",
+      "id": "hw-path-case-w_uk-copy",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436"
@@ -2585,7 +2585,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2685,6 +2685,300 @@
             ]
           ]
         },
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "mtb_scale"
+          ],
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "hw-path-case-w_all",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "path"
+        ],
+        [
+          "!=",
+          "subclass",
+          "cycleway"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "0-"
+          ],
+          "#8BD7AE",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "0"
+          ],
+          "#75E009",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "1"
+          ],
+          "#E3E800",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "2"
+          ],
+          "#FEB13E",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "3"
+          ],
+          "#FF4454",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "4"
+          ],
+          "#F20BAB",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "5"
+          ],
+          "#BF1CF5",
+          [
+            "==",
+            [
+              "get",
+              "mtb_scale"
+            ],
+            "6"
+          ],
+          "#8100AC",
+          "#000000"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          [
+            "case",
+            [
+              "<",
+              [
+                "to-number",
+                [
+                  "get",
+                  "width"
+                ]
+              ],
+              0.6
+            ],
+            2,
+            [
+              "all",
+              [
+                ">=",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.6
+              ],
+              [
+                "<",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.9
+              ]
+            ],
+            3,
+            [
+              "all",
+              [
+                ">=",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.9
+              ],
+              [
+                "<",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                1.8
+              ]
+            ],
+            4,
+            [
+              ">=",
+              [
+                "to-number",
+                [
+                  "get",
+                  "width"
+                ]
+              ],
+              30
+            ],
+            4,
+            5
+          ],
+          17,
+          [
+            "case",
+            [
+              "<",
+              [
+                "to-number",
+                [
+                  "get",
+                  "width"
+                ]
+              ],
+              0.6
+            ],
+            4,
+            [
+              "all",
+              [
+                ">=",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.6
+              ],
+              [
+                "<",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.9
+              ]
+            ],
+            7,
+            [
+              "all",
+              [
+                ">=",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                0.9
+              ],
+              [
+                "<",
+                [
+                  "to-number",
+                  [
+                    "get",
+                    "width"
+                  ]
+                ],
+                1.8
+              ]
+            ],
+            10,
+            [
+              ">=",
+              [
+                "to-number",
+                [
+                  "get",
+                  "width"
+                ]
+              ],
+              30
+            ],
+            10,
+            7
+          ]
+        ],
         "line-opacity": [
           "case",
           [
