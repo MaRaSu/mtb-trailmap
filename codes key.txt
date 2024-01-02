@@ -39,3 +39,9 @@ mtb_scale=3		#FF4454
 mtb_scale=4		#F20BAB
 mtb_scale=5		#BF1CF5
 mtb_scale=6		#8100AC
+
+
+
+area colors
+----------------------------------
+protected_area		#7BA36C

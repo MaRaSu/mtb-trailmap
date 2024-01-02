@@ -200,6 +200,48 @@
       }
     },
     {
+      "id": "protected_area-fill",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "filter": ["all", ["==", "class", "protected_area"]],
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#7BA36C",
+        "fill-opacity": 0.2,
+        "fill-outline-color": "#7BA36C"
+      }
+    },
+    {
+      "id": "protected_area-outline",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "filter": ["all", ["==", "class", "protected_area"]],
+      "paint": {
+        "line-color": "#7BA36C",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.0],
+            [17, 2.0]
+          ]
+        }
+      }
+    },
+    {
       "id": "landcover-wood",
       "type": "fill",
       "metadata": {
@@ -2227,13 +2269,13 @@
       },
       "paint": {
         "line-color": "#56AA00",
-        "line-dasharray": [1.5, 1.0],
+        "line-dasharray": [1.5, 1],
         "line-width": {
-          "base": 1.0,
+          "base": 1,
           "stops": [
             [14, 1.5],
             [15, 2.5],
-            [17, 3.0]
+            [17, 3]
           ]
         },
         "line-offset": [
@@ -2289,7 +2331,7 @@
       },
       "paint": {
         "line-color": "#3B9EF5",
-        "line-dasharray": [1.5, 1.0],
+        "line-dasharray": [1.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -3464,7 +3506,7 @@
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
         "text-size": {
-          "base": 1.0,
+          "base": 1,
           "stops": [
             [14, 10],
             [17, 13]
@@ -3475,7 +3517,7 @@
         "text-color": "#3b322a",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
-        "text-halo-width": 2.0
+        "text-halo-width": 2
       }
     },
     {
