@@ -232,11 +232,12 @@
       "filter": ["all", ["==", "class", "protected_area"]],
       "paint": {
         "line-color": "#7BA36C",
+        "line-opacity": 0.3,
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 1.0],
-            [17, 2.0]
+            [14, 2.5],
+            [17, 5.0]
           ]
         }
       }
