@@ -2208,6 +2208,68 @@
       }
     },
     {
+      "id": "obstacle_vegetation",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "track"],
+        ["==", "obstacle", "vegetation"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#56AA00",
+        "line-dasharray": [1.5, 1.0],
+        "line-width": {
+          "base": 1.0,
+          "stops": [
+            [14, 1.5],
+            [15, 2.5],
+            [17, 3.0]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -1,
+            ["==", ["get", "width_cat"], "b"],
+            -2.5,
+            ["==", ["get", "width_cat"], "c"],
+            -3,
+            ["==", ["get", "width_cat"], "d"],
+            -3,
+            -2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -4,
+            ["==", ["get", "width_cat"], "b"],
+            -7,
+            ["==", ["get", "width_cat"], "c"],
+            -10,
+            ["==", ["get", "width_cat"], "d"],
+            -10,
+            -7
+          ]
+        ]
+      }
+    },
+    {
       "id": "surface_mud",
       "type": "line",
       "metadata": {
@@ -2227,7 +2289,7 @@
       },
       "paint": {
         "line-color": "#3B9EF5",
-        "line-dasharray": [1.5, 1.5],
+        "line-dasharray": [1.5, 1.0],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2244,27 +2306,27 @@
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "b"],
             2.5,
             ["==", ["get", "width_cat"], "c"],
-            3.0,
+            3,
             ["==", ["get", "width_cat"], "d"],
-            3.0,
+            3,
             2.5
           ],
           17,
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            4.0,
+            4,
             ["==", ["get", "width_cat"], "b"],
-            7.0,
+            7,
             ["==", ["get", "width_cat"], "c"],
-            10.0,
+            10,
             ["==", ["get", "width_cat"], "d"],
-            10.0,
-            7.0
+            10,
+            7
           ]
         ]
       }
