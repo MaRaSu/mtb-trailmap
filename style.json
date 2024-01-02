@@ -200,49 +200,6 @@
       }
     },
     {
-      "id": "protected_area-fill",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071"
-      },
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "filter": ["all", ["==", "class", "protected_area"]],
-      "paint": {
-        "fill-antialias": {
-          "base": 1,
-          "stops": [
-            [0, false],
-            [9, true]
-          ]
-        },
-        "fill-color": "#7BA36C",
-        "fill-opacity": 0.2,
-        "fill-outline-color": "#7BA36C"
-      }
-    },
-    {
-      "id": "protected_area-outline",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071"
-      },
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "filter": ["all", ["==", "class", "protected_area"]],
-      "paint": {
-        "line-color": "#7BA36C",
-        "line-opacity": 0.3,
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [14, 2.5],
-            [17, 5.0]
-          ]
-        }
-      }
-    },
-    {
       "id": "landcover-wood",
       "type": "fill",
       "metadata": {
@@ -1141,6 +1098,80 @@
         "line-width": 1.1
       }
     },
+    {
+      "id": "protected_area-fill",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "filter": ["all", ["==", "class", "protected_area"]],
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#7BA36C",
+        "fill-opacity": 0.2,
+        "fill-outline-color": "#7BA36C"
+      }
+    },
+    {
+      "id": "protected_area-outline",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "filter": ["all", ["==", "class", "protected_area"]],
+      "paint": {
+        "line-color": "#7BA36C",
+        "line-opacity": 0.3,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 2.5],
+            [17, 5]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "protected_area-name",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "Point"],
+        ["==", "class", "protected_area"]
+      ],
+      "layout": {
+        "icon-image": "{class}_11",
+        "text-anchor": "top",
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 9,
+        "text-offset": [0, 0.6],
+        "text-padding": 2,
+        "text-size": 12,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#666",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+
     {
       "id": "aeroway-taxiway-case",
       "type": "line",
