@@ -11,6 +11,7 @@ hw-path-line-bv		path lines, bad visibility (trail_visibility intermediate or wo
 hw-path-line-gv		path lines, good visibility (trail_visibility good or better, appears to also match when no value)
 
 
+
 path widths
 ----------------------------------
 width_cat=a		path width = narrow  (X < 0.6)
@@ -19,9 +20,11 @@ width_cat=c		path width = wide    (0.9 <= X)
 width_cat=d		path width = track (1.8 <= X)
 
 
+
 way line colors
 ----------------------------------
 cycleway		#3046D7
+surface=mud		#3B9EF5
 
 
 
