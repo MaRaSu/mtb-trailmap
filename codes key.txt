@@ -26,6 +26,8 @@ way line colors
 cycleway		#3046D7
 surface=mud		#3B9EF5
 obstacle=vegetation	#56AA00
+unpaved fill:		#DED0BD
+@unpaved case:		#473005
 
 
 
