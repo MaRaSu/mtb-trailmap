@@ -1141,7 +1141,6 @@
         }
       }
     },
-
     {
       "id": "protected_area-name",
       "type": "symbol",
@@ -1171,7 +1170,6 @@
         "text-halo-width": 1
       }
     },
-
     {
       "id": "aeroway-taxiway-case",
       "type": "line",
@@ -1647,6 +1645,129 @@
         ]
       }
     },
+
+    {
+      "id": "forbidden-bicycle",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        ["any", ["==", "bicycle", "no"], ["==", "access", "no"], ["==", "access", "private"]]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 2],
+            [17, 5]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -1,
+            ["==", ["get", "width_cat"], "b"],
+            -2.5,
+            ["==", ["get", "width_cat"], "c"],
+            -3,
+            ["==", ["get", "width_cat"], "d"],
+            -3,
+            -2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -4,
+            ["==", ["get", "width_cat"], "b"],
+            -7,
+            ["==", ["get", "width_cat"], "c"],
+            -10,
+            ["==", ["get", "width_cat"], "d"],
+            -10,
+            -7
+          ]
+        ]
+      }
+    },
+
+    {
+      "id": "forbidden-any",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        ["any", ["==", "foot", "no"], ["==", "access", "no"], ["==", "access", "private"]]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 2],
+            [17, 5]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            2.5,
+            ["==", ["get", "width_cat"], "c"],
+            3,
+            ["==", ["get", "width_cat"], "d"],
+            3,
+            2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            4,
+            ["==", ["get", "width_cat"], "b"],
+            7,
+            ["==", ["get", "width_cat"], "c"],
+            10,
+            ["==", ["get", "width_cat"], "d"],
+            10,
+            7
+          ]
+        ]
+      }
+    },
+
     {
       "id": "hw-track-line",
       "type": "line",
