@@ -5,9 +5,18 @@ hw-path-case-w_m	path cases, path width = medium  (0.6 <= X < 0.9)
 hw-path-case-w_w	path cases, path width = wide    (0.9 <= X)
 hw-path-case-w_m	path cases, path width = unknown (no width value)
 
+hw-path-case		path cases for paths with mtb_scale.
+
 hw-path-line-bv		path lines, bad visibility (trail_visibility intermediate or worse)
 hw-path-line-gv		path lines, good visibility (trail_visibility good or better, appears to also match when no value)
 
+
+path widths
+----------------------------------
+width_cat=a		path width = narrow  (X < 0.6)
+width_cat=b		path width = medium or unknown  (0.6 <= X < 0.9 or width not provided)
+width_cat=c		path width = wide    (0.9 <= X)
+width_cat=d		path width = track (1.8 <= X)
 
 
 way line colors
