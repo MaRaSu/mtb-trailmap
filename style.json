@@ -523,6 +523,7 @@
       },
       "paint": {
         "fill-pattern": "wave",
+        "fill-opacity": 0.0,
         "fill-translate": [0, 2.5]
       }
     },
