@@ -523,7 +523,7 @@
       },
       "paint": {
         "fill-pattern": "wave",
-        "fill-opacity": 0.0,
+        "fill-opacity": 0,
         "fill-translate": [0, 2.5]
       }
     },
@@ -1391,6 +1391,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1426,6 +1427,19 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1.0,
+            ["==", ["get", "width_cat"], "b"],
+            1.5,
+            ["==", ["get", "width_cat"], "c"],
+            2.0,
+            ["==", ["get", "width_cat"], "d"],
+            2.0,
+            1.5
+          ],
           14,
           [
             "case",
@@ -1464,6 +1478,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1497,8 +1512,9 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [14, 3],
-            [17, 9]
+            [11, 1.5],
+            [14, 3.0],
+            [17, 9.0]
           ]
         },
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
@@ -1543,6 +1559,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1599,6 +1616,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1646,129 +1664,6 @@
         ]
       }
     },
-
-    {
-      "id": "forbidden-bicycle",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436"
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "path", "track"],
-        ["any", ["==", "bicycle", "no"], ["==", "access", "no"], ["==", "access", "private"]]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.2, 0.5],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 2],
-            [17, 5]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            -1,
-            ["==", ["get", "width_cat"], "b"],
-            -2.5,
-            ["==", ["get", "width_cat"], "c"],
-            -3,
-            ["==", ["get", "width_cat"], "d"],
-            -3,
-            -2.5
-          ],
-          17,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            -4,
-            ["==", ["get", "width_cat"], "b"],
-            -7,
-            ["==", ["get", "width_cat"], "c"],
-            -10,
-            ["==", ["get", "width_cat"], "d"],
-            -10,
-            -7
-          ]
-        ]
-      }
-    },
-
-    {
-      "id": "forbidden-any",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436"
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "path", "track"],
-        ["any", ["==", "foot", "no"], ["==", "access", "no"], ["==", "access", "private"]]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.2, 0.5],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 2],
-            [17, 5]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            1,
-            ["==", ["get", "width_cat"], "b"],
-            2.5,
-            ["==", ["get", "width_cat"], "c"],
-            3,
-            ["==", ["get", "width_cat"], "d"],
-            3,
-            2.5
-          ],
-          17,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            4,
-            ["==", ["get", "width_cat"], "b"],
-            7,
-            ["==", ["get", "width_cat"], "c"],
-            10,
-            ["==", ["get", "width_cat"], "d"],
-            10,
-            7
-          ]
-        ]
-      }
-    },
-
     {
       "id": "hw-track-line",
       "type": "line",
@@ -1777,6 +1672,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2492,6 +2388,136 @@
             [14, 1.2],
             [15, 1.5],
             [17, 2.5]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            2.5,
+            ["==", ["get", "width_cat"], "c"],
+            3,
+            ["==", ["get", "width_cat"], "d"],
+            3,
+            2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            4,
+            ["==", ["get", "width_cat"], "b"],
+            7,
+            ["==", ["get", "width_cat"], "c"],
+            10,
+            ["==", ["get", "width_cat"], "d"],
+            10,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "forbidden-bicycle",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        [
+          "any",
+          ["==", "bicycle", "no"],
+          ["==", "access", "no"],
+          ["==", "access", "private"]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 2],
+            [17, 5]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -1,
+            ["==", ["get", "width_cat"], "b"],
+            -2.5,
+            ["==", ["get", "width_cat"], "c"],
+            -3,
+            ["==", ["get", "width_cat"], "d"],
+            -3,
+            -2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -4,
+            ["==", ["get", "width_cat"], "b"],
+            -7,
+            ["==", ["get", "width_cat"], "c"],
+            -10,
+            ["==", ["get", "width_cat"], "d"],
+            -10,
+            -7
+          ]
+        ]
+      }
+    },
+    {
+      "id": "forbidden-any",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        [
+          "any",
+          ["==", "foot", "no"],
+          ["==", "access", "no"],
+          ["==", "access", "private"]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 2],
+            [17, 5]
           ]
         },
         "line-offset": [
