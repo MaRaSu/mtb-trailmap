@@ -24,10 +24,11 @@ width_cat=d		path width = track (1.8 <= X)
 way line colors
 ----------------------------------
 cycleway		#3046D7
+footway			#A43820
 surface=mud		#3B9EF5
 obstacle=vegetation	#56AA00
-unpaved fill:		#DED0BD
-@unpaved case:		#473005
+unpaved fill		#EDDFCA
+unpaved case		#B09664
 
 
 
