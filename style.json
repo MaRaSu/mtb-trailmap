@@ -1857,6 +1857,84 @@
     },
 
     {
+      "id": "sw-fw-l-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Footway marked on highway=[road], left side"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "footway_left", "yes"],
+        ["!in", "cycleway_left", "yes"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.2],
+            [17, 2.2]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, -3],
+            [17, -6]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "sw-fw-r-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Footway marked on highway=[road], right side"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "footway_right", "yes"],
+        ["!in", "cycleway_right", "yes"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.2],
+            [17, 2.2]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, 3],
+            [17, 6]
+          ]
+        }
+      }
+    },
+
+    {
       "id": "sw-cw-l-line-p",
       "type": "line",
       "metadata": {
@@ -1869,13 +1947,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "any",
-          ["==", "cycleway:both", "yes"],
-          ["==", "cycleway:left", "yes"],
-          ["==", "sidewalk:both:bicycle", "yes"],
-          ["==", "sidewalk:left:bicycle", "yes"]
-        ]
+        ["==", "cycleway_left", "yes"]
       ],
       "layout": {
         "visibility": "visible"
@@ -1893,13 +1965,12 @@
         "line-offset": {
           "base": 1.2,
           "stops": [
-            [14, -3.0],
-            [17, -6.0]
+            [14, -3],
+            [17, -6]
           ]
         }
       }
     },
-
     {
       "id": "sw-cw-r-line-p",
       "type": "line",
@@ -1913,13 +1984,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "any",
-          ["==", "cycleway:both", "yes"],
-          ["==", "cycleway:right", "yes"],
-          ["==", "sidewalk:both:bicycle", "yes"],
-          ["==", "sidewalk:right:bicycle", "yes"]
-        ]
+        ["==", "cycleway_right", "yes"]
       ],
       "layout": {
         "visibility": "visible"
@@ -1937,13 +2002,12 @@
         "line-offset": {
           "base": 1.2,
           "stops": [
-            [14, 3.0],
-            [17, 6.0]
+            [14, 3],
+            [17, 6]
           ]
         }
       }
     },
-
     {
       "id": "hw-steps",
       "type": "line",
