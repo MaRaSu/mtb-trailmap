@@ -4275,6 +4275,33 @@
       }
     },
     {
+      "id": "hw-name-path-mtb:name",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": ["==", "class", "path"],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-rotation-alignment": "map",
+        "text-offset": [0.0, 1.0],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [14, 9],
+            [17, 11]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1.2
+      }
+    },
+    {
       "id": "hw-name-minor",
       "type": "symbol",
       "source": "openmaptiles",
