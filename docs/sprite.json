@@ -705,5 +705,12 @@
     "width": 17,
     "x": 263,
     "y": 21
+  },
+  "tm_wetland_unspecified": {
+    "height": 125,
+    "pixelRatio": 1,
+    "width": 125,
+    "x": 4,
+    "y": 160
   }
 }
