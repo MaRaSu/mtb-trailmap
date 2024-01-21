@@ -1692,7 +1692,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1751,6 +1751,15 @@
             3.5,
             2
           ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12.0,
+          ["case", ["has", "mtb_scale"], 0, 1],
+          13,
+          1
         ]
       }
     },
