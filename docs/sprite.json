@@ -706,11 +706,39 @@
     "x": 263,
     "y": 21
   },
-  "tm_wetland_unspecified": {
-    "height": 125,
+  "tm_mml_35300_soistuma": {
+    "height": 64,
     "pixelRatio": 1,
-    "width": 125,
-    "x": 4,
-    "y": 160
+    "width": 64,
+    "x": 0,
+    "y": 157
+  },
+  "tm_mml_35411_suo_helppokulkuinen_puuton": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 64,
+    "y": 157
+  },
+  "tm_mml_35412_suo_helppokulkuinen_metsaa_kasvava": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 128,
+    "y": 157
+  },
+  "tm_mml_35421_suo_vaikeakulkuinen_puuton": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 192,
+    "y": 157
+  },
+  "tm_mml_35422_suo_helppokulkuinen_metsaa_kasvava": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 256,
+    "y": 157
   }
 }

@@ -54,6 +54,7 @@
     },
     "rinnevarjostus": {
       "type": "raster",
+      "maxzoom": 15,
       "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"]
     }
   },
@@ -215,7 +216,12 @@
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "filter": ["==", "class", "wood"],
+      "filter": [
+        "any",
+        ["==", "class", "wood"],
+        ["==", "class", "wetland"],
+        ["==", "class", "rock"]
+      ],
       "paint": {
         "fill-antialias": {
           "base": 1,
@@ -579,17 +585,58 @@
       "id": "landcover-wetland",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "maputnik:comment": "35300 = Soistuma; 35411 = Suo, helppokulkuinen puuton; 35412 = Suo, helppokulkuinen metsää kasvava; 35421 = Suo, vaikeakulkuinen puuton; 35422 = Suo, vaikeakulkuinen metsää kasvava"
       },
-      "source": "openmaptiles",
-      "source-layer": "landcover",
-      "filter": ["all", ["==", "class", "wetland"]],
+      "source": "taustakartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": [
+        "any",
+        ["==", "kohdeluokka", 35300],
+        ["==", "kohdeluokka", 35411],
+        ["==", "kohdeluokka", 35412],
+        ["==", "kohdeluokka", 35421],
+        ["==", "kohdeluokka", 35422]
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#a0c8f0",
-        "fill-opacity": 0.15
+        "fill-pattern": [
+          "case",
+          ["==", ["get", "kohdeluokka"], 35300],
+          "tm_mml_35300_soistuma",
+          ["==", ["get", "kohdeluokka"], 35411],
+          "tm_mml_35411_suo_helppokulkuinen_puuton",
+          ["==", ["get", "kohdeluokka"], 35412],
+          "tm_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
+          ["==", ["get", "kohdeluokka"], 35421],
+          "tm_mml_35421_suo_vaikeakulkuinen_puuton",
+          ["==", ["get", "kohdeluokka"], 35422],
+          "tm_mml_35422_suo_helppokulkuinen_metsaa_kasvava",
+          "tm_mml_35300_soistuma"
+        ],
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "landcover-bare_rock",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849382550.77",
+        "maputnik:comment": "34100 = kallio"
+      },
+      "source": "taustakartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 34100],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#d6d6d6",
+        "fill-opacity": 1
       }
     },
     {
@@ -1598,33 +1645,33 @@
             ["==", ["get", "width_cat"], "a"],
             0.8,
             ["==", ["get", "width_cat"], "b"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "c"],
             1.8,
             ["==", ["get", "width_cat"], "d"],
             1.8,
-            1.0
+            1
           ],
           16,
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "b"],
             1.8,
             ["==", ["get", "width_cat"], "c"],
-            3.0,
+            3,
             ["==", ["get", "width_cat"], "d"],
-            3.0,
-            1.0
+            3,
+            1
           ],
           17,
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "b"],
-            2.0,
+            2,
             ["==", ["get", "width_cat"], "c"],
             3.5,
             ["==", ["get", "width_cat"], "d"],
@@ -1658,7 +1705,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [2.5, 2.0],
+        "line-dasharray": [2.5, 2],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -1669,33 +1716,33 @@
             ["==", ["get", "width_cat"], "a"],
             0.8,
             ["==", ["get", "width_cat"], "b"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "c"],
             1.8,
             ["==", ["get", "width_cat"], "d"],
             1.8,
-            1.0
+            1
           ],
           16,
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "b"],
             1.8,
             ["==", ["get", "width_cat"], "c"],
-            3.0,
+            3,
             ["==", ["get", "width_cat"], "d"],
-            3.0,
-            1.0
+            3,
+            1
           ],
           17,
           [
             "case",
             ["==", ["get", "width_cat"], "a"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "b"],
-            2.0,
+            2,
             ["==", ["get", "width_cat"], "c"],
             3.5,
             ["==", ["get", "width_cat"], "d"],
@@ -1718,11 +1765,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "any",
-          ["in", "class", "track"],
-          ["==", "width_cat", "d"]
-        ],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
         ["!in", "subclass", "cycleway"]
       ],
       "layout": {
