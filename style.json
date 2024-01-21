@@ -58,7 +58,7 @@
       "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"]
     }
   },
-  "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
+  "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
