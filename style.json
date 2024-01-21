@@ -50,7 +50,6 @@
     },
     "taustakartta": {
       "type": "vector",
-      "maxzoom": 11,
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/vectortiles/tilejson/taustakartta/1.0.0/taustakartta/default/v20/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     },
     "rinnevarjostus": {
@@ -686,6 +685,71 @@
           20,
           ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 14, 7]
         ]
+      }
+    },
+    {
+      "id": "cliffs-line",
+      "type": "line",
+      "metadata": {
+        "maputnik:comment": "34400 = jyrkänne"
+      },
+      "source": "taustakartta",
+      "source-layer": "maasto_viiva",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 34400],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [13, 0.8]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [13, 0.8],
+            [16, 2]
+          ]
+        }
+      }
+    },
+    {
+      "id": "cliffs-dashes",
+      "type": "line",
+      "metadata": {
+        "maputnik:comment": "34400 = jyrkänne"
+      },
+      "source": "taustakartta",
+      "source-layer": "maasto_viiva",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 34400],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [13, 0.8]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [13, 3.0],
+            [16, 8]
+          ]
+        },
+        "line-dasharray": [0.1, 2.0],
+        "line-offset": {
+          "stops": [
+            [13, 1.5],
+            [16, 4]
+          ]
+        }
       }
     },
     {
