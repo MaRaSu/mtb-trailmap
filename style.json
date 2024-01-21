@@ -1888,6 +1888,12 @@
             [14, 1],
             [17, 3.5]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
         }
       }
     },
@@ -2333,6 +2339,12 @@
             [14, 4],
             [20, 15]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
         }
       }
     },
@@ -2357,7 +2369,12 @@
       },
       "paint": {
         "line-color": "#e9ac77",
-        "line-opacity": 1,
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2428,7 +2445,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#df9a5e",
+          12,
+          "#e9ac77"
+        ],
         "line-opacity": {
           "stops": [
             [5, 0],
@@ -2579,7 +2604,12 @@
           "#EDDFCA",
           "#FFFFFF"
         ],
-        "line-opacity": 1,
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
         "line-width": {
           "base": 1,
           "stops": [
@@ -2618,6 +2648,12 @@
             [6.5, 0],
             [8, 0.5],
             [20, 13]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
           ]
         }
       }
@@ -2683,6 +2719,12 @@
             [7, 0.5],
             [20, 18]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [11, 1]
+          ]
         }
       }
     },
@@ -2708,13 +2750,19 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fc8",
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
             [6.5, 0],
             [7, 0.5],
             [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [11, 1]
           ]
         }
       }
@@ -3304,7 +3352,15 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#d7722f",
+          12,
+          "#e9ac77"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
