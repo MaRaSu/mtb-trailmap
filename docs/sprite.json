@@ -740,5 +740,12 @@
     "width": 64,
     "x": 256,
     "y": 157
+  },
+  "tm_mml_22392_suurjannitelinjan_pylvas": {
+    "height": 9,
+    "pixelRatio": 1,
+    "width": 9,
+    "x": 158,
+    "y": 77
   }
 }
