@@ -50,6 +50,7 @@
     },
     "taustakartta": {
       "type": "vector",
+      "maxzoom": 11,
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/vectortiles/tilejson/taustakartta/1.0.0/taustakartta/default/v20/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     },
     "rinnevarjostus": {
@@ -1760,7 +1761,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
