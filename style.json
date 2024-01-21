@@ -673,7 +673,12 @@
         "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": 0.3
+        "raster-opacity": {
+          "stops": [
+            [11, 0.0],
+            [13, 0.3]
+          ]
+        }
       }
     },
     {
