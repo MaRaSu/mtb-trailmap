@@ -652,7 +652,12 @@
       },
       "paint": {
         "line-color": "#916f4c",
-        "line-opacity": 0.5,
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [13, 0.5]
+          ]
+        },
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -2216,6 +2221,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
