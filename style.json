@@ -1227,14 +1227,14 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "rail"]],
       "paint": {
-        "line-color": "#bbb",
-        "line-dasharray": [2, 2],
+        "line-color": "#dcdcdc",
+        "line-dasharray": [3.0, 3.0],
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14, 0.4],
-            [15, 0.75],
-            [20, 2]
+            [10, 1.0],
+            [13, 1.0],
+            [16, 4.0]
           ]
         }
       }
@@ -2991,12 +2991,19 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsla(0, 0%, 73%, 0.77)",
+        "line-color": "#A8A7A5",
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14, 0.4],
-            [20, 1]
+            [10, 2.0],
+            [13, 2.0],
+            [16, 5.0]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [14, 0],
+            [15, 1]
           ]
         }
       }
@@ -3019,14 +3026,20 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsla(0, 0%, 73%, 0.68)",
-        "line-dasharray": [0.2, 8],
+        "line-color": "#dcdcdc",
+        "line-dasharray": [3.0, 3.0],
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14.5, 0],
-            [15, 2],
-            [20, 6]
+            [10, 1.0],
+            [13, 1.0],
+            [16, 4.0]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [14, 0],
+            [15, 1]
           ]
         }
       }
@@ -3046,12 +3059,19 @@
         ["has", "service"]
       ],
       "paint": {
-        "line-color": "hsla(0, 0%, 73%, 0.77)",
+        "line-color": "#A8A7A5",
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14, 0.4],
-            [20, 1]
+            [10, 1.5],
+            [13, 1.5],
+            [16, 3.0]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [14, 0],
+            [15, 1]
           ]
         }
       }
@@ -3074,14 +3094,20 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsla(0, 0%, 73%, 0.68)",
-        "line-dasharray": [0.2, 8],
+        "line-color": "#dcdcdc",
+        "line-dasharray": [3.0, 3.0],
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14.5, 0],
-            [15, 2],
-            [20, 6]
+            [10, 0.7],
+            [13, 0.7],
+            [16, 2.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [14, 0],
+            [15, 1]
           ]
         }
       }
@@ -3102,13 +3128,13 @@
         ["==", "class", "rail"]
       ],
       "paint": {
-        "line-color": "#bbb",
+        "line-color": "#A8A7A5",
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14, 0.4],
-            [15, 0.75],
-            [20, 2]
+            [10, 2.0],
+            [13, 2.0],
+            [16, 5.0]
           ]
         }
       }
@@ -3129,14 +3155,14 @@
         ["==", "class", "rail"]
       ],
       "paint": {
-        "line-color": "#bbb",
-        "line-dasharray": [0.2, 8],
+        "line-color": "#dcdcdc",
+        "line-dasharray": [3.0, 3.0],
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14.5, 0],
-            [15, 3],
-            [20, 8]
+            [10, 1.0],
+            [13, 1.0],
+            [16, 4.0]
           ]
         }
       }
@@ -3887,13 +3913,13 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "rail"]],
       "paint": {
-        "line-color": "#bbb",
+        "line-color": "#A8A7A5",
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14, 0.4],
-            [15, 0.75],
-            [20, 2]
+            [10, 2.0],
+            [13, 2.0],
+            [16, 5.0]
           ]
         }
       }
@@ -3908,14 +3934,14 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "rail"]],
       "paint": {
-        "line-color": "#bbb",
-        "line-dasharray": [0.2, 8],
+        "line-color": "#dcdcdc",
+        "line-dasharray": [3.0, 3.0],
         "line-width": {
           "base": 1.4,
           "stops": [
-            [14.5, 0],
-            [15, 3],
-            [20, 8]
+            [10, 1.0],
+            [13, 1.0],
+            [16, 4.0]
           ]
         }
       }
