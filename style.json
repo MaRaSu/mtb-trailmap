@@ -2493,7 +2493,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#d76832",
+          12,
+          "#e9ac77"
+        ],
         "line-opacity": {
           "stops": [
             [4, 0],
@@ -4110,7 +4118,7 @@
         "icon-opacity": 0.8
       }
     },
-    { 
+    {
       "id": "power-line-minor",
       "type": "line",
       "metadata": {
