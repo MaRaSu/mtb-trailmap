@@ -1710,6 +1710,12 @@
             [16, 3.5],
             [17, 5]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0.0],
+            [14, 1.0]
+          ]
         }
       }
     },
@@ -1911,6 +1917,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1942,6 +1949,12 @@
             [14, 1.5],
             [17, 2.5]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [12, 1.0]
+          ]
         }
       }
     },
@@ -1954,6 +1967,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -1994,6 +2008,12 @@
             [14, 1.5],
             [17, 2.5]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [12, 1.0]
+          ]
         }
       }
     },
@@ -2006,6 +2026,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2024,6 +2045,12 @@
           "stops": [
             [14, 1.5],
             [17, 2.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [12, 1.0]
           ]
         }
       }
@@ -2058,6 +2085,12 @@
             [14, 1.2],
             [17, 2.2]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0.0],
+            [14, 1.0]
+          ]
         }
       }
     },
@@ -2070,6 +2103,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2096,6 +2130,12 @@
             [14, -3],
             [17, -6]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0.0],
+            [14, 1.0]
+          ]
         }
       }
     },
@@ -2108,6 +2148,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2134,6 +2175,12 @@
             [14, 3],
             [17, 6]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0.0],
+            [14, 1.0]
+          ]
         }
       }
     },
@@ -2146,6 +2193,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2171,6 +2219,12 @@
             [14, -3],
             [17, -6]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [12, 1.0]
+          ]
         }
       }
     },
@@ -2183,6 +2237,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2207,6 +2262,12 @@
           "stops": [
             [14, 3],
             [17, 6]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0.0],
+            [12, 1.0]
           ]
         }
       }
@@ -3196,8 +3257,8 @@
         },
         "line-opacity": {
           "stops": [
-            [8, 0.0],
-            [9, 1.0]
+            [8, 0],
+            [9, 1]
           ]
         }
       }
@@ -3230,8 +3291,8 @@
         },
         "line-opacity": {
           "stops": [
-            [8, 0.0],
-            [9, 1.0]
+            [8, 0],
+            [9, 1]
           ]
         }
       }
@@ -4182,15 +4243,14 @@
         "line-color": "#555555",
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [11, 0.8]
+            [11, 0.0],
+            [13, 0.8]
           ]
         },
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 0.5],
-            [13, 0.8],
+            [12, 0.8],
             [16, 2]
           ]
         }
