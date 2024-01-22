@@ -658,7 +658,12 @@
       },
       "paint": {
         "fill-color": "#faf4d2",
-        "fill-opacity": 1
+        "fill-opacity": {
+          "stops": [
+            [9, 0],
+            [10, 0.5]
+          ]
+        }
       }
     },
     {
