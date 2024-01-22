@@ -2472,7 +2472,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#dda06b",
         "line-opacity": {
           "stops": [
             [7, 0],
