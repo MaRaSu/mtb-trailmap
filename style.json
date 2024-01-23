@@ -4296,11 +4296,12 @@
       "source-layer": "building",
       "paint": {
         "fill-antialias": true,
-        "fill-color": {
+        "fill-color": "#bbb9b7",
+        "fill-opacity": {
           "base": 1,
           "stops": [
-            [15.5, "#f2eae2"],
-            [16, "#dfdbd7"]
+            [13, 0],
+            [14, 1]
           ]
         }
       }
@@ -4317,15 +4318,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#f2eae2",
+        "fill-color": "#bbb9b7",
         "fill-opacity": {
           "base": 1,
           "stops": [
             [13, 0],
-            [16, 1]
+            [14, 1]
           ]
         },
-        "fill-outline-color": "#dfdbd7",
+        "fill-outline-color": "#928e8a",
         "fill-translate": {
           "base": 1,
           "stops": [
