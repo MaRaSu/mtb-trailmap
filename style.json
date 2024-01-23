@@ -2032,7 +2032,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "subclass", "cycleway"],
-        ["!has", "surface_raw"]
+        ["!in", "surface_raw"]
       ],
       "layout": {
         "visibility": "visible"
@@ -2444,7 +2444,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2.0],
+            [10, 2],
             [12, 2.5],
             [14, 2.8],
             [20, 11]
@@ -2487,7 +2487,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [14, 1.0],
+            [14, 1.5],
             [20, 9]
           ]
         },
@@ -2816,10 +2816,10 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 1.0],
+            [10, 1],
             [12, 1.3],
             [14, 1.8],
-            [20, 9.0]
+            [20, 9]
           ]
         }
       }
