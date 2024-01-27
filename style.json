@@ -396,13 +396,21 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 12,
       "filter": ["==", "class", "pitch"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#c9dfb2"
+        "fill-color": "#c9dfb2",
+        "fill-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
       }
+
     },
     {
       "id": "waterway_tunnel",
