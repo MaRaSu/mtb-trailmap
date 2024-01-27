@@ -2112,7 +2112,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "subclass", "cycleway"],
-        ["!in", "surface_raw"]
+        ["!has", "surface_raw"]
       ],
       "layout": {
         "visibility": "visible"
