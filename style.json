@@ -3969,6 +3969,44 @@
       }
     },
     {
+      "id": "bridge-track-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["!in", "subclass", "cycleway"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.5],
+            [14, 1],
+            [17, 3.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "bridge-cw-line-p",
       "type": "line",
       "metadata": {
@@ -4166,7 +4204,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "brunnel", "bridge"],
-        ["in", "class", "minor", "service", "track"]
+        ["in", "class", "minor", "service"]
       ],
       "layout": {
         "line-cap": "round",
