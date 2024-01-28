@@ -2545,7 +2545,7 @@
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
         ["in", "class", "service"],
-        ["!=", "service", "parking_aisle"]
+        ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
         "line-cap": "round",
@@ -2565,6 +2565,49 @@
             [12, 2.5],
             [14, 2.8],
             [20, 11]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-driveway-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "service", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#B09664",
+          "#A8A7A5"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1.2],
+            [12, 1.7],
+            [14, 2.0],
+            [20, 8]
           ]
         },
         "line-opacity": {
@@ -2953,7 +2996,7 @@
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
         ["==", "class", "service"],
-        ["!=", "service", "parking_aisle"]
+        ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
         "line-cap": "round",
@@ -2980,6 +3023,48 @@
             [12, 1.3],
             [14, 1.8],
             [20, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-driveway-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "service", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#EDDFCA",
+          "#FFFFFF"
+        ],
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 0.7],
+            [20, 6]
           ]
         }
       }
