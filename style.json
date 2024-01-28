@@ -353,7 +353,7 @@
           ["==", ["get", "kohdeluokka"], 35421],
           "tm_mml_35421_suo_vaikeakulkuinen_puuton",
           ["==", ["get", "kohdeluokka"], 35422],
-          "tm_mml_35422_suo_helppokulkuinen_metsaa_kasvava",
+          "tm_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_mml_35300_soistuma"
         ],
         "fill-opacity": 1
