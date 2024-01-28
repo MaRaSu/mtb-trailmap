@@ -608,7 +608,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#faf4d2",
+        "fill-color": "#f8efbe",
         "fill-opacity": {
           "stops": [
             [
@@ -1173,7 +1173,7 @@
       "minzoom": 9,
       "maxzoom": 20,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
