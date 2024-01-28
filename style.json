@@ -3334,7 +3334,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "track"],
+        ["in", "class", "path", "track", "service", "minor"],
         ["!in", "subclass", "footway"],
         [
           "any",
@@ -3414,7 +3414,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "track"],
+        ["in", "class", "path", "track", "service", "minor"],
         ["any", ["==", "access", "no"], ["==", "access", "private"]]
       ],
       "layout": {
