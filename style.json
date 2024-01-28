@@ -267,6 +267,20 @@
       }
     },
     {
+      "id": "landcover-allotments",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": ["==", "subclass", "allotments"],
+      "paint": {
+        "fill-color": "#dee7c5",
+        "fill-opacity": 0.8
+      }
+    },
+    {
       "id": "landcover-ice-shelf",
       "type": "fill",
       "metadata": {
@@ -821,7 +835,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
