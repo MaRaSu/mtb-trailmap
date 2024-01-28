@@ -1717,6 +1717,173 @@
       }
     },
     {
+      "id": "forbidden-bicycle",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track", "service", "minor"],
+        ["!in", "subclass", "footway"],
+        [
+          "any",
+          ["==", "bicycle", "no"],
+          ["==", "access", "no"],
+          ["==", "access", "private"]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 2],
+            [16, 5],
+            [18, 10]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -1,
+            ["==", ["get", "width_cat"], "b"],
+            -2.5,
+            ["==", ["get", "width_cat"], "c"],
+            -3,
+            ["==", ["get", "width_cat"], "d"],
+            -3,
+            -2.5
+          ],
+          16,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -4,
+            ["==", ["get", "width_cat"], "b"],
+            -7,
+            ["==", ["get", "width_cat"], "c"],
+            -10,
+            ["==", ["get", "width_cat"], "d"],
+            -10,
+            -7
+          ],
+          18,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            -6,
+            ["==", ["get", "width_cat"], "b"],
+            -14,
+            ["==", ["get", "width_cat"], "c"],
+            -20,
+            ["==", ["get", "width_cat"], "d"],
+            -20,
+            -14
+          ]
+        ],
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "forbidden-any",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436"
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track", "service", "minor"],
+        ["any", ["==", "access", "no"], ["==", "access", "private"]]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.3, 0.8],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 1],
+            [16, 2],
+            [18, 4]
+          ]
+        },
+        "line-offset": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            2.5,
+            ["==", ["get", "width_cat"], "c"],
+            3,
+            ["==", ["get", "width_cat"], "d"],
+            3,
+            2.5
+          ],
+          16,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            4,
+            ["==", ["get", "width_cat"], "b"],
+            7,
+            ["==", ["get", "width_cat"], "c"],
+            10,
+            ["==", ["get", "width_cat"], "d"],
+            10,
+            7
+          ],
+          18,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            8,
+            ["==", ["get", "width_cat"], "b"],
+            14,
+            ["==", ["get", "width_cat"], "c"],
+            20,
+            ["==", ["get", "width_cat"], "d"],
+            20,
+            14
+          ]
+        ],
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "hw-path-case",
       "type": "line",
       "metadata": {
@@ -3459,173 +3626,7 @@
         ]
       }
     },
-    {
-      "id": "forbidden-bicycle",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436"
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "path", "track", "service", "minor"],
-        ["!in", "subclass", "footway"],
-        [
-          "any",
-          ["==", "bicycle", "no"],
-          ["==", "access", "no"],
-          ["==", "access", "private"]
-        ]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.2, 0.5],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 2],
-            [16, 5],
-            [18, 10]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            -1,
-            ["==", ["get", "width_cat"], "b"],
-            -2.5,
-            ["==", ["get", "width_cat"], "c"],
-            -3,
-            ["==", ["get", "width_cat"], "d"],
-            -3,
-            -2.5
-          ],
-          16,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            -4,
-            ["==", ["get", "width_cat"], "b"],
-            -7,
-            ["==", ["get", "width_cat"], "c"],
-            -10,
-            ["==", ["get", "width_cat"], "d"],
-            -10,
-            -7
-          ],
-          18,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            -6,
-            ["==", ["get", "width_cat"], "b"],
-            -14,
-            ["==", ["get", "width_cat"], "c"],
-            -20,
-            ["==", ["get", "width_cat"], "d"],
-            -20,
-            -14
-          ]
-        ],
-        "line-opacity": {
-          "stops": [
-            [12, 0],
-            [13, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "forbidden-any",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436"
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "path", "track", "service", "minor"],
-        ["any", ["==", "access", "no"], ["==", "access", "private"]]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.3, 0.8],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 1],
-            [16, 2],
-            [18, 4]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            1,
-            ["==", ["get", "width_cat"], "b"],
-            2.5,
-            ["==", ["get", "width_cat"], "c"],
-            3,
-            ["==", ["get", "width_cat"], "d"],
-            3,
-            2.5
-          ],
-          16,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            4,
-            ["==", ["get", "width_cat"], "b"],
-            7,
-            ["==", ["get", "width_cat"], "c"],
-            10,
-            ["==", ["get", "width_cat"], "d"],
-            10,
-            7
-          ],
-          18,
-          [
-            "case",
-            ["==", ["get", "width_cat"], "a"],
-            8,
-            ["==", ["get", "width_cat"], "b"],
-            14,
-            ["==", ["get", "width_cat"], "c"],
-            20,
-            ["==", ["get", "width_cat"], "d"],
-            20,
-            14
-          ]
-        ],
-        "line-opacity": {
-          "stops": [
-            [12, 0],
-            [13, 1]
-          ]
-        }
-      }
-    },
+
     {
       "id": "railway-transit",
       "type": "line",
