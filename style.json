@@ -1394,7 +1394,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "park",
-      "filter": ["all", ["==", "class", "protected_area"]],
+      "filter": ["in", "class", "protected_area", "nature_reserve"],
       "paint": {
         "line-color": "#7BA36C",
         "line-opacity": 0.3,
@@ -5013,7 +5013,7 @@
         "text-size": {
           "stops": [
             [0, 10],
-            [6, 14]
+            [6, 12]
           ]
         },
         "visibility": "visible"
