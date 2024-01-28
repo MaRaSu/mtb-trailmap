@@ -437,11 +437,11 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#f8efbe",
+        "fill-color": "#faf3ce",
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, 0.5]
+            [10, 1]
           ]
         }
       }
