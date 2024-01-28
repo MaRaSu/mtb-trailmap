@@ -741,6 +741,41 @@
     "x": 352,
     "y": 256
   },
+  "tm_valk_mml_35300_soistuma": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 0
+  },
+  "tm_valk_mml_35411_suo_helppokulkuinen_puuton": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 64
+  },
+  "tm_valk_mml_35412_suo_helppokulkuinen_metsaa_kasvava": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 0
+  },
+  "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 192
+  },
+  "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 256
+  },  
   "tm_mml_22392_suurjannitelinjan_pylvas": {
     "height": 11,
     "pixelRatio": 1,
