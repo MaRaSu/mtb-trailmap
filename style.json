@@ -2118,7 +2118,7 @@
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [1.0, 0.8],
+        "line-dasharray": [1, 0.8],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -3331,6 +3331,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3400,7 +3401,13 @@
             -20,
             -14
           ]
-        ]
+        ],
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
       }
     },
     {
@@ -3474,7 +3481,13 @@
             20,
             14
           ]
-        ]
+        ],
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
       }
     },
     {
