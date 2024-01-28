@@ -8786,10 +8786,11 @@
       ],
       "layout": {
         "visibility": "visible",
-        "icon-image": "tm_mml_22392_suurjannitelinjan_pylvas"
+        "icon-image": "tm_mml_22392_suurjannitelinjan_pylvas",
+        "icon-size": 0.5
       },
       "paint": {
-        "icon-opacity": 0.8
+        "icon-opacity": 0.5
       }
     },
     {
