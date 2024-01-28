@@ -777,10 +777,10 @@
     "y": 256
   },  
   "tm_mml_22392_suurjannitelinjan_pylvas": {
-    "height": 11,
+    "height": 32,
     "pixelRatio": 1,
-    "width": 11,
-    "x": 156,
-    "y": 75
+    "width": 32,
+    "x": 224,
+    "y": 320
   }
 }
