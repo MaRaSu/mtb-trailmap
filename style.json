@@ -403,7 +403,7 @@
       }
     },
     {
-      "id": "landuse-pitch",
+      "id": "landuse-pitch_track",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071"
@@ -411,7 +411,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 12,
-      "filter": ["==", "class", "pitch"],
+      "filter": ["in", "class", "pitch", "track"],
       "layout": {
         "visibility": "visible"
       },
