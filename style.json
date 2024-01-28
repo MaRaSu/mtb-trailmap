@@ -1372,7 +1372,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "park",
-      "filter": ["all", ["==", "class", "protected_area"]],
+      "filter": ["in", "class", "protected_area", "nature_reserve"],
       "paint": {
         "fill-antialias": {
           "base": 1,
