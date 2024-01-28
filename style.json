@@ -410,7 +410,6 @@
           ]
         }
       }
-
     },
     {
       "id": "waterway_tunnel",
@@ -1846,7 +1845,7 @@
         ["!in", "tunnel"],
         ["==", "class", "path"],
         ["!in", "width_cat", "d"],
-        ["!in", "subclass", "cycleway", "footway", "steps"],
+        ["!in", "subclass", "cycleway", "footway", "pedestrian", "steps"],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -1918,7 +1917,7 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
         ["!in", "width_cat", "d"],
-        ["!in", "subclass", "cycleway", "footway", "steps"],
+        ["!in", "subclass", "cycleway", "footway", "pedestrian", "steps"],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -2174,7 +2173,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        ["in", "subclass", "footway"],
+        ["in", "subclass", "footway", "pedestrian"],
         ["!has", "mtb_scale"]
       ],
       "layout": {
