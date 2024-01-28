@@ -345,16 +345,16 @@
         "fill-pattern": [
           "case",
           ["==", ["get", "kohdeluokka"], 35300],
-          "tm_mml_35300_soistuma",
+          "tm_vihr_mml_35300_soistuma",
           ["==", ["get", "kohdeluokka"], 35411],
-          "tm_mml_35411_suo_helppokulkuinen_puuton",
+          "tm_vihr_mml_35411_suo_helppokulkuinen_puuton",
           ["==", ["get", "kohdeluokka"], 35412],
-          "tm_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
+          "tm_vihr_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
           ["==", ["get", "kohdeluokka"], 35421],
-          "tm_mml_35421_suo_vaikeakulkuinen_puuton",
+          "tm_vihr_mml_35421_suo_vaikeakulkuinen_puuton",
           ["==", ["get", "kohdeluokka"], 35422],
-          "tm_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          "tm_mml_35300_soistuma"
+          "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
+          "tm_vihr_mml_35300_soistuma"
         ],
         "fill-opacity": 1
       }
