@@ -5120,10 +5120,10 @@
     },
     {
       "id": "landuse-symbols-quarry-mml",
-      "maputnik:comment": "32500 = Louhos; 32111-32113 = Maa-aineksen ottoalueet",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "maputnik:comment": "32500 = Louhos; 32111-32113 = Maa-aineksen ottoalueet"
       },
       "source": "taustakartta",
       "source-layer": "maankaytto",
