@@ -745,8 +745,8 @@
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
-    "x": 416,
-    "y": 256
+    "x": 352,
+    "y": 320
   },
   "tm_valk_mml_35300_soistuma": {
     "height": 64,
@@ -787,8 +787,8 @@
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
-    "x": 480,
-    "y": 256
+    "x": 416,
+    "y": 320
   },  
   "tm_mml_22392_suurjannitelinjan_pylvas": {
     "height": 32,
