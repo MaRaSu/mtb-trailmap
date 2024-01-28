@@ -246,7 +246,11 @@
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "filter": ["==", "class", "grass"],
+      "filter": [
+        "all",
+        ["==", "class", "grass"],
+        ["!=", "subclass", "scrub"]
+      ],
       "paint": {
         "fill-color": "#e5f4d5",
         "fill-opacity": 1
@@ -318,6 +322,34 @@
       "paint": {
         "fill-color": "rgba(245, 238, 188, 1)",
         "fill-opacity": 1
+      }
+    },
+    {
+      "id": "landcover-scrub_mml",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "taustakartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 39110],
+      "paint": {
+        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
+      }
+    },
+    {
+      "id": "landcover-scrub_osm",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "minzoom": 11,
+      "filter": ["==", "subclass", "scrub"],
+      "paint": {
+        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
       }
     },
     {

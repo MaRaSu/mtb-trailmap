@@ -741,6 +741,13 @@
     "x": 352,
     "y": 256
   },
+  "tm_vihr_mml_varvikko_osm_scrub": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 256
+  },
   "tm_valk_mml_35300_soistuma": {
     "height": 64,
     "pixelRatio": 1,
@@ -774,6 +781,13 @@
     "pixelRatio": 1,
     "width": 64,
     "x": 416,
+    "y": 256
+  },  
+  "tm_valk_mml_varvikko_osm_scrub": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 480,
     "y": 256
   },  
   "tm_mml_22392_suurjannitelinjan_pylvas": {
