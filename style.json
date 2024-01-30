@@ -48,7 +48,7 @@
       "type": "vector",
       "url": "https://tiles.trailmap.fi/data/finland-omt.json"
     },
-    "taustakartta": {
+    "maastovektorikartta": {
       "type": "vector",
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/vectortiles/tilejson/taustakartta/1.0.0/taustakartta/default/v20/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     },
@@ -56,6 +56,25 @@
       "type": "raster",
       "maxzoom": 15,
       "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"]
+    },
+    "ilmakuva": {
+      "type": "raster",
+      "maxzoom": 17,
+      "tiles": [
+        "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/ortokuva/default/WGS84_Pseudo-Mercator/{z}/{y}/{x}.png?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
+      ]
+    },
+    "ilmakuva2": {
+      "type": "raster",
+      "maxzoom": 19,
+      "tiles": ["https://nls.trailmap.fi/ortokuva/{z}/{x}/{y}.jpg"]
+    },
+    "taustakartta": {
+      "type": "raster",
+      "maxzoom": 17,
+      "tiles": [
+        "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/taustakartta/default/WGS84_Pseudo-Mercator/{z}/{y}/{x}.png?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
+      ]
     }
   },
   "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
@@ -214,7 +233,7 @@
       "metadata": {
         "mapbox:group": "1444849388993.3071"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maankaytto",
       "filter": ["==", "kohdeluokka", 32500],
       "layout": {
@@ -342,7 +361,7 @@
       "metadata": {
         "mapbox:group": "1444849388993.3071"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 39110],
@@ -371,7 +390,7 @@
         "mapbox:group": "1444849382550.77",
         "maputnik:comment": "35300 = Soistuma; 35411 = Suo, helppokulkuinen puuton; 35412 = Suo, helppokulkuinen metsää kasvava; 35421 = Suo, vaikeakulkuinen puuton; 35422 = Suo, vaikeakulkuinen metsää kasvava"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
       "filter": [
@@ -410,7 +429,7 @@
         "mapbox:group": "1444849382550.77",
         "maputnik:comment": "34100 = kallio"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 34100],
@@ -429,7 +448,7 @@
         "mapbox:group": "1444849382550.77",
         "maputnik:comment": "32611 = pelto"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maankaytto",
       "minzoom": 6,
       "filter": ["==", "kohdeluokka", 32611],
@@ -559,7 +578,7 @@
       "metadata": {
         "mapbox:group": "1444849382550.77"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "vesisto_viiva",
       "filter": ["==", "kohdeluokka", 36311],
       "layout": {
@@ -782,12 +801,12 @@
     {
       "id": "contours-line",
       "type": "line",
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "korkeus",
       "minzoom": 9,
       "maxzoom": 20,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -814,7 +833,7 @@
       "metadata": {
         "maputnik:comment": "34400 = jyrkänne"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maasto_viiva",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 34400],
@@ -843,7 +862,7 @@
       "metadata": {
         "maputnik:comment": "34400 = jyrkänne"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maasto_viiva",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 34400],
@@ -879,7 +898,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -894,7 +913,8 @@
       "id": "tunnel-service-track-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -923,7 +943,8 @@
       "id": "tunnel-motorway-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -955,7 +976,8 @@
       "id": "tunnel-minor-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -987,7 +1009,8 @@
       "id": "tunnel-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1019,7 +1042,8 @@
       "id": "tunnel-secondary-tertiary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1049,7 +1073,8 @@
       "id": "tunnel-trunk-primary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1079,7 +1104,8 @@
       "id": "tunnel-motorway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1111,7 +1137,8 @@
       "id": "tunnel-path",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1137,7 +1164,8 @@
       "id": "tunnel-motorway-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1168,7 +1196,8 @@
       "id": "tunnel-service-track",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1196,7 +1225,8 @@
       "id": "tunnel-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1226,7 +1256,8 @@
       "id": "tunnel-minor",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1251,7 +1282,8 @@
       "id": "tunnel-secondary-tertiary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1280,7 +1312,8 @@
       "id": "tunnel-trunk-primary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1309,7 +1342,8 @@
       "id": "tunnel-motorway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1339,7 +1373,8 @@
       "id": "tunnel-railway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849354174.1904"
+        "mapbox:group": "1444849354174.1904",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1360,6 +1395,9 @@
     {
       "id": "ferry",
       "type": "line",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 9,
@@ -1698,10 +1736,37 @@
       }
     },
     {
+      "id": "alt_base_ortho",
+      "type": "raster",
+      "source": "ilmakuva",
+      "maxzoom": 16,
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "alt_base_ortho2",
+      "type": "raster",
+      "source": "ilmakuva2",
+      "minzoom": 16,
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "alt_base_simple",
+      "type": "raster",
+      "source": "taustakartta",
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
       "id": "hw-area",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1720,7 +1785,8 @@
       "id": "forbidden-bicycle",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1807,7 +1873,8 @@
       "id": "forbidden-any",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1887,7 +1954,8 @@
       "id": "hw-path-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1976,7 +2044,8 @@
       "id": "hw-track-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2028,7 +2097,8 @@
       "id": "hw-cw-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2066,7 +2136,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility."
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2138,7 +2209,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility."
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2209,7 +2281,8 @@
       "id": "hw-track-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2248,7 +2321,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Line for footways without mtb:scale."
+        "maputnik:comment": "Line for footways without mtb:scale.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2287,7 +2361,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Footway marked on highway=[road], left side"
+        "maputnik:comment": "Footway marked on highway=[road], left side",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2332,7 +2407,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Footway marked on highway=[road], right side"
+        "maputnik:comment": "Footway marked on highway=[road], right side",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2377,7 +2453,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Steps."
+        "maputnik:comment": "Steps.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2408,7 +2485,8 @@
       "id": "hw-motorway-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2441,7 +2519,8 @@
       "id": "hw-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2475,7 +2554,8 @@
       "id": "hw-minor-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2518,7 +2598,8 @@
       "id": "hw-service-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2562,7 +2643,8 @@
       "id": "hw-driveway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2605,7 +2687,8 @@
       "id": "hw-raceway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2648,7 +2731,8 @@
       "id": "hw-parking_aisle",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2689,7 +2773,8 @@
       "id": "hw-secondary-tertiary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2726,7 +2811,8 @@
       "id": "hw-primary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2765,7 +2851,8 @@
       "id": "hw-trunk-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2813,7 +2900,8 @@
       "id": "hw-motorway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2862,7 +2950,8 @@
       "id": "hw-motorway-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2894,7 +2983,8 @@
       "id": "hw-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2927,7 +3017,8 @@
       "id": "hw-minor-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2970,7 +3061,8 @@
       "id": "hw-service-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3014,7 +3106,8 @@
       "id": "hw-driveway-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3056,7 +3149,8 @@
       "id": "hw-raceway-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3099,7 +3193,8 @@
       "id": "hw-secondary-tertiary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3136,7 +3231,8 @@
       "id": "hw-primary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3168,7 +3264,8 @@
       "id": "hw-trunk",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3206,7 +3303,8 @@
       "id": "hw-motorway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3246,7 +3344,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway marked on highway=[road], left side"
+        "maputnik:comment": "Cycleway marked on highway=[road], left side",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3290,7 +3389,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway marked on highway=[road], right side"
+        "maputnik:comment": "Cycleway marked on highway=[road], right side",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3334,7 +3434,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for paved ways."
+        "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3384,7 +3485,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for unpaved ways."
+        "maputnik:comment": "Cycleway line for unpaved ways.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3443,7 +3545,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for ways with unknown surface."
+        "maputnik:comment": "Cycleway line for ways with unknown surface.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3480,7 +3583,8 @@
       "id": "obstacle_vegetation",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3555,7 +3659,8 @@
       "id": "surface_mud",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3837,7 +3942,8 @@
       "id": "bridge-motorway-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3868,7 +3974,8 @@
       "id": "bridge-link-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3899,7 +4006,8 @@
       "id": "bridge-secondary-tertiary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3930,7 +4038,8 @@
       "id": "bridge-trunk-primary-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3960,7 +4069,8 @@
       "id": "bridge-motorway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3998,7 +4108,8 @@
       "id": "bridge-minor-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4035,7 +4146,8 @@
       "id": "bridge-path/track/cw/fw-railings",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4060,7 +4172,8 @@
       "id": "bridge-path/track/cw/fw-floor",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4085,7 +4198,8 @@
       "id": "bridge-path-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4172,7 +4286,8 @@
       "id": "bridge-track-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4222,7 +4337,8 @@
       "id": "bridge-path-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4277,7 +4393,8 @@
       "id": "bridge-track-line",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4316,7 +4433,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for paved ways."
+        "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4359,7 +4477,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for unpaved ways."
+        "maputnik:comment": "Cycleway line for unpaved ways.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4411,7 +4530,8 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Cycleway line for ways with unknown surface."
+        "maputnik:comment": "Cycleway line for ways with unknown surface.",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4441,7 +4561,8 @@
       "id": "bridge-motorway-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4471,7 +4592,8 @@
       "id": "bridge-link",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4501,7 +4623,8 @@
       "id": "bridge-minor",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4532,7 +4655,8 @@
       "id": "bridge-secondary-tertiary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4561,7 +4685,8 @@
       "id": "bridge-trunk-primary",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4590,7 +4715,8 @@
       "id": "bridge-motorway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4619,7 +4745,8 @@
       "id": "bridge-railway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4640,7 +4767,8 @@
       "id": "bridge-railway-hatching",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849334699.1902"
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4759,7 +4887,7 @@
       "metadata": {
         "maputnik:comment": "P 22392 = Suurjannitelinjan pylvas"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "rakennelma",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22392],
@@ -4778,7 +4906,7 @@
       "metadata": {
         "maputnik:comment": "V 22312 = Sähkölinja (20 kV < 110 kV)"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "rakennelma",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22312],
@@ -4808,7 +4936,7 @@
       "metadata": {
         "maputnik:comment": "V 22311 = Sähkölinja (> 110 kV), V 22312 = Sähkölinja (20 kV < 110 kV)"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "rakennelma",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22311],
@@ -5044,6 +5172,9 @@
     {
       "id": "road_oneway",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 15,
@@ -5083,6 +5214,9 @@
     {
       "id": "road_oneway_opposite",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 15,
@@ -5126,7 +5260,7 @@
         "mapbox:group": "1444849388993.3071",
         "maputnik:comment": "32500 = Louhos; 32111-32113 = Maa-aineksen ottoalueet"
       },
-      "source": "taustakartta",
+      "source": "maastovektorikartta",
       "source-layer": "maankaytto",
       "filter": ["in", "kohdeluokka", 32500, 32111, 32112, 32113],
       "layout": {
@@ -5274,6 +5408,9 @@
     {
       "id": "hw-name-path",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 14,
@@ -5301,6 +5438,9 @@
     {
       "id": "hw-name-path-mtb:name",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 14,
@@ -5328,6 +5468,9 @@
     {
       "id": "hw-name-minor",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 14,
@@ -5359,6 +5502,9 @@
     {
       "id": "hw-name-major",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 12.2,
@@ -5386,6 +5532,9 @@
     {
       "id": "hw-shield",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 8,
@@ -5417,6 +5566,9 @@
     {
       "id": "hw-shield-us-interstate",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 7,
@@ -5451,6 +5603,9 @@
     {
       "id": "hw-shield-us-other",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 9,
@@ -5484,6 +5639,9 @@
     {
       "id": "airport-label-major",
       "type": "symbol",
+      "metadata": {
+        "trailmap:ways_only": true
+      },
       "source": "openmaptiles",
       "source-layer": "aerodrome_label",
       "minzoom": 10,
@@ -5853,6 +6011,81 @@
         "text-halo-blur": 1,
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
+      }
+    },
+    {
+      "id": "bicycle-routes",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "bicycle"],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "red",
+        "line-dasharray": [1, 1],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "mtb-routes",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "mtb"],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [1, 1],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiking-routes",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "hiking"],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [1, 1],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
       }
     }
   ],
