@@ -75,6 +75,18 @@
       "tiles": [
         "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/taustakartta/default/WGS84_Pseudo-Mercator/{z}/{y}/{x}.png?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
       ]
+    },
+    "lipas-reitit": {
+      "type": "vector",
+      "url": "https://tiles.trailmap.fi/data/lipas-reitit.json"
+    },
+    "lipas-pisteet": {
+      "type": "vector",
+      "url": "https://tiles.trailmap.fi/data/lipas-pisteet.json"
+    },
+    "lipas-alueet": {
+      "type": "vector",
+      "url": "https://tiles.trailmap.fi/data/lipas-alueet.json"
     }
   },
   "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
@@ -6039,6 +6051,31 @@
       }
     },
     {
+      "id": "bicycle-routes-lipas",
+      "type": "line",
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4412],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "red",
+        "line-dasharray": [3, 3],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
       "id": "mtb-routes",
       "type": "line",
       "source": "openmaptiles",
@@ -6064,6 +6101,31 @@
       }
     },
     {
+      "id": "mtb-routes-lipas",
+      "type": "line",
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4411],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [3, 3],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
       "id": "hiking-routes",
       "type": "line",
       "source": "openmaptiles",
@@ -6077,6 +6139,31 @@
       "paint": {
         "line-color": "blue",
         "line-dasharray": [1, 1],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiking-routes-lipas",
+      "type": "line",
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["in", "tyyppikood", 4405, 4404, 4403],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [3, 3],
         "line-opacity": 0.5,
         "line-width": {
           "base": 1,
