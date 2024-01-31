@@ -6155,7 +6155,32 @@
       "type": "line",
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
-      "filter": ["in", "tyyppikood", 4405, 4404, 4403],
+      "filter": ["in", "tyyppikood", 4405],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [3, 3],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "walking-routes-lipas",
+      "type": "line",
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["in", "tyyppikood", 4404, 4403],
       "layout": {
         "line-cap": "round",
         "line-join": "round",
