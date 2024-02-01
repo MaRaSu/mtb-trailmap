@@ -256,6 +256,22 @@
       }
     },
     {
+      "id": "parking_area-fill",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071"
+      },
+      "source": "openmaptiles",
+      "source-layer": "landuse_ext",
+      "minzoom": 12,
+      "filter": ["==", "class", "parking"],
+      "paint": {
+        "fill-color": "#e6e6e6",
+        "fill-opacity": 1,
+        "fill-outline-color": "#d2d2d2"
+      }
+    },
+    {
       "id": "landcover-wood",
       "type": "fill",
       "metadata": {
