@@ -4929,7 +4929,7 @@
         "line-opacity": {
           "stops": [
             [14, 0],
-            [14.5, 0.8]
+            [14.5, 0.6]
           ]
         },
         "line-width": {
@@ -4959,7 +4959,7 @@
         "line-opacity": {
           "stops": [
             [11, 0],
-            [13, 0.8]
+            [13, 0.6]
           ]
         },
         "line-width": {
@@ -5682,7 +5682,8 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "maputnik:comment": ""
+        "maputnik:comment": "",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
@@ -5717,7 +5718,8 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "maputnik:comment": ""
+        "maputnik:comment": "",
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
