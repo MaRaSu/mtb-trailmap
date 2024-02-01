@@ -803,5 +803,26 @@
     "width": 64,
     "x": 576,
     "y": 640
+  },
+  "tm_noexit": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 320,
+    "y": 640
+  },
+  "tm_fixme-continue": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 256,
+    "y": 640
+  },
+  "tm_fixme-other": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 192,
+    "y": 640
   }
 }
