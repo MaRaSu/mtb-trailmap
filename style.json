@@ -4843,6 +4843,42 @@
       }
     },
     {
+      "id": "barrier-linetype",
+      "type": "line",
+      "metadata": {
+        "maputnik:comment": ""
+      },
+      "source": "openmaptiles",
+      "source-layer": "barrier_ext",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "class"], "hedge"],
+          "#8c9e83",
+          "#555555"
+        ],
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          ["case", ["==", ["get", "class"], "hedge"], 0.8, 0.4],
+          17,
+          ["case", ["==", ["get", "class"], "hedge"], 6, 1]
+        ]
+      }
+    },
+    {
       "id": "building",
       "type": "fill",
       "metadata": {
