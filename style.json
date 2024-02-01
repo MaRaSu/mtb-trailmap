@@ -3743,7 +3743,6 @@
         ]
       }
     },
-
     {
       "id": "railway-transit",
       "type": "line",
@@ -5676,6 +5675,71 @@
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
+      }
+    },
+    {
+      "id": "fixme-icons",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "maputnik:comment": ""
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "filter": ["==", "class", "fixme"],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "case",
+          ["==", ["get", "fixme"], "continue"],
+          "tm_fixme-continue",
+          "tm_fixme-other"
+        ],
+        "icon-size": {
+          "stops": [
+            [13, 0.25],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "noexit-icons",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "maputnik:comment": ""
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "filter": ["==", "class", "noexit"],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "tm_noexit",
+        "icon-size": {
+          "stops": [
+            [13, 0.25],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 0.75]
+          ]
+        }
       }
     },
     {
