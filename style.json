@@ -4640,8 +4640,62 @@
         "maputnik:comment": "Cycleway line for paved ways.",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "subclass", "cycleway"],
+        [
+          "in",
+          "surface_raw",
+          "paved",
+          "asphalt",
+          "concrete",
+          "paving_stones",
+          "sett",
+          "unhewn_cobblestone",
+          "cobblestone",
+          "bricks",
+          "wood"
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [17, 2.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-cw-gr-line-p",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4674,8 +4728,9 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 1.5],
-            [17, 2.5]
+            [12, 1.6],
+            [14, 2.0],
+            [17, 4]
           ]
         },
         "line-opacity": {
@@ -4694,8 +4749,71 @@
         "maputnik:comment": "Cycleway line for unpaved ways.",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "subclass", "cycleway"],
+        [
+          "in",
+          "surface_raw",
+          "unpaved",
+          "compacted",
+          "fine_gravel",
+          "gravel",
+          "shells",
+          "rock",
+          "pebblestone",
+          "ground",
+          "dirt",
+          "earth",
+          "grass",
+          "grass_paver",
+          "metal_grid",
+          "mud",
+          "sand",
+          "woodchips",
+          "snow",
+          "ice"
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [1, 0.8],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [17, 2.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-cw-gr-line-up",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway line for unpaved ways.",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4733,12 +4851,13 @@
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [1, 0.8],
+        "line-dasharray": [0.8, 0.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 1.5],
-            [17, 2.5]
+            [12, 1.6],
+            [14, 2.2],
+            [17, 4.0]
           ]
         },
         "line-opacity": {
@@ -4757,8 +4876,50 @@
         "maputnik:comment": "Cycleway line for ways with unknown surface.",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "subclass", "cycleway"],
+        ["!has", "surface_raw"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [2.5, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [17, 2.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-cw-gr-line-uk",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway line for ways with unknown surface.",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4779,8 +4940,9 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 1.5],
-            [17, 2.5]
+            [12, 1.6],
+            [14, 2.2],
+            [17, 4.0]
           ]
         },
         "line-opacity": {
