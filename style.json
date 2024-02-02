@@ -462,6 +462,27 @@
         "mapbox:group": "1444849388993.3071",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 39110],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
+      }
+    },
+    {
+      "id": "landcover-scrub_mml-nowoods",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
@@ -469,12 +490,36 @@
       "source-layer": "maasto_alue",
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 39110],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub"
+      }
+    },
+    {
+      "id": "landcover-scrub_osm",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "minzoom": 11,
+      "filter": ["==", "subclass", "scrub"],
+      "layout": {
+        "visibility": "none"
+      },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
       }
     },
     {
-      "id": "landcover-scrub_osm",
+      "id": "landcover-scrub_osm-nowoods",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
@@ -487,12 +532,58 @@
       "source-layer": "landcover",
       "minzoom": 11,
       "filter": ["==", "subclass", "scrub"],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
-        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
+        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub"
       }
     },
     {
       "id": "landcover-wetland",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849382550.77",
+        "maputnik:comment": "35300 = Soistuma; 35411 = Suo, helppokulkuinen puuton; 35412 = Suo, helppokulkuinen metsää kasvava; 35421 = Suo, vaikeakulkuinen puuton; 35422 = Suo, vaikeakulkuinen metsää kasvava",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": [
+        "any",
+        ["==", "kohdeluokka", 35300],
+        ["==", "kohdeluokka", 35411],
+        ["==", "kohdeluokka", 35412],
+        ["==", "kohdeluokka", 35421],
+        ["==", "kohdeluokka", 35422]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-pattern": [
+          "case",
+          ["==", ["get", "kohdeluokka"], 35300],
+          "tm_vihr_mml_35300_soistuma",
+          ["==", ["get", "kohdeluokka"], 35411],
+          "tm_vihr_mml_35411_suo_helppokulkuinen_puuton",
+          ["==", ["get", "kohdeluokka"], 35412],
+          "tm_vihr_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
+          ["==", ["get", "kohdeluokka"], 35421],
+          "tm_vihr_mml_35421_suo_vaikeakulkuinen_puuton",
+          ["==", ["get", "kohdeluokka"], 35422],
+          "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
+          "tm_vihr_mml_35300_soistuma"
+        ],
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "landcover-wetland-nowoods",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
@@ -520,16 +611,16 @@
         "fill-pattern": [
           "case",
           ["==", ["get", "kohdeluokka"], 35300],
-          "tm_vihr_mml_35300_soistuma",
+          "tm_valk_mml_35300_soistuma",
           ["==", ["get", "kohdeluokka"], 35411],
-          "tm_vihr_mml_35411_suo_helppokulkuinen_puuton",
+          "tm_valk_mml_35411_suo_helppokulkuinen_puuton",
           ["==", ["get", "kohdeluokka"], 35412],
-          "tm_vihr_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
+          "tm_valk_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
           ["==", ["get", "kohdeluokka"], 35421],
-          "tm_vihr_mml_35421_suo_vaikeakulkuinen_puuton",
+          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
           ["==", ["get", "kohdeluokka"], 35422],
-          "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          "tm_vihr_mml_35300_soistuma"
+          "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
+          "tm_valk_mml_35300_soistuma"
         ],
         "fill-opacity": 1
       }
@@ -986,7 +1077,7 @@
       "minzoom": 9,
       "maxzoom": 20,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -1092,7 +1183,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
