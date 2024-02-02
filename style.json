@@ -239,7 +239,7 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "hospital"],
       "paint": {
-        "fill-color": "#fde"
+        "fill-color": "#ffebf5"
       }
     },
     {
@@ -2569,7 +2569,7 @@
             [17, 9]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.3]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.5]
       }
     },
     {
@@ -2900,8 +2900,50 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["!in", "subclass", "cycleway", "footway"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.5],
+            [14, 1],
+            [17, 3.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-track-gr-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2922,9 +2964,9 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 0.5],
-            [14, 1],
-            [17, 3.5]
+            [10, 0.8],
+            [14, 1.6],
+            [17, 4.5]
           ]
         },
         "line-opacity": {
