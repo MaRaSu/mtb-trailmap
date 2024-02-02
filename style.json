@@ -2655,8 +2655,6 @@
             1,
             ["==", ["get", "width_cat"], "c"],
             1.8,
-            ["==", ["get", "width_cat"], "d"],
-            1.8,
             1
           ],
           16,
@@ -2667,8 +2665,6 @@
             ["==", ["get", "width_cat"], "b"],
             1.8,
             ["==", ["get", "width_cat"], "c"],
-            3,
-            ["==", ["get", "width_cat"], "d"],
             3,
             1
           ],
@@ -2681,7 +2677,75 @@
             2,
             ["==", ["get", "width_cat"], "c"],
             3.5,
-            ["==", ["get", "width_cat"], "d"],
+            2
+          ]
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 1]
+      }
+    },
+    {
+      "id": "hw-path-gr-line-bv",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "tunnel"],
+        ["==", "class", "path"],
+        ["!in", "width_cat", "d"],
+        ["!in", "subclass", "cycleway", "footway", "pedestrian", "steps"],
+        ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [0.8, 1.5],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            0.8,
+            ["==", ["get", "width_cat"], "b"],
+            1,
+            ["==", ["get", "width_cat"], "c"],
+            1.8,
+            1
+          ],
+          16,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            1.8,
+            ["==", ["get", "width_cat"], "c"],
+            3,
+            1
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            2,
+            ["==", ["get", "width_cat"], "c"],
             3.5,
             2
           ]
@@ -2731,8 +2795,6 @@
             1,
             ["==", ["get", "width_cat"], "c"],
             1.8,
-            ["==", ["get", "width_cat"], "d"],
-            1.8,
             1
           ],
           16,
@@ -2744,8 +2806,6 @@
             1.8,
             ["==", ["get", "width_cat"], "c"],
             3,
-            ["==", ["get", "width_cat"], "d"],
-            3,
             1
           ],
           17,
@@ -2756,8 +2816,6 @@
             ["==", ["get", "width_cat"], "b"],
             2,
             ["==", ["get", "width_cat"], "c"],
-            3.5,
-            ["==", ["get", "width_cat"], "d"],
             3.5,
             2
           ]
@@ -4990,6 +5048,7 @@
         ["==", "$type", "LineString"],
         ["==", "brunnel", "bridge"],
         ["==", "class", "path"],
+        ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway", "footway", "steps"],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
@@ -5012,8 +5071,6 @@
             1,
             ["==", ["get", "width_cat"], "c"],
             1.5,
-            ["==", ["get", "width_cat"], "d"],
-            1.5,
             1.5
           ],
           17,
@@ -5024,8 +5081,6 @@
             ["==", ["get", "width_cat"], "b"],
             2,
             ["==", ["get", "width_cat"], "c"],
-            3,
-            ["==", ["get", "width_cat"], "d"],
             3,
             2
           ]
