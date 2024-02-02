@@ -2735,7 +2735,7 @@
             ["==", ["get", "width_cat"], "b"],
             1.2,
             ["==", ["get", "width_cat"], "c"],
-            2,
+            1.6,
             1.2
           ],
           17,
@@ -2744,13 +2744,13 @@
             ["==", ["get", "width_cat"], "a"],
             1,
             ["==", ["get", "width_cat"], "b"],
-            2,
+            1.6,
             ["==", ["get", "width_cat"], "c"],
-            3.5,
+            2.4,
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 0.8]
       }
     },
     {
@@ -2875,7 +2875,7 @@
             ["==", ["get", "width_cat"], "b"],
             1.2,
             ["==", ["get", "width_cat"], "c"],
-            2,
+            1.6,
             1.2
           ],
           17,
@@ -2884,13 +2884,13 @@
             ["==", ["get", "width_cat"], "a"],
             1,
             ["==", ["get", "width_cat"], "b"],
-            2,
+            1.6,
             ["==", ["get", "width_cat"], "c"],
-            3.5,
+            2.4,
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 0.8]
       }
     },
     {
@@ -3446,7 +3446,7 @@
         "line-color": [
           "case",
           ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
+          "#7e580e",
           "#5e5e5e"
         ],
         "line-width": {
@@ -3454,7 +3454,7 @@
           "stops": [
             [10, 2.2],
             [12, 2.7],
-            [14, 4],
+            [14, 4.2],
             [20, 13]
           ]
         },
