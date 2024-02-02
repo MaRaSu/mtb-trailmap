@@ -95,6 +95,12 @@
     {
       "id": "background",
       "type": "background",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "paint": {
         "background-color": "#f8f4f0"
       }
@@ -103,7 +109,11 @@
       "id": "landcover-glacier",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -126,7 +136,11 @@
       "id": "landuse-residential",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -151,7 +165,11 @@
       "id": "landuse-commercial",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -170,6 +188,12 @@
     {
       "id": "landuse-industrial",
       "type": "fill",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": [
@@ -188,7 +212,11 @@
       "id": "landuse-cemetery",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -201,7 +229,11 @@
       "id": "landuse-hospital",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -214,7 +246,11 @@
       "id": "landuse-school",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -227,7 +263,11 @@
       "id": "landuse-railway",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -243,7 +283,11 @@
       "id": "landuse-quarry",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
@@ -259,7 +303,11 @@
       "id": "parking_area-fill",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse_ext",
@@ -275,7 +323,11 @@
       "id": "landcover-wood",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -286,7 +338,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": {
@@ -305,7 +357,11 @@
       "id": "landcover-grass",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -319,7 +375,11 @@
       "id": "landcover-grass-park",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -333,7 +393,11 @@
       "id": "landcover-allotments",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -347,7 +411,11 @@
       "id": "landcover-ice-shelf",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -370,7 +438,11 @@
       "id": "landcover-sand",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -387,7 +459,11 @@
       "id": "landcover-scrub_mml",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
@@ -401,7 +477,11 @@
       "id": "landcover-scrub_osm",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -416,7 +496,11 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "maputnik:comment": "35300 = Soistuma; 35411 = Suo, helppokulkuinen puuton; 35412 = Suo, helppokulkuinen metsää kasvava; 35421 = Suo, vaikeakulkuinen puuton; 35422 = Suo, vaikeakulkuinen metsää kasvava"
+        "maputnik:comment": "35300 = Soistuma; 35411 = Suo, helppokulkuinen puuton; 35412 = Suo, helppokulkuinen metsää kasvava; 35421 = Suo, vaikeakulkuinen puuton; 35422 = Suo, vaikeakulkuinen metsää kasvava",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
@@ -455,7 +539,11 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "maputnik:comment": "34100 = kallio"
+        "maputnik:comment": "34100 = kallio",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
@@ -474,7 +562,11 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "maputnik:comment": "32611 = pelto"
+        "maputnik:comment": "32611 = pelto",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
@@ -497,7 +589,11 @@
       "id": "landuse-pitch_track",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -519,6 +615,12 @@
     {
       "id": "waterway_tunnel",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "waterway",
       "minzoom": 14,
@@ -547,7 +649,11 @@
       "id": "waterway-other",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -575,7 +681,11 @@
       "id": "waterway-other-intermittent",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -604,7 +714,11 @@
       "id": "waterway-ditch",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "vesisto_viiva",
@@ -636,7 +750,11 @@
       "id": "waterway-stream-canal",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -665,7 +783,11 @@
       "id": "waterway-stream-canal-intermittent",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -695,7 +817,11 @@
       "id": "waterway-river",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -724,7 +850,11 @@
       "id": "waterway-river-intermittent",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
@@ -754,7 +884,11 @@
       "id": "water-offset",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -779,7 +913,11 @@
       "id": "water",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -795,7 +933,11 @@
       "id": "water-intermittent",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -812,7 +954,11 @@
       "id": "water-pattern",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849382550.77"
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -829,6 +975,12 @@
     {
       "id": "contours-line",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
       "minzoom": 9,
@@ -859,7 +1011,11 @@
       "id": "cliffs-line",
       "type": "line",
       "metadata": {
-        "maputnik:comment": "34400 = jyrkänne"
+        "maputnik:comment": "34400 = jyrkänne",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_viiva",
@@ -888,7 +1044,11 @@
       "id": "cliffs-dashes",
       "type": "line",
       "metadata": {
-        "maputnik:comment": "34400 = jyrkänne"
+        "maputnik:comment": "34400 = jyrkänne",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_viiva",
@@ -923,6 +1083,12 @@
     {
       "id": "hillshading",
       "type": "raster",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
@@ -942,6 +1108,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -972,6 +1141,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1005,6 +1177,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1038,6 +1213,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1071,6 +1249,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1102,6 +1283,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1133,6 +1317,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1166,6 +1353,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1193,6 +1383,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1225,6 +1418,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1254,6 +1450,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1285,6 +1484,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1311,6 +1513,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1341,6 +1546,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1371,6 +1579,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1402,6 +1613,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1424,6 +1638,9 @@
       "id": "ferry",
       "type": "line",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1450,7 +1667,11 @@
       "id": "protected_area-fill",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -1472,7 +1693,11 @@
       "id": "protected_area-outline",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -1493,7 +1718,11 @@
       "id": "military_area-fill",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -1519,7 +1748,11 @@
       "id": "military_area-outline",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849388993.3071"
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -1544,6 +1777,12 @@
     {
       "id": "protected_area-name",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "park",
       "minzoom": 12,
@@ -1574,7 +1813,11 @@
       "id": "aeroway-taxiway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -1601,7 +1844,11 @@
       "id": "aeroway-runway-case",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -1628,7 +1875,11 @@
       "id": "aeroway-area",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -1656,7 +1907,11 @@
       "id": "aeroway-taxiway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -1693,7 +1948,11 @@
       "id": "aeroway-runway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -1729,7 +1988,12 @@
     {
       "id": "road_area_pier",
       "type": "fill",
-      "metadata": {},
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
@@ -1744,7 +2008,12 @@
     {
       "id": "road_pier",
       "type": "line",
-      "metadata": {},
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "$type", "LineString"], ["in", "class", "pier"]],
@@ -1766,6 +2035,12 @@
     {
       "id": "alt_base_ortho",
       "type": "raster",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "ilmakuva",
       "maxzoom": 16,
       "layout": {
@@ -1775,6 +2050,12 @@
     {
       "id": "alt_base_ortho2",
       "type": "raster",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "ilmakuva2",
       "minzoom": 16,
       "layout": {
@@ -1784,6 +2065,12 @@
     {
       "id": "alt_base_simple",
       "type": "raster",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "taustakartta",
       "layout": {
         "visibility": "none"
@@ -1794,6 +2081,9 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1814,6 +2104,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1902,6 +2195,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -1983,7 +2279,103 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "path"],
+        ["!in", "subclass", "cycleway", "footway"],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "mtb_scale"], "0-"],
+          "#8BD7AE",
+          ["==", ["get", "mtb_scale"], "0"],
+          "#75E009",
+          ["==", ["get", "mtb_scale"], "1"],
+          "#E3E800",
+          ["==", ["get", "mtb_scale"], "2"],
+          "#FEB13E",
+          ["==", ["get", "mtb_scale"], "3"],
+          "#FF6774",
+          ["==", ["get", "mtb_scale"], "4"],
+          "#F20BAB",
+          ["==", ["get", "mtb_scale"], "5"],
+          "#BF1CF5",
+          ["==", ["get", "mtb_scale"], "6"],
+          "#8100AC",
+          "#FFFFFF"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1,
+            ["==", ["get", "width_cat"], "b"],
+            1.5,
+            ["==", ["get", "width_cat"], "c"],
+            2,
+            ["==", ["get", "width_cat"], "d"],
+            2,
+            1.5
+          ],
+          14,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            1.3,
+            ["==", ["get", "width_cat"], "b"],
+            2,
+            ["==", ["get", "width_cat"], "c"],
+            3,
+            ["==", ["get", "width_cat"], "d"],
+            3,
+            2.5
+          ],
+          17,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            3,
+            ["==", ["get", "width_cat"], "b"],
+            6,
+            ["==", ["get", "width_cat"], "c"],
+            9,
+            ["==", ["get", "width_cat"], "d"],
+            9,
+            6
+          ]
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+      }
+    },
+    {
+      "id": "hw-path-gr-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2065,7 +2457,7 @@
             6
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.25]
       }
     },
     {
@@ -2073,7 +2465,66 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "track"],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "mtb_scale"], "0-"],
+          "#8BD7AE",
+          ["in", ["get", "mtb_scale"], "0"],
+          "#75E009",
+          ["==", ["get", "mtb_scale"], "1"],
+          "#E3E800",
+          ["==", ["get", "mtb_scale"], "2"],
+          "#FEB13E",
+          ["==", ["get", "mtb_scale"], "3"],
+          "#FF6774",
+          ["==", ["get", "mtb_scale"], "4"],
+          "#F20BAB",
+          ["==", ["get", "mtb_scale"], "5"],
+          "#BF1CF5",
+          ["==", ["get", "mtb_scale"], "6"],
+          "#8100AC",
+          "#000000"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+      }
+    },
+    {
+      "id": "hw-track-gr-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2118,7 +2569,7 @@
             [17, 9]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 0.25]
       }
     },
     {
@@ -2126,6 +2577,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2165,6 +2619,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2238,6 +2695,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2310,6 +2770,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2350,6 +2813,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for footways without mtb:scale.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2390,6 +2856,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Footway marked on highway=[road], left side",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2436,6 +2905,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Footway marked on highway=[road], right side",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2482,6 +2954,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Steps.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2514,6 +2989,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2548,6 +3026,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2583,6 +3064,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2627,6 +3111,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2672,6 +3159,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2716,6 +3206,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2760,6 +3253,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2802,6 +3298,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2840,6 +3339,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2880,6 +3382,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2929,6 +3434,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2979,6 +3487,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3012,6 +3523,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3046,6 +3560,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3090,6 +3607,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3135,6 +3655,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3178,6 +3701,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3222,6 +3748,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3260,6 +3789,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3293,6 +3825,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3332,6 +3867,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3373,6 +3911,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway marked on highway=[road], left side",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3418,6 +3959,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway marked on highway=[road], right side",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3463,6 +4007,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3514,6 +4061,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for unpaved ways.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3574,6 +4124,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for ways with unknown surface.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3612,6 +4165,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3688,6 +4244,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -3763,7 +4322,11 @@
       "id": "railway-transit",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3798,7 +4361,11 @@
       "id": "railway-transit-hatching",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3834,7 +4401,11 @@
       "id": "railway-service",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3866,7 +4437,11 @@
       "id": "railway-service-hatching",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3902,7 +4477,11 @@
       "id": "railway",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3935,7 +4514,11 @@
       "id": "railway-hatching",
       "type": "line",
       "metadata": {
-        "mapbox:group": "1444849345966.4436"
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3970,6 +4553,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4002,6 +4588,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4034,6 +4623,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4066,6 +4658,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4097,6 +4692,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4136,6 +4734,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4174,6 +4775,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4200,6 +4804,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4226,6 +4833,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4314,6 +4924,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4365,6 +4978,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4421,6 +5037,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4461,6 +5080,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4505,6 +5127,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for unpaved ways.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4558,6 +5183,9 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway line for ways with unknown surface.",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4589,6 +5217,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4620,6 +5251,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4651,6 +5285,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4683,6 +5320,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4713,6 +5353,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4743,6 +5386,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4773,6 +5419,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4795,6 +5444,9 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4816,6 +5468,12 @@
     {
       "id": "cablecar",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 13,
@@ -4838,6 +5496,12 @@
     {
       "id": "cablecar-dash",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "transportation",
       "minzoom": 13,
@@ -4862,7 +5526,11 @@
       "id": "barrier-linetype",
       "type": "line",
       "metadata": {
-        "maputnik:comment": ""
+        "maputnik:comment": "",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "barrier_ext",
@@ -4898,7 +5566,11 @@
       "id": "building",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849364238.8171"
+        "mapbox:group": "1444849364238.8171",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "building",
@@ -4918,7 +5590,11 @@
       "id": "building-top",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849364238.8171"
+        "mapbox:group": "1444849364238.8171",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "building",
@@ -4948,7 +5624,11 @@
       "id": "power-pylon",
       "type": "symbol",
       "metadata": {
-        "maputnik:comment": "P 22392 = Suurjannitelinjan pylvas"
+        "maputnik:comment": "P 22392 = Suurjannitelinjan pylvas",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "rakennelma",
@@ -4967,7 +5647,11 @@
       "id": "power-line-minor",
       "type": "line",
       "metadata": {
-        "maputnik:comment": "V 22312 = Sähkölinja (20 kV < 110 kV)"
+        "maputnik:comment": "V 22312 = Sähkölinja (20 kV < 110 kV)",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "rakennelma",
@@ -4997,7 +5681,11 @@
       "id": "power-line-major",
       "type": "line",
       "metadata": {
-        "maputnik:comment": "V 22311 = Sähkölinja (> 110 kV), V 22312 = Sähkölinja (20 kV < 110 kV)"
+        "maputnik:comment": "V 22311 = Sähkölinja (> 110 kV), V 22312 = Sähkölinja (20 kV < 110 kV)",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "rakennelma",
@@ -5026,6 +5714,12 @@
     {
       "id": "boundary-land-level-4",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "boundary",
       "minzoom": 2,
@@ -5055,6 +5749,12 @@
     {
       "id": "boundary-land-level-2",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "boundary",
       "filter": [
@@ -5084,6 +5784,12 @@
     {
       "id": "boundary-land-disputed",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "boundary",
       "filter": ["all", ["!=", "maritime", 1], ["==", "disputed", 1]],
@@ -5109,6 +5815,12 @@
     {
       "id": "boundary-water",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "boundary",
       "minzoom": 4,
@@ -5140,6 +5852,12 @@
     {
       "id": "waterway-name",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "waterway",
       "minzoom": 13,
@@ -5163,6 +5881,12 @@
     {
       "id": "water-name-lakeline",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "water_name",
       "filter": ["==", "$type", "LineString"],
@@ -5185,6 +5909,12 @@
     {
       "id": "water-name-ocean",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "water_name",
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "ocean"]],
@@ -5207,6 +5937,12 @@
     {
       "id": "water-name-other",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "water_name",
       "filter": ["all", ["==", "$type", "Point"], ["!in", "class", "ocean"]],
@@ -5236,6 +5972,9 @@
       "id": "road_oneway",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5278,6 +6017,9 @@
       "id": "road_oneway_opposite",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5321,7 +6063,11 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "maputnik:comment": "32500 = Louhos; 32111-32113 = Maa-aineksen ottoalueet"
+        "maputnik:comment": "32500 = Louhos; 32111-32113 = Maa-aineksen ottoalueet",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
@@ -5343,6 +6089,12 @@
     {
       "id": "poi-level-3",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "poi",
       "minzoom": 16,
@@ -5373,6 +6125,12 @@
     {
       "id": "poi-level-2",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "poi",
       "minzoom": 15,
@@ -5404,6 +6162,12 @@
     {
       "id": "poi-level-1",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "poi",
       "minzoom": 14,
@@ -5435,6 +6199,12 @@
     {
       "id": "poi-railway",
       "type": "symbol",
+      "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "poi",
       "minzoom": 13,
@@ -5472,6 +6242,9 @@
       "id": "hw-name-path",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5502,6 +6275,9 @@
       "id": "hw-name-path-mtb:name",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5532,6 +6308,9 @@
       "id": "hw-name-minor",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5566,6 +6345,9 @@
       "id": "hw-name-major",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5596,6 +6378,9 @@
       "id": "hw-shield",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5630,6 +6415,9 @@
       "id": "hw-shield-us-interstate",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5667,6 +6455,9 @@
       "id": "hw-shield-us-other",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5703,6 +6494,9 @@
       "id": "airport-label-major",
       "type": "symbol",
       "metadata": {
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5735,6 +6529,9 @@
       "metadata": {
         "mapbox:group": "1444849388993.3071",
         "maputnik:comment": "",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5771,6 +6568,9 @@
       "metadata": {
         "mapbox:group": "1444849388993.3071",
         "maputnik:comment": "",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5800,7 +6600,11 @@
       "id": "place-other",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5840,7 +6644,11 @@
       "id": "place-village",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5868,7 +6676,11 @@
       "id": "place-town",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5896,7 +6708,11 @@
       "id": "place-city",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5924,7 +6740,11 @@
       "id": "place-city-capital",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5956,7 +6776,11 @@
       "id": "place-state",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -5986,7 +6810,11 @@
       "id": "place-country-other",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -6020,7 +6848,11 @@
       "id": "place-country-3",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -6054,7 +6886,11 @@
       "id": "place-country-2",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -6088,7 +6924,11 @@
       "id": "place-country-1",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -6122,7 +6962,11 @@
       "id": "place-continent",
       "type": "symbol",
       "metadata": {
-        "mapbox:group": "1444849242106.713"
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb" : true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "place",
@@ -6146,6 +6990,12 @@
     {
       "id": "bicycle-routes",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "route_ext",
       "filter": ["==", "route", "bicycle"],
@@ -6171,6 +7021,12 @@
     {
       "id": "bicycle-routes-lipas",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4412],
@@ -6196,6 +7052,12 @@
     {
       "id": "mtb-routes",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "route_ext",
       "filter": ["==", "route", "mtb"],
@@ -6221,6 +7083,12 @@
     {
       "id": "mtb-routes-lipas",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4411],
@@ -6246,6 +7114,12 @@
     {
       "id": "hiking-routes",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "openmaptiles",
       "source-layer": "route_ext",
       "filter": ["==", "route", "hiking"],
@@ -6271,6 +7145,12 @@
     {
       "id": "hiking-routes-lipas",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
       "filter": ["in", "tyyppikood", 4405],
@@ -6296,6 +7176,12 @@
     {
       "id": "walking-routes-lipas",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb" : false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
       "filter": ["in", "tyyppikood", 4404, 4403],
