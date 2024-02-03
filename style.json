@@ -5492,7 +5492,7 @@
         "mapbox:group": "1444849334699.1902",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5504,10 +5504,52 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 1],
+            [13, 3],
+            [14, 4],
+            [20, 19]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-link-gr-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#7e580e",
+          "#5e5e5e"
+        ],
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -5527,7 +5569,7 @@
         "mapbox:group": "1444849334699.1902",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5539,7 +5581,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -5556,13 +5599,54 @@
       }
     },
     {
+      "id": "bridge-secondary-tertiary-gr-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary", "tertiary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#926d24",
+          "#5e5e5e"
+        ],
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [7, 0.6],
+            [8, 1.8],
+            [20, 22]
+          ]
+        }
+      }
+    },
+    {
       "id": "bridge-trunk-primary-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5574,10 +5658,51 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "hsl(28, 76%, 67%)",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [20, 26]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-trunk-primary-gr-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "primary", "trunk"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#926d24",
+          "#5e5e5e"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5638,7 +5763,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -5651,7 +5776,8 @@
       ],
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -6152,7 +6278,7 @@
         "mapbox:group": "1444849334699.1902",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -6164,10 +6290,51 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12.5, 0],
+            [13, 1.5],
+            [14, 2.5],
+            [20, 11.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-link-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#EDDFCA",
+          "#FFFFFF"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -6221,7 +6388,7 @@
         "mapbox:group": "1444849334699.1902",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -6233,7 +6400,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
@@ -6243,6 +6411,45 @@
             [6.5, 0],
             [8, 0.5],
             [20, 13]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-tertiary-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary", "tertiary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#EDDFCA",
+          "#FFFFFF"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [20, 12]
           ]
         }
       }
@@ -6266,10 +6473,50 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-trunk-primary-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "primary", "trunk"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#EDDFCA",
+          "#FFFFFF"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
