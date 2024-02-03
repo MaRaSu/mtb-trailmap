@@ -8434,16 +8434,16 @@
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
-      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "minzoom": 8,
+      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
           "stops": [
-            [10, 8],
-            [17, 36]
+            [10, 9],
+            [17, 22]
           ]
         },
         "circle-opacity": {
@@ -8480,6 +8480,132 @@
           "lipas_wilderness_hut",
           ["==", ["get", "tyyppikood"], 304],
           "lipas_wilderness_hut",
+          "blank"
+        ],
+        "icon-size": {
+          "stops": [
+            [10, 0.4],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "POI-LIPAS-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["in", "tyyppikood", 204, 301, 302, 304],
+        ["has", "nimi_fi"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{nimi_fi}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [17, 13]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 14]],
+            [17, [0, 22]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "POI-OSM-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 8,
+      "filter": ["in", "subclass", "viewpoint", "shelter", "wilderness_hut"],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [10, 9],
+            [17, 22]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        },
+        "circle-color": "#93dc13"
+      }
+    },
+    {
+      "id": "POI-OSM-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 8,
+      "layout": {
+        "visibility": "none",
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "case",
+          ["==", ["get", "subclass"], "viewpoint"],
+          "osm_viewpoint",
+          ["==", ["get", "subclass"], "shelter"],
+          "osm_shelter",
+          ["==", ["get", "subclass"], "wilderness_hut"],
+          "osm_wilderness_hut",
           "blank"
         ],
         "icon-size": {
