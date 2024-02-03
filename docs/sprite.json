@@ -845,5 +845,12 @@
     "width": 32,
     "x": 0,
     "y": 224
+  },
+  "blank": {
+    "height": 0,
+    "pixelRatio": 1,
+    "width": 0,
+    "x": 0,
+    "y": 0
   }
 }

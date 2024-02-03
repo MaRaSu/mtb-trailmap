@@ -8447,14 +8447,12 @@
           "lipas_wilderness_hut",
           ["==", ["get", "tyyppikood"], 304],
           "lipas_wilderness_hut",
-          ["==", ["get", "tyyppikood"], 35422],
-          "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "icon-size": 1.0
+        "icon-size": 0.5
       },
       "paint": {
-        "icon-opacity": 0.5
+        "icon-opacity": 1.0
       }
     }
   ],
