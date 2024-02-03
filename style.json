@@ -8424,6 +8424,38 @@
       }
     },
     {
+      "id": "POI-LIPAS-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [10, 8],
+            [17, 36]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        },
+        "circle-color": "#ea7800"
+      }
+    },
+    {
       "id": "POI-LIPAS-icons",
       "type": "symbol",
       "metadata": {
@@ -8434,9 +8466,10 @@
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
-      "minzoom": 11,
+      "minzoom": 8,
       "layout": {
         "visibility": "visible",
+        "icon-allow-overlap": true,
         "icon-image": [
           "case",
           ["==", ["get", "tyyppikood"], 204],
@@ -8447,12 +8480,22 @@
           "lipas_wilderness_hut",
           ["==", ["get", "tyyppikood"], 304],
           "lipas_wilderness_hut",
-          "tm_vihr_mml_35300_soistuma"
+          "blank"
         ],
-        "icon-size": 0.5
+        "icon-size": {
+          "stops": [
+            [10, 0.4],
+            [17, 1]
+          ]
+        }
       },
       "paint": {
-        "icon-opacity": 1.0
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
       }
     }
   ],
