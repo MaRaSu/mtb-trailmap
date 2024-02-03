@@ -365,10 +365,16 @@
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
+      "minzoom": 9,
       "filter": ["all", ["==", "class", "grass"], ["!=", "subclass", "scrub"]],
       "paint": {
         "fill-color": "#e5f4d5",
-        "fill-opacity": 1
+        "fill-opacity": {
+          "stops": [
+            [9, 0],
+            [10, 1]
+          ]
+        }
       }
     },
     {
@@ -1766,6 +1772,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "park",
+      "minzoom": 8,
       "filter": ["in", "class", "protected_area", "nature_reserve"],
       "paint": {
         "fill-antialias": {
@@ -1776,7 +1783,12 @@
           ]
         },
         "fill-color": "#7BA36C",
-        "fill-opacity": 0.2,
+        "fill-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 0.2]
+          ]
+        },
         "fill-outline-color": "#7BA36C"
       }
     },
@@ -1792,10 +1804,16 @@
       },
       "source": "openmaptiles",
       "source-layer": "park",
+      "minzoom": 8,
       "filter": ["in", "class", "protected_area", "nature_reserve"],
       "paint": {
         "line-color": "#7BA36C",
-        "line-opacity": 0.3,
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 0.3]
+          ]
+        },
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2514,12 +2532,12 @@
             ["==", ["get", "width_cat"], "a"],
             0.7,
             ["==", ["get", "width_cat"], "b"],
-            1.0,
+            1,
             ["==", ["get", "width_cat"], "c"],
             1.7,
             ["==", ["get", "width_cat"], "d"],
             1.7,
-            1.0
+            1
           ],
           14,
           [
@@ -4820,7 +4838,7 @@
           "base": 1.2,
           "stops": [
             [12, 1.6],
-            [14, 2.0],
+            [14, 2],
             [17, 4]
           ]
         },
@@ -4948,7 +4966,7 @@
           "stops": [
             [12, 1.6],
             [14, 2.2],
-            [17, 4.0]
+            [17, 4]
           ]
         },
         "line-opacity": {
@@ -5033,7 +5051,7 @@
           "stops": [
             [12, 1.6],
             [14, 2.2],
-            [17, 4.0]
+            [17, 4]
           ]
         },
         "line-opacity": {
