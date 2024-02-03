@@ -479,7 +479,14 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
+        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
+        "fill-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5],
+            [14, 1]
+          ]
+        }
       }
     },
     {
@@ -500,7 +507,14 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub"
+        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
+        "fill-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5],
+            [14, 1]
+          ]
+        }
       }
     },
     {
@@ -521,7 +535,14 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub"
+        "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
+        "fill-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5],
+            [14, 1]
+          ]
+        }
       }
     },
     {
@@ -542,7 +563,14 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub"
+        "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
+        "fill-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5],
+            [14, 1]
+          ]
+        }
       }
     },
     {
@@ -677,7 +705,8 @@
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, 1]
+            [10, 0.5],
+            [14, 1]
           ]
         }
       }
