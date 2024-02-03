@@ -824,5 +824,26 @@
     "width": 32,
     "x": 96,
     "y": 320
+  },
+  "lipas_viewpoint": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 224
+  },
+  "lipas_shelter": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 160
+  },
+  "lipas_wilderness_hut": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 224
   }
 }

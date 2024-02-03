@@ -8422,6 +8422,40 @@
           ]
         }
       }
+    },
+    {
+      "id": "POI-LIPAS-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": [
+          "case",
+          ["==", ["get", "tyyppikood"], 204],
+          "lipas_viewpoint",
+          ["==", ["get", "tyyppikood"], 301],
+          "lipas_shelter",
+          ["==", ["get", "tyyppikood"], 302],
+          "lipas_wilderness_hut",
+          ["==", ["get", "tyyppikood"], 304],
+          "lipas_wilderness_hut",
+          ["==", ["get", "tyyppikood"], 35422],
+          "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
+          "tm_vihr_mml_35300_soistuma"
+        ],
+        "icon-size": 1.0
+      },
+      "paint": {
+        "icon-opacity": 0.5
+      }
     }
   ],
   "id": "bright"
