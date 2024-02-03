@@ -846,6 +846,27 @@
     "x": 0,
     "y": 224
   },
+  "osm_viewpoint": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 224
+  },
+  "osm_shelter": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 160
+  },
+  "osm_wilderness_hut": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 224
+  },
   "blank": {
     "height": 0,
     "pixelRatio": 1,
