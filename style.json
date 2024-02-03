@@ -8238,37 +8238,6 @@
       }
     },
     {
-      "id": "bicycle-routes-lipas",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4412],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "red",
-        "line-dasharray": [3, 3],
-        "line-opacity": 0.5,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [11, 1.5],
-            [14, 3],
-            [17, 9]
-          ]
-        }
-      }
-    },
-    {
       "id": "mtb-routes",
       "type": "line",
       "metadata": {
@@ -8288,37 +8257,6 @@
       "paint": {
         "line-color": "blue",
         "line-dasharray": [1, 1],
-        "line-opacity": 0.5,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [11, 1.5],
-            [14, 3],
-            [17, 9]
-          ]
-        }
-      }
-    },
-    {
-      "id": "mtb-routes-lipas",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4411],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "blue",
-        "line-dasharray": [3, 3],
         "line-opacity": 0.5,
         "line-width": {
           "base": 1,
@@ -8362,7 +8300,103 @@
       }
     },
     {
-      "id": "hiking-routes-lipas",
+      "id": "routes-LIPAS-bicycle",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4412],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "red",
+        "line-dasharray": [3, 3],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "routes-LIPAS-mtb-line",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4411],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "blue",
+        "line-dasharray": [3, 3],
+        "line-opacity": 0.5,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "routes-LIPAS-mtb-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4411],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 30,
+        "icon-allow-overlap": true,
+        "icon-image": "osm_viewpoint",
+        "icon-size": {
+          "stops": [
+            [10, 0.4],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "routes-LIPAS-hiking",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -8393,7 +8427,7 @@
       }
     },
     {
-      "id": "walking-routes-lipas",
+      "id": "routes-LIPAS-walking",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
