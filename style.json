@@ -338,7 +338,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": {
@@ -476,7 +476,7 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 39110],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -532,7 +532,7 @@
       "minzoom": 11,
       "filter": ["==", "subclass", "scrub"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -596,7 +596,7 @@
         ["==", "kohdeluokka", 35422]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": [
@@ -1112,7 +1112,7 @@
       "minzoom": 9,
       "maxzoom": 20,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -1218,7 +1218,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -2447,7 +2447,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2540,7 +2540,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2632,7 +2632,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2688,7 +2688,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2771,7 +2771,7 @@
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2787,7 +2787,7 @@
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -2857,7 +2857,7 @@
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -2911,7 +2911,7 @@
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -2927,7 +2927,7 @@
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -2979,10 +2979,10 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2997,7 +2997,7 @@
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3064,7 +3064,7 @@
         ["!in", "subclass", "cycleway", "footway"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -3106,7 +3106,7 @@
         ["!in", "subclass", "cycleway", "footway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3363,7 +3363,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -3401,7 +3401,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -3444,7 +3444,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -3509,7 +3509,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -3581,7 +3581,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7e580e",
@@ -3634,7 +3634,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7e580e",
@@ -3677,7 +3677,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -3726,7 +3726,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -3939,7 +3939,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -3980,7 +3980,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4052,7 +4052,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#dda06b",
@@ -4095,7 +4095,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4169,7 +4169,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -4221,7 +4221,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4384,7 +4384,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -4421,7 +4421,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4770,7 +4770,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -4811,7 +4811,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4888,7 +4888,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -4924,7 +4924,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4995,7 +4995,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -5037,7 +5037,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -5265,7 +5265,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5319,7 +5319,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5383,7 +5383,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5446,7 +5446,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5489,7 +5489,7 @@
         ["!has", "surface_raw"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5531,7 +5531,7 @@
         ["!has", "surface_raw"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -5995,7 +5995,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -6031,7 +6031,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -6072,7 +6072,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -6108,7 +6108,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -6149,7 +6149,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(28, 76%, 67%)",
@@ -6184,7 +6184,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -6267,7 +6267,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -6859,7 +6859,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -6934,7 +6934,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -6968,7 +6968,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -7007,7 +7007,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -8805,7 +8805,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#2376e7",
@@ -8841,7 +8841,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4411],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -8934,9 +8934,9 @@
       "id": "POI-LIPAS-circles",
       "type": "circle",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "lipas-pisteet",
@@ -8944,7 +8944,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": {
@@ -8966,16 +8966,16 @@
       "id": "POI-LIPAS-icons",
       "type": "symbol",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -9009,9 +9009,9 @@
       "id": "POI-LIPAS-labels",
       "type": "symbol",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "lipas-pisteet",
@@ -9023,7 +9023,7 @@
         ["has", "nimi_fi"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -9062,9 +9062,9 @@
       "id": "POI-OSM-circles",
       "type": "circle",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -9094,9 +9094,9 @@
       "id": "POI-OSM-icons",
       "type": "symbol",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
