@@ -8812,8 +8812,8 @@
         "line-opacity": {
           "base": 1,
           "stops": [
-            [10, 0.6],
-            [12, 0.3],
+            [10, 0.8],
+            [12, 0.6],
             [14, 0.2],
             [16, 0.2]
           ]
@@ -8843,7 +8843,13 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
-        "symbol-spacing": 100,
+        "symbol-spacing": 200,
+        "icon-offset": {
+          "stops": [
+            [10, [0, 20]],
+            [17, [0, 30]]
+          ]
+        },
         "icon-allow-overlap": true,
         "icon-image": "route_mtb",
         "icon-size": {
