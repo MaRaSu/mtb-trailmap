@@ -4425,35 +4425,10 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["string", ["get", "surface_raw"]],
-          [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "mud",
-            "rock",
-            "sand",
-            "shells",
-            "stepping_stones"
-          ],
-          "#7e580e",
-          "#5e5e5e"
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#EDDFCA",
+          "#FFFFFF"
         ],
         "line-width": {
           "base": 1.2,
@@ -4492,8 +4467,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-opacity": {
@@ -4540,8 +4545,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-opacity": {
@@ -4588,8 +4623,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-opacity": {
@@ -4633,9 +4698,39 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#d8d2c8",
-          "#cccccc"
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
+          "#FFFFFF"
         ],
         "line-opacity": {
           "stops": [
@@ -4661,7 +4756,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -4700,10 +4795,10 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4721,8 +4816,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-width": {
@@ -4804,8 +4929,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-width": {
@@ -4887,8 +5042,38 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["string", ["get", "surface_raw"]],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-width": {
