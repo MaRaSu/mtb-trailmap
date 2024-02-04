@@ -1802,7 +1802,13 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "minzoom": 8,
-      "filter": ["in", "class", "protected_area", "nature_reserve", "national_park"],
+      "filter": [
+        "in",
+        "class",
+        "protected_area",
+        "nature_reserve",
+        "national_park"
+      ],
       "paint": {
         "fill-antialias": {
           "base": 1,
@@ -1834,7 +1840,13 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "minzoom": 8,
-      "filter": ["in", "class", "protected_area", "nature_reserve", "national_park"],
+      "filter": [
+        "in",
+        "class",
+        "protected_area",
+        "nature_reserve",
+        "national_park"
+      ],
       "paint": {
         "line-color": "#7BA36C",
         "line-opacity": {
@@ -3459,7 +3471,7 @@
       }
     },
     {
-      "id": "hw-minor-gr-case",
+      "id": "hw-minor-gr-cat_ab-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3475,7 +3487,24 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"]
+        ["in", "class", "minor"],
+        [
+          "!in",
+          "surface_raw",
+          "dirt",
+          "earth",
+          "grass",
+          "gravel",
+          "ground",
+          "pebblestone",
+          "unpaved",
+          "woodchips",
+          "mud",
+          "rock",
+          "sand",
+          "shells",
+          "stepping_stones"
+        ]
       ],
       "layout": {
         "line-cap": "round",
@@ -3484,8 +3513,20 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood"
+          ],
           "#7e580e",
           "#5e5e5e"
         ],
@@ -3498,6 +3539,115 @@
             [20, 15]
           ]
         },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-gr-cat_c-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor"],
+        [
+          "in",
+          "surface_raw",
+          "dirt",
+          "earth",
+          "grass",
+          "gravel",
+          "ground",
+          "pebblestone",
+          "unpaved",
+          "woodchips"
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#7e580e",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2.5],
+            [12, 3.4],
+            [14, 4.8],
+            [20, 15]
+          ]
+        },
+        "line-dasharray": [3, 0.4],
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-gr-cat_d-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor"],
+        [
+          "in",
+          "surface_raw",
+          "mud",
+          "rock",
+          "sand",
+          "shells",
+          "stepping_stones"
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#7e580e",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2.5],
+            [12, 3.4],
+            [14, 4.8],
+            [20, 15]
+          ]
+        },
+        "line-dasharray": [0.8, 0.4],
         "line-opacity": {
           "stops": [
             [10, 0],
@@ -3582,8 +3732,33 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
           "#7e580e",
           "#5e5e5e"
         ],
@@ -3809,9 +3984,34 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
+          "#7e580e",
           "#5e5e5e"
         ],
         "line-opacity": {
@@ -3899,9 +4099,34 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
+          "#7e580e",
           "#5e5e5e"
         ],
         "line-opacity": {
@@ -4000,9 +4225,34 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
+          "#7e580e",
           "#5e5e5e"
         ],
         "line-opacity": {
@@ -4175,10 +4425,35 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
-          "#FFFFFF"
+          "match",
+          ["string", ["get", "surface_raw"]],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
+          "#7e580e",
+          "#5e5e5e"
         ],
         "line-width": {
           "base": 1.2,
