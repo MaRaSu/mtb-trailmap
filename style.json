@@ -87,6 +87,10 @@
     "lipas-alueet": {
       "type": "vector",
       "url": "https://tiles.trailmap.fi/data/lipas-alueet.json"
+    },
+    "kiinteisto-avoin": {
+      "type": "vector",
+      "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     }
   },
   "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
@@ -7394,6 +7398,53 @@
             [16, 2]
           ]
         }
+      }
+    },
+    {
+      "id": "cadastral-boundary",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "kiinteisto-avoin",
+      "source-layer": "KiinteistorajanSijaintitiedot",
+      "filter": ["==", ["geometry-type"], "LineString"],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "rgba(255,0,0,1)",
+        "line-width": 1
+      }
+    },
+    {
+      "id": "cadastral-id",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "kiinteisto-avoin",
+      "source-layer": "KiinteistotunnuksenSijaintitiedot",
+      "minzoom": 17,
+      "layout": {
+        "text-field": "{kiinteistotunnuksenEsitysmuoto}",
+        "text-font": ["Noto Sans Regular"],
+        "symbol-placement": "point",
+        "text-allow-overlap": true,
+        "text-size": 12,
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "rgba(255,0,0,1)",
+        "text-halo-color": "#FDFDFD",
+        "text-halo-width": 2
       }
     },
     {
