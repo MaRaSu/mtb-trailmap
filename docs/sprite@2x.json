@@ -824,5 +824,82 @@
     "width": 64,
     "x": 192,
     "y": 640
+  },
+  "lipas_viewpoint": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 64,
+    "y": 448
+  },
+  "lipas_shelter": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 320
+  },
+  "lipas_wilderness_hut": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 448
+  },
+  "osm_viewpoint": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 64,
+    "y": 448
+  },
+  "osm_shelter": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 320
+  },
+  "osm_wilderness_hut": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 448
+  },
+  "route_walking": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 704
+  },
+  "route_hiking": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 64,
+    "y": 704
+  },
+  "route_bicycle": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 128,
+    "y": 704
+  },
+  "route_mtb": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 192,
+    "y": 704
+  },
+  "blank": {
+    "height": 0,
+    "pixelRatio": 1,
+    "width": 0,
+    "x": 0,
+    "y": 0
   }
 }
