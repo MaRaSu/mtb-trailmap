@@ -1927,7 +1927,7 @@
       "filter": [
         "all",
         ["==", "$type", "Point"],
-        ["==", "class", "protected_area", "nature_reserve", "national_park"]
+        ["in", "class", "protected_area", "nature_reserve", "national_park"]
       ],
       "layout": {
         "icon-image": "{class}_11",
