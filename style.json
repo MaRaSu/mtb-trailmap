@@ -8901,7 +8901,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -8935,7 +8935,7 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "bicycle"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -8978,7 +8978,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9012,7 +9012,7 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "mtb"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9055,7 +9055,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9089,7 +9089,7 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "hiking"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9132,7 +9132,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9166,7 +9166,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4412],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9209,7 +9209,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9243,7 +9243,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4411],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9286,7 +9286,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9320,7 +9320,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4405],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9363,7 +9363,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9397,7 +9397,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["in", "tyyppikood", 4404, 4403],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9439,7 +9439,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": {
@@ -9454,7 +9454,7 @@
             [8.5, 1]
           ]
         },
-        "circle-color": "#2376e7"
+        "circle-color": "#bd287c"
       }
     },
     {
@@ -9470,7 +9470,7 @@
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -9518,7 +9518,7 @@
         ["has", "nimi_fi"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
