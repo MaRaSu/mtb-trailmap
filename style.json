@@ -1801,7 +1801,7 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -1813,6 +1813,9 @@
         "nature_reserve",
         "national_park"
       ],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-antialias": {
           "base": 1,
@@ -1839,7 +1842,7 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -1851,6 +1854,9 @@
         "nature_reserve",
         "national_park"
       ],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#7BA36C",
         "line-opacity": {
@@ -1876,11 +1882,14 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "military"],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-antialias": {
           "base": 1,
@@ -1906,17 +1915,86 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["==", "class", "military"],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#FF003D",
         "line-opacity": {
           "stops": [
             [9, 0],
             [10, 0.2]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 2.5],
+            [17, 5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "border_zone-fill",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landuse_ext",
+      "filter": ["==", "class", "border_zone"],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#8000ff",
+        "fill-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 0.1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "border_zone-outline",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landuse_ext",
+      "filter": ["==", "class", "border_zone"],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#8000ff",
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 0.2]
           ]
         },
         "line-width": {
