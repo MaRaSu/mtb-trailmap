@@ -8501,6 +8501,46 @@
       }
     },
     {
+      "id": "parking-icons",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landuse_ext",
+      "filter": ["==", "class", "parking"],
+      "layout": {
+        "visibility": "none",
+        "text-allow-overlap": true,
+        "text-field": "P",
+        "text-font": ["Noto Sans Bold"],
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [14, 8],
+            [16, 10]
+          ]
+        }
+      },
+      "paint": {
+        "text-color": "#1a60ff",
+        "text-halo-width": 1.5,
+        "text-halo-color": "#ffffff",
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "fixme-icons",
       "type": "symbol",
       "metadata": {
