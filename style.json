@@ -9557,7 +9557,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
@@ -9588,7 +9588,7 @@
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -9636,7 +9636,7 @@
         ["has", "nimi_fi"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -9685,7 +9685,7 @@
       "minzoom": 8,
       "filter": ["in", "subclass", "viewpoint", "shelter", "wilderness_hut"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
@@ -9697,10 +9697,10 @@
         "circle-opacity": {
           "stops": [
             [8, 0],
-            [9, 1]
+            [8.5, 1]
           ]
         },
-        "circle-color": "#93dc13"
+        "circle-color": "#7200ff"
       }
     },
     {
@@ -9716,7 +9716,7 @@
       "source-layer": "poi",
       "minzoom": 8,
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -9742,6 +9742,59 @@
             [9, 1]
           ]
         }
+      }
+    },
+    {
+      "id": "POI-OSM-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["in", "subclass", "viewpoint", "shelter", "wilderness_hut"],
+        ["has", "name"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [17, 13]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 14]],
+            [17, [0, 22]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
       }
     }
   ],
