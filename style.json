@@ -8899,20 +8899,66 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "bicycle"],
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "red",
-        "line-dasharray": [1, 1],
-        "line-opacity": 0.5,
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#7200ff"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.5],
-            [14, 3],
-            [17, 9]
+            [12, 4],
+            [14, 10],
+            [17, 16]
+          ]
+        },
+        "line-dasharray": [0.6, 1]
+      }
+    },
+    {
+      "id": "bicycle-routes-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "bicycle"],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 200,
+        "icon-offset": {
+          "stops": [
+            [10, [0, 20]],
+            [17, [0, 30]]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-rotation-alignment": "viewport",
+        "icon-image": "route_bicycle_osm",
+        "icon-size": {
+          "stops": [
+            [10, 0.5],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
           ]
         }
       }
@@ -8930,20 +8976,66 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "mtb"],
       "layout": {
-        "line-cap": "round",
+        "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "blue",
-        "line-dasharray": [1, 1],
-        "line-opacity": 0.5,
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#7200ff"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.5],
-            [14, 3],
-            [17, 9]
+            [12, 4],
+            [14, 10],
+            [17, 16]
+          ]
+        },
+        "line-dasharray": [0.6, 1]
+      }
+    },
+    {
+      "id": "mtb-routes-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "mtb"],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 200,
+        "icon-offset": {
+          "stops": [
+            [10, [0, 20]],
+            [17, [0, 30]]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-rotation-alignment": "viewport",
+        "icon-image": "route_mtb_osm",
+        "icon-size": {
+          "stops": [
+            [10, 0.5],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
           ]
         }
       }
@@ -8961,52 +9053,18 @@
       "source-layer": "route_ext",
       "filter": ["==", "route", "hiking"],
       "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "blue",
-        "line-dasharray": [1, 1],
-        "line-opacity": 0.5,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [11, 1.5],
-            [14, 3],
-            [17, 9]
-          ]
-        }
-      }
-    },
-    {
-      "id": "routes-LIPAS-bicycle-line",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4412],
-      "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "#2376e7",
-        "line-opacity": {
-          "base": 1,
-          "stops": [
-            [10, 0.8],
-            [12, 0.6],
-            [14, 0.25],
-            [16, 0.25]
-          ]
-        },
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#7200ff"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
@@ -9014,11 +9072,12 @@
             [14, 10],
             [17, 16]
           ]
-        }
+        },
+        "line-dasharray": [0.6, 1]
       }
     },
     {
-      "id": "routes-LIPAS-bicycle-icons",
+      "id": "hiking-routes-icons",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -9026,11 +9085,11 @@
         "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4412],
+      "source": "openmaptiles",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "hiking"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9039,9 +9098,9 @@
             [17, [0, 30]]
           ]
         },
-        "icon-allow-overlap": true,
+        "icon-allow-overlap": false,
         "icon-rotation-alignment": "viewport",
-        "icon-image": "route_bicycle",
+        "icon-image": "route_hiking_osm",
         "icon-size": {
           "stops": [
             [10, 0.5],
@@ -9059,7 +9118,7 @@
       }
     },
     {
-      "id": "routes-LIPAS-mtb-line",
+      "id": "bicycle-routes-lipas",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -9069,23 +9128,20 @@
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4411],
+      "filter": ["==", "tyyppikood", 4412],
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "#2376e7",
-        "line-opacity": {
-          "base": 1,
-          "stops": [
-            [10, 0.8],
-            [12, 0.6],
-            [14, 0.25],
-            [16, 0.25]
-          ]
-        },
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#bd287c"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
@@ -9093,11 +9149,12 @@
             [14, 10],
             [17, 16]
           ]
-        }
+        },
+        "line-dasharray": [0.6, 1]
       }
     },
     {
-      "id": "routes-LIPAS-mtb-icons",
+      "id": "bicycle-routes-lipas-icons",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -9107,9 +9164,9 @@
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4411],
+      "filter": ["==", "tyyppikood", 4412],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9120,7 +9177,7 @@
         },
         "icon-allow-overlap": true,
         "icon-rotation-alignment": "viewport",
-        "icon-image": "route_mtb",
+        "icon-image": "route_bicycle_lipas",
         "icon-size": {
           "stops": [
             [10, 0.5],
@@ -9138,7 +9195,84 @@
       }
     },
     {
-      "id": "routes-LIPAS-hiking",
+      "id": "mtb-routes-lipas",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4411],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#bd287c"
+        ],
+        "line-opacity": 0.8,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 4],
+            [14, 10],
+            [17, 16]
+          ]
+        },
+        "line-dasharray": [0.6, 1]
+      }
+    },
+    {
+      "id": "mtb-routes-lipas-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": ["==", "tyyppikood", 4411],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 200,
+        "icon-offset": {
+          "stops": [
+            [10, [0, 20]],
+            [17, [0, 30]]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-rotation-alignment": "viewport",
+        "icon-image": "route_mtb_lipas",
+        "icon-size": {
+          "stops": [
+            [10, 0.5],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiking-routes-lipas",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -9152,19 +9286,16 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "#2376e7",
-        "line-opacity": {
-          "base": 1,
-          "stops": [
-            [10, 0.8],
-            [12, 0.6],
-            [14, 0.25],
-            [16, 0.25]
-          ]
-        },
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#bd287c"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
@@ -9172,11 +9303,12 @@
             [14, 10],
             [17, 16]
           ]
-        }
+        },
+        "line-dasharray": [0.6, 1]
       }
     },
     {
-      "id": "routes-LIPAS-hiking-icons",
+      "id": "hiking-routes-lipas-icons",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -9188,7 +9320,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4405],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9199,7 +9331,7 @@
         },
         "icon-allow-overlap": false,
         "icon-rotation-alignment": "viewport",
-        "icon-image": "route_hiking",
+        "icon-image": "route_hiking_lipas",
         "icon-size": {
           "stops": [
             [10, 0.5],
@@ -9217,7 +9349,7 @@
       }
     },
     {
-      "id": "routes-LIPAS-walking",
+      "id": "walking-routes-lipas",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -9231,19 +9363,16 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "#2376e7",
-        "line-opacity": {
-          "base": 1,
-          "stops": [
-            [10, 0.8],
-            [12, 0.6],
-            [14, 0.25],
-            [16, 0.25]
-          ]
-        },
+        "line-color": [
+          "case",
+          ["boolean", ["feature-state", "hover"], false],
+          "red",
+          "#bd287c"
+        ],
+        "line-opacity": 0.8,
         "line-width": {
           "base": 1,
           "stops": [
@@ -9251,11 +9380,12 @@
             [14, 10],
             [17, 16]
           ]
-        }
+        },
+        "line-dasharray": [0.6, 1]
       }
     },
     {
-      "id": "routes-LIPAS-walking-icons",
+      "id": "walking-routes-lipas-icons",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -9267,7 +9397,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["in", "tyyppikood", 4404, 4403],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "symbol-placement": "line",
         "symbol-spacing": 200,
         "icon-offset": {
@@ -9278,7 +9408,7 @@
         },
         "icon-allow-overlap": true,
         "icon-rotation-alignment": "viewport",
-        "icon-image": "route_walking",
+        "icon-image": "route_walking_lipas",
         "icon-size": {
           "stops": [
             [10, 0.5],
@@ -9309,7 +9439,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
@@ -9340,7 +9470,7 @@
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -9388,7 +9518,7 @@
         ["has", "nimi_fi"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",

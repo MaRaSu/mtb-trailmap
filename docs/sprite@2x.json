@@ -867,33 +867,61 @@
     "x": 0,
     "y": 448
   },
-  "route_walking": {
+  "route_walking_lipas": {
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
     "x": 0,
     "y": 704
   },
-  "route_hiking": {
+  "route_hiking_lipas": {
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
     "x": 64,
     "y": 704
   },
-  "route_bicycle": {
+  "route_bicycle_lipas": {
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
     "x": 128,
     "y": 704
   },
-  "route_mtb": {
+  "route_mtb_lipas": {
     "height": 64,
     "pixelRatio": 1,
     "width": 64,
     "x": 192,
     "y": 704
+  },
+  "route_walking_osm": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 0,
+    "y": 768
+  },
+  "route_hiking_osm": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 64,
+    "y": 768
+  },
+  "route_bicycle_osm": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 128,
+    "y": 768
+  },
+  "route_mtb_osm": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 192,
+    "y": 768
   },
   "blank": {
     "height": 0,
