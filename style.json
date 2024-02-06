@@ -8790,6 +8790,78 @@
       }
     },
     {
+      "id": "place-mml-small",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1020105,
+        1020205,
+        1020305,
+        1020405,
+        1020410,
+        3020110,
+        5010115,
+        2010230,
+        2020105,
+        2020110,
+        2020115,
+        6010110,
+        4060605,
+        4060699,
+        4069999
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-field": "{nimi_fin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-offset": [0.4, 0],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [11, 8],
+            [16, 16]
+          ]
+        },
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "lajikoodi"],
+          [1020105, 1020205, 1020305, 1020405, 1020410],
+          "#4a601d",
+          [3020110, 5010115],
+          "#414b2c",
+          [2010230, 2020105, 2020110, 2020115, 6010110],
+          "#2c3d4d",
+          [4060605, 4060699, 4069999],
+          "#5b1f1f",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "place-mml-medium",
       "type": "symbol",
       "metadata": {
@@ -8813,6 +8885,7 @@
         5999905,
         5999910,
         3010105,
+        3020105,
         2010210,
         2010215,
         2010220,
@@ -8828,12 +8901,13 @@
         "text-max-width": 8,
         "text-offset": [0.4, 0],
         "text-size": {
-          "base": 1.2,
+          "base": 1,
           "stops": [
             [12, 10],
             [16, 20]
           ]
         },
+        "text-transform": "uppercase",
         "visibility": "none"
       },
       "paint": {
@@ -8841,15 +8915,15 @@
           "match",
           ["get", "lajikoodi"],
           [1010105, 1010110, 1010120, 1010125],
-          "hsla(80, 20%, 30%, 1)",
+          "#4a601d",
           [5010105, 5010110, 5999905, 5999910],
-          "hsla(80, 20%, 30%, 1)",
-          [3010105],
-          "brown",
+          "#414b2c",
+          [3010105, 3020105],
+          "#5b3b1f",
           [2010210, 2010215, 2010220, 2010225],
-          "hsla(209, 30%, 30%, 1)",
+          "#2c3d4d",
           [4060505, 4060599],
-          "red",
+          "#5b1f1f",
           "#df00e7"
         ],
         "text-halo-color": "rgba(255,255,255,0.8)",
