@@ -924,9 +924,9 @@
     "y": 384
   },
   "blank": {
-    "height": 0,
+    "height": 1,
     "pixelRatio": 1,
-    "width": 0,
+    "width": 1,
     "x": 0,
     "y": 0
   }
