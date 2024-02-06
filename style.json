@@ -8790,6 +8790,73 @@
       }
     },
     {
+      "id": "place-mml-medium",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1010105,
+        1010110,
+        1010120,
+        1010125,
+        5010105,
+        5010110,
+        5999905,
+        5999910,
+        3010105,
+        2010210,
+        2010215,
+        2010220,
+        2010225,
+        4060505,
+        4060599
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-field": "{nimi_fin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-offset": [0.4, 0],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [12, 10],
+            [16, 20]
+          ]
+        },
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "lajikoodi"],
+          [1010105, 1010110, 1010120, 1010125],
+          "hsla(80, 20%, 30%, 1)",
+          [5010105, 5010110, 5999905, 5999910],
+          "hsla(80, 20%, 30%, 1)",
+          [3010105],
+          "brown",
+          [2010210, 2010215, 2010220, 2010225],
+          "hsla(209, 30%, 30%, 1)",
+          [4060505, 4060599],
+          "red",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
       "id": "place-state",
       "type": "symbol",
       "metadata": {
@@ -9250,7 +9317,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9284,7 +9351,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4412],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 300,
         "icon-offset": {
@@ -9327,7 +9394,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9361,7 +9428,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4411],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 300,
         "icon-offset": {
@@ -9404,7 +9471,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9438,7 +9505,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["==", "tyyppikood", 4405],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 300,
         "icon-offset": {
@@ -9481,7 +9548,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9515,7 +9582,7 @@
       "source-layer": "lipas_reitit",
       "filter": ["in", "tyyppikood", 4404, 4403],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-placement": "line",
         "symbol-spacing": 300,
         "icon-offset": {
