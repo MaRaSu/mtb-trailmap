@@ -8822,7 +8822,16 @@
       ],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
         "text-field": "{nimi_fin}",
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
@@ -8892,7 +8901,16 @@
       ],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
         "text-field": "{nimi_fin}",
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
@@ -8939,7 +8957,16 @@
       "filter": ["in", "lajikoodi", 3010105, 3010110, 3020105],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
         "text-field": "{nimi_fin}",
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
