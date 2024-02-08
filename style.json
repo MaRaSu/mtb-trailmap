@@ -2837,6 +2837,8 @@
           "#75E009",
           ["==", ["get", "mtb_winter"], "2"],
           "#E3E800",
+          ["==", ["get", "mtb_winter"], "yes"],
+          "#E3E800",
           "#FEB13E"
         ],
         "line-width": {
