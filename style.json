@@ -2822,7 +2822,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "path"],
+        ["in", "class", "path", "track"],
         ["!in", "subclass", "cycleway", "footway"],
         ["has", "mtb_winter"],
         ["!in", "mtb_winter", "-1", "no"]
