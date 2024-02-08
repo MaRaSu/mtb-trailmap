@@ -2530,7 +2530,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2715,7 +2715,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2800,6 +2800,51 @@
             [11, 1.5],
             [14, 3],
             [17, 9]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+      }
+    },
+    {
+      "id": "hw-path-track-winter-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "path"],
+        ["!in", "subclass", "cycleway", "footway"],
+        ["has", "mtb_winter"],
+        ["!in", "mtb_winter", "-1", "no"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "mtb_winter"], "1"],
+          "#75E009",
+          ["==", ["get", "mtb_winter"], "2"],
+          "#E3E800",
+          "#FEB13E"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.5],
+            [14, 3],
+            [17, 6]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
@@ -2910,7 +2955,7 @@
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3050,7 +3095,7 @@
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3164,6 +3209,45 @@
           ]
         ],
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 0.8]
+      }
+    },
+    {
+      "id": "hw-path-winter-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "path"],
+        ["!in", "width_cat", "d"],
+        ["!in", "subclass", "cycleway", "footway", "pedestrian", "steps"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [2.5, 2],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 1],
+            [16, 1.8],
+            [17, 2]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
       }
     },
     {
@@ -8650,7 +8734,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#633",
@@ -8842,7 +8926,7 @@
             [16, 16]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -8922,7 +9006,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -8979,7 +9063,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
