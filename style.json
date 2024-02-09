@@ -2608,7 +2608,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2757,7 +2757,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2813,7 +2813,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -2901,7 +2901,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3018,7 +3018,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3170,7 +3170,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3246,7 +3246,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3326,7 +3326,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3624,7 +3624,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3715,7 +3715,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3792,7 +3792,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3848,7 +3848,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -3950,7 +3950,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4028,7 +4028,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4085,7 +4085,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4319,7 +4319,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4433,7 +4433,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -4559,7 +4559,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -5649,7 +5649,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -5769,7 +5769,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -5877,7 +5877,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -6379,7 +6379,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -6456,7 +6456,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -6532,7 +6532,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
