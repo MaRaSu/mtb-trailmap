@@ -7777,14 +7777,15 @@
       },
       "source": "kiinteisto-avoin",
       "source-layer": "KiinteistorajanSijaintitiedot",
-      "minzoom": 9,
+      "minzoom": 14,
       "filter": ["==", ["geometry-type"], "LineString"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "rgba(255,0,0,1)",
-        "line-width": 1
+        "line-width": 1,
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0.2, 16, 1]
       }
     },
     {
