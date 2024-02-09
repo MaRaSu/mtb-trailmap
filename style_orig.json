@@ -2513,7 +2513,7 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
@@ -2699,7 +2699,7 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
@@ -2940,7 +2940,7 @@
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
@@ -3092,7 +3092,7 @@
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
@@ -3282,7 +3282,7 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
