@@ -8977,6 +8977,8 @@
         1020405,
         1020410,
         3020110,
+        3030105,
+        3999999,
         5010115,
         2010230,
         2020110,
@@ -9008,18 +9010,22 @@
             [16, 16]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
           "match",
           ["get", "lajikoodi"],
-          [1020105, 1020305, 1020405, 1020410],
+          [1020105, 1020405, 1020410],
           "#414b2c",
           [3020110, 5010115],
           "#414b2c",
           [1020205, 2010230, 2020110, 2020115, 6010110],
           "#2c3d4d",
+          [3030105, 3999999],
+          "#5b3b1f",
+          [1020305],
+          "#5b561f",
           [4060605, 4060699, 4069999],
           "#5b1f1f",
           "#df00e7"
@@ -9088,7 +9094,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -9145,7 +9151,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
