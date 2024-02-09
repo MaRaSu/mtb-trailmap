@@ -5913,6 +5913,45 @@
       }
     },
     {
+      "id": "forbidden-bicycle-winter",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track", "service", "minor"],
+        ["in", "mtb_winter", "no", "-1"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.1, 0.3],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 6],
+            [16, 12]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [13, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "obstacle_vegetation",
       "type": "line",
       "metadata": {
@@ -7780,7 +7819,7 @@
       "minzoom": 14,
       "filter": ["==", ["geometry-type"], "LineString"],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(255,0,0,1)",
