@@ -284,26 +284,6 @@
       }
     },
     {
-      "id": "landuse-quarry",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "maankaytto",
-      "filter": ["==", "kohdeluokka", 32500],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#d7d3ce"
-      }
-    },
-    {
       "id": "parking_area-fill",
       "type": "fill",
       "metadata": {
@@ -355,6 +335,26 @@
         "fill-color": "#6a4",
         "fill-opacity": 0.1,
         "fill-outline-color": "hsla(0, 0%, 0%, 0.03)"
+      }
+    },
+    {
+      "id": "landuse-quarry",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maankaytto",
+      "filter": ["==", "kohdeluokka", 32500],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#d7d3ce"
       }
     },
     {
