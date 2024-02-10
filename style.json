@@ -5941,13 +5941,13 @@
           "stops": [
             [12, 4],
             [14, 5],
-            [16, 8]
+            [16, 7]
           ]
         },
         "line-opacity": {
           "stops": [
             [11, 0],
-            [12, 1]
+            [12, 0.8]
           ]
         }
       }
@@ -5973,13 +5973,13 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#FF003D",
+        "line-color": "#cc1b14",
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 3],
-            [14, 4],
-            [16, 6]
+            [12, 2.2],
+            [14, 3],
+            [16, 4.8]
           ]
         },
         "line-opacity": {
@@ -6015,15 +6015,65 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 1.4],
-            [14, 2],
-            [16, 4]
+            [12, 1],
+            [14, 1.8],
+            [16, 3]
           ]
         },
         "line-opacity": {
           "stops": [
             [11, 0],
             [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "skiing-direction",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "oneway", "1", "yes", "-1", "no"]
+      ],
+      "layout": {
+        "text-field": [
+          "match",
+          ["get", "oneway"],
+          ["1", "yes"],
+          ">",
+          ["-1", "no"],
+          "<",
+          ""
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-keep-upright": false,
+        "symbol-placement": "line",
+        "symbol-spacing": 100,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [14, 14],
+            [16, 22]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#cc1b14",
+        "text-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
           ]
         }
       }
