@@ -3091,11 +3091,7 @@
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
           ["has", "mtb_scale"]
         ],
-        [
-          "any",
-          ["!=", "subclass", "footway"],
-          ["has", "mtb_scale"]
-        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -3301,12 +3297,12 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [6, 1.5],
+        "line-dasharray": [8, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
             [10, 0.5],
-            [14, 1],
+            [14, 1.3],
             [17, 3.5]
           ]
         },
@@ -3348,7 +3344,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [5, 1.2],
+        "line-dasharray": [6, 1.2],
         "line-width": {
           "base": 1,
           "stops": [
@@ -6994,7 +6990,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [6, 1.5],
+        "line-dasharray": [8, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
@@ -8827,7 +8823,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#633",
@@ -9058,7 +9054,7 @@
             [17, 20]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -9145,7 +9141,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -9202,7 +9198,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
