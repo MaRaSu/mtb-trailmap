@@ -3273,7 +3273,7 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
-        "trailmap:mtb_winter": false,
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
       },
@@ -5925,12 +5925,11 @@
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
-      "source-layer": "transportation",
+      "source-layer": "piste_ext",
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "track", "service", "minor"],
-        ["in", "mtb_winter", "no", "-1"]
+        ["!in", "class", "hike"]
       ],
       "layout": {
         "visibility": "none"
