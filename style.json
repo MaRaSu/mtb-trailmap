@@ -8747,7 +8747,7 @@
       "source-layer": "poi_ext",
       "filter": ["==", "class", "fixme"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -8786,7 +8786,7 @@
       "source-layer": "poi_ext",
       "filter": ["==", "class", "noexit"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": "tm_noexit",
         "icon-size": {
