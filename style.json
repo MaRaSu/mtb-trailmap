@@ -2353,6 +2353,7 @@
         [
           "any",
           ["==", "bicycle", "no"],
+          ["==", "bicycle", "dismount"],
           ["==", "access", "no"],
           ["==", "access", "private"]
         ]
@@ -2963,7 +2964,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
@@ -3044,7 +3046,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
@@ -3120,12 +3123,13 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         [
           "any",
           ["!=", "subclass", "footway"],
-          ["all", ["==", "subclass", "footway"], ["has", "mtb_scale"]]
+          ["has", "mtb_scale"]
         ],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
@@ -3206,7 +3210,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
@@ -3417,7 +3422,8 @@
         [
           "any",
           ["in", "subclass", "footway", "pedestrian"],
-          ["all", ["==", "bicycle", "no"], ["!=", "foot", "no"]]
+          ["all", ["==", "bicycle", "no"], ["!=", "foot", "no"]],
+          ["all", ["==", "bicycle", "dismount"], ["!=", "foot", "no"]]
         ],
         ["!has", "mtb_scale"]
       ],
@@ -8856,7 +8862,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#633",
@@ -9048,10 +9054,11 @@
           "base": 1.2,
           "stops": [
             [11, 8],
-            [16, 16]
+            [16, 16],
+            [17, 20]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -9133,11 +9140,12 @@
           "base": 1,
           "stops": [
             [12, 9],
-            [16, 18]
+            [16, 18],
+            [17, 22]
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -9194,7 +9202,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
