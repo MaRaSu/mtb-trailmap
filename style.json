@@ -2496,7 +2496,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2681,7 +2681,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2794,7 +2794,7 @@
         ["!in", "mtb_winter", "-1", "no"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2935,7 +2935,7 @@
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -3095,7 +3095,7 @@
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -3251,7 +3251,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5932,7 +5932,7 @@
         ["!in", "class", "hike"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -5970,7 +5970,7 @@
         ["!in", "class", "hike"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cc1b14",
@@ -6008,7 +6008,7 @@
         ["!in", "class", "hike"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6066,7 +6066,7 @@
             [16, 22]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#cc1b14",
@@ -7659,7 +7659,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -7698,7 +7698,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cc1b14",
@@ -7737,7 +7737,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
