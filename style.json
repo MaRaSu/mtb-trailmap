@@ -6058,7 +6058,7 @@
         "text-font": ["Noto Sans Regular"],
         "text-keep-upright": false,
         "symbol-placement": "line",
-        "symbol-spacing": 100,
+        "symbol-spacing": 50,
         "text-size": {
           "base": 1,
           "stops": [
