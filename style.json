@@ -8030,9 +8030,9 @@
       "id": "water-name-lakeline",
       "type": "symbol",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -8046,7 +8046,8 @@
         "text-letter-spacing": 0.2,
         "text-max-width": 5,
         "text-rotation-alignment": "map",
-        "text-size": 14
+        "text-size": 14,
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#74aee9",
@@ -8086,9 +8087,9 @@
       "id": "water-name-other",
       "type": "symbol",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -8108,7 +8109,7 @@
             [6, 12]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#74aee9",
@@ -8809,9 +8810,9 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -8840,7 +8841,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#633",
@@ -9020,9 +9021,9 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
@@ -9071,7 +9072,7 @@
             [17, 20]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -9109,9 +9110,9 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
@@ -9158,7 +9159,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -9183,9 +9184,9 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
@@ -9215,7 +9216,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
