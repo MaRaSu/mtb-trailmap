@@ -2496,7 +2496,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2681,7 +2681,7 @@
         ["!in", "mtb_scale", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2794,7 +2794,7 @@
         ["!in", "mtb_winter", "-1", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2935,7 +2935,7 @@
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3095,7 +3095,7 @@
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3251,7 +3251,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5915,7 +5915,7 @@
       }
     },
     {
-      "id": "forbidden-bicycle-winter",
+      "id": "skiing-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5932,22 +5932,98 @@
         ["!in", "class", "hike"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.1, 0.3],
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1,
           "stops": [
-            [14, 6],
-            [16, 12]
+            [12, 4],
+            [14, 5],
+            [16, 8]
           ]
         },
         "line-opacity": {
           "stops": [
-            [12, 0],
-            [13, 1]
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "skiing-line-base",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "class", "hike"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 3],
+            [14, 4],
+            [16, 6]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "skiing-line-center",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "class", "hike"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 1.4],
+            [14, 2],
+            [16, 4]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
           ]
         }
       }
