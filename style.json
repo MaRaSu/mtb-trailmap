@@ -8854,9 +8854,9 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -8873,7 +8873,7 @@
             [15, 22]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#333",
