@@ -9452,7 +9452,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -9488,7 +9488,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -9529,7 +9529,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -9606,7 +9606,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -9683,7 +9683,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -9760,7 +9760,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -9837,7 +9837,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -9914,7 +9914,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -9991,7 +9991,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -10023,7 +10023,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -10066,7 +10066,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -10119,7 +10119,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "poi",
@@ -10151,7 +10151,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "poi",
@@ -10192,7 +10192,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "poi",
