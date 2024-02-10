@@ -8261,7 +8261,12 @@
         "text-max-width": 9,
         "text-offset": [0, 0.6],
         "text-padding": 2,
-        "text-size": 12,
+        "text-size": {
+          "stops": [
+            [16, 12],
+            [18, 16]
+          ]
+        },
         "visibility": "visible"
       },
       "paint": {
@@ -8298,7 +8303,12 @@
         "text-max-width": 9,
         "text-offset": [0, 0.6],
         "text-padding": 2,
-        "text-size": 12,
+        "text-size": {
+          "stops": [
+            [15, 12],
+            [17, 16]
+          ]
+        },
         "visibility": "visible"
       },
       "paint": {
@@ -8335,7 +8345,12 @@
         "text-max-width": 9,
         "text-offset": [0, 0.6],
         "text-padding": 2,
-        "text-size": 12,
+        "text-size": {
+          "stops": [
+            [15, 12],
+            [18, 16]
+          ]
+        },
         "visibility": "visible"
       },
       "paint": {
@@ -8410,8 +8425,8 @@
           "base": 1,
           "stops": [
             [14, 9],
-            [15, 10],
-            [17, 13]
+            [16, 11],
+            [17, 14]
           ]
         }
       },
@@ -8444,8 +8459,8 @@
           "base": 1,
           "stops": [
             [14, 9],
-            [15, 10],
-            [17, 13]
+            [16, 11],
+            [17, 14]
           ]
         }
       },
@@ -8481,7 +8496,8 @@
           "base": 1,
           "stops": [
             [14, 10],
-            [17, 13]
+            [16, 13],
+            [17, 16]
           ]
         }
       },
@@ -8514,7 +8530,9 @@
           "base": 1,
           "stops": [
             [13, 12],
-            [14, 13]
+            [14, 13],
+            [16, 15],
+            [17, 20]
           ]
         }
       },
