@@ -9460,24 +9460,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#7200ff"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9537,24 +9540,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#7200ff"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9614,24 +9620,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#7200ff"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9691,24 +9700,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#bd287c"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9768,24 +9780,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#bd287c"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9845,24 +9860,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#bd287c"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
@@ -9922,24 +9940,27 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "red",
+          "black",
           "#bd287c"
         ],
         "line-opacity": 0.8,
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 10],
-            [17, 16]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
+          14,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          17,
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+        ],
         "line-dasharray": [0.6, 1.2]
       }
     },
