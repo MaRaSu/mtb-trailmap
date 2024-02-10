@@ -7641,6 +7641,123 @@
       }
     },
     {
+      "id": "bridge-skiing-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "class", "hike"],
+        ["in", "bridge", "1", "yes"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 4],
+            [14, 5],
+            [16, 7]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.8]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-skiing-line-base",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "class", "hike"],
+        ["in", "bridge", "1", "yes"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#cc1b14",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 2.2],
+            [14, 3],
+            [16, 4.8]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-skiing-line-center",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "class", "hike"],
+        ["in", "bridge", "1", "yes"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 1],
+            [14, 1.8],
+            [16, 3]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "bridge-railway",
       "type": "line",
       "metadata": {
