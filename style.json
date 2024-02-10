@@ -728,7 +728,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 12,
-      "filter": ["in", "class", "pitch", "track"],
+      "filter": ["in", "class", "pitch", "track", "playground"],
       "layout": {
         "visibility": "visible"
       },
