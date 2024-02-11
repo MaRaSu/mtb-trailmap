@@ -151,6 +151,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": [
         "all",
         ["in", "class", "residential", "suburb", "neighbourhood"]
@@ -180,6 +181,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
@@ -203,6 +205,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
@@ -227,6 +230,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": ["==", "class", "cemetery"],
       "paint": {
         "fill-color": "#e0e4dd"
@@ -244,6 +248,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": ["==", "class", "hospital"],
       "paint": {
         "fill-color": "#ffebf5"
@@ -261,6 +266,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": ["==", "class", "school"],
       "paint": {
         "fill-color": "#f0e8f8"
@@ -278,6 +284,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
+      "minzoom": 8,
       "filter": ["==", "class", "railway"],
       "layout": {
         "visibility": "visible"
@@ -352,6 +359,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
+      "minzoom": 11,
       "filter": ["==", "kohdeluokka", 32500],
       "layout": {
         "visibility": "visible"
@@ -396,6 +404,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
+      "minzoom": 8,
       "filter": ["==", "subclass", "allotments"],
       "paint": {
         "fill-color": "#dee7c5",
@@ -441,6 +450,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
+      "minzoom": 8,
       "filter": ["all", ["==", "class", "sand"]],
       "layout": {
         "visibility": "visible"
@@ -684,7 +694,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
-      "minzoom": 6,
+      "minzoom": 9,
       "filter": ["==", "kohdeluokka", 32611],
       "layout": {
         "visibility": "visible"
@@ -772,6 +782,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
+      "minzoom": 11,
       "filter": [
         "all",
         ["!in", "class", "canal", "river", "stream", "ditch"],
@@ -804,6 +815,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
+      "minzoom": 11,
       "filter": [
         "all",
         ["!in", "class", "canal", "river", "stream", "ditch"],
@@ -837,6 +849,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "vesisto_viiva",
+      "minzoom": 10,
       "filter": ["in", "kohdeluokka", 36311, 36312],
       "layout": {
         "line-cap": "round",
@@ -877,6 +890,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
+      "minzoom": 8,
       "filter": [
         "all",
         ["in", "class", "canal"],
@@ -911,6 +925,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "waterway",
+      "minzoom": 8,
       "filter": [
         "all",
         ["in", "class", "canal", "stream"],
@@ -1075,16 +1090,16 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "water",
       "filter": ["all"],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": "wave",
@@ -1103,7 +1118,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
-      "minzoom": 9,
+      "minzoom": 11,
       "maxzoom": 20,
       "layout": {
         "visibility": "visible"
@@ -2183,6 +2198,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "pier"]],
       "layout": {
         "visibility": "visible"
@@ -2203,6 +2219,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": ["all", ["==", "$type", "LineString"], ["in", "class", "pier"]],
       "layout": {
         "line-cap": "round",
@@ -2275,6 +2292,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": ["all", ["==", "$type", "Polygon"], ["!in", "class", "pier"]],
       "layout": {
         "visibility": "visible"
@@ -2390,6 +2408,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -4281,6 +4300,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 5,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4322,6 +4342,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 5,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4804,6 +4825,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -4881,6 +4903,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5035,6 +5058,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5112,6 +5136,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -5153,6 +5178,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -5229,6 +5255,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5265,6 +5292,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5336,6 +5364,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5378,6 +5407,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5923,6 +5953,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5961,6 +5992,7 @@
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5999,6 +6031,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6037,6 +6070,7 @@
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6075,6 +6109,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6113,6 +6148,7 @@
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6151,6 +6187,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6201,6 +6238,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6280,6 +6318,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6359,6 +6398,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6398,6 +6438,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6438,6 +6479,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6474,6 +6516,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6514,6 +6557,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6551,6 +6595,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 8,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -6895,6 +6940,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7305,6 +7351,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7352,6 +7399,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7408,6 +7456,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7442,6 +7491,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7476,6 +7526,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7511,6 +7562,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7551,6 +7603,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7586,6 +7639,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7620,6 +7674,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7659,6 +7714,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7693,6 +7749,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7732,6 +7789,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
@@ -7765,6 +7823,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7804,6 +7863,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7843,6 +7903,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -8030,6 +8091,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "building",
+      "minzoom": 13,
       "paint": {
         "fill-antialias": true,
         "fill-color": "#bbb9b7",
@@ -8054,6 +8116,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "building",
+      "minzoom": 13,
       "layout": {
         "visibility": "visible"
       },
@@ -8576,6 +8639,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
+      "minzoom": 11,
       "filter": ["in", "kohdeluokka", 32500, 32111, 32112, 32113],
       "layout": {
         "visibility": "visible",
@@ -9060,6 +9124,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "landuse_ext",
+      "minzoom": 12,
       "filter": ["==", "class", "parking"],
       "layout": {
         "visibility": "none",
@@ -9101,6 +9166,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
+      "minzoom": 13,
       "filter": ["==", "class", "fixme"],
       "layout": {
         "visibility": "none",
@@ -9140,6 +9206,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
+      "minzoom": 13,
       "filter": ["==", "class", "noexit"],
       "layout": {
         "visibility": "none",
