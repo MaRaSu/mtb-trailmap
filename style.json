@@ -2493,10 +2493,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "path"],
-        ["!in", "subclass", "cycleway"],
         ["has", "mtb_scale"],
-        ["!in", "mtb_scale", "-1"]
+        ["!in", "mtb_scale", "-1"],
+        ["==", "class", "path"],
+        ["!in", "subclass", "cycleway"]
       ],
       "layout": {
         "visibility": "visible"
@@ -2587,10 +2587,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "path"],
-        ["!in", "subclass", "cycleway"],
         ["has", "mtb_scale"],
-        ["!in", "mtb_scale", "-1"]
+        ["!in", "mtb_scale", "-1"],
+        ["==", "class", "path"],
+        ["!in", "subclass", "cycleway"]
       ],
       "layout": {
         "visibility": "none"
@@ -2795,10 +2795,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"],
-        ["!in", "subclass", "cycleway"],
         ["has", "mtb_winter"],
-        ["!in", "mtb_winter", "-1", "no"]
+        ["!in", "mtb_winter", "-1", "no"],
+        ["in", "class", "path", "track"],
+        ["!in", "subclass", "cycleway"]
       ],
       "layout": {
         "visibility": "none"
@@ -2924,7 +2924,6 @@
         ["==", "$type", "LineString"],
         ["!in", "tunnel"],
         ["==", "class", "path"],
-        ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
         [
           "any",
@@ -2940,6 +2939,7 @@
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
+        ["!in", "width_cat", "d"],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -3008,7 +3008,6 @@
         ["==", "$type", "LineString"],
         ["!in", "tunnel"],
         ["==", "class", "path"],
-        ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway"],
         [
           "any",
@@ -3024,6 +3023,7 @@
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
+        ["!in", "width_cat", "d"],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -3093,7 +3093,6 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
-        ["!=", "width_cat", "d"],
         [
           "any",
           ["!has", "bicycle"],
@@ -3104,6 +3103,7 @@
           ["has", "mtb_scale"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["!=", "width_cat", "d"],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -3172,7 +3172,6 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway"],
         [
           "any",
@@ -3188,6 +3187,7 @@
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
+        ["!in", "width_cat", "d"],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
       "layout": {
@@ -3256,13 +3256,13 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway"],
         [
           "any",
           ["!=", "subclass", "footway"],
           ["all", ["==", "subclass", "footway"], ["has", "mtb_scale"]]
-        ]
+        ],
+        ["!in", "width_cat", "d"]
       ],
       "layout": {
         "visibility": "none"
@@ -3538,9 +3538,9 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        ["==", "subclass", "steps"]
+        ["==", "subclass", "steps"],
+        ["!in", "brunnel", "bridge", "tunnel"]
       ],
       "layout": {
         "visibility": "visible"
@@ -6240,9 +6240,9 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["==", "obstacle", "vegetation"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"],
-        ["==", "obstacle", "vegetation"]
+        ["in", "class", "path", "track"]
       ],
       "layout": {
         "visibility": "visible"
@@ -6320,9 +6320,9 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["==", "surface_raw", "mud"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"],
-        ["==", "surface_raw", "mud"]
+        ["in", "class", "path", "track"]
       ],
       "layout": {
         "visibility": "visible"
