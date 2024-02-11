@@ -853,6 +853,20 @@
     "x": 272,
     "y": 89
   },  
+  "running_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 289,
+    "y": 89
+  },  
+  "protected_area_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 306,
+    "y": 89
+  },  
   "tm_vihr_mml_35300_soistuma": {
     "height": 64,
     "pixelRatio": 1,
