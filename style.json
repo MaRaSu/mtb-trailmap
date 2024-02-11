@@ -5953,6 +5953,44 @@
       }
     },
     {
+      "id": "skiing-case-lipas",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "tyyppikood", 4402, 4440]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 4],
+            [14, 5],
+            [16, 7]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.8]
+          ]
+        }
+      }
+    },
+    {
       "id": "skiing-line-base",
       "type": "line",
       "metadata": {
@@ -5973,7 +6011,45 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#cc1b14",
+        "line-color": "#7200ff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 2.2],
+            [14, 3],
+            [16, 4.8]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "skiing-line-base-lipas",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "tyyppikood", 4402, 4440]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#bd287c",
         "line-width": {
           "base": 1,
           "stops": [
@@ -6006,6 +6082,44 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "class", "hike"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 1],
+            [14, 1.8],
+            [16, 3]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "skiing-line-center-lipas",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "lipas-reitit",
+      "source-layer": "lipas_reitit",
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "tyyppikood", 4402, 4440]
       ],
       "layout": {
         "visibility": "none"
@@ -6069,7 +6183,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#cc1b14",
+        "text-color": "#7200ff",
         "text-opacity": {
           "stops": [
             [13, 0],
