@@ -2929,7 +2929,9 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
+          ["==", "bicycle", "designated"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
@@ -3011,7 +3013,9 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
+          ["==", "bicycle", "designated"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
         ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
@@ -3088,7 +3092,9 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
+          ["==", "bicycle", "designated"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
@@ -3171,7 +3177,9 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
+          ["==", "bicycle", "designated"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]],
           ["has", "mtb_scale"]
         ],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
@@ -7164,7 +7172,9 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["==", "bicycle", "designated"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]]
         ],
         ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
       ],
