@@ -731,7 +731,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 12,
-      "filter": ["in", "class", "pitch", "track", "playground"],
+      "filter": ["in", "class", "pitch", "track", "playground", "horse_racing_track"],
       "layout": {
         "visibility": "visible"
       },
