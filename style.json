@@ -78,15 +78,18 @@
     },
     "lipas-reitit": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/lipas-reitit.json"
+      "url": "https://tiles.trailmap.fi/data/lipas-reitit.json",
+      "promoteId": "id"
     },
     "lipas-pisteet": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/lipas-pisteet.json"
+      "url": "https://tiles.trailmap.fi/data/lipas-pisteet.json",
+      "promoteId": "id"
     },
     "lipas-alueet": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/lipas-alueet.json"
+      "url": "https://tiles.trailmap.fi/data/lipas-alueet.json",
+      "promoteId": "id"
     },
     "kiinteisto-avoin": {
       "type": "vector",
