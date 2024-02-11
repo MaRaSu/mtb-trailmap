@@ -586,29 +586,23 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": [
-        "any",
-        ["==", "kohdeluokka", 35300],
-        ["==", "kohdeluokka", 35411],
-        ["==", "kohdeluokka", 35412],
-        ["==", "kohdeluokka", 35421],
-        ["==", "kohdeluokka", 35422]
-      ],
+      "filter": ["in", "kohdeluokka", 35300, 35411, 35412, 35421, 35422],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-pattern": [
-          "case",
-          ["==", ["get", "kohdeluokka"], 35300],
+          "match",
+          ["get", "kohdeluokka"], 
+          [35300],
           "tm_vihr_mml_35300_soistuma",
-          ["==", ["get", "kohdeluokka"], 35411],
+          [35411],
           "tm_vihr_mml_35411_suo_helppokulkuinen_puuton",
-          ["==", ["get", "kohdeluokka"], 35412],
+          [35412],
           "tm_vihr_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
-          ["==", ["get", "kohdeluokka"], 35421],
+          [35421],
           "tm_vihr_mml_35421_suo_vaikeakulkuinen_puuton",
-          ["==", ["get", "kohdeluokka"], 35422],
+          [35422],
           "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
@@ -629,29 +623,23 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": [
-        "any",
-        ["==", "kohdeluokka", 35300],
-        ["==", "kohdeluokka", 35411],
-        ["==", "kohdeluokka", 35412],
-        ["==", "kohdeluokka", 35421],
-        ["==", "kohdeluokka", 35422]
-      ],
+      "filter": ["in", "kohdeluokka", 35300, 35411, 35412, 35421, 35422],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-pattern": [
-          "case",
-          ["==", ["get", "kohdeluokka"], 35300],
+          "match",
+          ["get", "kohdeluokka"], 
+          [35300],
           "tm_valk_mml_35300_soistuma",
-          ["==", ["get", "kohdeluokka"], 35411],
+          [35411],
           "tm_valk_mml_35411_suo_helppokulkuinen_puuton",
-          ["==", ["get", "kohdeluokka"], 35412],
+          [35412],
           "tm_valk_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
-          ["==", ["get", "kohdeluokka"], 35421],
+          [35421],
           "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          ["==", ["get", "kohdeluokka"], 35422],
+          [35422],
           "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_valk_mml_35300_soistuma"
         ],
@@ -723,7 +711,14 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 12,
-      "filter": ["in", "class", "pitch", "track", "playground", "horse_racing_track"],
+      "filter": [
+        "in",
+        "class",
+        "pitch",
+        "track",
+        "playground",
+        "horse_racing_track"
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -9918,6 +9913,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
+      "minzoom": 10,
       "filter": ["==", "route", "bicycle"],
       "layout": {
         "visibility": "none",
