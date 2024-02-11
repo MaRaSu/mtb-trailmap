@@ -573,6 +573,13 @@
     "x": 51,
     "y": 140
   },
+  "toilets_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 51,
+    "y": 140
+  },
   "town_hall_11": {
     "height": 17,
     "pixelRatio": 1,
@@ -706,6 +713,146 @@
     "x": 263,
     "y": 21
   },
+  "water_park_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 17,
+    "y": 140
+  },  
+  "parking_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 153,
+    "y": 72
+  },  
+  "sports_centre_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 170,
+    "y": 72
+  },  
+  "office_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 187,
+    "y": 72
+  },  
+  "atm_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 204,
+    "y": 72
+  },  
+  "hairdresser_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 221,
+    "y": 72
+  },  
+  "yoga_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 238,
+    "y": 72
+  },  
+  "bowls_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 255,
+    "y": 72
+  },  
+  "nature_reserve_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 272,
+    "y": 72
+  },  
+  "motorcycle_parking_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 289,
+    "y": 72
+  },  
+  "bicycle_parking_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 306,
+    "y": 72
+  },  
+  "recycling_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 323,
+    "y": 72
+  },  
+  "waste_basket_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 153,
+    "y": 89
+  },  
+  "shelter_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 170,
+    "y": 89
+  },  
+  "gate_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 187,
+    "y": 89
+  },  
+  "ice_rink_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 204,
+    "y": 89
+  },  
+  "athletics_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 221,
+    "y": 89
+  },  
+  "multi_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 238,
+    "y": 89
+  },  
+  "skiing_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 255,
+    "y": 89
+  },  
+  "climbing_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 272,
+    "y": 89
+  },  
   "tm_vihr_mml_35300_soistuma": {
     "height": 64,
     "pixelRatio": 1,
@@ -924,6 +1071,13 @@
     "y": 384
   },
   "blank": {
+    "height": 1,
+    "pixelRatio": 1,
+    "width": 1,
+    "x": 0,
+    "y": 0
+  },
+  "brownfield_11": {
     "height": 1,
     "pixelRatio": 1,
     "width": 1,

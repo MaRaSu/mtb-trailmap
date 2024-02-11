@@ -573,6 +573,13 @@
     "x": 102,
     "y": 280
   },
+  "toilets_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 102,
+    "y": 280
+  },
   "town_hall_11": {
     "height": 34,
     "pixelRatio": 2,
@@ -706,227 +713,374 @@
     "x": 526,
     "y": 42
   },
+  "water_park_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 34,
+    "y": 280
+  },  
+  "parking_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 306,
+    "y": 144
+  },  
+  "sports_centre_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 340,
+    "y": 144
+  },  
+  "office_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 374,
+    "y": 144
+  },  
+  "atm_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 408,
+    "y": 144
+  },  
+  "hairdresser_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 442,
+    "y": 144
+  },  
+  "yoga_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 476,
+    "y": 144
+  },  
+  "bowls_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 510,
+    "y": 144
+  },  
+  "nature_reserve_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 544,
+    "y": 144
+  },  
+  "motorcycle_parking_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 578,
+    "y": 144
+  },  
+  "bicycle_parking_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 612,
+    "y": 144
+  },  
+  "recycling_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 646,
+    "y": 144
+  },  
+  "waste_basket_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 306,
+    "y": 178
+  },  
+  "shelter_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 340,
+    "y": 178
+  },  
+  "gate_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 374,
+    "y": 178
+  },  
+  "ice_rink_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 408,
+    "y": 178
+  }, 
+  "athletics_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 442,
+    "y": 178
+  },   
+  "multi_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 476,
+    "y": 178
+  },   
+  "skiing_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 510,
+    "y": 178
+  },   
+  "climbing_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 544,
+    "y": 178
+  },   
   "tm_vihr_mml_35300_soistuma": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 352,
     "y": 0
   },
   "tm_vihr_mml_35411_suo_helppokulkuinen_puuton": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 704,
     "y": 128
   },
   "tm_vihr_mml_35412_suo_helppokulkuinen_metsaa_kasvava": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 704,
     "y": 0
   },
   "tm_vihr_mml_35421_suo_vaikeakulkuinen_puuton": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 704,
     "y": 384
   },
   "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 704,
     "y": 512
   },
   "tm_vihr_mml_varvikko_osm_scrub": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 704,
     "y": 768
   },
   "tm_valk_mml_35300_soistuma": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 0
   },
   "tm_valk_mml_35411_suo_helppokulkuinen_puuton": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 128
   },
   "tm_valk_mml_35412_suo_helppokulkuinen_metsaa_kasvava": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 0
   },
   "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 384
   },
   "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 512
   },  
   "tm_valk_mml_varvikko_osm_scrub": {
     "height": 128,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 128,
     "x": 832,
     "y": 768
   },  
   "tm_mml_22392_suurjannitelinjan_pylvas": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 448,
     "y": 640
   },
   "tm_mml_32500_32111_32112_32113_louhokset": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 576,
     "y": 640
   },
   "tm_noexit": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 320,
     "y": 640
   },
   "tm_fixme-continue": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 256,
     "y": 640
   },
   "tm_fixme-other": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 192,
     "y": 640
   },
   "lipas_viewpoint": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 64,
     "y": 448
   },
   "lipas_shelter": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 320
   },
   "lipas_wilderness_hut": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 448
   },
   "osm_viewpoint": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 64,
     "y": 448
   },
   "osm_shelter": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 320
   },
   "osm_wilderness_hut": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 448
   },
   "route_walking_lipas": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 704
   },
   "route_hiking_lipas": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 64,
     "y": 704
   },
   "route_bicycle_lipas": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 128,
     "y": 704
   },
   "route_mtb_lipas": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 192,
     "y": 704
   },
   "route_walking_osm": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 0,
     "y": 768
   },
   "route_hiking_osm": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 64,
     "y": 768
   },
   "route_bicycle_osm": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 128,
     "y": 768
   },
   "route_mtb_osm": {
     "height": 64,
-    "pixelRatio": 1,
+    "pixelRatio": 2,
     "width": 64,
     "x": 192,
     "y": 768
   },
   "blank": {
-    "height": 1,
-    "pixelRatio": 1,
-    "width": 1,
+    "height": 2,
+    "pixelRatio": 2,
+    "width": 2,
+    "x": 0,
+    "y": 0
+  },
+  "brownfield": {
+    "height": 2,
+    "pixelRatio": 2,
+    "width": 2,
     "x": 0,
     "y": 0
   }
