@@ -983,6 +983,13 @@
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
+    "x": 512,
+    "y": 640
+  },
+  "tm_fallen_tree": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
     "x": 576,
     "y": 640
   },
