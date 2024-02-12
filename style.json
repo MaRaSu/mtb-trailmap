@@ -9227,6 +9227,36 @@
       }
     },
     {
+      "id": "obstacle-fallen_tree",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["==", "obstacle", "fallen_tree"],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "tm_fallen_tree",
+        "icon-rotation-alignment": "viewport",
+        "symbol-placement": "line",
+        "symbol-spacing": 20,
+        "icon-size": {
+          "stops": [
+            [13, 0.4],
+            [16, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": 1
+      }
+    },
+    {
       "id": "place-other",
       "type": "symbol",
       "metadata": {
