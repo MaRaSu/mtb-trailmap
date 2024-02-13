@@ -2322,6 +2322,7 @@
           "any",
           ["==", "bicycle", "no"],
           ["==", "bicycle", "dismount"],
+          ["==", "bicycle", "private"],
           ["==", "access", "no"],
           ["==", "access", "private"]
         ]
@@ -3443,8 +3444,9 @@
         [
           "any",
           ["in", "subclass", "footway"],
-          ["all", ["==", "bicycle", "no"], ["!=", "foot", "no"]],
-          ["all", ["==", "bicycle", "dismount"], ["!=", "foot", "no"]]
+          ["==", "bicycle", "no"],
+          ["==", "bicycle", "dismount"],
+          ["==", "bicycle", "private"]
         ],
         ["!has", "mtb_scale"]
       ],
