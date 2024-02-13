@@ -2511,15 +2511,15 @@
           ["0"],
           "#75E009",
           ["1"],
-          "#E3E800",
+          "#d7dc00",
           ["2"],
           "#FEB13E",
           ["3"],
-          "#FF6774",
+          "#ff4f5e",
           ["4"],
-          "#F20BAB",
+          "#e50bdd",
           ["5"],
-          "#BF1CF5",
+          "#9600c8",
           ["6"],
           "#8100AC",
           "#FFFFFF"
@@ -2568,7 +2568,7 @@
             6
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -2605,15 +2605,15 @@
           ["0"],
           "#75E009",
           ["1"],
-          "#E3E800",
+          "#d7dc00",
           ["2"],
           "#FEB13E",
           ["3"],
-          "#FF6774",
+          "#ff4f5e",
           ["4"],
-          "#F20BAB",
+          "#e50bdd",
           ["5"],
-          "#BF1CF5",
+          "#9600c8",
           ["6"],
           "#8100AC",
           "#FFFFFF"
@@ -2662,7 +2662,7 @@
             1.6
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -2677,7 +2677,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 11,
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2698,15 +2698,15 @@
           ["0"],
           "#75E009",
           ["1"],
-          "#E3E800",
+          "#d7dc00",
           ["2"],
           "#FEB13E",
           ["3"],
-          "#FF6774",
+          "#ff4f5e",
           ["4"],
-          "#F20BAB",
+          "#e50bdd",
           ["5"],
-          "#BF1CF5",
+          "#9600c8",
           ["6"],
           "#8100AC",
           "#FFFFFF"
@@ -2719,7 +2719,7 @@
             [17, 9]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -2755,15 +2755,15 @@
           ["0"],
           "#75E009",
           ["1"],
-          "#E3E800",
+          "#d7dc00",
           ["2"],
           "#FEB13E",
           ["3"],
-          "#FF6774",
+          "#ff4f5e",
           ["4"],
-          "#F20BAB",
+          "#e50bdd",
           ["5"],
-          "#BF1CF5",
+          "#9600c8",
           ["6"],
           "#8100AC",
           "#FFFFFF"
@@ -2811,7 +2811,7 @@
           ["1"],
           "#75E009",
           ["2", "yes"],
-          "#E3E800",
+          "#d7dc00",
           "#FEB13E"
         ],
         "line-width": {
@@ -2822,7 +2822,7 @@
             [17, 9]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -2919,7 +2919,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -2953,6 +2953,17 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            0.4,
+            ["==", ["get", "width_cat"], "b"],
+            0.6,
+            ["==", ["get", "width_cat"], "c"],
+            1.2,
+            0.6
+          ],
           14,
           [
             "case",
@@ -2987,7 +2998,7 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
       }
     },
     {
@@ -3003,7 +3014,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3037,6 +3048,17 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            0.4,
+            ["==", ["get", "width_cat"], "b"],
+            0.6,
+            ["==", ["get", "width_cat"], "c"],
+            1.2,
+            0.6
+          ],
           14,
           [
             "case",
@@ -3071,7 +3093,7 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0, 14, 0.8]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 0.8]
       }
     },
     {
@@ -3087,7 +3109,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3117,6 +3139,17 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            0.4,
+            ["==", ["get", "width_cat"], "b"],
+            0.6,
+            ["==", ["get", "width_cat"], "c"],
+            1.2,
+            0.6
+          ],
           14,
           [
             "case",
@@ -3151,7 +3184,7 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
       }
     },
     {
@@ -3167,7 +3200,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3201,6 +3234,17 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "case",
+            ["==", ["get", "width_cat"], "a"],
+            0.4,
+            ["==", ["get", "width_cat"], "b"],
+            0.6,
+            ["==", ["get", "width_cat"], "c"],
+            1.2,
+            0.6
+          ],
           14,
           [
             "case",
@@ -3235,7 +3279,7 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 0.8]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 0.8]
       }
     },
     {
@@ -3251,7 +3295,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3274,12 +3318,13 @@
         "line-width": {
           "base": 1,
           "stops": [
+            [12, 0.6],
             [14, 1],
             [16, 1.8],
             [17, 2]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
       }
     },
     {
@@ -7063,15 +7108,15 @@
           ["==", ["get", "mtb_scale"], "0"],
           "#75E009",
           ["==", ["get", "mtb_scale"], "1"],
-          "#E3E800",
+          "#d7dc00",
           ["==", ["get", "mtb_scale"], "2"],
           "#FEB13E",
           ["==", ["get", "mtb_scale"], "3"],
           "#FF4454",
           ["==", ["get", "mtb_scale"], "4"],
-          "#F20BAB",
+          "#e50bdd",
           ["==", ["get", "mtb_scale"], "5"],
-          "#BF1CF5",
+          "#9600c8",
           ["==", ["get", "mtb_scale"], "6"],
           "#8100AC",
           "#000000"
@@ -7153,15 +7198,15 @@
           ["==", ["get", "mtb_scale"], "0"],
           "#75E009",
           ["==", ["get", "mtb_scale"], "1"],
-          "#E3E800",
+          "#d7dc00",
           ["==", ["get", "mtb_scale"], "2"],
           "#FEB13E",
           ["==", ["get", "mtb_scale"], "3"],
           "#FF4454",
           ["==", ["get", "mtb_scale"], "4"],
-          "#F20BAB",
+          "#e50bdd",
           ["==", ["get", "mtb_scale"], "5"],
-          "#BF1CF5",
+          "#9600c8",
           ["==", ["get", "mtb_scale"], "6"],
           "#8100AC",
           "#000000"
