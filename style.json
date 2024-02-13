@@ -2312,7 +2312,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3434,7 +3434,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3457,14 +3457,15 @@
         "line-width": {
           "base": 1.2,
           "stops": [
+            [12, 0.8],
             [14, 1.5],
             [17, 3.5]
           ]
         },
         "line-opacity": {
           "stops": [
-            [13, 0],
-            [14, 1]
+            [11.5, 0],
+            [12, 1]
           ]
         }
       }
