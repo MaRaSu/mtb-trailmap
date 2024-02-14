@@ -2410,7 +2410,12 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
-        ["any", ["==", "access", "no"], ["==", "access", "private"]]
+        [
+          "any",
+          ["==", "access", "no"],
+          ["==", "access", "private"],
+          ["==", "foot", "no"]
+        ]
       ],
       "layout": {
         "visibility": "visible"
@@ -8738,7 +8743,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": ["interpolate", ["linear"], ["zoom"], 16, "#666666", 18, "#212121"],
+        "text-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          16,
+          "#666666",
+          18,
+          "#212121"
+        ],
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -8780,7 +8793,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": ["interpolate", ["linear"], ["zoom"], 15, "#666666", 17, "#212121"],
+        "text-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          15,
+          "#666666",
+          17,
+          "#212121"
+        ],
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -8822,7 +8843,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": ["interpolate", ["linear"], ["zoom"], 14, "#666666", 16, "#212121"],
+        "text-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          "#666666",
+          16,
+          "#212121"
+        ],
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
