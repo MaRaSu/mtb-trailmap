@@ -3746,7 +3746,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"]
+        ["in", "class", "minor", "minor_construction"]
       ],
       "layout": {
         "line-cap": "round",
@@ -3794,7 +3794,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"],
+        ["in", "class", "minor", "minor_construction"],
         [
           "!in",
           "surface_raw",
@@ -3871,7 +3871,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"],
+        ["in", "class", "minor", "minor_construction"],
         [
           "in",
           "surface_raw",
@@ -3927,7 +3927,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"],
+        ["in", "class", "minor", "minor_construction"],
         [
           "in",
           "surface_raw",
@@ -3980,7 +3980,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service"],
+        ["in", "class", "service", "service_construction"],
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
@@ -4029,7 +4029,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service"],
+        ["in", "class", "service", "service_construction"],
         ["!in", "service", "parking_aisle", "driveway"],
         [
           "!in",
@@ -4107,7 +4107,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service"],
+        ["in", "class", "service", "service_construction"],
         ["!in", "service", "parking_aisle", "driveway"],
         [
           "in",
@@ -4164,7 +4164,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service"],
+        ["in", "class", "service", "service_construction"],
         ["!in", "service", "parking_aisle", "driveway"],
         [
           "in",
@@ -4265,7 +4265,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "raceway"]
+        ["in", "class", "raceway", "raceway_construction"]
       ],
       "layout": {
         "line-cap": "round",
@@ -4356,7 +4356,14 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary",
+          "secondary_construction",
+          "tertiary_construction"
+        ],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4398,7 +4405,14 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary",
+          "secondary_construction",
+          "tertiary_construction"
+        ],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4470,7 +4484,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary"],
+        ["in", "class", "primary", "primary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4513,7 +4527,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary"],
+        ["in", "class", "primary", "primary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4587,7 +4601,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk"],
+        ["in", "class", "trunk", "trunk_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4639,7 +4653,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk"],
+        ["in", "class", "trunk", "trunk_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4713,7 +4727,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "motorway"],
+        ["in", "class", "motorway", "motorway_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -4882,7 +4896,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor"]
+        ["in", "class", "minor", "minor_construction"]
       ],
       "layout": {
         "line-cap": "round",
@@ -4960,7 +4974,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["==", "class", "service"],
+        ["in", "class", "service", "service_construction"],
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
@@ -5115,7 +5129,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["==", "class", "raceway"]
+        ["in", "class", "raceway", "raceway_construction"]
       ],
       "layout": {
         "line-cap": "round",
@@ -5192,7 +5206,14 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary",
+          "secondary_construction",
+          "tertiary_construction"
+        ],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5207,6 +5228,9 @@
           "stops": [
             [6.5, 0],
             [8, 0.5],
+            [10, 1],
+            [12, 2],
+            [14, 3.6],
             [20, 13]
           ]
         },
@@ -5234,7 +5258,14 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary",
+          "secondary_construction",
+          "tertiary_construction"
+        ],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5312,7 +5343,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary"],
+        ["in", "class", "primary", "primary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5327,6 +5358,9 @@
           "stops": [
             [8.5, 0],
             [9, 0.5],
+            [10, 0.6],
+            [12, 2],
+            [14, 3.6],
             [20, 18]
           ]
         }
@@ -5349,7 +5383,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary"],
+        ["in", "class", "primary", "primary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5421,7 +5455,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk"],
+        ["in", "class", "trunk", "trunk_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5436,6 +5470,9 @@
           "stops": [
             [6.5, 0],
             [7, 0.5],
+            [10, 2],
+            [12, 3.4],
+            [14, 4.6],
             [20, 18]
           ]
         },
@@ -5464,7 +5501,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk"],
+        ["in", "class", "trunk", "trunk_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5542,7 +5579,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "motorway"],
+        ["in", "class", "motorway", "motorway_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -5557,6 +5594,9 @@
           "stops": [
             [6.5, 0],
             [7, 0.5],
+            [10, 1.5],
+            [12, 3],
+            [14, 4],
             [20, 18]
           ]
         },
@@ -6251,7 +6291,7 @@
           ["get", "oneway"],
           ["1", "yes"],
           ">",
-          ["-1", "no"],
+          ["-1"],
           "<",
           ""
         ],
@@ -7861,6 +7901,137 @@
             [20, 18]
           ]
         }
+      }
+    },
+    {
+      "id": "hw-construction-overlay",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        [
+          "in",
+          "class",
+          "service_construction",
+          "minor_construction",
+          "raceway_construction",
+          "trunk_construction",
+          "tertiary_construction",
+          "secondary_construction",
+          "primary_construction",
+          "motorway_construction"
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#999999",
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          [
+            "match",
+            ["get", "class"],
+            ["service_construction"],
+            1,
+            ["minor_construction"],
+            1,
+            ["raceway_construction"],
+            1,
+            ["trunk_construction"],
+            2,
+            ["tertiary_construction", "secondary_construction"],
+            1,
+            ["primary_construction"],
+            1,
+            ["motorway_construction"],
+            1.5,
+            1
+          ],
+          12,
+          [
+            "match",
+            ["get", "class"],
+            ["service_construction"],
+            1.3,
+            ["minor_construction"],
+            1.3,
+            ["raceway_construction"],
+            1.3,
+            ["trunk_construction"],
+            3.4,
+            ["tertiary_construction", "secondary_construction"],
+            2,
+            ["primary_construction"],
+            2,
+            ["motorway_construction"],
+            3,
+            1.3
+          ],
+          14,
+          [
+            "match",
+            ["get", "class"],
+            ["service_construction"],
+            1.8,
+            ["minor_construction"],
+            2.5,
+            ["raceway_construction"],
+            1.8,
+            ["trunk_construction"],
+            4.6,
+            ["tertiary_construction", "secondary_construction"],
+            3.6,
+            ["primary_construction"],
+            3.6,
+            ["motorway_construction"],
+            4,
+            1.8
+          ],
+          20,
+          [
+            "match",
+            ["get", "class"],
+            ["service_construction"],
+            9,
+            ["minor_construction"],
+            11.5,
+            ["raceway_construction"],
+            9,
+            ["trunk_construction"],
+            18,
+            ["tertiary_construction", "secondary_construction"],
+            13,
+            ["primary_construction"],
+            18,
+            ["motorway_construction"],
+            18,
+            9
+          ]
+        ],
+        "line-dasharray": [1, 1]
       }
     },
     {
