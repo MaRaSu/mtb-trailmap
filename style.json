@@ -2407,11 +2407,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
-        [
-          "any",
-          ["==", "access", "no"],
-          ["==", "foot", "no"]
-        ]
+        ["!in", "subclass", "cycleway"],
+        ["==", "access", "no"]
       ],
       "layout": {
         "visibility": "visible"
