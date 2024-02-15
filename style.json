@@ -3475,12 +3475,15 @@
             [18, 4]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [11.5, 0],
-            [12, 1]
-          ]
-        }
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
