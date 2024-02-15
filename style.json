@@ -2318,11 +2318,7 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
         ["!in", "subclass", "footway"],
-        [
-          "any",
-          ["==", "bicycle", "no"],
-          ["==", "access", "no"]
-        ]
+        ["any", ["==", "bicycle", "no"], ["==", "access", "no"]]
       ],
       "layout": {
         "visibility": "visible"
@@ -2496,7 +2492,8 @@
         ["has", "mtb_scale"],
         ["!in", "mtb_scale", "-1"],
         ["==", "class", "path"],
-        ["!in", "subclass", "cycleway"]
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
       ],
       "layout": {
         "visibility": "visible"
@@ -2590,7 +2587,8 @@
         ["has", "mtb_scale"],
         ["!in", "mtb_scale", "-1"],
         ["==", "class", "path"],
-        ["!in", "subclass", "cycleway"]
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
       ],
       "layout": {
         "visibility": "none"
@@ -2683,7 +2681,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "track"],
         ["has", "mtb_scale"],
-        ["!in", "mtb_scale", "-1"]
+        ["!in", "mtb_scale", "-1"],
+        ["!=", "noexit", 1]
       ],
       "layout": {
         "visibility": "visible"
@@ -2740,7 +2739,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "track"],
         ["has", "mtb_scale"],
-        ["!in", "mtb_scale", "-1"]
+        ["!in", "mtb_scale", "-1"],
+        ["!=", "noexit", 1]
       ],
       "layout": {
         "visibility": "none"
@@ -2798,7 +2798,8 @@
         ["has", "mtb_winter"],
         ["!in", "mtb_winter", "-1", "no"],
         ["in", "class", "path", "track"],
-        ["!in", "subclass", "cycleway"]
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
       ],
       "layout": {
         "visibility": "none"
@@ -2995,7 +2996,15 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
@@ -3088,7 +3097,15 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 0.8]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4]
+        ]
       }
     },
     {
@@ -3177,7 +3194,15 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
@@ -3270,7 +3295,15 @@
             2
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 0.8]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4]
+        ]
       }
     },
     {
@@ -3315,7 +3348,15 @@
             [17, 2]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11.5, 0, 12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          12,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
@@ -3357,12 +3398,15 @@
             [17, 3.5]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [11, 1]
-          ]
-        }
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          11,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
@@ -3404,12 +3448,15 @@
             [17, 4.5]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [11, 1]
-          ]
-        }
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          11,
+          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+        ]
       }
     },
     {
@@ -3431,11 +3478,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        [
-          "any",
-          ["in", "subclass", "footway"],
-          ["==", "bicycle", "no"]
-        ],
+        ["any", ["in", "subclass", "footway"], ["==", "bicycle", "no"]],
         ["!has", "mtb_scale"]
       ],
       "layout": {
@@ -6263,21 +6306,9 @@
       "source": "openmaptiles",
       "source-layer": "piste_ext",
       "minzoom": 13,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "oneway", 1,  -1]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["in", "oneway", 1, -1]],
       "layout": {
-        "text-field": [
-          "match",
-          ["get", "oneway"],
-          [1],
-          ">",
-          [-1],
-          "<",
-          ""
-        ],
+        "text-field": ["match", ["get", "oneway"], [1], ">", [-1], "<", ""],
         "text-font": ["Noto Sans Regular"],
         "text-keep-upright": false,
         "symbol-placement": "line",
