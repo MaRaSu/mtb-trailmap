@@ -2947,7 +2947,7 @@
           ["has", "mtb_scale"]
         ],
         ["!in", "width_cat", "d"],
-        ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+        ["==", "trail_visibility", "bad"]
       ],
       "layout": {
         "visibility": "visible"
@@ -3042,7 +3042,7 @@
           ["has", "mtb_scale"]
         ],
         ["!in", "width_cat", "d"],
-        ["in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+        ["==", "trail_visibility", "bad"]
       ],
       "layout": {
         "visibility": "none"
@@ -3133,7 +3133,7 @@
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!=", "width_cat", "d"],
-        ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+        ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
         "visibility": "visible"
@@ -3228,7 +3228,7 @@
           ["has", "mtb_scale"]
         ],
         ["!in", "width_cat", "d"],
-        ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+        ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
         "visibility": "none"
@@ -7303,7 +7303,7 @@
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "designated"]]
         ],
-        ["!in", "trail_visibility", "no", "horrible", "bad", "intermediate"]
+        ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
         "visibility": "visible"
