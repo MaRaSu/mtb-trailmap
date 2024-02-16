@@ -1049,6 +1049,62 @@
     "x": 0,
     "y": 160
   },
+  "osm_drinking_water": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 160
+  },
+  "osm_toilets": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 64,
+    "y": 160
+  },
+  "osm_firepit": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 192
+  },
+  "osm_memorial": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 256
+  },
+  "osm_monument": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 256
+  },
+  "osm_cave_entrance": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 288
+  },
+  "osm_peak": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 288
+  },
+  "osm_bunker": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 320
+  },
   "osm_wilderness_hut": {
     "height": 32,
     "pixelRatio": 1,
