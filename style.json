@@ -10780,7 +10780,7 @@
       "paint": {
         "circle-radius": {
           "stops": [
-            [10, 9],
+            [14, 9],
             [17, 22]
           ]
         },
@@ -10823,7 +10823,7 @@
         ],
         "icon-size": {
           "stops": [
-            [10, 0.4],
+            [14, 0.35],
             [17, 1]
           ]
         }
@@ -10900,16 +10900,36 @@
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
-      "source-layer": "poi",
+      "source-layer": "poi_ext",
       "minzoom": 8,
-      "filter": ["in", "subclass", "viewpoint", "shelter", "wilderness_hut"],
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "viewpoint",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "wilderness_hut",
+          "water_point",
+          "drinking_water",
+          "toilets",
+          "firepit",
+          "memorial",
+          "monument",
+          "cave_entrance",
+          "bunker"
+        ],
+        ["!in", "access", "no", "private", "permit", "military"]
+      ],
       "layout": {
         "visibility": "none"
       },
       "paint": {
         "circle-radius": {
           "stops": [
-            [10, 9],
+            [14, 9],
             [17, 22]
           ]
         },
@@ -10932,8 +10952,9 @@
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
-      "source-layer": "poi",
+      "source-layer": "poi_ext",
       "minzoom": 8,
+      "filter": ["!in", "access", "no", "private", "permit", "military"],
       "layout": {
         "visibility": "none",
         "icon-allow-overlap": true,
@@ -10942,15 +10963,29 @@
           ["get", "subclass"],
           ["viewpoint"],
           "osm_viewpoint",
-          ["shelter"],
+          ["lean_to", "picnic_shelter", "weather_shelter"],
           "osm_shelter",
           ["wilderness_hut"],
           "osm_wilderness_hut",
+          ["water_point", "drinking_water"],
+          "osm_drinking_water",
+          ["toilets"],
+          "osm_toilets",
+          ["firepit"],
+          "osm_firepit",
+          ["memorial"],
+          "osm_memorial",
+          ["monument"],
+          "osm_monument",
+          ["cave_entrance"],
+          "osm_cave_entrance",
+          ["bunker"],
+          "osm_bunker",
           "blank"
         ],
         "icon-size": {
           "stops": [
-            [10, 0.4],
+            [14, 0.35],
             [17, 1]
           ]
         }
@@ -10974,12 +11009,29 @@
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
-      "source-layer": "poi",
+      "source-layer": "poi_ext",
       "minzoom": 11,
       "filter": [
         "all",
-        ["in", "subclass", "viewpoint", "shelter", "wilderness_hut"],
-        ["has", "name"]
+        ["has", "name"],
+        [
+          "in",
+          "subclass",
+          "viewpoint",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "wilderness_hut",
+          "water_point",
+          "drinking_water",
+          "toilets",
+          "firepit",
+          "memorial",
+          "monument",
+          "cave_entrance",
+          "bunker"
+        ],
+        ["!in", "access", "no", "private", "permit", "military"]
       ],
       "layout": {
         "visibility": "none",
