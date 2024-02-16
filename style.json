@@ -2316,9 +2316,10 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "track", "service", "minor"],
+        ["in", "class", "path", "track"],
         ["!in", "subclass", "footway"],
-        ["any", ["==", "bicycle", "no"], ["==", "access", "no"]]
+        ["in", "bicycle", "no"],
+        ["!in", "access", "no"]
       ],
       "layout": {
         "visibility": "visible"
@@ -2418,12 +2419,12 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [14, 1],
-            [16, 2],
-            [18, 4]
+            [14, 2],
+            [16, 3],
+            [18, 6]
           ]
         },
-        "line-offset": [
+        "line-gap-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
