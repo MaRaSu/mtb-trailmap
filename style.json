@@ -1249,7 +1249,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "service", "track"]
+        ["==", "class", "service"]
       ],
       "layout": {
         "line-join": "round"
@@ -1480,6 +1480,49 @@
       }
     },
     {
+      "id": "tunnel-cycleway",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway line for paved ways.",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "tunnel"],
+        ["in", "subclass", "cycleway", "pedestrian"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [16, 2.5],
+            [18, 6]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5]
+          ]
+        }
+      }
+    },
+    {
       "id": "tunnel-path",
       "type": "line",
       "metadata": {
@@ -1491,20 +1534,86 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
         ["==", "brunnel", "tunnel"],
-        ["==", "class", "path"]
+        ["in", "class", "path", "footway"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
+        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
       ],
       "paint": {
-        "line-color": "#cba",
-        "line-dasharray": [1.5, 0.75],
+        "line-color": "#000000",
+        "line-dasharray": [2.5, 2],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [15, 1.2],
-            [20, 4]
+            [12, 0.6],
+            [14, 1],
+            [16, 1.8],
+            [18, 3.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11.5, 0],
+            [12, 0.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "tunnel-track",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "tunnel"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["!in", "subclass", "cycleway"],
+        [
+          "any",
+          ["!=", "subclass", "footway"],
+          ["all", ["==", "subclass", "footway"], ["has", "mtb_scale"]]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [8, 1.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.5],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 0.5]
           ]
         }
       }
@@ -1559,7 +1668,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "service", "track"]
+        ["==", "class", "service"]
       ],
       "layout": {
         "line-join": "round"
@@ -3350,7 +3459,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3382,9 +3491,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          9.5,
+          ["case", ["!=", ["get", "noexit"], 1], 0, 0.4],
           10,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
-          11,
           ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
         ]
       }
@@ -3401,7 +3510,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3432,9 +3541,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          10,
+          9.5,
           ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
-          11,
+          10,
           ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
         ]
       }
