@@ -140,6 +140,27 @@
       }
     },
     {
+      "id": "landuse-mml-taajama",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maankaytto",
+      "minzoom": 8,
+      "filter": ["==", "kohdeluokka", 40200],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#ebe4dd"
+      }
+    },
+    {
       "id": "landuse-residential",
       "type": "fill",
       "metadata": {
@@ -152,21 +173,12 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 8,
-      "filter": [
-        "all",
-        ["in", "class", "residential", "suburb", "neighbourhood"]
-      ],
+      "filter": ["in", "class", "residential", "suburb", "neighbourhood"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": {
-          "base": 1,
-          "stops": [
-            [12, "hsla(30, 19%, 90%, 0.4)"],
-            [16, "hsla(30, 19%, 90%, 0.2)"]
-          ]
-        }
+        "fill-color": "#ebe4dd"
       }
     },
     {
@@ -191,7 +203,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsla(0, 60%, 87%, 0.23)"
+        "fill-color": "#e5ddd8"
       }
     },
     {
@@ -215,7 +227,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsla(30, 80%, 88%, 0.34)"
+        "fill-color": "#ebe2dd"
       }
     },
     {
@@ -251,7 +263,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "hospital"],
       "paint": {
-        "fill-color": "#ffebf5"
+        "fill-color": "#ebdfdd"
       }
     },
     {
@@ -269,7 +281,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "school"],
       "paint": {
-        "fill-color": "#f0e8f8"
+        "fill-color": "#ebe4dd"
       }
     },
     {
@@ -332,7 +344,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": {
@@ -393,7 +405,8 @@
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, 1]
+            [10, 0.6],
+            [14, 1]
           ]
         }
       }
@@ -680,7 +693,7 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "maputnik:comment": "32611 = pelto",
+        "maputnik:comment": "32611 = pelto, 32800 = niitty",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
@@ -689,12 +702,17 @@
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
       "minzoom": 9,
-      "filter": ["==", "kohdeluokka", 32611],
+      "filter": ["in", "kohdeluokka", 32611, 32800],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#faf3ce",
+        "fill-color": [
+          "case",
+          ["==", ["get", "kohdeluokka"], 32611],
+          "#faf3ce",
+          "#f6face"
+        ],
         "fill-opacity": {
           "stops": [
             [9, 0],
@@ -734,6 +752,41 @@
           "stops": [
             [12, 0],
             [13, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "landuse-boundaries",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landuse",
+      "minzoom": 14,
+      "filter": [
+        "in",
+        "class",
+        "residential",
+        "industrial",
+        "school",
+        "commercial",
+        "construction"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#dbd3cd",
+        "line-opacity": {
+          "stops": [
+            [15, 0],
+            [15.5, 1]
           ]
         }
       }
@@ -1017,6 +1070,41 @@
       }
     },
     {
+      "id": "contours-line",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 11,
+      "maxzoom": 20,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#916f4c",
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [13, 0.3]
+          ]
+        },
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 1, 0.5],
+          20,
+          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 14, 7]
+        ]
+      }
+    },
+    {
       "id": "water-offset",
       "type": "fill",
       "metadata": {
@@ -1109,41 +1197,6 @@
       }
     },
     {
-      "id": "contours-line",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "korkeus",
-      "minzoom": 11,
-      "maxzoom": 20,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#916f4c",
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [13, 0.3]
-          ]
-        },
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 1, 0.5],
-          20,
-          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 14, 7]
-        ]
-      }
-    },
-    {
       "id": "cliffs-line",
       "type": "line",
       "metadata": {
@@ -1228,7 +1281,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -8998,6 +9051,7 @@
       "filter": ["in", "kohdeluokka", 32500, 32111, 32112, 32113],
       "layout": {
         "visibility": "visible",
+        "icon-allow-overlap": true,
         "icon-image": "tm_mml_32500_32111_32112_32113_louhokset",
         "icon-size": {
           "stops": [
@@ -9157,6 +9211,77 @@
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
+      }
+    },
+    {
+      "id": "poi-additions",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 12,
+      "filter": ["all", ["==", "$type", "Point"]],
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "subclass"],
+          ["firepit"],
+          "firepit_11",
+          ["peak"],
+          "peak_11",
+          ["swimming_area"],
+          "swimming_11",
+          ["memorial", "monument"],
+          "monument_11",
+          ["toilet", "toilets"],
+          "toilet_11",
+          ["lean_to", "picnic_shelter", "weather_shelter"],
+          "shelter_11",
+          ["water_point", "drinking_water"],
+          "drinking_water_11",
+          ["cave_entrance"],
+          "cave_entrance_11",
+          ["bunker"],
+          "bunker_11",
+          "#blank"
+        ],
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 9,
+        "text-offset": [0, 0.6],
+        "text-padding": 2,
+        "text-size": {
+          "stops": [
+            [15, 9],
+            [16, 13],
+            [18, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        },
+        "text-color": "#212121",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1,
+        "text-opacity": {
+          "stops": [
+            [14.5, 0],
+            [15, 1]
+          ]
+        }
       }
     },
     {
