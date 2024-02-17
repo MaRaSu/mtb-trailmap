@@ -479,7 +479,7 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": ["==", "kohdeluokka", 39110],
+      "filter": ["==", "kohdeluokka", 39120],
       "layout": {
         "visibility": "visible"
       },
@@ -507,7 +507,7 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": ["==", "kohdeluokka", 39110],
+      "filter": ["==", "kohdeluokka", 39120],
       "layout": {
         "visibility": "visible"
       },
