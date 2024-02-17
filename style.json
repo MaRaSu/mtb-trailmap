@@ -332,7 +332,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": {
@@ -381,7 +381,7 @@
       "source": "openmaptiles",
       "source-layer": "landcover",
       "minzoom": 9,
-      "filter": ["all", ["==", "class", "grass"], ["!=", "subclass", "scrub"]],
+      "filter": ["all", ["==", "class", "grass"], ["!in", "subclass", "scrub", "heath", "fell"]],
       "paint": {
         "fill-color": "#e5f4d5",
         "fill-opacity": {
@@ -1915,7 +1915,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "park",
-      "minzoom": 8,
+      "minzoom": 5,
       "filter": [
         "in",
         "class",
@@ -1937,8 +1937,10 @@
         "fill-color": "#7BA36C",
         "fill-opacity": {
           "stops": [
-            [8, 0],
-            [9, 0.15]
+            [5, 0],
+            [5.5, 0.2],
+            [10, 0.2],
+            [12, 0]
           ]
         },
         "fill-outline-color": "#7BA36C"
@@ -1978,8 +1980,8 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, 2.5],
-            [17, 5]
+            [14, 6],
+            [16, 8]
           ]
         }
       }
