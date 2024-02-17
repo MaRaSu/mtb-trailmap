@@ -109,7 +109,7 @@
         "trailmap:ways_only": false
       },
       "paint": {
-        "background-color": "#f7f1eb"
+        "background-color": "#f7f4f0"
       }
     },
     {
@@ -1228,7 +1228,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
