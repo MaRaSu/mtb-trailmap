@@ -381,9 +381,15 @@
       "source": "openmaptiles",
       "source-layer": "landcover",
       "minzoom": 9,
-      "filter": ["all", ["==", "class", "grass"], ["!in", "subclass", "scrub", "heath", "fell"]],
+      "filter": ["all", ["==", "class", "grass"], ["!in", "subclass", "scrub"]],
       "paint": {
-        "fill-color": "#e5f4d5",
+        "fill-color": [
+          "match",
+          ["get", "subclass"],
+          ["heath", "fell"],
+          "#f2f5e9",
+          "#e5f4d5"
+        ],
         "fill-opacity": {
           "stops": [
             [9, 0],
@@ -1916,6 +1922,7 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "minzoom": 5,
+      "maxzoom": 12,
       "filter": [
         "in",
         "class",
@@ -1973,8 +1980,8 @@
         "line-color": "#7BA36C",
         "line-opacity": {
           "stops": [
-            [8, 0],
-            [9, 0.4]
+            [10, 0],
+            [12, 0.4]
           ]
         },
         "line-width": {
