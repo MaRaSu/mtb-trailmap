@@ -895,6 +895,20 @@
     "x": 187,
     "y": 106
   },  
+  "cave_entrance_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 204,
+    "y": 106
+  },  
+  "bunker_11": {
+    "height": 17,
+    "pixelRatio": 1,
+    "width": 17,
+    "x": 221,
+    "y": 106
+  },  
   "peak_11": {
     "height": 17,
     "pixelRatio": 1,
