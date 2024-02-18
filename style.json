@@ -197,7 +197,7 @@
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
-        ["==", "class", "commercial"]
+        ["in", "class", "commercial", "retail"]
       ],
       "layout": {
         "visibility": "visible"
@@ -221,7 +221,7 @@
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
-        ["in", "class", "industrial", "garages", "dam"]
+        ["in", "class", "industrial", "garages", "dam", "construction", "brownfield", "depot", "landfill"]
       ],
       "layout": {
         "visibility": "visible"
@@ -279,7 +279,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 8,
-      "filter": ["in", "class", "school", "college", "university"],
+      "filter": ["in", "class", "school", "college", "university", "education"],
       "paint": {
         "fill-color": "#ebe4dd"
       }
