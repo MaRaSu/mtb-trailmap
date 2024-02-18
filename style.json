@@ -8492,8 +8492,9 @@
           ["zoom"],
           13,
           ["case", ["==", ["get", "class"], "hedge"], 0.8, 0.4],
-          17,
-          ["case", ["==", ["get", "class"], "hedge"], 6, 1]
+
+          18,
+          ["case", ["==", ["get", "class"], "hedge"], 5, 1]
         ]
       }
     },
