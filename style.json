@@ -279,7 +279,7 @@
       "source": "openmaptiles",
       "source-layer": "landuse",
       "minzoom": 8,
-      "filter": ["==", "class", "school"],
+      "filter": ["in", "class", "school", "college", "university"],
       "paint": {
         "fill-color": "#ebe4dd"
       }
@@ -8107,6 +8107,7 @@
         [
           "in",
           "class",
+          "path_construction",
           "service_construction",
           "minor_construction",
           "raceway_construction",
