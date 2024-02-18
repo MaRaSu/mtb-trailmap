@@ -221,7 +221,17 @@
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
-        ["in", "class", "industrial", "garages", "dam", "construction", "brownfield", "depot", "landfill"]
+        [
+          "in",
+          "class",
+          "industrial",
+          "garages",
+          "dam",
+          "construction",
+          "brownfield",
+          "depot",
+          "landfill"
+        ]
       ],
       "layout": {
         "visibility": "visible"
@@ -2924,7 +2934,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.5],
+            [11, 2],
             [14, 3],
             [16, 9],
             [18, 15]
