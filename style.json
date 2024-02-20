@@ -10197,7 +10197,7 @@
       "filter": [
         "all",
         ["==", "$type", "Point"],
-        ["in", "class", "protected_area", "nature_reserve", "national_park"]
+        ["in", "class", "protected_area", "nature_reserve"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -10327,8 +10327,6 @@
         1010125,
         1010130,
         2010110,
-        5010105,
-        5010110,
         5999905,
         5999910,
         2010210,
@@ -10370,7 +10368,7 @@
           ["get", "lajikoodi"],
           [1010105, 1010110, 1010120, 1010125],
           "#414b2c",
-          [5010105, 5010110, 5999905, 5999910],
+          [5999905, 5999910],
           "#414b2c",
           [1010130, 2010110, 2010210, 2010215, 2010220, 2010225],
           "#2c3d4d",
@@ -10394,7 +10392,15 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "nimisto",
-      "filter": ["in", "lajikoodi", 3010105, 3010110, 3020105],
+      "filter": [
+        "in",
+        "lajikoodi",
+        3010105,
+        3010110,
+        3020105,
+        5010105,
+        5010110
+      ],
       "layout": {
         "text-anchor": "center",
         "text-allow-overlap": false,
@@ -10427,6 +10433,8 @@
           ["get", "lajikoodi"],
           [3010105, 3010110, 3020105],
           "#3c240e",
+          [5010105, 5010110],
+          "#414b2c",
           "#df00e7"
         ],
         "text-halo-color": "rgba(255,255,255,0.9)",
