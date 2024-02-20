@@ -6274,6 +6274,47 @@
       }
     },
     {
+      "id": "forbidden-bicycle-winter",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "mtb_winter", "no", "-1"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#FF003D",
+        "line-dasharray": [0.2, 0.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 4],
+            [14, 6],
+            [16, 8],
+            [18, 16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "skiing-case",
       "type": "line",
       "metadata": {
@@ -6289,7 +6330,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"]
+        ["!in", "class", "hike", "fatbike"]
       ],
       "layout": {
         "visibility": "none"
@@ -6299,15 +6340,16 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 4],
-            [14, 5],
-            [16, 7]
+            [12, 5],
+            [14, 7],
+            [16, 9],
+            [18, 17]
           ]
         },
         "line-opacity": {
           "stops": [
             [11, 0],
-            [12, 0.8]
+            [12, 1]
           ]
         }
       }
@@ -6338,15 +6380,16 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 4],
-            [14, 5],
-            [16, 7]
+            [12, 5],
+            [14, 7],
+            [16, 9],
+            [18, 17]
           ]
         },
         "line-opacity": {
           "stops": [
             [11, 0],
-            [12, 0.8]
+            [12, 1]
           ]
         }
       }
@@ -6367,7 +6410,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"]
+        ["!in", "class", "hike", "fatbike"]
       ],
       "layout": {
         "visibility": "none"
@@ -6377,9 +6420,10 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 2.2],
-            [14, 3],
-            [16, 4.8]
+            [12, 2.6],
+            [14, 4],
+            [16, 6],
+            [18, 12]
           ]
         },
         "line-opacity": {
@@ -6416,9 +6460,10 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 2.2],
-            [14, 3],
-            [16, 4.8]
+            [12, 2.6],
+            [14, 4],
+            [16, 6],
+            [18, 12]
           ]
         },
         "line-opacity": {
@@ -6445,7 +6490,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"]
+        ["!in", "class", "hike", "fatbike"]
       ],
       "layout": {
         "visibility": "none"
@@ -6457,7 +6502,8 @@
           "stops": [
             [12, 1],
             [14, 1.8],
-            [16, 3]
+            [16, 3],
+            [18, 5]
           ]
         },
         "line-opacity": {
@@ -6496,7 +6542,8 @@
           "stops": [
             [12, 1],
             [14, 1.8],
-            [16, 3]
+            [16, 3],
+            [18, 5]
           ]
         },
         "line-opacity": {
@@ -6531,7 +6578,8 @@
           "base": 1,
           "stops": [
             [14, 14],
-            [16, 22]
+            [16, 22],
+            [18, 44]
           ]
         },
         "visibility": "none"
