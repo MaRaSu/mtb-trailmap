@@ -6417,15 +6417,19 @@
       },
       "paint": {
         "line-color": "#7200ff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 2.6],
-            [14, 4],
-            [16, 6],
-            [18, 12]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["==", ["get", "class"], "ice_skate"], 1, 2.6],
+          14,
+          ["case", ["==", ["get", "class"], "ice_skate"], 1.6, 4],
+          16,
+          ["case", ["==", ["get", "class"], "ice_skate"], 2.4, 6],
+          18,
+          ["case", ["==", ["get", "class"], "ice_skate"], 4, 12]
+        ],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -6490,7 +6494,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike", "fatbike"]
+        ["!in", "class", "hike", "fatbike", "ice_skate"]
       ],
       "layout": {
         "visibility": "none"
