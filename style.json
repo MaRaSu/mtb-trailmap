@@ -2119,12 +2119,7 @@
           ]
         },
         "fill-color": "#FF003D",
-        "fill-opacity": {
-          "stops": [
-            [9, 0],
-            [10, 0.1]
-          ]
-        }
+        "fill-opacity": 0.1
       }
     },
     {
@@ -2722,7 +2717,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2945,7 +2940,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -3063,7 +3058,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -3204,7 +3199,7 @@
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3370,7 +3365,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -3532,7 +3527,7 @@
         ["!in", "width_cat", "d"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -6292,7 +6287,7 @@
         ["in", "mtb_winter", "no", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#FF003D",
@@ -6330,10 +6325,10 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike", "fatbike"]
+        ["!in", "class", "hike", "fatbike", "downhill", "snow_park", "playground", "ski_jump"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6410,10 +6405,10 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike", "fatbike"]
+        ["!in", "class", "hike", "fatbike", "downhill", "snow_park", "playground", "ski_jump"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -6494,10 +6489,10 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike", "fatbike", "ice_skate"]
+        ["!in", "class", "hike", "fatbike", "ice_skate", "downhill", "snow_park", "playground", "ski_jump"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6586,7 +6581,7 @@
             [18, 44]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#7200ff",
@@ -6619,7 +6614,7 @@
         ["!in", "bicycle", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#8BD7AE",
@@ -6657,7 +6652,7 @@
         ["!in", "bicycle", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -8438,7 +8433,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -8478,7 +8473,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cc1b14",
@@ -8518,7 +8513,7 @@
         ["in", "bridge", "1", "yes"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
