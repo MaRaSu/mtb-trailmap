@@ -3570,7 +3570,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway"],
+        ["!in", "subclass", "cycleway", "pedestrian"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -3621,7 +3621,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway"],
+        ["!in", "subclass", "cycleway", "pedestrian"],
         [
           "any",
           ["!=", "subclass", "footway"],
