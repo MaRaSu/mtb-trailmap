@@ -6333,7 +6333,8 @@
           "downhill",
           "snow_park",
           "playground",
-          "ski_jump"
+          "ski_jump",
+          "proposed"
         ]
       ],
       "layout": {
@@ -6422,7 +6423,8 @@
           "downhill",
           "snow_park",
           "playground",
-          "ski_jump"
+          "ski_jump",
+          "proposed"
         ]
       ],
       "layout": {
@@ -6516,7 +6518,8 @@
           "downhill",
           "snow_park",
           "playground",
-          "ski_jump"
+          "ski_jump",
+          "proposed"
         ]
       ],
       "layout": {
