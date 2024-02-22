@@ -703,7 +703,7 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "maputnik:comment": "32611 = pelto, 32800 = niitty",
+        "maputnik:comment": "32611 = pelto, 32612 = puutarha, 32800 = niitty",
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
@@ -712,7 +712,7 @@
       "source": "maastovektorikartta",
       "source-layer": "maankaytto",
       "minzoom": 9,
-      "filter": ["in", "kohdeluokka", 32611, 32800],
+      "filter": ["in", "kohdeluokka", 32611, 32612, 32800],
       "layout": {
         "visibility": "visible"
       },
