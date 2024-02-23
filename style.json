@@ -1090,7 +1090,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
-      "minzoom": 11,
+      "minzoom": 14,
       "maxzoom": 20,
       "filter": ["==", ["%", ["get", "korkeusarvo"], 5000], 0],
       "layout": {
@@ -1098,10 +1098,42 @@
       },
       "paint": {
         "line-color": "#916f4c",
+        "line-opacity": 0.3,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 2, 1],
+          20,
+          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 14, 7]
+        ]
+      }
+    },
+    {
+      "id": "contours-line-low-zoom",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 11,
+      "maxzoom": 14,
+      "filter": ["!", ["has", "korkeusarvo"]],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#916f4c",
         "line-opacity": {
           "stops": [
-            [11, 0],
-            [13, 0.3]
+            [11, 0.1],
+            [12, 0.15],
+            [13, 0.25]
           ]
         },
         "line-width": [
@@ -1109,9 +1141,9 @@
           ["exponential", 1.55],
           ["zoom"],
           6,
-          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 1, 0.5],
+          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 2, 1],
           20,
-          ["case", ["==", ["%", ["get", "korkeusarvo"], 20000], 0], 14, 7]
+          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 14, 7]
         ]
       }
     },
@@ -8725,6 +8757,9 @@
       "source": "openmaptiles",
       "source-layer": "building",
       "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "fill-antialias": true,
         "fill-color": "#bbb9b7",
@@ -8742,9 +8777,9 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
