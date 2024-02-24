@@ -8828,16 +8828,16 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
       "source-layer": "building",
       "minzoom": 13,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": "#bbb9b7",
