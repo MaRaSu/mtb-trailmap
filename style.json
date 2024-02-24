@@ -110,6 +110,9 @@
       },
       "paint": {
         "background-color": "#f7f4f0"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -256,6 +259,9 @@
       "filter": ["==", "class", "cemetery"],
       "paint": {
         "fill-color": "#e0e4dd"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -274,6 +280,9 @@
       "filter": ["==", "class", "hospital"],
       "paint": {
         "fill-color": "#ebdfdd"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -292,6 +301,9 @@
       "filter": ["in", "class", "school", "college", "university", "education"],
       "paint": {
         "fill-color": "#ebe4dd"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -333,6 +345,9 @@
         "fill-color": "#e6e6e6",
         "fill-opacity": 1,
         "fill-outline-color": "#d2d2d2"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -419,6 +434,9 @@
             [14, 1]
           ]
         }
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -438,6 +456,9 @@
       "paint": {
         "fill-color": "#dee7c5",
         "fill-opacity": 0.8
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -2465,7 +2486,8 @@
       "filter": ["all", ["==", "$type", "LineString"], ["in", "class", "pier"]],
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f8f4f0",
@@ -3112,6 +3134,45 @@
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+      }
+    },
+    {
+      "id": "hw-path-track-ways_only-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "track"],
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1],
+        ["!has", "mtb_scale"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 2.4],
+            [14, 3.5],
+            [16, 7],
+            [18, 12]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 0.6]
       }
     },
     {
@@ -7037,6 +7098,9 @@
             [15, 1]
           ]
         }
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7116,6 +7180,9 @@
             [9, 1]
           ]
         }
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7155,6 +7222,9 @@
             [9, 1]
           ]
         }
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -8786,7 +8856,7 @@
       "source-layer": "building",
       "minzoom": 13,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": "#bbb9b7",
@@ -9105,7 +9175,8 @@
         "text-letter-spacing": 0.2,
         "text-max-width": 5,
         "text-rotation-alignment": "map",
-        "text-size": 12
+        "text-size": 12,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#2c3d4d",
@@ -9163,7 +9234,8 @@
         "text-letter-spacing": 0.2,
         "text-max-width": 5,
         "text-rotation-alignment": "map",
-        "text-size": 14
+        "text-size": 14,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#74aee9",
@@ -9579,7 +9651,8 @@
         "text-offset": [0, 0.6],
         "text-optional": true,
         "text-padding": 2,
-        "text-size": 12
+        "text-size": 12,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#666",
