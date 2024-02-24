@@ -951,6 +951,13 @@
     "x": 352,
     "y": 256
   },
+  "tm_vihr_mml_38300_maatuva_vesialue": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 352,
+    "y": 320
+  },
   "tm_vihr_mml_varvikko_osm_scrub": {
     "height": 64,
     "pixelRatio": 1,
@@ -992,6 +999,13 @@
     "width": 64,
     "x": 416,
     "y": 256
+  },  
+  "tm_valk_mml_38300_maatuva_vesialue": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 320
   },  
   "tm_valk_mml_varvikko_osm_scrub": {
     "height": 64,
