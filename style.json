@@ -406,6 +406,27 @@
       }
     },
     {
+      "id": "landuse-storage",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maankaytto",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 38900],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#ebe2dd"
+      }
+    },
+    {
       "id": "landcover-grass",
       "type": "fill",
       "metadata": {
