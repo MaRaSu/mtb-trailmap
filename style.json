@@ -4145,7 +4145,7 @@
       "paint": {
         "line-color": [
           "match",
-          ["string", ["get", "surface_raw"]],
+          ["get", "surface_raw"],
           [
             "bricks",
             "cobblestone",
@@ -4165,7 +4165,7 @@
           "base": 1,
           "stops": [
             [9, 1.5],
-            [10, 2.5],
+            [10, 3],
             [12, 3.4],
             [14, 4.8],
             [20, 15]
@@ -4383,7 +4383,7 @@
       "paint": {
         "line-color": [
           "match",
-          ["string", ["get", "surface_raw"]],
+          ["get", "surface_raw"],
           [
             "bricks",
             "cobblestone",
@@ -4749,7 +4749,7 @@
       "paint": {
         "line-color": [
           "match",
-          ["string", ["get", "surface_raw"]],
+          ["get", "surface_raw"],
           [
             "bricks",
             "cobblestone",
@@ -4864,7 +4864,7 @@
       "paint": {
         "line-color": [
           "match",
-          ["string", ["get", "surface_raw"]],
+          ["get", "surface_raw"],
           [
             "bricks",
             "cobblestone",
@@ -4990,7 +4990,7 @@
       "paint": {
         "line-color": [
           "match",
-          ["string", ["get", "surface_raw"]],
+          ["get", "surface_raw"],
           [
             "bricks",
             "cobblestone",
@@ -5235,7 +5235,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5314,7 +5314,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5392,7 +5392,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5468,7 +5468,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5605,7 +5605,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5723,7 +5723,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
@@ -5841,7 +5841,7 @@
           ["has", "surface_raw"],
           [
             "match",
-            ["string", ["get", "surface_raw"]],
+            ["get", "surface_raw"],
             [
               "bricks",
               "cobblestone",
