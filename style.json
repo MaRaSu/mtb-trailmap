@@ -4678,7 +4678,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 7,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4699,16 +4699,23 @@
       },
       "paint": {
         "line-color": "#d89356",
-        "line-opacity": {
-          "stops": [
-            [8, 0],
-            [8.5, 1]
-          ]
-        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          7,
+          ["case", ["==", ["get", "class"], "secondary"], 0, 0],
+          7.5,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
+          8,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
+          8.5,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 1]
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [8, 1.5],
+            [7, 1],
             [10, 3],
             [20, 17]
           ]
@@ -4727,7 +4734,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 7,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4778,17 +4785,24 @@
           "#7e580e",
           "#5e5e5e"
         ],
-        "line-opacity": {
-          "stops": [
-            [8, 0],
-            [8.5, 1]
-          ]
-        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          7,
+          ["case", ["==", ["get", "class"], "secondary"], 0, 0],
+          7.5,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
+          8,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
+          8.5,
+          ["case", ["==", ["get", "class"], "secondary"], 1, 1]
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [8, 1.5],
-            [10, 3.6],
+            [7, 1],
+            [10, 3],
             [20, 17]
           ]
         }
@@ -4806,7 +4820,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 6,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4822,16 +4836,15 @@
         "line-color": "#d28644",
         "line-opacity": {
           "stops": [
-            [7, 0],
-            [8, 1]
+            [6, 0],
+            [6.5, 1]
           ]
         },
         "line-width": {
           "base": 1.2,
           "stops": [
-            [7, 0],
-            [8, 0.6],
-            [9, 1.5],
+            [6, 1],
+            [9, 3],
             [20, 22]
           ]
         }
@@ -4849,7 +4862,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 6,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4895,16 +4908,15 @@
         ],
         "line-opacity": {
           "stops": [
-            [7, 0],
-            [8, 1]
+            [6, 0],
+            [6.5, 1]
           ]
         },
         "line-width": {
           "base": 1.2,
           "stops": [
-            [7, 0],
-            [8, 0.6],
-            [9, 2],
+            [6, 1],
+            [9, 3],
             [14, 8],
             [20, 22]
           ]
@@ -4923,7 +4935,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 5,
+      "minzoom": 6,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -4947,16 +4959,14 @@
         ],
         "line-opacity": {
           "stops": [
-            [5, 0],
-            [6, 1]
+            [6, 0],
+            [6.5, 1]
           ]
         },
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0],
-            [6, 0.6],
-            [7, 1.5],
+            [6, 2.5],
             [10, 4],
             [20, 22]
           ]
@@ -5021,16 +5031,14 @@
         ],
         "line-opacity": {
           "stops": [
-            [5, 0],
-            [6, 1]
+            [6, 0],
+            [6.5, 1]
           ]
         },
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0],
-            [6, 0.6],
-            [7, 1.5],
+            [6, 2.5],
             [10, 4],
             [20, 22]
           ]
@@ -5049,7 +5057,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 4,
+      "minzoom": 5,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -5067,23 +5075,21 @@
           ["linear"],
           ["zoom"],
           10,
-          "#d76832",
+          "#bf440f",
           12,
           "#e9ac77"
         ],
         "line-opacity": {
           "stops": [
-            [4, 0],
-            [5, 1]
+            [5.5, 0],
+            [6.5, 1]
           ]
         },
         "line-width": {
           "base": 1.2,
           "stops": [
-            [4, 0],
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
+            [5, 1],
+            [6, 2.4],
             [10, 4.5],
             [20, 22]
           ]
@@ -5664,7 +5670,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 8,
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5704,7 +5710,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 8,
+      "minzoom": 6,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
