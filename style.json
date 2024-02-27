@@ -5374,7 +5374,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
