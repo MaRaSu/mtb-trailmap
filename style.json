@@ -10398,7 +10398,12 @@
           "top-left",
           "top-right"
         ],
-        "text-field": "{nimi_fin}",
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -10484,7 +10489,12 @@
           "top-left",
           "top-right"
         ],
-        "text-field": "{nimi_fin}",
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -10549,7 +10559,12 @@
           "top-left",
           "top-right"
         ],
-        "text-field": "{nimi_fin}",
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
