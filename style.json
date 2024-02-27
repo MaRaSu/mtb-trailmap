@@ -4064,7 +4064,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -4086,6 +4086,7 @@
         "line-width": {
           "base": 1,
           "stops": [
+            [9, 1.5],
             [10, 2.5],
             [12, 3.2],
             [14, 4],
@@ -4094,8 +4095,8 @@
         },
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9, 0],
+            [9.5, 1]
           ]
         }
       }
@@ -4112,7 +4113,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -4163,6 +4164,7 @@
         "line-width": {
           "base": 1,
           "stops": [
+            [9, 1.5],
             [10, 2.5],
             [12, 3.4],
             [14, 4.8],
@@ -4171,8 +4173,8 @@
         },
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9, 0],
+            [9.5, 1]
           ]
         }
       }
@@ -4189,7 +4191,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -4218,6 +4220,7 @@
         "line-width": {
           "base": 1,
           "stops": [
+            [9, 1.5],
             [10, 2.5],
             [12, 3.4],
             [14, 4.8],
@@ -4227,8 +4230,8 @@
         "line-dasharray": [3, 0.4],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9, 0],
+            [9.5, 1]
           ]
         }
       }
@@ -5214,7 +5217,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -5265,8 +5268,8 @@
         ],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9, 0],
+            [9.5, 1]
           ]
         },
         "line-width": {
@@ -5874,13 +5877,14 @@
           "stops": [
             [6.5, 0],
             [7, 0.5],
+            [10, 2],
             [20, 18]
           ]
         },
         "line-opacity": {
           "stops": [
-            [9, 0],
-            [11, 1]
+            [8, 0],
+            [9, 1]
           ]
         }
       }
