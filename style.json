@@ -811,7 +811,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
-      "minzoom": 11,
+      "minzoom": 8,
       "maxzoom": 14,
       "filter": ["!", ["has", "korkeusarvo"]],
       "layout": {
@@ -821,8 +821,10 @@
         "line-color": "#916f4c",
         "line-opacity": {
           "stops": [
-            [11, 0.1],
-            [12, 0.15],
+            [8, 0.05],
+            [9, 0.07],
+            [11, 0.12],
+            [12, 0.18],
             [13, 0.25]
           ]
         },
@@ -831,9 +833,9 @@
           ["exponential", 1.55],
           ["zoom"],
           6,
-          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 2, 1],
+          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 1.5, 1],
           20,
-          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 14, 7]
+          ["case", ["==", ["%", ["get", "korkeus"], 20], 0], 10, 7]
         ]
       }
     },
