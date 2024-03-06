@@ -3025,13 +3025,14 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 2],
-            [14, 3],
+            [10, 2],
+            [11, 3],
+            [14, 4],
             [16, 9],
             [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
       }
     },
     {
@@ -3046,7 +3047,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 11,
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -3084,12 +3085,14 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.5],
-            [14, 3],
-            [16, 9]
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
       }
     },
     {
@@ -3131,13 +3134,14 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.5],
-            [14, 3],
+            [10, 2],
+            [11, 3],
+            [14, 4],
             [16, 9],
             [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
       }
     },
     {
