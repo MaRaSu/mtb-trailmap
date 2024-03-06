@@ -7791,7 +7791,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "brunnel", "bridge"],
-        ["==", "class", "path"]
+        ["in", "class", "path", "track"]
       ],
       "paint": {
         "line-color": "#000000",
@@ -7831,7 +7831,8 @@
           "base": 1.2,
           "stops": [
             [14, 1.2],
-            [17, 12]
+            [16, 10],
+            [18, 15]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
@@ -7995,7 +7996,8 @@
           "stops": [
             [11, 1.5],
             [14, 3],
-            [17, 9]
+            [16, 9],
+            [18, 15]
           ]
         },
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
