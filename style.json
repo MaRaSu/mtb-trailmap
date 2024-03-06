@@ -7799,7 +7799,8 @@
           "base": 1.2,
           "stops": [
             [14, 3.6],
-            [17, 14]
+            [16, 13],
+            [18, 18]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 14.5, 1]
@@ -7913,7 +7914,7 @@
             3,
             2.5
           ],
-          17,
+          16,
           [
             "match",
             ["get", "width_cat"],
@@ -7926,6 +7927,20 @@
             ["d"],
             9,
             6
+          ],
+          18,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            5,
+            ["b"],
+            9,
+            ["c"],
+            15,
+            ["d"],
+            15,
+            9
           ]
         ],
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
@@ -8041,8 +8056,10 @@
             1.5,
             1.5
           ],
-          17,
-          ["match", ["get", "width_cat"], ["a"], 1, ["b"], 2, ["c"], 3, 2]
+          16,
+          ["match", ["get", "width_cat"], ["a"], 1, ["b"], 1.8, ["c"], 3, 1.8],
+          18,
+          ["match", ["get", "width_cat"], ["a"], 2, ["b"], 3.5, ["c"], 5.5, 3.5]
         ],
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
       }
