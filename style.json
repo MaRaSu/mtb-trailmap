@@ -2860,11 +2860,7 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
         ["!in", "subclass", "cycleway"],
-        [
-          "any",
-          ["==", "access", "discouraged"],
-          ["==", "foot", "discouraged"]
-        ]
+        ["any", ["==", "access", "discouraged"], ["==", "foot", "discouraged"]]
       ],
       "layout": {
         "visibility": "visible"
@@ -3336,7 +3332,7 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": true
       },
       "source": "openmaptiles",
       "source-layer": "transportation",
