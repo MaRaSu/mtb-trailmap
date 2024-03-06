@@ -358,7 +358,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "wood"
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -652,7 +653,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "bedrock"
       },
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
@@ -776,7 +778,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour"
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
@@ -807,7 +810,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour"
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
@@ -846,7 +850,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour"
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
@@ -1381,7 +1386,8 @@
         "trailmap:mtb": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "hillshade"
       },
       "source": "rinnevarjostus",
       "minzoom": 11,
@@ -6608,7 +6614,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -6658,7 +6665,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -6698,7 +6706,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -6752,7 +6761,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -6792,7 +6802,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -6843,7 +6854,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -6883,7 +6895,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -9192,7 +9205,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "cadastral"
       },
       "source": "kiinteisto-avoin",
       "source-layer": "KiinteistorajanSijaintitiedot",
@@ -9214,7 +9228,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "cadastral"
       },
       "source": "kiinteisto-avoin",
       "source-layer": "KiinteistotunnuksenSijaintitiedot",
@@ -10218,7 +10233,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "fixme"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
@@ -10258,7 +10274,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": false
+        "trailmap:ways_only": false,
+        "trailmap:group": "fixme"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
@@ -11029,7 +11046,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "bicycle-routes-osm"
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -11110,7 +11128,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "mtb-routes-osm"
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -11190,7 +11209,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "hiking-routes-osm"
       },
       "source": "openmaptiles",
       "source-layer": "route_ext",
@@ -11270,7 +11290,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "bicycle-routes-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -11350,7 +11371,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "mtb-routes-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -11430,7 +11452,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "hiking-routes-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -11510,7 +11533,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "walking-routes-lipas"
       },
       "source": "lipas-reitit",
       "source-layer": "lipas_reitit",
@@ -11590,7 +11614,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas"
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -11622,7 +11647,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas"
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -11666,7 +11692,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas"
       },
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
@@ -11722,7 +11749,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
@@ -11774,7 +11802,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
@@ -11831,7 +11860,8 @@
         "trailmap:mtb": false,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
