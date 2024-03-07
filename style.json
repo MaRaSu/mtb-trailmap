@@ -3451,6 +3451,94 @@
       }
     },
     {
+      "id": "hw-path-line-farzoom-bv",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "maxzoom": 12.5,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "tunnel"],
+        ["==", "class", "path"],
+        ["!has", "mtb_scale"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!=", "subclass", "footway"],
+          ["all", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
+        ],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+        ],
+        ["!in", "width_cat", "d"],
+        ["==", "trail_visibility", "bad"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [0.8, 1.5],
+        "line-width": 0.6,
+        "line-opacity": ["case", ["has", "noexit"], 0.4, 1]
+      }
+    },
+    {
+      "id": "hw-path-line-farzoom-gv",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "maxzoom": 12.5,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "footway"],
+        ["!has", "mtb_scale"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["!=", "width_cat", "d"],
+        ["!in", "trail_visibility", "bad"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [2.5, 2],
+        "line-width": 0.6,
+        "line-opacity": ["case", ["has", "noexit"], 0.4, 1]
+      }
+    },
+    {
       "id": "hw-path-line-bv",
       "type": "line",
       "metadata": {
@@ -3467,22 +3555,17 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "tunnel"],
-        ["==", "class", "path"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
-        [
-          "any",
-          ["!=", "subclass", "footway"],
-          ["all", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
-        ],
         [
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
         ],
-        ["!in", "width_cat", "d"],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["!=", "width_cat", "d"],
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
@@ -3518,9 +3601,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          11.5,
-          ["case", ["has", "noexit"], 0.4, 0],
           12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -3613,9 +3696,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          11.5,
-          ["case", ["has", "noexit"], 0.4, 0],
           12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
           ["case", ["has", "noexit"], 0.4, 0.8]
         ]
       }
@@ -3684,9 +3767,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          11.5,
-          ["case", ["has", "noexit"], 0.4, 0],
           12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -3779,9 +3862,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          11.5,
-          ["case", ["has", "noexit"], 0.4, 0],
           12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
           ["case", ["has", "noexit"], 0.4, 0.8]
         ]
       }
@@ -3832,9 +3915,9 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          11.5,
-          ["case", ["has", "noexit"], 0.4, 0],
           12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
