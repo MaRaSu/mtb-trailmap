@@ -3519,9 +3519,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
@@ -3614,9 +3614,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4]
+          ["case", ["has", "noexit"], 0.4, 0.8]
         ]
       }
     },
@@ -3685,9 +3685,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
@@ -3780,9 +3780,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 0.8, 0.4]
+          ["case", ["has", "noexit"], 0.4, 0.8]
         ]
       }
     },
@@ -3833,9 +3833,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
@@ -3884,9 +3884,9 @@
           ["linear"],
           ["zoom"],
           9.5,
-          ["case", ["!=", ["get", "noexit"], 1], 0, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           10,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
@@ -3934,9 +3934,9 @@
           ["linear"],
           ["zoom"],
           9.5,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           10,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
@@ -3982,9 +3982,9 @@
           ["linear"],
           ["zoom"],
           11.5,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4],
+          ["case", ["has", "noexit"], 0.4, 0],
           12,
-          ["case", ["!=", ["get", "noexit"], 1], 1, 0.4]
+          ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
     },
