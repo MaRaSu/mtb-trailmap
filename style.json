@@ -11653,6 +11653,7 @@
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
+      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
       "layout": {
         "visibility": "none",
         "icon-allow-overlap": true,
@@ -11808,7 +11809,27 @@
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 8,
-      "filter": ["!in", "access", "no", "private", "permit", "military"],
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "viewpoint",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "wilderness_hut",
+          "water_point",
+          "drinking_water",
+          "toilets",
+          "firepit",
+          "memorial",
+          "monument",
+          "cave_entrance",
+          "bunker"
+        ],
+        ["!in", "access", "no", "private", "permit", "military"]
+      ],
       "layout": {
         "visibility": "none",
         "icon-allow-overlap": true,
