@@ -160,32 +160,11 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#ebe4dd"
+        "fill-color": "#e9e6e2"
       }
     },
     {
-      "id": "landuse-residential",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["in", "class", "residential", "suburb", "neighbourhood"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe4dd"
-      }
-    },
-    {
-      "id": "landuse-commercial",
+      "id": "landuse-mapper-consolidated",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
@@ -198,133 +177,34 @@
       "source-layer": "landuse",
       "minzoom": 8,
       "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        ["in", "class", "commercial", "retail"]
+        "in",
+        "class",
+        "residential",
+        "suburb",
+        "neighbourhood",
+        "commercial",
+        "retail",
+        "industrial",
+        "garages",
+        "dam",
+        "construction",
+        "brownfield",
+        "depot",
+        "landfill",
+        "cemetery",
+        "hospital",
+        "school",
+        "college",
+        "university",
+        "education",
+        "class",
+        "railway"
       ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#e5ddd8"
-      }
-    },
-    {
-      "id": "landuse-industrial",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        [
-          "in",
-          "class",
-          "industrial",
-          "garages",
-          "dam",
-          "construction",
-          "brownfield",
-          "depot",
-          "landfill"
-        ]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe2dd"
-      }
-    },
-    {
-      "id": "landuse-cemetery",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["==", "class", "cemetery"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#e0e4dd"
-      }
-    },
-    {
-      "id": "landuse-hospital",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["==", "class", "hospital"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebdfdd"
-      }
-    },
-    {
-      "id": "landuse-school",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["in", "class", "school", "college", "university", "education"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe4dd"
-      }
-    },
-    {
-      "id": "landuse-railway",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["==", "class", "railway"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "hsla(30, 19%, 90%, 0.4)"
+        "fill-color": "#e9e6e2"
       }
     },
     {
@@ -351,7 +231,7 @@
       }
     },
     {
-      "id": "landcover-wood",
+      "id": "landcover-mapper-wood",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
@@ -380,7 +260,7 @@
             [9, true]
           ]
         },
-        "fill-color": "#6a4",
+        "fill-color": "#d3e9c8",
         "fill-opacity": 0.1,
         "fill-outline-color": "hsla(0, 0%, 0%, 0.03)"
       }
@@ -428,7 +308,7 @@
       }
     },
     {
-      "id": "landcover-grass",
+      "id": "landcover-mapper-grass",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
@@ -449,8 +329,8 @@
           "match",
           ["get", "subclass"],
           ["heath", "fell"],
-          "#f2f5e9",
-          "#e5f4d5"
+          "#f0f4eb",
+          "#f0f4eb"
         ],
         "fill-opacity": {
           "stops": [
@@ -669,7 +549,7 @@
       }
     },
     {
-      "id": "landcover-field",
+      "id": "landcover-mapper-field",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
@@ -690,8 +570,8 @@
         "fill-color": [
           "case",
           ["==", ["get", "kohdeluokka"], 32611],
-          "#faf3ce",
-          "#f6face"
+          "#fcf8e3",
+          "#fafce3"
         ],
         "fill-opacity": {
           "stops": [
@@ -772,7 +652,7 @@
       }
     },
     {
-      "id": "contours-line",
+      "id": "contours-mapper-line",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -790,8 +670,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#916f4c",
-        "line-opacity": 0.3,
+        "line-color": "#7e6e5d",
+        "line-opacity": 0.2,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -822,14 +702,14 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#916f4c",
+        "line-color": "#7e6e5d",
         "line-opacity": {
           "stops": [
             [8, 0.05],
             [9, 0.07],
             [11, 0.12],
             [12, 0.18],
-            [13, 0.25]
+            [13, 0.2]
           ]
         },
         "line-width": [
@@ -3054,9 +2934,8 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "track"],
-        ["!in", "subclass", "cycleway", "footway"],
+        ["!in", "subclass", "cycleway", "footway", "pedestrian"],
         ["!=", "bicycle", "no"],
         ["!=", "access", "no"],
         ["!=", "noexit", 1]
@@ -3096,7 +2975,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
         [
@@ -3156,7 +3034,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
         [
@@ -3216,7 +3093,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "track"],
         [
           "in",
@@ -3234,7 +3110,6 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [10, 1.5],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -3276,7 +3151,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "track"],
         [
           "any",
@@ -3298,7 +3172,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [1, 1.5, 7.5, 1.5],
+        "line-dasharray": [10, 1.5],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -3321,94 +3195,6 @@
           12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
-      }
-    },
-    {
-      "id": "hw-path-track-winter-case",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["has", "mtb_winter"],
-        ["!in", "mtb_winter", "-1", "no"],
-        ["in", "class", "path", "track"],
-        ["!in", "subclass", "cycleway"],
-        ["!=", "noexit", 1]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "match",
-          ["get", "mtb_winter"],
-          ["1"],
-          "#75E009",
-          ["2", "yes"],
-          "#d7dc00",
-          "#FEB13E"
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 2],
-            [11, 3],
-            [14, 4],
-            [16, 9],
-            [18, 15]
-          ]
-        },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
-      }
-    },
-    {
-      "id": "hw-path-track-ways_only-case",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"],
-        ["!in", "subclass", "cycleway"],
-        ["!=", "noexit", 1],
-        ["!has", "mtb_scale"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [11, 2.4],
-            [14, 3.5],
-            [16, 7],
-            [18, 12]
-          ]
-        },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 0.6]
       }
     },
     {
@@ -3448,46 +3234,6 @@
           "stops": [
             [13, 0],
             [14, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-cw-gr-case",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [12, 2.2],
-            [14, 4.5],
-            [17, 8]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
           ]
         }
       }
@@ -3562,7 +3308,7 @@
         ["!in", "cycleway_left", "yes"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#A43820",
@@ -3613,7 +3359,7 @@
         ["!in", "cycleway_right", "yes"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#A43820",
@@ -4049,21 +3795,21 @@
             "match",
             ["get", "class"],
             ["service"],
-            2.8,
+            3.3,
             ["raceway"],
-            2.8,
+            3.3,
             ["minor"],
-            3.5,
+            4,
             ["tertiary"],
-            4.6,
+            5.1,
             ["secondary"],
-            4.6,
+            5.1,
             ["primary"],
-            4.6,
+            5.1,
             ["trunk"],
-            5.6,
+            6.1,
             ["motorway"],
-            6,
+            6.5,
             0
           ],
           20,
@@ -4291,7 +4037,7 @@
         ["==", "cycleway_left", "yes"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -4342,7 +4088,7 @@
         ["==", "cycleway_right", "yes"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -4389,7 +4135,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "tunnel"],
         ["in", "subclass", "cycleway", "pedestrian"],
         [
           "in",
@@ -4428,7 +4173,6 @@
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [6, 1],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -4436,7 +4180,7 @@
           14,
           ["case", ["has", "width"], 3, 1.5],
           16,
-          ["case", ["has", "width"], 7, 3.5],
+          ["case", ["has", "width"], 4, 2],
           18,
           ["case", ["has", "width"], 8, 4]
         ],
@@ -4464,7 +4208,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "subclass", "cycleway", "pedestrian"],
         ["in", "surface_raw", "unpaved", "paved"]
       ],
@@ -4474,17 +4217,17 @@
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [2.5, 1.5],
+        "line-dasharray": [5, 1.5],
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           14,
-          ["case", ["has", "width"], 4, 2],
+          ["case", ["has", "width"], 3, 1.5],
           16,
-          ["case", ["has", "width"], 7, 3.5],
+          ["case", ["has", "width"], 4, 2],
           18,
-          ["case", ["has", "width"], 12, 6]
+          ["case", ["has", "width"], 8, 4]
         ],
         "line-opacity": {
           "stops": [
@@ -4511,7 +4254,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "subclass", "cycleway", "pedestrian"],
         ["!has", "surface_raw"]
       ],
@@ -4521,17 +4263,17 @@
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [1, 0.8],
+        "line-dasharray": [0.8, 0.8],
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           14,
+          ["case", ["has", "width"], 3, 1.5],
+          16,
           ["case", ["has", "width"], 4, 2],
-          16,
-          ["case", ["has", "width"], 7, 3.5],
           18,
-          ["case", ["has", "width"], 12, 6]
+          ["case", ["has", "width"], 8, 4]
         ],
         "line-opacity": {
           "stops": [
@@ -4541,468 +4283,7 @@
         }
       }
     },
-    {
-      "id": "forbidden-bicycle-winter",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "mtb_winter", "no", "-1"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#FF003D",
-        "line-dasharray": [0.2, 0.5],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 4],
-            [14, 6],
-            [16, 8],
-            [18, 16]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [12, 0],
-            [12.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-case",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-osm"
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        [
-          "!in",
-          "class",
-          "hike",
-          "fatbike",
-          "downhill",
-          "snow_park",
-          "playground",
-          "ski_jump",
-          "proposed"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 5],
-            [14, 7],
-            [16, 9],
-            [18, 17]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-case-lipas",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-lipas"
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "tyyppikood", 4402, 4440]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 5],
-            [14, 7],
-            [16, 9],
-            [18, 17]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-line-base",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-osm"
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        [
-          "!in",
-          "class",
-          "hike",
-          "fatbike",
-          "downhill",
-          "snow_park",
-          "playground",
-          "ski_jump",
-          "proposed"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#7200ff",
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          ["case", ["==", ["get", "class"], "ice_skate"], 1, 2.6],
-          14,
-          ["case", ["==", ["get", "class"], "ice_skate"], 1.6, 4],
-          16,
-          ["case", ["==", ["get", "class"], "ice_skate"], 2.4, 6],
-          18,
-          ["case", ["==", ["get", "class"], "ice_skate"], 4, 12]
-        ],
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-line-base-lipas",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-lipas"
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "tyyppikood", 4402, 4440]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#bd287c",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 2.6],
-            [14, 4],
-            [16, 6],
-            [18, 12]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-line-center",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-osm"
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        [
-          "!in",
-          "class",
-          "hike",
-          "fatbike",
-          "ice_skate",
-          "downhill",
-          "snow_park",
-          "playground",
-          "ski_jump",
-          "proposed"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 1],
-            [14, 1.8],
-            [16, 3],
-            [18, 5]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-line-center-lipas",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-lipas"
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "tyyppikood", 4402, 4440]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#ffffff",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 1],
-            [14, 1.8],
-            [16, 3],
-            [18, 5]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "skiing-direction",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": true,
-        "trailmap:group": "skiing-osm"
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 13,
-      "filter": ["all", ["==", "$type", "LineString"], ["in", "oneway", 1, -1]],
-      "layout": {
-        "text-field": ["match", ["get", "oneway"], [1], ">", [-1], "<", ""],
-        "text-font": ["Noto Sans Regular"],
-        "text-keep-upright": false,
-        "symbol-placement": "line",
-        "symbol-spacing": 50,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [14, 14],
-            [16, 22],
-            [18, 44]
-          ]
-        },
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#7200ff",
-        "text-opacity": {
-          "stops": [
-            [13, 0],
-            [14, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "piste-bicycle-case",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
-        ["has", "grooming"],
-        ["!in", "bicycle", "no"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#0ac5a0",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [11, 2.5],
-            [14, 4.5],
-            [16, 9],
-            [18, 15]
-          ]
-        },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
-      }
-    },
-    {
-      "id": "piste-bicycle-line",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
-        "trailmap:mtb": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "piste_ext",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
-        ["has", "grooming"],
-        ["!in", "bicycle", "no"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#000000",
-        "line-dasharray": [2.5, 2],
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            0.4,
-            ["b"],
-            0.6,
-            ["c"],
-            1.2,
-            0.6
-          ],
-          14,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            0.8,
-            ["b"],
-            1.2,
-            ["c"],
-            1.8,
-            1.2
-          ],
-          16,
-          ["match", ["get", "width_cat"], ["a"], 1, ["b"], 2, ["c"], 3, 2],
-          18,
-          ["match", ["get", "width_cat"], ["a"], 2, ["b"], 4, ["c"], 5.5, 4]
-        ]
-      }
-    },
+
     {
       "id": "railway-transit",
       "type": "line",
