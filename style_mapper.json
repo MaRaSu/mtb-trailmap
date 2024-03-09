@@ -3065,7 +3065,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#A43820",
+        "line-color": "#7e4e44",
         "line-dasharray": [1.5, 0.7],
         "line-width": {
           "base": 1.2,
