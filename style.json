@@ -1746,6 +1746,66 @@
       }
     },
     {
+      "id": "tunnel-track-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "track"],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "#0ac5a0",
+          ["0"],
+          "#75E009",
+          ["1"],
+          "#d7dc00",
+          ["2"],
+          "#FEB13E",
+          ["3"],
+          "#ff4f5e",
+          ["4"],
+          "#e50bdd",
+          ["5"],
+          "#9600c8",
+          ["6"],
+          "#8100AC",
+          "#FFFFFF"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 0.3]
+      }
+    },
+    {
       "id": "tunnel-track",
       "type": "line",
       "metadata": {
