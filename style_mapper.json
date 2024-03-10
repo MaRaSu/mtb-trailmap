@@ -2755,16 +2755,19 @@
       },
       "paint": {
         "line-color": ["case", ["has", "mtb_scale"], "#75E009", "#ff99a2"],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 2],
-            [11, 3],
-            [14, 3],
-            [16, 7],
-            [18, 12]
-          ]
-        },
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["has", "width"], 3, 1.5],
+          14,
+          ["case", ["has", "width"], 4, 2],
+          16,
+          ["case", ["has", "width"], 7, 3],
+          18,
+          ["case", ["has", "width"], 10, 5]
+        ],
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
