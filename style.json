@@ -9446,7 +9446,7 @@
       }
     },
     {
-      "id": "building",
+      "id": "building-osm",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171",
@@ -9458,6 +9458,7 @@
       "source": "openmaptiles",
       "source-layer": "building",
       "minzoom": 13,
+      "maxzoom": 14.5,
       "layout": {
         "visibility": "visible"
       },
@@ -9468,7 +9469,76 @@
           "base": 1,
           "stops": [
             [13, 0],
-            [14, 1]
+            [13.5, 1],
+            [14, 1],
+            [14.5, 0]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-top-osm",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849364238.8171",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "minzoom": 13,
+      "maxzoom": 14.5,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#bbb9b7",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1],
+            [14, 1],
+            [14.5, 0]
+          ]
+        },
+        "fill-outline-color": "#928e8a",
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849364238.8171",
+        "trailmap:mtb": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "rakennus",
+      "minzoom": 14,
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#bbb9b7",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [14, 0],
+            [14.5, 1]
           ]
         }
       }
@@ -9483,9 +9553,10 @@
         "trailmap:gravel": true,
         "trailmap:ways_only": false
       },
-      "source": "openmaptiles",
-      "source-layer": "building",
-      "minzoom": 13,
+      "source": "maastovektorikartta",
+      "source-layer": "rakennus",
+      "minzoom": 14,
+      "filter": ["==", "$type", "Polygon"],
       "layout": {
         "visibility": "visible"
       },
@@ -9494,8 +9565,8 @@
         "fill-opacity": {
           "base": 1,
           "stops": [
-            [13, 0],
-            [14, 1]
+            [14, 0],
+            [14.5, 1]
           ]
         },
         "fill-outline-color": "#928e8a",
