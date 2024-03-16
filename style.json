@@ -1910,7 +1910,7 @@
       }
     },
     {
-      "id": "tunnel-cycleway",
+      "id": "tunnel-cycleway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -1954,7 +1954,7 @@
       }
     },
     {
-      "id": "tunnel-path",
+      "id": "tunnel-path-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2064,7 +2064,7 @@
       }
     },
     {
-      "id": "tunnel-track",
+      "id": "tunnel-track-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -2113,7 +2113,7 @@
       }
     },
     {
-      "id": "tunnel-motorway-link",
+      "id": "tunnel-motorway-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2150,7 +2150,7 @@
       }
     },
     {
-      "id": "tunnel-service-track",
+      "id": "tunnel-service-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2184,7 +2184,7 @@
       }
     },
     {
-      "id": "tunnel-link",
+      "id": "tunnel-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2220,7 +2220,7 @@
       }
     },
     {
-      "id": "tunnel-minor",
+      "id": "tunnel-minor-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2250,7 +2250,7 @@
       }
     },
     {
-      "id": "tunnel-secondary-tertiary",
+      "id": "tunnel-secondary-tertiary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2285,7 +2285,7 @@
       }
     },
     {
-      "id": "tunnel-trunk-primary",
+      "id": "tunnel-trunk-primary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2320,7 +2320,7 @@
       }
     },
     {
-      "id": "tunnel-motorway",
+      "id": "tunnel-motorway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -2356,7 +2356,7 @@
       }
     },
     {
-      "id": "tunnel-railway",
+      "id": "tunnel-railway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849354174.1904",
@@ -4018,7 +4018,7 @@
       }
     },
     {
-      "id": "hw-path-gr-case",
+      "id": "hw-path-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4252,7 +4252,7 @@
       }
     },
     {
-      "id": "hw-track-gr-case",
+      "id": "hw-track-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4403,7 +4403,7 @@
       }
     },
     {
-      "id": "hw-cw-case",
+      "id": "hw-cycleway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4445,7 +4445,7 @@
       }
     },
     {
-      "id": "hw-cw-case-hc",
+      "id": "hw-cycleway-case-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4487,7 +4487,7 @@
       }
     },
     {
-      "id": "hw-cw-gr-case",
+      "id": "hw-cycleway-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4528,7 +4528,7 @@
       }
     },
     {
-      "id": "hw-path-line-farzoom-bv",
+      "id": "hw-path-line-bv-farzoom",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4575,7 +4575,7 @@
       }
     },
     {
-      "id": "hw-path-line-farzoom-gv",
+      "id": "hw-path-line-gv-farzoom",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4780,7 +4780,7 @@
       }
     },
     {
-      "id": "hw-path-gr-line-bv",
+      "id": "hw-path-line-bv-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5040,7 +5040,7 @@
       }
     },
     {
-      "id": "hw-path-gr-line-gv",
+      "id": "hw-path-line-gv-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5136,7 +5136,7 @@
       }
     },
     {
-      "id": "hw-path-winter-line",
+      "id": "hw-path-line-winter",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5294,7 +5294,7 @@
       }
     },
     {
-      "id": "hw-track-gr-line",
+      "id": "hw-track-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5443,7 +5443,7 @@
       }
     },
     {
-      "id": "sw-fw-l-line",
+      "id": "sw-footway-left-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5495,7 +5495,7 @@
       }
     },
     {
-      "id": "sw-fw-r-line",
+      "id": "sw-footway-right-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5787,7 +5787,7 @@
       }
     },
     {
-      "id": "hw-link-gr-case",
+      "id": "hw-link-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5937,7 +5937,7 @@
       }
     },
     {
-      "id": "hw-minor-gr-cat_ab-case",
+      "id": "hw-minor-cat_ab-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6016,7 +6016,7 @@
       }
     },
     {
-      "id": "hw-minor-gr-cat_c-case",
+      "id": "hw-minor-cat_c-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6074,7 +6074,7 @@
       }
     },
     {
-      "id": "hw-minor-gr-cat_d-case",
+      "id": "hw-minor-cat_d-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6229,7 +6229,7 @@
       }
     },
     {
-      "id": "hw-service-gr-case",
+      "id": "hw-service-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6308,7 +6308,7 @@
       }
     },
     {
-      "id": "hw-service-gr-cat_c-case",
+      "id": "hw-service-cat_c-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6366,7 +6366,7 @@
       }
     },
     {
-      "id": "hw-service-gr-cat_d-case",
+      "id": "hw-service-cat_d-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6618,7 +6618,7 @@
       }
     },
     {
-      "id": "hw-parking_aisle",
+      "id": "hw-parking_aisle-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6780,7 +6780,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-gr-case",
+      "id": "hw-secondary-tertiary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6955,7 +6955,7 @@
       }
     },
     {
-      "id": "hw-primary-gr-case",
+      "id": "hw-primary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7131,7 +7131,7 @@
       }
     },
     {
-      "id": "hw-trunk-gr-case",
+      "id": "hw-trunk-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7308,7 +7308,7 @@
       }
     },
     {
-      "id": "hw-motorway-link",
+      "id": "hw-motorway-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7346,7 +7346,7 @@
       }
     },
     {
-      "id": "hw-motorway-link-hc",
+      "id": "hw-motorway-link-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7384,7 +7384,7 @@
       }
     },
     {
-      "id": "hw-link",
+      "id": "hw-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7428,7 +7428,7 @@
       }
     },
     {
-      "id": "hw-link-hc",
+      "id": "hw-link-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7471,7 +7471,7 @@
       }
     },
     {
-      "id": "hw-link-gr",
+      "id": "hw-link-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7912,7 +7912,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary",
+      "id": "hw-secondary-tertiary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7965,7 +7965,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-hc",
+      "id": "hw-secondary-tertiary-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8019,7 +8019,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-gr",
+      "id": "hw-secondary-tertiary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8104,7 +8104,7 @@
       }
     },
     {
-      "id": "hw-primary",
+      "id": "hw-primary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8145,7 +8145,7 @@
       }
     },
     {
-      "id": "hw-primary-hc",
+      "id": "hw-primary-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8186,7 +8186,7 @@
       }
     },
     {
-      "id": "hw-primary-gr",
+      "id": "hw-primary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8259,7 +8259,7 @@
       }
     },
     {
-      "id": "hw-trunk",
+      "id": "hw-trunk-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8306,7 +8306,7 @@
       }
     },
     {
-      "id": "hw-trunk-hc",
+      "id": "hw-trunk-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8354,7 +8354,7 @@
       }
     },
     {
-      "id": "hw-trunk-gr",
+      "id": "hw-trunk-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8434,7 +8434,7 @@
       }
     },
     {
-      "id": "hw-motorway",
+      "id": "hw-motorway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8481,7 +8481,7 @@
       }
     },
     {
-      "id": "hw-motorway-hc",
+      "id": "hw-motorway-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8528,7 +8528,7 @@
       }
     },
     {
-      "id": "sw-cw-l-line-p",
+      "id": "sw-cycleway-left-line-paved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8580,7 +8580,7 @@
       }
     },
     {
-      "id": "sw-cw-r-line-p",
+      "id": "sw-cycleway-right-line-paved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8632,7 +8632,7 @@
       }
     },
     {
-      "id": "hw-cw-line-p",
+      "id": "hw-cycleway-line-paved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8689,7 +8689,7 @@
       }
     },
     {
-      "id": "hw-cw-line-p-hc",
+      "id": "hw-cycleway-line-paved-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8747,7 +8747,7 @@
       }
     },
     {
-      "id": "hw-cw-gr-line-p",
+      "id": "hw-cycleway-line-paved-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8804,7 +8804,7 @@
       }
     },
     {
-      "id": "hw-cw-line-up",
+      "id": "hw-cycleway-line-unpaved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8870,7 +8870,7 @@
       }
     },
     {
-      "id": "hw-cw-line-up-hc",
+      "id": "hw-cycleway-line-unpaved-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8937,7 +8937,7 @@
       }
     },
     {
-      "id": "hw-cw-gr-line-up",
+      "id": "hw-cycleway-line-unpaved-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -9003,7 +9003,7 @@
       }
     },
     {
-      "id": "hw-cw-line-uk",
+      "id": "hw-cycleway-line-unknown",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -9048,7 +9048,7 @@
       }
     },
     {
-      "id": "hw-cw-line-uk-hc",
+      "id": "hw-cycleway-line-unknown-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -9094,7 +9094,7 @@
       }
     },
     {
-      "id": "hw-cw-gr-line-uk",
+      "id": "hw-cycleway-line-unknown-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -9947,7 +9947,7 @@
       }
     },
     {
-      "id": "railway-transit",
+      "id": "railway-transit-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -10030,7 +10030,7 @@
       }
     },
     {
-      "id": "railway-service",
+      "id": "railway-service-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -10113,7 +10113,7 @@
       }
     },
     {
-      "id": "railway",
+      "id": "railway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -10346,7 +10346,7 @@
       }
     },
     {
-      "id": "bridge-link-gr-case",
+      "id": "bridge-link-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -10462,7 +10462,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-gr-case",
+      "id": "bridge-secondary-tertiary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -10576,7 +10576,7 @@
       }
     },
     {
-      "id": "bridge-trunk-primary-gr-case",
+      "id": "bridge-trunk-primary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -10749,7 +10749,7 @@
       }
     },
     {
-      "id": "bridge-path/track/cw/fw-railings",
+      "id": "bridge-path/track/cycleway/footway-railings",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -10785,7 +10785,7 @@
       }
     },
     {
-      "id": "bridge-path/track/cw/fw-floor",
+      "id": "bridge-path/track/cycleway/footway-floor",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -10931,7 +10931,7 @@
       }
     },
     {
-      "id": "bridge-path-gr-case",
+      "id": "bridge-path-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11431,7 +11431,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-p",
+      "id": "bridge-cycleway-line-paved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11481,7 +11481,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-p-hc",
+      "id": "bridge-cycleway-line-paved-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11531,7 +11531,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-up",
+      "id": "bridge-cycleway-line-unpaved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11590,7 +11590,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-up-hc",
+      "id": "bridge-cycleway-line-unpaved-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11649,7 +11649,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-uk",
+      "id": "bridge-cycleway-line-unknown",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11687,7 +11687,7 @@
       }
     },
     {
-      "id": "bridge-cw-line-uk-hc",
+      "id": "bridge-cycleway-line-unknown-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11725,7 +11725,7 @@
       }
     },
     {
-      "id": "bridge-motorway-link",
+      "id": "bridge-motorway-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11762,7 +11762,7 @@
       }
     },
     {
-      "id": "bridge-motorway-link-hc",
+      "id": "bridge-motorway-link-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11799,7 +11799,7 @@
       }
     },
     {
-      "id": "bridge-link",
+      "id": "bridge-link-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11836,7 +11836,7 @@
       }
     },
     {
-      "id": "bridge-link-hc",
+      "id": "bridge-link-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11873,7 +11873,7 @@
       }
     },
     {
-      "id": "bridge-link-gr",
+      "id": "bridge-link-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11915,7 +11915,7 @@
       }
     },
     {
-      "id": "bridge-minor",
+      "id": "bridge-minor-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -11952,7 +11952,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary",
+      "id": "bridge-secondary-tertiary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -11988,7 +11988,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-hc",
+      "id": "bridge-secondary-tertiary-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12033,7 +12033,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-gr",
+      "id": "bridge-secondary-tertiary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12074,7 +12074,7 @@
       }
     },
     {
-      "id": "bridge-trunk-primary",
+      "id": "bridge-trunk-primary-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12110,7 +12110,7 @@
       }
     },
     {
-      "id": "bridge-trunk-primary-hc",
+      "id": "bridge-trunk-primary-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12146,7 +12146,7 @@
       }
     },
     {
-      "id": "bridge-trunk-primary-gr",
+      "id": "bridge-trunk-primary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12187,7 +12187,7 @@
       }
     },
     {
-      "id": "bridge-motorway",
+      "id": "bridge-motorway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12223,7 +12223,7 @@
       }
     },
     {
-      "id": "bridge-motorway-hc",
+      "id": "bridge-motorway-line-hc",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12518,7 +12518,7 @@
       }
     },
     {
-      "id": "bridge-railway",
+      "id": "bridge-railway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -12742,7 +12742,7 @@
       }
     },
     {
-      "id": "building",
+      "id": "building-mml",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171",
@@ -12772,7 +12772,7 @@
       }
     },
     {
-      "id": "building-top",
+      "id": "building-top-mml",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171",
@@ -12993,7 +12993,7 @@
       }
     },
     {
-      "id": "waterway-name",
+      "id": "water-name-waterway",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13025,36 +13025,6 @@
       }
     },
     {
-      "id": "water-name-lakeline",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "water_name",
-      "filter": ["==", "$type", "LineString"],
-      "layout": {
-        "symbol-placement": "line",
-        "symbol-spacing": 350,
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Italic"],
-        "text-letter-spacing": 0.2,
-        "text-max-width": 5,
-        "text-rotation-alignment": "map",
-        "text-size": 14,
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 1.5
-      }
-    },
-    {
       "id": "water-name-ocean",
       "type": "symbol",
       "metadata": {
@@ -13077,41 +13047,6 @@
         "text-rotation-alignment": "map",
         "text-size": 14,
         "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-color": "rgba(255,255,255,0.7)",
-        "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "water-name-other",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "water_name",
-      "filter": ["all", ["==", "$type", "Point"], ["!in", "class", "ocean"]],
-      "layout": {
-        "symbol-placement": "point",
-        "symbol-spacing": 350,
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Italic"],
-        "text-letter-spacing": 0.1,
-        "text-max-width": 8,
-        "text-rotation-alignment": "map",
-        "text-size": {
-          "stops": [
-            [0, 10],
-            [6, 12]
-          ]
-        },
-        "visibility": "none"
       },
       "paint": {
         "text-color": "#74aee9",
@@ -13166,7 +13101,7 @@
       }
     },
     {
-      "id": "road_oneway_opposite",
+      "id": "road_oneway-opposite",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13243,7 +13178,7 @@
       }
     },
     {
-      "id": "poi-level-3",
+      "id": "poi_osm-level-3",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13293,7 +13228,7 @@
       }
     },
     {
-      "id": "poi-level-2",
+      "id": "poi_osm-level-2",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13344,7 +13279,7 @@
       }
     },
     {
-      "id": "poi-level-1",
+      "id": "poi_osm-level-1",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13396,7 +13331,7 @@
       }
     },
     {
-      "id": "poi-additions",
+      "id": "poi_osm-additions",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13468,7 +13403,7 @@
       }
     },
     {
-      "id": "poi-railway",
+      "id": "poi_osm-railway",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -14086,6 +14021,467 @@
       }
     },
     {
+      "id": "poi_mml-small",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1010210,
+        1020105,
+        1020205,
+        1020305,
+        1020405,
+        1020410,
+        3020110,
+        3030105,
+        3999999,
+        5010115,
+        2010230,
+        2020110,
+        2020115,
+        6010110,
+        4060605,
+        4060699,
+        4069999
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [11, 8],
+            [16, 16],
+            [17, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "lajikoodi"],
+          [1020105, 1020405, 1020410],
+          "#414b2c",
+          [3020110, 5010115],
+          "#414b2c",
+          [1010210],
+          "#4a4a4a",
+          [1020205, 2010230, 2020110, 2020115, 6010110],
+          "#2c3d4d",
+          [3030105, 3999999],
+          "#5b3b1f",
+          [1020305],
+          "#5b561f",
+          [4060605, 4060699, 4069999],
+          "#5b1f1f",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi_mml-small-hc",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1010210,
+        1020105,
+        1020205,
+        1020305,
+        1020405,
+        1020410,
+        3020110,
+        3030105,
+        3999999,
+        5010115,
+        2010230,
+        2020110,
+        2020115,
+        6010110,
+        4060605,
+        4060699,
+        4069999
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [11, 10],
+            [16, 20],
+            [17, 26]
+          ]
+        },
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi_mml-medium",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1010105,
+        1010110,
+        1010120,
+        1010125,
+        1010130,
+        2010110,
+        5999905,
+        5999910,
+        2010210,
+        2010215,
+        2010220,
+        2010225,
+        4060505,
+        4060599
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 18],
+            [17, 22]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "lajikoodi"],
+          [1010105, 1010110, 1010120, 1010125],
+          "#414b2c",
+          [5999905, 5999910],
+          "#414b2c",
+          [1010130, 2010110, 2010210, 2010215, 2010220, 2010225],
+          "#2c3d4d",
+          [4060505, 4060599],
+          "#5b1f1f",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.5
+      }
+    },
+    {
+      "id": "poi_mml-medium-hc",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        1010105,
+        1010110,
+        1010120,
+        1010125,
+        1010130,
+        2010110,
+        5999905,
+        5999910,
+        2010210,
+        2010215,
+        2010220,
+        2010225,
+        4060505,
+        4060599
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 10],
+            [16, 24],
+            [17, 36]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [12, 1.2],
+            [16, 2],
+            [17, 3]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi_mml-large",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        3010105,
+        3010110,
+        3020105,
+        5010105,
+        5010110
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [10, 10],
+            [12, 11],
+            [16, 20]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "lajikoodi"],
+          [3010105, 3010110, 3020105],
+          "#3c240e",
+          [5010105, 5010110],
+          "#414b2c",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1.5
+      }
+    },
+    {
+      "id": "poi_mml-large-hc",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "nimisto",
+      "filter": [
+        "in",
+        "lajikoodi",
+        3010105,
+        3010110,
+        3020105,
+        5010105,
+        5010110
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [10, 11],
+            [12, 12],
+            [14, 16],
+            [16, 32]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [12, 1],
+            [16, 2],
+            [17, 3]
+          ]
+        }
+      }
+    },
+    {
       "id": "place-town",
       "type": "symbol",
       "metadata": {
@@ -14222,467 +14618,6 @@
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
-      }
-    },
-    {
-      "id": "place-mml-small",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        1010210,
-        1020105,
-        1020205,
-        1020305,
-        1020405,
-        1020410,
-        3020110,
-        3030105,
-        3999999,
-        5010115,
-        2010230,
-        2020110,
-        2020115,
-        6010110,
-        4060605,
-        4060699,
-        4069999
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [11, 8],
-            [16, 16],
-            [17, 20]
-          ]
-        },
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": [
-          "match",
-          ["get", "lajikoodi"],
-          [1020105, 1020405, 1020410],
-          "#414b2c",
-          [3020110, 5010115],
-          "#414b2c",
-          [1010210],
-          "#4a4a4a",
-          [1020205, 2010230, 2020110, 2020115, 6010110],
-          "#2c3d4d",
-          [3030105, 3999999],
-          "#5b3b1f",
-          [1020305],
-          "#5b561f",
-          [4060605, 4060699, 4069999],
-          "#5b1f1f",
-          "#df00e7"
-        ],
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2,
-        "text-opacity": {
-          "base": 1,
-          "stops": [
-            [11, 0],
-            [11.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "place-mml-small-hc",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        1010210,
-        1020105,
-        1020205,
-        1020305,
-        1020405,
-        1020410,
-        3020110,
-        3030105,
-        3999999,
-        5010115,
-        2010230,
-        2020110,
-        2020115,
-        6010110,
-        4060605,
-        4060699,
-        4069999
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1.2,
-          "stops": [
-            [11, 10],
-            [16, 20],
-            [17, 26]
-          ]
-        },
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 2,
-        "text-opacity": {
-          "base": 1,
-          "stops": [
-            [11, 0],
-            [11.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "place-mml-medium",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        1010105,
-        1010110,
-        1010120,
-        1010125,
-        1010130,
-        2010110,
-        5999905,
-        5999910,
-        2010210,
-        2010215,
-        2010220,
-        2010225,
-        4060505,
-        4060599
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [12, 9],
-            [16, 18],
-            [17, 22]
-          ]
-        },
-        "text-transform": "uppercase",
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": [
-          "match",
-          ["get", "lajikoodi"],
-          [1010105, 1010110, 1010120, 1010125],
-          "#414b2c",
-          [5999905, 5999910],
-          "#414b2c",
-          [1010130, 2010110, 2010210, 2010215, 2010220, 2010225],
-          "#2c3d4d",
-          [4060505, 4060599],
-          "#5b1f1f",
-          "#df00e7"
-        ],
-        "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "place-mml-medium-hc",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        1010105,
-        1010110,
-        1010120,
-        1010125,
-        1010130,
-        2010110,
-        5999905,
-        5999910,
-        2010210,
-        2010215,
-        2010220,
-        2010225,
-        4060505,
-        4060599
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [12, 10],
-            [16, 24],
-            [17, 36]
-          ]
-        },
-        "text-transform": "uppercase",
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [12, 1.2],
-            [16, 2],
-            [17, 3]
-          ]
-        }
-      }
-    },
-    {
-      "id": "place-mml-large",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        3010105,
-        3010110,
-        3020105,
-        5010105,
-        5010110
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [10, 10],
-            [12, 11],
-            [16, 20]
-          ]
-        },
-        "text-transform": "uppercase",
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": [
-          "match",
-          ["get", "lajikoodi"],
-          [3010105, 3010110, 3020105],
-          "#3c240e",
-          [5010105, 5010110],
-          "#414b2c",
-          "#df00e7"
-        ],
-        "text-halo-color": "rgba(255,255,255,0.9)",
-        "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "place-mml-large-hc",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "1444849242106.713",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        3010105,
-        3010110,
-        3020105,
-        5010105,
-        5010110
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-allow-overlap": false,
-        "text-variable-anchor": [
-          "center",
-          "bottom",
-          "bottom-left",
-          "bottom-right",
-          "top",
-          "top-left",
-          "top-right"
-        ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
-        "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [10, 11],
-            [12, 12],
-            [14, 16],
-            [16, 32]
-          ]
-        },
-        "text-transform": "uppercase",
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "#ffffff",
-        "text-halo-width": {
-          "base": 1,
-          "stops": [
-            [12, 1],
-            [16, 2],
-            [17, 3]
-          ]
-        }
       }
     },
     {
