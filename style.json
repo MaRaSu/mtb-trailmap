@@ -13524,7 +13524,11 @@
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 14,
-      "filter": ["==", "class", "path"],
+      "filter": [
+        "all",
+        ["==", "class", "path"],
+        ["!in", "subclass", "corridor"]
+      ],
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
@@ -13560,7 +13564,11 @@
       "source": "openmaptiles",
       "source-layer": "transportation_name",
       "minzoom": 14,
-      "filter": ["==", "class", "path"],
+      "filter": [
+        "all",
+        ["==", "class", "path"],
+        ["!in", "subclass", "corridor"]
+      ],
       "layout": {
         "visibility": "none",
         "symbol-placement": "line",
