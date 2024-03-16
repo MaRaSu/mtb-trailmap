@@ -4408,7 +4408,7 @@
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:ways_only": true
@@ -4434,6 +4434,48 @@
             [15, 3],
             [16, 6],
             [18, 12]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-cw-case-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "subclass", "cycleway", "pedestrian"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 2.2],
+            [15, 4],
+            [16, 7],
+            [18, 16]
           ]
         },
         "line-opacity": {
@@ -5511,7 +5553,7 @@
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Steps.",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -5537,6 +5579,43 @@
           "stops": [
             [14, 3],
             [17, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-steps-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Steps.",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "class", "path"],
+        ["==", "subclass", "steps"],
+        ["!in", "brunnel", "bridge", "tunnel"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [0.4, 0.4],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 4],
+            [16, 9]
           ]
         }
       }
@@ -10689,6 +10768,9 @@
         ["==", "brunnel", "bridge"],
         ["in", "class", "path", "track"]
       ],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#000000",
         "line-width": {
@@ -10700,9 +10782,6 @@
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 14.5, 1]
-      },
-      "layout": {
-        "visibility": "visible"
       }
     },
     {
@@ -10725,6 +10804,9 @@
         ["==", "brunnel", "bridge"],
         ["in", "class", "path", "track"]
       ],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#f8f4f0",
         "line-width": {
@@ -10736,9 +10818,6 @@
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
-      },
-      "layout": {
-        "visibility": "visible"
       }
     },
     {
