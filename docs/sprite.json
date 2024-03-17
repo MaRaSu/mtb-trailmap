@@ -356,6 +356,13 @@
     "x": 0,
     "y": 0
   },
+  "oneway_cycleway": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 160
+  },
   "park_11": {
     "height": 17,
     "pixelRatio": 1,
