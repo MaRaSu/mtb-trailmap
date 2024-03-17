@@ -4691,7 +4691,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!=", "width_cat", "d"],
@@ -4762,7 +4763,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!=", "width_cat", "d"],
