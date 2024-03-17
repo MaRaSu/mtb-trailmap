@@ -5499,7 +5499,7 @@
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Footway marked on highway=[road], left side",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -5545,13 +5545,65 @@
       }
     },
     {
+      "id": "sw-footway-left-line-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Footway marked on highway=[road], left side",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "footway_left", "yes"],
+        ["!in", "cycleway_left", "yes"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [16, 3],
+            [18, 5]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, -4],
+            [16, -8],
+            [18, -16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "sw-footway-right-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Footway marked on highway=[road], right side",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -5586,6 +5638,58 @@
             [14, 3],
             [16, 7],
             [18, 11]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "sw-footway-right-line-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Footway marked on highway=[road], right side",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "footway_right", "yes"],
+        ["!in", "cycleway_right", "yes"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [16, 3],
+            [18, 5]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, 4],
+            [16, 8],
+            [18, 16]
           ]
         },
         "line-opacity": {
@@ -8613,7 +8717,7 @@
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway marked on highway=[road], left side",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -8659,13 +8763,65 @@
       }
     },
     {
+      "id": "sw-cycleway-left-line-paved-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway marked on highway=[road], left side",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "cycleway_left", "yes"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt"
+      },
+      "paint": {
+        "line-color": "#001ac7",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [16, 3],
+            [18, 5]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, -4],
+            [16, -8],
+            [18, -16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "sw-cycleway-right-line-paved",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "maputnik:comment": "Cycleway marked on highway=[road], right side",
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -8700,6 +8856,58 @@
             [14, 3],
             [16, 7],
             [18, 11]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "sw-cycleway-right-line-paved-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Cycleway marked on highway=[road], right side",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "cycleway_right", "yes"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt"
+      },
+      "paint": {
+        "line-color": "#001ac7",
+        "line-dasharray": [6, 1.5],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [14, 1.5],
+            [16, 3],
+            [18, 5]
+          ]
+        },
+        "line-offset": {
+          "base": 1.2,
+          "stops": [
+            [14, 4],
+            [16, 8],
+            [18, 16]
           ]
         },
         "line-opacity": {
