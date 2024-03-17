@@ -104,7 +104,7 @@
       "type": "background",
       "metadata": {
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": false
@@ -114,23 +114,6 @@
       },
       "paint": {
         "background-color": "#f7f4f0"
-      }
-    },
-    {
-      "id": "background-hc",
-      "type": "background",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:ways_only": false
-      },
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "background-color": "#ffffff"
       }
     },
     {
