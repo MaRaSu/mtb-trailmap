@@ -920,7 +920,7 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-ocean": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -942,7 +942,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-ocean": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -964,7 +964,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-lake": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -992,7 +992,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-lake": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -1020,7 +1020,7 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": false
+        "trailmap:safe-water-lake": false
       },
       "source": "maastovektorikartta",
       "source-layer": "vesisto_alue",
@@ -1046,7 +1046,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": false
+        "trailmap:safe-water-lake": false
       },
       "source": "maastovektorikartta",
       "source-layer": "vesisto_alue",
@@ -1072,7 +1072,7 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-lake": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
@@ -1095,7 +1095,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:ways_only": false,
-        "trailmap:safe-water": true
+        "trailmap:safe-water-lake": true
       },
       "source": "openmaptiles",
       "source-layer": "water",
