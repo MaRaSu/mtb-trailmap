@@ -13573,7 +13573,7 @@
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
         "trailmap:ways_only": true
@@ -13622,8 +13622,61 @@
           "case",
           ["==", ["get", "subclass"], "cycleway"],
           1,
-          0.75
+          0.5
         ]
+      }
+    },
+    {
+      "id": "oneway_arrows-hc",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        ["in", "oneway", 1, -1],
+        [
+          "in",
+          "class",
+          "motorway",
+          "trunk",
+          "primary",
+          "secondary",
+          "tertiary",
+          "minor",
+          "service",
+          "path"
+        ]
+      ],
+      "layout": {
+        "visibility": "none",
+        "icon-image": [
+          "case",
+          ["==", ["get", "subclass"], "cycleway"],
+          "oneway_cycleway",
+          "oneway"
+        ],
+        "icon-padding": 2,
+        "icon-rotate": ["case", ["==", ["get", "oneway"], 1], 90, -90],
+        "icon-rotation-alignment": "map",
+        "icon-size": {
+          "stops": [
+            [15, 0.5],
+            [17, 1]
+          ]
+        },
+        "symbol-placement": "line",
+        "symbol-spacing": 75
+      },
+      "paint": {
+        "icon-opacity": 1
       }
     },
     {
