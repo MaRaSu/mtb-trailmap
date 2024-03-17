@@ -1703,7 +1703,8 @@
         ["==", "class", "service"]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -1772,7 +1773,8 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -1814,7 +1816,8 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -1851,7 +1854,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -1886,7 +1890,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -2014,6 +2019,9 @@
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
       ],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#000000",
         "line-dasharray": [2.5, 2],
@@ -2200,7 +2208,8 @@
         ["==", "class", "service"]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff",
@@ -2235,7 +2244,8 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2266,7 +2276,8 @@
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff",
@@ -2301,7 +2312,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2336,7 +2348,8 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2401,6 +2414,9 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "rail"]],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#dcdcdc",
         "line-dasharray": [3, 3],
@@ -6673,7 +6689,8 @@
       ],
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -10847,6 +10864,43 @@
       }
     },
     {
+      "id": "bridge-path/track/cycleway/footway-railings-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "path", "track"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [11, 6],
+            [14, 8],
+            [16, 12],
+            [18, 26.5]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 14.5, 1]
+      }
+    },
+    {
       "id": "bridge-path/track/cycleway/footway-floor",
       "type": "line",
       "metadata": {
@@ -10877,6 +10931,43 @@
             [14, 1.2],
             [16, 10],
             [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+      }
+    },
+    {
+      "id": "bridge-path/track/cycleway/footway-floor-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "path", "track"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#f8f4f0",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [11, 4],
+            [14, 6],
+            [16, 9],
+            [18, 22.5]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
@@ -10987,6 +11078,116 @@
             ["d"],
             15,
             9
+          ]
+        ],
+        "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
+      }
+    },
+    {
+      "id": "bridge-path-case-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["==", "class", "path"],
+        ["!=", "subclass", "cycleway"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "#00c7b0",
+          ["0"],
+          "#66cc00",
+          ["1"],
+          "#c5c900",
+          ["2"],
+          "#f09000",
+          ["3"],
+          "#ff4f5e",
+          ["4"],
+          "#d600ce",
+          ["5"],
+          "#7a3391",
+          ["6"],
+          "#593266",
+          "#FFFFFF"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            2,
+            ["b"],
+            3,
+            ["c"],
+            4,
+            ["d"],
+            4,
+            3
+          ],
+          14,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            2.5,
+            ["b"],
+            4,
+            ["c"],
+            6,
+            ["d"],
+            6,
+            4
+          ],
+          16,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            3,
+            ["b"],
+            6,
+            ["c"],
+            9,
+            ["d"],
+            9,
+            6
+          ],
+          18,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            7.5,
+            ["b"],
+            13.5,
+            ["c"],
+            22.5,
+            ["d"],
+            22.5,
+            13.5
           ]
         ],
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
@@ -12016,7 +12217,8 @@
       ],
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fff",
@@ -12629,6 +12831,9 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "rail"]],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#A8A7A5",
         "line-width": {
@@ -12655,6 +12860,9 @@
       "source": "openmaptiles",
       "source-layer": "transportation",
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "class", "rail"]],
+      "layout": {
+        "visibility": "visible"
+      },
       "paint": {
         "line-color": "#dcdcdc",
         "line-dasharray": [3, 3],
@@ -13850,7 +14058,8 @@
         "text-field": "{ref}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "visible"
       },
       "paint": {}
     },
