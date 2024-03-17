@@ -13104,7 +13104,7 @@
       }
     },
     {
-      "id": "road_oneway",
+      "id": "oneway_arrows",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -13118,7 +13118,7 @@
       "minzoom": 15,
       "filter": [
         "all",
-        ["==", "oneway", 1],
+        ["in", "oneway", 1, -1],
         [
           "in",
           "class",
@@ -13128,13 +13128,20 @@
           "secondary",
           "tertiary",
           "minor",
-          "service"
+          "service",
+          "path"
         ]
       ],
       "layout": {
-        "icon-image": "oneway",
+        "visibility": "visible",
+        "icon-image": [
+          "case",
+          ["==", ["get", "subclass"], "cycleway"],
+          "oneway_cycleway",
+          "oneway"
+        ],
         "icon-padding": 2,
-        "icon-rotate": 90,
+        "icon-rotate": ["case", ["==", ["get", "oneway"], 1], 90, -90],
         "icon-rotation-alignment": "map",
         "icon-size": {
           "stops": [
@@ -13146,53 +13153,12 @@
         "symbol-spacing": 75
       },
       "paint": {
-        "icon-opacity": 0.5
-      }
-    },
-    {
-      "id": "road_oneway-opposite",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        ["==", "oneway", -1],
-        [
-          "in",
-          "class",
-          "motorway",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary",
-          "minor",
-          "service"
+        "icon-opacity": [
+          "case",
+          ["==", ["get", "subclass"], "cycleway"],
+          1,
+          0.75
         ]
-      ],
-      "layout": {
-        "icon-image": "oneway",
-        "icon-padding": 2,
-        "icon-rotate": -90,
-        "icon-rotation-alignment": "map",
-        "icon-size": {
-          "stops": [
-            [15, 0.5],
-            [19, 1]
-          ]
-        },
-        "symbol-placement": "line",
-        "symbol-spacing": 75
-      },
-      "paint": {
-        "icon-opacity": 0.5
       }
     },
     {
