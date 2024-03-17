@@ -7458,7 +7458,16 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#ffcc88",
+          "#fea"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -7502,7 +7511,16 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ffe16b",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#d6771e",
+          "#ffc72e"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -8334,7 +8352,12 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": [
+          "case",
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
+          "#fea"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -8381,7 +8404,12 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ffc72e",
+        "line-color": [
+          "case",
+          ["==", ["get", "bicycle"], "no"],
+          "#d6771e",
+          "#ffc72e"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -11872,7 +11900,16 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#ffcc88",
+          "#fea"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -11909,7 +11946,16 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ffe16b",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#d6771e",
+          "#ffc72e"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -12147,7 +12193,16 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#fea",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#ffcc88",
+          "#fea"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -12183,7 +12238,16 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ffe16b",
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#d6771e",
+          "#ffc72e"
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
