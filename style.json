@@ -6324,8 +6324,12 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
-        ["in", "subclass", "footway"],
         ["!has", "mtb_scale"],
+        [
+          "any",
+          ["in", "subclass", "footway"],
+          ["all", ["==", "class", "path"], ["==", "bicycle", "no"]]
+        ],
         ["has", "bicycle"]
       ],
       "layout": {
