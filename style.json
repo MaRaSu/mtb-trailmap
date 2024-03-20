@@ -11174,6 +11174,49 @@
       }
     },
     {
+      "id": "hw-cycleway-oneway_missing-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "subclass", "cycleway", "pedestrian"],
+        ["!has", "oneway"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt"
+      },
+      "paint": {
+        "line-color": "#3046D7",
+        "line-dasharray": [0.1, 8],
+        "line-width": {
+          "stops": [
+            [14, 5],
+            [16, 8],
+            [18, 16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [14, 0],
+            [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "forbidden-bicycle-winter",
       "type": "line",
       "metadata": {
@@ -15413,7 +15456,7 @@
         "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
