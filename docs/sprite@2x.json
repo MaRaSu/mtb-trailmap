@@ -499,14 +499,14 @@
   "road_4": {
     "height": 28,
     "pixelRatio": 2,
-    "width": 62,
+    "width": 66,
     "x": 357,
     "y": 76
   },
   "road_5": {
     "height": 28,
     "pixelRatio": 2,
-    "width": 72,
+    "width": 76,
     "x": 419,
     "y": 76
   },
@@ -514,7 +514,7 @@
     "height": 28,
     "pixelRatio": 2,
     "width": 80,
-    "x": 491,
+    "x": 492,
     "y": 76
   },
   "rocket_11": {
