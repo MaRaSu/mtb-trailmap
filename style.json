@@ -394,7 +394,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": {
@@ -645,7 +645,7 @@
       "minzoom": 11,
       "filter": ["==", "subclass", "scrub"],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -841,7 +841,7 @@
       "maxzoom": 20,
       "filter": ["==", ["%", ["get", "korkeusarvo"], 5000], 0],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -875,7 +875,7 @@
       "maxzoom": 14,
       "filter": ["!", ["has", "korkeusarvo"]],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -917,7 +917,7 @@
       "maxzoom": 20,
       "filter": ["!=", ["%", ["get", "korkeusarvo"], 5000], 0],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -1163,7 +1163,7 @@
       "minzoom": 11,
       "filter": ["in", "kohdeluokka", 35300, 35411, 35412, 35421, 35422, 38300],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": [
@@ -1728,7 +1728,7 @@
       "source": "rinnevarjostus",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -1761,7 +1761,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -1799,7 +1799,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(200, 147, 102, 1)",
@@ -1833,7 +1833,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -1877,7 +1877,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -1916,7 +1916,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -1953,7 +1953,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -1992,7 +1992,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -2032,7 +2032,7 @@
         ["in", "subclass", "cycleway", "pedestrian"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -2085,7 +2085,7 @@
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -2132,7 +2132,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -2197,7 +2197,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -2241,7 +2241,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(244, 209, 158, 1)",
@@ -2279,7 +2279,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2355,7 +2355,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff",
@@ -2392,7 +2392,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2430,7 +2430,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -2502,7 +2502,7 @@
       "filter": ["all", ["==", "brunnel", "tunnel"], ["==", "class", "minor"]],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff",
@@ -2539,7 +2539,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2576,7 +2576,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff4c6",
@@ -2613,7 +2613,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffdaa6",
@@ -2665,7 +2665,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-dasharray": [0.5, 0.5],
@@ -4301,7 +4301,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4642,7 +4642,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4888,7 +4888,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": ["case", ["has", "mtb_scale"], "#75E009", "#ff99a2"],
@@ -4939,7 +4939,7 @@
         ["has", "trail_visibility"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -4999,7 +4999,7 @@
         ["!has", "trail_visibility"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5060,7 +5060,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5123,7 +5123,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5360,7 +5360,7 @@
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5404,7 +5404,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5447,7 +5447,7 @@
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5710,7 +5710,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -6022,7 +6022,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -6177,7 +6177,7 @@
         ["!has", "mtb_scale"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#A43820",
@@ -6278,7 +6278,7 @@
         ["!has", "bicycle"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#A43820",
@@ -6333,7 +6333,7 @@
         ["has", "bicycle"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#A43820",
@@ -6670,7 +6670,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d48948",
@@ -6750,7 +6750,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -6795,7 +6795,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d48948",
@@ -6935,7 +6935,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -6975,7 +6975,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -7271,7 +7271,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -7568,7 +7568,7 @@
         ["==", "service", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -7669,7 +7669,7 @@
         ["in", "class", "raceway", "raceway_construction"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -7771,7 +7771,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -7826,7 +7826,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d89356",
@@ -8025,7 +8025,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d28644",
@@ -8190,7 +8190,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -8368,7 +8368,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -8472,7 +8472,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8552,7 +8552,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -8637,7 +8637,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -8807,7 +8807,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -8936,7 +8936,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9028,7 +9028,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9205,7 +9205,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#575757",
@@ -9262,7 +9262,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9343,7 +9343,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9423,7 +9423,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9579,7 +9579,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9666,7 +9666,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
@@ -9855,7 +9855,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
@@ -10013,7 +10013,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -10206,7 +10206,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -10525,7 +10525,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -10709,7 +10709,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -10890,7 +10890,7 @@
         ["!has", "surface_raw"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -11056,7 +11056,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt"
       },
       "paint": {
@@ -11101,7 +11101,7 @@
         ["in", "surface_raw", "unpaved", "paved"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt"
       },
       "paint": {
@@ -11148,7 +11148,7 @@
         ["!has", "surface_raw"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt"
       },
       "paint": {
@@ -11195,17 +11195,17 @@
         ["!has", "oneway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt"
       },
       "paint": {
         "line-color": "#3046D7",
-        "line-dasharray": [0.1, 8],
+        "line-dasharray": [0.07, 6],
         "line-width": {
           "stops": [
-            [14, 5],
-            [16, 8],
-            [18, 16]
+            [14, 6],
+            [16, 10],
+            [18, 20]
           ]
         },
         "line-opacity": {
@@ -12316,7 +12316,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -12393,7 +12393,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -12512,7 +12512,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -12631,7 +12631,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d48948",
@@ -12746,7 +12746,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -12839,7 +12839,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#cfcdca",
@@ -12882,7 +12882,7 @@
         ["in", "class", "path", "track"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -12957,7 +12957,7 @@
         ["in", "class", "path", "track"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#f8f4f0",
@@ -13033,7 +13033,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -13365,7 +13365,7 @@
         ["==", "class", "track"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -13436,7 +13436,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -13574,7 +13574,7 @@
         ["!in", "subclass", "cycleway", "footway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -13669,7 +13669,7 @@
         ["!has", "mtb_scale"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#A43820",
@@ -13776,7 +13776,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -13887,7 +13887,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -13986,7 +13986,7 @@
         ["!has", "surface_raw"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#3046D7",
@@ -14063,7 +14063,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fc8",
@@ -14139,7 +14139,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -14277,7 +14277,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fff",
@@ -14315,7 +14315,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
@@ -14440,7 +14440,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -14573,7 +14573,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -15479,7 +15479,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-image": [
           "case",
           ["==", ["get", "subclass"], "cycleway"],
@@ -16318,7 +16318,7 @@
       "minzoom": 13,
       "filter": ["==", "class", "fixme"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "case",
@@ -16361,7 +16361,7 @@
       "minzoom": 13,
       "filter": ["==", "class", "noexit"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": "tm_noexit",
         "icon-size": {
