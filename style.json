@@ -15603,7 +15603,7 @@
       "filter": ["in", "kohdeluokka", 32500, 32111, 32112, 32113],
       "layout": {
         "visibility": "visible",
-        "icon-allow-overlap": true,
+        "icon-allow-overlap": false,
         "icon-image": "tm_mml_32500_32111_32112_32113_louhokset",
         "icon-size": {
           "stops": [
@@ -15635,7 +15635,7 @@
       "filter": ["==", "class", "quarry"],
       "layout": {
         "visibility": "visible",
-        "icon-allow-overlap": true,
+        "icon-allow-overlap": false,
         "icon-image": "tm_mml_32500_32111_32112_32113_louhokset",
         "icon-size": {
           "stops": [
