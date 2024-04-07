@@ -738,6 +738,55 @@
       }
     },
     {
+      "id": "landcover-scree-osm",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849382550.77",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "minzoom": 11,
+      "filter": ["==", "subclass", "scree"],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": "tm_mml_kivikko_osm_scree",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "landcover-scree-mml",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849382550.77",
+        "maputnik:comment": "39120 = kivikko",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 39120],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": "tm_mml_kivikko_osm_scree",
+        "fill-opacity": 1
+      }
+    },
+    {
       "id": "landcover-field",
       "type": "fill",
       "metadata": {
