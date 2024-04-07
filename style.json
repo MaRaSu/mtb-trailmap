@@ -5403,6 +5403,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
+        "trailmap:group": "mml-ways",
         "trailmap:mml_ways": true,
         "trailmap:ways_only": true
       },
@@ -6110,6 +6111,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
+        "trailmap:group": "mml-ways",
         "trailmap:mml_ways": true,
         "trailmap:ways_only": true
       },
@@ -7399,6 +7401,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
+        "trailmap:group": "mml-ways",
         "trailmap:mml_ways": true,
         "trailmap:ways_only": true
       },
@@ -7484,6 +7487,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
+        "trailmap:group": "mml-ways",
         "trailmap:mml_ways": true,
         "trailmap:ways_only": true
       },
