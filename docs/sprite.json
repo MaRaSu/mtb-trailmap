@@ -972,6 +972,13 @@
     "x": 352,
     "y": 384
   },
+  "tm_mml_kivikko_osm_scree": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 416,
+    "y": 448
+  },
   "tm_valk_mml_35300_soistuma": {
     "height": 64,
     "pixelRatio": 1,
