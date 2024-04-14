@@ -2980,7 +2980,7 @@
             [5, 0],
             [5.5, 0.2],
             [10, 0.2],
-            [12, 0]
+            [12, 1]
           ]
         },
         "fill-outline-color": "#7BA36C"
@@ -3016,7 +3016,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, 0.4]
+            [12, 1]
           ]
         },
         "line-width": {
@@ -5394,6 +5394,39 @@
       }
     },
     {
+      "id": "hw-path-line-mml-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "liikenne",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 12313],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#d68000",
+        "line-dasharray": [2.5, 2],
+        "line-width": {
+          "stops": [
+            [12, 0.8],
+            [14, 1.3],
+            [16, 2.3],
+            [18, 4.5]
+          ]
+        },
+        "line-opacity": 0.75
+      }
+    },
+    {
       "id": "hw-path-line-mml",
       "type": "line",
       "metadata": {
@@ -6099,6 +6132,40 @@
           12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
+      }
+    },
+    {
+      "id": "hw-track-line-mml-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "liikenne",
+      "minzoom": 9,
+      "filter": ["==", "kohdeluokka", 12316],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#d68000",
+        "line-dasharray": [8, 1.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.5],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7]
+          ]
+        },
+        "line-opacity": 0.75
       }
     },
     {
@@ -17297,6 +17364,7 @@
             [15, 24]
           ]
         },
+        "text-allow-overlap": true,
         "visibility": "visible"
       },
       "paint": {
@@ -17331,6 +17399,7 @@
             [11, 24]
           ]
         },
+        "text-allow-overlap": true,
         "visibility": "visible"
       },
       "paint": {
@@ -17369,6 +17438,7 @@
             [11, 24]
           ]
         },
+        "text-allow-overlap": true,
         "visibility": "visible"
       },
       "paint": {
