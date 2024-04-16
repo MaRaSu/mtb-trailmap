@@ -2955,7 +2955,6 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "minzoom": 5,
-      "maxzoom": 12,
       "filter": [
         "in",
         "class",
@@ -2980,7 +2979,7 @@
             [5, 0],
             [5.5, 0.2],
             [10, 0.2],
-            [12, 1]
+            [12, 0.08]
           ]
         },
         "fill-outline-color": "#7BA36C"
@@ -3016,7 +3015,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, 1]
+            [12, 0.4]
           ]
         },
         "line-width": {
@@ -13437,7 +13436,7 @@
           "#9600c8",
           ["6"],
           "#8100AC",
-          "#000000"
+          "#ffffff"
         ],
         "line-width": [
           "interpolate",
@@ -13659,7 +13658,7 @@
           "#9600c8",
           ["6"],
           "#8100AC",
-          "#000000"
+          "#ffffff"
         ],
         "line-width": [
           "interpolate",
@@ -14048,7 +14047,7 @@
           ["in", "subclass", "footway"],
           ["all", ["==", "bicycle", "no"], ["!=", "foot", "no"]]
         ],
-        ["!has", "mtb_scale"]
+        ["any", ["!has", "mtb_scale"], ["==", "mtb_scale", "-1"]]
       ],
       "layout": {
         "visibility": "visible"
@@ -14097,7 +14096,7 @@
           ["in", "subclass", "footway"],
           ["all", ["==", "bicycle", "no"], ["!=", "foot", "no"]]
         ],
-        ["!has", "mtb_scale"]
+        ["any", ["!has", "mtb_scale"], ["==", "mtb_scale", "-1"]]
       ],
       "layout": {
         "visibility": "none"
