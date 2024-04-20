@@ -8344,7 +8344,52 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-case-gr",
+      "id": "hw-tertiary-case-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "tertiary", "tertiary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "surface_raw"],
+          ["paved", "asphalt", "concrete", "paving_stones", "wood"],
+          "#5e5e5e",
+          "#7e580e"
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [10, 3],
+            [20, 17]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-secondary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -8361,14 +8406,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
-        ],
+        ["in", "class", "secondary", "secondary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -10175,7 +10213,7 @@
       }
     },
     {
-      "id": "hw-secondary-tertiary-line-gr",
+      "id": "hw-tertiary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -10192,14 +10230,62 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
+        ["in", "class", "tertiary", "tertiary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            ["paved", "asphalt", "concrete", "paving_stones", "wood"],
+            "#FFFFFF",
+            "#EDDFCA"
+          ],
+          "#EDDFCA"
         ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [20, 13]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-secondary-line-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "secondary", "secondary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -12997,7 +13083,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-case-gr",
+      "id": "bridge-tertiary-case-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -13013,7 +13099,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -13022,9 +13108,78 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
+          "match",
+          ["get", "surface_raw"],
+          ["paved", "asphalt", "concrete", "paving_stones", "wood"],
+          "#5e5e5e",
+          "#7e580e"
+        ],
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [7, 0.6],
+            [8, 1.8],
+            [20, 22]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-case-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "surface_raw"],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "mud",
+            "rock",
+            "sand",
+            "shells",
+            "stepping_stones"
+          ],
+          "#7e580e",
           "#5e5e5e"
         ],
         "line-opacity": 1,
@@ -14806,7 +14961,7 @@
       }
     },
     {
-      "id": "bridge-secondary-tertiary-line-gr",
+      "id": "bridge-tertiary-line-gr",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849334699.1902",
@@ -14823,7 +14978,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -14833,8 +14988,86 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            ["paved", "asphalt", "concrete", "paving_stones", "wood"],
+            "#FFFFFF",
+            "#EDDFCA"
+          ],
+          "#EDDFCA"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [20, 12]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-line-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849334699.1902",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
           "#FFFFFF"
         ],
         "line-width": {
