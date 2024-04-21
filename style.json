@@ -5362,7 +5362,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"]
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ]
       ],
       "layout": {
         "visibility": "visible"
@@ -5405,7 +5408,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"]
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -5448,7 +5454,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"]
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -6462,7 +6471,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
         ["any", ["in", "subclass", "footway"], ["==", "bicycle", "no"]],
-        ["!has", "mtb_scale"]
+        ["!has", "mtb_scale"],
+        ["!=", "bicycle", "yes"]
       ],
       "layout": {
         "visibility": "visible"
@@ -6512,7 +6522,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
         ["any", ["in", "subclass", "footway"], ["==", "bicycle", "no"]],
-        ["!has", "mtb_scale"]
+        ["!has", "mtb_scale"],
+        ["!=", "bicycle", "yes"]
       ],
       "layout": {
         "visibility": "none"
@@ -11055,7 +11066,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11113,7 +11127,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11172,7 +11189,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11230,7 +11250,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11297,7 +11320,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11365,7 +11391,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         [
           "in",
           "surface_raw",
@@ -11432,7 +11461,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         ["!has", "surface_raw"]
       ],
       "layout": {
@@ -11478,7 +11510,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         ["!has", "surface_raw"]
       ],
       "layout": {
@@ -11525,7 +11560,10 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"],
+        ["any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+        ],
         ["!has", "surface_raw"]
       ],
       "layout": {
