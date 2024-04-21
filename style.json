@@ -606,7 +606,7 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": ["in", "kohdeluokka", 39110, 39120],
+      "filter": ["==", "kohdeluokka", 39120],
       "layout": {
         "visibility": "visible"
       },
@@ -636,7 +636,7 @@
       "source": "maastovektorikartta",
       "source-layer": "maasto_alue",
       "minzoom": 11,
-      "filter": ["in", "kohdeluokka", 39110, 39120],
+      "filter": ["==", "kohdeluokka", 39120],
       "layout": {
         "visibility": "visible"
       },
@@ -702,6 +702,36 @@
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
+        "fill-opacity": {
+          "stops": [
+            [11, 0],
+            [12, 0.5],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "landcover-clearcut_mml",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_alue",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 39110],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": "tm_vihr_mml_39110_avoin_metsamaa",
         "fill-opacity": {
           "stops": [
             [11, 0],
