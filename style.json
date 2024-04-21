@@ -810,8 +810,8 @@
         "fill-color": [
           "case",
           ["==", ["get", "kohdeluokka"], 32611],
-          "#faf3ce",
-          "#f6face"
+          "#f7eeb7",
+          "#edf2bb"
         ],
         "fill-opacity": {
           "stops": [
