@@ -5362,7 +5362,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ]
@@ -5408,7 +5409,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ]
@@ -5454,7 +5456,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ]
@@ -7548,92 +7551,6 @@
       }
     },
     {
-      "id": "hw-service_minor-case-mml",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:group": "mml-ways",
-        "trailmap:mml_ways": true,
-        "trailmap:ways_only": true
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "liikenne",
-      "minzoom": 10,
-      "filter": ["in", "kohdeluokka", 12141, 12131, 12132],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["==", ["get", "paallyste"], 2],
-          "#404040",
-          "#634507"
-        ],
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            2,
-            [12131],
-            2.5,
-            [12132],
-            2.5,
-            0
-          ],
-          12,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            2.8,
-            [12131],
-            3.2,
-            [12132],
-            3.2,
-            0
-          ],
-          14,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            3,
-            [12131],
-            4,
-            [12132],
-            4,
-            0
-          ],
-          20,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            11,
-            [12131],
-            15,
-            [12132],
-            15,
-            0
-          ]
-        ],
-        "line-opacity": 0.65
-      }
-    },
-    {
       "id": "hw-service_minor-line-mml",
       "type": "line",
       "metadata": {
@@ -7649,74 +7566,28 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "liikenne",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": ["in", "kohdeluokka", 12141, 12131, 12132],
       "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
           "case",
           ["==", ["get", "paallyste"], 2],
-          "#FFFFFF",
-          "#EDDFCA"
+          "#000000",
+          "#7a3900"
         ],
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            1,
-            [12131],
-            1,
-            [12132],
-            1,
-            0
-          ],
-          12,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            1.3,
-            [12131],
-            1.3,
-            [12132],
-            1.3,
-            0
-          ],
-          14,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            1.8,
-            [12131],
-            2.5,
-            [12132],
-            2.5,
-            0
-          ],
-          20,
-          [
-            "match",
-            ["get", "kohdeluokka"],
-            [12141],
-            9,
-            [12131],
-            11.5,
-            [12132],
-            11.5,
-            0
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.75],
+            [14, 1.9],
+            [16, 5],
+            [18, 10.5]
           ]
-        ],
-        "line-opacity": 0.65
+        },
+        "line-opacity": 0.75
       }
     },
     {
@@ -8053,7 +7924,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [11, 1.0],
+            [11, 1],
             [12, 1.2],
             [14, 2.4],
             [20, 10]
@@ -11066,7 +10937,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11127,7 +10999,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11189,7 +11062,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11250,7 +11124,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11320,7 +11195,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11391,7 +11267,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11461,7 +11338,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11510,7 +11388,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
@@ -11560,7 +11439,8 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["any",
+        [
+          "any",
           ["in", "subclass", "cycleway", "pedestrian"],
           ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
         ],
