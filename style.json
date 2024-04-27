@@ -16439,6 +16439,42 @@
       }
     },
     {
+      "id": "rocks-mml",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_piste",
+      "minzoom": 13,
+      "filter": ["==", "kohdeluokka", 34200],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "triangle_11",
+        "icon-rotate": 30,
+        "icon-size": {
+          "stops": [
+            [14, 0.3],
+            [18, 1.5]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [14, 0],
+            [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "poi_osm-level-3",
       "type": "symbol",
       "metadata": {
