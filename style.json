@@ -1092,11 +1092,11 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849382550.77",
-        "trailmap:mtb": false,
+        "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true
       },
@@ -1110,7 +1110,7 @@
         ["!=", "brunnel", "tunnel"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": "hsl(210, 67%, 85%)"
@@ -1122,7 +1122,7 @@
       "metadata": {
         "mapbox:group": "1444849382550.77",
         "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
