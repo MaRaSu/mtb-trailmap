@@ -17038,7 +17038,7 @@
       }
     },
     {
-      "id": "poi_osm-additions",
+      "id": "poi_osm-additions-normal",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -17050,14 +17050,12 @@
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
-      "minzoom": 12,
+      "minzoom": 10,
       "filter": ["all", ["==", "$type", "Point"]],
       "layout": {
         "icon-image": [
           "match",
           ["get", "subclass"],
-          ["firepit"],
-          "firepit_11",
           ["peak"],
           "peak_11",
           ["swimming_area"],
@@ -17066,16 +17064,18 @@
           "monument_11",
           ["toilet", "toilets"],
           "toilet_11",
-          ["lean_to", "picnic_shelter", "weather_shelter"],
-          "shelter_11",
-          ["water_point", "drinking_water"],
-          "drinking_water_11",
           ["cave_entrance"],
           "cave_entrance_11",
           ["bunker"],
           "bunker_11",
           "#blank"
         ],
+        "icon-size": {
+          "stops": [
+            [15, 1],
+            [18, 2]
+          ]
+        },
         "text-anchor": "top",
         "text-field": "{name}",
         "text-font": ["Noto Sans Regular"],
@@ -17094,8 +17094,8 @@
       "paint": {
         "icon-opacity": {
           "stops": [
-            [13, 0],
-            [13.5, 1]
+            [12, 0],
+            [12.5, 1]
           ]
         },
         "text-color": "#212121",
@@ -18583,6 +18583,77 @@
         "text-halo-blur": 1,
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2
+      }
+    },
+    {
+      "id": "poi_osm-additions-priority",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 10,
+      "filter": ["all", ["==", "$type", "Point"]],
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "subclass"],
+          ["lean_to", "picnic_shelter", "weather_shelter", "basic_hut"],
+          "shelter_11",
+          ["wilderness_hut_11"],
+          "shelter_11",
+          ["water_point", "drinking_water"],
+          "drinking_water_11",
+          ["firepit"],
+          "firepit_11",
+          "#blank"
+        ],
+        "icon-size": {
+          "stops": [
+            [10, 0.6],
+            [15, 1]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 9,
+        "text-offset": [0, 0.6],
+        "text-padding": 2,
+        "text-size": {
+          "stops": [
+            [15, 9],
+            [16, 13],
+            [18, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
+        "text-color": "#212121",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1,
+        "text-opacity": {
+          "stops": [
+            [14.5, 0],
+            [15, 1]
+          ]
+        }
       }
     },
     {
