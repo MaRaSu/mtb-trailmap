@@ -5560,9 +5560,13 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
-        ],
-        ["!has", "mtb_scale"]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
+        ]
       ],
       "layout": {
         "visibility": "visible"
@@ -5608,9 +5612,13 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
-        ],
-        ["!has", "mtb_scale"]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -5656,9 +5664,13 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
-        ],
-        ["!has", "mtb_scale"]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -11545,7 +11557,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -11608,7 +11625,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -11672,7 +11694,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -11735,9 +11762,13 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
-        ["!has", "mtb_scale"],
         [
           "in",
           "surface_raw",
@@ -11807,7 +11838,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -11880,7 +11916,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -11952,7 +11993,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -12033,7 +12079,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
@@ -12115,7 +12166,12 @@
         [
           "any",
           ["in", "subclass", "cycleway", "pedestrian"],
-          ["all", ["==", "subclass", "footway"], ["==", "bicycle", "yes"]]
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ]
         ],
         ["!has", "mtb_scale"],
         [
