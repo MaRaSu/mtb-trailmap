@@ -166,7 +166,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#ebe4dd"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -189,7 +189,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#ebe4dd"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -216,7 +216,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#e5ddd8"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -252,7 +252,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#ebe2dd"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -298,7 +298,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#ebdfdd"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -952,7 +952,13 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#dbd3cd",
+        "line-color": "#ddcbbb",
+        "line-width": {
+          "stops": [
+            [16, 1],
+            [18, 3]
+          ]
+        },
         "line-opacity": {
           "stops": [
             [15, 0],
