@@ -17202,7 +17202,22 @@
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 10,
-      "filter": ["all", ["==", "$type", "Point"]],
+      "filter": [
+        "all",
+        ["==", "$type", "Point"],
+        [
+          "in",
+          "subclass",
+          "peak",
+          "swimming_area",
+          "memorial",
+          "monument",
+          "toilet",
+          "toilets",
+          "cave_entrance",
+          "bunker"
+        ]
+      ],
       "layout": {
         "icon-image": [
           "match",
@@ -18750,7 +18765,22 @@
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 10,
-      "filter": ["all", ["==", "$type", "Point"]],
+      "filter": [
+        "all",
+        ["==", "$type", "Point"],
+        [
+          "in",
+          "subclass",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "basic_hut",
+          "wilderness_hut_11",
+          "water_point",
+          "drinking_water",
+          "firepit"
+        ]
+      ],
       "layout": {
         "icon-image": [
           "match",
