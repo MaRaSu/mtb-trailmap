@@ -5107,6 +5107,7 @@
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
         ["has", "mtb_scale"],
         ["!in", "mtb_scale", "-1"],
+        ["!in", "subclass", "cycleway"],
         ["!=", "noexit", 1]
       ],
       "layout": {
