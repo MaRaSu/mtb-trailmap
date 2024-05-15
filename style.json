@@ -11845,7 +11845,6 @@
             ["!has", "mtb_scale"]
           ]
         ],
-        ["!has", "mtb_scale"],
         [
           "in",
           "surface_raw",
@@ -11923,7 +11922,6 @@
             ["!has", "mtb_scale"]
           ]
         ],
-        ["!has", "mtb_scale"],
         [
           "in",
           "surface_raw",
@@ -12000,7 +11998,6 @@
             ["!has", "mtb_scale"]
           ]
         ],
-        ["!has", "mtb_scale"],
         [
           "!in",
           "surface_raw",
@@ -12086,7 +12083,6 @@
             ["!has", "mtb_scale"]
           ]
         ],
-        ["!has", "mtb_scale"],
         [
           "!in",
           "surface_raw",
@@ -12173,7 +12169,6 @@
             ["!has", "mtb_scale"]
           ]
         ],
-        ["!has", "mtb_scale"],
         [
           "!in",
           "surface_raw",
