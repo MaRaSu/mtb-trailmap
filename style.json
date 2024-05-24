@@ -6189,7 +6189,7 @@
       }
     },
     {
-      "id": "hw-path-line-gv",
+      "id": "hw-path-cat_a-line-gv",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6218,7 +6218,7 @@
           ["has", "mtb_scale"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
-        ["!=", "width_cat", "d"],
+        ["==", "width_cat", "a"],
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
@@ -6226,29 +6226,145 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [2.5, 2],
+        "line-dasharray": [5.3, 3.8],
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           12,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            0.4,
-            ["b"],
-            0.6,
-            ["c"],
-            1.2,
-            0.6
-          ],
+          0.4,
           14,
-          ["match", ["get", "width_cat"], ["a"], 0.8, ["b"], 1, ["c"], 1.8, 1],
+          0.7,
           16,
-          ["match", ["get", "width_cat"], ["a"], 1, ["b"], 1.8, ["c"], 3, 1.8],
+          1.2,
           18,
-          ["match", ["get", "width_cat"], ["a"], 2, ["b"], 3.5, ["c"], 5.5, 3.5]
+          2.3
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
+          ["case", ["has", "noexit"], 0.4, 1]
+        ]
+      }
+    },
+    {
+      "id": "hw-path-cat_b_uk-line-gv",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "footway"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
+        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["any", ["==", "width_cat", "b"], ["!has", "width_cat"]],
+        ["!in", "trail_visibility", "bad"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [3.5, 2.5],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          0.6,
+          14,
+          1,
+          16,
+          1.8,
+          18,
+          3.5
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12.5,
+          ["case", ["has", "noexit"], 0.4, 1]
+        ]
+      }
+    },
+    {
+      "id": "hw-path-cat_c-line-gv",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "maputnik:comment": "Line for paths with normal (unknown or known good+) visibility.",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "path", "footway"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
+        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["==", "width_cat", "c"],
+        ["!in", "trail_visibility", "bad"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [2.1, 1.5],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          1,
+          14,
+          1.7,
+          16,
+          3.1,
+          18,
+          6
         ],
         "line-opacity": [
           "interpolate",
@@ -6609,7 +6725,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [8, 1.5],
+        "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
@@ -6717,7 +6833,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [8, 1.5],
+        "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
@@ -15244,7 +15360,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [8, 1.5],
+        "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
@@ -15288,7 +15404,7 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-dasharray": [8, 1.5],
+        "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1,
           "stops": [
