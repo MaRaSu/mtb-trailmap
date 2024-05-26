@@ -5201,7 +5201,129 @@
       }
     },
     {
-      "id": "hw-path-track-case-mapper",
+      "id": "hw-path-line-mml-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "liikenne",
+      "minzoom": 11,
+      "filter": ["==", "kohdeluokka", 12313],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#9c7a48",
+        "line-dasharray": [2.5, 2],
+        "line-width": {
+          "stops": [
+            [12, 0.8],
+            [14, 1.3],
+            [16, 2.3],
+            [18, 4.5]
+          ]
+        },
+        "line-opacity": 0.75
+      }
+    },
+    {
+      "id": "hw-track-line-mml-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "liikenne",
+      "minzoom": 9,
+      "filter": ["==", "kohdeluokka", 12316],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#9c7a48",
+        "line-dasharray": [8, 1.5],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 0.5],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7]
+          ]
+        },
+        "line-opacity": 0.75
+      }
+    },
+    {
+      "id": "hw-path-track-case-mtb_scale_yesno-mapper",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        ["!in", "subclass", "cycleway", "pedestrian"],
+        [
+          "any",
+          ["!=", "subclass", "footway"],
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["has", "mtb_scale"],
+            ["!=", "mtb_scale", "-1"]
+          ]
+        ],
+        ["!=", "bicycle", "no"],
+        ["!=", "access", "no"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": ["case", ["has", "mtb_scale"], "#75E009", "#ff99a2"],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["has", "width"], 3, 1.5],
+          14,
+          ["case", ["has", "width"], 4, 2],
+          16,
+          ["case", ["has", "width"], 7, 3],
+          18,
+          ["case", ["has", "width"], 10, 5]
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+      }
+    },
+    {
+      "id": "hw-path-track-case-mtb_scale_shown-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5238,7 +5360,27 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": ["case", ["has", "mtb_scale"], "#75E009", "#ff99a2"],
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "#00c7b0",
+          ["0"],
+          "#66cc00",
+          ["1"],
+          "#c5c900",
+          ["2"],
+          "#f09000",
+          ["3"],
+          "#ff4f5e",
+          ["4"],
+          "#d600ce",
+          ["5"],
+          "#7a3391",
+          ["6"],
+          "#593266",
+          "#a3a3a3"
+        ],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -5693,39 +5835,6 @@
             [12, 1]
           ]
         }
-      }
-    },
-    {
-      "id": "hw-path-line-mml-mapper",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": true
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "liikenne",
-      "minzoom": 11,
-      "filter": ["==", "kohdeluokka", 12313],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#d68000",
-        "line-dasharray": [2.5, 2],
-        "line-width": {
-          "stops": [
-            [12, 0.8],
-            [14, 1.3],
-            [16, 2.3],
-            [18, 4.5]
-          ]
-        },
-        "line-opacity": 0.75
       }
     },
     {
@@ -6620,40 +6729,6 @@
           12.5,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
-      }
-    },
-    {
-      "id": "hw-track-line-mml-mapper",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": true
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "liikenne",
-      "minzoom": 9,
-      "filter": ["==", "kohdeluokka", 12316],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "#d68000",
-        "line-dasharray": [8, 1.5],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 0.5],
-            [14, 1.3],
-            [16, 3.5],
-            [18, 7]
-          ]
-        },
-        "line-opacity": 0.75
       }
     },
     {
@@ -17833,6 +17908,7 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -17874,6 +17950,7 @@
       "layout": {
         "visibility": "none",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -17911,6 +17988,7 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -17948,6 +18026,7 @@
       "layout": {
         "visibility": "none",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -17989,6 +18068,7 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -18030,6 +18110,7 @@
       "layout": {
         "visibility": "none",
         "symbol-placement": "line",
+        "text-ignore-placement": true,
         "text-field": "{name:latin} {name:nonlatin}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
@@ -20274,6 +20355,91 @@
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 2
+      }
+    },
+    {
+      "id": "mapper_annotations-path-width",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "footway"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        [
+          "any",
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"]
+        ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+        ["!has", "noexit"],
+        ["has", "width"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "text-anchor": "center",
+        "text-rotation-alignment": "viewport",
+        "text-allow-overlap": true,
+        "text-field": "{width}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [16, 12],
+            [18, 22]
+          ]
+        },
+        "symbol-placement": "line-center"
+      },
+      "paint": {
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [15, 0],
+            [15.1, 1]
+          ]
+        },
+        "text-color": "#000000",
+        "text-halo-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "#0ac5a0",
+          ["0"],
+          "#75E009",
+          ["1"],
+          "#d7dc00",
+          ["2"],
+          "#FEB13E",
+          ["3"],
+          "#ff4f5e",
+          ["4"],
+          "#e50bdd",
+          ["5"],
+          "#9600c8",
+          ["6"],
+          "#8100AC",
+          "#FFFFFF"
+        ],
+        "text-halo-blur": 0,
+        "text-halo-width": {
+          "stops": [
+            [16, 1.5],
+            [18, 2.5]
+          ]
+        }
       }
     }
   ],
