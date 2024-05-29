@@ -3879,8 +3879,11 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "footway"],
-        ["in", "bicycle", "no"],
-        ["!in", "access", "no"]
+        [
+          "any",
+          ["all", ["==", "bicycle", "no"], ["!=", "access", "no"]],
+          ["all", ["==", "access", "no"], ["==", "foot", "yes"]]
+        ]
       ],
       "layout": {
         "visibility": "visible"
@@ -3974,8 +3977,11 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "footway"],
-        ["in", "bicycle", "no"],
-        ["!in", "access", "no"]
+        [
+          "any",
+          ["all", ["==", "bicycle", "no"], ["!=", "access", "no"]],
+          ["all", ["==", "access", "no"], ["==", "foot", "yes"]]
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -4262,7 +4268,8 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
         ["!in", "subclass", "cycleway"],
-        ["==", "access", "no"]
+        ["==", "access", "no"],
+        ["all", ["!=", "bicycle", "yes"], ["!=", "foot", "yes"]]
       ],
       "layout": {
         "visibility": "visible"
@@ -4356,7 +4363,8 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
         ["!in", "subclass", "cycleway"],
-        ["==", "access", "no"]
+        ["==", "access", "no"],
+        ["all", ["!=", "bicycle", "yes"], ["!=", "foot", "yes"]]
       ],
       "layout": {
         "visibility": "none"
