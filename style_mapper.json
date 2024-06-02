@@ -721,7 +721,7 @@
         "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "bedrock"
       },
@@ -730,7 +730,7 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 34100],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": "#d6d6d6",
@@ -1120,7 +1120,6 @@
         "fill-opacity": 0.7
       }
     },
-
     {
       "id": "landcover-wetland-nowoods",
       "type": "fill",
@@ -4497,7 +4496,6 @@
         ]
       }
     },
-
     {
       "id": "hw-ramp-line-dashcoded-baseline-mapper",
       "type": "line",
@@ -4982,7 +4980,6 @@
         ]
       }
     },
-
     {
       "id": "hw-line-dashcoded-baseline-mapper",
       "type": "line",
@@ -5896,47 +5893,11 @@
           ["linear"],
           ["zoom"],
           14,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -3,
-            ["b"],
-            -4,
-            ["c"],
-            -4,
-            ["d"],
-            -5,
-            -4
-          ],
+          ["case", ["has", "width_cat"], -6, -4],
           16,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -9,
-            ["b"],
-            -13.5,
-            ["c"],
-            -15,
-            ["d"],
-            -15,
-            -13.5
-          ],
+          ["case", ["has", "width_cat"], -8, -5],
           18,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -14,
-            ["b"],
-            -19.5,
-            ["c"],
-            -27,
-            ["d"],
-            -27,
-            -19.5
-          ]
+          ["case", ["has", "width_cat"], -16, -13]
         ]
       }
     },
@@ -5981,26 +5942,11 @@
           ["linear"],
           ["zoom"],
           14,
-          [
-            "case",
-            ["has", "width_cat"],
-            6,
-            4
-          ],
+          ["case", ["has", "width_cat"], 6, 4],
           16,
-          [
-            "case",
-            ["has", "width_cat"],
-            8,
-            5
-          ],
+          ["case", ["has", "width_cat"], 8, 5],
           18,
-          [
-            "case",
-            ["has", "width_cat"],
-            16,
-            13
-          ]
+          ["case", ["has", "width_cat"], 16, 13]
         ]
       }
     },
@@ -7063,7 +7009,7 @@
         "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -7089,7 +7035,7 @@
             [18, 16]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -7114,7 +7060,7 @@
         "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -7141,7 +7087,7 @@
             [17, 16]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -7166,7 +7112,7 @@
         "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -7193,7 +7139,7 @@
             [18, 16]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
