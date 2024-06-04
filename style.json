@@ -17120,7 +17120,23 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#bbb9b7",
+        "fill-color": [
+          "match",
+          ["get", "kayttotarkoitus"],
+          [1],
+          "#a8a6a3",
+          [3],
+          "#a8a6a3",
+          [5],
+          "#a8a6a3",
+          [6],
+          "#c1bfbd",
+          [7],
+          "#c1bfbd",
+          [8],
+          "#a8a6a3",
+          "#c1bfbd"
+        ],
         "fill-opacity": {
           "base": 1,
           "stops": [
