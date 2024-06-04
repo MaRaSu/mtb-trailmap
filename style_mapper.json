@@ -170,30 +170,7 @@
       }
     },
     {
-      "id": "landuse-residential",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["in", "class", "residential", "suburb", "neighbourhood"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe0d6"
-      }
-    },
-    {
-      "id": "landuse-commercial",
+      "id": "landuse-osm-generic",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
@@ -208,45 +185,25 @@
       "source-layer": "landuse",
       "minzoom": 8,
       "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        ["in", "class", "commercial", "retail"]
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe0d6"
-      }
-    },
-    {
-      "id": "landuse-industrial",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        [
-          "in",
-          "class",
-          "industrial",
-          "garages",
-          "dam",
-          "construction",
-          "brownfield",
-          "depot",
-          "landfill"
-        ]
+        "in",
+        "class",
+        "residential",
+        "suburb",
+        "neighbourhood",
+        "commercial",
+        "retail",
+        "industrial",
+        "garages",
+        "dam",
+        "construction",
+        "brownfield",
+        "depot",
+        "landfill",
+        "hospital",
+        "school",
+        "college",
+        "university",
+        "education"
       ],
       "layout": {
         "visibility": "visible"
@@ -276,52 +233,6 @@
       },
       "paint": {
         "fill-color": "#e0e4dd"
-      }
-    },
-    {
-      "id": "landuse-hospital",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["==", "class", "hospital"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe0d6"
-      }
-    },
-    {
-      "id": "landuse-school",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "minzoom": 8,
-      "filter": ["in", "class", "school", "college", "university", "education"],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#ebe4dd"
       }
     },
     {
@@ -3333,11 +3244,11 @@
           12,
           ["case", ["has", "width"], 3, 1.5],
           14,
-          ["case", ["has", "width"], 4, 2],
+          ["case", ["has", "width"], 5, 2.5],
           16,
-          ["case", ["has", "width"], 7, 3],
+          ["case", ["has", "width"], 8, 4],
           18,
-          ["case", ["has", "width"], 10, 5]
+          ["case", ["has", "width"], 12, 6]
         ],
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
@@ -6865,7 +6776,7 @@
       },
       "paint": {
         "text-color": "#2c3d4d",
-        "text-opacity": 0.6,
+        "text-opacity": 1,
         "text-halo-color": "rgba(255,255,255,0.7)",
         "text-halo-width": 1.2
       }
@@ -7458,7 +7369,7 @@
         "trailmap:mtb_high_contrast": true,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": true
       },
       "source": "openmaptiles",
@@ -7471,6 +7382,7 @@
         ["!in", "network", "us-interstate", "us-highway", "us-state"]
       ],
       "layout": {
+        "visibility": "none",
         "icon-image": "road_{ref_length}",
         "icon-rotation-alignment": "viewport",
         "icon-size": 1,
@@ -7485,8 +7397,7 @@
         "text-field": "{ref}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10,
-        "visibility": "visible"
+        "text-size": 10
       },
       "paint": {}
     },
@@ -7735,7 +7646,7 @@
         "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": true,
-        "trailmap:mapper": true,
+        "trailmap:mapper": false,
         "trailmap:ways_only": false
       },
       "source": "maastovektorikartta",
@@ -7783,7 +7694,7 @@
             [17, 16]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#414b2c",
@@ -9505,6 +9416,72 @@
           "#8100AC",
           "#FFFFFF"
         ],
+        "text-halo-blur": 0,
+        "text-halo-width": {
+          "stops": [
+            [16, 1.5],
+            [18, 2.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "mapper_annotations-road-surface",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        [
+          "in",
+          "class",
+          "service",
+          "raceway",
+          "minor",
+          "secondary",
+          "tertiary",
+          "primary",
+          "trunk",
+          "motorway"
+        ],
+        ["has", "surface_raw"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-anchor": "center",
+        "text-rotation-alignment": "viewport",
+        "text-allow-overlap": true,
+        "text-field": "{surface_raw}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [16, 12],
+            [18, 22]
+          ]
+        },
+        "symbol-placement": "line-center"
+      },
+      "paint": {
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [15, 0],
+            [15.1, 1]
+          ]
+        },
+        "text-color": "#000000",
+        "text-halo-color": "#FFFFFF",
         "text-halo-blur": 0,
         "text-halo-width": {
           "stops": [
