@@ -2538,7 +2538,7 @@
       }
     },
     {
-      "id": "hw-area",
+      "id": "highway-area",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3057,7 +3057,7 @@
       }
     },
     {
-      "id": "hw-path-line-mml-mapper",
+      "id": "highway-path-line-mml-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3090,7 +3090,7 @@
       }
     },
     {
-      "id": "hw-track-line-mml-mapper",
+      "id": "highway-track-line-mml-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3124,7 +3124,7 @@
       }
     },
     {
-      "id": "hw-path-track-case-mtb_scale_yesno-mapper",
+      "id": "highway-path-track-case-mtb_scale_yesno-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3179,7 +3179,7 @@
       }
     },
     {
-      "id": "hw-path-track-case-mtb_scale_shown-mapper",
+      "id": "highway-path-track-case-mtb_scale_shown-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3254,7 +3254,7 @@
       }
     },
     {
-      "id": "hw-path-has_visibility-line-mapper",
+      "id": "highway-path-has_visibility-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3314,7 +3314,7 @@
       }
     },
     {
-      "id": "hw-path-missing_visibility-line-mapper",
+      "id": "highway-path-missing_visibility-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3374,7 +3374,7 @@
       }
     },
     {
-      "id": "hw-track-has_visibility-line-mapper",
+      "id": "highway-track-has_visibility-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3434,7 +3434,7 @@
       }
     },
     {
-      "id": "hw-track-missing_visibility-mapper-line",
+      "id": "highway-track-missing_visibility-mapper-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3498,7 +3498,7 @@
       }
     },
     {
-      "id": "hw-path-track-case-ways_only",
+      "id": "highway-path-track-case-ways_only",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3539,7 +3539,7 @@
       }
     },
     {
-      "id": "hw-cycleway-case",
+      "id": "highway-cycleway-case",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3591,7 +3591,7 @@
       }
     },
     {
-      "id": "hw-footway-line-bicycle_missing-mapper",
+      "id": "highway-footway-line-bicycle_missing-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3642,7 +3642,7 @@
       }
     },
     {
-      "id": "hw-footway-line-bicycle_ok-mapper",
+      "id": "highway-footway-line-bicycle_ok-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3803,7 +3803,7 @@
       }
     },
     {
-      "id": "hw-steps",
+      "id": "highway-steps",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3841,7 +3841,7 @@
       }
     },
     {
-      "id": "hw-motorway-link-case-mapper",
+      "id": "highway-motorway-link-case-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3886,7 +3886,7 @@
       }
     },
     {
-      "id": "hw-link-case-mapper",
+      "id": "highway-link-case-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -3926,7 +3926,7 @@
       }
     },
     {
-      "id": "hw-motorway-link-line-mapper",
+      "id": "highway-motorway-link-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4011,7 +4011,7 @@
       }
     },
     {
-      "id": "hw-case-mapper",
+      "id": "highway-case-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4153,86 +4153,7 @@
       }
     },
     {
-      "id": "hw-link-line-mapper",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
-        ["==", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "surface_raw"],
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "asphalt",
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "concrete",
-              "dirt",
-              "earth",
-              "fine_gravel",
-              "grass",
-              "grass_paver",
-              "gravel",
-              "ground",
-              "metal",
-              "metal_grid",
-              "mud",
-              "paving_stones",
-              "pebblestone",
-              "rock",
-              "rubber",
-              "sand",
-              "sett",
-              "shells",
-              "stepping_stones",
-              "unhewn_cobblestone",
-              "wood",
-              "woodchips"
-            ],
-            "#75E009",
-            ["paved", "unpaved"],
-            "#d7dc00",
-            "#FEB13E"
-          ],
-          "#ff99a2"
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [12.5, 0],
-            [13, 1.5],
-            [14, 2.5],
-            [20, 11.5]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-line-colorcoded-mapper",
+      "id": "highway-line-colorcoded-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4408,7 +4329,7 @@
       }
     },
     {
-      "id": "hw-ramp-line-dashcoded-baseline-mapper",
+      "id": "highway-ramp-line-dashcoded-baseline-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4584,7 +4505,7 @@
       }
     },
     {
-      "id": "hw-ramp-line-dashcoded-ambiguous-mapper",
+      "id": "highway-ramp-line-dashcoded-ambiguous-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4722,7 +4643,7 @@
       }
     },
     {
-      "id": "hw-ramp-line-dashcoded-unrecognized-mapper",
+      "id": "highway-ramp-line-dashcoded-unrecognized-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -4892,7 +4813,7 @@
       }
     },
     {
-      "id": "hw-line-dashcoded-baseline-mapper",
+      "id": "highway-line-dashcoded-baseline-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5068,7 +4989,7 @@
       }
     },
     {
-      "id": "hw-line-dashcoded-ambiguous-mapper",
+      "id": "highway-line-dashcoded-ambiguous-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5206,7 +5127,7 @@
       }
     },
     {
-      "id": "hw-line-dashcoded-unrecognized-mapper",
+      "id": "highway-line-dashcoded-unrecognized-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5376,7 +5297,7 @@
       }
     },
     {
-      "id": "hw-line-farzoom-mapper",
+      "id": "highway-line-farzoom-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5553,7 +5474,7 @@
       }
     },
     {
-      "id": "hw-cycleway-surface_ok-line-mapper",
+      "id": "highway-cycleway-surface_ok-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5628,7 +5549,7 @@
       }
     },
     {
-      "id": "hw-cycleway-surface_ambiguous-line-mapper",
+      "id": "highway-cycleway-surface_ambiguous-line-mapper",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -5674,7 +5595,7 @@
       }
     },
     {
-      "id": "hw-cycleway-surface_missing-line-mapper",
+      "id": "highway-cycleway-surface_missing-line-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -5721,7 +5642,7 @@
       }
     },
     {
-      "id": "hw-cycleway-oneway_missing-mapper",
+      "id": "highway-cycleway-oneway_missing-mapper",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -6119,7 +6040,7 @@
       }
     },
     {
-      "id": "hw-construction-overlay",
+      "id": "highway-construction-overlay",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
@@ -7202,7 +7123,7 @@
       }
     },
     {
-      "id": "hw-name-path-hc",
+      "id": "highway-name-path",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -7231,9 +7152,9 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 11],
-            [16, 16],
-            [18, 24]
+            [14, 9],
+            [16, 11],
+            [18, 18]
           ]
         }
       },
@@ -7244,7 +7165,7 @@
       }
     },
     {
-      "id": "hw-name-path-mtb:name",
+      "id": "highway-name-path-mtb:name",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -7269,9 +7190,9 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 11],
-            [16, 16],
-            [18, 24]
+            [14, 9],
+            [16, 11],
+            [18, 18]
           ]
         }
       },
@@ -7282,7 +7203,7 @@
       }
     },
     {
-      "id": "hw-name-minor",
+      "id": "highway-name-minor",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -7310,21 +7231,21 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 12],
-            [16, 18],
-            [18, 28]
+            [14, 10],
+            [16, 14],
+            [18, 22]
           ]
         }
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 3
       }
     },
     {
-      "id": "hw-name-major-hc",
+      "id": "highway-name-major",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -7347,22 +7268,22 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [13, 13],
-            [14, 15],
-            [16, 20],
-            [18, 36]
+            [13, 11],
+            [14, 12],
+            [16, 17],
+            [18, 26]
           ]
         }
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.3,
         "text-halo-width": 3
       }
     },
     {
-      "id": "hw-shield",
+      "id": "highway-shield",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -7430,7 +7351,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#666",
+        "text-color": "#4d4d4d",
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -7697,7 +7618,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#414b2c",
+        "text-color": "#4d4d4d",
         "text-halo-color": "rgba(255,255,255,0.9)",
         "text-halo-width": 1,
         "text-opacity": {
@@ -7766,15 +7687,15 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [11, 10],
-            [16, 20],
-            [17, 26]
+            [11, 8],
+            [16, 16],
+            [17, 20]
           ]
         },
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-opacity": {
@@ -7843,16 +7764,16 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [12, 10],
-            [16, 24],
-            [17, 36]
+            [12, 9],
+            [16, 18],
+            [17, 22]
           ]
         },
         "text-transform": "uppercase",
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-width": {
           "base": 1,
@@ -7910,17 +7831,16 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [10, 11],
-            [12, 12],
-            [14, 16],
-            [16, 32]
+            [10, 10],
+            [12, 11],
+            [16, 20]
           ]
         },
         "text-transform": "uppercase",
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-width": {
           "base": 1,
@@ -7962,7 +7882,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#4d4d4d",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -7997,7 +7917,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#4d4d4d",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -8036,7 +7956,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#4d4d4d",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -9376,7 +9296,7 @@
         "text-rotation-alignment": "viewport",
         "text-allow-overlap": true,
         "text-field": "{width}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Noto Sans Bold"],
         "text-size": {
           "base": 1,
           "stops": [
@@ -9459,10 +9379,10 @@
       "layout": {
         "visibility": "visible",
         "text-anchor": "center",
-        "text-rotation-alignment": "viewport",
+        "text-rotation-alignment": "map",
         "text-allow-overlap": true,
         "text-field": "{surface_raw}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Noto Sans Bold"],
         "text-size": {
           "base": 1,
           "stops": [
@@ -9470,7 +9390,7 @@
             [18, 22]
           ]
         },
-        "symbol-placement": "line-center"
+        "symbol-placement": "line"
       },
       "paint": {
         "text-opacity": {
