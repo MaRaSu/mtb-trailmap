@@ -7503,8 +7503,8 @@
         "icon-image": [
           "case",
           ["==", ["get", "subclass"], "continue"],
-          "tm_fixme-continue",
-          "tm_fixme-other"
+          "tm_fixme-continue-hc",
+          "tm_fixme-other-hc"
         ],
         "icon-size": {
           "stops": [
@@ -7543,7 +7543,7 @@
       "layout": {
         "visibility": "visible",
         "icon-allow-overlap": true,
-        "icon-image": "tm_noexit",
+        "icon-image": "tm_noexit-hc",
         "icon-size": {
           "stops": [
             [13, 0.2],

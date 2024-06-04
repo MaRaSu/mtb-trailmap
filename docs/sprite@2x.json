@@ -1091,6 +1091,27 @@
     "x": 192,
     "y": 640
   },
+  "tm_noexit-hc": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 320,
+    "y": 576
+  },
+  "tm_fixme-continue-hc": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 256,
+    "y": 576
+  },
+  "tm_fixme-other-hc": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 192,
+    "y": 576
+  },
   "lipas_viewpoint": {
     "height": 64,
     "pixelRatio": 2,
