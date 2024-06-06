@@ -170,6 +170,41 @@
       }
     },
     {
+      "id": "landuse-mml-taajama-woodmask",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": [
+        "any",
+        ["==", "class", "wood"],
+        ["==", "class", "wetland"],
+        ["==", "class", "rock"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#f7f4f0",
+        "fill-opacity": 1
+      }
+    },
+    {
       "id": "landuse-residential",
       "type": "fill",
       "metadata": {
