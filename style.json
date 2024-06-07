@@ -18507,6 +18507,64 @@
       }
     },
     {
+      "id": "ls_mml-selite",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "selite",
+      "filter": [
+        "all",
+        ["in", "kohdeluokka", 72200, 72201, 72202],
+        ["in", "kohderyhma", 56]
+      ],
+      "layout": {
+        "text-anchor": "top",
+        "text-allow-overlap": false,
+        "text-ignore-placement": true,
+        "text-variable-anchor": [
+          "top",
+          "top-left",
+          "top-right",
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right"
+        ],
+        "text-field": "{teksti}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [10, 13],
+            [12, 16],
+            [14, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#7BA36C",
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [12, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "poi_mml-selite",
       "type": "symbol",
       "metadata": {
