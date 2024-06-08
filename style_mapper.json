@@ -170,6 +170,41 @@
       }
     },
     {
+      "id": "landuse-mml-taajama-woodmask",
+      "type": "fill",
+      "metadata": {
+        "mapbox:group": "1444849388993.3071",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": [
+        "any",
+        ["==", "class", "wood"],
+        ["==", "class", "wetland"],
+        ["==", "class", "rock"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#ffffff",
+        "fill-opacity": 1
+      }
+    },
+    {
       "id": "landuse-osm-generic",
       "type": "fill",
       "metadata": {
@@ -7159,7 +7194,7 @@
         }
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.5
       }
@@ -7197,7 +7232,7 @@
         }
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": "#4d4d4d",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.2
       }
@@ -9409,6 +9444,45 @@
             [18, 2.5]
           ]
         }
+      }
+    },
+    {
+      "id": "highway-surface_mml",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "liikenne",
+      "minzoom": 9,
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "paallyste"],
+          [
+            "match",
+            ["get", "paallyste"],
+            [1],
+            "#8f3700",
+            [2],
+            "#118f00",
+            "#eb00b4"
+          ],
+          "#eb00b4"
+        ],
+        "line-width": 5,
+        "line-dasharray": [1, 2]
       }
     }
   ],
