@@ -17838,50 +17838,6 @@
       }
     },
     {
-      "id": "bicycle-routes-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "route_ext",
-      "minzoom": 10,
-      "filter": ["==", "route", "bicycle"],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 200,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_bicycle_osm",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "mtb-routes",
       "type": "line",
       "metadata": {
@@ -17921,49 +17877,6 @@
           ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
         ],
         "line-dasharray": [0.6, 1.2]
-      }
-    },
-    {
-      "id": "mtb-routes-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "route_ext",
-      "filter": ["==", "route", "mtb"],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 200,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_mtb_osm",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
       }
     },
     {
@@ -18009,49 +17922,6 @@
       }
     },
     {
-      "id": "hiking-routes-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "openmaptiles",
-      "source-layer": "route_ext",
-      "filter": ["==", "route", "hiking"],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 200,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": false,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_hiking_osm",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "bicycle-routes-lipas",
       "type": "line",
       "metadata": {
@@ -18091,49 +17961,6 @@
           ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
         ],
         "line-dasharray": [0.6, 1.2]
-      }
-    },
-    {
-      "id": "bicycle-routes-lipas-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4412],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 300,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_bicycle_lipas",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
       }
     },
     {
@@ -18179,49 +18006,6 @@
       }
     },
     {
-      "id": "mtb-routes-lipas-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4411],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 300,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_mtb_lipas",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "hiking-routes-lipas",
       "type": "line",
       "metadata": {
@@ -18264,49 +18048,6 @@
       }
     },
     {
-      "id": "hiking-routes-lipas-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["==", "tyyppikood", 4405],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 300,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": false,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_hiking_lipas",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "walking-routes-lipas",
       "type": "line",
       "metadata": {
@@ -18346,49 +18087,6 @@
           ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
         ],
         "line-dasharray": [0.6, 1.2]
-      }
-    },
-    {
-      "id": "walking-routes-lipas-icons",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false
-      },
-      "source": "lipas-reitit",
-      "source-layer": "lipas_reitit",
-      "filter": ["in", "tyyppikood", 4404, 4403],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "symbol-spacing": 300,
-        "icon-offset": {
-          "stops": [
-            [10, [0, 20]],
-            [17, [0, 30]]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-rotation-alignment": "viewport",
-        "icon-image": "route_walking_lipas",
-        "icon-size": {
-          "stops": [
-            [10, 0.5],
-            [17, 1]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
       }
     },
     {
