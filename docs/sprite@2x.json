@@ -1126,6 +1126,13 @@
     "x": 0,
     "y": 320
   },
+  "lipas_swimming": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 128,
+    "y": 384
+  },  
   "lipas_wilderness_hut": {
     "height": 64,
     "pixelRatio": 2,
@@ -1160,6 +1167,13 @@
     "width": 64,
     "x": 128,
     "y": 320
+  },  
+  "osm_swimming": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 128,
+    "y": 384
   },  
   "osm_firepit": {
     "height": 64,

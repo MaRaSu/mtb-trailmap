@@ -17817,7 +17817,6 @@
           "in",
           "subclass",
           "peak",
-          "swimming_area",
           "memorial",
           "monument",
           "toilet",
@@ -17832,8 +17831,6 @@
           ["get", "subclass"],
           ["peak"],
           "peak_11",
-          ["swimming_area"],
-          "swimming_11",
           ["memorial", "monument"],
           "monument_11",
           ["toilet", "toilets"],
@@ -19464,7 +19461,8 @@
           "wilderness_hut_11",
           "water_point",
           "drinking_water",
-          "firepit"
+          "firepit",
+          "swimming_area"
         ]
       ],
       "layout": {
@@ -19479,6 +19477,8 @@
           "drinking_water_11",
           ["firepit"],
           "firepit_11",
+          ["swimming_area"],
+          "swimming_11",
           "#blank"
         ],
         "icon-size": {
@@ -20134,7 +20134,7 @@
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
-      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
+      "filter": ["in", "tyyppikood", 204, 301, 302, 304, 3220],
       "layout": {
         "visibility": "none"
       },
@@ -20169,7 +20169,7 @@
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
-      "filter": ["in", "tyyppikood", 204, 301, 302, 304],
+      "filter": ["in", "tyyppikood", 204, 301, 302, 304, 3220],
       "layout": {
         "visibility": "none",
         "icon-allow-overlap": true,
@@ -20184,6 +20184,8 @@
           "lipas_wilderness_hut",
           [304],
           "lipas_wilderness_hut",
+          [3220],
+          "lipas_swimming",
           "blank"
         ],
         "icon-size": {
@@ -20219,7 +20221,7 @@
       "minzoom": 11,
       "filter": [
         "all",
-        ["in", "tyyppikood", 204, 301, 302, 304],
+        ["in", "tyyppikood", 204, 301, 302, 304, 3220],
         ["has", "nimi_fi"]
       ],
       "layout": {
@@ -20293,7 +20295,8 @@
           "memorial",
           "monument",
           "cave_entrance",
-          "bunker"
+          "bunker",
+          "swimming_area"
         ],
         ["!in", "access", "no", "private", "permit", "military"]
       ],
@@ -20348,7 +20351,8 @@
           "memorial",
           "monument",
           "cave_entrance",
-          "bunker"
+          "bunker",
+          "swimming_area"
         ],
         ["!in", "access", "no", "private", "permit", "military"]
       ],
@@ -20378,6 +20382,8 @@
           "osm_cave_entrance",
           ["bunker"],
           "osm_bunker",
+          ["swimming_area"],
+          "osm_swimming",
           "blank"
         ],
         "icon-size": {
@@ -20429,7 +20435,8 @@
           "memorial",
           "monument",
           "cave_entrance",
-          "bunker"
+          "bunker",
+          "swimming_area"
         ],
         ["!in", "access", "no", "private", "permit", "military"]
       ],
@@ -20470,91 +20477,6 @@
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 2
-      }
-    },
-    {
-      "id": "mapper_annotations-path-width",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
-        [
-          "any",
-          ["!has", "bicycle"],
-          ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
-        ],
-        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
-        ["!has", "noexit"],
-        ["has", "width"]
-      ],
-      "layout": {
-        "visibility": "none",
-        "text-anchor": "center",
-        "text-rotation-alignment": "viewport",
-        "text-allow-overlap": true,
-        "text-field": "{width}",
-        "text-font": ["Noto Sans Regular"],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [16, 12],
-            [18, 22]
-          ]
-        },
-        "symbol-placement": "line-center"
-      },
-      "paint": {
-        "text-opacity": {
-          "base": 1,
-          "stops": [
-            [15, 0],
-            [15.1, 1]
-          ]
-        },
-        "text-color": "#000000",
-        "text-halo-color": [
-          "match",
-          ["get", "mtb_scale"],
-          ["0-"],
-          "#0ac5a0",
-          ["0"],
-          "#75E009",
-          ["1"],
-          "#d7dc00",
-          ["2"],
-          "#FEB13E",
-          ["3"],
-          "#ff4f5e",
-          ["4"],
-          "#e50bdd",
-          ["5"],
-          "#9600c8",
-          ["6"],
-          "#8100AC",
-          "#FFFFFF"
-        ],
-        "text-halo-blur": 0,
-        "text-halo-width": {
-          "stops": [
-            [16, 1.5],
-            [18, 2.5]
-          ]
-        }
       }
     }
   ],
