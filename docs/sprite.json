@@ -1112,6 +1112,20 @@
     "x": 96,
     "y": 288
   },
+  "tm_gate-noaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 288
+  },
+  "tm_gate": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 320
+  },
   "lipas_viewpoint": {
     "height": 32,
     "pixelRatio": 1,
