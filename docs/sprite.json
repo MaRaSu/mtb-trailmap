@@ -1126,6 +1126,13 @@
     "x": 192,
     "y": 320
   },
+  "tm_gate-yesaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 352
+  },
   "lipas_viewpoint": {
     "height": 32,
     "pixelRatio": 1,
