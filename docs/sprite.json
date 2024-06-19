@@ -1091,6 +1091,48 @@
     "x": 96,
     "y": 320
   },
+  "tm_noexit-hc": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 160,
+    "y": 288
+  },
+  "tm_fixme-continue-hc": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 128,
+    "y": 288
+  },
+  "tm_fixme-other-hc": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 288
+  },
+  "tm_gate-noaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 288
+  },
+  "tm_gate": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 320
+  },
+  "tm_gate-yesaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 352
+  },
   "lipas_viewpoint": {
     "height": 32,
     "pixelRatio": 1,
@@ -1104,6 +1146,13 @@
     "width": 32,
     "x": 0,
     "y": 160
+  },
+  "lipas_swimming": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 64,
+    "y": 192
   },
   "lipas_wilderness_hut": {
     "height": 32,
@@ -1139,6 +1188,13 @@
     "width": 32,
     "x": 64,
     "y": 160
+  },
+  "osm_swimming": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 64,
+    "y": 192
   },
   "osm_firepit": {
     "height": 32,
