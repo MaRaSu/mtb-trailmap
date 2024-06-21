@@ -7194,7 +7194,7 @@
         }
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.5
       }
@@ -7232,7 +7232,7 @@
         }
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-width": 1.2
       }
@@ -7273,7 +7273,7 @@
         }
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 3
@@ -7311,7 +7311,7 @@
         }
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.3,
         "text-halo-width": 3
@@ -7386,7 +7386,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -7653,7 +7653,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "rgba(255,255,255,0.9)",
         "text-halo-width": 1,
         "text-opacity": {
@@ -7730,7 +7730,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-opacity": {
@@ -7808,7 +7808,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-width": {
           "base": 1,
@@ -7875,7 +7875,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "#ffffff",
         "text-halo-width": {
           "base": 1,
@@ -7917,7 +7917,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -7952,7 +7952,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -7991,7 +7991,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#4d4d4d",
+        "text-color": "#666666",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -9312,7 +9312,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "footway"],
+        ["in", "class", "path", "footway", "track"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
         [
           "any",
@@ -9330,23 +9330,33 @@
         "text-anchor": "center",
         "text-rotation-alignment": "viewport",
         "text-allow-overlap": true,
+        "text-ignore-placement": true,
+        "text-padding": 0,
         "text-field": "{width}",
         "text-font": ["Noto Sans Bold"],
         "text-size": {
           "base": 1,
           "stops": [
+            [15, 10],
             [16, 12],
             [18, 22]
           ]
         },
-        "symbol-placement": "line-center"
+        "symbol-placement": "line",
+        "symbol-spacing": {
+          "stops": [
+            [16, 100],
+            [17, 130],
+            [18, 200]
+          ]
+        }
       },
       "paint": {
         "text-opacity": {
           "base": 1,
           "stops": [
-            [15, 0],
-            [15.1, 1]
+            [15.3, 0],
+            [15.5, 1]
           ]
         },
         "text-color": "#000000",
@@ -9369,7 +9379,7 @@
           "#9600c8",
           ["6"],
           "#8100AC",
-          "#FFFFFF"
+          "#a3a3a3"
         ],
         "text-halo-blur": 0,
         "text-halo-width": {
@@ -9444,45 +9454,6 @@
             [18, 2.5]
           ]
         }
-      }
-    },
-    {
-      "id": "highway-surface_mml",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "maastovektorikartta",
-      "source-layer": "liikenne",
-      "minzoom": 9,
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "paallyste"],
-          [
-            "match",
-            ["get", "paallyste"],
-            [1],
-            "#8f3700",
-            [2],
-            "#118f00",
-            "#eb00b4"
-          ],
-          "#eb00b4"
-        ],
-        "line-width": 5,
-        "line-dasharray": [1, 2]
       }
     }
   ],
