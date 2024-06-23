@@ -15930,7 +15930,8 @@
         "all",
         ["==", "$type", "Point"],
         [">=", "rank", 25],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -15982,7 +15983,8 @@
         ["==", "$type", "Point"],
         ["<=", "rank", 24],
         [">=", "rank", 15],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -16034,7 +16036,8 @@
         ["==", "$type", "Point"],
         ["<=", "rank", 14],
         ["has", "name"],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
