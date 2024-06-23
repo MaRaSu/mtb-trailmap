@@ -1471,7 +1471,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-dasharray": [2, 4],
         "line-width": {
           "base": 1.3,
@@ -1507,7 +1507,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -1542,7 +1542,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-dasharray": [4, 3],
         "line-width": {
           "base": 1.3,
@@ -1574,7 +1574,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-width": [
           "interpolate",
           ["linear"],
@@ -1665,7 +1665,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -1739,7 +1739,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-dasharray": [4, 3],
         "line-width": {
           "base": 1.3,
@@ -1775,7 +1775,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1845,7 +1845,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0c8f0",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-dasharray": [3, 2.5],
         "line-width": {
           "base": 1.2,
@@ -15946,7 +15946,8 @@
         "all",
         ["==", "$type", "Point"],
         [">=", "rank", 25],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -15998,7 +15999,8 @@
         ["==", "$type", "Point"],
         ["<=", "rank", 24],
         [">=", "rank", 15],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -16050,7 +16052,8 @@
         ["==", "$type", "Point"],
         ["<=", "rank", 14],
         ["has", "name"],
-        ["any", ["!has", "level"], ["==", "level", 0]]
+        ["any", ["!has", "level"], ["==", "level", 0]],
+        ["!in", "class", "firepit", "gate"]
       ],
       "layout": {
         "icon-image": "{class}_11",
