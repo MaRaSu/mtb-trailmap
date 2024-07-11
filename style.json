@@ -50,7 +50,7 @@
     },
     "maastovektorikartta": {
       "type": "vector",
-      "url": "https://avoin-karttakuva.maanmittauslaitos.fi/vectortiles/tilejson/taustakartta/1.0.0/taustakartta/default/v20/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
+      "url": "https://avoin-karttakuva.maanmittauslaitos.fi/vectortiles/tilejson/taustakartta/1.0.0/taustakartta/default/v21/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     },
     "rinnevarjostus": {
       "type": "raster",
@@ -1016,7 +1016,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
-      "minzoom": 14,
+      "minzoom": 13,
       "maxzoom": 20,
       "filter": ["==", ["%", ["get", "korkeusarvo"], 5000], 0],
       "layout": {
@@ -1051,7 +1051,7 @@
       "source": "maastovektorikartta",
       "source-layer": "korkeus",
       "minzoom": 8,
-      "maxzoom": 14,
+      "maxzoom": 13,
       "filter": ["!", ["has", "korkeusarvo"]],
       "layout": {
         "visibility": "visible"
@@ -15320,7 +15320,7 @@
       "minzoom": 13,
       "maxzoom": 14.5,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": true,
@@ -15353,7 +15353,7 @@
       "minzoom": 13,
       "maxzoom": 14.5,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": "#bbb9b7",
@@ -15390,7 +15390,7 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "rakennus",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
         "visibility": "visible"
@@ -15401,8 +15401,8 @@
         "fill-opacity": {
           "base": 1,
           "stops": [
-            [14, 0],
-            [14.5, 1]
+            [13, 0],
+            [13.5, 1]
           ]
         }
       }
@@ -15421,18 +15421,34 @@
       },
       "source": "maastovektorikartta",
       "source-layer": "rakennus",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#bbb9b7",
+        "fill-color": [
+          "match",
+          ["get", "kayttotarkoitus"],
+          [1],
+          "#a8a6a3",
+          [3],
+          "#a8a6a3",
+          [5],
+          "#a8a6a3",
+          [6],
+          "#c1bfbd",
+          [7],
+          "#c1bfbd",
+          [8],
+          "#a8a6a3",
+          "#c1bfbd"
+        ],
         "fill-opacity": {
           "base": 1,
           "stops": [
-            [14, 0],
-            [14.5, 1]
+            [13, 0],
+            [13.5, 1]
           ]
         },
         "fill-outline-color": "#928e8a",
@@ -16793,6 +16809,64 @@
           "stops": [
             [14, 0],
             [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "ls_mml-selite",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "1444849242106.713",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "selite",
+      "filter": [
+        "all",
+        ["in", "kohdeluokka", 72200, 72201, 72202],
+        ["in", "kohderyhma", 56]
+      ],
+      "layout": {
+        "text-anchor": "top",
+        "text-allow-overlap": false,
+        "text-ignore-placement": true,
+        "text-variable-anchor": [
+          "top",
+          "top-left",
+          "top-right",
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right"
+        ],
+        "text-field": "{teksti}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [10, 13],
+            [12, 16],
+            [14, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#7BA36C",
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [12, 1]
           ]
         }
       }
