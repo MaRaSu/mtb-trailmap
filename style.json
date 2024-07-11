@@ -46,7 +46,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/finland-omt.json"
+      "url": "https://tiles.trailmap.fi/data/finland-omt2.json"
     },
     "maastovektorikartta": {
       "type": "vector",
