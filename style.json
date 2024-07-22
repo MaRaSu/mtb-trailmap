@@ -16814,7 +16814,7 @@
       }
     },
     {
-      "id": "obstacle-barrier_log-point",
+      "id": "barrier-log-point",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -16853,7 +16853,7 @@
       }
     },
     {
-      "id": "obstacle-barrier_log-line",
+      "id": "barrier-log-line",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
