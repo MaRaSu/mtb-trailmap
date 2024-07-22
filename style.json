@@ -16814,6 +16814,83 @@
       }
     },
     {
+      "id": "obstacle-barrier_log-point",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "barrier_ext",
+      "minzoom": 14,
+      "filter": ["all", ["==", "class", "log"], ["==", "$type", "Point"]],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "tm_fallen_tree",
+        "icon-rotation-alignment": "viewport",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "symbol-placement": "point",
+        "icon-size": {
+          "stops": [
+            [14, 0.4],
+            [16, 1],
+            [18, 2]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [14, 0],
+            [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "obstacle-barrier_log-line",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "barrier_ext",
+      "minzoom": 13,
+      "filter": ["all", ["==", "class", "log"], ["==", "$type", "LineString"]],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "tm_fallen_tree",
+        "icon-rotation-alignment": "viewport",
+        "symbol-placement": "line-center",
+        "symbol-spacing": 20,
+        "icon-size": {
+          "stops": [
+            [14, 0.4],
+            [16, 1],
+            [18, 2]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [14, 0],
+            [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "ls_mml-selite",
       "type": "symbol",
       "metadata": {
