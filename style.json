@@ -17964,7 +17964,15 @@
       "source": "openmaptiles",
       "source-layer": "barrier_ext",
       "minzoom": 13,
-      "filter": ["==", "class", "gate"],
+      "filter": [
+        "in",
+        "class",
+        "gate",
+        "kissing_gate",
+        "lift_gate",
+        "sliding_gate",
+        "swing_gate"
+      ],
       "layout": {
         "icon-image": [
           "case",
