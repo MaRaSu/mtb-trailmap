@@ -16830,11 +16830,11 @@
       "type": "symbol",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
         "trailmap:ways_only": false
       },
       "source": "openmaptiles",
@@ -16842,7 +16842,7 @@
       "minzoom": 12,
       "filter": ["==", "class", "parking"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "text-allow-overlap": true,
         "text-field": "P",
         "text-font": ["Noto Sans Bold"],
@@ -16851,13 +16851,13 @@
           "base": 1,
           "stops": [
             [14, 8],
-            [16, 10]
+            [16, 12]
           ]
         }
       },
       "paint": {
-        "text-color": "#1a60ff",
-        "text-halo-width": 1.5,
+        "text-color": "#000000",
+        "text-halo-width": 1,
         "text-halo-color": "#ffffff",
         "text-opacity": {
           "base": 1,
