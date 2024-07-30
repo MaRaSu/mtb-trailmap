@@ -1325,6 +1325,219 @@
       }
     },
     {
+      "id": "water-contours-line-1",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "filter": ["==", ["get", "syvyysarvo"], 1500],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "hsl(210, 67%, 65%)",
+        "line-dasharray": [1, 2],
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1.2,
+          20,
+          18
+        ]
+      }
+    },
+    {
+      "id": "water-contours-line-2",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "filter": ["==", ["get", "syvyysarvo"], 3000],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "hsl(210, 67%, 67%)",
+        "line-dasharray": [3, 2],
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1,
+          20,
+          14
+        ]
+      }
+    },
+    {
+      "id": "water-contours-line-3",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "filter": ["==", ["get", "syvyysarvo"], 6000],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "hsl(210, 67%, 70%)",
+        "line-dasharray": [8, 4],
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1,
+          20,
+          14
+        ]
+      }
+    },
+    {
+      "id": "water-contours-line-4",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "filter": [">", ["get", "syvyysarvo"], 6000],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "hsl(210, 67%, 75%)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1,
+          20,
+          14
+        ]
+      }
+    },
+    {
+      "id": "water-contours-line-label",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 400,
+        "text-field": ["to-string", ["/", ["get", "syvyysarvo"], 1000]],
+        "text-font": ["Noto Sans Regular"],
+        "text-rotation-alignment": "viewport",
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          12,
+          14,
+          20,
+          50
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "hsl(210, 67%, 45%)"
+      }
+    },
+    {
+      "id": "water-contours-label",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "depth-contour"
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "korkeus",
+      "minzoom": 12,
+      "maxzoom": 20,
+      "filter": ["all", ["==", "$type", "Point"], ["==", "kohderyhma", 17]],
+      "layout": {
+        "symbol-placement": "point",
+        "symbol-spacing": 400,
+        "text-field": [
+          "to-string",
+          ["/", ["floor", ["/", ["get", "syvyysarvo"], 100]], 10]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-rotation-alignment": "viewport",
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          12,
+          14,
+          20,
+          50
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "hsl(210, 67%, 45%)"
+      }
+    },
+    {
       "id": "landcover-wetland",
       "type": "fill",
       "metadata": {
