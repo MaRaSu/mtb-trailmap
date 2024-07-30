@@ -15780,7 +15780,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": false,
+        "trailmap:ways_only": true,
         "trailmap:group": "cadastral"
       },
       "source": "kiinteisto-avoin",
@@ -15805,7 +15805,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": false,
+        "trailmap:ways_only": true,
         "trailmap:group": "cadastral"
       },
       "source": "kiinteisto-avoin",
