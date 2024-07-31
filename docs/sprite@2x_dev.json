@@ -1699,5 +1699,12 @@
     "width": 64,
     "x": 0,
     "y": 768
+  },
+  "poi-bicycle": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 64,
+    "y": 768
   }
 }
