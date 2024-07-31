@@ -1629,5 +1629,75 @@
     "width": 32,
     "x": 0,
     "y": 320
+  },
+  "poi-bicycle_charging_station": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 352
+  },
+  "poi-charging_station": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 352
+  },
+  "poi-fuel": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 64,
+    "y": 352
+  },
+  "poi-bicycle_parking": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 352
+  },
+  "poi-parking": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 128,
+    "y": 352
+  },
+  "poi-bus_station": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 160,
+    "y": 352
+  },
+  "poi-bus_stop": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 352
+  },
+  "poi-railway_station": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 224,
+    "y": 352
+  },
+  "poi-subway_station": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 256,
+    "y": 352
+  },
+  "poi-tram_stop": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 256,
+    "y": 352
   }
 }
