@@ -19683,7 +19683,26 @@
       "layout": {
         "visibility": "visible",
         "icon-allow-overlap": true,
-        "icon-image": "poi-{subclass}",
+        "icon-image": [
+          "match",
+          ["get", "subclass"],
+          ["parking"],
+          "poi-parking",
+          ["bicycle_parking"],
+          "poi-bicycle_parking",
+          ["bus_station"],
+          "poi-bus_station",
+          ["bus_stop"],
+          "poi-bus_stop",
+          ["charging_station"],
+          "poi-charging_station",
+          ["subway_entrance"],
+          "poi-subway_entrance",
+          ["station"],
+          "poi-railway_station",
+          "poi-fuel"
+        ]
+,
         "icon-size": {
           "stops": [
             [14, 0.35],

@@ -1692,12 +1692,5 @@
     "width": 64,
     "x": 512,
     "y": 704
-  },
-  "poi-tram_stop": {
-    "height": 64,
-    "pixelRatio": 2,
-    "width": 64,
-    "x": 512,
-    "y": 704
   }
 }
