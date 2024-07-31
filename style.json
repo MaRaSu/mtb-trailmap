@@ -18895,7 +18895,6 @@
       "minzoom": 8,
       "filter": [
         "any",
-
         [
           "in",
           "subclass",
@@ -18946,7 +18945,6 @@
       "minzoom": 8,
       "filter": [
         "any",
-
         [
           "in",
           "subclass",
@@ -19175,6 +19173,396 @@
           "chalet",
           "camp_pitch",
           "camp_site"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 13],
+            [18, 22]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 10]],
+            [14, [0, 13]],
+            [16, [0, 22]],
+            [18, [0, 28]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
+      }
+    },
+
+
+
+    {
+      "id": "POI-OSM-tauko-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-tauko"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "picnic_table",
+          "picnic_site",
+          "firepit",
+          "gazebo",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "basic_hut",
+          "wilderness_hut",
+          "swimming_area",
+          "toilets",
+          "water_point",
+          "drinking_water"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [14, 9],
+            [17, 22]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
+        "circle-color": "#7200ff"
+      }
+    },
+    {
+      "id": "POI-OSM-tauko-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-tauko"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "picnic_table",
+          "picnic_site",
+          "firepit",
+          "gazebo",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "basic_hut",
+          "wilderness_hut",
+          "swimming_area",
+          "toilets",
+          "water_point",
+          "drinking_water"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "poi-{subclass}",
+        "icon-size": {
+          "stops": [
+            [14, 0.35],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "POI-OSM-tauko-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-tauko"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "picnic_table",
+          "picnic_site",
+          "firepit",
+          "gazebo",
+          "lean_to",
+          "picnic_shelter",
+          "weather_shelter",
+          "basic_hut",
+          "wilderness_hut",
+          "swimming_area",
+          "toilets",
+          "water_point",
+          "drinking_water"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 13],
+            [18, 22]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 10]],
+            [14, [0, 13]],
+            [16, [0, 22]],
+            [18, [0, 28]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
+      }
+    },
+
+
+
+    {
+      "id": "POI-OSM-huolto-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-huolto"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "toilets",
+          "water_point",
+          "drinking_water",
+          "bakery",
+          "coffee",
+          "convenience",
+          "department_store",
+          "food",
+          "general",
+          "ice_cream",
+          "mall",
+          "pastry",
+          "supermarket",
+          "bar",
+          "pub",
+          "cafe",
+          "fast_food",
+          "restaurant",
+          "bicycle_repair_station"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [14, 9],
+            [17, 22]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
+        "circle-color": "#7200ff"
+      }
+    },
+    {
+      "id": "POI-OSM-huolto-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-huolto"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "toilets",
+          "water_point",
+          "drinking_water",
+          "bakery",
+          "coffee",
+          "convenience",
+          "department_store",
+          "food",
+          "general",
+          "ice_cream",
+          "mall",
+          "pastry",
+          "supermarket",
+          "bar",
+          "pub",
+          "cafe",
+          "fast_food",
+          "restaurant",
+          "bicycle_repair_station"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "poi-{subclass}",
+        "icon-size": {
+          "stops": [
+            [14, 0.35],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "POI-OSM-huolto-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-huolto"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "toilets",
+          "water_point",
+          "drinking_water",
+          "bakery",
+          "coffee",
+          "convenience",
+          "department_store",
+          "food",
+          "general",
+          "ice_cream",
+          "mall",
+          "pastry",
+          "supermarket",
+          "bar",
+          "pub",
+          "cafe",
+          "fast_food",
+          "restaurant",
+          "bicycle_repair_station"
         ]
       ],
       "layout": {
