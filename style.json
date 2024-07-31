@@ -19214,9 +19214,6 @@
         "text-halo-width": 2
       }
     },
-
-
-
     {
       "id": "POI-OSM-tauko-circles",
       "type": "circle",
@@ -19400,9 +19397,6 @@
         "text-halo-width": 2
       }
     },
-
-
-
     {
       "id": "POI-OSM-huolto-circles",
       "type": "circle",
@@ -19564,6 +19558,177 @@
           "restaurant",
           "bicycle_repair_station"
         ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 13],
+            [18, 22]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 10]],
+            [14, [0, 13]],
+            [16, [0, 22]],
+            [18, [0, 28]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "POI-OSM-liikenne-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-liikenne"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 8,
+      "filter": [
+        "any",
+        [
+          "in",
+          "subclass",
+          "parking",
+          "bicycle_parking",
+          "bus_station",
+          "bus_stop",
+          "charging_station",
+          "subway_entrance"
+        ],
+        ["in", "class", "fuel"],
+        ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          ["case", ["==", ["get", "subclass"], "bus_stop"], 6, 9],
+          17,
+          ["case", ["==", ["get", "subclass"], "bus_stop"], 14, 22]
+        ],
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
+        "circle-color": "#7200ff"
+      }
+    },
+    {
+      "id": "POI-OSM-liikenne-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-liikenne"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 8,
+      "filter": [
+        "any",
+        [
+          "in",
+          "subclass",
+          "parking",
+          "bicycle_parking",
+          "bus_station",
+          "bus_stop",
+          "charging_station",
+          "subway_entrance"
+        ],
+        ["in", "class", "fuel"],
+        ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "poi-{subclass}",
+        "icon-size": {
+          "stops": [
+            [14, 0.35],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "POI-OSM-liikenne-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-liikenne"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 11,
+      "filter": [
+        "any",
+        [
+          "in",
+          "subclass",
+          "parking",
+          "bicycle_parking",
+          "bus_station",
+          "bus_stop",
+          "charging_station",
+          "subway_entrance"
+        ],
+        ["in", "class", "fuel"],
+        ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
       ],
       "layout": {
         "visibility": "visible",
