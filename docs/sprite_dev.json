@@ -1377,5 +1377,54 @@
     "width": 32,
     "x": 256,
     "y": 160
+  },
+  "poi-hotel": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 0,
+    "y": 192
+  },
+  "poi-hostel": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 32,
+    "y": 192
+  },
+  "poi-motel": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 64,
+    "y": 192
+  },
+  "poi-apartment": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 192
+  },
+  "poi-chalet": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 128,
+    "y": 192
+  },
+  "poi-camp_pitch": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 160,
+    "y": 192
+  },
+  "poi-camp_site": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 192,
+    "y": 192
   }
 }
