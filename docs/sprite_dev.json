@@ -1342,5 +1342,33 @@
     "width": 32,
     "x": 96,
     "y": 160
+  },
+  "poi-observation": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 192
+  },
+  "poi-viewpoint": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 224
+  },
+  "poi-attraction": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 256
+  },
+  "poi-park": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 288
   }
 }

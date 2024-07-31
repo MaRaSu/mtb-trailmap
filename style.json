@@ -18878,7 +18878,6 @@
         "text-halo-width": 2
       }
     },
-
     {
       "id": "POI-OSM-nahtavyys-circles",
       "type": "circle",
@@ -18889,12 +18888,26 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-tauko"
+        "trailmap:group": "poi-osm-nahtavyys"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 8,
-      "filter": ["all", ["in", "subclass", "memorial", "monument"]],
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "memorial",
+          "monument",
+          "bunker",
+          "cave_entrance",
+          "observation",
+          "viewpoint",
+          "attraction",
+          "park"
+        ]
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -18924,12 +18937,26 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm"
+        "trailmap:group": "poi-osm-nahtavyys"
       },
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 8,
-      "filter": ["all", ["in", "subclass", "memorial", "monument"]],
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "memorial",
+          "monument",
+          "bunker",
+          "cave_entrance",
+          "observation",
+          "viewpoint",
+          "attraction",
+          "park"
+        ]
+      ],
       "layout": {
         "visibility": "visible",
         "icon-allow-overlap": true,
@@ -18948,6 +18975,75 @@
             [9, 1]
           ]
         }
+      }
+    },
+    {
+      "id": "POI-OSM-nahtavyys-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-nahtavyys"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "in",
+          "subclass",
+          "memorial",
+          "monument",
+          "bunker",
+          "cave_entrance",
+          "observation",
+          "viewpoint",
+          "attraction",
+          "park"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 13],
+            [18, 22]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 10]],
+            [14, [0, 13]],
+            [16, [0, 22]],
+            [18, [0, 28]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
       }
     }
   ],
