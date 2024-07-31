@@ -96,7 +96,7 @@
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     }
   },
-  "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
+  "sprite": "https://marasu.github.io/mtb-trailmap/sprite_dev",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -18876,6 +18876,78 @@
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 2
+      }
+    },
+
+    {
+      "id": "POI-OSM-nahtavyys-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm-tauko"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": ["all", ["in", "subclass", "memorial", "monument"]],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [14, 9],
+            [17, 22]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
+        "circle-color": "#7200ff"
+      }
+    },
+    {
+      "id": "POI-OSM-nahtavyys-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-osm"
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 8,
+      "filter": ["all", ["in", "subclass", "memorial", "monument"]],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "poi-{subclass}",
+        "icon-size": {
+          "stops": [
+            [14, 0.35],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [9, 1]
+          ]
+        }
       }
     }
   ],
