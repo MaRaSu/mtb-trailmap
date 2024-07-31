@@ -1347,28 +1347,35 @@
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
-    "x": 192,
-    "y": 384
+    "x": 256,
+    "y": 320
   },
   "poi-viewpoint": {
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
-    "x": 192,
-    "y": 448
+    "x": 320,
+    "y": 320
   },
   "poi-attraction": {
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
-    "x": 192,
-    "y": 512
+    "x": 384,
+    "y": 320
   },
   "poi-park": {
     "height": 64,
     "pixelRatio": 2,
     "width": 64,
-    "x": 192,
-    "y": 576
+    "x": 448,
+    "y": 320
+  },
+  "poi-peak": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 512,
+    "y": 320
   }
 }
