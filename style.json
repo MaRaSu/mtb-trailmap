@@ -18878,6 +18878,184 @@
         "text-halo-width": 2
       }
     },
+
+    {
+      "id": "POI-LIPAS-retkeily-circles",
+      "type": "circle",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas-retkeily"
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "minzoom": 8,
+      "filter": [
+        "in",
+        "tyyppikood",
+        104,
+        202,
+        204,
+        206,
+        301,
+        302,
+        304,
+        3220,
+        3230
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": {
+          "stops": [
+            [14, 9],
+            [17, 22]
+          ]
+        },
+        "circle-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        },
+        "circle-color": "#bd287c"
+      }
+    },
+    {
+      "id": "POI-LIPAS-retkeily-icons",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas-retkeily"
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "minzoom": 8,
+      "filter": [
+        "in",
+        "tyyppikood",
+        104,
+        202,
+        204,
+        206,
+        301,
+        302,
+        304,
+        3220,
+        3230
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "match",
+          ["get", "tyyppikood"],
+          [104],
+          "poi-hiking_area",
+          [202],
+          "poi-camp_pitch",
+          [204],
+          "poi-observation",
+          [206],
+          "poi-firepit",
+          [301],
+          "poi-basic_hut",
+          [302],
+          "poi-wilderness_hut",
+          [304],
+          "poi-wilderness_hut",
+          [3220],
+          "poi-swimming_area",
+          [3230],
+          "poi-swimming_area",
+          "blank"
+        ],
+        "icon-size": {
+          "stops": [
+            [14, 0.35],
+            [17, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "POI-LIPAS-retkeily-labels",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "poi-lipas-retkeily"
+      },
+      "source": "lipas-pisteet",
+      "source-layer": "lipas_pisteet",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["in", "tyyppikood", 104, 202, 204, 206, 301, 302, 304, 3220, 3230],
+        ["has", "nimi_fi"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "symbol-placement": "point",
+        "text-anchor": "top",
+        "text-field": "{nimi_fi}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 13],
+            [18, 22]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": {
+          "base": 1,
+          "stops": [
+            [12, [0, 10]],
+            [14, [0, 13]],
+            [16, [0, 22]],
+            [18, [0, 28]]
+          ]
+        },
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "text-color": "#3b322a",
+        "text-halo-color": "#ffffff",
+        "text-halo-blur": 0.2,
+        "text-halo-width": 2
+      }
+    },
+
     {
       "id": "POI-OSM-nahtavyys-circles",
       "type": "circle",
@@ -19008,7 +19186,8 @@
           "attraction",
           "park",
           "peak"
-        ]
+        ],
+        ["has", "name"]
       ],
       "layout": {
         "visibility": "visible",
@@ -19173,7 +19352,8 @@
           "chalet",
           "camp_pitch",
           "camp_site"
-        ]
+        ],
+        ["has", "name"]
       ],
       "layout": {
         "visibility": "visible",
@@ -19356,7 +19536,8 @@
           "toilets",
           "water_point",
           "drinking_water"
-        ]
+        ],
+        ["has", "name"]
       ],
       "layout": {
         "visibility": "visible",
@@ -19557,7 +19738,8 @@
           "fast_food",
           "restaurant",
           "bicycle_repair_station"
-        ]
+        ],
+        ["has", "name"]
       ],
       "layout": {
         "visibility": "visible",
@@ -19701,8 +19883,7 @@
           ["station"],
           "poi-railway_station",
           "poi-fuel"
-        ]
-,
+        ],
         "icon-size": {
           "stops": [
             [14, 0.35],
@@ -19735,19 +19916,23 @@
       "source-layer": "poi",
       "minzoom": 11,
       "filter": [
-        "any",
+        "all",
         [
-          "in",
-          "subclass",
-          "parking",
-          "bicycle_parking",
-          "bus_station",
-          "bus_stop",
-          "charging_station",
-          "subway_entrance"
+          "any",
+          [
+            "in",
+            "subclass",
+            "parking",
+            "bicycle_parking",
+            "bus_station",
+            "bus_stop",
+            "charging_station",
+            "subway_entrance"
+          ],
+          ["in", "class", "fuel"],
+          ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
         ],
-        ["in", "class", "fuel"],
-        ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
+        ["has", "name"]
       ],
       "layout": {
         "visibility": "visible",

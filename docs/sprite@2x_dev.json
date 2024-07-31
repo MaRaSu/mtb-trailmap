@@ -1692,5 +1692,12 @@
     "width": 64,
     "x": 512,
     "y": 704
+  },
+  "poi-hiking_area": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 0,
+    "y": 768
   }
 }
