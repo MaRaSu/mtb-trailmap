@@ -18578,7 +18578,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304, 3220],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": {
@@ -18613,7 +18613,7 @@
       "minzoom": 8,
       "filter": ["in", "tyyppikood", 204, 301, 302, 304, 3220],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -18667,7 +18667,7 @@
         ["has", "nimi_fi"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -18743,7 +18743,7 @@
         ["!in", "access", "no", "private", "permit", "military"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": {
@@ -18799,7 +18799,7 @@
         ["!in", "access", "no", "private", "permit", "military"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -18883,7 +18883,7 @@
         ["!in", "access", "no", "private", "permit", "military"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -19596,7 +19596,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": {
@@ -19650,7 +19650,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": "poi-{subclass}",
         "icon-size": {
@@ -19706,7 +19706,7 @@
         ["has", "name"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -19976,7 +19976,7 @@
         ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": [
@@ -20033,7 +20033,7 @@
         ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20105,7 +20105,7 @@
         ["has", "name"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -20160,7 +20160,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "parking"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20232,7 +20232,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "parking"],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20293,7 +20293,7 @@
       "minzoom": 11,
       "filter": ["all", ["==", "class", "parking"], ["has", "name"]],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
