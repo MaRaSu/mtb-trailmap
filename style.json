@@ -1342,7 +1342,7 @@
       "maxzoom": 20,
       "filter": ["==", ["get", "syvyysarvo"], 1500],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(210, 67%, 65%)",
@@ -1376,7 +1376,7 @@
       "maxzoom": 20,
       "filter": ["==", ["get", "syvyysarvo"], 3000],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(210, 67%, 67%)",
@@ -1410,7 +1410,7 @@
       "maxzoom": 20,
       "filter": ["==", ["get", "syvyysarvo"], 6000],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(210, 67%, 70%)",
@@ -1444,7 +1444,7 @@
       "maxzoom": 20,
       "filter": [">", ["get", "syvyysarvo"], 6000],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(210, 67%, 75%)",
@@ -1490,7 +1490,7 @@
           20,
           50
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "hsl(210, 67%, 45%)"
@@ -1531,7 +1531,7 @@
           20,
           50
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "hsl(210, 67%, 45%)"
@@ -15533,7 +15533,7 @@
       "minzoom": 13,
       "maxzoom": 14.5,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": true,
@@ -15566,7 +15566,7 @@
       "minzoom": 13,
       "maxzoom": 14.5,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": "#bbb9b7",
@@ -16125,6 +16125,49 @@
         "icon-allow-overlap": true,
         "icon-image": "triangle_11",
         "icon-rotate": 30,
+        "icon-size": {
+          "stops": [
+            [14, 0.3],
+            [18, 1.5]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [14, 0],
+            [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "water_symbols-mml",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false
+      },
+      "source": "maastovektorikartta",
+      "source-layer": "maasto_piste",
+      "minzoom": 13,
+      "filter": ["in", "kohdeluokka", 38512, 38513],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "match",
+          ["get", "kohdeluokka"],
+          [38512],
+          "mml-vesikivi_pinnassa",
+          [38513],
+          "mml-vesikivi_vedenpaallinen",
+          "#blank"
+        ],
         "icon-size": {
           "stops": [
             [14, 0.3],
