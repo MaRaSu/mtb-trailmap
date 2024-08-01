@@ -96,7 +96,7 @@
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     }
   },
-  "sprite": "https://marasu.github.io/mtb-trailmap/sprite_dev",
+  "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -19246,12 +19246,13 @@
           "observation",
           "viewpoint",
           "attraction",
-          "peak"
+          "peak",
+          "artwork"
         ],
         ["all", ["==", "subclass", "park"], ["has", "name"]]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
@@ -19296,12 +19297,13 @@
           "observation",
           "viewpoint",
           "attraction",
-          "peak"
+          "peak",
+          "artwork"
         ],
         ["all", ["==", "subclass", "park"], ["has", "name"]]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": "poi-{subclass}",
         "icon-size": {
@@ -19348,12 +19350,13 @@
           "viewpoint",
           "attraction",
           "park",
-          "peak"
+          "peak",
+          "artwork"
         ],
         ["has", "name"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
