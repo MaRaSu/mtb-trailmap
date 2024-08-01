@@ -1378,6 +1378,27 @@
     "x": 512,
     "y": 320
   },
+  "poi-museum": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 576,
+    "y": 320
+  },
+  "poi-gallery": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 640,
+    "y": 320
+  },
+  "poi-artwork": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 704,
+    "y": 320
+  },
   "poi-hotel": {
     "height": 64,
     "pixelRatio": 2,
