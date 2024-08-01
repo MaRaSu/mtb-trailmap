@@ -1728,6 +1728,13 @@
     "x": 32,
     "y": 384
   },
+  "poi-parking_circle": {
+    "height": 44,
+    "pixelRatio": 1,
+    "width": 44,
+    "x": 352,
+    "y": 448
+  },
   "mml-vesikivi_pinnassa": {
     "height": 32,
     "pixelRatio": 1,
