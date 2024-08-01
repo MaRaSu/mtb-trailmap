@@ -1432,14 +1432,14 @@
     "pixelRatio": 1,
     "width": 32,
     "x": 0,
-    "y": 192
+    "y": 224
   },
   "poi-picnic_site": {
     "height": 32,
     "pixelRatio": 1,
     "width": 32,
     "x": 32,
-    "y": 192
+    "y": 224
   },
   "poi-firepit": {
     "height": 32,
@@ -1460,14 +1460,14 @@
     "pixelRatio": 1,
     "width": 32,
     "x": 128,
-    "y": 192
+    "y": 224
   },
   "poi-picnic_shelter": {
     "height": 32,
     "pixelRatio": 1,
     "width": 32,
     "x": 160,
-    "y": 192
+    "y": 224
   },
   "poi-weather_shelter": {
     "height": 32,
@@ -1488,7 +1488,7 @@
     "pixelRatio": 1,
     "width": 32,
     "x": 256,
-    "y": 192
+    "y": 224
   },
   "poi-swimming": {
     "height": 32,
@@ -1508,14 +1508,14 @@
     "height": 32,
     "pixelRatio": 1,
     "width": 32,
-    "x": 64,
+    "x": 32,
     "y": 256
   },
   "poi-drinking_water": {
     "height": 32,
     "pixelRatio": 1,
     "width": 32,
-    "x": 0,
+    "x": 64,
     "y": 256
   },
   "poi-bakery": {
