@@ -19088,7 +19088,7 @@
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
-      "filter": ["in", "tyyppikood", 1160, 1170, 3220, 3230],
+      "filter": ["in", "tyyppikood", 1160, 1170, 3210, 3220, 3230, 3240],
       "layout": {
         "visibility": "none"
       },
@@ -19123,7 +19123,7 @@
       "source": "lipas-pisteet",
       "source-layer": "lipas_pisteet",
       "minzoom": 8,
-      "filter": ["in", "tyyppikood", 1160, 1170, 3220, 3230],
+      "filter": ["in", "tyyppikood", 1160, 1170, 3210, 3220, 3230, 3240],
       "layout": {
         "visibility": "none",
         "icon-allow-overlap": true,
@@ -19134,9 +19134,13 @@
           "poi-bicycle",
           [1170],
           "poi-bicycle",
+          [3210],
+          "poi-swimming",
           [3220],
           "poi-swimming",
           [3230],
+          "poi-swimming",
+          [3240],
           "poi-swimming",
           "blank"
         ],
@@ -19173,7 +19177,7 @@
       "minzoom": 11,
       "filter": [
         "all",
-        ["in", "tyyppikood", 1160, 1170, 3220, 3230],
+        ["in", "tyyppikood", 1160, 1170, 3210, 3220, 3230, 3240],
         ["has", "nimi_fi"]
       ],
       "layout": {
@@ -19589,7 +19593,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": {
@@ -19643,7 +19647,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": "poi-{subclass}",
         "icon-size": {
@@ -19699,7 +19703,7 @@
         ["has", "name"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
