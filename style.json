@@ -19976,7 +19976,7 @@
         ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -19984,9 +19984,15 @@
           ["linear"],
           ["zoom"],
           14,
-          ["case", ["==", ["get", "subclass"], "bus_stop"], 6, 9],
+          ["match", ["get", "subclass"], ["bus_stop", "bicycle_parking"], 6, 9],
           17,
-          ["case", ["==", ["get", "subclass"], "bus_stop"], 14, 22]
+          [
+            "match",
+            ["get", "subclass"],
+            ["bus_stop", "bicycle_parking"],
+            14,
+            22
+          ]
         ],
         "circle-opacity": {
           "stops": [
@@ -20027,7 +20033,7 @@
         ["all", ["==", "class", "railway"], ["==", "subclass", "station"]]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20046,12 +20052,15 @@
           "poi-railway_station",
           "poi-fuel"
         ],
-        "icon-size": {
-          "stops": [
-            [14, 0.35],
-            [17, 1]
-          ]
-        }
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          ["match", ["get", "subclass"], ["bicycle_parking"], 0.21, 0.35],
+          17,
+          ["match", ["get", "subclass"], ["bicycle_parking"], 0.66, 1]
+        ]
       },
       "paint": {
         "icon-opacity": {
@@ -20096,7 +20105,7 @@
         ["has", "name"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
@@ -20151,7 +20160,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "parking"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20223,7 +20232,7 @@
       "minzoom": 8,
       "filter": ["==", "class", "parking"],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "icon-image": [
           "match",
@@ -20284,7 +20293,7 @@
       "minzoom": 11,
       "filter": ["all", ["==", "class", "parking"], ["has", "name"]],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-allow-overlap": true,
         "symbol-placement": "point",
         "text-anchor": "top",
