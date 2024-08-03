@@ -17154,7 +17154,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "barrier_ext",
-      "minzoom": 13,
+      "minzoom": 14,
       "filter": ["all", ["==", "class", "log"], ["==", "$type", "LineString"]],
       "layout": {
         "visibility": "visible",
@@ -17175,6 +17175,83 @@
           "stops": [
             [14, 0],
             [14.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "ford-point",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 13,
+      "filter": ["all", ["==", "class", "ford"], ["==", "subclass", "yes"]],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "tm_ford",
+        "icon-rotation-alignment": "viewport",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "symbol-placement": "point",
+        "icon-size": {
+          "stops": [
+            [13, 0.25],
+            [16, 0.75],
+            [18, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "ford-line",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["==", "ford", 1],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "tm_ford",
+        "icon-rotation-alignment": "viewport",
+        "symbol-placement": "line-center",
+        "symbol-spacing": 20,
+        "icon-size": {
+          "stops": [
+            [13, 0.25],
+            [16, 0.75],
+            [18, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
           ]
         }
       }
