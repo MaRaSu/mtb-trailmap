@@ -11924,8 +11924,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "obstacle", "vegetation"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"]
+        ["in", "class", "path", "track", "footway", "cycleway"]
       ],
       "layout": {
         "visibility": "visible"
@@ -12009,8 +12008,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "obstacle", "vegetation"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"]
+        ["in", "class", "path", "track", "footway", "cycleway"]
       ],
       "layout": {
         "visibility": "none"
@@ -12094,8 +12092,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "surface_raw", "mud"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"]
+        ["in", "class", "path", "track", "footway", "cycleway"]
       ],
       "layout": {
         "visibility": "visible"
@@ -12179,8 +12176,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "surface_raw", "mud"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "track"]
+        ["in", "class", "path", "track", "footway", "cycleway"]
       ],
       "layout": {
         "visibility": "none"
