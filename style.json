@@ -55,6 +55,7 @@
     "rinnevarjostus": {
       "type": "raster",
       "maxzoom": 14,
+      "minzoom": 10,
       "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"]
     },
     "ilmakuva": {
