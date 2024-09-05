@@ -2919,7 +2919,6 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track", "service", "minor"],
-        ["!in", "subclass", "cycleway"],
         ["==", "access", "no"],
         ["all", ["!=", "bicycle", "yes"], ["!=", "foot", "yes"]]
       ],
