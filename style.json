@@ -13371,7 +13371,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -13692,6 +13692,107 @@
             ["d"],
             6,
             4
+          ]
+        ],
+        "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
+      }
+    },
+    {
+      "id": "bridge-path-track-case-winter",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["has", "mtb_winter"],
+        ["!in", "mtb_winter", "-1", "no"],
+        ["in", "class", "path", "track"],
+        ["!=", "subclass", "cycleway"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_winter"],
+          ["1"],
+          "#75E009",
+          ["2", "yes"],
+          "#d7dc00",
+          "#FEB13E"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            1,
+            ["b"],
+            1.5,
+            ["c"],
+            2,
+            ["d"],
+            2,
+            1.5
+          ],
+          14,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            1.3,
+            ["b"],
+            2,
+            ["c"],
+            3,
+            ["d"],
+            3,
+            2.5
+          ],
+          16,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            3,
+            ["b"],
+            6,
+            ["c"],
+            9,
+            ["d"],
+            9,
+            6
+          ],
+          18,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            5,
+            ["b"],
+            9,
+            ["c"],
+            15,
+            ["d"],
+            15,
+            9
           ]
         ],
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
