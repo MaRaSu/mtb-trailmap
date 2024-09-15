@@ -68,7 +68,9 @@
     "ilmakuva2": {
       "type": "raster",
       "maxzoom": 19,
-      "tiles": ["https://nls.trailmap.fi/ortokuva/{z}/{x}/{y}.jpg"]
+      "tiles": [
+        "https://tiles.kartat.kapsi.fi/ortokuva?service=WMS&request=GetMap&format=image%2Fjpeg&transparent=true&version=1.1.1&srs=EPSG%3A3857&bbox={bbox-epsg-3857}&width=512&height=512"
+      ]
     },
     "taustakartta": {
       "type": "raster",
@@ -3640,7 +3642,6 @@
         "trailmap:ways_only": false
       },
       "source": "ilmakuva",
-      "maxzoom": 16,
       "layout": {
         "visibility": "none"
       }
