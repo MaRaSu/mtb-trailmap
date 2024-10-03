@@ -1077,6 +1077,13 @@
     "x": 320,
     "y": 320
   },
+  "tm_ford-no": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 320,
+    "y": 352
+  },
   "tm_fixme-other": {
     "height": 32,
     "pixelRatio": 1,
