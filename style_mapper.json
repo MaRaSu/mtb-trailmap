@@ -9684,6 +9684,53 @@
           ]
         }
       }
+    },
+    {
+      "id": "ford-point",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "poi_ext",
+      "minzoom": 13,
+      "filter": ["==", "class", "ford"],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": [
+          "match",
+          ["get", "subclass"],
+          ["yes"],
+          "tm_ford",
+          ["no"],
+          "tm_ford-no",
+          "blank"
+        ],
+        "icon-rotation-alignment": "viewport",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "symbol-placement": "point",
+        "icon-size": {
+          "stops": [
+            [13, 0.25],
+            [16, 0.75],
+            [18, 1]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
     }
   ],
   "id": "bright"

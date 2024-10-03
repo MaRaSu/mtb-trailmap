@@ -13723,7 +13723,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -17294,10 +17294,18 @@
       "source": "openmaptiles",
       "source-layer": "poi_ext",
       "minzoom": 13,
-      "filter": ["all", ["==", "class", "ford"], ["==", "subclass", "yes"]],
+      "filter": ["==", "class", "ford"],
       "layout": {
         "visibility": "visible",
-        "icon-image": "tm_ford",
+        "icon-image": [
+          "match",
+          ["get", "subclass"],
+          ["yes"],
+          "tm_ford",
+          ["no"],
+          "tm_ford-no",
+          "blank"
+        ],
         "icon-rotation-alignment": "viewport",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
@@ -18372,7 +18380,7 @@
           "firepit_11",
           ["swimming_area"],
           "swimming_11",
-          "#blank"
+          "blank"
         ],
         "icon-size": {
           "stops": [
