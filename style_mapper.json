@@ -3322,7 +3322,8 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "visible",
+        "line-cap": "round"
       },
       "paint": {
         "line-color": [
