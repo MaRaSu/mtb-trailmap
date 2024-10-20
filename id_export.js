@@ -42,7 +42,7 @@ function processFile(filePath) {
 
   const processedFilePath = path.join(
     path.dirname(filePath),
-    path.basename(filePath, ".json") + "_ids.csv"
+    path.basename(filePath, ".json") + "_ids_exported.csv"
   );
   //console.log(processedFilePath);
 
