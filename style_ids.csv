@@ -1,4 +1,4 @@
-;;type;;content;;content_detail;;maptype;;ways_only;;high contrast;;source;notes
+;;category;;content;;content_detail;;maptype;;ways_only;;high contrast;;source;notes
 background;background-(def);background;;;;;-;def;;;;;;;
 landcover-glacier;landcover-glacier-(def-osm);landcover;-;glacier;;;-;def;;;;;-;osm;
 landuse-mml-taajama;landuse-built-up-(def-mml);landuse;-;built-up;;;-;def;;;;;-;mml;
