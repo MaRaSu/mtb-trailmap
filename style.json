@@ -5417,7 +5417,8 @@
         [
           "any",
           ["!=", "subclass", "footway"],
-          ["all", ["!=", "subclass", "footway"], ["has", "mtb_scale"]]
+          ["all", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
+          ["==", "subclass", "bridleway"]
         ],
         [
           "any",
@@ -5465,7 +5466,8 @@
           "any",
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]]
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!=", "width_cat", "d"],
@@ -5508,7 +5510,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["==", "trail_visibility", "bad"]
@@ -5618,7 +5621,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["==", "trail_visibility", "bad"]
@@ -5733,7 +5737,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["==", "trail_visibility", "bad"]
       ],
@@ -5842,7 +5847,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["==", "width_cat", "a"],
@@ -5905,7 +5911,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["any", ["==", "width_cat", "b"], ["!has", "width_cat"]],
@@ -5968,7 +5975,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["==", "width_cat", "c"],
@@ -6031,7 +6039,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!=", "width_cat", "d"],
@@ -6129,7 +6138,8 @@
           ["!has", "bicycle"],
           ["==", "bicycle", "yes"],
           ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"]
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
         ["!in", "width_cat", "d"],
         ["!in", "trail_visibility", "bad"]
