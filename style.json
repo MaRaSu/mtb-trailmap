@@ -1182,7 +1182,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "water",
-      "maxzoom": 12,
+      "maxzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
@@ -1212,7 +1212,7 @@
       },
       "source": "openmaptiles",
       "source-layer": "water",
-      "maxzoom": 12,
+      "maxzoom": 13,
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
