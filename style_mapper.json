@@ -96,7 +96,7 @@
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
     }
   },
-  "sprite": "https://marasu.github.io/mtb-trailmap/sprite",
+  "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
