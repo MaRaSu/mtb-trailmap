@@ -7237,7 +7237,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -7323,6 +7323,52 @@
             [14, 4.5],
             [16, 9],
             [20, 24]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [9.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 9,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor", "minor_construction"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [9, 1.5],
+            [10, 2.5],
+            [12, 3.2],
+            [14, 4],
+            [20, 17]
           ]
         },
         "line-opacity": {
@@ -7622,7 +7668,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -7708,6 +7754,52 @@
             [14, 4.5],
             [16, 7],
             [20, 20]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-service-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "service", "service_construction"],
+        ["!in", "service", "parking_aisle", "driveway"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [12, 2.8],
+            [14, 3.4],
+            [20, 13]
           ]
         },
         "line-opacity": {
@@ -7928,7 +8020,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -8012,6 +8104,56 @@
             [14, 4],
             [16, 6],
             [20, 16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-driveway-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "service", "driveway"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#634507",
+          "#404040"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
           ]
         },
         "line-opacity": {
@@ -8377,7 +8519,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -8484,6 +8626,84 @@
             [14, 7],
             [16, 10],
             [20, 28]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-tertiary-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "tertiary", "tertiary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#c26d21",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [10, 3],
+            [20, 19]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-secondary-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "secondary", "secondary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#c26d21",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [10, 3],
+            [20, 19]
           ]
         }
       }
@@ -8621,7 +8841,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -8700,6 +8920,50 @@
             [14, 7],
             [16, 9],
             [20, 26]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-primary-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "primary", "primary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#d28644",
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6, 1],
+            [9, 3],
+            [20, 22]
           ]
         }
       }
@@ -8786,7 +9050,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -8866,6 +9130,58 @@
           "#000000",
           12,
           "#000000"
+        ],
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6, 2.5],
+            [10, 4],
+            [20, 22]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-trunk-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "trunk", "trunk_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#df9a5e",
+          12,
+          "#c26d21"
         ],
         "line-opacity": {
           "stops": [
@@ -8964,7 +9280,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -9059,6 +9375,59 @@
             [6, 2.4],
             [10, 4],
             [20, 36]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-motorway-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "motorway", "motorway_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#bf440f",
+          12,
+          "#a15412"
+        ],
+        "line-opacity": {
+          "stops": [
+            [5.5, 0],
+            [6.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 1],
+            [6, 2.4],
+            [10, 4.5],
+            [20, 22]
           ]
         }
       }
@@ -9299,303 +9668,13 @@
       }
     },
     {
-      "id": "hw-minor-line",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 9,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor", "minor_construction"]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "surface_raw"],
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
-            ],
-            "#EDDFCA",
-            "#FFFFFF"
-          ],
-          "#FFFFFF"
-        ],
-        "line-opacity": {
-          "stops": [
-            [9, 0],
-            [9.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 1],
-            [12, 1.3],
-            [14, 2.5],
-            [20, 11.5]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-minor-line-gr",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 9,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!=", "brunnel", "tunnel"],
-        ["in", "class", "minor", "minor_construction"]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "surface_raw"],
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "asphalt",
-              "chipseal",
-              "concrete",
-              "concrete:lanes",
-              "concrete:plates",
-              "paved",
-              "paving_stones"
-            ],
-            "#FFFFFF",
-            "#EDDFCA"
-          ],
-          "#EDDFCA"
-        ],
-        "line-opacity": {
-          "stops": [
-            [9, 0],
-            [9.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 1],
-            [12, 1.3],
-            [14, 2.5],
-            [20, 11.5]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-service-line",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": true,
-        "trailmap:mtb_high_contrast": true,
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service", "service_construction"],
-        ["!in", "service", "parking_aisle", "driveway"]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "surface_raw"],
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
-            ],
-            "#EDDFCA",
-            "#FFFFFF"
-          ],
-          "#FFFFFF"
-        ],
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 1],
-            [12, 1.3],
-            [14, 1.8],
-            [20, 9]
-          ]
-        }
-      }
-    },
-    {
-      "id": "hw-service-line-gr",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": false,
-        "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true
-      },
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!=", "brunnel", "tunnel"],
-        ["in", "class", "service", "service_construction"],
-        ["!in", "service", "parking_aisle", "driveway"]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["has", "surface_raw"],
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "asphalt",
-              "chipseal",
-              "concrete",
-              "concrete:lanes",
-              "concrete:plates",
-              "paved",
-              "paving_stones"
-            ],
-            "#FFFFFF",
-            "#EDDFCA"
-          ],
-          "#EDDFCA"
-        ],
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 1],
-            [12, 1.3],
-            [14, 1.8],
-            [20, 9]
-          ]
-        }
-      }
-    },
-    {
       "id": "hw-driveway-line",
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -9745,6 +9824,49 @@
       }
     },
     {
+      "id": "hw-driveway-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "service", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ababab",
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 0.6],
+            [20, 6]
+          ]
+        }
+      }
+    },
+    {
       "id": "hw-driveway-line-gr",
       "type": "line",
       "metadata": {
@@ -9802,6 +9924,387 @@
           "stops": [
             [14, 0.6],
             [20, 6]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-service-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "service", "service_construction"],
+        ["!in", "service", "parking_aisle", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
+          "#FFFFFF"
+        ],
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 1.8],
+            [20, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-service-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "service", "service_construction"],
+        ["!in", "service", "parking_aisle", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ababab",
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 1.8],
+            [20, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-service-line-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "service", "service_construction"],
+        ["!in", "service", "parking_aisle", "driveway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "asphalt",
+              "chipseal",
+              "concrete",
+              "concrete:lanes",
+              "concrete:plates",
+              "paved",
+              "paving_stones"
+            ],
+            "#FFFFFF",
+            "#EDDFCA"
+          ],
+          "#EDDFCA"
+        ],
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 1.8],
+            [20, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 9,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor", "minor_construction"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
+          "#FFFFFF"
+        ],
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [9.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 2.5],
+            [20, 11.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 9,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor", "minor_construction"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [9.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 2.5],
+            [20, 11.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-minor-line-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 9,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["in", "class", "minor", "minor_construction"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "asphalt",
+              "chipseal",
+              "concrete",
+              "concrete:lanes",
+              "concrete:plates",
+              "paved",
+              "paving_stones"
+            ],
+            "#FFFFFF",
+            "#EDDFCA"
+          ],
+          "#EDDFCA"
+        ],
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [9.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 1],
+            [12, 1.3],
+            [14, 2.5],
+            [20, 11.5]
           ]
         }
       }
@@ -10136,7 +10639,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -10209,6 +10712,48 @@
             [12, 3],
             [14, 3.6],
             [20, 16]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-primary-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "primary", "primary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffe16b",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8.5, 0],
+            [9, 0.5],
+            [10, 0.6],
+            [12, 2],
+            [14, 3.6],
+            [20, 18]
           ]
         }
       }
@@ -10294,7 +10839,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -10380,6 +10925,59 @@
             [6.5, 0],
             [7, 1],
             [9, 1],
+            [10, 2],
+            [12, 3.4],
+            [14, 4.6],
+            [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [11, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-trunk-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 9,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "trunk", "trunk_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "bicycle"], "no"],
+          "#d6771e",
+          "#ffc72e"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
             [10, 2],
             [12, 3.4],
             [14, 4.6],
@@ -10487,7 +11085,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -10508,7 +11106,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#ffcc88",
+        "line-color": "#d6771e",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -10566,6 +11164,54 @@
             [12, 4.5],
             [14, 7],
             [20, 24]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [11, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-motorway-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "motorway", "motorway_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#d6771e",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [10, 1.5],
+            [12, 3],
+            [14, 4],
+            [20, 18]
           ]
         },
         "line-opacity": {
