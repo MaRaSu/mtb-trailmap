@@ -17731,16 +17731,26 @@
         }
       },
       "paint": {
-        "text-color": "#000000",
+        "text-color": [
+          "match",
+          ["get", "access"],
+          ["no"],
+          "#FF003D",
+          ["yes"],
+          "#418000",
+          "#000000"
+        ],
         "text-halo-width": 1,
         "text-halo-color": "#ffffff",
-        "text-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [14, 1]
-          ]
-        }
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0,
+          14,
+          ["match", ["get", "access"], ["no"], 0.5, ["yes"], 1.0, 0.8]
+        ]
       }
     },
     {
