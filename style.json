@@ -12298,7 +12298,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#7200ff",
+        "line-color": "#c00000",
         "line-width": [
           "interpolate",
           ["linear"],
@@ -12404,8 +12404,8 @@
           "base": 1,
           "stops": [
             [12, 1],
-            [14, 1.8],
-            [16, 3],
+            [14, 1.6],
+            [16, 2.5],
             [18, 5]
           ]
         },
@@ -12494,7 +12494,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#7200ff",
+        "text-color": "#c00000",
         "text-opacity": {
           "stops": [
             [13, 0],
@@ -17749,7 +17749,7 @@
           13,
           0,
           14,
-          ["match", ["get", "access"], ["no"], 0.5, ["yes"], 1.0, 0.8]
+          ["match", ["get", "access"], ["no"], 0.5, ["yes"], 1, 0.8]
         ]
       }
     },
