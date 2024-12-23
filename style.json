@@ -10970,8 +10970,8 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          "#d6771e",
-          "#ffc72e"
+          "#ffcc88",
+          "#fea"
         ],
         "line-width": {
           "base": 1.2,
@@ -11106,7 +11106,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#d6771e",
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -11202,7 +11202,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#d6771e",
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
