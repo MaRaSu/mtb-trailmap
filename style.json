@@ -10721,7 +10721,7 @@
       "type": "line",
       "metadata": {
         "mapbox:group": "1444849345966.4436",
-        "trailmap:mtb": true,
+        "trailmap:mtb": false,
         "trailmap:mtb_high_contrast": false,
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
@@ -10741,7 +10741,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffe16b",
