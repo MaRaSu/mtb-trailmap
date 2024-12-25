@@ -7792,7 +7792,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#545454",
         "line-width": {
           "base": 1,
           "stops": [
@@ -8141,12 +8141,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#634507",
-          "#404040"
-        ],
+        "line-color": "#545454",
         "line-width": {
           "base": 1,
           "stops": [
@@ -9850,7 +9845,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ababab",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [13, 0],
@@ -10037,7 +10032,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#ababab",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [10, 0],
