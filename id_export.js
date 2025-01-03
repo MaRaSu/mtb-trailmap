@@ -35,10 +35,16 @@ function writeCSVFile(filePath, data) {
 function processFile(filePath) {
   const jsonContent = readJSONFile(filePath);
 
-  const layer_ids = jsonContent.layers.map((layer) => {
-    return layer.id;
+  const header = ["id", "ways_only"];
+
+  const items = jsonContent.layers.map((layer) => {
+    const ways_only = layer.metadata?.["trailmap:ways_only"] || false;
+    const item = [layer.id, ways_only];
+    return item.join(",");
   });
-  //console.log(layer_ids);
+
+  items.unshift(header.join(","));
+  //console.log(items);
 
   const processedFilePath = path.join(
     path.dirname(filePath),
@@ -47,7 +53,7 @@ function processFile(filePath) {
   //console.log(processedFilePath);
 
   // Write processed data back to the original file
-  writeCSVFile(processedFilePath, layer_ids);
+  writeCSVFile(processedFilePath, items);
 
   console.log(`Processed file saved as: ${processedFilePath}`);
 }
