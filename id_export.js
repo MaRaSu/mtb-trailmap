@@ -35,11 +35,11 @@ function writeCSVFile(filePath, data) {
 function processFile(filePath) {
   const jsonContent = readJSONFile(filePath);
 
-  const header = ["id", "ways_only"];
+  const header = ["id", "ways_only", "source"];
 
   const items = jsonContent.layers.map((layer) => {
     const ways_only = layer.metadata?.["trailmap:ways_only"] || false;
-    const item = [layer.id, ways_only];
+    const item = [layer.id, ways_only, layer.source];
     return item.join(",");
   });
 
