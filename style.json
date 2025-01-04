@@ -12207,12 +12207,20 @@
             [18, 20]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            0,
+            ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
-        }
+        ]
       }
     },
     {
@@ -12307,12 +12315,20 @@
           18,
           ["case", ["==", ["get", "class"], "ice_skate"], 4, 14]
         ],
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            0,
+            ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
-        }
+        ]
       }
     },
     {
@@ -12404,12 +12420,20 @@
             [18, 4]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            0,
+            ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
-        }
+        ]
       }
     },
     {
