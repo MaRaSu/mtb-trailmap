@@ -2,10 +2,12 @@ const fs = require("fs");
 const path = require("path");
 
 // Extract command line arguments
-const [csvPath, jsonPath] = process.argv.slice(2);
+const [csvPath, jsonPath, csvDelimiter] = process.argv.slice(2);
 
-if (!csvPath || !jsonPath) {
-  console.log("Usage: node script.js <id csv path> <style json path>");
+if (!csvPath || !jsonPath || !csvDelimiter) {
+  console.log(
+    "Usage: node script.js <id csv path> <style json path> <csv delimiter>"
+  );
   process.exit(1);
 }
 
@@ -31,17 +33,28 @@ function writeCSVFile(filePath, data) {
   }
 }
 
+function logCharCodes(str) {
+  return str.split("").map((char) => char.charCodeAt(0));
+}
+
 // Main function to process the file
-function processFile(csvPath, jsonPath) {
+function processFile(csvPath, jsonPath, csvDelimiter) {
   // Read the csv file and json file
-  const csvContent = fs.readFileSync(csvPath, "utf8");
+  let csvContent = fs.readFileSync(csvPath, "utf8");
+  // Remove BOM character if it exists
+  if (csvContent.charCodeAt(0) === 0xfeff) {
+    console.log("BOM detected");
+    csvContent = csvContent.slice(1);
+  }
+
   const jsonContent = readJSONFile(jsonPath);
 
   // Split the csv content into an array of ids
   const layer_ids = csvContent
     .split("\n")
-    .map((row) => row.split(";").map((col) => col.replace("\r", "")));
+    .map((row) => row.split(csvDelimiter).map((col) => col.replace("\r", "")));
   //console.log(layer_ids);
+  //console.log(jsonContent.layers);
 
   // Loop through each layer in the JSON content
   jsonContent.layers.forEach((layer) => {
@@ -51,6 +64,9 @@ function processFile(csvPath, jsonPath) {
     // If a matching row is found and the second column is not empty, replace the id
     if (matchingRow && matchingRow[1]) {
       layer.id = matchingRow[1];
+    } else {
+      // If no matching row is found, log a warning
+      console.warn(`No matching id found for layer: ${layer.id}`);
     }
   });
 
@@ -88,4 +104,4 @@ function processFile(csvPath, jsonPath) {
 }
 
 // Execute the processing function
-processFile(csvPath, jsonPath);
+processFile(csvPath, jsonPath, csvDelimiter);
