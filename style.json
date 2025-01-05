@@ -12540,9 +12540,12 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
+        ["has", "class"],
         ["has", "grooming"],
-        ["!in", "bicycle", "no"]
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle:winter", "no"]
       ],
       "layout": {
         "visibility": "none"
@@ -12558,7 +12561,20 @@
             [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10.5,
+          0,
+          11,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            1,
+            ["case", ["in", "hike", ["get", "class"]], 1, 0]
+          ]
+        ]
       }
     },
     {
@@ -12579,9 +12595,12 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
+        ["has", "class"],
         ["has", "grooming"],
-        ["!in", "bicycle", "no"]
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle:winter", "no"]
       ],
       "layout": {
         "visibility": "none"
@@ -12621,6 +12640,20 @@
           ["match", ["get", "width_cat"], ["a"], 1, ["b"], 2, ["c"], 3, 2],
           18,
           ["match", ["get", "width_cat"], ["a"], 2, ["b"], 4, ["c"], 5.5, 4]
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            1,
+            ["case", ["in", "hike", ["get", "class"]], 1, 0]
+          ]
         ]
       }
     },
