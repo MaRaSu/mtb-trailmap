@@ -12186,6 +12186,8 @@
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "downhill",
           "snow_park",
           "playground",
@@ -12207,20 +12209,7 @@
             [18, 20]
           ]
         },
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          11,
-          0,
-          12,
-          [
-            "case",
-            ["in", "fatbike", ["get", "class"]],
-            0,
-            ["case", ["in", "hike", ["get", "class"]], 0, 1]
-          ]
-        ]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
       }
     },
     {
@@ -12290,6 +12279,8 @@
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "downhill",
           "snow_park",
           "playground",
@@ -12329,6 +12320,74 @@
             ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
         ]
+      }
+    },
+    {
+      "id": "skiing-line-base-bicycle_ok",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#7200ff",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          2.8,
+          14,
+          4.5,
+          16,
+          7,
+          18,
+          14
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            1,
+            ["case", ["in", "hike", ["get", "class"]], 1, 0]
+          ]
+        ],
+        "line-dasharray": [1, 0.75]
       }
     },
     {
@@ -12398,6 +12457,8 @@
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "ice_skate",
           "downhill",
           "snow_park",
@@ -12420,20 +12481,7 @@
             [18, 4]
           ]
         },
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          11,
-          0,
-          12,
-          [
-            "case",
-            ["in", "fatbike", ["get", "class"]],
-            0,
-            ["case", ["in", "hike", ["get", "class"]], 0, 1]
-          ]
-        ]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
       }
     },
     {
@@ -12540,7 +12588,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["has", "class"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -12561,20 +12609,7 @@
             [18, 15]
           ]
         },
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10.5,
-          0,
-          11,
-          [
-            "case",
-            ["in", "fatbike", ["get", "class"]],
-            1,
-            ["case", ["in", "hike", ["get", "class"]], 1, 0]
-          ]
-        ]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -12595,7 +12630,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["has", "class"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -12641,20 +12676,7 @@
           18,
           ["match", ["get", "width_cat"], ["a"], 2, ["b"], 4, ["c"], 5.5, 4]
         ],
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          11,
-          0,
-          12,
-          [
-            "case",
-            ["in", "fatbike", ["get", "class"]],
-            1,
-            ["case", ["in", "hike", ["get", "class"]], 1, 0]
-          ]
-        ]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
