@@ -52,6 +52,7 @@ function writeExcelFile(filePath, data) {
 
   try {
     sheet.addRow([
+      "id_legacy",
       "id_orig",
       "id_new",
       "change",
@@ -72,23 +73,23 @@ function writeExcelFile(filePath, data) {
     // Add shared formulas
     const newIdFormula = {
       formula:
-        '_xlfn.CONCAT(E2,IF(NOT(ISBLANK(F2)),"-",""),F2,IF(NOT(ISBLANK(G2)),"-",""),G2,"-(",H2,"-",I2,"-",J2,IF(NOT(ISBLANK(K2)),"-hc",""),")")',
+        '_xlfn.CONCAT(F2,IF(NOT(ISBLANK(G2)),"-",""),G2,IF(NOT(ISBLANK(H2)),"-",""),H2,"-(",I2,"-",J2,"-",K2,IF(NOT(ISBLANK(L2)),"-hc",""),")")',
     };
     const sharedIdFormula = {
       formula: newIdFormula.formula,
       result: "",
       shareType: "shared",
-      ref: "B2:B4270",
+      ref: "C2:C4270",
     };
-    data[0][1] = sharedIdFormula;
-    const compareFormula = { formula: 'IF(A2=B2, "", "NEW")', result: "" };
+    data[0][2] = sharedIdFormula;
+    const compareFormula = { formula: 'IF(B2=C2, "", "NEW")', result: "" };
     const sharedChangeFormula = {
       formula: compareFormula.formula,
       result: "",
       shareType: "shared",
-      ref: "C2:C4270",
+      ref: "D2:D4270",
     };
-    data[0][2] = sharedChangeFormula;
+    data[0][3] = sharedChangeFormula;
 
     data.forEach((item) => {
       sheet.addRow(item);
@@ -96,31 +97,32 @@ function writeExcelFile(filePath, data) {
 
     // Formatting
     sheet.getRow(1).font = { bold: true };
-    sheet.getColumn(3).font = { color: { argb: "FFFF0000" }, bold: true };
-    sheet.getCell("C1").font = { color: { argb: "FF000000" }, bold: true };
-    sheet.getColumn(1).width = 50;
+    sheet.getColumn(4).font = { color: { argb: "FFFF0000" }, bold: true };
+    sheet.getCell("D1").font = { color: { argb: "FF000000" }, bold: true };
+    sheet.getColumn(1).width = 20;
     sheet.getColumn(2).width = 50;
-    sheet.getColumn(3).width = 10;
-    sheet.getColumn(4).width = 2;
+    sheet.getColumn(3).width = 50;
+    sheet.getColumn(4).width = 10;
+    sheet.getColumn(5).width = 2;
 
-    sheet.getColumn(5).width = 30;
     sheet.getColumn(6).width = 30;
-    sheet.getColumn(7).width = 20;
+    sheet.getColumn(7).width = 30;
+    sheet.getColumn(8).width = 20;
 
-    sheet.getColumn(8).width = 8;
     sheet.getColumn(9).width = 8;
-    sheet.getColumn(10).width = 15;
-    sheet.getColumn(11).width = 8;
-    sheet.getColumn(12).width = 2;
+    sheet.getColumn(10).width = 8;
+    sheet.getColumn(11).width = 15;
+    sheet.getColumn(12).width = 8;
+    sheet.getColumn(13).width = 2;
 
-    sheet.getColumn(13).width = 10;
     sheet.getColumn(14).width = 10;
     sheet.getColumn(15).width = 10;
     sheet.getColumn(16).width = 10;
     sheet.getColumn(17).width = 10;
     sheet.getColumn(18).width = 10;
+    sheet.getColumn(19).width = 10;
 
-    sheet.getColumn(19).width = 2;
+    sheet.getColumn(20).width = 2;
 
     workbook.xlsx.writeFile(filePath);
   } catch (error) {
@@ -146,9 +148,11 @@ function processFile(filePath) {
 
   // Id & id formulas
   const items = jsonContent.layers.map((layer) => {
-    const sharedIdFormula = { sharedFormula: "B2", result: "" };
-    const sharedChangeFormula = { sharedFormula: "C2", result: "" };
-    const item = [layer.id, sharedIdFormula, sharedChangeFormula];
+    const metadata = layer.metadata;
+    const legacyId = metadata["trailmap:id_legacy"];
+    const sharedIdFormula = { sharedFormula: "C2", result: "" };
+    const sharedChangeFormula = { sharedFormula: "D2", result: "" };
+    const item = [legacyId, layer.id, sharedIdFormula, sharedChangeFormula];
     item.push(undefined);
 
     // Id originating columns
@@ -159,7 +163,6 @@ function processFile(filePath) {
     item.push(mapType[0], mapType[1], mapType[2], mapType[3]);
 
     // Metadata columns
-    const metadata = layer.metadata;
     item.push(undefined);
     expectedMetadataKeys.forEach((key) => {
       const fullKey = `trailmap:${key}`;

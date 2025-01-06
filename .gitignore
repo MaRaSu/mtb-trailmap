@@ -14,3 +14,4 @@ style_base_v2_import.json
 ~$*.xlsx
 
 node_modules
+.vscode

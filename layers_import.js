@@ -17,9 +17,7 @@ const expectedMetadataKeys = [
 const [csvPath, jsonPath, csvDelimiter] = process.argv.slice(2);
 
 if (!csvPath || !jsonPath || !csvDelimiter) {
-  console.log(
-    "Usage: node script.js <id csv path> <style json path> <csv delimiter>"
-  );
+  console.log("Usage: node script.js <id csv path> <style json path> <csv delimiter>");
   process.exit(1);
 }
 
@@ -74,15 +72,14 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
   const missingLayers = jsonContent.layers.filter((layer) => {
     return !csvContent.some((item) => item.id_orig === layer.id);
   });
-  console.log(
-    `DELETED layers: ${missingLayers.map((layer) => layer.id).join(", ")}`
-  );
+  console.log(`DELETED layers: ${missingLayers.map((layer) => layer.id).join(", ")}`);
 
   // Loop through each layer in the CSV table
   const newLayers = [];
   for (let i = 0; i < csvContent.length; i++) {
     //for (let i = 0; i < 3; i++) {
     const item = csvContent[i];
+
     const itemMetadata = expectedMetadataKeys.reduce((acc, key) => {
       const fullKey = `trailmap:${key}`;
       const value = item[key];
@@ -95,9 +92,7 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
     }, {});
     itemMetadata["trailmap:country"] = item["country"];
 
-    const jsonLayer = jsonContent.layers.find(
-      (layer) => layer.id === item.id_orig
-    );
+    const jsonLayer = jsonContent.layers.find((layer) => layer.id === item.id_orig);
 
     let newLayer;
     if (jsonLayer) {
@@ -140,11 +135,7 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
   );
 
   console.log("\nWriting new map style: " + processedFilePath);
-  fs.writeFileSync(
-    processedFilePath,
-    JSON.stringify(jsonContent, null, 2),
-    "utf8"
-  );
+  fs.writeFileSync(processedFilePath, JSON.stringify(jsonContent, null, 2), "utf8");
 
   console.log("\nValidating new JSON content...");
   validateJson(jsonContent);

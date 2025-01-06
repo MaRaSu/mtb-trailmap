@@ -64,6 +64,7 @@ function processFile(csvPath, jsonPath, csvDelimiter) {
     // If a matching row is found and the second column is not empty, replace the id
     if (matchingRow && matchingRow[1]) {
       layer.id = matchingRow[1];
+      layer.metadata = {...layer.metadata, 'trailmap:id_legacy': matchingRow[0]};
     } else {
       // If no matching row is found, log a warning
       console.warn(`No matching id found for layer: ${layer.id}`);
