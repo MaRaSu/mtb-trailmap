@@ -2,9 +2,11 @@ const fs = require("fs");
 const path = require("path");
 const csv = require("csv-parser");
 
+const validateJson = require("./mod_validate");
+
 const expectedMetadataKeys = [
   "mtb",
-  "mtb_high_contrast",
+  "high_contrast",
   "gravel",
   "mtb_winter",
   "mapper",
@@ -83,7 +85,12 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
     const item = csvContent[i];
     const itemMetadata = expectedMetadataKeys.reduce((acc, key) => {
       const fullKey = `trailmap:${key}`;
-      acc[fullKey] = item[key] === "TRUE";
+      const value = item[key];
+      if (key !== "high_contrast") {
+        acc[fullKey] = value === "TRUE";
+      } else {
+        acc[fullKey] = value;
+      }
       return acc;
     }, {});
     itemMetadata["trailmap:country"] = item["country"];
@@ -100,6 +107,15 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
         newLayer.id = item.id_new;
       }
       newLayer.metadata = { ...jsonLayer.metadata, ...itemMetadata };
+      const itemSource = item["source"];
+      if (itemSource && itemSource != "nosource") {
+        if (itemSource != jsonLayer.source) {
+          console.log(
+            `CHANGE in layer ${item.id_new} source: ${jsonLayer.source} --> ${itemSource}`
+          );
+        }
+        newLayer.source = itemSource;
+      }
     } else {
       console.log(`NEW layer: ${item.id_new} in CSV row ${i + 1}`);
       newLayer = {
@@ -120,16 +136,18 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
   // Write the modified JSON content back to the file
   const processedFilePath = path.join(
     path.dirname(jsonPath),
-    path.basename(jsonPath, ".json") + "_modified_test.json"
+    path.basename(jsonPath, ".json") + "_import.json"
   );
 
   console.log("\nWriting new map style: " + processedFilePath);
-
   fs.writeFileSync(
     processedFilePath,
     JSON.stringify(jsonContent, null, 2),
     "utf8"
   );
+
+  console.log("\nValidating new JSON content...");
+  validateJson(jsonContent);
 }
 
 // Execute the processing function

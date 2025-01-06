@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const csv = require("csv-parser");
 
+const validateJson = require("./mod_validate");
+
 const expectedMetadataKeys = [
   "mtb",
   "mtb_high_contrast",
@@ -38,14 +40,7 @@ function logCharCodes(str) {
 async function processFile(jsonPath) {
   // Read the json file
   const jsonContent = readJSONFile(jsonPath);
-  const layers = jsonContent.layers;
-
-  // Find any duplicate layer ids
-  const layerIds = layers.map((layer) => layer.id);
-  const duplicates = layerIds.filter(
-    (id, index) => layerIds.indexOf(id) !== index
-  );
-  console.log("Duplicate layer ids: ", duplicates);
+  validateJson(jsonContent);
 }
 
 // Execute the processing function

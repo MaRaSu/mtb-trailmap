@@ -1,5 +1,6 @@
 gl-style-package-spec/
 maputnik.exe
+
 style_orig.json
 style_test.json
 style_mapper.json
@@ -7,5 +8,9 @@ style_orig.json
 style_orig.json
 style_orig.json
 style_ids_exported.csv
+style_base_v2_export.csv
+style_base_v2_import.json
+
+~$*.xlsx
 
 node_modules

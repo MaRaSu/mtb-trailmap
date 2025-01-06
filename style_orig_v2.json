@@ -12181,12 +12181,16 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["!in", "bridge", "1", "yes"],
         [
           "!in",
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "downhill",
+          "halfpipe",
           "snow_park",
           "playground",
           "ski_jump",
@@ -12207,12 +12211,7 @@
             [18, 20]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
       }
     },
     {
@@ -12277,12 +12276,16 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["!in", "bridge", "1", "yes"],
         [
           "!in",
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "downhill",
+          "halfpipe",
           "snow_park",
           "playground",
           "ski_jump",
@@ -12307,12 +12310,102 @@
           18,
           ["case", ["==", ["get", "class"], "ice_skate"], 4, 14]
         ],
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            0,
+            ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
-        }
+        ]
+      }
+    },
+    {
+      "id": "skiing-line-base-bicycle_ok",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "bridge", "1", "yes"],
+        ["!in", "class", "hike", "fatbike", "hike;fatbike", "fatbike;hike"],
+        [
+          "any",
+          [
+            "!in",
+            "class",
+            "downhill",
+            "halfpipe",
+            "nordic",
+            "skitour",
+            "sled",
+            "sleigh",
+            "ice_skate",
+            "snow_park",
+            "playground",
+            "ski_jump",
+            "connection",
+            "proposed"
+          ],
+          [
+            "any",
+            ["in", "bicycle_winter", "designated", "yes"],
+            ["in", "mtb_winter", "1", "2", "3", "yes"],
+            ["in", "foot_winter", "designated", "yes"]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#7200ff",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          2.8,
+          14,
+          4.5,
+          16,
+          7,
+          18,
+          14
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            1,
+            ["case", ["in", "hike", ["get", "class"]], 1, 0]
+          ]
+        ],
+        "line-dasharray": [1, 0.75]
       }
     },
     {
@@ -12377,13 +12470,17 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["!in", "bridge", "1", "yes"],
         [
           "!in",
           "class",
           "hike",
           "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
           "ice_skate",
           "downhill",
+          "halfpipe",
           "snow_park",
           "playground",
           "ski_jump",
@@ -12404,12 +12501,7 @@
             [18, 4]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0, 12, 1]
       }
     },
     {
@@ -12516,9 +12608,13 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "bicycle", "no"]
+        ["!in", "grooming", "backcountry"],
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
         "visibility": "none"
@@ -12555,9 +12651,13 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "hike", "fatbike"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "bicycle", "no"]
+        ["!in", "grooming", "backcountry"],
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
         "visibility": "none"
@@ -12597,7 +12697,8 @@
           ["match", ["get", "width_cat"], ["a"], 1, ["b"], 2, ["c"], 3, 2],
           18,
           ["match", ["get", "width_cat"], ["a"], 2, ["b"], 4, ["c"], 5.5, 4]
-        ]
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
       }
     },
     {
@@ -14560,7 +14661,7 @@
         "mapbox:group": "1444849345966.4436",
         "trailmap:mtb": true,
         "trailmap:mtb_high_contrast": false,
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true
@@ -16053,6 +16154,117 @@
       }
     },
     {
+      "id": "bridge-piste-bicycle-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
+        ["has", "grooming"],
+        ["!in", "grooming", "backcountry"],
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle_winter", "no"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#0ac5a0",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 2.5],
+            [14, 4.5],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+      }
+    },
+    {
+      "id": "bridge-piste-bicycle-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
+        ["has", "grooming"],
+        ["!in", "grooming", "backcountry"],
+        ["!in", "bicycle", "no"],
+        ["!in", "mtb_winter", "no"],
+        ["!in", "mtb_winter", "-1"],
+        ["!in", "bicycle_winter", "no"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-dasharray": [2.5, 2],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            0.4,
+            ["b"],
+            0.6,
+            ["c"],
+            1.2,
+            0.6
+          ],
+          14,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            0.8,
+            ["b"],
+            1.2,
+            ["c"],
+            1.8,
+            1.2
+          ],
+          16,
+          ["match", ["get", "width_cat"], ["a"], 1, ["b"], 2, ["c"], 3, 2],
+          18,
+          ["match", ["get", "width_cat"], ["a"], 2, ["b"], 4, ["c"], 5.5, 4]
+        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+      }
+    },
+    {
       "id": "bridge-skiing-case",
       "type": "line",
       "metadata": {
@@ -16062,7 +16274,8 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -16070,8 +16283,20 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"],
-        ["in", "bridge", "1", "yes"]
+        ["in", "bridge", "1", "yes"],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
       ],
       "layout": {
         "visibility": "none"
@@ -16104,7 +16329,8 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -16112,28 +16338,134 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"],
-        ["in", "bridge", "1", "yes"]
+        ["in", "bridge", "1", "yes"],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
       ],
       "layout": {
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#cc1b14",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 2.2],
-            [14, 3],
-            [16, 4.8]
+        "line-color": "#7200ff",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["==", ["get", "class"], "ice_skate"], 1, 2.8],
+          14,
+          ["case", ["==", ["get", "class"], "ice_skate"], 1.6, 4.5],
+          16,
+          ["case", ["==", ["get", "class"], "ice_skate"], 2.4, 7],
+          18,
+          ["case", ["==", ["get", "class"], "ice_skate"], 4, 14]
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            0,
+            ["case", ["in", "hike", ["get", "class"]], 0, 1]
           ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
+        ]
+      }
+    },
+    {
+      "id": "bridge-skiing-line-base-bicycle_ok",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
+      },
+      "source": "openmaptiles",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "bridge", "1", "yes"],
+        ["!in", "class", "hike", "fatbike", "hike;fatbike", "fatbike;hike"],
+        [
+          "any",
+          [
+            "!in",
+            "class",
+            "downhill",
+            "nordic",
+            "skitour",
+            "sled",
+            "sleigh",
+            "ice_skate",
+            "snow_park",
+            "playground",
+            "ski_jump",
+            "connection",
+            "proposed"
+          ],
+          [
+            "any",
+            ["in", "bicycle_winter", "designated", "yes"],
+            ["in", "mtb_winter", "1", "2", "3", "yes"],
+            ["in", "foot_winter", "designated", "yes"]
           ]
-        }
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#7200ff",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          2.8,
+          14,
+          4.5,
+          16,
+          7,
+          18,
+          14
+        ],
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          0,
+          12,
+          [
+            "case",
+            ["in", "fatbike", ["get", "class"]],
+            1,
+            ["case", ["in", "hike", ["get", "class"]], 1, 0]
+          ]
+        ],
+        "line-dasharray": [1, 0.75]
       }
     },
     {
@@ -16146,7 +16478,8 @@
         "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": true
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm"
       },
       "source": "openmaptiles",
       "source-layer": "piste_ext",
@@ -16154,8 +16487,21 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "class", "hike"],
-        ["in", "bridge", "1", "yes"]
+        ["in", "bridge", "1", "yes"],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "ice_skate",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
       ],
       "layout": {
         "visibility": "none"

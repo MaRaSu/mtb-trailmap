@@ -2,9 +2,11 @@ const fs = require("fs");
 const path = require("path");
 const ExcelJS = require("exceljs");
 
+const validateJson = require("./mod_validate");
+
 const expectedMetadataKeys = [
   "mtb",
-  "mtb_high_contrast",
+  "high_contrast",
   "gravel",
   "mtb_winter",
   "mapper",
@@ -53,6 +55,7 @@ function writeExcelFile(filePath, data) {
       "id_orig",
       "id_new",
       "change",
+      "",
       "category",
       "content",
       "content_detail",
@@ -62,13 +65,14 @@ function writeExcelFile(filePath, data) {
       "subtype",
       "",
       ...expectedMetadataKeys,
+      "",
       "notes",
     ]);
 
     // Add shared formulas
     const newIdFormula = {
       formula:
-        '_xlfn.CONCAT(D2,IF(NOT(ISBLANK(E2)),"-",""),E2,IF(NOT(ISBLANK(F2)),"-",""),F2,"-(",G2,"-",H2,"-",I2,IF(NOT(ISBLANK(J2)),"-hc",""),")")',
+        '_xlfn.CONCAT(E2,IF(NOT(ISBLANK(F2)),"-",""),F2,IF(NOT(ISBLANK(G2)),"-",""),G2,"-(",H2,"-",I2,"-",J2,IF(NOT(ISBLANK(K2)),"-hc",""),")")',
     };
     const sharedIdFormula = {
       formula: newIdFormula.formula,
@@ -94,26 +98,29 @@ function writeExcelFile(filePath, data) {
     sheet.getRow(1).font = { bold: true };
     sheet.getColumn(3).font = { color: { argb: "FFFF0000" }, bold: true };
     sheet.getCell("C1").font = { color: { argb: "FF000000" }, bold: true };
-    sheet.getColumn(1).width = 40;
-    sheet.getColumn(2).width = 40;
+    sheet.getColumn(1).width = 50;
+    sheet.getColumn(2).width = 50;
+    sheet.getColumn(3).width = 10;
+    sheet.getColumn(4).width = 2;
 
-    sheet.getColumn(4).width = 15;
-    sheet.getColumn(5).width = 20;
-    sheet.getColumn(6).width = 15;
+    sheet.getColumn(5).width = 30;
+    sheet.getColumn(6).width = 30;
+    sheet.getColumn(7).width = 20;
 
-    sheet.getColumn(7).width = 8;
     sheet.getColumn(8).width = 8;
-    sheet.getColumn(9).width = 15;
-    sheet.getColumn(10).width = 8;
+    sheet.getColumn(9).width = 8;
+    sheet.getColumn(10).width = 15;
+    sheet.getColumn(11).width = 8;
+    sheet.getColumn(12).width = 2;
 
-    sheet.getColumn(12).width = 10;
     sheet.getColumn(13).width = 10;
     sheet.getColumn(14).width = 10;
     sheet.getColumn(15).width = 10;
     sheet.getColumn(16).width = 10;
     sheet.getColumn(17).width = 10;
+    sheet.getColumn(18).width = 10;
 
-    sheet.getColumn(18).width = 40;
+    sheet.getColumn(19).width = 2;
 
     workbook.xlsx.writeFile(filePath);
   } catch (error) {
@@ -127,7 +134,7 @@ function splitLayerId(id) {
   // then process the second part by removing ")" and splitting by "-"
   const parts = id.split("-(");
   const firstPart = parts[0].split("-");
-  const secondPart = parts[1].replace(")", "").split("-");
+  const secondPart = parts?.[1]?.replace(")", "")?.split("-") ?? [];
   return [firstPart, secondPart];
 }
 
@@ -135,11 +142,14 @@ function splitLayerId(id) {
 function processFile(filePath) {
   const jsonContent = readJSONFile(filePath);
 
+  validateJson(jsonContent);
+
   // Id & id formulas
   const items = jsonContent.layers.map((layer) => {
     const sharedIdFormula = { sharedFormula: "B2", result: "" };
     const sharedChangeFormula = { sharedFormula: "C2", result: "" };
     const item = [layer.id, sharedIdFormula, sharedChangeFormula];
+    item.push(undefined);
 
     // Id originating columns
     const splittedLayerId = splitLayerId(layer.id);
@@ -164,7 +174,7 @@ function processFile(filePath) {
 
   const processedFilePath = path.join(
     path.dirname(filePath),
-    path.basename(filePath, ".json") + "_layers_exported.xlsx"
+    path.basename(filePath, ".json") + "_export.xlsx"
   );
   //console.log(processedFilePath);
 
