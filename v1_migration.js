@@ -55,9 +55,7 @@ async function processFile(jsonPath) {
 
   // Create a new array of layers with the new source names
   const newLayers = layers.map((layer) => {
-    const sourceRenameObj = sourceRename.find(
-      (obj) => obj.current === layer.source
-    );
+    const sourceRenameObj = sourceRename.find((obj) => obj.current === layer.source);
     if (sourceRenameObj) {
       layer.source = sourceRenameObj.new;
     }
@@ -70,9 +68,7 @@ async function processFile(jsonPath) {
     if (!["taustakartta", "lipas-alueet"].includes(source))
       filteredSources[source] = newSources[source];
   });
-  const filteredLayers = newLayers.filter(
-    (layer) => layer.source !== "taustakartta"
-  );
+  const filteredLayers = newLayers.filter((layer) => layer.source !== "taustakartta");
 
   // MIGRATE LAYER METADATA
   const finalLayers = filteredLayers.map((layer) => {
@@ -111,7 +107,7 @@ async function processFile(jsonPath) {
   });
 
   // Other cleanups
-  delete jsonContent.id;
+  jsonContent.id = "trailmap";
   const topMetadata = jsonContent.metadata;
   const newTopMetadata = {};
   Object.keys(topMetadata).forEach((key) => {
@@ -132,11 +128,7 @@ async function processFile(jsonPath) {
 
   console.log(processedFilePath);
 
-  fs.writeFileSync(
-    processedFilePath,
-    JSON.stringify(jsonContent, null, 2),
-    "utf8"
-  );
+  fs.writeFileSync(processedFilePath, JSON.stringify(jsonContent, null, 2), "utf8");
 }
 
 // Execute the processing function

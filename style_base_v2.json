@@ -1,6 +1,7 @@
 {
   "version": 8,
   "name": "MTB-Trailmap",
+  "id": "trailmap",
   "metadata": {
     "openmaptiles:version": "3.x",
     "maputnik:renderer": "mbgljs"
