@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const csv = require("csv-parser");
 
-const validateJson = require("./mod_validate");
+const { validateJson } = require("./common_module");
 
 const expectedMetadataKeys = [
   "mtb",
@@ -72,12 +72,15 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
   const missingLayers = jsonContent.layers.filter((layer) => {
     return !csvContent.some((item) => item.id_orig === layer.id);
   });
-  console.log(`DELETED layers: ${missingLayers.map((layer) => layer.id).join(", ")}`);
+  if (missingLayers.length > 0) {
+    console.log(`DELETED layers: ${missingLayers.map((layer) => layer.id).join(", ")}`);
+  }
 
   // Loop through each layer in the CSV table
   const newLayers = [];
+  let indexAdjustment = 0;
   for (let i = 0; i < csvContent.length; i++) {
-    //for (let i = 0; i < 3; i++) {
+    //for (let i = 0; i < 30; i++) {
     const item = csvContent[i];
 
     const itemMetadata = expectedMetadataKeys.reduce((acc, key) => {
@@ -92,7 +95,8 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
     }, {});
     itemMetadata["trailmap:country"] = item["country"];
 
-    const jsonLayer = jsonContent.layers.find((layer) => layer.id === item.id_orig);
+    const jsonLayerIndex = jsonContent.layers.findIndex((layer) => layer.id === item.id_orig);
+    const jsonLayer = jsonContent.layers[jsonLayerIndex];
 
     let newLayer;
     if (jsonLayer) {
@@ -101,12 +105,26 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
         console.log(`RENAME layer: ${jsonLayer.id} --> ${item.id_new}`);
         newLayer.id = item.id_new;
       }
+
+      const adjustedJsonLayerIndex = jsonLayerIndex + indexAdjustment;
+      if (i !== adjustedJsonLayerIndex) {
+        console.log(`--- CHANGE layer ${jsonLayer.id} ORDER: ${jsonLayerIndex} --> ${i}`);
+      }
+
+      Object.keys(itemMetadata).forEach((key) => {
+        if (jsonLayer.metadata[key] !== itemMetadata[key]) {
+          console.log(
+            `CHANGE in layer ${item.id_new} METADATA key ${key}: ${jsonLayer.metadata[key]} --> ${itemMetadata[key]}`
+          );
+        }
+      });
       newLayer.metadata = { ...jsonLayer.metadata, ...itemMetadata };
+
       const itemSource = item["source"];
       if (itemSource && itemSource != "nosource") {
         if (itemSource != jsonLayer.source) {
           console.log(
-            `CHANGE in layer ${item.id_new} source: ${jsonLayer.source} --> ${itemSource}`
+            `CHANGE in layer ${item.id_new} SOURCE: ${jsonLayer.source} --> ${itemSource}`
           );
         }
         newLayer.source = itemSource;
@@ -121,6 +139,7 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
         layout: { visibility: "none" },
         paint: { "background-color": "red" },
       };
+      indexAdjustment++;
     }
     //console.log(newLayer);
     newLayers.push(newLayer);

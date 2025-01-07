@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const ExcelJS = require("exceljs");
 
-const validateJson = require("./mod_validate");
+const { validateJson } = require("./common_module");
 
 const expectedMetadataKeys = [
   "mtb",

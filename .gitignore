@@ -11,7 +11,9 @@ style_ids_exported.csv
 style_base_v2_export.csv
 style_base_v2_import.json
 style_base_v2_edit.json
+style_base_v2_edit_old.json
 style_base_v2_import_edit.json
+style_base_v2_import_edit_old.json
 
 ~$*.xlsx
 
