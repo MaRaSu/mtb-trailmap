@@ -19,3 +19,5 @@ style_base_v2_import_edit_old.json
 
 node_modules
 .vscode
+style_base_v2_export.xlsx
+style_orig.json
