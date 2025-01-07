@@ -55,7 +55,7 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
     fs.createReadStream(csvPath)
       .pipe(
         csv({
-          separator: ",",
+          separator: csvDelimiter,
           mapHeaders: ({ header }) => header.replace(/"/g, "").trim(),
         })
       )

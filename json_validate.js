@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const csv = require("csv-parser");
 
 const { validateJson } = require("./common_module");
 
@@ -30,10 +29,6 @@ function readJSONFile(filePath) {
     console.error(`Error reading file from disk: ${error}`);
     process.exit(1);
   }
-}
-
-function logCharCodes(str) {
-  return str.split("").map((char) => char.charCodeAt(0));
 }
 
 // Main function to process the file
