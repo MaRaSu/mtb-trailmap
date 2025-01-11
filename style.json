@@ -2617,7 +2617,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -4620,7 +4620,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -4848,7 +4848,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -4961,7 +4961,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -5085,7 +5085,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -5145,7 +5145,7 @@
           "#75E009",
           ["2", "yes"],
           "#d7dc00",
-          "#FEB13E"
+          "#feb13e"
         ],
         "line-width": {
           "base": 1,
@@ -12609,8 +12609,11 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
+        [
+          "any",
+          ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
+          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+        ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -12620,7 +12623,20 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#0ac5a0",
+        "line-color": [
+          "case",
+          ["==", ["get", "grooming"], "backcountry"],
+          [
+            "match",
+            ["get", "mtb_winter"],
+            ["1"],
+            "#75E009",
+            ["2", "yes"],
+            "#d7dc00",
+            "#feb13e"
+          ],
+          "#0ac5a0"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
@@ -12653,7 +12669,6 @@
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -14193,7 +14208,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#FF4454",
           ["4"],
@@ -14415,7 +14430,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#FF4454",
           ["4"],
@@ -14525,7 +14540,7 @@
           "#75E009",
           ["2", "yes"],
           "#d7dc00",
-          "#FEB13E"
+          "#feb13e"
         ],
         "line-width": [
           "interpolate",
@@ -14630,7 +14645,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#ff4f5e",
           ["4"],
@@ -14689,7 +14704,7 @@
           ["1"],
           "#d7dc00",
           ["2"],
-          "#FEB13E",
+          "#feb13e",
           ["3"],
           "#FF4454",
           ["4"],
@@ -16172,8 +16187,11 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
+        [
+          "any",
+          ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
+          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+        ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -16183,7 +16201,20 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#0ac5a0",
+        "line-color": [
+          "case",
+          ["==", ["get", "grooming"], "backcountry"],
+          [
+            "match",
+            ["get", "mtb_winter"],
+            ["1"],
+            "#75E009",
+            ["2", "yes"],
+            "#d7dc00",
+            "#feb13e"
+          ],
+          "#0ac5a0"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
@@ -16216,7 +16247,6 @@
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],

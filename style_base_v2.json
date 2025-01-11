@@ -12816,8 +12816,11 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
+        [
+          "any",
+          ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
+          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+        ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -12827,7 +12830,20 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#0ac5a0",
+        "line-color": [
+          "case",
+          ["==", ["get", "grooming"], "backcountry"],
+          [
+            "match",
+            ["get", "mtb_winter"],
+            ["1"],
+            "#75E009",
+            ["2", "yes"],
+            "#d7dc00",
+            "#feb13e"
+          ],
+          "#0ac5a0"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
@@ -12861,7 +12877,6 @@
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -16427,6 +16442,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-piste-bicycle-case",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -16436,8 +16452,11 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
+        [
+          "any",
+          ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
+          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+        ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
@@ -16447,7 +16466,20 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#0ac5a0",
+        "line-color": [
+          "case",
+          ["==", ["get", "grooming"], "backcountry"],
+          [
+            "match",
+            ["get", "mtb_winter"],
+            ["1"],
+            "#75E009",
+            ["2", "yes"],
+            "#d7dc00",
+            "#feb13e"
+          ],
+          "#0ac5a0"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
@@ -16470,6 +16502,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-piste-bicycle-line",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -16480,7 +16513,6 @@
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         ["has", "grooming"],
-        ["!in", "grooming", "backcountry"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
