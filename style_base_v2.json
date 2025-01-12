@@ -18053,7 +18053,7 @@
       }
     },
     {
-      "id": "poi-small-(def-all-osm)",
+      "id": "poi-level_3-(def-all-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -18107,7 +18107,7 @@
       }
     },
     {
-      "id": "poi-medium-(def-all-osm)",
+      "id": "poi-level_2-(def-all-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -18162,7 +18162,7 @@
       }
     },
     {
-      "id": "poi-large-(def-all-osm)",
+      "id": "poi-level_1-(def-all-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
