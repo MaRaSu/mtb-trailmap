@@ -46,7 +46,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/finland-omt2.json"
+      "url": "https://tiles-osm-test.trailmap.fi/data/finland-omt2.json"
     },
     "maastovektorikartta": {
       "type": "vector",
@@ -2604,7 +2604,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -4606,7 +4606,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt"
       },
       "paint": {
@@ -4948,7 +4948,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -5135,7 +5135,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -5518,7 +5518,7 @@
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5856,7 +5856,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5920,7 +5920,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -5984,7 +5984,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -6235,7 +6235,7 @@
         ["!in", "width_cat", "d"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -7254,7 +7254,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -7357,7 +7357,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -7684,7 +7684,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -7787,7 +7787,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8035,7 +8035,7 @@
         ["==", "service", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8136,7 +8136,7 @@
         ["==", "service", "driveway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8538,7 +8538,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8649,7 +8649,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8688,7 +8688,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8853,7 +8853,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d28644",
@@ -8943,7 +8943,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d28644",
@@ -9062,7 +9062,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9166,7 +9166,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9292,7 +9292,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9398,7 +9398,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9686,7 +9686,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9842,7 +9842,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -9948,7 +9948,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -10029,7 +10029,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -10139,7 +10139,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -10219,7 +10219,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -10652,7 +10652,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fea",
@@ -10736,7 +10736,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffe16b",
@@ -10852,7 +10852,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -10959,7 +10959,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -11098,7 +11098,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -11194,7 +11194,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -12140,7 +12140,7 @@
         ["in", "mtb_winter", "no", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#FF003D",
@@ -12198,7 +12198,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -12293,7 +12293,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -12374,7 +12374,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -12488,7 +12488,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -12578,7 +12578,7 @@
             [18, 48]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#7200ff",
@@ -12612,7 +12612,7 @@
         [
           "any",
           ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
-          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+          ["has", "mtb_winter"]
         ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -12620,12 +12620,13 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "grooming"], "backcountry"],
+          ["has", "grooming"],
+          "#0ac5a0",
           [
             "match",
             ["get", "mtb_winter"],
@@ -12634,8 +12635,7 @@
             ["2", "yes"],
             "#d7dc00",
             "#feb13e"
-          ],
-          "#0ac5a0"
+          ]
         ],
         "line-width": {
           "base": 1,
@@ -12668,14 +12668,13 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -14195,7 +14194,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -14530,7 +14529,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -14691,7 +14690,7 @@
         ["==", "class", "track"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -16191,7 +16190,7 @@
         [
           "any",
           ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
-          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+          ["has", "mtb_winter"]
         ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -16199,12 +16198,13 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "grooming"], "backcountry"],
+          ["has", "grooming"],
+          "#0ac5a0",
           [
             "match",
             ["get", "mtb_winter"],
@@ -16213,8 +16213,7 @@
             ["2", "yes"],
             "#d7dc00",
             "#feb13e"
-          ],
-          "#0ac5a0"
+          ]
         ],
         "line-width": {
           "base": 1,
@@ -16255,7 +16254,7 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -16331,7 +16330,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -16386,7 +16385,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -16466,7 +16465,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -16536,7 +16535,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",

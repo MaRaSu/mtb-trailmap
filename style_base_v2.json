@@ -13177,11 +13177,12 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
+        ["in", "bridge", "yes", "1"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         [
           "any",
           ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
-          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+          ["has", "mtb_winter"]
         ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -13194,7 +13195,8 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "grooming"], "backcountry"],
+          ["has", "grooming"],
+          "#0ac5a0",
           [
             "match",
             ["get", "mtb_winter"],
@@ -13203,8 +13205,7 @@
             ["2", "yes"],
             "#d7dc00",
             "#feb13e"
-          ],
-          "#0ac5a0"
+          ]
         ],
         "line-width": {
           "base": 1,
@@ -16795,7 +16796,7 @@
       }
     },
     {
-      "id": "bridge_piste-bicycle-case-(wnt-all-osm)",
+      "id": "bridge_piste-trail_hike_fatbike-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -16818,7 +16819,7 @@
         [
           "any",
           ["all", ["has", "grooming"], ["!in", "grooming", "backcountry"]],
-          ["all", ["in", "grooming", "backcountry"], ["has", "mtb_winter"]]
+          ["has", "mtb_winter"]
         ],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
@@ -16831,7 +16832,8 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "grooming"], "backcountry"],
+          ["has", "grooming"],
+          "#0ac5a0",
           [
             "match",
             ["get", "mtb_winter"],
@@ -16840,8 +16842,7 @@
             ["2", "yes"],
             "#d7dc00",
             "#feb13e"
-          ],
-          "#0ac5a0"
+          ]
         ],
         "line-width": {
           "base": 1,
@@ -16856,7 +16857,7 @@
       }
     },
     {
-      "id": "bridge_piste-bicycle-line-(wnt-all-osm)",
+      "id": "bridge_piste-trail_hike_fatbike-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
