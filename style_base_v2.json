@@ -1248,7 +1248,7 @@
       }
     },
     {
-      "id": "water-lake-(def-all-osm)",
+      "id": "water-lake-(def-fin-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -1259,7 +1259,7 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "osm",
       "source-layer": "water",
@@ -1279,7 +1279,37 @@
       }
     },
     {
-      "id": "water-lake-(def-all-osm-hc)",
+      "id": "water-lake-(def-global-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:safe-water-lake": true,
+        "trailmap:id_legacy": "water-lake-osm",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "water",
+      "filter": [
+        "all",
+        ["==", "$type", "Polygon"],
+        ["in", "class", "river", "lake", "pond"],
+        ["!=", "intermittent", 1],
+        ["!=", "brunnel", "tunnel"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsl(210, 67%, 85%)"
+      }
+    },
+    {
+      "id": "water-lake-(def-fin-osm-hc)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -1290,11 +1320,41 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm-hc",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "osm",
       "source-layer": "water",
       "maxzoom": 13,
+      "filter": [
+        "all",
+        ["==", "$type", "Polygon"],
+        ["in", "class", "river", "lake", "pond"],
+        ["!=", "intermittent", 1],
+        ["!=", "brunnel", "tunnel"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "#8aa0b5"
+      }
+    },
+    {
+      "id": "water-lake-(def-global-osm-hc)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:safe-water-lake": true,
+        "trailmap:id_legacy": "water-lake-osm-hc",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "water",
       "filter": [
         "all",
         ["==", "$type", "Polygon"],
@@ -17360,7 +17420,7 @@
       }
     },
     {
-      "id": "building-area-(def-all-osm)",
+      "id": "building-area-(def-fin-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -17370,7 +17430,7 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "building-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "osm",
       "source-layer": "building",
@@ -17394,7 +17454,38 @@
       }
     },
     {
-      "id": "building-area-top-(def-all-osm)",
+      "id": "building-area-(def-global-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-osm",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#bbb9b7",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top-(def-fin-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -17404,7 +17495,7 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "building-top-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "osm",
       "source-layer": "building",
@@ -17422,6 +17513,44 @@
             [13.5, 1],
             [14, 1],
             [14.5, 0]
+          ]
+        },
+        "fill-outline-color": "#928e8a",
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top-(def-global-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-top-osm",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#bbb9b7",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
           ]
         },
         "fill-outline-color": "#928e8a",
