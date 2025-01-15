@@ -44,7 +44,7 @@ async function processFile(jsonEditedPath, jsonOriginalPath) {
   const newLayers = [];
   // Loop through each layer in the JSON content
   jsonOriginalContent.layers.forEach((layer) => {
-    // Find the corresponding layer in the original JSON content
+    // Find the corresponding layer in the edited JSON content
     const editedLayer = jsonEditedContent.layers.find((l) => l.id === layer.id);
 
     if (!editedLayer) {
