@@ -141,7 +141,8 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-mml-taajama",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple": 0.3
       },
       "source": "mml_topo",
       "source-layer": "maankaytto",
@@ -225,7 +226,8 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-commercial",
-        "trailmap:country": "all"
+        "trailmap:country": "all",
+        "trailmap:simple": 0.3
       },
       "source": "osm",
       "source-layer": "landuse",
@@ -253,7 +255,8 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-industrial",
-        "trailmap:country": "all"
+        "trailmap:country": "all",
+        "trailmap:simple": 0.3
       },
       "source": "osm",
       "source-layer": "landuse",
@@ -896,7 +899,8 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-field",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple": 0.6
       },
       "source": "mml_topo",
       "source-layer": "maankaytto",
@@ -931,7 +935,8 @@
         "trailmap:mtb_winter": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
-        "trailmap:country": "global"
+        "trailmap:country": "global",
+        "trailmap:simple": 0.6
       },
       "source": "osm",
       "source-layer": "landcover",
@@ -1269,7 +1274,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-ocean": true,
         "trailmap:id_legacy": "water-ocean-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "all",
+        "trailmap:simple": 1
       },
       "source": "osm",
       "source-layer": "water",
@@ -1293,7 +1299,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-ocean": true,
         "trailmap:id_legacy": "water-ocean-osm-hc",
-        "trailmap:country": "all"
+        "trailmap:country": "all",
+        "trailmap:simple_black": 0.35
       },
       "source": "osm",
       "source-layer": "water",
@@ -1317,7 +1324,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple": 1
       },
       "source": "osm",
       "source-layer": "water",
@@ -1348,7 +1356,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm",
-        "trailmap:country": "global"
+        "trailmap:country": "global",
+        "trailmap:simple": 1
       },
       "source": "osm",
       "source-layer": "water",
@@ -1378,7 +1387,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm-hc",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple_black": 0.35
       },
       "source": "osm",
       "source-layer": "water",
@@ -1409,7 +1419,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-lake-osm-hc",
-        "trailmap:country": "global"
+        "trailmap:country": "global",
+        "trailmap:simple_black": 0.35
       },
       "source": "osm",
       "source-layer": "water",
@@ -1439,7 +1450,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": false,
         "trailmap:id_legacy": "water-lake-mml",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple": 1
       },
       "source": "mml_topo",
       "source-layer": "vesisto_alue",
@@ -1467,7 +1479,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": false,
         "trailmap:id_legacy": "water-lake-mml-hc",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple_black": 0.35
       },
       "source": "mml_topo",
       "source-layer": "vesisto_alue",
@@ -1495,7 +1508,8 @@
         "trailmap:ways_only": false,
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-intermittent-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "all",
+        "trailmap:simple": 1
       },
       "source": "osm",
       "source-layer": "water",
@@ -1521,7 +1535,8 @@
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-intermittent-osm-hc",
         "trailmap:country": "all",
-        "trailmap:group": "water-end"
+        "trailmap:group": "water-end",
+        "trailmap:simple_black": 0.35
       },
       "source": "osm",
       "source-layer": "water",
@@ -1805,7 +1820,8 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-wetland",
-        "trailmap:country": "fin"
+        "trailmap:country": "fin",
+        "trailmap:simple": 0.6
       },
       "source": "mml_topo",
       "source-layer": "maasto_alue",
@@ -1845,7 +1861,8 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
-        "trailmap:country": "global"
+        "trailmap:country": "global",
+        "trailmap:simple": 0.6
       },
       "source": "osm",
       "source-layer": "landcover",
