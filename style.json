@@ -46,7 +46,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles-osm-test.trailmap.fi/data/finland-omt2.json"
+      "url": "https://tiles.trailmap.fi/data/finland-omt2.json"
     },
     "maastovektorikartta": {
       "type": "vector",
@@ -2546,6 +2546,8 @@
         ["==", "brunnel", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -2604,7 +2606,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -4603,10 +4605,12 @@
         ["!in", "mtb_scale", "-1"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt"
       },
       "paint": {
@@ -4718,6 +4722,8 @@
         ["!in", "mtb_scale", "-1"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         ["!=", "noexit", 1]
       ],
       "layout": {
@@ -4832,6 +4838,8 @@
         ["!in", "mtb_scale", "-1"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         ["!=", "noexit", 1]
       ],
       "layout": {
@@ -4948,7 +4956,7 @@
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -5132,10 +5140,12 @@
         ["!in", "mtb_winter", "-1", "no"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         ["!=", "noexit", 1]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -5181,6 +5191,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         ["!=", "noexit", 1],
         ["!has", "mtb_scale"]
       ],
@@ -5415,6 +5427,8 @@
         ["==", "class", "path"],
         ["!has", "mtb_scale"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -5463,6 +5477,8 @@
         ["in", "class", "path", "footway"],
         ["!has", "mtb_scale"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5506,6 +5522,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5518,7 +5536,7 @@
         ["==", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5617,6 +5635,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5728,6 +5748,8 @@
         ["!in", "tunnel"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -5843,6 +5865,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5856,7 +5880,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5907,6 +5931,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5920,7 +5946,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -5971,6 +5997,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -5984,7 +6012,7 @@
         ["!in", "trail_visibility", "bad"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#000000",
@@ -6035,6 +6063,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!has", "bicycle"],
@@ -6129,6 +6159,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway", "steps"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -6227,6 +6259,8 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["==", "class", "path"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -6235,7 +6269,7 @@
         ["!in", "width_cat", "d"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -7254,7 +7288,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -7357,7 +7391,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -7684,7 +7718,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -7787,7 +7821,7 @@
         ["!in", "service", "parking_aisle", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8035,7 +8069,7 @@
         ["==", "service", "driveway"]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8136,7 +8170,7 @@
         ["==", "service", "driveway"]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -8538,7 +8572,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8649,7 +8683,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8688,7 +8722,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#c26d21",
@@ -8853,7 +8887,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d28644",
@@ -8943,7 +8977,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#d28644",
@@ -9062,7 +9096,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9166,7 +9200,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9292,7 +9326,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9398,7 +9432,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -9686,7 +9720,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -9842,7 +9876,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -9948,7 +9982,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -10029,7 +10063,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -10139,7 +10173,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -10219,7 +10253,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -10652,7 +10686,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fea",
@@ -10736,7 +10770,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffe16b",
@@ -10852,7 +10886,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -10959,7 +10993,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -11098,7 +11132,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -11194,7 +11228,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -11237,6 +11271,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
+        ["!in", "class", "path", "track"],
         ["==", "cycleway_left", "yes"]
       ],
       "layout": {
@@ -11290,6 +11325,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
+        ["!in", "class", "path", "track"],
         ["==", "cycleway_left", "yes"]
       ],
       "layout": {
@@ -11343,6 +11379,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
+        ["!in", "class", "path", "track"],
         ["==", "cycleway_right", "yes"]
       ],
       "layout": {
@@ -11396,6 +11433,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
+        ["!in", "class", "path", "track"],
         ["==", "cycleway_right", "yes"]
       ],
       "layout": {
@@ -11456,6 +11494,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -11524,6 +11568,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -11594,6 +11644,12 @@
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
             ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
+            ["!has", "mtb_scale"]
           ]
         ],
         ["!has", "mtb_scale"],
@@ -11661,6 +11717,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -11737,6 +11799,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -11815,6 +11883,12 @@
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
             ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
+            ["!has", "mtb_scale"]
           ]
         ],
         [
@@ -11890,6 +11964,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -11975,6 +12055,12 @@
             "all",
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -12062,6 +12148,12 @@
             ["==", "subclass", "footway"],
             ["==", "bicycle", "yes"],
             ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
+            ["!has", "mtb_scale"]
           ]
         ],
         [
@@ -12140,7 +12232,7 @@
         ["in", "mtb_winter", "no", "-1"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#FF003D",
@@ -12198,7 +12290,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -12293,7 +12385,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -12374,7 +12466,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -12488,7 +12580,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -12578,7 +12670,7 @@
             [18, 48]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#7200ff",
@@ -12620,7 +12712,7 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -12674,7 +12766,7 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -14194,7 +14286,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -14529,7 +14621,7 @@
         ["!=", "subclass", "cycleway"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -14690,7 +14782,7 @@
         ["==", "class", "track"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -14748,6 +14840,8 @@
         ["==", "class", "path"],
         ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -14812,6 +14906,8 @@
         ["==", "class", "path"],
         ["!in", "width_cat", "d"],
         ["!in", "subclass", "cycleway"],
+        ["!in", "cycleway_left", "yes"],
+        ["!in", "cycleway_right", "yes"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -16198,7 +16294,7 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -16254,7 +16350,7 @@
         ["!in", "bicycle_winter", "no"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#000000",
@@ -16330,7 +16426,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -16385,7 +16481,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -16465,7 +16561,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7200ff",
@@ -16535,7 +16631,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffffff",
