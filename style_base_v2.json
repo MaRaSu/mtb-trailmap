@@ -13472,7 +13472,6 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "bridge", "yes", "1"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
         [
           "any",
@@ -13534,7 +13533,6 @@
         "all",
         ["==", "$type", "LineString"],
         ["in", "class", "hike", "fatbike", "fatbike;hike", "hike;fatbike"],
-        ["has", "grooming"],
         ["!in", "bicycle", "no"],
         ["!in", "mtb_winter", "no"],
         ["!in", "mtb_winter", "-1"],
