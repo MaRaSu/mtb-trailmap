@@ -6257,15 +6257,19 @@
         "all",
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
-        ["==", "class", "path"],
-        ["!in", "subclass", "cycleway"],
+        ["in", "class", "path", "footway"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
           "any",
-          ["!=", "subclass", "footway"],
-          ["all", ["==", "subclass", "footway"], ["has", "mtb_scale"]]
+          ["!has", "bicycle"],
+          ["==", "bicycle", "yes"],
+          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
+          ["has", "mtb_scale"],
+          ["==", "subclass", "bridleway"]
         ],
+        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!in", "width_cat", "d"]
       ],
       "layout": {
