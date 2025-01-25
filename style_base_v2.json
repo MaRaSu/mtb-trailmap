@@ -101,6 +101,28 @@
       }
     },
     {
+      "id": "background-satellite-lowzoom-(def-global-maptiler_ortho)",
+      "type": "raster",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global",
+        "trailmap:group": "background"
+      },
+      "maxzoom": 7,
+      "source": "maptiler_ortho",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.5, 7, 0.1]
+      }
+    },
+    {
       "id": "landcover-glacier-(def-all-osm)",
       "type": "fill",
       "metadata": {
@@ -2784,6 +2806,7 @@
         "visibility": "visible"
       },
       "paint": {
+        "raster-brightness-min": 0.45,
         "raster-opacity": {
           "stops": [
             [8, 0.3],
