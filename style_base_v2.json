@@ -113,8 +113,8 @@
         "trailmap:country": "global",
         "trailmap:group": "background"
       },
-      "maxzoom": 7,
       "source": "maptiler_ortho",
+      "maxzoom": 7,
       "layout": {
         "visibility": "visible"
       },
@@ -1272,16 +1272,59 @@
       },
       "paint": {
         "line-color": "#916f4c",
-        "line-opacity": 0.3,
+        "line-opacity": 0.35,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
           ["zoom"],
           6,
-          2,
+          ["case", ["==", ["get", "nth_line"], 10], 1.5, 0.7],
           20,
-          14
+          ["case", ["==", ["get", "nth_line"], 10], 10, 4.5]
         ]
+      }
+    },
+    {
+      "id": "maptiler_contours-label-n100-(def-global-maptiler_contours)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": "global"
+      },
+      "source": "maptiler_contours",
+      "source-layer": "contour",
+      "minzoom": 13,
+      "maxzoom": 20,
+      "filter": ["==", "nth_line", 10],
+      "layout": {
+        "visibility": "visible",
+        "text-field": ["to-string", ["get", "height"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          12,
+          8,
+          16,
+          18
+        ],
+        "symbol-placement": "line",
+        "text-allow-overlap": true,
+        "text-padding": 2,
+        "text-anchor": "center"
+      },
+      "paint": {
+        "text-color": "#916f4c",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1,
+        "text-opacity": 1
       }
     },
     {
@@ -2806,13 +2849,13 @@
         "visibility": "visible"
       },
       "paint": {
-        "raster-brightness-min": 0.45,
+        "raster-brightness-min": 0.6,
         "raster-opacity": {
           "stops": [
             [8, 0.3],
-            [11, 0.5],
-            [13, 0.85],
-            [15, 1]
+            [11, 0.45],
+            [13, 0.55],
+            [15, 0.65]
           ]
         }
       }
