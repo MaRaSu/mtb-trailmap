@@ -4222,7 +4222,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["in", "class", "path", "track", "service", "minor"],
+        ["in", "class", "path", "track", "service", "busway", "minor"],
         ["==", "access", "no"],
         ["all", ["!=", "bicycle", "yes"], ["!=", "foot", "yes"]]
       ],
@@ -8397,6 +8397,355 @@
         }
       }
     },
+
+    {
+      "id": "hw-busway-case",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#634507",
+          "#404040"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-case-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["==", ["get", "surface"], "unpaved"],
+          "#634507",
+          "#000000"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1.2],
+            [12, 2],
+            [14, 4],
+            [16, 6],
+            [20, 16]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "hw-busway-case-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#545454",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-case-cat_ab-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"],
+        [
+          "in",
+          "surface_raw",
+          "asphalt",
+          "chipseal",
+          "concrete",
+          "concrete:lanes",
+          "concrete:plates",
+          "paved",
+          "paving_stones",
+          "bricks",
+          "cobblestone",
+          "compacted",
+          "fine_gravel",
+          "grass_paver",
+          "metal",
+          "metal_grid",
+          "rubber",
+          "unhewn_cobblestone",
+          "wood"
+        ]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "surface_raw"],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood"
+          ],
+          "#634507",
+          "#404040"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-case-cat_c-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"],
+        [
+          "any",
+          [
+            "in",
+            "surface_raw",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips"
+          ],
+          ["!has", "surface_raw"]
+        ]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#634507",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-dasharray": [3, 0.6],
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-case-cat_d-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"],
+        [
+          "in",
+          "surface_raw",
+          "mud",
+          "rock",
+          "sand",
+          "shells",
+          "stepping_stones"
+        ]
+      ],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#634507",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-dasharray": [0.8, 0.4],
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+
     {
       "id": "hw-raceway-case",
       "type": "line",
@@ -9961,6 +10310,269 @@
         }
       }
     },
+
+    {
+      "id": "hw-busway-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": true,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
+          "#FFFFFF"
+        ],
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 0.6],
+            [20, 6]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-line-hc",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#EDDFCA",
+            "#FFFFFF"
+          ],
+          "#FFFFFF"
+        ],
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [12, 0.6],
+            [20, 6]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-line-wnt",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 0.6],
+            [20, 6]
+          ]
+        }
+      }
+    },
+    {
+      "id": "hw-busway-line-gr",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1444849345966.4436",
+        "trailmap:mtb": false,
+        "trailmap:mtb_high_contrast": false,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true
+      },
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "busway"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          ["has", "surface_raw"],
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "asphalt",
+              "chipseal",
+              "concrete",
+              "concrete:lanes",
+              "concrete:plates",
+              "paved",
+              "paving_stones"
+            ],
+            "#FFFFFF",
+            "#EDDFCA"
+          ],
+          "#EDDFCA"
+        ],
+        "line-opacity": {
+          "stops": [
+            [13, 0],
+            [14, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [14, 0.6],
+            [20, 6]
+          ]
+        }
+      }
+    },
+
     {
       "id": "hw-service-line",
       "type": "line",
