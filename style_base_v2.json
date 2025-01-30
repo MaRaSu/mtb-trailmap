@@ -2880,6 +2880,7 @@
         "visibility": "visible"
       },
       "paint": {
+        "raster-brightness-min": 0.3,
         "raster-opacity": {
           "stops": [
             [3, 0.3],
