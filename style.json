@@ -1916,7 +1916,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#a0b9d2",
+        "line-color": "hsl(210, 67%, 85%)",
         "line-width": {
           "base": 1.3,
           "stops": [
