@@ -3381,6 +3381,112 @@
         }
       }
     },
+
+    {
+      "id": "tunnel-footway-line-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "tunnel-footway-line",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "path"],
+        ["any", ["in", "subclass", "footway"], ["==", "bicycle", "no"]],
+        ["!has", "mtb_scale"],
+        ["!=", "bicycle", "yes"],
+        ["!=", "foot", "no"]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 0.7],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 0.8],
+            [14, 1.5],
+            [16, 2.5],
+            [18, 4]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12,
+          ["case", ["has", "noexit"], 0.4, 0.5]
+        ]
+      }
+    },
+    {
+      "id": "tunnel-footway-line-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "tunnel-footway-line-hc",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "path"],
+        ["any", ["in", "subclass", "footway"], ["==", "bicycle", "no"]],
+        ["!has", "mtb_scale"],
+        ["!=", "bicycle", "yes"],
+        ["!=", "foot", "no"]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#A43820",
+        "line-dasharray": [1.5, 0.7],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 0.9],
+            [14, 2.5],
+            [16, 4],
+            [18, 6]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12,
+          ["case", ["has", "noexit"], 0.4, 0.5]
+        ]
+      }
+    },
+
     {
       "id": "tunnel-motorway_link-line-(def-all-osm)",
       "type": "line",
