@@ -13061,6 +13061,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13135,6 +13136,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13210,6 +13212,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13284,6 +13287,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13366,6 +13370,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13449,6 +13454,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13531,6 +13537,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13622,6 +13629,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
@@ -13714,6 +13722,7 @@
             "all",
             ["==", "cycleway_left", "yes"],
             ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
             ["!has", "mtb_scale"]
           ]
         ],
