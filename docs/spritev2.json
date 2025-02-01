@@ -1147,6 +1147,27 @@
     "x": 160,
     "y": 448
   },
+  "tm_parking-noaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 96,
+    "y": 480
+  },
+  "tm_parking": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 128,
+    "y": 480
+  },
+  "tm_parking-yesaccess": {
+    "height": 32,
+    "pixelRatio": 1,
+    "width": 32,
+    "x": 160,
+    "y": 480
+  },
   "lipas_viewpoint": {
     "height": 32,
     "pixelRatio": 1,
