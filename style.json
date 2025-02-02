@@ -18279,7 +18279,7 @@
         ["<=", "rank", 24],
         [">=", "rank", 15],
         ["any", ["!has", "level"], ["==", "level", 0]],
-        ["!in", "class", "firepit", "gate"]
+        ["!in", "class", "firepit", "gate", "parking"]
       ],
       "layout": {
         "icon-image": "{class}_11",
@@ -18911,13 +18911,32 @@
         "visibility": "visible",
         "text-allow-overlap": true,
         "text-field": "P",
-        "text-font": ["Noto Sans Bold"],
+        "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 8],
-            [16, 12]
+            [13, 8],
+            [14, 10],
+            [15, 13],
+            [16, 16],
+            [18, 26]
+          ]
+        },
+        "icon-image": [
+          "match",
+          ["get", "access"],
+          ["yes"],
+          "tm_parking-yesaccess",
+          "blank"
+        ],
+        "icon-size": {
+          "stops": [
+            [13, 0.3],
+            [14, 0.4],
+            [15, 0.5],
+            [16, 0.6],
+            [18, 1]
           ]
         }
       },
@@ -18928,20 +18947,26 @@
           ["no"],
           "#FF003D",
           ["yes"],
-          "#418000",
+          "#ffffff",
           "#000000"
         ],
-        "text-halo-width": 1,
+        "text-halo-width": ["match", ["get", "access"], ["yes"], 0, 1],
         "text-halo-color": "#ffffff",
         "text-opacity": [
           "interpolate",
           ["linear"],
           ["zoom"],
-          13,
+          12.5,
           0,
-          14,
-          ["match", ["get", "access"], ["no"], 0.5, ["yes"], 1, 0.8]
-        ]
+          13,
+          ["match", ["get", "access"], ["yes"], 1, ["no"], 0.5, 0.75]
+        ],
+        "icon-opacity": {
+          "stops": [
+            [12.5, 0],
+            [13, 1]
+          ]
+        }
       }
     },
     {
