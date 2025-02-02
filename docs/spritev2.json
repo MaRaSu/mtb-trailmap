@@ -1171,14 +1171,14 @@
   "tm_yesfee": {
     "height": 32,
     "pixelRatio": 1,
-    "width": 32,
-    "x": 192,
+    "width": 64,
+    "x": 160,
     "y": 480
   },
   "tm_nofee": {
     "height": 32,
     "pixelRatio": 1,
-    "width": 32,
+    "width": 64,
     "x": 224,
     "y": 480
   },
