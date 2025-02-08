@@ -1171,16 +1171,16 @@
   "tm_yesfee": {
     "height": 32,
     "pixelRatio": 1,
-    "width": 64,
+    "width": 32,
     "x": 160,
-    "y": 480
+    "y": 512
   },
   "tm_nofee": {
     "height": 32,
     "pixelRatio": 1,
-    "width": 64,
+    "width": 32,
     "x": 224,
-    "y": 480
+    "y": 544
   },
   "lipas_viewpoint": {
     "height": 32,
