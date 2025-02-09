@@ -20365,7 +20365,7 @@
         "icon-ignore-placement": true,
         "text-allow-overlap": false,
         "text-anchor": "top",
-        "text-field": "{name}\n{ele} m",
+        "text-field": ["case", ["has", "name"], ["concat", ["get", "name"], "\n", ["get", "ele"], " m"], ["concat", ["get", "ele"], " m"]],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 9,
         "text-offset": [0, 0.6],
