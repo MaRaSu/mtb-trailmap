@@ -19406,7 +19406,6 @@
         [
           "in",
           "subclass",
-          "peak",
           "memorial",
           "monument",
           "toilet",
@@ -19419,8 +19418,6 @@
         "icon-image": [
           "match",
           ["get", "subclass"],
-          ["peak"],
-          "peak_11",
           ["memorial", "monument"],
           "monument_11",
           ["toilet", "toilets"],
@@ -19981,7 +19978,8 @@
             [16, 0.6],
             [18, 1]
           ]
-        }
+        },
+        "icon-allow-overlap": true
       },
       "paint": {
         "text-color": [
@@ -21420,6 +21418,61 @@
           "stops": [
             [14.5, 0],
             [15, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-mountain_peak-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "poi-mountain_peak",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "mountain_peak",
+      "minzoom": 7,
+      "layout": {
+        "icon-image": "peak_11",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "text-allow-overlap": false,
+        "text-anchor": "top",
+        "text-field": "{name}\n{ele} m",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 9,
+        "text-offset": [0, 0.6],
+        "text-padding": 2,
+        "text-size": {
+          "stops": [
+            [15, 9],
+            [16, 13],
+            [18, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [7, 0],
+            [7.5, 1]
+          ]
+        },
+        "text-color": "#212121",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1,
+        "text-opacity": {
+          "stops": [
+            [7.0, 0],
+            [7.5, 1]
           ]
         }
       }
