@@ -19901,21 +19901,28 @@
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-font": ["Noto Sans Regular"],
-        "text-max-width": 8,
         "text-size": {
           "base": 1.2,
           "stops": [
+            [8, 10],
             [10, 14],
-            [15, 24]
+            [15, 20]
           ]
         },
+        "text-max-width": 8,
         "text-allow-overlap": true,
         "visibility": "visible"
       },
       "paint": {
         "text-color": "#333",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [7.5, 0],
+            [8, 1]
+          ]
+        }
       }
     },
     {
@@ -19950,7 +19957,13 @@
       "paint": {
         "text-color": "#333",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [5.5, 0],
+            [6, 1]
+          ]
+        }
       }
     },
     {
@@ -19979,6 +19992,7 @@
         "text-size": {
           "base": 1.2,
           "stops": [
+            [5, 12],
             [7, 14],
             [11, 24]
           ]
@@ -19987,9 +20001,21 @@
         "visibility": "visible"
       },
       "paint": {
+        "icon-opacity": {
+          "stops": [
+            [4, 0],
+            [4.5, 1]
+          ]
+        },
         "text-color": "#333",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [4, 0],
+            [4.5, 1]
+          ]
+        }
       }
     },
     {
@@ -20052,6 +20078,7 @@
         "text-size": {
           "base": 1.2,
           "stops": [
+            [6, 8],
             [12, 10],
             [15, 14]
           ]
@@ -20062,7 +20089,15 @@
       "paint": {
         "text-color": "#633",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [4.5, 0],
+            [5, 1],
+            [10.5, 1],
+            [11, 0]
+          ]
+        }
       }
     },
     {
@@ -20365,7 +20400,12 @@
         "icon-ignore-placement": true,
         "text-allow-overlap": false,
         "text-anchor": "top",
-        "text-field": ["case", ["has", "name"], ["concat", ["get", "name"], "\n", ["get", "ele"], " m"], ["concat", ["get", "ele"], " m"]],
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["concat", ["get", "name"], "\n", ["get", "ele"], " m"],
+          ["concat", ["get", "ele"], " m"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 9,
         "text-offset": [0, 0.6],
