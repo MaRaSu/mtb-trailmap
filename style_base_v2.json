@@ -22050,7 +22050,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-retkeily",
+        "trailmap:group": "poi-lipas-hiking",
         "trailmap:id_legacy": "POI-LIPAS-retkeily-circles",
         "trailmap:country": "fin"
       },
@@ -22087,7 +22087,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-retkeily",
+        "trailmap:group": "poi-lipas-hiking",
         "trailmap:id_legacy": "POI-LIPAS-retkeily-icons",
         "trailmap:country": "fin"
       },
@@ -22147,7 +22147,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-retkeily",
+        "trailmap:group": "poi-lipas-hiking",
         "trailmap:id_legacy": "POI-LIPAS-retkeily-labels",
         "trailmap:country": "fin"
       },
@@ -22208,7 +22208,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-harrastus",
+        "trailmap:group": "poi-lipas-sport",
         "trailmap:id_legacy": "POI-LIPAS-harrastus-circles",
         "trailmap:country": "fin"
       },
@@ -22245,7 +22245,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-harrastus",
+        "trailmap:group": "poi-lipas-sport",
         "trailmap:id_legacy": "POI-LIPAS-harrastus-icons",
         "trailmap:country": "fin"
       },
@@ -22299,7 +22299,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-lipas-harrastus",
+        "trailmap:group": "poi-lipas-sport",
         "trailmap:id_legacy": "POI-LIPAS-harrastus-labels",
         "trailmap:country": "fin"
       },
@@ -22360,7 +22360,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-nahtavyys",
+        "trailmap:group": "poi-osm-attraction",
         "trailmap:id_legacy": "POI-OSM-nahtavyys-circles",
         "trailmap:country": "all"
       },
@@ -22409,7 +22409,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-nahtavyys",
+        "trailmap:group": "poi-osm-attraction",
         "trailmap:id_legacy": "POI-OSM-nahtavyys-icons",
         "trailmap:country": "all"
       },
@@ -22459,7 +22459,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-nahtavyys",
+        "trailmap:group": "poi-osm-attraction",
         "trailmap:id_legacy": "POI-OSM-nahtavyys-labels",
         "trailmap:country": "all"
       },
@@ -22532,7 +22532,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-majoitus",
+        "trailmap:group": "poi-osm-lodging",
         "trailmap:id_legacy": "POI-OSM-majoitus-circles",
         "trailmap:country": "all"
       },
@@ -22582,7 +22582,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-majoitus",
+        "trailmap:group": "poi-osm-lodging",
         "trailmap:id_legacy": "POI-OSM-majoitus-icons",
         "trailmap:country": "all"
       },
@@ -22633,7 +22633,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-majoitus",
+        "trailmap:group": "poi-osm-lodging",
         "trailmap:id_legacy": "POI-OSM-majoitus-labels",
         "trailmap:country": "all"
       },
@@ -22704,7 +22704,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-tauko",
+        "trailmap:group": "poi-osm-rest",
         "trailmap:id_legacy": "POI-OSM-tauko-circles",
         "trailmap:country": "all"
       },
@@ -22760,7 +22760,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-tauko",
+        "trailmap:group": "poi-osm-rest",
         "trailmap:id_legacy": "POI-OSM-tauko-icons",
         "trailmap:country": "all"
       },
@@ -22817,7 +22817,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-tauko",
+        "trailmap:group": "poi-osm-rest",
         "trailmap:id_legacy": "POI-OSM-tauko-labels",
         "trailmap:country": "all"
       },
@@ -22894,7 +22894,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-huolto",
+        "trailmap:group": "poi-osm-service",
         "trailmap:id_legacy": "POI-OSM-huolto-circles",
         "trailmap:country": "all"
       },
@@ -22956,7 +22956,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-huolto",
+        "trailmap:group": "poi-osm-service",
         "trailmap:id_legacy": "POI-OSM-huolto-icons",
         "trailmap:country": "all"
       },
@@ -23019,7 +23019,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-huolto",
+        "trailmap:group": "poi-osm-service",
         "trailmap:id_legacy": "POI-OSM-huolto-labels",
         "trailmap:country": "all"
       },
@@ -23102,7 +23102,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-liikenne-circles",
         "trailmap:country": "all"
       },
@@ -23161,7 +23161,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-liikenne-icons",
         "trailmap:country": "all"
       },
@@ -23231,7 +23231,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-liikenne-labels",
         "trailmap:country": "all"
       },
@@ -23305,7 +23305,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-autopysakointi-circles",
         "trailmap:country": "all"
       },
@@ -23379,7 +23379,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-autopysakointi-icons",
         "trailmap:country": "all"
       },
@@ -23442,7 +23442,7 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:group": "poi-osm-liikenne",
+        "trailmap:group": "poi-osm-transit",
         "trailmap:id_legacy": "POI-OSM-autopysakointi-labels",
         "trailmap:country": "all"
       },
