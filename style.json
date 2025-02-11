@@ -20394,6 +20394,7 @@
       "source": "openmaptiles",
       "source-layer": "mountain_peak",
       "minzoom": 7,
+      "filter": ["!in", "class", "cliff"],
       "layout": {
         "icon-image": "peak_11",
         "icon-allow-overlap": true,
