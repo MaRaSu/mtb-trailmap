@@ -476,7 +476,7 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-quarry-mml",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "mml_topo",
       "source-layer": "maankaytto",
@@ -524,7 +524,7 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-storage",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "mml_topo",
       "source-layer": "maankaytto",
@@ -18800,7 +18800,7 @@
         "trailmap:ways_only": true,
         "trailmap:group": "cadastral",
         "trailmap:id_legacy": "cadastral-boundary",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "mml_cadastre",
       "source-layer": "KiinteistorajanSijaintitiedot",
@@ -18827,7 +18827,7 @@
         "trailmap:ways_only": true,
         "trailmap:group": "cadastral",
         "trailmap:id_legacy": "cadastral-id",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "mml_cadastre",
       "source-layer": "KiinteistotunnuksenSijaintitiedot",
