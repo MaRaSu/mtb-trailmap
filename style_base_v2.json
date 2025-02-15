@@ -12,7 +12,7 @@
   "sources": {
     "osm": {
       "type": "vector",
-      "url": "https://tiles-test.trailmap.fi/data/finland-omt.json"
+      "url": "https://tiles.trailmap.fi/data/finland-omt.json"
     },
     "mml_topo": {
       "type": "vector",
