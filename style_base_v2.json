@@ -12,7 +12,7 @@
   "sources": {
     "osm": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/europe-omt.json"
+      "url": "https://tiles-test.trailmap.fi/data/finland-omt.json"
     },
     "mml_topo": {
       "type": "vector",
@@ -20537,7 +20537,7 @@
             [17, 20]
           ]
         },
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -20710,7 +20710,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -20862,7 +20862,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -20947,6 +20947,435 @@
         }
       }
     },
+
+    {
+      "id": "poi-small-(def-global-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": [
+        "all",
+        ["has", "name"],
+        [
+          "in",
+          "subclass",
+          "forest",
+          "meadow",
+          "scrub",
+          "nature_reserve",
+          "wetland",
+          "farmland",
+          "square",
+          "border_control"
+        ]
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [11, 8],
+            [16, 16],
+            [17, 20]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "subclass"],
+          ["forest", "meadow", "scrub", "nature_reserve"],
+          "#414b2c",
+          ["wetland"],
+          "#2c3d4d",
+          ["square"],
+          "#5b3b1f",
+          ["farmland"],
+          "#5b561f",
+          ["border_control"],
+          "#5b1f1f",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "poi-small-(def-global-osm-hc)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": [
+        "all",
+        ["has", "name"],
+        [
+          "in",
+          "subclass",
+          "forest",
+          "meadow",
+          "scrub",
+          "nature_reserve",
+          "wetland",
+          "farmland",
+          "square",
+          "border_control"
+        ]
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [11, 10],
+            [16, 20],
+            [17, 26]
+          ]
+        },
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 2,
+        "text-opacity": {
+          "base": 1,
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "poi-medium-(def-global-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": [
+        "all",
+        ["has", "name"],
+        [
+          "in",
+          "subclass",
+          "archipelago",
+          "island",
+          "peninsula",
+          "isthmus",
+          "hills",
+          "hill",
+          "protected_area",
+          "beach",
+          "sea",
+          "lake",
+          "pond",
+          "strait",
+          "bay",
+          "basin",
+          "military"
+        ]
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 9],
+            [16, 18],
+            [17, 22]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "subclass"],
+          [
+            "archipelago",
+            "island",
+            "peninsula",
+            "isthmus",
+            "hills",
+            "hill",
+            "protected_area"
+          ],
+          "#414b2c",
+          ["beach", "sea", "lake", "pond", "strait", "bay", "basin"],
+          "#2c3d4d",
+          ["military"],
+          "#5b1f1f",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.5
+      }
+    },
+
+    {
+      "id": "poi-medium-(def-global-osm-hc)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": [
+        "all",
+        ["has", "name"],
+        [
+          "in",
+          "subclass",
+          "archipelago",
+          "island",
+          "peninsula",
+          "isthmus",
+          "hills",
+          "hill",
+          "protected_area",
+          "beach",
+          "sea",
+          "lake",
+          "pond",
+          "strait",
+          "bay",
+          "basin",
+          "military"
+        ]
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [12, 10],
+            [16, 24],
+            [17, 36]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [12, 1.2],
+            [16, 2],
+            [17, 3]
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "poi-large-(def-global-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": ["all", ["has", "name"], ["in", "subclass", "national_park"]],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [10, 10],
+            [12, 11],
+            [16, 20]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          ["get", "subclass"],
+          ["national_park"],
+          "#3c240e",
+          "#df00e7"
+        ],
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1.5
+      }
+    },
+
+    {
+      "id": "poi-large-(def-global-osm-hc)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "filter": ["all", ["has", "name"], ["in", "subclass", "national_park"]],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": false,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [10, 11],
+            [12, 12],
+            [14, 16],
+            [16, 32]
+          ]
+        },
+        "text-transform": "uppercase",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [12, 1],
+            [16, 2],
+            [17, 3]
+          ]
+        }
+      }
+    },
+
     {
       "id": "place-town-(def-all-osm)",
       "type": "symbol",
