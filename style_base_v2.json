@@ -20489,6 +20489,7 @@
       },
       "source": "mml_topo",
       "source-layer": "nimisto",
+      "minzoom": 11,
       "filter": [
         "in",
         "lajikoodi",
@@ -20583,6 +20584,7 @@
       },
       "source": "mml_topo",
       "source-layer": "nimisto",
+      "minzoom": 11,
       "filter": [
         "in",
         "lajikoodi",
@@ -20661,6 +20663,7 @@
       },
       "source": "mml_topo",
       "source-layer": "nimisto",
+      "minzoom": 10,
       "filter": [
         "in",
         "lajikoodi",
@@ -20727,7 +20730,13 @@
           "#df00e7"
         ],
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.5
+        "text-halo-width": 1.5,
+        "text-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
       }
     },
     {
@@ -20745,6 +20754,7 @@
       },
       "source": "mml_topo",
       "source-layer": "nimisto",
+      "minzoom": 10,
       "filter": [
         "in",
         "lajikoodi",
@@ -20805,6 +20815,12 @@
             [12, 1.2],
             [16, 2],
             [17, 3]
+          ]
+        },
+        "text-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
           ]
         }
       }
@@ -20947,7 +20963,6 @@
         }
       }
     },
-
     {
       "id": "poi-small-(def-global-osm)",
       "type": "symbol",
@@ -20962,6 +20977,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["has", "name"],
@@ -21030,7 +21046,6 @@
         }
       }
     },
-
     {
       "id": "poi-small-(def-global-osm-hc)",
       "type": "symbol",
@@ -21045,6 +21060,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
+      "minzoom": 11,
       "filter": [
         "all",
         ["has", "name"],
@@ -21088,7 +21104,6 @@
       },
       "paint": {
         "text-color": "#000000",
-
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 2,
         "text-opacity": {
@@ -21100,7 +21115,6 @@
         }
       }
     },
-
     {
       "id": "poi-medium-(def-global-osm)",
       "type": "symbol",
@@ -21115,6 +21129,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
+      "minzoom": 10,
       "filter": [
         "all",
         ["has", "name"],
@@ -21185,10 +21200,15 @@
           "#df00e7"
         ],
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.5
+        "text-halo-width": 1.5,
+        "text-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
+        }
       }
     },
-
     {
       "id": "poi-medium-(def-global-osm-hc)",
       "type": "symbol",
@@ -21203,6 +21223,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
+      "minzoom": 10,
       "filter": [
         "all",
         ["has", "name"],
@@ -21262,10 +21283,15 @@
             [16, 2],
             [17, 3]
           ]
+        },
+        "text-opacity": {
+          "stops": [
+            [10, 0],
+            [10.5, 1]
+          ]
         }
       }
     },
-
     {
       "id": "poi-large-(def-global-osm)",
       "type": "symbol",
@@ -21319,7 +21345,6 @@
         "text-halo-width": 1.5
       }
     },
-
     {
       "id": "poi-large-(def-global-osm-hc)",
       "type": "symbol",
@@ -21375,7 +21400,6 @@
         }
       }
     },
-
     {
       "id": "place-town-(def-all-osm)",
       "type": "symbol",
@@ -21596,7 +21620,7 @@
             [4.5, 0],
             [5, 1],
             [10.5, 1],
-            [11.0, 0]
+            [11, 0]
           ]
         }
       }
