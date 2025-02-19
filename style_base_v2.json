@@ -21565,7 +21565,7 @@
           ]
         },
         "text-allow-overlap": true,
-        "visibility": "n"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#333",
