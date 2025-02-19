@@ -1574,6 +1574,7 @@
         "trailmap:safe-water-lake": true,
         "trailmap:id_legacy": "water-intermittent-osm",
         "trailmap:country": "all",
+        "trailmap:group": "water-end",
         "trailmap:simple": 1
       },
       "source": "osm",
