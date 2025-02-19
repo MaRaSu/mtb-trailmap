@@ -6028,7 +6028,7 @@
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": true,
+        "trailmap:ways_only": "exclusive",
         "trailmap:id_legacy": "hw-path-track-case-ways_only",
         "trailmap:country": "all"
       },
