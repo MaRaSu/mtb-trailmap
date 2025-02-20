@@ -22050,22 +22050,44 @@
         "visibility": "visible"
       },
       "paint": {
-        "icon-opacity": {
-          "stops": [
-            [7, 0],
-            [7.5, 1]
-          ]
-        },
+        "icon-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          7,
+          0,
+          7.5,
+          ["case", ["<=", ["get", "rank"], 1], 1, 0],
+          8,
+          ["case", ["<=", ["get", "rank"], 1], 1, 0],
+          9,
+          ["case", ["<=", ["get", "rank"], 2], 1, 0],
+          10,
+          ["case", ["<=", ["get", "rank"], 3], 1, 0],
+          11,
+          ["case", ["<=", ["get", "rank"], 4], 1, 0]
+        ],
         "text-color": "#212121",
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1,
-        "text-opacity": {
-          "stops": [
-            [7, 0],
-            [7.5, 1]
-          ]
-        }
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          7,
+          0,
+          7.5,
+          ["case", ["<=", ["get", "rank"], 1], 1, 0],
+          8,
+          ["case", ["<=", ["get", "rank"], 1], 1, 0],
+          9,
+          ["case", ["<=", ["get", "rank"], 2], 1, 0],
+          10,
+          ["case", ["<=", ["get", "rank"], 3], 1, 0],
+          11,
+          ["case", ["<=", ["get", "rank"], 4], 1, 0]
+        ]
       }
     },
     {
