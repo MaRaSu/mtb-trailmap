@@ -21517,9 +21517,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 18],
-            [10, 10],
-            [15, 20]
+            [8, 11],
+            [10, 12],
+            [14, 20]
           ]
         },
         "text-max-width": 8,
@@ -21561,12 +21561,13 @@
         "text-size": {
           "base": 1.2,
           "stops": [
+            [8, 12],
             [10, 14],
-            [11, 24]
+            [14, 24]
           ]
         },
         "text-allow-overlap": true,
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#333",
@@ -21599,6 +21600,7 @@
       "layout": {
         "icon-image": "star_11",
         "icon-size": 0.8,
+        "icon-allow-overlap": true,
         "text-anchor": "left",
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-font": ["Noto Sans Regular"],
