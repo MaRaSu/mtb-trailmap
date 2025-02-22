@@ -22120,7 +22120,7 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          8,
+          7,
           0,
           7.5,
           ["case", ["<=", ["get", "rank"], 1], 1, 0],
