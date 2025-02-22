@@ -21505,7 +21505,6 @@
         "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
-        "trailmap:id_legacy": "place-town",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -22073,6 +22072,12 @@
         "icon-image": "peak_11",
         "icon-allow-overlap": true,
         "icon-ignore-placement": true,
+        "icon-size": {
+          "stops": [
+            [8, 0.8],
+            [11, 1]
+          ]
+        },
         "text-allow-overlap": false,
         "text-anchor": "top",
         "text-field": [
@@ -22087,7 +22092,8 @@
         "text-padding": 2,
         "text-size": {
           "stops": [
-            [15, 9],
+            [8, 8],
+            [11, 8],
             [16, 13],
             [18, 20]
           ]
