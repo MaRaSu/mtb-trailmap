@@ -21496,6 +21496,49 @@
       }
     },
     {
+      "id": "place-village-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "place-town",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "place",
+      "filter": ["==", "class", "village"],
+      "layout": {
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 10],
+            [10, 11],
+            [14, 18]
+          ]
+        },
+        "text-max-width": 8,
+        "text-allow-overlap": true,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [7.5, 0],
+            [8, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "place-town-(def-all-osm)",
       "type": "symbol",
       "metadata": {
@@ -22077,7 +22120,7 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          7,
+          8,
           0,
           7.5,
           ["case", ["<=", ["get", "rank"], 1], 1, 0],
