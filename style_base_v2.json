@@ -7251,7 +7251,7 @@
       },
       "source": "osm",
       "source-layer": "transportation",
-      "minzoom": 9,
+      "minzoom": 10,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -7285,8 +7285,10 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["has", "noexit"], 0.4, 0],
+          ["case", ["has", "noexit"], 0, 0],
           10.5,
+          ["case", ["has", "noexit"], 0.3, 0.6],
+          13,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -7340,8 +7342,10 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["has", "noexit"], 0.4, 0],
-          10.6,
+          ["case", ["has", "noexit"], 0, 0],
+          10.5,
+          ["case", ["has", "noexit"], 0.3, 0.6],
+          13,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -8218,10 +8222,10 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [9, 0.4],
-            [10, 0.6],
-            [11, 0.8],
-            [12, 1.2],
+            [9, 0.6],
+            [10, 1],
+            [11, 1.2],
+            [12, 1.5],
             [13, 2],
             [14, 4],
             [20, 17]
