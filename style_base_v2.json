@@ -21528,7 +21528,7 @@
           ]
         },
         "text-max-width": 8,
-        "text-allow-overlap": true,
+        "text-overlap": "cooperative",
         "visibility": "visible"
       },
       "paint": {
