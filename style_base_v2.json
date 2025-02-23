@@ -7288,7 +7288,9 @@
           ["case", ["has", "noexit"], 0, 0],
           10.5,
           ["case", ["has", "noexit"], 0.3, 0.6],
-          13,
+          12,
+          ["case", ["has", "noexit"], 0.3, 0.6],
+          14,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -7345,7 +7347,9 @@
           ["case", ["has", "noexit"], 0, 0],
           10.5,
           ["case", ["has", "noexit"], 0.3, 0.6],
-          13,
+          12,
+          ["case", ["has", "noexit"], 0.3, 0.6],
+          14,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
