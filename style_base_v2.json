@@ -21532,7 +21532,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -21569,7 +21569,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2
       }
@@ -21606,7 +21606,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#333",
+        "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-opacity": {
@@ -21660,7 +21660,7 @@
             [4.5, 1]
           ]
         },
-        "text-color": "#333",
+        "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
         "text-halo-width": 1.2,
         "text-opacity": {
