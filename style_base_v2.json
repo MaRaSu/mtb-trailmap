@@ -19909,18 +19909,18 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [13, 12],
-            [14, 13],
-            [16, 15],
-            [18, 28]
+            [13, 10],
+            [14, 11],
+            [16, 14],
+            [18, 26]
           ]
         }
       },
       "paint": {
-        "text-color": "#765",
+        "text-color": "#3b322a",
         "text-halo-color": "#ffffff",
         "text-halo-blur": 0.3,
-        "text-halo-width": 1.2
+        "text-halo-width": 2
       }
     },
     {
