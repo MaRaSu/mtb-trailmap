@@ -97,7 +97,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "background-color": "#f7f4f0"
+        "background-color": "#ede7de"
       }
     },
     {
@@ -2819,7 +2819,7 @@
       "source": "mml_hillshade",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -3895,7 +3895,7 @@
             [5, 0],
             [5.5, 0.2],
             [10, 0.2],
-            [12, 0.05]
+            [12, 0.03]
           ]
         },
         "fill-outline-color": "#7BA36C"
@@ -4028,7 +4028,7 @@
             [5, 0],
             [5.5, 0.2],
             [10, 0.2],
-            [12, 0.05]
+            [12, 0.03]
           ]
         },
         "fill-outline-color": "#7BA36C"
@@ -8218,10 +8218,13 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#634507",
-          "#808080"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#808080"],
+          14,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#666666"]
         ],
         "line-width": {
           "base": 1,
@@ -8659,10 +8662,13 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#634507",
-          "#808080"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#808080"],
+          14,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#666666"]
         ],
         "line-width": {
           "base": 1,
@@ -9018,10 +9024,13 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#634507",
-          "#808080"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#808080"],
+          14,
+          ["case", ["==", ["get", "surface"], "unpaved"], "#634507", "#666666"]
         ],
         "line-width": {
           "base": 1,
