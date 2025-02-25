@@ -3166,8 +3166,8 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "tunnel-motorway-case",
@@ -3196,6 +3196,84 @@
             [7, 1.5],
             [12, 4],
             [13, 6],
+            [20, 22]
+          ]
+        },
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "tunnel-motorway-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#e9ac77",
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [20, 22]
+          ]
+        },
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "tunnel-motorway-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#e9ac77",
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
             [20, 22]
           ]
         },
@@ -3812,6 +3890,80 @@
             [14, 0.3]
           ]
         }
+      }
+    },
+    {
+      "id": "tunnel-motorway-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffdaa6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
+          ]
+        },
+        "line-opacity": 0.3
+      }
+    },
+    {
+      "id": "tunnel-motorway-line-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ffdaa6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
+          ]
+        },
+        "line-opacity": 0.3
       }
     },
     {
@@ -10683,7 +10835,7 @@
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-motorway-case",
@@ -10805,6 +10957,59 @@
         "line-cap": "butt",
         "line-join": "round",
         "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          "#bf440f",
+          12,
+          "#a15412"
+        ],
+        "line-opacity": {
+          "stops": [
+            [5.5, 0],
+            [6.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 1],
+            [6, 2.4],
+            [10, 4.5],
+            [20, 22]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-motorway-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "motorway", "motorway_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -12792,7 +12997,7 @@
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-motorway-line",
@@ -12910,6 +13115,54 @@
         "line-cap": "round",
         "line-join": "round",
         "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffcc88",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [10, 1.5],
+            [12, 3],
+            [14, 4],
+            [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [9, 0],
+            [11, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-motorway-line-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "motorway", "motorway_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -15648,8 +15901,8 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-motorway-case",
@@ -15724,6 +15977,84 @@
             [6, 0.6],
             [7, 1.5],
             [20, 36]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-motorway-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ae3704",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [12, 5],
+            [13, 6],
+            [20, 26]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-motorway-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ae3704",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [12, 5],
+            [13, 6],
+            [20, 26]
           ]
         }
       }
@@ -17858,8 +18189,8 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-motorway-line",
@@ -17933,6 +18264,80 @@
             [12, 3],
             [14, 7],
             [20, 24]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-motorway-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-motorway-line-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["==", "class", "motorway"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#fc8",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
           ]
         }
       }
