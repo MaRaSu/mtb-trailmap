@@ -3149,7 +3149,7 @@
       }
     },
     {
-      "id": "tunnel-secondary_tertiary-case-(def-all-osm)",
+      "id": "tunnel-tertiary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -3158,7 +3158,6 @@
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "tunnel-secondary-tertiary-case",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -3166,7 +3165,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -3189,7 +3188,7 @@
       }
     },
     {
-      "id": "tunnel-trunk_primary-case-(def-all-osm)",
+      "id": "tunnel-secondary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -3198,7 +3197,6 @@
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "tunnel-trunk-primary-case",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -3206,7 +3204,95 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "primary", "trunk"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#ae6404",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 1.5],
+            [12, 3],
+            [13, 4],
+            [20, 17]
+          ]
+        },
+        "line-dasharray": [0.5, 0.25],
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "tunnel-primary-case-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "primary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          "#cc6b33",
+          14,
+          "#ac5a07"
+        ],
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [6, 0.6],
+            [7, 1.5],
+            [12, 4],
+            [13, 5],
+            [20, 22]
+          ]
+        },
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "tunnel-trunk-case-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "trunk"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -3918,7 +4004,7 @@
       }
     },
     {
-      "id": "tunnel-secondary_tertiary-line-(def-all-osm)",
+      "id": "tunnel-tertiary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -3927,7 +4013,6 @@
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "tunnel-secondary-tertiary-line",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -3935,7 +4020,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -3961,7 +4046,7 @@
       }
     },
     {
-      "id": "tunnel-trunk_primary-line-(def-all-osm)",
+      "id": "tunnel-secondary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -3970,7 +4055,6 @@
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "tunnel-trunk-primary-line",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -3978,7 +4062,91 @@
       "filter": [
         "all",
         ["==", "brunnel", "tunnel"],
-        ["in", "class", "primary", "trunk"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#fff4c6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 10]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [14, 0.3]
+          ]
+        }
+      }
+    },
+    {
+      "id": "tunnel-primary-line-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "primary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#fff4c6",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [7, 0.5],
+            [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [14, 0.3]
+          ]
+        }
+      }
+    },
+    {
+      "id": "tunnel-trunk-line-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "trunk"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -10309,7 +10477,7 @@
       }
     },
     {
-      "id": "highway-secondary_tertiary-case-(def-all-osm)",
+      "id": "highway-tertiary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -10318,7 +10486,6 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-secondary-tertiary-case",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -10327,14 +10494,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
-        ],
+        ["in", "class", "tertiary", "tertiary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -10352,19 +10512,7 @@
           14,
           "#ae6404"
         ],
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          7,
-          ["case", ["==", ["get", "class"], "secondary"], 0, 0],
-          7.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 1]
-        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -10378,16 +10526,15 @@
       }
     },
     {
-      "id": "highway-secondary_tertiary-case-(def-all-osm-hc)",
+      "id": "highway-secondary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
+        "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-secondary-tertiary-case-hc",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -10396,14 +10543,56 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
+        ["in", "class", "secondary", "secondary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          "#ec9513",
+          14,
+          "#ae6404"
         ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 7.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [11, 2],
+            [12, 3],
+            [13, 4],
+            [20, 19]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-tertiary-case-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "tertiary", "tertiary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -10413,19 +10602,48 @@
       },
       "paint": {
         "line-color": "#000000",
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          7,
-          ["case", ["==", ["get", "class"], "secondary"], 0, 0],
-          7.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 1]
-        ],
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [10, 3],
+            [14, 7],
+            [16, 10],
+            [20, 28]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-secondary-case-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "secondary", "secondary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 7.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -12695,7 +12913,7 @@
       }
     },
     {
-      "id": "highway-secondary_tertiary-line-(def-all-osm)",
+      "id": "highway-tertiary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -12704,7 +12922,6 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-secondary-tertiary-line",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -12713,14 +12930,7 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
-        ],
+        ["in", "class", "tertiary", "tertiary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -12750,16 +12960,15 @@
       }
     },
     {
-      "id": "highway-secondary_tertiary-line-(def-all-osm-hc)",
+      "id": "highway-secondary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-secondary-tertiary-line-hc",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -12768,14 +12977,102 @@
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "in",
-          "class",
-          "secondary",
-          "tertiary",
-          "secondary_construction",
-          "tertiary_construction"
-        ],
+        ["in", "class", "secondary", "secondary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [10, 1],
+            [12, 2],
+            [14, 3.6],
+            [20, 13]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-tertiary-line-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "tertiary", "tertiary_construction"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffe16b",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [10, 1],
+            [12, 3],
+            [14, 4],
+            [16, 7],
+            [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-secondary-line-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 8,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "secondary", "secondary_construction"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -16089,7 +16386,7 @@
       }
     },
     {
-      "id": "bridge-secondary_tertiary-case-(def-all-osm)",
+      "id": "bridge-tertiary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -16098,7 +16395,6 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "bridge-secondary-tertiary-case",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -16106,7 +16402,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -16139,7 +16435,56 @@
       }
     },
     {
-      "id": "bridge-secondary_tertiary-case-(def-all-osm-hc)",
+      "id": "bridge-secondary-case-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "line-cap": "butt",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          "#ec9513",
+          14,
+          "#ae6404"
+        ],
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.5],
+            [7, 0.7],
+            [8, 1.7],
+            [12, 4],
+            [13, 5],
+            [20, 24]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-tertiary-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -16148,7 +16493,6 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "bridge-secondary-tertiary-case-hc",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -16156,7 +16500,45 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [7, 1],
+            [10, 4],
+            [14, 7],
+            [20, 28]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-case-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -18599,7 +18981,7 @@
       }
     },
     {
-      "id": "bridge-secondary_tertiary-line-(def-all-osm)",
+      "id": "bridge-tertiary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -18608,7 +18990,6 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "bridge-secondary-tertiary-line",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -18617,7 +18998,7 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "tertiary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -18643,16 +19024,15 @@
       }
     },
     {
-      "id": "bridge-secondary_tertiary-line-(def-all-osm-hc)",
+      "id": "bridge-secondary-line-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "bridge-secondary-tertiary-line-hc",
         "trailmap:country": "all"
       },
       "source": "osm",
@@ -18661,7 +19041,96 @@
       "filter": [
         "all",
         ["==", "brunnel", "bridge"],
-        ["in", "class", "secondary", "tertiary"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#fea",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [20, 13]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-tertiary-line-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "tertiary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#ffe16b",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [6.5, 0],
+            [8, 0.5],
+            [10, 1],
+            [12, 2],
+            [14, 3.6],
+            [20, 13]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8, 0],
+            [8.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-secondary-line-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "secondary"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -18839,10 +19308,7 @@
       "paint": {
         "line-color": [
           "case",
-          [
-            "all",
-            ["==", ["get", "bicycle"], "no"]
-          ],
+          ["all", ["==", ["get", "bicycle"], "no"]],
           "#ffcc88",
           "#fea"
         ],
@@ -18890,10 +19356,7 @@
       "paint": {
         "line-color": [
           "case",
-          [
-            "all",
-            ["==", ["get", "bicycle"], "no"]
-          ],
+          ["all", ["==", ["get", "bicycle"], "no"]],
           "#ffcc88",
           "#fea"
         ],
@@ -18941,10 +19404,7 @@
       "paint": {
         "line-color": [
           "case",
-          [
-            "all",
-            ["==", ["get", "bicycle"], "no"]
-          ],
+          ["all", ["==", ["get", "bicycle"], "no"]],
           "#d6771e",
           "#ffc72e"
         ],
@@ -18986,10 +19446,7 @@
       "paint": {
         "line-color": [
           "case",
-          [
-            "all",
-            ["==", ["get", "bicycle"], "no"]
-          ],
+          ["all", ["==", ["get", "bicycle"], "no"]],
           "#d6771e",
           "#ffc72e"
         ],
