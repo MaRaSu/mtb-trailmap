@@ -8462,7 +8462,7 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -8544,6 +8544,51 @@
             [13, 3],
             [14, 4],
             [20, 20]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-trunk_primary_secondary_tertiary_link-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#a15412",
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 1],
+            [13, 3],
+            [14, 4],
+            [20, 15]
           ]
         }
       }
@@ -11442,7 +11487,7 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -11534,6 +11579,60 @@
           "stops": [
             [13, 1.5],
             [14, 2],
+            [20, 11.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [12, 0],
+            [12.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-trunk_primary_secondary_tertiary_link-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#ffcc88",
+          "#fea"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 1],
+            [13, 1.5],
+            [14, 2.5],
             [20, 11.5]
           ]
         },
@@ -15835,7 +15934,7 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -15903,6 +16002,44 @@
             [13, 3],
             [14, 4],
             [20, 20]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-trunk_primary_secondary_tertiary_link-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#e9ac77",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12, 1],
+            [13, 2],
+            [14, 3],
+            [20, 19]
           ]
         }
       }
@@ -18105,7 +18242,7 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
+        "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -18189,6 +18326,53 @@
           ],
           "#d6771e",
           "#ffc72e"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [12.5, 0],
+            [13, 1.5],
+            [14, 2.5],
+            [20, 11.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge-trunk_primary_secondary_tertiary_link-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "trunk", "primary", "secondary", "tertiary"],
+        ["==", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "class"], "trunk"],
+            ["==", ["get", "bicycle"], "no"]
+          ],
+          "#ffcc88",
+          "#fea"
         ],
         "line-width": {
           "base": 1.2,
