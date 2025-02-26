@@ -23372,6 +23372,51 @@
       }
     },
     {
+      "id": "place-other-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "place",
+      "filter": [
+        "!in",
+        "class",
+        "city",
+        "town",
+        "village",
+        "state",
+        "country",
+        "continent"
+      ],
+      "layout": {
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 8],
+            [10, 9],
+            [14, 14]
+          ]
+        },
+        "text-max-width": 8,
+        "text-overlap": "cooperative",
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#262626",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1
+      }
+    },
+    {
       "id": "place-village-(def-all-osm)",
       "type": "symbol",
       "metadata": {
