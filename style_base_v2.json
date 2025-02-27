@@ -965,7 +965,7 @@
       "minzoom": 9,
       "filter": ["in", "subclass", "farmland", "meadow"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -2113,7 +2113,7 @@
         ["!in", "subclass", "heath", "fell"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": [
@@ -2819,7 +2819,7 @@
       "source": "mml_hillshade",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -3002,7 +3002,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(200, 147, 102, 1)",
@@ -3041,7 +3041,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(200, 147, 102, 1)",
@@ -3388,7 +3388,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -3427,7 +3427,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -3830,7 +3830,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(244, 209, 158, 1)",
@@ -3868,7 +3868,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgba(244, 209, 158, 1)",
@@ -4236,7 +4236,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffdaa6",
@@ -4273,7 +4273,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffdaa6",
@@ -4354,17 +4354,17 @@
       }
     },
     {
-      "id": "protected_area-fill-(def-all-osm)",
+      "id": "protected_area-fill-(def-global-osm)",
       "type": "fill",
       "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-fill-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "park",
@@ -4377,7 +4377,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": {
@@ -4400,17 +4400,17 @@
       }
     },
     {
-      "id": "protected_area-outline-inner-(def-all-osm)",
+      "id": "protected_area-outline-inner-(def-global-osm)",
       "type": "line",
       "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-inner-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "park",
@@ -4423,7 +4423,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7BA36C",
@@ -4443,17 +4443,17 @@
       }
     },
     {
-      "id": "protected_area-outline-outer-(def-all-osm)",
+      "id": "protected_area-outline-outer-(def-global-osm)",
       "type": "line",
       "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-outer-osm",
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "park",
@@ -8568,7 +8568,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#a15412",
@@ -8608,7 +8608,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#a15412",
@@ -8740,7 +8740,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#a15412",
@@ -11506,7 +11506,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -11643,7 +11643,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -11682,7 +11682,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -11832,7 +11832,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -13870,7 +13870,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#ffcc88",
@@ -16170,7 +16170,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -16208,7 +16208,7 @@
         ["==", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -16325,7 +16325,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#e9ac77",
@@ -17032,7 +17032,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -17071,7 +17071,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -18688,7 +18688,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fc8",
@@ -18726,7 +18726,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#fc8",
@@ -18866,7 +18866,7 @@
       ],
       "layout": {
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -19653,7 +19653,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -19690,7 +19690,7 @@
         ["!=", "ramp", 1]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-join": "round"
       },
       "paint": {
@@ -22509,7 +22509,7 @@
             [17, 20]
           ]
         },
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -22684,7 +22684,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -22849,7 +22849,7 @@
           ]
         },
         "text-transform": "uppercase",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -23407,7 +23407,7 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "cooperative",
+        "text-overlap": "never",
         "visibility": "visible"
       },
       "paint": {
