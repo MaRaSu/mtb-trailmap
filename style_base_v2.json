@@ -2819,7 +2819,7 @@
       "source": "mml_hillshade",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-opacity": {
@@ -2847,7 +2847,7 @@
       "source": "maptiler_hillshade",
       "minzoom": 8,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-brightness-min": 0.6,
@@ -22915,15 +22915,7 @@
       },
       "source": "mml_topo",
       "source-layer": "nimisto",
-      "filter": [
-        "in",
-        "lajikoodi",
-        3010105,
-        3010110,
-        3020105,
-        5010105,
-        5010110
-      ],
+      "filter": ["in", "lajikoodi", 3020105, 5010105, 5010110],
       "layout": {
         "text-anchor": "center",
         "text-allow-overlap": false,
@@ -22959,7 +22951,7 @@
         "text-color": [
           "match",
           ["get", "lajikoodi"],
-          [3010105, 3010110, 3020105],
+          [3020105],
           "#3c240e",
           [5010105, 5010110],
           "#414b2c",
@@ -23476,7 +23468,7 @@
       }
     },
     {
-      "id": "place-other-(def-all-osm)",
+      "id": "place-other-(def-global-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -23485,7 +23477,7 @@
         "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "place",
@@ -23512,7 +23504,7 @@
         },
         "text-max-width": 8,
         "text-overlap": "never",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#262626",
@@ -23521,7 +23513,7 @@
       }
     },
     {
-      "id": "place-village-(def-all-osm)",
+      "id": "place-village-(def-global-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -23530,7 +23522,7 @@
         "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "place",
@@ -23548,7 +23540,7 @@
         },
         "text-max-width": 8,
         "text-overlap": "cooperative",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "#262626",
@@ -23557,7 +23549,7 @@
       }
     },
     {
-      "id": "place-town-(def-all-osm)",
+      "id": "place-town-(def-global-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -23567,13 +23559,66 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-town",
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "place",
       "filter": ["==", "class", "town"],
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 11],
+            [10, 12],
+            [14, 20]
+          ]
+        },
+        "text-max-width": 8,
+        "text-overlap": "cooperative",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#262626",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "place-town-(def-fin-mml_topo)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "place-town",
+        "trailmap:country": "global"
+      },
+      "source": "mml_topo",
+      "source-layer": "nimisto",
+      "filter": ["in", "lajikoodi", 3010105, 3010110],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -23594,7 +23639,7 @@
       }
     },
     {
-      "id": "place-city-(def-all-osm)",
+      "id": "place-city-(def-global-osm)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -23604,13 +23649,75 @@
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-city",
-        "trailmap:country": "all"
+        "trailmap:country": "global"
       },
       "source": "osm",
       "source-layer": "place",
       "filter": ["all", ["!=", "capital", 2], ["==", "class", "city"]],
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-max-width": 8,
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 12],
+            [10, 14],
+            [14, 24]
+          ]
+        },
+        "text-overlap": "cooperative",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#262626",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.2,
+        "text-opacity": {
+          "stops": [
+            [5.5, 0],
+            [6, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "place-city-(def-fin-mml_topo)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "fin"
+      },
+      "source": "mml_topo",
+      "source-layer": "nimisto",
+      "filter": [
+        "all",
+        ["in", "lajikoodi", 4010125],
+        ["!in", "nimi_fin", "Helsinki"]
+      ],
+      "layout": {
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-variable-anchor": [
+          "center",
+          "bottom",
+          "bottom-left",
+          "bottom-right",
+          "top",
+          "top-left",
+          "top-right"
+        ],
+        "text-field": [
+          "case",
+          ["has", "nimi_fin"],
+          ["get", "nimi_fin"],
+          ["get", "nimi_swe"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
