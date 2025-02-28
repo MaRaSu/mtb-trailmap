@@ -20470,7 +20470,7 @@
       }
     },
     {
-      "id": "building-area-top-(def-fin-osm)",
+      "id": "building-area-top_fill-(def-fin-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -20500,7 +20500,6 @@
             [14.5, 0]
           ]
         },
-        "fill-outline-color": "#928e8a",
         "fill-translate": {
           "base": 1,
           "stops": [
@@ -20511,7 +20510,43 @@
       }
     },
     {
-      "id": "building-area-top-(def-global-osm)",
+      "id": "building-area-top_line-(def-fin-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "fin"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "maxzoom": 14.5,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "#928e8a",
+        "line-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_fill-(def-global-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -20538,8 +20573,42 @@
             [13.5, 1]
           ]
         },
-        "fill-outline-color": "#928e8a",
         "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_line-(def-global-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "#928e8a",
+        "line-translate": {
           "base": 1,
           "stops": [
             [14, [0, 0]],
@@ -20566,7 +20635,7 @@
       "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": true,
@@ -20581,7 +20650,7 @@
       }
     },
     {
-      "id": "building-area-top-(def-fin-mml_topo)",
+      "id": "building-area-top_fill-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": true,
@@ -20598,7 +20667,7 @@
       "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": [
@@ -20625,8 +20694,43 @@
             [13.5, 1]
           ]
         },
-        "fill-outline-color": "#928e8a",
         "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_line-(def-fin-mml_topo)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "fin"
+      },
+      "source": "mml_topo",
+      "source-layer": "rakennus",
+      "minzoom": 13,
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "#928e8a",
+        "line-translate": {
           "base": 1,
           "stops": [
             [14, [0, 0]],
