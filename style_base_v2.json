@@ -12,7 +12,7 @@
   "sources": {
     "osm": {
       "type": "vector",
-      "url": "https://tiles.trailmap.fi/data/finland-omt.json"
+      "url": "https://tiles-test.trailmap.fi/data/finland-omt.json"
     },
     "mml_topo": {
       "type": "vector",
@@ -22061,7 +22061,7 @@
           "match",
           ["get", "access"],
           ["no"],
-          "#FF003D",
+          "#ff003d",
           ["yes"],
           "#ffffff",
           "#000000"
@@ -22081,6 +22081,192 @@
           "stops": [
             [12.5, 0],
             [13, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-parking-fee_symbol-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "landuse_ext",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "class", "parking"],
+        ["has", "fee"],
+        ["has", "access"],
+        ["!in", "access", "no"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-anchor": "left",
+        "text-allow-overlap": true,
+        "text-field": "$",
+        "text-font": ["Noto Sans Regular"],
+        "text-justify": "left",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [15, 6.5],
+            [16, 8],
+            [18, 13]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          15,
+          ["literal", [9.75, 3.25]],
+          16,
+          ["literal", [12, 4]],
+          18,
+          ["literal", [19.5, 6.5]]
+        ],
+        "text-color": "#000000",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff",
+        "text-opacity": {
+          "stops": [
+            [15.5, 0],
+            [16, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-parking-fee_symbol_strikeout-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "landuse_ext",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "class", "parking"],
+        ["==", "fee", "no"],
+        ["has", "access"],
+        ["!in", "access", "no"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-anchor": "left",
+        "text-allow-overlap": true,
+        "text-field": "—",
+        "text-font": ["Noto Sans Regular"],
+        "text-justify": "left",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [15, 5],
+            [16, 8],
+            [18, 13]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          15,
+          ["literal", [9.75, 3.25]],
+          16,
+          ["literal", [10, 4]],
+          18,
+          ["literal", [17, 5]]
+        ],
+        "text-color": "#000000",
+        "text-halo-width": 0.5,
+        "text-halo-color": "#ffffff",
+        "text-opacity": {
+          "stops": [
+            [15.5, 0],
+            [16, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-parking-maxstay_info-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "landuse_ext",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "class", "parking"],
+        ["has", "maxstay"],
+        ["has", "access"],
+        ["!in", "access", "no"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-anchor": "left",
+        "text-allow-overlap": true,
+        "text-field": "≤{maxstay}",
+        "text-font": ["Noto Sans Regular"],
+        "text-justify": "left",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [15, 6.5],
+            [16, 8],
+            [18, 13]
+          ]
+        }
+      },
+      "paint": {
+        "text-translate": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          15,
+          ["literal", [9.75, -3.25]],
+          16,
+          ["literal", [12, -4]],
+          18,
+          ["literal", [19.6, -6.5]]
+        ],
+        "text-color": "#000000",
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff",
+        "text-opacity": {
+          "stops": [
+            [15.5, 0],
+            [16, 1]
           ]
         }
       }
