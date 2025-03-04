@@ -24599,14 +24599,55 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
+      }
+    },
+    {
+      "id": "route_separate-bicycle-label-(route-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "bicycle-routes-osm",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "bicycle"],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 300,
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 6],
+            [13, 10],
+            [14, 16]
+          ]
+        },
+        "text-max-width": 26,
+        "text-allow-overlap": false,
+        "text-anchor": "bottom",
+        "text-radial-offset": 0.4,
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#3b322a",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.5
       }
     },
     {
@@ -24643,14 +24684,55 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
+      }
+    },
+    {
+      "id": "route_separate-mtb-label-(route-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "mtb-routes-osm",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "mtb"],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 300,
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 6],
+            [13, 10],
+            [14, 16]
+          ]
+        },
+        "text-max-width": 26,
+        "text-allow-overlap": false,
+        "text-anchor": "bottom",
+        "text-radial-offset": 0.4,
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#3b322a",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.5
       }
     },
     {
@@ -24687,14 +24769,55 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
+      }
+    },
+    {
+      "id": "route_separate-hike-label-(route-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "hiking-routes-osm",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "route_ext",
+      "filter": ["==", "route", "hiking"],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 300,
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 6],
+            [13, 10],
+            [14, 16]
+          ]
+        },
+        "text-max-width": 26,
+        "text-allow-overlap": false,
+        "text-anchor": "bottom",
+        "text-radial-offset": 0.4,
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#3b322a",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.5
       }
     },
     {
@@ -24731,14 +24854,14 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
       }
     },
     {
@@ -24775,14 +24898,14 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
       }
     },
     {
@@ -24819,14 +24942,14 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
       }
     },
     {
@@ -24863,14 +24986,14 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          12,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 4],
-          14,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 10],
+          10,
+          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          13,
+          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 16]
+          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
         ],
-        "line-dasharray": [0.6, 1.2]
+        "line-dasharray": [2, 0]
       }
     },
     {
