@@ -3465,7 +3465,24 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "brunnel", "tunnel"],
-        ["in", "subclass", "cycleway", "pedestrian"]
+        [
+          "any",
+          ["in", "subclass", "cycleway", "pedestrian"],
+          [
+            "all",
+            ["==", "subclass", "footway"],
+            ["==", "bicycle", "yes"],
+            ["!has", "mtb_scale"]
+          ],
+          [
+            "all",
+            ["==", "cycleway_left", "yes"],
+            ["==", "cycleway_right", "yes"],
+            ["in", "highway", "path", "track"],
+            ["!has", "mtb_scale"]
+          ]
+        ],
+        ["!has", "mtb_scale"]
       ],
       "layout": {
         "visibility": "visible",
