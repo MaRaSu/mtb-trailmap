@@ -24591,7 +24591,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#390080",
           "#7200ff"
         ],
         "line-opacity": 0.8,
@@ -24600,11 +24600,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24676,7 +24676,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#390080",
           "#7200ff"
         ],
         "line-opacity": 0.8,
@@ -24685,11 +24685,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24761,7 +24761,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#390080",
           "#7200ff"
         ],
         "line-opacity": 0.8,
@@ -24770,11 +24770,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24846,7 +24846,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#691645",
           "#bd287c"
         ],
         "line-opacity": 0.8,
@@ -24855,11 +24855,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24890,7 +24890,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#691645",
           "#bd287c"
         ],
         "line-opacity": 0.8,
@@ -24899,11 +24899,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24934,7 +24934,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#691645",
           "#bd287c"
         ],
         "line-opacity": 0.8,
@@ -24943,11 +24943,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
@@ -24978,7 +24978,7 @@
         "line-color": [
           "case",
           ["boolean", ["feature-state", "hover"], false],
-          "black",
+          "#691645",
           "#bd287c"
         ],
         "line-opacity": 0.8,
@@ -24987,11 +24987,11 @@
           ["linear"],
           ["zoom"],
           10,
-          ["case", ["boolean", ["feature-state", "hover"], false], 8, 2],
+          ["case", ["boolean", ["feature-state", "hover"], false], 6, 2],
           13,
-          ["case", ["boolean", ["feature-state", "hover"], false], 20, 5],
+          ["case", ["boolean", ["feature-state", "hover"], false], 15, 5],
           17,
-          ["case", ["boolean", ["feature-state", "hover"], false], 32, 8]
+          ["case", ["boolean", ["feature-state", "hover"], false], 24, 8]
         ],
         "line-dasharray": [2, 0]
       }
