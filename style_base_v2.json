@@ -22,7 +22,8 @@
       "type": "raster",
       "maxzoom": 14,
       "minzoom": 10,
-      "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"]
+      "tiles": ["https://static.trailmap.fi/varjomap/{z}/{x}/{y}.png"],
+      "bounds": [19.2, 59.5, 31.7, 70.2]
     },
     "mml_ortho": {
       "type": "raster",
@@ -45,7 +46,7 @@
     },
     "maptiler_hillshade": {
       "type": "raster",
-      "maxzoom": 14,
+      "maxzoom": 12,
       "minzoom": 9,
       "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
     },
@@ -64,16 +65,19 @@
     "lipas_routes": {
       "type": "vector",
       "url": "https://tiles.trailmap.fi/data/lipas-reitit.json",
+      "bounds": [19.2, 59.5, 31.7, 70.2],
       "promoteId": "id"
     },
     "lipas_points": {
       "type": "vector",
       "url": "https://tiles.trailmap.fi/data/lipas-pisteet.json",
+      "bounds": [19.2, 59.5, 31.7, 70.2],
       "promoteId": "id"
     },
     "mml_cadastre": {
       "type": "vector",
-      "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596"
+      "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596",
+      "bounds": [19.2, 59.5, 31.7, 70.2]
     }
   },
   "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
