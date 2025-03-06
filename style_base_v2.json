@@ -21985,12 +21985,10 @@
           ]
         },
         "symbol-spacing": 200,
-        "icon-overlap": "never",
         "text-field": "{ref}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
         "text-size": 8,
-        "text-overlap": "never",
         "visibility": "visible"
       },
       "paint": {}
@@ -23713,7 +23711,6 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "never",
         "visibility": "none"
       },
       "paint": {
@@ -23749,7 +23746,6 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "cooperative",
         "visibility": "none"
       },
       "paint": {
@@ -23801,7 +23797,6 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "cooperative",
         "visibility": "visible"
       },
       "paint": {
@@ -23838,7 +23833,6 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "cooperative",
         "visibility": "none"
       },
       "paint": {
@@ -23891,7 +23885,6 @@
           ]
         },
         "text-max-width": 8,
-        "text-overlap": "cooperative",
         "visibility": "visible"
       },
       "paint": {
@@ -23928,7 +23921,6 @@
             [14, 24]
           ]
         },
-        "text-overlap": "cooperative",
         "visibility": "none"
       },
       "paint": {
@@ -23990,7 +23982,6 @@
             [14, 24]
           ]
         },
-        "text-overlap": "cooperative",
         "visibility": "visible"
       },
       "paint": {
