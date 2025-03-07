@@ -21524,7 +21524,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
-      "minzoom": 10,
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "Point"],
@@ -21536,7 +21536,9 @@
           "toilet",
           "toilets",
           "cave_entrance",
-          "bunker"
+          "bunker",
+          "drinking_water",
+          "swimming_area"
         ]
       ],
       "layout": {
@@ -21549,8 +21551,12 @@
           "toilet_11",
           ["cave_entrance"],
           "cave_entrance_11",
+          ["water_point", "drinking_water"],
+          "drinking_water_11",
           ["bunker"],
           "bunker_11",
+          ["swimming_area"],
+          "swimming_11",
           "#blank"
         ],
         "icon-size": {
@@ -21577,8 +21583,8 @@
       "paint": {
         "icon-opacity": {
           "stops": [
-            [12, 0],
-            [12.5, 1]
+            [12.8, 0],
+            [13.3, 1]
           ]
         },
         "text-color": "#212121",
@@ -23733,6 +23739,8 @@
       "filter": [
         "!in",
         "class",
+        "suburb",
+        "hamlet",
         "city",
         "town",
         "village",
@@ -23761,6 +23769,41 @@
       }
     },
     {
+      "id": "place-suburb_hamlet-(def-global-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "place",
+      "filter": ["in", "class", "suburb", "hamlet"],
+      "layout": {
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": {
+          "base": 1.2,
+          "stops": [
+            [8, 9],
+            [10, 10],
+            [14, 16]
+          ]
+        },
+        "text-max-width": 8,
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#262626",
+        "text-halo-color": "rgba(255,255,255,0.8)",
+        "text-halo-width": 1.4
+      }
+    },
+    {
       "id": "place-village-(def-global-osm)",
       "type": "symbol",
       "metadata": {
@@ -23781,8 +23824,8 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 10],
-            [10, 11],
+            [8, 11],
+            [10, 12],
             [14, 16]
           ]
         },
@@ -23792,7 +23835,7 @@
       "paint": {
         "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.4
       }
     },
     {
@@ -23868,8 +23911,8 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 11],
-            [10, 12],
+            [8, 12],
+            [10, 13],
             [14, 20]
           ]
         },
@@ -23879,7 +23922,7 @@
       "paint": {
         "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2
+        "text-halo-width": 1.8
       }
     },
     {
@@ -23957,8 +24000,8 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 12],
-            [10, 14],
+            [8, 13],
+            [10, 15],
             [14, 24]
           ]
         },
@@ -23967,7 +24010,7 @@
       "paint": {
         "text-color": "#262626",
         "text-halo-color": "rgba(255,255,255,0.8)",
-        "text-halo-width": 1.2,
+        "text-halo-width": 2.0,
         "text-opacity": {
           "stops": [
             [5.5, 0],
@@ -24389,7 +24432,7 @@
       },
       "source": "osm",
       "source-layer": "poi_ext",
-      "minzoom": 10,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "Point"],
@@ -24402,9 +24445,7 @@
           "basic_hut",
           "wilderness_hut_11",
           "water_point",
-          "drinking_water",
-          "firepit",
-          "swimming_area"
+          "firepit"
         ]
       ],
       "layout": {
@@ -24449,8 +24490,8 @@
       "paint": {
         "icon-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [11, 0],
+            [11.5, 1]
           ]
         },
         "text-color": "#212121",
