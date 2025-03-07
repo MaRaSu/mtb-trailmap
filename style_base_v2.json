@@ -21023,7 +21023,8 @@
         "text-transform": "uppercase",
         "text-letter-spacing": 0.2,
         "text-max-width": 8,
-        "text-rotation-alignment": "map",
+        "text-rotation-alignment": "viewport",
+        "text-keep-upright": true,
         "text-size": {
           "base": 1,
           "stops": [
