@@ -21014,7 +21014,7 @@
       },
       "source": "osm",
       "source-layer": "water_name",
-      "filter": ["!==", "class", "ocean"],
+      "filter": ["!=", "class", "ocean"],
       "layout": {
         "symbol-placement": "line-center",
         "symbol-spacing": 350,
