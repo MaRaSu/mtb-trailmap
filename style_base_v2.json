@@ -4400,7 +4400,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": {
@@ -4448,7 +4448,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#7BA36C",
@@ -4518,6 +4518,52 @@
       }
     },
     {
+      "id": "protected_area-fill-(def-fin-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "protected_area-fill-osm",
+        "trailmap:country": "fin"
+      },
+      "source": "osm",
+      "source-layer": "park",
+      "minzoom": 5,
+      "filter": [
+        "in",
+        "class",
+        "protected_area",
+        "nature_reserve",
+        "national_park"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": {
+          "base": 1,
+          "stops": [
+            [0, false],
+            [9, true]
+          ]
+        },
+        "fill-color": "#7BA36C",
+        "fill-opacity": {
+          "stops": [
+            [5, 0],
+            [5.5, 0.2],
+            [9, 0.2],
+            [9.5, 0]
+          ]
+        },
+        "fill-outline-color": "#7BA36C"
+      }
+    },
+    {
       "id": "protected_area-fill-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
@@ -4548,8 +4594,8 @@
         "fill-color": "#7BA36C",
         "fill-opacity": {
           "stops": [
-            [5, 0],
-            [5.5, 0.2],
+            [9, 0],
+            [9.5, 0.2],
             [10, 0.15],
             [11, 0.08],
             [12, 0.03],
