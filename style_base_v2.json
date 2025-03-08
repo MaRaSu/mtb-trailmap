@@ -23943,7 +23943,7 @@
       "filter": ["in", "lajikoodi", 3010105, 3010110],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
+        "text-allow-overlap": false,
         "text-variable-anchor": [
           "center",
           "bottom",
