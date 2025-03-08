@@ -23786,6 +23786,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "none"
       },
       "paint": {
@@ -23821,6 +23822,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "none"
       },
       "paint": {
@@ -23856,6 +23858,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "none"
       },
       "paint": {
@@ -23881,7 +23884,6 @@
       "filter": ["in", "lajikoodi", 3020105],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
         "text-variable-anchor": [
           "center",
           "bottom",
@@ -23907,6 +23909,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "visible"
       },
       "paint": {
@@ -23943,6 +23946,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "none"
       },
       "paint": {
@@ -23969,7 +23973,6 @@
       "filter": ["in", "lajikoodi", 3010105, 3010110],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": false,
         "text-variable-anchor": [
           "center",
           "bottom",
@@ -23995,6 +23998,7 @@
           ]
         },
         "text-max-width": 8,
+        "text-allow-overlap": false,
         "visibility": "visible"
       },
       "paint": {
@@ -24066,7 +24070,6 @@
       ],
       "layout": {
         "text-anchor": "center",
-        "text-allow-overlap": true,
         "text-variable-anchor": [
           "center",
           "bottom",
@@ -24087,11 +24090,14 @@
         "text-size": {
           "base": 1.2,
           "stops": [
+            [4, 8],
+            [6, 10],
             [8, 12],
             [10, 14],
             [14, 24]
           ]
         },
+        "text-allow-overlap": false,
         "visibility": "visible"
       },
       "paint": {
@@ -24100,8 +24106,8 @@
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
-            [5.5, 0],
-            [6, 1]
+            [4, 0],
+            [4.5, 1]
           ]
         }
       }
