@@ -21390,7 +21390,16 @@
         ],
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
-        "text-halo-width": 1
+        "text-halo-width": 1,
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          16.5,
+          0,
+          17,
+          ["case", ["==", ["get", "subclass"], "bus_stop"], 0, 1]
+        ]
       }
     },
     {
@@ -21440,14 +21449,23 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          15,
+          16,
           "#666666",
           17,
           "#212121"
         ],
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
-        "text-halo-width": 1
+        "text-halo-width": 1,
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          16,
+          0,
+          16.5,
+          ["case", ["==", ["get", "subclass"], "bus_stop"], 0, 1]
+        ]
       }
     },
     {
@@ -21498,7 +21516,7 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          14,
+          15,
           "#666666",
           16,
           "#212121"
@@ -21506,7 +21524,15 @@
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1,
-        "text-opacity": ["case", ["==", ["get", "subclass"], "bus_stop"], 0, 1]
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          15,
+          0,
+          15.5,
+          ["case", ["==", ["get", "subclass"], "bus_stop"], 0, 1]
+        ]
       }
     },
     {
