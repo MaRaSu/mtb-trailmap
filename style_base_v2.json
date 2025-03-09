@@ -2823,7 +2823,7 @@
       "source": "mml_hillshade",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
@@ -2851,7 +2851,7 @@
       "source": "maptiler_hillshade",
       "minzoom": 8,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-brightness-min": 0.6,
@@ -3160,7 +3160,7 @@
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -3193,13 +3193,136 @@
       }
     },
     {
+      "id": "tunnel-tertiary-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "tertiary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 1],
+            [9, 1.5],
+            [10, 1.5],
+            [11, 2.5],
+            [20, 17]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 0.5]
+          ]
+        }
+      },
+      "line-dasharray": [0.5, 0.25]
+    },
+    {
       "id": "tunnel-secondary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -3232,13 +3355,136 @@
       }
     },
     {
+      "id": "tunnel-secondary-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "secondary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
+        ],
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 1.5],
+            [9, 2],
+            [10, 2],
+            [11, 3],
+            [20, 17]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 0.5]
+          ]
+        }
+      }
+    },
+    {
       "id": "tunnel-primary-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -3281,13 +3527,137 @@
       }
     },
     {
+      "id": "tunnel-primary-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "primary"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
+        ],
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 2],
+            [9, 2.5],
+            [10, 2.5],
+            [11, 3],
+            [14, 8],
+            [20, 22]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 0.5]
+          ]
+        }
+      }
+    },
+    {
       "id": "tunnel-trunk-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -3327,6 +3697,129 @@
           ]
         },
         "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "tunnel-trunk-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": [
+        "all",
+        ["==", "brunnel", "tunnel"],
+        ["in", "class", "trunk"],
+        ["!=", "ramp", 1]
+      ],
+      "layout": {
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
+        ],
+        "line-dasharray": [0.5, 0.25],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 2.5],
+            [9, 3],
+            [10, 3],
+            [11, 4],
+            [20, 22]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 0.5]
+          ]
+        }
       }
     },
     {
@@ -4400,7 +4893,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": {
@@ -4448,7 +4941,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7BA36C",
@@ -4491,7 +4984,7 @@
         "national_park"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#7BA36C",
@@ -8085,6 +8578,10 @@
           9.5,
           ["case", ["has", "noexit"], 0.4, 0],
           10,
+          ["case", ["has", "noexit"], 0.4, 0.6],
+          11,
+          ["case", ["has", "noexit"], 0.4, 0.6],
+          12,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -8139,6 +8636,10 @@
           9.5,
           ["case", ["has", "noexit"], 0.4, 0],
           10,
+          ["case", ["has", "noexit"], 0.4, 0.6],
+          11,
+          ["case", ["has", "noexit"], 0.4, 0.6],
+          12,
           ["case", ["has", "noexit"], 0.4, 1]
         ]
       }
@@ -8685,16 +9186,17 @@
       },
       "paint": {
         "line-color": "#a15412",
-        "line-opacity": 1,
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, 1],
-            [13, 3],
+            [11, 2],
+            [12, 3],
+            [13, 3.5],
             [14, 4],
             [20, 15]
           ]
-        }
+        },
+        "line-opacity": 1
       }
     },
     {
@@ -8863,10 +9365,83 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
-          "#404040"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
         "line-opacity": {
           "stops": [
@@ -9092,28 +9667,54 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
           [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood"
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#9d7a34",
+            "#808080"
           ],
-          "#634507",
-          "#404040"
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
         "line-width": {
           "base": 1,
           "stops": [
             [9, 1.5],
-            [10, 3],
+            [10, 1.5],
+            [11, 2],
             [12, 3.4],
             [14, 4.8],
             [20, 15]
@@ -9121,8 +9722,8 @@
         },
         "line-opacity": {
           "stops": [
-            [9, 0],
-            [9.5, 1]
+            [8.5, 0],
+            [9, 1]
           ]
         }
       }
@@ -9211,24 +9812,33 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#634507",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
             [9, 1.5],
-            [10, 2.5],
+            [10, 1.5],
+            [11, 2],
             [12, 3.4],
             [14, 4.8],
             [20, 15]
           ]
         },
-        "line-dasharray": [3, 0.4],
         "line-opacity": {
           "stops": [
-            [9, 0],
-            [9.5, 1]
+            [8.5, 0],
+            [9, 1]
           ]
-        }
+        },
+        "line-dasharray": [3, 0.4]
       }
     },
     {
@@ -9268,23 +9878,33 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#634507",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2.5],
+            [9, 1.5],
+            [10, 1.5],
+            [11, 2],
             [12, 3.4],
             [14, 4.8],
             [20, 15]
           ]
         },
-        "line-dasharray": [0.8, 0.4],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [8.5, 0],
+            [9, 1]
           ]
-        }
+        },
+        "line-dasharray": [0.8, 0.4]
       }
     },
     {
@@ -9536,27 +10156,53 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
           [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood"
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#634507",
+            "#808080"
           ],
-          "#634507",
-          "#404040"
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#634507",
+            "#808080"
+          ]
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2.2],
+            [10, 1],
+            [11, 1.5],
             [12, 2.7],
             [14, 4.2],
             [20, 13]
@@ -9564,8 +10210,8 @@
         },
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9.5, 0],
+            [10, 1]
           ]
         }
       }
@@ -9615,21 +10261,29 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#634507",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2.2],
+            [10, 1],
+            [11, 1.5],
             [12, 2.7],
             [14, 4.2],
             [20, 13]
           ]
         },
-        "line-dasharray": [2.8, 0.4],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9.5, 0],
+            [10, 1]
           ]
         }
       }
@@ -9672,21 +10326,29 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#634507",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2.2],
+            [10, 1],
+            [11, 1.5],
             [12, 2.7],
             [14, 4.2],
             [20, 13]
           ]
         },
-        "line-dasharray": [0.8, 0.4],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [9.5, 0],
+            [10, 1]
           ]
         }
       }
@@ -10838,19 +11500,98 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
-          ["paved", "asphalt", "concrete", "paving_stones", "wood"],
-          "#404040",
-          "#634507"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, 0, 8.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [7, 1],
-            [10, 3],
+            [8, 1],
+            [9, 1.5],
+            [10, 1.5],
+            [11, 2.5],
             [20, 17]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -10884,55 +11625,98 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
-          [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "mud",
-            "rock",
-            "sand",
-            "shells",
-            "stepping_stones"
-          ],
-          "#634507",
-          "#404040"
-        ],
-        "line-opacity": [
           "interpolate",
           ["linear"],
           ["zoom"],
-          7,
-          ["case", ["==", ["get", "class"], "secondary"], 0, 0],
-          7.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 0],
-          8.5,
-          ["case", ["==", ["get", "class"], "secondary"], 1, 1]
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [7, 1],
-            [10, 3],
+            [8, 1.5],
+            [9, 2],
+            [10, 2],
+            [11, 3],
             [20, 17]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -11114,49 +11898,99 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
           [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "mud",
-            "rock",
-            "sand",
-            "shells",
-            "stepping_stones"
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
           ],
-          "#634507",
-          "#404040"
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 2],
+            [9, 2.5],
+            [10, 2.5],
+            [11, 3],
+            [14, 8],
+            [20, 22]
+          ]
+        },
         "line-opacity": {
           "stops": [
             [6, 0],
             [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 1],
-            [9, 3],
-            [14, 8],
-            [20, 22]
           ]
         }
       }
@@ -11352,48 +12186,98 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
           [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "mud",
-            "rock",
-            "sand",
-            "shells",
-            "stepping_stones"
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
           ],
-          "#634507",
-          "#404040"
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 2.5],
+            [9, 3],
+            [10, 3],
+            [11, 4],
+            [20, 22]
+          ]
+        },
         "line-opacity": {
           "stops": [
             [6, 0],
             [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 2.5],
-            [10, 4],
-            [20, 22]
           ]
         }
       }
@@ -11586,7 +12470,7 @@
           "interpolate",
           ["linear"],
           ["zoom"],
-          10,
+          11,
           "#bf440f",
           12,
           "#a15412"
@@ -11602,7 +12486,10 @@
           "stops": [
             [5, 1],
             [6, 2.4],
-            [10, 4.5],
+            [8, 2.5],
+            [9, 3],
+            [10, 3],
+            [11, 4.5],
             [20, 22]
           ]
         }
@@ -11747,7 +12634,7 @@
       },
       "source": "osm",
       "source-layer": "transportation",
-      "minzoom": 12,
+      "minzoom": 8,
       "filter": [
         "all",
         ["!in", "brunnel", "bridge", "tunnel"],
@@ -11764,10 +12651,17 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12.5, 0],
-            [13, 1.5],
+            [11, 1],
+            [12, 1.5],
+            [13, 2],
             [14, 2.5],
             [20, 11.5]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -11965,9 +12859,44 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
-          "#FFFFFF"
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
+          [
+            "case",
+            ["has", "surface_raw"],
+            [
+              "match",
+              ["get", "surface_raw"],
+              [
+                "bricks",
+                "cobblestone",
+                "compacted",
+                "fine_gravel",
+                "grass_paver",
+                "metal",
+                "metal_grid",
+                "rubber",
+                "unhewn_cobblestone",
+                "wood",
+                "dirt",
+                "earth",
+                "grass",
+                "gravel",
+                "ground",
+                "pebblestone",
+                "unpaved",
+                "woodchips",
+                "mud",
+                "rock",
+                "sand",
+                "shells",
+                "stepping_stones"
+              ],
+              "#EDDFCA",
+              "#FFFFFF"
+            ],
+            "#FFFFFF"
+          ]
         ],
         "line-width": {
           "base": 1.2,
@@ -12696,8 +13625,8 @@
         ],
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [11, 0],
+            [12, 1]
           ]
         },
         "line-width": {
@@ -12889,15 +13818,15 @@
         ],
         "line-opacity": {
           "stops": [
-            [9, 0],
-            [9.5, 1]
+            [11, 0],
+            [12, 1]
           ]
         },
         "line-width": {
           "base": 1,
           "stops": [
             [10, 1],
-            [12, 1.3],
+            [12, 1.2],
             [14, 2.5],
             [20, 11.5]
           ]
@@ -13205,28 +14134,57 @@
       "paint": {
         "line-color": [
           "case",
-          ["has", "surface_raw"],
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
           [
-            "match",
-            ["get", "surface_raw"],
-            ["paved", "asphalt", "concrete", "paving_stones", "wood"],
-            "#FFFFFF",
-            "#EDDFCA"
-          ],
-          "#EDDFCA"
+            "case",
+            ["has", "surface_raw"],
+            [
+              "match",
+              ["get", "surface_raw"],
+              [
+                "bricks",
+                "cobblestone",
+                "compacted",
+                "fine_gravel",
+                "grass_paver",
+                "metal",
+                "metal_grid",
+                "rubber",
+                "unhewn_cobblestone",
+                "wood",
+                "dirt",
+                "earth",
+                "grass",
+                "gravel",
+                "ground",
+                "pebblestone",
+                "unpaved",
+                "woodchips",
+                "mud",
+                "rock",
+                "sand",
+                "shells",
+                "stepping_stones"
+              ],
+              "#EDDFCA",
+              "#FFFFFF"
+            ],
+            "#FFFFFF"
+          ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [6.5, 0],
-            [8, 0.5],
+            [10, 0.8],
+            [11, 1],
             [20, 13]
           ]
         },
         "line-opacity": {
           "stops": [
-            [8, 0],
-            [8.5, 1]
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -13261,52 +14219,59 @@
       "paint": {
         "line-color": [
           "case",
-          ["has", "surface_raw"],
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
           [
-            "match",
-            ["get", "surface_raw"],
+            "case",
+            ["has", "surface_raw"],
             [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
+              "match",
+              ["get", "surface_raw"],
+              [
+                "bricks",
+                "cobblestone",
+                "compacted",
+                "fine_gravel",
+                "grass_paver",
+                "metal",
+                "metal_grid",
+                "rubber",
+                "unhewn_cobblestone",
+                "wood",
+                "dirt",
+                "earth",
+                "grass",
+                "gravel",
+                "ground",
+                "pebblestone",
+                "unpaved",
+                "woodchips",
+                "mud",
+                "rock",
+                "sand",
+                "shells",
+                "stepping_stones"
+              ],
+              "#EDDFCA",
+              "#FFFFFF"
             ],
-            "#EDDFCA",
             "#FFFFFF"
-          ],
-          "#FFFFFF"
+          ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
             [6.5, 0],
             [8, 0.5],
+            [10, 1],
+            [11, 1.4],
             [20, 13]
           ]
         },
         "line-opacity": {
           "stops": [
-            [8, 0],
-            [8.5, 1]
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -13477,46 +14442,57 @@
       "paint": {
         "line-color": [
           "case",
-          ["has", "surface_raw"],
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
           [
-            "match",
-            ["get", "surface_raw"],
+            "case",
+            ["has", "surface_raw"],
             [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
+              "match",
+              ["get", "surface_raw"],
+              [
+                "bricks",
+                "cobblestone",
+                "compacted",
+                "fine_gravel",
+                "grass_paver",
+                "metal",
+                "metal_grid",
+                "rubber",
+                "unhewn_cobblestone",
+                "wood",
+                "dirt",
+                "earth",
+                "grass",
+                "gravel",
+                "ground",
+                "pebblestone",
+                "unpaved",
+                "woodchips",
+                "mud",
+                "rock",
+                "sand",
+                "shells",
+                "stepping_stones"
+              ],
+              "#EDDFCA",
+              "#FFFFFF"
             ],
-            "#EDDFCA",
             "#FFFFFF"
-          ],
-          "#FFFFFF"
+          ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [8.5, 0],
-            [9, 0.5],
+            [10, 1],
+            [11, 1.5],
             [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -13757,16 +14733,15 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [6.5, 0],
-            [7, 0.5],
-            [10, 2],
+            [10, 1],
+            [11, 2],
             [20, 18]
           ]
         },
         "line-opacity": {
           "stops": [
-            [8, 0],
-            [9, 1]
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -13960,7 +14935,7 @@
         },
         "line-opacity": {
           "stops": [
-            [9, 0],
+            [10, 0],
             [11, 1]
           ]
         }
@@ -16286,16 +17261,17 @@
       },
       "paint": {
         "line-color": "#a15412",
-        "line-opacity": 1,
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, 1],
-            [13, 3],
+            [11, 2],
+            [12, 3],
+            [13, 3.5],
             [14, 4],
-            [20, 19]
+            [20, 15]
           ]
-        }
+        },
+        "line-opacity": 1
       }
     },
     {
@@ -16665,14 +17641,20 @@
           "#404040",
           "#634507"
         ],
-        "line-opacity": 1,
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0.4],
-            [7, 0.6],
-            [8, 1.8],
-            [20, 22]
+            [8, 1],
+            [9, 1.5],
+            [10, 1.5],
+            [11, 3],
+            [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -16704,44 +17686,98 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
           [
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "mud",
-            "rock",
-            "sand",
-            "shells",
-            "stepping_stones"
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
           ],
-          "#634507",
-          "#404040"
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
-        "line-opacity": 1,
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0.4],
-            [7, 0.6],
-            [8, 1.8],
-            [20, 22]
+            [8, 1.5],
+            [9, 2],
+            [10, 2],
+            [11, 3.5],
+            [20, 20]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -16948,10 +17984,18 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [20, 26]
+            [8, 2],
+            [9, 2.5],
+            [10, 2.5],
+            [11, 4],
+            [14, 9],
+            [20, 22]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -16982,18 +18026,98 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
-          "#404040"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#404040"
+              ],
+              "#404040"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#404040"
+          ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [20, 26]
+            [8, 2.5],
+            [9, 3],
+            [10, 3],
+            [11, 5],
+            [20, 24]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [6, 0],
+            [6.5, 1]
           ]
         }
       }
@@ -17152,11 +18276,12 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [12, 5],
-            [13, 6],
+            [5, 1.2],
+            [6, 2.8],
+            [8, 3],
+            [9, 4],
+            [10, 4],
+            [11, 6],
             [20, 26]
           ]
         }
@@ -17219,7 +18344,7 @@
       }
     },
     {
-      "id": "bridge-minor_smooth-case-(gr-all-osm)",
+      "id": "bridge-minor-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": false,
@@ -17238,7 +18363,7 @@
         "all",
         ["==", "$type", "LineString"],
         ["==", "brunnel", "bridge"],
-        ["in", "class", "minor", "service"],
+        ["in", "class", "minor", "service", "minor_construction"],
         [
           "in",
           "surface_raw",
@@ -17268,27 +18393,244 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#634507",
-          "#404040"
-        ],
-        "line-opacity": {
-          "stops": [
-            [12, 0],
-            [12.5, 1]
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#9d7a34",
+            "#808080"
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood"
+            ],
+            "#634507",
+            "#808080"
           ]
-        },
+        ],
         "line-width": {
           "base": 1.2,
           "stops": [
             [9, 2],
-            [10, 3],
+            [10, 2],
+            [11, 2.8],
             [12, 4.2],
             [14, 5],
             [20, 20]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8.5, 0],
+            [9, 1]
+          ]
         }
+      }
+    },
+    {
+      "id": "bridge-minor-case_medium-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-minor-cat_c-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "minor", "service", "minor_construction"],
+        [
+          "any",
+          [
+            "in",
+            "surface_raw",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips"
+          ],
+          ["!has", "surface_raw"],
+          [
+            "!in",
+            "surface_raw",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips",
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood",
+            "surface_raw",
+            "asphalt",
+            "chipseal",
+            "concrete",
+            "concrete:lanes",
+            "concrete:plates",
+            "paved",
+            "paving_stones",
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood"
+          ]
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [9, 2],
+            [10, 2],
+            [11, 2.8],
+            [12, 4.2],
+            [14, 5],
+            [20, 20]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8.5, 0],
+            [9, 1]
+          ]
+        },
+        "line-dasharray": [3, 0.4]
+      }
+    },
+    {
+      "id": "bridge-minor-case_rough-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-minor-cat_d-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["in", "class", "minor", "service", "minor_construction"],
+        [
+          "in",
+          "surface_raw",
+          "mud",
+          "rock",
+          "sand",
+          "shells",
+          "stepping_stones"
+        ]
+      ],
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          "#9d7a34",
+          12,
+          "#634507"
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [9, 2],
+            [10, 2],
+            [11, 2.8],
+            [12, 4.2],
+            [14, 5],
+            [20, 20]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [8.5, 0],
+            [9, 1]
+          ]
+        },
+        "line-dasharray": [0.8, 0.4]
       }
     },
     {
@@ -19573,6 +20915,12 @@
             [7, 0.5],
             [20, 18]
           ]
+        },
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [13, 1]
+          ]
         }
       }
     },
@@ -19605,9 +20953,44 @@
       "paint": {
         "line-color": [
           "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#EDDFCA",
-          "#FFFFFF"
+          ["==", ["get", "bicycle"], "no"],
+          "#ffcc88",
+          [
+            "case",
+            ["has", "surface_raw"],
+            [
+              "match",
+              ["get", "surface_raw"],
+              [
+                "bricks",
+                "cobblestone",
+                "compacted",
+                "fine_gravel",
+                "grass_paver",
+                "metal",
+                "metal_grid",
+                "rubber",
+                "unhewn_cobblestone",
+                "wood",
+                "dirt",
+                "earth",
+                "grass",
+                "gravel",
+                "ground",
+                "pebblestone",
+                "unpaved",
+                "woodchips",
+                "mud",
+                "rock",
+                "sand",
+                "shells",
+                "stepping_stones"
+              ],
+              "#EDDFCA",
+              "#FFFFFF"
+            ],
+            "#FFFFFF"
+          ]
         ],
         "line-width": {
           "base": 1.2,
@@ -19615,6 +20998,12 @@
             [6.5, 0],
             [7, 0.5],
             [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [13, 1]
           ]
         }
       }
@@ -19774,6 +21163,12 @@
             [6.5, 0],
             [7, 0.5],
             [20, 18]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [10, 0],
+            [11, 1]
           ]
         }
       }
@@ -20708,7 +22103,7 @@
       "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-antialias": true,
@@ -20740,7 +22135,7 @@
       "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -20793,7 +22188,7 @@
       "minzoom": 13,
       "filter": ["==", "$type", "Polygon"],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-width": {
@@ -22219,11 +23614,9 @@
           12.5,
           0,
           13,
-          ["match", ["get", "access"], ["yes"], 1, ["no"], 0, 0.75]
-          ,
+          ["match", ["get", "access"], ["yes"], 1, ["no"], 0, 0.75],
           14.5,
-          ["match", ["get", "access"], ["yes"], 1, ["no"], 0, 0.75]
-          ,
+          ["match", ["get", "access"], ["yes"], 1, ["no"], 0, 0.75],
           15,
           ["match", ["get", "access"], ["yes"], 1, ["no"], 0.25, 0.75]
         ],
@@ -23839,7 +25232,7 @@
         },
         "text-max-width": 8,
         "text-allow-overlap": false,
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#262626",
@@ -23875,7 +25268,7 @@
         },
         "text-max-width": 8,
         "text-allow-overlap": false,
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#262626",
@@ -23911,7 +25304,7 @@
         },
         "text-max-width": 8,
         "text-allow-overlap": false,
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#262626",
