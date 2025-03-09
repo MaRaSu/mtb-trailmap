@@ -3258,9 +3258,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -3293,7 +3293,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -3420,9 +3420,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -3455,7 +3455,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-dasharray": [0.5, 0.25],
@@ -3765,9 +3765,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -3800,7 +3800,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-dasharray": [0.5, 0.25],
@@ -9687,7 +9687,7 @@
               "wood"
             ],
             "#9d7a34",
-            "#808080"
+            "#999999"
           ],
           12,
           [
@@ -9712,7 +9712,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [9, 1.5],
+            [9, 1.2],
             [10, 1.5],
             [11, 2],
             [12, 3.4],
@@ -9824,7 +9824,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [9, 1.5],
+            [9, 1.2],
             [10, 1.5],
             [11, 2],
             [12, 3.4],
@@ -9890,7 +9890,7 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [9, 1.5],
+            [9, 1.2],
             [10, 1.5],
             [11, 2],
             [12, 3.4],
@@ -11503,6 +11503,48 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          8,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#808080"
+              ],
+              "#808080"
+            ]
+          ],
           11,
           [
             "case",
@@ -11540,9 +11582,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -11575,7 +11617,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -11628,6 +11670,48 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          8,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#737373"
+              ],
+              "#737373"
+            ]
+          ],
           11,
           [
             "case",
@@ -11665,9 +11749,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -11700,7 +11784,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -11901,6 +11985,48 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          8,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#666666"
+              ],
+              "#666666"
+            ]
+          ],
           11,
           [
             "case",
@@ -11938,9 +12064,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -11973,14 +12099,14 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
             [8, 2],
-            [9, 2.5],
+            [9, 2.2],
             [10, 2.5],
             [11, 3],
             [14, 8],
@@ -12226,9 +12352,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -12261,7 +12387,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -17635,11 +17761,83 @@
       },
       "paint": {
         "line-color": [
-          "match",
-          ["get", "surface_raw"],
-          ["paved", "asphalt", "concrete", "paving_stones", "wood"],
-          "#404040",
-          "#634507"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#595959"
+              ],
+              "#595959"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#595959"
+          ]
         ],
         "line-width": {
           "base": 1.2,
@@ -17726,9 +17924,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -17761,7 +17959,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -17976,10 +18174,83 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "#926d24",
-          "#404040"
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            "#bf440f",
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                "#9d7a34",
+                "#595959"
+              ],
+              "#595959"
+            ]
+          ],
+          12,
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            "#634507",
+            "#595959"
+          ]
         ],
         "line-width": {
           "base": 1.2,
@@ -18066,9 +18337,9 @@
                   "stepping_stones"
                 ],
                 "#9d7a34",
-                "#404040"
+                "#595959"
               ],
-              "#404040"
+              "#595959"
             ]
           ],
           12,
@@ -18101,7 +18372,7 @@
               "stepping_stones"
             ],
             "#634507",
-            "#404040"
+            "#595959"
           ]
         ],
         "line-width": {
@@ -18413,7 +18684,7 @@
               "wood"
             ],
             "#9d7a34",
-            "#808080"
+            "#999999"
           ],
           12,
           [
@@ -18438,7 +18709,7 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [9, 2],
+            [9, 1.5],
             [10, 2],
             [11, 2.8],
             [12, 4.2],
@@ -18550,7 +18821,7 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [9, 2],
+            [9, 1.5],
             [10, 2],
             [11, 2.8],
             [12, 4.2],
@@ -18616,7 +18887,7 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [9, 2],
+            [9, 1.5],
             [10, 2],
             [11, 2.8],
             [12, 4.2],
