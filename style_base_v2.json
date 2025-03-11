@@ -9844,13 +9844,13 @@
             [20, 15]
           ]
         },
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [8.5, 0],
             [9, 1]
           ]
-        },
-        "line-dasharray": [3, 0.4]
+        }
       }
     },
     {
@@ -9916,7 +9916,7 @@
             [9, 1]
           ]
         },
-        "line-dasharray": [0.8, 0.4]
+        "line-dasharray": [1.2, 0.8]
       }
     },
     {
@@ -10292,6 +10292,7 @@
             [20, 13]
           ]
         },
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [9.5, 0],
@@ -10362,7 +10363,8 @@
             [9.5, 0],
             [10, 1]
           ]
-        }
+        },
+        "line-dasharray": [1.2, 0.8]
       }
     },
     {
@@ -10655,7 +10657,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [3, 0.6],
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -10711,7 +10713,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [0.8, 0.4],
+        "line-dasharray": [1.2, 0.8],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -11007,7 +11009,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [3, 0.6],
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -11063,7 +11065,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [0.8, 0.4],
+        "line-dasharray": [1.2, 0.8],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -11787,7 +11789,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [3, 0.4],
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [6, 0],
@@ -11853,7 +11855,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [0.8, 0.4],
+        "line-dasharray": [1.2, 0.8],
         "line-opacity": {
           "stops": [
             [6, 0],
@@ -19065,13 +19067,13 @@
             [20, 20]
           ]
         },
+        "line-dasharray": [4, 0.8],
         "line-opacity": {
           "stops": [
             [8.5, 0],
             [9, 1]
           ]
-        },
-        "line-dasharray": [3, 0.4]
+        }        
       }
     },
     {
