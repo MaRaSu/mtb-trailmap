@@ -9815,47 +9815,7 @@
             "unpaved",
             "woodchips"
           ],
-          ["!has", "surface_raw"],
-          [
-            "!in",
-            "surface_raw",
-            "dirt",
-            "earth",
-            "grass",
-            "gravel",
-            "ground",
-            "pebblestone",
-            "unpaved",
-            "woodchips",
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood",
-            "surface_raw",
-            "asphalt",
-            "chipseal",
-            "concrete",
-            "concrete:lanes",
-            "concrete:plates",
-            "paved",
-            "paving_stones",
-            "bricks",
-            "cobblestone",
-            "compacted",
-            "fine_gravel",
-            "grass_paver",
-            "metal",
-            "metal_grid",
-            "rubber",
-            "unhewn_cobblestone",
-            "wood"
-          ]
+          ["!has", "surface_raw"]
         ]
       ],
       "layout": {
@@ -11724,7 +11684,6 @@
         }
       }
     },
-
     {
       "id": "highway-tertiary-case_medium-(gr-all-osm)",
       "type": "line",
@@ -11837,7 +11796,6 @@
         }
       }
     },
-
     {
       "id": "highway-tertiary-case_rough-(gr-all-osm)",
       "type": "line",
@@ -11904,7 +11862,6 @@
         }
       }
     },
-
     {
       "id": "highway-secondary-case-(gr-all-osm)",
       "type": "line",
