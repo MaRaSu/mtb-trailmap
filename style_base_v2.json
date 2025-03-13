@@ -11529,6 +11529,8 @@
             "paving_stones",
             "bricks",
             "cobblestone",
+            "unpaved",
+            "gravel",
             "compacted",
             "fine_gravel",
             "grass_paver",
@@ -11724,10 +11726,8 @@
             "dirt",
             "earth",
             "grass",
-            "gravel",
             "ground",
             "pebblestone",
-            "unpaved",
             "woodchips"
           ],
           [
