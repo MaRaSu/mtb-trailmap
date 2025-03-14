@@ -42,25 +42,29 @@
     "maptiler_ortho": {
       "type": "raster",
       "maxzoom": 19,
-      "url": "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=cgK0etF04PfrXscBmDSY"
     },
     "maptiler_hillshade": {
       "type": "raster",
       "maxzoom": 12,
       "minzoom": 9,
-      "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=cgK0etF04PfrXscBmDSY"
     },
     "maptiler_hillshade_lowzoom": {
       "type": "raster",
       "maxzoom": 9,
       "minzoom": 3,
-      "url": "https://api.maptiler.com/tiles/hand-drawn-hillshade/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/hand-drawn-hillshade/tiles.json?key=cgK0etF04PfrXscBmDSY"
     },
     "maptiler_contours": {
       "type": "vector",
       "maxzoom": 14,
       "minzoom": 10,
-      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=cgK0etF04PfrXscBmDSY"
+    },
+    "maptiler_terrain_rgb": {
+      "url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=cgK0etF04PfrXscBmDSY",
+      "type": "raster-dem"
     },
     "lipas_routes": {
       "type": "vector",
@@ -101,7 +105,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "background-color": "#fefefa"
+        "background-color": [
+          "interpolate",
+          ["exponential", 1],
+          ["zoom"],
+          5,
+          "hsl(86, 39%, 93%)",
+          14,
+          "hsl(120, 4%, 95%)"
+        ]
       }
     },
     {
@@ -1275,7 +1287,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#916f4c",
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
         "line-opacity": 0.35,
         "line-width": [
           "interpolate",
@@ -1325,7 +1337,7 @@
         "text-anchor": "center"
       },
       "paint": {
-        "text-color": "#916f4c",
+        "text-color": "hsla(36, 45%, 45%, 0.8)",
         "text-halo-color": "#FFFFFF",
         "text-halo-width": 1,
         "text-opacity": 1
@@ -2894,6 +2906,37 @@
             [9, 0.2]
           ]
         }
+      }
+    },
+    {
+      "id": "maptiler_hillshade_rgb-(def-global-maptiler_hillshade)",
+      "type": "hillshade",
+      "source": "maptiler_terrain_rgb",
+      "minzoom": 3,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "hillshade-accent-color": "hsl(98, 35%, 86%)",
+        "hillshade-exaggeration": {
+          "stops": [
+            [6, 0.4],
+            [14, 0.35],
+            [18, 0.25]
+          ]
+        },
+        "hillshade-highlight-color": "hsl(20, 13%, 68%)",
+        "hillshade-shadow-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "hsl(9, 3%, 41%)",
+          13,
+          "hsl(9, 0%, 0%)",
+          15,
+          "hsl(9, 3%, 41%)"
+        ]
       }
     },
     {
