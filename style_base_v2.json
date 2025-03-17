@@ -1287,7 +1287,7 @@
       "maxzoom": 20,
       "filter": ["!=", ["%", ["get", "korkeusarvo"], 5000], 0],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "#916f4c",
@@ -1328,7 +1328,7 @@
       "minzoom": 8,
       "maxzoom": 20,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
@@ -1356,7 +1356,6 @@
         "trailmap:ways_only": false,
         "trailmap:group": "contour",
         "trailmap:country": ["global", "!nor"],
-
         "trailmap:premium": "navi"
       },
       "source": "maptiler_contours",
@@ -1365,7 +1364,7 @@
       "maxzoom": 20,
       "filter": ["==", "nth_line", 10],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "text-field": ["to-string", ["get", "height"]],
         "text-font": ["Noto Sans Regular"],
         "text-size": [
@@ -1408,7 +1407,7 @@
       "minzoom": 8,
       "maxzoom": 20,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
@@ -1444,7 +1443,7 @@
       "maxzoom": 20,
       "filter": ["==", "nth_line", 10],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "text-field": ["to-string", ["get", "height"]],
         "text-font": ["Noto Sans Regular"],
         "text-size": [
@@ -1503,7 +1502,7 @@
       }
     },
     {
-      "id": "esri_contours-mainline-(def-global-esri_contours)",
+      "id": "esri_contours-z12_mainline-(def-global-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1517,11 +1516,81 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 10,
-      "maxzoom": 20,
-      "filter": ["all", ["==", "Index2", 1], ["==", "Index4", 1]],
+      "minzoom": 11.5,
+      "maxzoom": 13,
+      "filter": ["==", "Index4", 1],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          0.8,
+          20,
+          10
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z12_line-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 11.5,
+      "maxzoom": 13,
+      "filter": ["all", ["==", "Index3", 1], ["==", "Index4", 0]],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          0.4,
+          20,
+          4.5
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z13_mainline-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 13,
+      "maxzoom": 15,
+      "filter": ["==", "Index4", 1],
+      "layout": {
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
@@ -1538,7 +1607,7 @@
       }
     },
     {
-      "id": "esri_contours-line-(def-global-esri_contours)",
+      "id": "esri_contours-z13_line-(def-global-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1552,11 +1621,151 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 10,
-      "maxzoom": 20,
+      "minzoom": 13,
+      "maxzoom": 15,
       "filter": ["all", ["==", "Index2", 1], ["==", "Index4", 0]],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          0.7,
+          20,
+          4.5
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z15_mainline-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 15,
+      "maxzoom": 17,
+      "filter": ["==", "Index3", 1],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1.5,
+          20,
+          10
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z15_line-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 15,
+      "maxzoom": 17,
+      "filter": ["all", ["==", "Index1", 1], ["==", "Index3", 0]],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          0.7,
+          20,
+          4.5
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z16_mainline-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 17,
+      "maxzoom": 20,
+      "filter": ["==", "Index2", 1],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(36, 45%, 45%, 0.8)",
+        "line-opacity": 0.35,
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          6,
+          1.5,
+          20,
+          10
+        ]
+      }
+    },
+    {
+      "id": "esri_contours-z16_line-(def-global-esri_contours)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 17,
+      "maxzoom": 20,
+      "filter": ["==", "Index2", 0],
+      "layout": {
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
@@ -1588,11 +1797,54 @@
       "source": "esri_contours",
       "source-layer": "Contour",
       "minzoom": 13,
-      "maxzoom": 20,
-      "filter": ["all", ["==", "Index2", 1], ["==", "Index4", 1]],
+      "maxzoom": 16,
+      "filter": ["all", ["==", "Index4", 1]],
       "layout": {
         "text-field": "{Contour} {Unit}",
-        "visibility": "none",
+        "visibility": "visible",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.55],
+          ["zoom"],
+          12,
+          8,
+          16,
+          18
+        ],
+        "symbol-placement": "line",
+        "text-allow-overlap": true,
+        "text-padding": 2,
+        "text-anchor": "center"
+      },
+      "paint": {
+        "text-color": "#916f4c",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1,
+        "text-opacity": 1
+      }
+    },
+    {
+      "id": "esri_contours-label-n50-(def-global-esri_contours)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "contour",
+        "trailmap:country": ["nor"]
+      },
+      "source": "esri_contours",
+      "source-layer": "Contour",
+      "minzoom": 16,
+      "maxzoom": 20,
+      "filter": ["all", ["==", "Index3", 1]],
+      "layout": {
+        "text-field": "{Contour} {Unit}",
+        "visibility": "visible",
         "text-font": ["Noto Sans Regular"],
         "text-size": [
           "interpolate",
