@@ -1468,7 +1468,7 @@
       }
     },
     {
-      "id": "maptiler_contours-mainline-filler-(def-global-maptiler_contours)",
+      "id": "maptiler_contours-mainline-filler-(def-nor-maptiler_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1502,7 +1502,7 @@
       }
     },
     {
-      "id": "esri_contours-z12_mainline-(def-global-esri_contours)",
+      "id": "esri_contours-z12_mainline-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1537,7 +1537,7 @@
       }
     },
     {
-      "id": "esri_contours-z12_line-(def-global-esri_contours)",
+      "id": "esri_contours-z12_line-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1572,7 +1572,7 @@
       }
     },
     {
-      "id": "esri_contours-z13_mainline-(def-global-esri_contours)",
+      "id": "esri_contours-z13_mainline-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1607,7 +1607,7 @@
       }
     },
     {
-      "id": "esri_contours-z13_line-(def-global-esri_contours)",
+      "id": "esri_contours-z13_line-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1642,7 +1642,7 @@
       }
     },
     {
-      "id": "esri_contours-z15_mainline-(def-global-esri_contours)",
+      "id": "esri_contours-z15_mainline-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1677,7 +1677,7 @@
       }
     },
     {
-      "id": "esri_contours-z15_line-(def-global-esri_contours)",
+      "id": "esri_contours-z15_line-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1712,7 +1712,7 @@
       }
     },
     {
-      "id": "esri_contours-z16_mainline-(def-global-esri_contours)",
+      "id": "esri_contours-z16_mainline-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1747,7 +1747,7 @@
       }
     },
     {
-      "id": "esri_contours-z16_line-(def-global-esri_contours)",
+      "id": "esri_contours-z16_line-(def-nor-esri_contours)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
@@ -1782,7 +1782,7 @@
       }
     },
     {
-      "id": "esri_contours-label-n100-(def-global-esri_contours)",
+      "id": "esri_contours-label-n100-(def-nor-esri_contours)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -1825,7 +1825,7 @@
       }
     },
     {
-      "id": "esri_contours-label-n50-(def-global-esri_contours)",
+      "id": "esri_contours-label-n50-(def-nor-esri_contours)",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": true,
@@ -1907,22 +1907,65 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "hillshade",
-        "trailmap:country": "global"
+        "trailmap:country": ["global", "!nor"]
       },
       "source": "maptiler_hillshade",
       "minzoom": 9,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
-        "raster-brightness-min": 0.6,
+        "raster-brightness-min": {
+          "stops": [
+            [9, 0.5],
+            [12, 0.6],
+            [16, 0.7]
+          ]
+        },
         "raster-opacity": {
           "stops": [
-            [9, 0.1],
-            [10, 0.15],
-            [12.5, 0.3],
-            [14, 0.25],
-            [16, 0.2]
+            [8, 0.3],
+            [11, 0.45],
+            [13, 0.55],
+            [15, 0.65]
+          ]
+        }
+      }
+    },
+    {
+      "id": "maptiler_hillshade-(def-nor-maptiler_hillshade)",
+      "type": "raster",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:group": "hillshade",
+        "trailmap:country": "nor",
+        "trailmap:premium": "free"
+      },
+      "source": "maptiler_hillshade",
+      "minzoom": 9,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "raster-brightness-min": {
+          "stops": [
+            [9, 0.5],
+            [12, 0.6],
+            [16, 0.75]
+          ]
+        },
+        "raster-opacity": {
+          "stops": [
+            [9, 0.15],
+            [10, 0.25],
+            [11.5, 0.35],
+            [13, 0.4],
+            [15, 0.45]
           ]
         }
       }
@@ -1959,7 +2002,7 @@
       }
     },
     {
-      "id": "mapbox_hillshade_rgb-(def-global-mapbox_hillshade)",
+      "id": "mapbox_hillshade_rgb-(def-nor-mapbox_hillshade)",
       "type": "hillshade",
       "metadata": {
         "trailmap:mtb": true,
@@ -1969,34 +2012,36 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "hillshade",
-        "trailmap:country": "none",
+        "trailmap:country": "nor",
         "trailmap:premium": "navi"
       },
       "source": "mapbox_terrain_rgb",
-      "minzoom": 8,
+      "minzoom": 9,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "hillshade-accent-color": "hsl(98, 35%, 86%)",
         "hillshade-exaggeration": {
           "stops": [
-            [6, 0.4],
-            [14, 0.35],
-            [18, 0.25]
+            [6, 0.3],
+            [14, 0.3],
+            [15, 0.4]
           ]
         },
-        "hillshade-highlight-color": "hsl(20, 13%, 68%)",
+        "hillshade-highlight-color": "hsl(20, 13%, 90%)",
         "hillshade-shadow-color": [
           "interpolate",
           ["linear"],
           ["zoom"],
-          0,
-          "hsl(9, 3%, 41%)",
+          9,
+          "hsl(9, 3%, 100%)",
+          11,
+          "hsl(9, 3%, 70%)",
           13,
-          "hsl(9, 0%, 0%)",
+          "hsl(9, 0%, 35%)",
           15.5,
-          "hsl(9, 3%, 41%)"
+          "hsl(9, 3%, 50%)"
         ]
       }
     },
