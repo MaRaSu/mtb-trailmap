@@ -1489,7 +1489,7 @@
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -1516,15 +1516,15 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 11.5,
-      "maxzoom": 13,
+      "minzoom": 11,
+      "maxzoom": 12.5,
       "filter": ["==", "Index4", 1],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -1551,15 +1551,15 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 11.5,
-      "maxzoom": 13,
+      "minzoom": 11.8,
+      "maxzoom": 12.5,
       "filter": ["all", ["==", "Index3", 1], ["==", "Index4", 0]],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -1586,15 +1586,15 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 13,
-      "maxzoom": 15,
+      "minzoom": 12.5,
+      "maxzoom": 14,
       "filter": ["==", "Index4", 1],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -1621,15 +1621,15 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 13,
-      "maxzoom": 15,
+      "minzoom": 12.5,
+      "maxzoom": 14,
       "filter": ["all", ["==", "Index2", 1], ["==", "Index4", 0]],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -1656,8 +1656,8 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 15,
-      "maxzoom": 17,
+      "minzoom": 14,
+      "maxzoom": 16,
       "filter": ["==", "Index3", 1],
       "layout": {
         "visibility": "visible"
@@ -1691,8 +1691,8 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 15,
-      "maxzoom": 17,
+      "minzoom": 14,
+      "maxzoom": 16,
       "filter": ["all", ["==", "Index1", 1], ["==", "Index3", 0]],
       "layout": {
         "visibility": "visible"
@@ -1726,7 +1726,7 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 17,
+      "minzoom": 16,
       "maxzoom": 20,
       "filter": ["==", "Index2", 1],
       "layout": {
@@ -1761,7 +1761,7 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 17,
+      "minzoom": 16,
       "maxzoom": 20,
       "filter": ["==", "Index2", 0],
       "layout": {
@@ -1797,7 +1797,7 @@
       "source": "esri_contours",
       "source-layer": "Contour",
       "minzoom": 13,
-      "maxzoom": 16,
+      "maxzoom": 15.5,
       "filter": ["all", ["==", "Index4", 1]],
       "layout": {
         "text-field": "{Contour} {Unit}",
@@ -1839,7 +1839,7 @@
       },
       "source": "esri_contours",
       "source-layer": "Contour",
-      "minzoom": 16,
+      "minzoom": 15.5,
       "maxzoom": 20,
       "filter": ["all", ["==", "Index3", 1]],
       "layout": {
@@ -1910,18 +1910,19 @@
         "trailmap:country": "global"
       },
       "source": "maptiler_hillshade",
-      "minzoom": 10,
+      "minzoom": 9,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-brightness-min": 0.6,
         "raster-opacity": {
           "stops": [
-            [8, 0.3],
-            [11, 0.45],
-            [13, 0.55],
-            [15, 0.65]
+            [9, 0.1],
+            [10, 0.15],
+            [12.5, 0.3],
+            [14, 0.25],
+            [16, 0.2]
           ]
         }
       }
@@ -2013,9 +2014,9 @@
         "trailmap:country": "none"
       },
       "source": "esri_hillshade",
-      "minzoom": 8,
+      "minzoom": 10,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "raster-brightness-min": 0.6,
@@ -2055,7 +2056,8 @@
             [3, 0.3],
             [6, 0.5],
             [7, 0.5],
-            [9, 0.4]
+            [9, 0.25],
+            [10, 0.1]
           ]
         }
       }
