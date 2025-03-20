@@ -24654,7 +24654,12 @@
         "visibility": "visible",
         "symbol-placement": "line",
         "text-ignore-placement": true,
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["concat", ["get", "name:latin"], " ", ["get", "name:nonlatin"]],
+          ["get", "ref"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
         "text-size": {
@@ -24698,7 +24703,12 @@
         "visibility": "none",
         "symbol-placement": "line",
         "text-ignore-placement": true,
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["concat", ["get", "name:latin"], " ", ["get", "name:nonlatin"]],
+          ["get", "ref"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
         "text-size": {
@@ -24737,7 +24747,12 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "line",
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["concat", ["get", "name:latin"], " ", ["get", "name:nonlatin"]],
+          ["get", "ref"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
         "text-size": {
@@ -24777,7 +24792,12 @@
       "layout": {
         "visibility": "none",
         "symbol-placement": "line",
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": [
+          "case",
+          ["has", "name"],
+          ["concat", ["get", "name:latin"], " ", ["get", "name:nonlatin"]],
+          ["get", "ref"]
+        ],
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "map",
         "text-size": {
