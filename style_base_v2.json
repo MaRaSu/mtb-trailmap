@@ -83,7 +83,7 @@
       "tiles": [
         "https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.webp?access_token=pk.eyJ1IjoibWFyYXN1IiwiYSI6ImNtOGQ2dHM5eTI5NnYybXNjdzFoYmtya3kifQ.EzRWHQbahoracnw2TSjdXQ"
       ],
-      "maxzoom": 17,
+      "maxzoom": 18,
       "type": "raster"
     },
     "lipas_routes": {
