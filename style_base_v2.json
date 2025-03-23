@@ -148,15 +148,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "background-color": [
-          "interpolate",
-          ["exponential", 1],
-          ["zoom"],
-          5,
-          "hsl(86, 39%, 93%)",
-          14,
-          "hsl(120, 4%, 95%)"
-        ]
+        "background-color": "#fefefa"
       }
     },
     {
@@ -237,7 +229,7 @@
       }
     },
     {
-      "id": "landuse-built_up-woodmask-(def-all-osm)",
+      "id": "landuse-built_up-woodmask-(def-fin-osm)",
       "type": "fill",
       "metadata": {
         "trailmap:mtb": false,
@@ -246,8 +238,9 @@
         "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
+        "trailmap:group": "woodmask",
         "trailmap:id_legacy": "landuse-mml-taajama-woodmask",
-        "trailmap:country": "all"
+        "trailmap:country": "fin"
       },
       "source": "osm",
       "source-layer": "landcover",
@@ -268,7 +261,7 @@
             [9, true]
           ]
         },
-        "fill-color": "#f7f4f0",
+        "fill-color": "#fefefa",
         "fill-opacity": 1
       }
     },
