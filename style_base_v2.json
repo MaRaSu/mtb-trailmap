@@ -41,26 +41,26 @@
     },
     "maptiler_ortho": {
       "type": "raster",
-      "maxzoom": 19,
-      "url": "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "maxzoom": 18,
+      "url": "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=OlMyDzvCDsSWOzFiNQC3"
     },
     "maptiler_hillshade": {
       "type": "raster",
       "maxzoom": 12,
       "minzoom": 9,
-      "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=OlMyDzvCDsSWOzFiNQC3"
     },
     "maptiler_hillshade_lowzoom": {
       "type": "raster",
       "maxzoom": 9,
       "minzoom": 3,
-      "url": "https://api.maptiler.com/tiles/hand-drawn-hillshade/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/hand-drawn-hillshade/tiles.json?key=OlMyDzvCDsSWOzFiNQC3"
     },
     "maptiler_contours": {
       "type": "vector",
       "maxzoom": 14,
       "minzoom": 10,
-      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=QEBPM97mkMISqxdnf1Oy"
+      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=OlMyDzvCDsSWOzFiNQC3"
     },
     "lipas_routes": {
       "type": "vector",
@@ -78,6 +78,13 @@
       "type": "vector",
       "url": "https://avoin-karttakuva.maanmittauslaitos.fi/kiinteisto-avoin/v3/kiinteistojaotus/WGS84_Pseudo-Mercator/tilejson.json?api-key=e77a367c-c6f4-417e-870c-b55d156de596",
       "bounds": [19.2, 59.5, 31.7, 70.2]
+    },
+    "esri_ortho": {
+      "type": "raster",
+      "maxzoom": 19,
+      "tiles": [
+        "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpeg?token=AAPTxy8BH1VEsoebNVZXo8HurCYJdDLjYjPCAZ4Q5yeJ-A6KaAo63Tc3BsC1000dUdBOXIM_XmaY-1AiK7eZUjOcO_QIssfzJ4FXFlZopt2oKhAYBVn0yJS2qMBLanTeuMuRsXBTrImElIJVllbnpIzd9TJQ9_ntg9epilpX8eNpuQ0MmVlu-83p54LxXhJaqW9OxhuxfcppfoLkxe0qMWiBtP-jv5eZiGiL9GgYClULJ5s.AT1_ozljKjiY"
+      ]
     }
   },
   "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
@@ -5682,6 +5689,26 @@
         "trailmap:group": "ortho"
       },
       "source": "maptiler_ortho",
+      "minzoom": 15,
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "esri_aerial_photo-(def-global-esri_ortho)",
+      "type": "raster",
+      "metadata": {
+        "trailmap:mtb": false,
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global",
+        "trailmap:group": "ortho"
+      },
+      "source": "esri_ortho",
+      "maxzoom": 15,
       "layout": {
         "visibility": "none"
       }
