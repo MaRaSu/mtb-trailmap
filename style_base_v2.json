@@ -1233,7 +1233,7 @@
       "source": "mml_topo",
       "source-layer": "korkeus",
       "minzoom": 8,
-      "maxzoom": 13,
+      "maxzoom": 14,
       "filter": ["!", ["has", "korkeusarvo"]],
       "layout": {
         "visibility": "none"
