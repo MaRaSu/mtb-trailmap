@@ -6591,6 +6591,7 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "footway"],
+        ["!in", "bicycle", "yes"],
         [
           "any",
           ["all", ["==", "bicycle", "no"], ["!=", "access", "no"]],
@@ -6690,6 +6691,7 @@
         ["==", "$type", "LineString"],
         ["in", "class", "path", "track"],
         ["!in", "subclass", "footway"],
+        ["!in", "bicycle", "yes"],
         [
           "any",
           ["all", ["==", "bicycle", "no"], ["!=", "access", "no"]],
