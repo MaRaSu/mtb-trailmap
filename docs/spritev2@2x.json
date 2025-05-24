@@ -1707,6 +1707,13 @@
     "x": 0,
     "y": 640
   },
+  "poi-kiosk": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 64,
+    "y": 640
+  },
   "poi-bicycle_charging_station": {
     "height": 64,
     "pixelRatio": 2,
