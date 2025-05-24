@@ -538,6 +538,13 @@
     "x": 204,
     "y": 246
   },
+  "kiosk_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 306,
+    "y": 246
+  },
   "stadium_11": {
     "height": 34,
     "pixelRatio": 2,
