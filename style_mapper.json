@@ -9527,7 +9527,7 @@
       }
     },
     {
-      "id": "mapper_annotations-path-width",
+      "id": "mapper_annotations-path-width_visibility",
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
@@ -9554,7 +9554,7 @@
         ],
         ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
         ["!has", "noexit"],
-        ["has", "width"]
+        ["any", ["has", "width"], ["has", "trail_visibility"]]
       ],
       "layout": {
         "visibility": "visible",
@@ -9563,7 +9563,48 @@
         "text-allow-overlap": true,
         "text-ignore-placement": true,
         "text-padding": 0,
-        "text-field": "{width}",
+        "text-field": [
+          "case",
+          ["all", ["has", "width"]],
+          [
+            "concat",
+            ["get", "width"],
+            [
+              "match",
+              ["get", "trail_visibility"],
+              ["no"],
+              " n",
+              ["horrible"],
+              " h",
+              ["bad"],
+              " b",
+              ["intermediate"],
+              " i",
+              ["good"],
+              " g",
+              ["excellent"],
+              " e",
+              ""
+            ]
+          ],
+          [
+            "match",
+            ["get", "trail_visibility"],
+            ["no"],
+            " n",
+            ["horrible"],
+            " h",
+            ["bad"],
+            " b",
+            ["intermediate"],
+            " i",
+            ["good"],
+            " g",
+            ["excellent"],
+            " e",
+            ""
+          ]
+        ],
         "text-font": ["Noto Sans Bold"],
         "text-size": {
           "base": 1,
