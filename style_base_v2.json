@@ -7521,7 +7521,19 @@
             9
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10.5,
+          0,
+          11,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
@@ -7636,7 +7648,19 @@
             13.5
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10.5,
+          0,
+          11,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
@@ -7751,7 +7775,19 @@
             1.6
           ]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10.5,
+          0,
+          11,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
@@ -7814,7 +7850,19 @@
             [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
@@ -7876,7 +7924,19 @@
             [18, 22.5]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
@@ -7940,7 +8000,19 @@
             [18, 15]
           ]
         },
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
       }
     },
     {
