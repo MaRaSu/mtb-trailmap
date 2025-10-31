@@ -4847,7 +4847,7 @@
         ["==", "$type", "LineString"],
         ["==", "brunnel", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -7409,6 +7409,341 @@
       }
     },
     {
+      "id": "building-area-(def-fin-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-osm",
+        "trailmap:country": "fin"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "maxzoom": 14.5,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1],
+            [14, 1],
+            [14.5, 0]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-(def-global-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-osm",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_fill-(def-fin-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-top-osm",
+        "trailmap:country": "fin"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "maxzoom": 14.5,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1],
+            [14, 1],
+            [14.5, 0]
+          ]
+        },
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_line-(def-fin-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "fin"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "maxzoom": 14.5,
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "hsl(30, 4%, 56%)",
+        "line-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_fill-(def-global-osm)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-top-osm",
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        },
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_line-(def-global-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "global"
+      },
+      "source": "osm",
+      "source-layer": "building",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "hsl(30, 4%, 56%)",
+        "line-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-(def-fin-mml_topo)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-mml",
+        "trailmap:country": "fin"
+      },
+      "source": "mml_topo",
+      "source-layer": "rakennus",
+      "minzoom": 13,
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_fill-(def-fin-mml_topo)",
+      "type": "fill",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "building-top-mml",
+        "trailmap:country": "fin"
+      },
+      "source": "mml_topo",
+      "source-layer": "rakennus",
+      "minzoom": 13,
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "kayttotarkoitus"],
+          [1],
+          "hsl(36, 3%, 65%)",
+          [3],
+          "hsl(36, 3%, 65%)",
+          [5],
+          "hsl(36, 3%, 65%)",
+          [6],
+          "hsl(30, 3%, 75%)",
+          [7],
+          "hsl(30, 3%, 75%)",
+          [8],
+          "hsl(36, 3%, 65%)",
+          "hsl(30, 3%, 75%)"
+        ],
+        "fill-opacity": {
+          "base": 1,
+          "stops": [
+            [13, 0],
+            [13.5, 1]
+          ]
+        },
+        "fill-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-area-top_line-(def-fin-mml_topo)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:country": "fin"
+      },
+      "source": "mml_topo",
+      "source-layer": "rakennus",
+      "minzoom": 13,
+      "filter": ["==", "$type", "Polygon"],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [14, 0.4],
+            [16, 1]
+          ]
+        },
+        "line-color": "hsl(30, 4%, 56%)",
+        "line-translate": {
+          "base": 1,
+          "stops": [
+            [14, [0, 0]],
+            [16, [-2, -2]]
+          ]
+        }
+      }
+    },
+    {
       "id": "highway-path-case-(def-all-osm)",
       "type": "line",
       "metadata": {
@@ -8325,8 +8660,9 @@
         ["==", "$type", "LineString"],
         ["!in", "tunnel"],
         ["==", "class", "path"],
+        ["!=", "subclass", "corridor"],
         ["!has", "mtb_scale"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8376,7 +8712,7 @@
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!has", "mtb_scale"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8421,7 +8757,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8534,7 +8870,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8764,7 +9100,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8830,7 +9166,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8896,7 +9232,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -8962,7 +9298,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -9158,7 +9494,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         ["!in", "cycleway_left", "yes"],
         ["!in", "cycleway_right", "yes"],
         [
@@ -9256,7 +9592,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9315,7 +9651,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9374,7 +9710,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9429,7 +9765,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9484,7 +9820,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9542,7 +9878,7 @@
         ["==", "$type", "LineString"],
         ["!in", "brunnel", "bridge", "tunnel"],
         ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps"],
+        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
         [
           "any",
           ["!=", "subclass", "footway"],
@@ -9916,7 +10252,8 @@
         ["==", "$type", "LineString"],
         ["==", "class", "path"],
         ["==", "subclass", "steps"],
-        ["!in", "brunnel", "bridge", "tunnel"]
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["!=", "indoor", 1]
       ],
       "layout": {
         "visibility": "visible"
@@ -9954,7 +10291,8 @@
         ["==", "$type", "LineString"],
         ["==", "class", "path"],
         ["==", "subclass", "steps"],
-        ["!in", "brunnel", "bridge", "tunnel"]
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["!=", "indoor", 1]
       ],
       "layout": {
         "visibility": "none"
@@ -23420,341 +23758,6 @@
           18,
           ["case", ["==", ["get", "class"], "hedge"], 5, 1]
         ]
-      }
-    },
-    {
-      "id": "building-area-(def-fin-osm)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-osm",
-        "trailmap:country": "fin"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "maxzoom": 14.5,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1],
-            [14, 1],
-            [14.5, 0]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-(def-global-osm)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-osm",
-        "trailmap:country": "global"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_fill-(def-fin-osm)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-top-osm",
-        "trailmap:country": "fin"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "maxzoom": 14.5,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": "hsl(30, 3%, 73%)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1],
-            [14, 1],
-            [14.5, 0]
-          ]
-        },
-        "fill-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_line-(def-fin-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:country": "fin"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "maxzoom": 14.5,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [14, 0.4],
-            [16, 1]
-          ]
-        },
-        "line-color": "hsl(30, 4%, 56%)",
-        "line-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_fill-(def-global-osm)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-top-osm",
-        "trailmap:country": "global"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "hsl(30, 3%, 73%)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1]
-          ]
-        },
-        "fill-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_line-(def-global-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:country": "global"
-      },
-      "source": "osm",
-      "source-layer": "building",
-      "minzoom": 13,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [14, 0.4],
-            [16, 1]
-          ]
-        },
-        "line-color": "hsl(30, 4%, 56%)",
-        "line-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-(def-fin-mml_topo)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-mml",
-        "trailmap:country": "fin"
-      },
-      "source": "mml_topo",
-      "source-layer": "rakennus",
-      "minzoom": 13,
-      "filter": ["==", "$type", "Polygon"],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_fill-(def-fin-mml_topo)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "building-top-mml",
-        "trailmap:country": "fin"
-      },
-      "source": "mml_topo",
-      "source-layer": "rakennus",
-      "minzoom": 13,
-      "filter": ["==", "$type", "Polygon"],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": [
-          "match",
-          ["get", "kayttotarkoitus"],
-          [1],
-          "hsl(36, 3%, 65%)",
-          [3],
-          "hsl(36, 3%, 65%)",
-          [5],
-          "hsl(36, 3%, 65%)",
-          [6],
-          "hsl(30, 3%, 75%)",
-          [7],
-          "hsl(30, 3%, 75%)",
-          [8],
-          "hsl(36, 3%, 65%)",
-          "hsl(30, 3%, 75%)"
-        ],
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [13, 0],
-            [13.5, 1]
-          ]
-        },
-        "fill-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
-      }
-    },
-    {
-      "id": "building-area-top_line-(def-fin-mml_topo)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": true,
-        "trailmap:ways_only": false,
-        "trailmap:country": "fin"
-      },
-      "source": "mml_topo",
-      "source-layer": "rakennus",
-      "minzoom": 13,
-      "filter": ["==", "$type", "Polygon"],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [14, 0.4],
-            [16, 1]
-          ]
-        },
-        "line-color": "hsl(30, 4%, 56%)",
-        "line-translate": {
-          "base": 1,
-          "stops": [
-            [14, [0, 0]],
-            [16, [-2, -2]]
-          ]
-        }
       }
     },
     {
