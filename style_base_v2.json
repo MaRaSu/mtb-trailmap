@@ -25389,7 +25389,7 @@
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
+        "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": true,
@@ -25432,7 +25432,7 @@
       "type": "symbol",
       "metadata": {
         "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
+        "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
         "trailmap:gravel": false,
         "trailmap:mapper": true,
