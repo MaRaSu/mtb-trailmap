@@ -286,7 +286,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(29, 34%, 88%)"
+        "fill-color": @color-landcover_residential
       }
     },
     {
@@ -315,7 +315,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(29, 34%, 88%)"
+        "fill-color": @color-landcover_commercial
       }
     },
     {
@@ -354,7 +354,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(29, 34%, 88%)"
+        "fill-color": @color-landcover_industrial
       }
     },
     {
@@ -378,7 +378,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(94, 11%, 88%)"
+        "fill-color": @color-landcover_cemetery
       }
     },
     {
@@ -402,7 +402,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(29, 34%, 88%)"
+        "fill-color": @color-landcover_hospital
       }
     },
     {
@@ -426,7 +426,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(30, 26%, 89%)"
+        "fill-color": @color-landcover_school
       }
     },
     {
@@ -450,7 +450,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsla(30, 19%, 90%, 0.4)"
+        "fill-color": @color-landcover_railway
       }
     },
     {
@@ -476,7 +476,7 @@
       "paint": {
         "fill-color": "hsl(0, 0%, 90%)",
         "fill-opacity": 1,
-        "fill-outline-color": "hsl(0, 0%, 82%)"
+        "fill-outline-color": @color-landcover_parking_area
       }
     },
     {
@@ -538,7 +538,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "hsl(33, 10%, 83%)"
+        "fill-color": @color-landcover_quarry
       }
     },
     {
@@ -562,7 +562,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(33, 10%, 83%)"
+        "fill-color": @color-landcover_quarry
       }
     },
     {
@@ -586,7 +586,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "hsl(21, 26%, 89%)"
+        "fill-color": @color-landcover_storage
       }
     },
     {
@@ -614,8 +614,8 @@
           "match",
           ["get", "subclass"],
           ["heath", "fell"],
-          "hsl(75, 38%, 94%)",
-          "hsl(89, 58%, 90%)"
+          @color-landcover_heath_fell,
+          @color-landcover_grass
         ],
         "fill-opacity": {
           "stops": [
@@ -647,7 +647,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(76, 41%, 84%)",
+        "fill-color": @color-landcover_allotments,
         "fill-opacity": 0.8
       }
     },
@@ -671,7 +671,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(0, 0%, 100%)",
+        "fill-color": @color-landcover_ice_shelf,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -702,7 +702,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsla(53, 74%, 85%, 1)",
+        "fill-color": @color-landcover_sand,
         "fill-opacity": 1
       }
     },
@@ -883,7 +883,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "hsl(0, 0%, 84%)",
+        "fill-color": @color-landcover_bare_rock,
         "fill-opacity": 1
       }
     },
@@ -908,7 +908,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(0, 0%, 84%)",
+        "fill-color": @color-landcover_bare_rock,
         "fill-opacity": 1
       }
     },
@@ -1127,7 +1127,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(89, 41%, 79%)",
+        "fill-color": @color-landcover_sport_play,
         "fill-opacity": {
           "stops": [
             [12, 0],
@@ -1165,7 +1165,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(28, 33%, 80%)",
+        "line-color": @color-landcover_line_generic,
         "line-width": {
           "stops": [
             [16, 1],
@@ -4589,8 +4589,8 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "tunnel-motorway-case",
@@ -4609,7 +4609,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(18, 96%, 35%)",
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11,
+          @color-motorway_case_farzoom,
+          12,
+          @color-motorway_case_default
+        ],
         "line-dasharray": [0.5, 0.25],
         "line-width": {
           "base": 1.2,
@@ -4619,84 +4627,6 @@
             [7, 1.5],
             [12, 4],
             [13, 6],
-            [20, 22]
-          ]
-        },
-        "line-opacity": 0.5
-      }
-    },
-    {
-      "id": "tunnel-motorway-case-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "tunnel"],
-        ["==", "class", "motorway"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(28, 72%, 69%)",
-        "line-dasharray": [0.5, 0.25],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [20, 22]
-          ]
-        },
-        "line-opacity": 0.5
-      }
-    },
-    {
-      "id": "tunnel-motorway-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "tunnel"],
-        ["==", "class", "motorway"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(28, 72%, 69%)",
-        "line-dasharray": [0.5, 0.25],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
             [20, 22]
           ]
         },
@@ -5535,7 +5465,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(35, 100%, 83%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5577,7 +5507,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(35, 100%, 83%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5614,7 +5544,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(35, 100%, 83%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -7430,7 +7360,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-color": @color-building_area_generic,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -7463,7 +7393,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-color": @color-building_area_generic,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -7494,7 +7424,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-color": @color-building_area_generic,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -7539,7 +7469,7 @@
             [16, 1]
           ]
         },
-        "line-color": "hsl(30, 4%, 56%)",
+        "line-color": @color-building_line_top,
         "line-translate": {
           "base": 1,
           "stops": [
@@ -7569,7 +7499,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-color": @color-building_area_generic,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -7611,7 +7541,7 @@
             [16, 1]
           ]
         },
-        "line-color": "hsl(30, 4%, 56%)",
+        "line-color": @color-building_line_top,
         "line-translate": {
           "base": 1,
           "stops": [
@@ -7643,7 +7573,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "hsl(30, 3%, 73%)",
+        "fill-color": @color-building_area_generic,
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -7678,18 +7608,18 @@
           "match",
           ["get", "kayttotarkoitus"],
           [1],
-          "hsl(36, 3%, 65%)",
+          @color-building_area_residential,
           [3],
-          "hsl(36, 3%, 65%)",
+          @color-building_area_residential,
           [5],
-          "hsl(36, 3%, 65%)",
+          @color-building_area_residential,
           [6],
-          "hsl(30, 3%, 75%)",
+          @color-building_area_generic,
           [7],
-          "hsl(30, 3%, 75%)",
+          @color-building_area_generic,
           [8],
-          "hsl(36, 3%, 65%)",
-          "hsl(30, 3%, 75%)"
+          @color-building_area_residential,
+          @color-building_area_generic
         ],
         "fill-opacity": {
           "base": 1,
@@ -7733,7 +7663,7 @@
             [16, 1]
           ]
         },
-        "line-color": "hsl(30, 4%, 56%)",
+        "line-color": @color-building_line_top,
         "line-translate": {
           "base": 1,
           "stops": [
@@ -8479,7 +8409,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-cycleway_case,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -8532,7 +8462,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-cycleway_case,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -8585,7 +8515,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-cycleway_case,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -13328,8 +13258,8 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-primary-case",
@@ -13354,26 +13284,148 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          8,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-primary_case_bicycle_no,
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-primary_case_unpaved_farzoom,
+                @color-primary_case_paved_or_uk_farzoom
+              ],
+              @color-primary_case_paved_or_uk_farzoom
+            ]
+          ],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-primary_case_bicycle_no,
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-primary_case_unpaved_farzoom,
+                @color-primary_case_paved_or_uk_farzoom
+              ],
+              @color-primary_case_paved_or_uk_farzoom
+            ]
+          ],
           12,
-          "hsl(28, 61%, 55%)",
-          13,
-          "hsl(30, 92%, 35%)"
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-primary_case_bicycle_no,
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-primary_case_unpaved_default,
+                @color-primary_case_paved_or_uk_default
+              ],
+              @color-primary_case_paved_or_uk_default
+            ]
+          ]
         ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [8, 2],
+            [9, 2.2],
+            [10, 2.5],
+            [11, 3],
+            [14, 8],
+            [20, 22]
+          ]
+        },
         "line-opacity": {
           "stops": [
             [6, 0],
             [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 1],
-            [9, 2],
-            [11, 2.5],
-            [12, 4],
-            [13, 5.5],
-            [20, 22]
           ]
         }
       }
@@ -13426,397 +13478,12 @@
       }
     },
     {
-      "id": "highway-primary-case-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-primary-case-wnt",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 6,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary", "primary_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(28, 61%, 55%)",
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 1],
-            [9, 3],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-primary-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-primary-case-gr",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 6,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "primary", "primary_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          8,
-          [
-            "case",
-            ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                "hsl(40, 45%, 50%)",
-                "hsl(0, 0%, 40%)"
-              ],
-              "hsl(0, 0%, 40%)"
-            ]
-          ],
-          11,
-          [
-            "case",
-            ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                "hsl(40, 45%, 50%)",
-                "hsl(0, 0%, 35%)"
-              ],
-              "hsl(0, 0%, 35%)"
-            ]
-          ],
-          12,
-          [
-            "case",
-            ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                "hsl(40, 87%, 21%)",
-                "hsl(0, 0%, 40%)"
-              ],
-              "hsl(0, 0%, 40%)"
-            ]
-          ]
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [8, 2],
-            [9, 2.2],
-            [10, 2.5],
-            [11, 3],
-            [14, 8],
-            [20, 22]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "highway-trunk-case-(def-all-osm)",
       "type": "line",
       "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-trunk-case",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 6,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk", "trunk_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          "hsl(22, 60%, 50%)",
-          13,
-          "hsl(30, 92%, 35%)"
-        ],
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 2],
-            [10, 2.5],
-            [11, 3],
-            [12, 5],
-            [13, 6],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-trunk-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-trunk-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 6,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk", "trunk_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          "hsl(0, 0%, 0%)",
-          12,
-          "hsl(0, 0%, 0%)"
-        ],
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 2.5],
-            [10, 4],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-trunk-case-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-trunk-case-wnt",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 6,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "trunk", "trunk_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          "hsl(28, 67%, 62%)",
-          12,
-          "hsl(28, 71%, 45%)"
-        ],
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 2.5],
-            [10, 4],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-trunk-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -13835,7 +13502,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -13846,7 +13513,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
+            @color-trunk_case_bicycle_no,
             [
               "case",
               ["has", "surface_raw"],
@@ -13878,10 +13545,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "hsl(40, 45%, 50%)",
-                "hsl(0, 0%, 35%)"
+                @color-trunk_case_unpaved_farzoom,
+                @color-trunk_case_paved_or_uk_farzoom
               ],
-              "hsl(0, 0%, 35%)"
+              @color-trunk_case_paved_or_uk_farzoom
             ]
           ],
           12,
@@ -13913,8 +13580,8 @@
               "shells",
               "stepping_stones"
             ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 35%)"
+            @color-trunk_case_unpaved,
+            @color-trunk_case_paved_or_uk
           ]
         ],
         "line-width": {
@@ -13941,164 +13608,7 @@
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-motorway-case",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 5,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "motorway", "motorway_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "hsl(18, 96%, 35%)",
-        "line-opacity": {
-          "stops": [
-            [5.5, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 1],
-            [6, 2.3],
-            [10, 2.5],
-            [11, 2.8],
-            [12, 4],
-            [13, 6],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-motorway-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-motorway-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 5,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "motorway", "motorway_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          "hsl(0, 0%, 0%)",
-          12,
-          "hsl(0, 0%, 0%)"
-        ],
-        "line-opacity": {
-          "stops": [
-            [5.5, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 1],
-            [6, 2.4],
-            [10, 4],
-            [20, 36]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-motorway-case-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-motorway-case-wnt",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 5,
-      "filter": [
-        "all",
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "motorway", "motorway_construction"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          "hsl(18, 85%, 40%)",
-          12,
-          "hsl(28, 80%, 35%)"
-        ],
-        "line-opacity": {
-          "stops": [
-            [5.5, 0],
-            [6.5, 1]
-          ]
-        },
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 1],
-            [6, 2.4],
-            [10, 4.5],
-            [20, 22]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-motorway-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
         "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
@@ -14116,7 +13626,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -14124,9 +13634,9 @@
           ["linear"],
           ["zoom"],
           11,
-          "hsl(18, 85%, 40%)",
+          @color-motorway_case_farzoom,
           12,
-          "hsl(28, 80%, 35%)"
+          @color-motorway_case_default
         ],
         "line-opacity": {
           "stops": [
@@ -16428,7 +15938,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(34, 100%, 77%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -16477,7 +15987,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(29, 75%, 48%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -16526,7 +16036,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(34, 100%, 77%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -16574,7 +16084,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(34, 100%, 77%)",
+        "line-color": @color-motorway_line,
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -19645,10 +19155,80 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          11,
+          [
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-trunk_case_bicycle_no,
+            [
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-trunk_case_unpaved_farzoom,
+                @color-trunk_case_paved_or_uk_farzoom
+              ],
+              @color-trunk_case_paved_or_uk_farzoom
+            ]
+          ],
           12,
-          "hsl(22, 60%, 50%)",
-          13,
-          "hsl(30, 92%, 35%)"
+          [
+            "match",
+            ["get", "surface_raw"],
+            [
+              "bricks",
+              "cobblestone",
+              "compacted",
+              "fine_gravel",
+              "grass_paver",
+              "metal",
+              "metal_grid",
+              "rubber",
+              "unhewn_cobblestone",
+              "wood",
+              "dirt",
+              "earth",
+              "grass",
+              "gravel",
+              "ground",
+              "pebblestone",
+              "unpaved",
+              "woodchips",
+              "mud",
+              "rock",
+              "sand",
+              "shells",
+              "stepping_stones"
+            ],
+            @color-trunk_case_unpaved,
+            @color-trunk_case_paved_or_uk
+          ]
         ],
         "line-width": {
           "base": 1.2,
@@ -19681,43 +19261,6 @@
         "all",
         ["==", "brunnel", "bridge"],
         ["in", "class", "primary"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [6, 2.5],
-            [10, 4],
-            [16, 11],
-            [20, 28]
-          ]
-        }
-      }
-    },
-    {
-      "id": "bridge-trunk-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "bridge"],
-        ["in", "class", "trunk"],
         ["!=", "ramp", 1]
       ],
       "layout": {
@@ -19871,135 +19414,13 @@
       }
     },
     {
-      "id": "bridge-trunk-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "bridge"],
-        ["in", "class", "trunk"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "line-join": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          11,
-          [
-            "case",
-            ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                "hsl(40, 45%, 50%)",
-                "hsl(0, 0%, 35%)"
-              ],
-              "hsl(0, 0%, 35%)"
-            ]
-          ],
-          12,
-          [
-            "match",
-            ["get", "surface_raw"],
-            [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
-            ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 35%)"
-          ]
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [8, 2.5],
-            [9, 3],
-            [10, 3],
-            [11, 5],
-            [20, 24]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [6, 0],
-            [6.5, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "bridge-motorway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-motorway-case",
@@ -20018,138 +19439,14 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsl(18, 96%, 35%)",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [12, 5],
-            [13, 6],
-            [20, 26]
-          ]
-        }
-      }
-    },
-    {
-      "id": "bridge-motorway-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "bridge-motorway-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "bridge"],
-        ["==", "class", "motorway"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          10,
-          "hsl(0, 0%, 0%)",
-          12,
-          "hsl(0, 0%, 0%)"
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [20, 36]
-          ]
-        }
-      }
-    },
-    {
-      "id": "bridge-motorway-case-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "bridge"],
-        ["==", "class", "motorway"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "hsl(18, 96%, 35%)",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [5, 0.4],
-            [6, 0.6],
-            [7, 1.5],
-            [12, 5],
-            [13, 6],
-            [20, 26]
-          ]
-        }
-      }
-    },
-    {
-      "id": "bridge-motorway-case-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": false,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "brunnel", "bridge"],
-        ["==", "class", "motorway"],
-        ["!=", "ramp", 1]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round"
-      },
-      "paint": {
         "line-color": [
           "interpolate",
           ["linear"],
           ["zoom"],
           11,
-          "hsl(18, 85%, 40%)",
+          @color-motorway_case_farzoom,
           12,
-          "hsl(28, 80%, 35%)"
+          @color-motorway_case_default
         ],
         "line-width": {
           "base": 1.2,
