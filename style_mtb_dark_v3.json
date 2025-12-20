@@ -152,7 +152,7 @@
       ]
     }
   },
-  "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
+  "sprite": "https://marasu.github.io/mtb-trailmap/sprite_darkv2",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -234,7 +234,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(0, 0%, 100%)",
+        "fill-color": "#171717",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -585,7 +585,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "hsl(0, 0%, 90%)",
+        "fill-color": "#474747",
         "fill-opacity": 1,
         "fill-outline-color": "#474747"
       }
@@ -777,7 +777,7 @@
             "fell"
           ],
           "#33332E",
-          "#363B31"
+          "#1d201b"
         ],
         "fill-opacity": {
           "stops": [
@@ -1579,10 +1579,10 @@
         0
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(30, 31%, 43%)",
+        "line-color": "#5f472f",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -1658,10 +1658,10 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(30, 31%, 43%)",
+        "line-color": "#5f472f",
         "line-opacity": {
           "stops": [
             [
@@ -1765,10 +1765,10 @@
         0
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(30, 31%, 43%)",
+        "line-color": "#5f472f",
         "line-opacity": {
           "stops": [
             [
@@ -1826,8 +1826,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -1957,8 +1957,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -2086,8 +2086,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
+        "line-color": "#5f472f",
+        "line-opacity": 0.25,
         "line-width": [
           "interpolate",
           [
@@ -2156,8 +2156,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
+        "line-color": "#5f472f",
+        "line-opacity": 0.25,
         "line-width": [
           "interpolate",
           [
@@ -2210,8 +2210,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
+        "line-color": "#5f472f",
+        "line-opacity": 0.25,
         "line-width": [
           "interpolate",
           [
@@ -2256,8 +2256,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
+        "line-color": "#5f472f",
+        "line-opacity": 0.25,
         "line-width": [
           "interpolate",
           [
@@ -2310,8 +2310,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
+        "line-color": "#5f472f",
+        "line-opacity": 0.25,
         "line-width": [
           "interpolate",
           [
@@ -2356,8 +2356,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -2410,8 +2410,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -2456,8 +2456,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -2502,8 +2502,8 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
+        "line-color": "#5f472f",
+        "line-opacity": 0.3,
         "line-width": [
           "interpolate",
           [
@@ -4213,7 +4213,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-dasharray": [
           2,
           4
@@ -4270,7 +4270,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -4323,7 +4323,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-dasharray": [
           4,
           3
@@ -4370,7 +4370,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 36%, 73%)",
+        "line-color": "#4f5c68",
         "line-width": [
           "interpolate",
           [
@@ -4476,7 +4476,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 36%, 73%)",
+        "line-color": "#4f5c68",
         "line-width": [
           "interpolate",
           [
@@ -4583,7 +4583,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(209, 23%, 63%)",
+        "line-color": "#4f5c68",
         "line-width": [
           "interpolate",
           [
@@ -4689,7 +4689,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(209, 23%, 63%)",
+        "line-color": "#4f5c68",
         "line-width": [
           "interpolate",
           [
@@ -4808,7 +4808,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -4867,7 +4867,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 36%, 73%)",
+        "line-color": "#4f5c68",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -4927,7 +4927,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-dasharray": [
           4,
           3
@@ -4985,7 +4985,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5039,7 +5039,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(209, 23%, 63%)",
+        "line-color": "#4f5c68",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5093,7 +5093,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 85%)",
+        "line-color": "#4f5c68",
         "line-dasharray": [
           3,
           2.5
@@ -5138,7 +5138,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [
@@ -5189,7 +5189,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [
@@ -5241,7 +5241,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [
@@ -5309,7 +5309,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
+        "line-color": "#ffffff",
         "line-opacity": {
           "stops": [
             [
@@ -40072,75 +40072,9 @@
         }
       },
       "paint": {
-        "text-color": "hsl(28, 17%, 20%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-color": "#d5cbc3",
+        "text-halo-color": "#000000",
         "text-halo-width": 1.2
-      }
-    },
-    {
-      "id": "name-highway-path-(def-all-osm-hc)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-name-path-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation_name",
-      "minzoom": 14,
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "path"
-        ],
-        [
-          "!in",
-          "subclass",
-          "corridor"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "text-ignore-placement": true,
-        "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-rotation-alignment": "map",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              11
-            ],
-            [
-              16,
-              16
-            ],
-            [
-              18,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 1.5
       }
     },
     {
@@ -40196,67 +40130,9 @@
         }
       },
       "paint": {
-        "text-color": "hsl(28, 17%, 20%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-color": "#d5cbc3",
+        "text-halo-color": "#000000",
         "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "name-highway-path_mtb:name-(def-all-osm-hc)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-name-path-mtb:name-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 14,
-      "filter": [
-        "==",
-        "class",
-        "path"
-      ],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "text-ignore-placement": true,
-        "text-field": "{name:latin} {name:nonlatin} {mtb:name}",
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-rotation-alignment": "map",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              11
-            ],
-            [
-              16,
-              16
-            ],
-            [
-              18,
-              24
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 1.2
       }
     },
     {
@@ -40340,97 +40216,10 @@
         }
       },
       "paint": {
-        "text-color": "hsl(28, 17%, 20%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-color": "#d5cbc3",
+        "text-halo-color": "#000000",
         "text-halo-blur": 0.2,
         "text-halo-width": 2
-      }
-    },
-    {
-      "id": "name-highway-minor-(def-all-osm-hc)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-name-minor-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation_name",
-      "minzoom": 14,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "in",
-          "class",
-          "minor",
-          "service",
-          "track"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "text-ignore-placement": true,
-        "text-field": [
-          "case",
-          [
-            "has",
-            "name"
-          ],
-          [
-            "concat",
-            [
-              "get",
-              "name:latin"
-            ],
-            " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
-          ],
-          [
-            "get",
-            "ref"
-          ]
-        ],
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-rotation-alignment": "map",
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              12
-            ],
-            [
-              16,
-              18
-            ],
-            [
-              18,
-              28
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-blur": 0.2,
-        "text-halo-width": 3
       }
     },
     {
@@ -40510,93 +40299,10 @@
         }
       },
       "paint": {
-        "text-color": "hsl(28, 17%, 20%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-color": "#d5cbc3",
+        "text-halo-color": "#000000",
         "text-halo-blur": 0.3,
         "text-halo-width": 2
-      }
-    },
-    {
-      "id": "name-highway-trunk_primary_secondary_tertiary-(def-all-osm-hc)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-name-major-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation_name",
-      "minzoom": 12.2,
-      "filter": [
-        "in",
-        "class",
-        "primary",
-        "secondary",
-        "tertiary",
-        "trunk"
-      ],
-      "layout": {
-        "visibility": "none",
-        "symbol-placement": "line",
-        "text-field": [
-          "case",
-          [
-            "has",
-            "name"
-          ],
-          [
-            "concat",
-            [
-              "get",
-              "name:latin"
-            ],
-            " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
-          ],
-          [
-            "get",
-            "ref"
-          ]
-        ],
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-rotation-alignment": "map",
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              13
-            ],
-            [
-              14,
-              15
-            ],
-            [
-              16,
-              20
-            ],
-            [
-              18,
-              36
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-blur": 0.3,
-        "text-halo-width": 3
       }
     },
     {
@@ -40813,12 +40519,12 @@
           [
             "no"
           ],
-          "hsl(346, 100%, 50%)",
+          "#ff003c",
           [
             "yes"
           ],
-          "hsl(0, 0%, 100%)",
-          "hsl(0, 0%, 0%)"
+          "#000000",
+          "#ffffff"
         ],
         "text-halo-width": [
           "match",
@@ -40832,7 +40538,7 @@
           0,
           1
         ],
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-opacity": [
           "interpolate",
           [
@@ -43312,8 +43018,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1
       }
     },
@@ -43364,8 +43070,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.4
       }
     },
@@ -43415,8 +43121,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.4
       }
     },
@@ -43490,8 +43196,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.2
       }
     },
@@ -43546,8 +43252,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.8
       }
     },
@@ -43627,8 +43333,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.2
       }
     },
@@ -43695,8 +43401,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 2,
         "text-opacity": {
           "stops": [
@@ -43798,8 +43504,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -43890,8 +43596,8 @@
             ]
           ]
         },
-        "text-color": "hsl(0, 0%, 15%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": "#d9d9d9",
+        "text-halo-color": "#333333",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -44635,9 +44341,9 @@
             0
           ]
         ],
-        "text-color": "hsl(0, 0%, 13%)",
+        "text-color": "#dedede",
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
