@@ -5613,7 +5613,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -5655,7 +5655,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -5697,7 +5697,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -15985,7 +15985,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16027,7 +16027,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16069,7 +16069,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -16230,7 +16230,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16272,7 +16272,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16314,7 +16314,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -16432,7 +16432,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16474,7 +16474,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16516,7 +16516,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -16626,7 +16626,8 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no,
+            @color-secondary_case_bicycle_no_farzoom
+            ,
             [
               "case",
               ["has", "surface_raw"],
@@ -16819,7 +16820,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16861,7 +16862,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -16903,7 +16904,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -17013,7 +17014,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no,
+            @color-trunk_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -17053,35 +17054,45 @@
           ],
           12,
           [
-            "match",
-            ["get", "surface_raw"],
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-trunk_case_bicycle_no_default,
             [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
-            ],
-            @color-trunk_case_unpaved_default,
-            @color-trunk_case_paved_or_uk_default
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-trunk_case_unpaved_default,
+                @color-trunk_case_paved_or_uk_default
+              ],
+              @color-trunk_case_paved_or_uk_default
+            ]
           ]
         ],
         "line-width": {
@@ -23296,7 +23307,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no,
+            @color-secondary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23483,7 +23494,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23525,7 +23536,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23567,7 +23578,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no,
+            @color-tertiary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -23673,7 +23684,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23715,7 +23726,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23757,7 +23768,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no,
+            @color-primary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
@@ -23858,7 +23869,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no,
+            @color-trunk_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -23898,35 +23909,45 @@
           ],
           12,
           [
-            "match",
-            ["get", "surface_raw"],
+            "case",
+            ["==", ["get", "bicycle"], "no"],
+            @color-trunk_case_bicycle_no_default,
             [
-              "bricks",
-              "cobblestone",
-              "compacted",
-              "fine_gravel",
-              "grass_paver",
-              "metal",
-              "metal_grid",
-              "rubber",
-              "unhewn_cobblestone",
-              "wood",
-              "dirt",
-              "earth",
-              "grass",
-              "gravel",
-              "ground",
-              "pebblestone",
-              "unpaved",
-              "woodchips",
-              "mud",
-              "rock",
-              "sand",
-              "shells",
-              "stepping_stones"
-            ],
-            @color-trunk_case_unpaved_default,
-            @color-trunk_case_paved_or_uk_default
+              "case",
+              ["has", "surface_raw"],
+              [
+                "match",
+                ["get", "surface_raw"],
+                [
+                  "bricks",
+                  "cobblestone",
+                  "compacted",
+                  "fine_gravel",
+                  "grass_paver",
+                  "metal",
+                  "metal_grid",
+                  "rubber",
+                  "unhewn_cobblestone",
+                  "wood",
+                  "dirt",
+                  "earth",
+                  "grass",
+                  "gravel",
+                  "ground",
+                  "pebblestone",
+                  "unpaved",
+                  "woodchips",
+                  "mud",
+                  "rock",
+                  "sand",
+                  "shells",
+                  "stepping_stones"
+                ],
+                @color-trunk_case_unpaved_default,
+                @color-trunk_case_paved_or_uk_default
+              ],
+              @color-trunk_case_paved_or_uk_default
+            ]
           ]
         ],
         "line-width": {
