@@ -32886,9 +32886,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 40%)",
+        "text-color": @color-label_place_protected_area,
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_place_protected_area,
         "text-halo-width": 1
       }
     },
@@ -32943,8 +32943,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 33%, 30%)",
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-color": @color-label_place_state,
+        "text-halo-color": @color-label_halo_place_state,
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -33007,9 +33007,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(240, 14%, 23%)",
+        "text-color": @color-label_place_country_other,
         "text-halo-blur": 1,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-halo-color": @color-label_halo_place_country_other,
         "text-halo-width": 2
       }
     },
@@ -33064,9 +33064,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(240, 14%, 23%)",
+        "text-color": @color-label_place_country_minor,
         "text-halo-blur": 1,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-halo-color": @color-label_halo_place_country_minor,
         "text-halo-width": 2
       }
     },
@@ -33121,9 +33121,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(240, 14%, 23%)",
+        "text-color": @color-label_place_country_medium,
         "text-halo-blur": 1,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-halo-color": @color-label_halo_place_country_medium,
         "text-halo-width": 2
       }
     },
@@ -33178,9 +33178,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(240, 14%, 23%)",
+        "text-color": @color-label_place_country_major,
         "text-halo-blur": 1,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
+        "text-halo-color": @color-label_halo_place_country_major,
         "text-halo-width": 2
       }
     },
