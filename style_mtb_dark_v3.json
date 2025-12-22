@@ -42591,12 +42591,12 @@
             "zoom"
           ],
           16,
-          "hsl(0, 0%, 40%)",
+          "#999999",
           18,
-          "hsl(0, 0%, 13%)"
+          "#dedede"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -42738,12 +42738,12 @@
             "zoom"
           ],
           16,
-          "hsl(0, 0%, 40%)",
+          "#999999",
           17,
-          "hsl(0, 0%, 13%)"
+          "#dedede"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -42887,12 +42887,12 @@
             "zoom"
           ],
           15,
-          "hsl(0, 0%, 40%)",
+          "#999999",
           16,
-          "hsl(0, 0%, 13%)"
+          "#dedede"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -43062,9 +43062,9 @@
             ]
           ]
         },
-        "text-color": "hsl(0, 0%, 13%)",
+        "text-color": "#dedede",
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1,
         "text-opacity": {
           "stops": [

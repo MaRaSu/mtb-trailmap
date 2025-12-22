@@ -29505,12 +29505,12 @@
           ["linear"],
           ["zoom"],
           16,
-          "hsl(0, 0%, 40%)",
+          @color-label_place_poi-level_123_and_additions_farzoom,
           18,
-          "hsl(0, 0%, 13%)"
+          @color-label_place_poi-level_123_and_additions_default
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -29587,12 +29587,12 @@
           ["linear"],
           ["zoom"],
           16,
-          "hsl(0, 0%, 40%)",
+          @color-label_place_poi-level_123_and_additions_farzoom,
           17,
-          "hsl(0, 0%, 13%)"
+          @color-label_place_poi-level_123_and_additions_default
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -29670,12 +29670,12 @@
           ["linear"],
           ["zoom"],
           15,
-          "hsl(0, 0%, 40%)",
+          @color-label_place_poi-level_123_and_additions_farzoom,
           16,
-          "hsl(0, 0%, 13%)"
+          @color-label_place_poi-level_123_and_additions_default
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -29782,9 +29782,9 @@
             [13.3, 1]
           ]
         },
-        "text-color": "hsl(0, 0%, 13%)",
+        "text-color": @color-label_place_poi-level_123_and_additions_default,
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
         "text-halo-width": 1,
         "text-opacity": {
           "stops": [
