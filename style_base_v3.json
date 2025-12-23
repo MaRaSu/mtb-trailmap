@@ -4309,7 +4309,7 @@
       }
     },
     {
-      "id": "waterway-stream-linetype-(def-all-osm)",
+      "id": "waterway-canal-linetype-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": true,
@@ -4355,69 +4355,15 @@
         "line-width": {
           "base": 1.3,
           "stops": [
-            [13, 0.5],
-            [16, 4.5],
-            [20, 6]
+            [13, @line_width-canal_z13],
+            [16, @line_width-canal_z16],
+            [20, @line_width-canal_z20]
           ]
         }
       }
     },
     {
-      "id": "waterway-stream-linetype-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "waterway-stream-canal-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "waterway",
-      "minzoom": 8,
-      "filter": [
-        "all",
-        ["in", "class", "canal"],
-        ["!=", "brunnel", "tunnel"],
-        ["==", "intermittent", 0]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": @color-water,
-        "line-width": {
-          "base": 1.3,
-          "stops": [
-            [13, 1],
-            [16, 6],
-            [20, 9]
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterway-stream-linetype_intermittent-(def-all-osm)",
+      "id": "waterway-canal-linetype_intermittent-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": true,
@@ -4450,7 +4396,7 @@
       "minzoom": 8,
       "filter": [
         "all",
-        ["in", "class", "canal", "stream"],
+        ["in", "class", "canal"],
         ["!=", "brunnel", "tunnel"],
         ["==", "intermittent", 1]
       ],
@@ -4464,8 +4410,9 @@
         "line-width": {
           "base": 1.3,
           "stops": [
-            [13, 0.5],
-            [20, 6]
+            [13, @line_width-canal_z13],
+            [16, @line_width-canal_z16],
+            [20, @line_width-canal_z20]
           ]
         }
       }
@@ -4516,60 +4463,8 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [10, 0.8],
-            [20, 6]
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterway-river-linetype-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "waterway-river-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "waterway",
-      "filter": [
-        "all",
-        ["==", "class", "river"],
-        ["!=", "brunnel", "tunnel"],
-        ["==", "intermittent", 0]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": @color-water,
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [10, 1.2],
-            [20, 12]
+            [10, @line_width-river_z10],
+            [20, @line_width-river_z20]
           ]
         }
       }
@@ -4621,8 +4516,8 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [10, 0.8],
-            [20, 6]
+            [10, @line_width-river_z10],
+            [20, @line_width-river_z20]
           ]
         }
       }
