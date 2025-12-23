@@ -3118,47 +3118,6 @@
       }
     },
     {
-      "id": "water-ocean-(def-all-osm-hc)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:safe-water-ocean": true,
-        "trailmap:id_legacy": "water-ocean-osm-hc",
-        "trailmap:country": "all",
-        "trailmap:simple_black": 0.35
-      },
-      "source": "osm",
-      "source-layer": "water",
-      "filter": ["==", "class", "ocean"],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": @color-water
-      }
-    },
-    {
       "id": "water-lake-(def-fin-osm)",
       "type": "fill",
       "metadata": {
@@ -3254,101 +3213,6 @@
       }
     },
     {
-      "id": "water-lake-(def-fin-osm-hc)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:safe-water-lake": true,
-        "trailmap:id_legacy": "water-lake-osm-hc",
-        "trailmap:country": "fin",
-        "trailmap:simple_black": 0.35
-      },
-      "source": "osm",
-      "source-layer": "water",
-      "maxzoom": 13,
-      "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        ["in", "class", "river", "lake", "pond"],
-        ["!=", "intermittent", 1],
-        ["!=", "brunnel", "tunnel"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": @color-water
-      }
-    },
-    {
-      "id": "water-lake-(def-global-osm-hc)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:safe-water-lake": true,
-        "trailmap:id_legacy": "water-lake-osm-hc",
-        "trailmap:country": "global",
-        "trailmap:simple_black": 0.35
-      },
-      "source": "osm",
-      "source-layer": "water",
-      "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        ["in", "class", "river", "lake", "pond"],
-        ["!=", "intermittent", 1],
-        ["!=", "brunnel", "tunnel"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": @color-water
-      }
-    },
-    {
       "id": "water-lake-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
@@ -3378,51 +3242,6 @@
         "trailmap:id_legacy": "water-lake-mml",
         "trailmap:country": "fin",
         "trailmap:simple": 1
-      },
-      "source": "mml_topo",
-      "source-layer": "vesisto_alue",
-      "filter": [
-        "all",
-        ["==", "$type", "Polygon"],
-        ["!in", "kohdeluokka", 36211]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": @color-water
-      }
-    },
-    {
-      "id": "water-lake-(def-fin-mml_topo-hc)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:safe-water-lake": false,
-        "trailmap:id_legacy": "water-lake-mml-hc",
-        "trailmap:country": "fin",
-        "trailmap:simple_black": 0.35
       },
       "source": "mml_topo",
       "source-layer": "vesisto_alue",
@@ -3482,49 +3301,6 @@
       }
     },
     {
-      "id": "water-intermittent-(def-all-osm-hc)",
-      "type": "fill",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:safe-water-lake": true,
-        "trailmap:id_legacy": "water-intermittent-osm-hc",
-        "trailmap:country": "all",
-        "trailmap:group": "water-end",
-        "trailmap:simple_black": 0.35
-      },
-      "source": "osm",
-      "source-layer": "water",
-      "filter": ["all", ["==", "intermittent", 1]],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": @color-water,
-        "fill-opacity": 0.7
-      }
-    },
-    {
       "id": "water_contours-line_1500-(def-fin-mml_topo)",
       "type": "line",
       "metadata": {
@@ -3563,7 +3339,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 65%)",
+        "line-color": @color-water_contours_line_1500,
         "line-dasharray": [1, 2],
         "line-width": [
           "interpolate",
@@ -3615,7 +3391,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 67%)",
+        "line-color": @color-water_contours_line_3000,
         "line-dasharray": [3, 2],
         "line-width": [
           "interpolate",
@@ -3667,7 +3443,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 70%)",
+        "line-color": @color-water_contours_line_6000,
         "line-dasharray": [8, 4],
         "line-width": [
           "interpolate",
@@ -3719,7 +3495,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(210, 67%, 75%)",
+        "line-color": @color-water_contours_line_over6000,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -3770,7 +3546,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
+        "line-color": @color-water_shipping_lane,
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -3834,7 +3610,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "hsl(210, 67%, 45%)"
+        "text-color": @color-water_contours_label
       }
     },
     {
@@ -3893,7 +3669,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "hsl(210, 67%, 45%)"
+        "text-color": @color-water_contours_label
       }
     },
     {
@@ -4457,13 +4233,13 @@
           ["linear"],
           ["zoom"],
           12,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 0.5, 1],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z12, @line_width-stream_z12],
           14,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 1.5, 2.5],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z14, @line_width-stream_z14],
           16,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 4, 6],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z16, @line_width-stream_z16],
           18,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 8, 14]
+          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z18, @line_width-stream_z18]
         ],
         "line-opacity": {
           "stops": [
@@ -4516,132 +4292,13 @@
           ["linear"],
           ["zoom"],
           12,
-          ["case", ["==", ["get", "class"], "stream"], 0.5, 1],
+          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z12, @line_width-stream_z12],
           14,
-          ["case", ["==", ["get", "class"], "stream"], 1.5, 2.5],
+          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z14, @line_width-stream_z14],
           16,
-          ["case", ["==", ["get", "class"], "stream"], 4, 6],
+          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z16, @line_width-stream_z16],
           18,
-          ["case", ["==", ["get", "class"], "stream"], 8, 14]
-        ],
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [11, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterway-ditch-(def-fin-mml_topo-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:id_legacy": "waterway-ditch-hc",
-        "trailmap:country": "fin"
-      },
-      "source": "mml_topo",
-      "source-layer": "vesisto_viiva",
-      "minzoom": 10,
-      "filter": ["in", "kohdeluokka", 36311, 36312],
-      "layout": {
-        "line-cap": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": @color-water,
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 1, 2],
-          14,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 2, 3],
-          16,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 4, 6],
-          18,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], 8, 14]
-        ],
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [11, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "waterway-ditch-(def-global-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:country": "global"
-      },
-      "source": "osm",
-      "source-layer": "waterway",
-      "minzoom": 10,
-      "filter": ["in", "class", "ditch", "stream"],
-      "layout": {
-        "line-cap": "round",
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": @color-water,
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          ["case", ["==", ["get", "class"], "stream"], 1, 2],
-          14,
-          ["case", ["==", ["get", "class"], "stream"], 2, 3],
-          16,
-          ["case", ["==", ["get", "class"], "stream"], 4, 6],
-          18,
-          ["case", ["==", ["get", "class"], "stream"], 8, 14]
+          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z18, @line_width-stream_z18]
         ],
         "line-opacity": {
           "stops": [
