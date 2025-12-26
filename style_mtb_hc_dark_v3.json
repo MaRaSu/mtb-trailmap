@@ -13070,7 +13070,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#a8a6a3",
+        "fill-color": "#4d4d4d",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -13130,7 +13130,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#a8a6a3",
+        "fill-color": "#4d4d4d",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -13182,7 +13182,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "#a8a6a3",
+        "fill-color": "#4d4d4d",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -13272,7 +13272,7 @@
             ]
           ]
         },
-        "line-color": "#a8a6a3",
+        "line-color": "#4d4d4d",
         "line-translate": {
           "base": 1,
           "stops": [
@@ -13329,7 +13329,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#a8a6a3",
+        "fill-color": "#4d4d4d",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -13410,7 +13410,7 @@
             ]
           ]
         },
-        "line-color": "#a8a6a3",
+        "line-color": "#4d4d4d",
         "line-translate": {
           "base": 1,
           "stops": [
@@ -13473,7 +13473,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": "#a8a6a3",
+        "fill-color": "#4d4d4d",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -13538,28 +13538,28 @@
           [
             1
           ],
-          "#bcbab8",
+          "#808080",
           [
             3
           ],
-          "#bcbab8",
+          "#808080",
           [
             5
           ],
-          "#bcbab8",
+          "#808080",
           [
             6
           ],
-          "#a8a6a3",
+          "#4d4d4d",
           [
             7
           ],
-          "#a8a6a3",
+          "#4d4d4d",
           [
             8
           ],
-          "#bcbab8",
-          "#a8a6a3"
+          "#808080",
+          "#4d4d4d"
         ],
         "fill-opacity": {
           "base": 1,
@@ -13646,7 +13646,7 @@
             ]
           ]
         },
-        "line-color": "#a8a6a3",
+        "line-color": "#4d4d4d",
         "line-translate": {
           "base": 1,
           "stops": [
