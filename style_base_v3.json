@@ -11700,9 +11700,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-minor-cat_ab-case-gr",
@@ -11827,9 +11824,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-minor-cat_c-case-gr",
@@ -11863,7 +11857,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -11950,9 +11944,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-minor-cat_d-case-gr",
@@ -11979,7 +11970,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
         "line-color": [
           "interpolate",
@@ -13742,9 +13733,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -13788,7 +13776,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -13832,7 +13820,7 @@
                   "stepping_stones"
                 ],
                 @color-tertiary_case_unpaved_farzoom,
-                "hsl(0, 0%, 50%)"
+                @color-tertiary_case_paved_or_uk_farzoom
               ],
               @color-tertiary_case_unpaved_farzoom
             ]
@@ -13874,7 +13862,7 @@
                   "stepping_stones"
                 ],
                 @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_unpaved_farzoom
+                @color-tertiary_case_paved_or_uk_farzoom
               ],
               @color-tertiary_case_unpaved_farzoom
             ]
@@ -13916,7 +13904,7 @@
                   "stepping_stones"
                 ],
                 @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_unpaved_default
+                @color-tertiary_case_paved_or_uk_default
               ],
               @color-tertiary_case_unpaved_default
             ]
@@ -13961,9 +13949,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -14045,126 +14030,21 @@
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_farzoom,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_farzoom,
-                "hsl(0, 0%, 50%)"
-              ],
-              @color-tertiary_case_unpaved_farzoom
-            ]
+            @color-tertiary_case_unpaved_farzoom
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_farzoom,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_unpaved_farzoom
-              ],
-              @color-tertiary_case_unpaved_farzoom
-            ]
+            @color-tertiary_case_unpaved_farzoom
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_default,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_unpaved_default
-              ],
-              @color-tertiary_case_unpaved_default
-            ]
+            @color-tertiary_case_unpaved_default
           ]
         ],
         "line-width": {
@@ -14207,9 +14087,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:country": "all"
@@ -14235,7 +14112,7 @@
       "layout": {
         "line-cap": "butt",
         "line-join": "round",
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -14247,126 +14124,21 @@
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_farzoom,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_farzoom,
-                "hsl(0, 0%, 50%)"
-              ],
-              @color-tertiary_case_unpaved_farzoom
-            ]
+            @color-tertiary_case_unpaved_farzoom
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_farzoom,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_unpaved_farzoom
-              ],
-              @color-tertiary_case_unpaved_farzoom
-            ]
+            @color-tertiary_case_unpaved_farzoom
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
             @color-tertiary_case_bicycle_no_default,
-            [
-              "case",
-              ["has", "surface_raw"],
-              [
-                "match",
-                ["get", "surface_raw"],
-                [
-                  "bricks",
-                  "cobblestone",
-                  "compacted",
-                  "fine_gravel",
-                  "grass_paver",
-                  "metal",
-                  "metal_grid",
-                  "rubber",
-                  "unhewn_cobblestone",
-                  "wood",
-                  "dirt",
-                  "earth",
-                  "grass",
-                  "gravel",
-                  "ground",
-                  "pebblestone",
-                  "unpaved",
-                  "woodchips",
-                  "mud",
-                  "rock",
-                  "sand",
-                  "shells",
-                  "stepping_stones"
-                ],
-                @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_unpaved_default
-              ],
-              @color-tertiary_case_unpaved_default
-            ]
+            @color-tertiary_case_unpaved_default
           ]
         ],
         "line-width": {
@@ -14409,9 +14181,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-secondary-case-gr",
@@ -14483,7 +14252,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
+            @color-secondary_case_bicycle_no_farzoom,
             [
               "case",
               ["has", "surface_raw"],
@@ -14525,7 +14294,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            "hsl(18, 85%, 40%)",
+            @color-secondary_case_bicycle_no_default,
             [
               "case",
               ["has", "surface_raw"],
