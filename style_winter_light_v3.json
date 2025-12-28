@@ -9483,6 +9483,9 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-track-case",
@@ -9508,31 +9511,213 @@
           "match",
           ["get", "mtb_scale"],
           ["0-"],
-          @color-mtb:scale_0-,
+          "hsl(168, 90%, 41%)",
           ["0"],
-          @color-mtb:scale_0,
+          "hsl(90, 92%, 46%)",
           ["1"],
-          @color-mtb:scale_1,
+          "hsl(61, 100%, 43%)",
           ["2"],
-          @color-mtb:scale_2,
+          "hsl(36, 99%, 62%)",
           ["3"],
-          @color-mtb:scale_3,
+          "hsl(355, 100%, 65%)",
           ["4"],
-          @color-mtb:scale_4,
+          "hsl(302, 91%, 47%)",
           ["5"],
-          @color-mtb:scale_5,
+          "hsl(285, 100%, 39%)",
           ["6"],
-          @color-mtb:scale_6,
-          @color-mtb:scale_null
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @case_width-track_default_z10],
-            [12, @case_width-track_default_z12],
-            [14, @case_width-track_default_z14],
-            [16, @case_width-track_default_z16],
-            [18, @case_width-track_default_z18]
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
+      }
+    },
+    {
+      "id": "highway-track-case-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-track-case-hc",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "track"],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(173, 100%, 39%)",
+          ["0"],
+          "hsl(90, 100%, 40%)",
+          ["1"],
+          "hsl(61, 100%, 39%)",
+          ["2"],
+          "hsl(36, 100%, 47%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 100%, 42%)",
+          ["5"],
+          "hsl(285, 48%, 38%)",
+          ["6"],
+          "hsl(285, 34%, 30%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 4],
+            [14, 6],
+            [16, 13.5],
+            [18, 22.5]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
+      }
+    },
+    {
+      "id": "highway-track-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": false,
+        "trailmap:winter_hc_light": false,
+        "trailmap:winter_dark": false,
+        "trailmap:winter_hc_dark": false,
+
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-track-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(168, 90%, 41%)",
+          ["0"],
+          "hsl(90, 92%, 46%)",
+          ["1"],
+          "hsl(61, 100%, 43%)",
+          ["2"],
+          "hsl(36, 99%, 62%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 91%, 47%)",
+          ["5"],
+          "hsl(285, 100%, 39%)",
+          ["6"],
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
           ]
         },
         "line-opacity": [
@@ -9619,7 +9804,7 @@
       }
     },
     {
-      "id": "highway-path_track-ways_only-case-(def-all-osm)",
+      "id": "highway-path_track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": false,
@@ -9639,6 +9824,9 @@
         "trailmap:winter_dark": false,
         "trailmap:winter_hc_dark": false,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": "exclusive",
         "trailmap:id_legacy": "hw-path-track-case-ways_only",
@@ -18957,6 +19145,86 @@
       }
     },
     {
+      "id": "bridge-track-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": false,
+        "trailmap:winter_hc_light": false,
+        "trailmap:winter_dark": false,
+        "trailmap:winter_hc_dark": false,
+
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-track-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(168, 90%, 41%)",
+          ["0"],
+          "hsl(90, 92%, 46%)",
+          ["1"],
+          "hsl(61, 100%, 43%)",
+          ["2"],
+          "hsl(36, 99%, 62%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 91%, 47%)",
+          ["5"],
+          "hsl(285, 100%, 39%)",
+          ["6"],
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
+      }
+    },
+    {
       "id": "bridge-track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
@@ -18977,6 +19245,9 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-track-case",
@@ -18999,31 +19270,30 @@
           "match",
           ["get", "mtb_scale"],
           ["0-"],
-          @color-mtb:scale_0-,
+          "hsl(168, 90%, 41%)",
           ["0"],
-          @color-mtb:scale_0,
+          "hsl(90, 92%, 46%)",
           ["1"],
-          @color-mtb:scale_1,
+          "hsl(61, 100%, 43%)",
           ["2"],
-          @color-mtb:scale_2,
+          "hsl(36, 99%, 62%)",
           ["3"],
-          @color-mtb:scale_3,
+          "hsl(355, 100%, 63%)",
           ["4"],
-          @color-mtb:scale_4,
+          "hsl(302, 91%, 47%)",
           ["5"],
-          @color-mtb:scale_5,
+          "hsl(285, 100%, 39%)",
           ["6"],
-          @color-mtb:scale_6,
-          @color-mtb:scale_null
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 0%)"
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @case_width-track_default_z10],
-            [12, @case_width-track_default_z12],
-            [14, @case_width-track_default_z14],
-            [16, @case_width-track_default_z16],
-            [18, @case_width-track_default_z18]
+            [11, 1.5],
+            [14, 3],
+            [16, 9],
+            [18, 15]
           ]
         },
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]

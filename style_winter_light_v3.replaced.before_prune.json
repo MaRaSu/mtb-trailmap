@@ -127,7 +127,7 @@
       ]
     }
   },
-  "sprite": "https://marasu.github.io/mtb-trailmap/@spritev2",
+  "sprite": "https://marasu.github.io/mtb-trailmap/spritev2",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -161,7 +161,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "background-color": @color-background
+        "background-color": "#f7f4f0"
       }
     },
     {
@@ -232,7 +232,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_glacier,
+        "fill-color": "#f7f4f0",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -277,7 +277,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-landcover_built-up
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -326,7 +326,7 @@
             [9, true]
           ]
         },
-        "fill-color": @color-landcover_wood,
+        "fill-color": "#e9eddf",
         "fill-opacity": 1
       }
     },
@@ -364,7 +364,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_residential
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -406,7 +406,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_commercial
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -458,7 +458,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_industrial
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -495,7 +495,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_cemetery
+        "fill-color": "#e0e4dd"
       }
     },
     {
@@ -532,7 +532,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_hospital
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -569,7 +569,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_school
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -606,7 +606,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_railway
+        "fill-color": "#eae6e1"
       }
     },
     {
@@ -643,9 +643,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_parking_area,
+        "fill-color": "#e6e6e6",
         "fill-opacity": 1,
-        "fill-outline-color": @color-landcover_parking_area
+        "fill-outline-color": "#e6e6e6"
       }
     },
     {
@@ -694,7 +694,7 @@
             [9, true]
           ]
         },
-        "fill-color": @color-landcover_wood,
+        "fill-color": "#e9eddf",
         "fill-opacity": 1,
         "fill-outline-color": "hsla(0, 0%, 0%, 0.03)"
       }
@@ -733,7 +733,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-landcover_quarry
+        "fill-color": "#d7d3ce"
       }
     },
     {
@@ -770,7 +770,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_quarry
+        "fill-color": "#d7d3ce"
       }
     },
     {
@@ -807,7 +807,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-landcover_storage
+        "fill-color": "#ebe2dd"
       }
     },
     {
@@ -848,8 +848,8 @@
           "match",
           ["get", "subclass"],
           ["heath", "fell"],
-          @color-landcover_heath_fell,
-          @color-landcover_grass
+          "#f2f5e9",
+          "#e5f4d5"
         ],
         "fill-opacity": {
           "stops": [
@@ -894,7 +894,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_allotments,
+        "fill-color": "#dee7c5",
         "fill-opacity": 0.8
       }
     },
@@ -931,7 +931,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_ice_shelf,
+        "fill-color": "#f7f4f0",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -975,7 +975,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_sand,
+        "fill-color": "#f5eebc",
         "fill-opacity": 1
       }
     },
@@ -1017,8 +1017,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, 0.15],
+            [14, 0.3]
           ]
         }
       }
@@ -1061,8 +1061,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full1]
+            [12, 0.15],
+            [14, 0.31]
           ]
         }
       }
@@ -1105,8 +1105,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, 0.15],
+            [14, 0.3]
           ]
         }
       }
@@ -1149,8 +1149,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid5],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, 0.155],
+            [14, 0.3]
           ]
         }
       }
@@ -1193,8 +1193,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_clearcut_mid],
-            [14, @fill-opacity-landcover_clearcut_full]
+            [12, 0.15],
+            [14, 0.3]
           ]
         }
       }
@@ -1234,7 +1234,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-landcover_bare_rock,
+        "fill-color": "#d6d6d6",
         "fill-opacity": 1
       }
     },
@@ -1272,7 +1272,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_bare_rock,
+        "fill-color": "#d6d6d6",
         "fill-opacity": 1
       }
     },
@@ -1390,14 +1390,14 @@
         "fill-color": [
           "case",
           ["==", ["get", "kohdeluokka"], 32611],
-          @color-landcover_field,
-          @color-landcover_meadow
+          "#f7eeb7",
+          "#edf2bb"
         ],
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, @fill-opacity-landcover_field_mid],
-            [14, @fill-opacity-landcover_field_full]
+            [10, 0.5],
+            [14, 1.0]
           ]
         }
       }
@@ -1439,14 +1439,14 @@
         "fill-color": [
           "case",
           ["==", ["get", "subclass"], "farmland"],
-          @color-landcover_field,
-          @color-landcover_meadow
+          "#f7eeb7",
+          "#edf2bb"
         ],
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, @fill-opacity-landcover_field_mid],
-            [14, @fill-opacity-landcover_field_full]
+            [10, 0.5],
+            [14, 1.0]
           ]
         }
       }
@@ -1492,11 +1492,11 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-landcover_sport_play,
+        "fill-color": "#cadfb3",
         "fill-opacity": {
           "stops": [
             [12, 0],
-            [13, @fill-opacity-landuse_sport_play_full]
+            [13, 1.0]
           ]
         }
       }
@@ -1543,7 +1543,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-landcover_line_generic,
+        "line-color": "#e0d0c2",
         "line-width": {
           "stops": [
             [16, 1],
@@ -1594,7 +1594,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -1643,7 +1643,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": {
           "stops": [
             [8, 0.05],
@@ -1700,7 +1700,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -1754,7 +1754,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -1859,7 +1859,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -1964,7 +1964,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.25,
         "line-width": [
           "interpolate",
@@ -2012,7 +2012,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.25,
         "line-width": [
           "interpolate",
@@ -2060,7 +2060,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.25,
         "line-width": [
           "interpolate",
@@ -2108,7 +2108,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.25,
         "line-width": [
           "interpolate",
@@ -2156,7 +2156,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.25,
         "line-width": [
           "interpolate",
@@ -2204,7 +2204,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -2252,7 +2252,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -2300,7 +2300,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -2348,7 +2348,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-contours_line,
+        "line-color": "#916f4c",
         "line-opacity": 0.3,
         "line-width": [
           "interpolate",
@@ -2839,7 +2839,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-water
+        "fill-color": "#bfd9f2"
       }
     },
     {
@@ -2884,7 +2884,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-water
+        "fill-color": "#bfd9f2"
       }
     },
     {
@@ -2928,7 +2928,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-water
+        "fill-color": "#bfd9f2"
       }
     },
     {
@@ -2970,7 +2970,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-water
+        "fill-color": "#bfd9f2"
       }
     },
     {
@@ -3009,7 +3009,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-water,
+        "fill-color": "#bfd9f2",
         "fill-opacity": 0.7
       }
     },
@@ -3049,7 +3049,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water_contours_line_1500,
+        "line-color": "#6aa6e2",
         "line-dasharray": [1, 2],
         "line-width": [
           "interpolate",
@@ -3098,7 +3098,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water_contours_line_3000,
+        "line-color": "#72abe3",
         "line-dasharray": [3, 2],
         "line-width": [
           "interpolate",
@@ -3147,7 +3147,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water_contours_line_6000,
+        "line-color": "#7fb2e6",
         "line-dasharray": [8, 4],
         "line-width": [
           "interpolate",
@@ -3196,7 +3196,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water_contours_line_over6000,
+        "line-color": "#95bfea",
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -3244,7 +3244,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water_shipping_lane,
+        "line-color": "#000000",
         "line-width": [
           "interpolate",
           ["exponential", 1.55],
@@ -3305,7 +3305,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": @color-water_contours_label
+        "text-color": "#7fb2e6"
       }
     },
     {
@@ -3361,7 +3361,7 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": @color-water_contours_label
+        "text-color": "#7fb2e6"
       }
     },
     {
@@ -3416,7 +3416,7 @@
           "tm_vihr_mml_38300_maatuva_vesialue",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": 0.3
       }
     },
     {
@@ -3479,7 +3479,7 @@
           "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": 0.3
       }
     },
     {
@@ -3536,7 +3536,7 @@
           "tm_valk_mml_38300_maatuva_vesialue",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": 0.3
       }
     },
     {
@@ -3598,7 +3598,7 @@
           "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": 0.3
       }
     },
     {
@@ -3640,7 +3640,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-dasharray": [2, 4],
         "line-width": {
           "base": 1.3,
@@ -3690,7 +3690,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -3739,7 +3739,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-dasharray": [4, 3],
         "line-width": {
           "base": 1.3,
@@ -3785,19 +3785,19 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           12,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z12, @line_width-stream_z12],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], 0.5, 1.0],
           14,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z14, @line_width-stream_z14],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], 1.5, 2.5],
           16,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z16, @line_width-stream_z16],
+          ["case", ["==", ["get", "kohdeluokka"], 36311], 4.0, 6.0],
           18,
-          ["case", ["==", ["get", "kohdeluokka"], 36311], @line_width-ditch_z18, @line_width-stream_z18]
+          ["case", ["==", ["get", "kohdeluokka"], 36311], 8.0, 14.0]
         ],
         "line-opacity": {
           "stops": [
@@ -3841,19 +3841,19 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-width": [
           "interpolate",
           ["linear"],
           ["zoom"],
           12,
-          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z12, @line_width-stream_z12],
+          ["case", ["==", ["get", "class"], "stream"], 0.5, 1.0],
           14,
-          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z14, @line_width-stream_z14],
+          ["case", ["==", ["get", "class"], "stream"], 1.5, 2.5],
           16,
-          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z16, @line_width-stream_z16],
+          ["case", ["==", ["get", "class"], "stream"], 4.0, 6.0],
           18,
-          ["case", ["==", ["get", "class"], "stream"], @line_width-ditch_z18, @line_width-stream_z18]
+          ["case", ["==", ["get", "class"], "stream"], 8.0, 14.0]
         ],
         "line-opacity": {
           "stops": [
@@ -3903,13 +3903,13 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-width": {
           "base": 1.3,
           "stops": [
-            [13, @line_width-canal_z13],
-            [16, @line_width-canal_z16],
-            [20, @line_width-canal_z20]
+            [13, 0.5],
+            [16, 4.5],
+            [20, 6.0]
           ]
         }
       }
@@ -3954,14 +3954,14 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-dasharray": [4, 3],
         "line-width": {
           "base": 1.3,
           "stops": [
-            [13, @line_width-canal_z13],
-            [16, @line_width-canal_z16],
-            [20, @line_width-canal_z20]
+            [13, 0.5],
+            [16, 4.5],
+            [20, 6.0]
           ]
         }
       }
@@ -4005,12 +4005,12 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-width": {
           "base": 1.2,
           "stops": [
-            [10, @line_width-river_z10],
-            [20, @line_width-river_z20]
+            [10, 0.8],
+            [20, 6.0]
           ]
         }
       }
@@ -4054,13 +4054,13 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-water,
+        "line-color": "#bfd9f2",
         "line-dasharray": [3, 2.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [10, @line_width-river_z10],
-            [20, @line_width-river_z20]
+            [10, 0.8],
+            [20, 6.0]
           ]
         }
       }
@@ -4099,7 +4099,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-cliff_line,
+        "line-color": "#000000",
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -4147,7 +4147,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-cliff_line,
+        "line-color": "#000000",
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -4196,7 +4196,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": @color-cliff_line,
+        "line-color": "#000000",
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -4252,7 +4252,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-cliff_line,
+        "line-color": "#000000",
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -4320,15 +4320,15 @@
           [
             "case",
             ["==", ["get", "surface"], "unpaved"],
-            @color-service_case_unpaved_farzoom,
-            @color-service_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           13,
           [
             "case",
             ["==", ["get", "surface"], "unpaved"],
-            @color-service_case_unpaved_default,
-            @color-service_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-dasharray": [0.5, 0.25],
@@ -4385,7 +4385,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-motorway_link_case,
+        "line-color": "#a15412",
         "line-dasharray": [0.5, 0.25],
         "line-width": {
           "base": 1.2,
@@ -4441,15 +4441,15 @@
           [
             "case",
             ["==", ["get", "surface"], "unpaved"],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           13,
           [
             "case",
             ["==", ["get", "surface"], "unpaved"],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-opacity": {
@@ -4514,7 +4514,7 @@
         "line-color": [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_primary_secondary_tertiary_link_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -4546,10 +4546,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_primary_secondary_tertiary_link_case_unpaved_default,
-                @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_default
+                "#644507",
+                "#595959"
               ],
-              @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_default
+              "#595959"
             ]
           ],
         "line-opacity": 0.5,
@@ -4614,7 +4614,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -4646,17 +4646,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
+                "#b99346",
                 "hsl(0, 0%, 50%)"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -4688,17 +4688,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_unpaved_farzoom
+                "#b99346",
+                "#b99346"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -4730,10 +4730,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_unpaved_default
+                "#644507",
+                "#644507"
               ],
-              @color-tertiary_case_unpaved_default
+              "#644507"
             ]
           ]
         ],
@@ -5416,9 +5416,9 @@
           ["linear"],
           ["zoom"],
           11,
-          @color-motorway_case_farzoom,
+          "#bf440f",
           12,
-          @color-motorway_case_default
+          "#a15412"
         ],
         "line-dasharray": [0.5, 0.25],
         "line-width": {
@@ -5492,15 +5492,15 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_paved_or_uk_z12],
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [12, 1.5],
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-opacity": {
@@ -5567,10 +5567,10 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-path_medium_z12],
-            [14, @line_width-path_medium_z14],
-            [16, @line_width-path_medium_z16],
-            [18, @line_width-path_medium_z18]
+            [12, 0.6],
+            [14, 1.0],
+            [16, 1.8],
+            [18, 3.5]
           ]
         },
         "line-opacity": {
@@ -5647,11 +5647,11 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @case_width-track_default_z10],
-            [12, @case_width-track_default_z12],
-            [14, @case_width-track_default_z14],
-            [16, @case_width-track_default_z16],
-            [18, @case_width-track_default_z18]
+            [10, 2.0],
+            [12, 3.5],
+            [14, 4.0],
+            [16, 9.0],
+            [18, 15.0]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 0.3]
@@ -5707,11 +5707,11 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @line_width-track_default_z10],
-            [12, @line_width-track_default_z12],
-            [14, @line_width-track_default_z14],
-            [16, @line_width-track_default_z16],
-            [18, @line_width-track_default_z18]
+            [10, 0.4],
+            [12, 0.8],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7.0]
           ]
         },
         "line-opacity": {
@@ -5768,7 +5768,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-footway_line,
+        "line-color": "#a43820",
         "line-dasharray": [1.5, 0.7],
         "line-width": {
           "base": 1.2,
@@ -6468,7 +6468,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-motorway_line_default,
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -6688,7 +6688,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-inner_full]
+            [12, 0.4]
           ]
         },
         "line-width": {
@@ -6744,7 +6744,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-outer_full]
+            [12, 1.0]
           ]
         },
         "line-width": {
@@ -6915,7 +6915,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-inner_full]
+            [12, 0.4]
           ]
         },
         "line-width": {
@@ -6965,7 +6965,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-outer_full]
+            [12, 1.0]
           ]
         },
         "line-width": {
@@ -8877,7 +8877,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": @color-building_area_generic,
+        "fill-color": "#bcbab8",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -8926,7 +8926,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": @color-building_area_generic,
+        "fill-color": "#bcbab8",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -8973,7 +8973,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": @color-building_area_generic,
+        "fill-color": "#bcbab8",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -9034,7 +9034,7 @@
             [16, 1]
           ]
         },
-        "line-color": @color-building_line_top,
+        "line-color": "#bcbab8",
         "line-translate": {
           "base": 1,
           "stops": [
@@ -9080,7 +9080,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": @color-building_area_generic,
+        "fill-color": "#bcbab8",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -9138,7 +9138,7 @@
             [16, 1]
           ]
         },
-        "line-color": @color-building_line_top,
+        "line-color": "#bcbab8",
         "line-translate": {
           "base": 1,
           "stops": [
@@ -9186,7 +9186,7 @@
       },
       "paint": {
         "fill-antialias": true,
-        "fill-color": @color-building_area_generic,
+        "fill-color": "#bcbab8",
         "fill-opacity": {
           "base": 1,
           "stops": [
@@ -9237,18 +9237,18 @@
           "match",
           ["get", "kayttotarkoitus"],
           [1],
-          @color-building_area_residential,
+          "#a8a6a3",
           [3],
-          @color-building_area_residential,
+          "#a8a6a3",
           [5],
-          @color-building_area_residential,
+          "#a8a6a3",
           [6],
-          @color-building_area_generic,
+          "#bcbab8",
           [7],
-          @color-building_area_generic,
+          "#bcbab8",
           [8],
-          @color-building_area_residential,
-          @color-building_area_generic
+          "#a8a6a3",
+          "#bcbab8"
         ],
         "fill-opacity": {
           "base": 1,
@@ -9308,7 +9308,7 @@
             [16, 1]
           ]
         },
-        "line-color": @color-building_line_top,
+        "line-color": "#bcbab8",
         "line-translate": {
           "base": 1,
           "stops": [
@@ -9395,56 +9395,56 @@
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z11,
+            1.0,
             ["b"],
-            @case_width-path_medium_z11,
+            1.5,
             ["c"],
-            @case_width-path_wide_z11,
+            2.0,
             ["d"],
-            @case_width-path_widest_z11,
-            @case_width-path_medium_z11
+            2.0,
+            1.5
           ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z14,
+            1.3,
             ["b"],
-            @case_width-path_medium_z14,
+            2.0,
             ["c"],
-            @case_width-path_wide_z14,
+            3.0,
             ["d"],
-            @case_width-path_widest_z14,
-            @case_width-path_medium_z14
+            3.0,
+            2.0
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z16,
+            3.0,
             ["b"],
-            @case_width-path_medium_z16,
+            6.0,
             ["c"],
-            @case_width-path_wide_z16,
+            9.0,
             ["d"],
-            @case_width-path_widest_z16,
-            @case_width-path_medium_z16
+            9.0,
+            6.0
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z18,
+            5.0,
             ["b"],
-            @case_width-path_medium_z18,
+            9.0,
             ["c"],
-            @case_width-path_wide_z18,
+            15.0,
             ["d"],
-            @case_width-path_widest_z18,
-            @case_width-path_medium_z18
+            15.0,
+            9.0
           ]
         ],
         "line-opacity": [
@@ -9483,6 +9483,9 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-track-case",
@@ -9508,31 +9511,213 @@
           "match",
           ["get", "mtb_scale"],
           ["0-"],
-          @color-mtb:scale_0-,
+          "hsl(168, 90%, 41%)",
           ["0"],
-          @color-mtb:scale_0,
+          "hsl(90, 92%, 46%)",
           ["1"],
-          @color-mtb:scale_1,
+          "hsl(61, 100%, 43%)",
           ["2"],
-          @color-mtb:scale_2,
+          "hsl(36, 99%, 62%)",
           ["3"],
-          @color-mtb:scale_3,
+          "hsl(355, 100%, 65%)",
           ["4"],
-          @color-mtb:scale_4,
+          "hsl(302, 91%, 47%)",
           ["5"],
-          @color-mtb:scale_5,
+          "hsl(285, 100%, 39%)",
           ["6"],
-          @color-mtb:scale_6,
-          @color-mtb:scale_null
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @case_width-track_default_z10],
-            [12, @case_width-track_default_z12],
-            [14, @case_width-track_default_z14],
-            [16, @case_width-track_default_z16],
-            [18, @case_width-track_default_z18]
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
+      }
+    },
+    {
+      "id": "highway-track-case-(def-all-osm-hc)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+
+        "trailmap:high_contrast": "exclusive",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-track-case-hc",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["==", "class", "track"],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(173, 100%, 39%)",
+          ["0"],
+          "hsl(90, 100%, 40%)",
+          ["1"],
+          "hsl(61, 100%, 39%)",
+          ["2"],
+          "hsl(36, 100%, 47%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 100%, 42%)",
+          ["5"],
+          "hsl(285, 48%, 38%)",
+          ["6"],
+          "hsl(285, 34%, 30%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 4],
+            [14, 6],
+            [16, 13.5],
+            [18, 22.5]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          0,
+          10.5,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          14,
+          ["case", ["==", ["get", "bicycle"], "no"], 0, 1],
+          16,
+          ["case", ["==", ["get", "bicycle"], "no"], 0.5, 1]
+        ]
+      }
+    },
+    {
+      "id": "highway-track-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": false,
+        "trailmap:winter_hc_light": false,
+        "trailmap:winter_dark": false,
+        "trailmap:winter_hc_dark": false,
+
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-track-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!in", "brunnel", "bridge", "tunnel"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(168, 90%, 41%)",
+          ["0"],
+          "hsl(90, 92%, 46%)",
+          ["1"],
+          "hsl(61, 100%, 43%)",
+          ["2"],
+          "hsl(36, 99%, 62%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 91%, 47%)",
+          ["5"],
+          "hsl(285, 100%, 39%)",
+          ["6"],
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
           ]
         },
         "line-opacity": [
@@ -9619,7 +9804,7 @@
       }
     },
     {
-      "id": "highway-path_track-ways_only-case-(def-all-osm)",
+      "id": "highway-path_track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": false,
@@ -9639,6 +9824,9 @@
         "trailmap:winter_dark": false,
         "trailmap:winter_hc_dark": false,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": "exclusive",
         "trailmap:id_legacy": "hw-path-track-case-ways_only",
@@ -9728,11 +9916,11 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @case_width-cycleway_default_z12],
-            [14, @case_width-cycleway_default_z14],
-            [15, @case_width-cycleway_default_z15],
-            [16, @case_width-cycleway_default_z16],
-            [18, @case_width-cycleway_default_z18]
+            [12, 2.2],
+            [14, 2.2],
+            [15, 3.0],
+            [16, 6.0],
+            [18, 12.0]
           ]
         },
         "line-opacity": {
@@ -9991,56 +10179,56 @@
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z12,
+            0.4,
             ["b"],
-            @line_width-path_medium_z12,
+            0.6,
             ["c"],
-            @line_width-path_wide_z12,
+            1.2,
             ["d"],
-            @line_width-path_widest_z12,
-            @line_width-path_medium_z12
+            1.2,
+            0.6
           ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z14,
+            0.8,
             ["b"],
-            @line_width-path_medium_z14,
+            1.0,
             ["c"],
-            @line_width-path_wide_z14,
+            1.8,
             ["d"],
-            @line_width-path_widest_z14,
-            @line_width-path_medium_z14
+            1.8,
+            1.0
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z16,
+            1.0,
             ["b"],
-            @line_width-path_medium_z16,
+            1.8,
             ["c"],
-            @line_width-path_wide_z16,
+            3.0,
             ["d"],
-            @line_width-path_widest_z16,
-            @line_width-path_medium_z16
+            3.0,
+            1.8
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z18,
+            2.0,
             ["b"],
-            @line_width-path_medium_z18,
+            3.5,
             ["c"],
-            @line_width-path_wide_z18,
+            5.5,
             ["d"],
-            @line_width-path_widest_z18,
-            @line_width-path_medium_z18
+            5.5,
+            3.5
           ]
         ],
         "line-opacity": [
@@ -10117,13 +10305,13 @@
           ["linear"],
           ["zoom"],
           12,
-          @line_width-path_narrow_z12,
+          0.4,
           14,
-          @line_width-path_narrow_z14,
+          0.8,
           16,
-          @line_width-path_narrow_z16,
+          1.0,
           18,
-          @line_width-path_narrow_z18
+          2.0
         ],
         "line-opacity": [
           "interpolate",
@@ -10199,13 +10387,13 @@
           ["linear"],
           ["zoom"],
           12,
-          @line_width-path_medium_z12,
+          0.6,
           14,
-          @line_width-path_medium_z14,
+          1.0,
           16,
-          @line_width-path_medium_z16,
+          1.8,
           18,
-          @line_width-path_medium_z18
+          3.5
         ],
         "line-opacity": [
           "interpolate",
@@ -10281,13 +10469,13 @@
           ["linear"],
           ["zoom"],
           12,
-          @line_width-path_wide_z12,
+          1.2,
           14,
-          @line_width-path_wide_z14,
+          1.8,
           16,
-          @line_width-path_wide_z16,
+          3.0,
           18,
-          @line_width-path_wide_z18
+          5.5
         ],
         "line-opacity": [
           "interpolate",
@@ -10481,11 +10669,11 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @line_width-track_default_z10],
-            [12, @line_width-track_default_z12],
-            [14, @line_width-track_default_z14],
-            [16, @line_width-track_default_z16],
-            [18, @line_width-track_default_z18]
+            [10, 0.4],
+            [12, 0.8],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7.0]
           ]
         },
         "line-opacity": [
@@ -10554,11 +10742,11 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @line_width-track_default_z10],
-            [12, @line_width-track_default_z12],
-            [14, @line_width-track_default_z14],
-            [16, @line_width-track_default_z16],
-            [18, @line_width-track_default_z18]
+            [10, 0.4],
+            [12, 0.8],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7.0]
           ]
         },
         "line-opacity": [
@@ -10619,15 +10807,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-footway_line,
+        "line-color": "#a43820",
         "line-dasharray": [1.5, 0.7],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-footway_default_z12],
-            [14, @line_width-footway_default_z14],
-            [16, @line_width-footway_default_z16],
-            [18, @line_width-footway_default_z18]
+            [12, 0.8],
+            [14, 1.5],
+            [16, 2.5],
+            [18, 4.0]
           ]
         },
         "line-opacity": [
@@ -10681,24 +10869,24 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-footway_line,
+        "line-color": "#a43820",
         "line-dasharray": [1.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-footway_default_z12],
-            [14, @line_width-footway_default_z14],
-            [16, @line_width-footway_default_z16],
-            [18, @line_width-footway_default_z18]
+            [12, 0.8],
+            [14, 1.5],
+            [16, 2.5],
+            [18, 4.0]
           ]
         },
         "line-offset": {
           "base": 1.2,
           "stops": [
-            [12, @line_offset-footway_left_z12],
-            [14, @line_offset-footway_left_z14],
-            [16, @line_offset-footway_left_z16],
-            [18, @line_offset-footway_left_z18]
+            [12, -1.5],
+            [14, -3.0],
+            [16, -7.0],
+            [18, -11.0]
           ]
         },
         "line-opacity": {
@@ -10752,24 +10940,24 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-footway_line,
+        "line-color": "#a43820",
         "line-dasharray": [1.5, 1],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-footway_default_z12],
-            [14, @line_width-footway_default_z14],
-            [16, @line_width-footway_default_z16],
-            [18, @line_width-footway_default_z18]
+            [12, 0.8],
+            [14, 1.5],
+            [16, 2.5],
+            [18, 4.0]
           ]
         },
         "line-offset": {
           "base": 1.2,
           "stops": [
-            [12, @line_offset-footway_right_z12],
-            [14, @line_offset-footway_right_z14],
-            [16, @line_offset-footway_right_z16],
-            [18, @line_offset-footway_right_z18]
+            [12, 1.5],
+            [14, 3.0],
+            [16, 7.0],
+            [18, 11.0]
           ]
         },
         "line-opacity": {
@@ -11166,7 +11354,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_primary_secondary_tertiary_link_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -11198,17 +11386,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_primary_secondary_tertiary_link_case_unpaved_farzoom,
-                @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_primary_secondary_tertiary_link_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -11240,10 +11428,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_primary_secondary_tertiary_link_case_unpaved_default,
-                @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_default
+                "#644507",
+                "#595959"
               ],
-              @color-trunk_primary_secondary_tertiary_link_case_paved_or_uk_default
+              "#595959"
             ]
           ]
         ],
@@ -11346,8 +11534,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -11365,8 +11553,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -11465,8 +11653,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -11484,8 +11672,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -11499,7 +11687,7 @@
             [20, 15]
           ]
         },
-        "line-dasharray": [@dasharray-minor_case_medium_dash, @dasharray-minor_case_medium_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [8.5, 0],
@@ -11577,8 +11765,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -11596,8 +11784,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -11617,7 +11805,7 @@
             [9, 1]
           ]
         },
-        "line-dasharray": [@dasharray-minor_case_rough_dash, @dasharray-minor_case_rough_gap]
+        "line-dasharray": [10.0, 0.0]
     },
     {
       "id": "highway-mml_service_or_minor-line-(mmlways-fin-mml_topo)",
@@ -11661,8 +11849,8 @@
         "line-color": [
           "case",
           ["==", ["get", "paallyste"], 2],
-          @color-service_line_paved_or_uk,
-          @color-service_line_unpaved
+          "#ffffff",
+          "#eddfca"
         ],
         "line-width": {
           "base": 1,
@@ -11759,8 +11947,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-service_case_unpaved_farzoom,
-            @color-service_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -11778,8 +11966,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-service_case_unpaved_default,
-            @color-service_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -11863,9 +12051,9 @@
           ["linear"],
           ["zoom"],
           11,
-          @color-service_case_unpaved_farzoom,
+          "#b99346",
           12,
-          @color-service_case_unpaved_default
+          "#644507"
         ],
         "line-width": {
           "base": 1,
@@ -11877,7 +12065,7 @@
             [20, 13]
           ]
         },
-        "line-dasharray": [@dasharray-service_case_medium_dash, @dasharray-service_case_medium_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [9.5, 0],
@@ -11942,9 +12130,9 @@
           ["linear"],
           ["zoom"],
           11,
-          @color-service_case_unpaved_farzoom,
+          "#b99346",
           12,
-          @color-service_case_unpaved_default
+          "#644507"
         ],
         "line-width": {
           "base": 1,
@@ -11956,7 +12144,7 @@
             [20, 13]
           ]
         },
-        "line-dasharray": [@dasharray-service_case_rough_dash, @dasharray-service_case_rough_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [9.5, 0],
@@ -12042,8 +12230,8 @@
             "unhewn_cobblestone",
             "wood"
           ],
-          @color-driveway_case_unpaved_default,
-          @color-driveway_case_paved_or_uk_default
+          "#644507",
+          "#404040"
         ],
         "line-width": {
           "base": 1,
@@ -12119,7 +12307,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-driveway_case_unpaved_default,
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12129,7 +12317,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-driveway_case_medium_dash, @dasharray-driveway_case_medium_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12188,7 +12376,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-driveway_case_unpaved_default,
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12198,7 +12386,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-driveway_case_rough_dash, @dasharray-driveway_case_rough_gap8],
+        "line-dasharray": [10.0, 0.08],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12284,8 +12472,8 @@
             "unhewn_cobblestone",
             "wood"
           ],
-          @color-busway_case_unpaved_default,
-          @color-busway_case_paved_or_uk_default
+          "#644507",
+          "#404040"
         ],
         "line-width": {
           "base": 1,
@@ -12361,7 +12549,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-busway_case_unpaved_default,
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12371,7 +12559,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-busway_case_medium_dash, @dasharray-busway_case_medium_gap8],
+        "line-dasharray": [10.0, 0.08],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12430,7 +12618,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-busway_case_unpaved_default,
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12440,7 +12628,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-busway_case_rough_dash, @dasharray-busway_case_rough_gap8],
+        "line-dasharray": [10.0, 0.08],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12526,8 +12714,8 @@
             "unhewn_cobblestone",
             "wood"
           ],
-          @color-raceway_case_unpaved_default,
-          @color-raceway_case_paved_or_uk_default
+          "#af9564",
+          "#a8a6a4"
         ],
         "line-width": {
           "base": 1,
@@ -12603,7 +12791,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-raceway_case_unpaved_default,
+        "line-color": "#af9564",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12613,7 +12801,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-raceway_case_medium_dash, @dasharray-raceway_case_medium_gap8],
+        "line-dasharray": [10.0, 0.08],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12672,7 +12860,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-raceway_case_unpaved_default,
+        "line-color": "#af9564",
         "line-width": {
           "base": 1,
           "stops": [
@@ -12682,7 +12870,7 @@
             [20, 10]
           ]
         },
-        "line-dasharray": [@dasharray-raceway_case_rough_dash, @dasharray-raceway_case_rough_gap8],
+        "line-dasharray": [10.0, 0.08],
         "line-opacity": {
           "stops": [
             [11, 0],
@@ -12735,8 +12923,8 @@
         "line-color": [
           "case",
           ["==", ["get", "surface"], "unpaved"],
-          @color-parking_aisle_line_unpaved,
-          @color-parking_aisle_line_paved_or_uk
+          "#af9564",
+          "#a8a6a4"
         ],
         "line-width": {
           "base": 1,
@@ -12828,7 +13016,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -12860,17 +13048,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -12902,17 +13090,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -12944,10 +13132,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_paved_or_uk_default
+                "#644507",
+                "#595959"
               ],
-              @color-tertiary_case_unpaved_default
+              "#644507"
             ]
           ]
         ],
@@ -13070,22 +13258,22 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
-            @color-tertiary_case_unpaved_farzoom
+            "#bd430f",
+            "#b99346"
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
-            @color-tertiary_case_unpaved_farzoom
+            "#bd430f",
+            "#b99346"
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_default,
-            @color-tertiary_case_unpaved_default
+            "#bd430f",
+            "#644507"
           ]
         ],
         "line-width": {
@@ -13098,7 +13286,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [@dasharray-tertiary_case_medium_dash, @dasharray-tertiary_case_medium_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [6, 0],
@@ -13164,22 +13352,22 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
-            @color-tertiary_case_unpaved_farzoom
+            "#bd430f",
+            "#b99346"
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
-            @color-tertiary_case_unpaved_farzoom
+            "#bd430f",
+            "#b99346"
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_default,
-            @color-tertiary_case_unpaved_default
+            "#bd430f",
+            "#644507"
           ]
         ],
         "line-width": {
@@ -13192,7 +13380,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [@dasharray-tertiary_case_rough_dash, @dasharray-tertiary_case_rough_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [6, 0],
@@ -13250,7 +13438,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no_farzoom
+            "#bd430f"
             ,
             [
               "case",
@@ -13283,17 +13471,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_farzoom,
-                @color-secondary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-secondary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13325,17 +13513,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_farzoom,
-                @color-secondary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-secondary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13367,10 +13555,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_default,
-                @color-secondary_case_paved_or_uk_default
+                "#644507",
+                "#595959"
               ],
-              @color-secondary_case_paved_or_uk_default
+              "#595959"
             ]
           ]
         ],
@@ -13441,7 +13629,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13473,17 +13661,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_farzoom,
-                @color-primary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-primary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13515,17 +13703,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_farzoom,
-                @color-primary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-primary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13557,10 +13745,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_default,
-                @color-primary_case_paved_or_uk_default
+                "#634507",
+                "#404040"
               ],
-              @color-primary_case_paved_or_uk_default
+              "#404040"
             ]
           ]
         ],
@@ -13632,7 +13820,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13664,17 +13852,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_case_unpaved_farzoom,
-                @color-trunk_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-trunk_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -13706,10 +13894,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_case_unpaved_default,
-                @color-trunk_case_paved_or_uk_default
+                "#634507",
+                "#404040"
               ],
-              @color-trunk_case_paved_or_uk_default
+              "#404040"
             ]
           ]
         ],
@@ -13776,9 +13964,9 @@
           ["linear"],
           ["zoom"],
           11,
-          @color-motorway_case_farzoom,
+          "#bf440f",
           12,
-          @color-motorway_case_default
+          "#a15412"
         ],
         "line-opacity": {
           "stops": [
@@ -13841,7 +14029,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": @color-motorway_link_line,
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -13903,7 +14091,7 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          @color-trunk_primary_secondary_tertiary_link_line_bicycle_no,
+          "#ffcc8a",
           [
             "case",
             ["has", "surface_raw"],
@@ -13935,10 +14123,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              @color-trunk_primary_secondary_tertiary_link_line_unpaved,
-              @color-trunk_primary_secondary_tertiary_link_line_paved_or_uk
+              "#eddfca",
+              "#ffffff"
             ],
-            @color-trunk_primary_secondary_tertiary_link_line_paved_or_uk
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -14017,10 +14205,10 @@
               "paved",
               "paving_stones"
             ],
-            @color-driveway_line_paved_or_uk,
-            @color-driveway_line_unpaved
+            "#ffffff",
+            "#eddfca"
           ],
-          @color-driveway_line_unpaved
+          "#eddfca"
         ],
         "line-opacity": {
           "stops": [
@@ -14096,10 +14284,10 @@
               "paved",
               "paving_stones"
             ],
-            @color-busway_line_paved_or_uk,
-            @color-busway_line_unpaved
+            "#ffffff",
+            "#eddfca"
           ],
-          @color-busway_line_unpaved
+          "#eddfca"
         ],
         "line-opacity": {
           "stops": [
@@ -14173,10 +14361,10 @@
               "paved",
               "paving_stones"
             ],
-            @color-service_line_paved_or_uk,
-            @color-service_line_unpaved
+            "#ffffff",
+            "#eddfca"
           ],
-          @color-service_line_unpaved
+          "#eddfca"
         ],
         "line-opacity": {
           "stops": [
@@ -14252,10 +14440,10 @@
               "paved",
               "paving_stones"
             ],
-            @color-minor_line_paved_or_uk,
-            @color-minor_line_unpaved
+            "#ffffff",
+            "#eddfca"
           ],
-          @color-minor_line_unpaved
+          "#eddfca"
         ],
         "line-opacity": {
           "stops": [
@@ -14348,10 +14536,10 @@
               "shells",
               "stepping_stones"
             ],
-            @color-raceway_line_unpaved,
-            @color-raceway_line_paved_or_uk
+            "#eddfca",
+            "#ffffff"
           ],
-          @color-raceway_line_paved_or_uk
+          "#ffffff"
         ],
         "line-opacity": {
           "stops": [
@@ -14413,7 +14601,7 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          @color-tertiary_line_bicycle_no,
+          "#ffcc8a",
           [
             "case",
             ["has", "surface_raw"],
@@ -14445,10 +14633,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              @color-tertiary_line_unpaved_default,
-              @color-tertiary_line_paved_or_uk_default
+              "#eddfca",
+              "#ffffff"
             ],
-            @color-tertiary_line_unpaved_default
+            "#eddfca"
           ]
         ],
         "line-width": {
@@ -14513,7 +14701,7 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          @color-secondary_line_bicycle_no,
+          "#ffcc8a",
           [
             "case",
             ["has", "surface_raw"],
@@ -14545,10 +14733,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              @color-secondary_line_unpaved_default,
-              @color-secondary_line_paved_or_uk_default
+              "#eddfca",
+              "#ffffff"
             ],
-            @color-secondary_line_paved_or_uk_default
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -14618,7 +14806,7 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          @color-primary_line_bicycle_no,
+          "#ffcc8a",
           [
             "case",
             ["has", "surface_raw"],
@@ -14650,10 +14838,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              @color-primary_line_unpaved_default,
-              @color-primary_line_paved_or_uk_default
+              "#eddfca",
+              "#ffffff"
             ],
-            @color-primary_line_paved_or_uk_default
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -14720,7 +14908,7 @@
         "line-color": [
           "case",
           ["==", ["get", "bicycle"], "no"],
-          @color-trunk_line_bicycle_no,
+          "#ffcc88",
           [
             "case",
             ["has", "surface_raw"],
@@ -14752,10 +14940,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              @color-trunk_line_unpaved_default,
-              @color-trunk_line_paved_or_uk_default
+              "#eddfca",
+              "#ffffff"
             ],
-            @color-trunk_line_paved_or_uk_default
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -14821,7 +15009,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-motorway_line_default,
+        "line-color": "#ffcc88",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -14882,14 +15070,14 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-offset": {
@@ -14952,14 +15140,14 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-offset": {
@@ -15048,15 +15236,15 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_paved_or_uk_z12],
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [12, 1.5],
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-opacity": {
@@ -15145,15 +15333,15 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [1, 0.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_unpaved_z12],
-            [14, @line_width-cycleway_unpaved_z14],
-            [16, @line_width-cycleway_unpaved_z16],
-            [18, @line_width-cycleway_unpaved_z18]
+            [12, 2.2],
+            [14, 2.7],
+            [16, 4.5],
+            [18, 9.0]
           ]
         },
         "line-opacity": {
@@ -15251,15 +15439,15 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [2.5, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_paved_or_uk_z12],
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [12, 1.5],
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-opacity": {
@@ -17525,7 +17713,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-secondary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17557,10 +17745,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_farzoom,
-                @color-secondary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-secondary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           11,
@@ -17599,10 +17787,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_farzoom,
-                @color-secondary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-secondary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
@@ -17641,10 +17829,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-secondary_case_unpaved_default,
-                @color-secondary_case_paved_or_uk_default
+                "#644507",
+                "#595959"
               ],
-              @color-secondary_case_paved_or_uk_default
+              "#595959"
             ]
           ]
         ],
@@ -17712,7 +17900,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17744,17 +17932,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
+                "#b99346",
                 "hsl(0, 0%, 50%)"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17786,17 +17974,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_farzoom,
-                @color-tertiary_case_unpaved_farzoom
+                "#b99346",
+                "#b99346"
               ],
-              @color-tertiary_case_unpaved_farzoom
+              "#b99346"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-tertiary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17828,10 +18016,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-tertiary_case_unpaved_default,
-                @color-tertiary_case_unpaved_default
+                "#644507",
+                "#644507"
               ],
-              @color-tertiary_case_unpaved_default
+              "#644507"
             ]
           ]
         ],
@@ -17902,7 +18090,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17934,17 +18122,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_farzoom,
-                @color-primary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-primary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           11,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -17976,17 +18164,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_farzoom,
-                @color-primary_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-primary_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-primary_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -18018,10 +18206,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-primary_case_unpaved_default,
-                @color-primary_case_paved_or_uk_default
+                "#634507",
+                "#404040"
               ],
-              @color-primary_case_paved_or_uk_default
+              "#404040"
             ]
           ]
         ],
@@ -18087,7 +18275,7 @@
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no_farzoom,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -18119,17 +18307,17 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_case_unpaved_farzoom,
-                @color-trunk_case_paved_or_uk_farzoom
+                "#b99346",
+                "#808080"
               ],
-              @color-trunk_case_paved_or_uk_farzoom
+              "#808080"
             ]
           ],
           12,
           [
             "case",
             ["==", ["get", "bicycle"], "no"],
-            @color-trunk_case_bicycle_no_default,
+            "#bd430f",
             [
               "case",
               ["has", "surface_raw"],
@@ -18161,10 +18349,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                @color-trunk_case_unpaved_default,
-                @color-trunk_case_paved_or_uk_default
+                "#634507",
+                "#404040"
               ],
-              @color-trunk_case_paved_or_uk_default
+              "#404040"
             ]
           ]
         ],
@@ -18228,9 +18416,9 @@
           ["linear"],
           ["zoom"],
           11,
-          @color-motorway_case_farzoom,
+          "#bf440f",
           12,
-          @color-motorway_case_default
+          "#a15412"
         ],
         "line-width": {
           "base": 1.2,
@@ -18328,8 +18516,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -18347,8 +18535,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -18447,8 +18635,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -18466,8 +18654,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -18481,7 +18669,7 @@
             [20, 20]
           ]
         },
-        "line-dasharray": [@dasharray-minor_case_medium_dash, @dasharray-minor_case_medium_gap],
+        "line-dasharray": [10.0, 0.0],
         "line-opacity": {
           "stops": [
             [8.5, 0],
@@ -18560,8 +18748,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_farzoom,
-            @color-minor_case_paved_or_uk_farzoom
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -18579,8 +18767,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            @color-minor_case_unpaved_default,
-            @color-minor_case_paved_or_uk_default
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -18600,7 +18788,7 @@
             [9, 1]
           ]
         },
-        "line-dasharray": [@dasharray-minor_case_rough_dash, @dasharray-minor_case_rough_gap]
+        "line-dasharray": [10.0, 0.0]
       }
     },
     {
@@ -18645,15 +18833,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-path_track_footway_cycleway_railings,
+        "line-color": "#000000",
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @case_width-path_track_footway_cycleway_railings_z12],
-            [14, @case_width-path_track_footway_cycleway_railings_z14],
-            [15, @case_width-path_track_footway_cycleway_railings_z15],
-            [16, @case_width-path_track_footway_cycleway_railings_z16],
-            [18, @case_width-path_track_footway_cycleway_railings_z18]
+            [12, 3.2],
+            [14, 3.7],
+            [15, 4.5],
+            [16, 8.5],
+            [18, 15.0]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 14.5, 1]
@@ -18701,15 +18889,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-path_track_footway_cycleway_floor,
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @case_width-path_track_footway_cycleway_floor_z12],
-            [14, @case_width-path_track_footway_cycleway_floor_z14],
-            [15, @case_width-path_track_footway_cycleway_floor_z15],
-            [16, @case_width-path_track_footway_cycleway_floor_z16],
-            [18, @case_width-path_track_footway_cycleway_floor_z18]
+            [12, 2.2],
+            [14, 2.2],
+            [15, 3.0],
+            [16, 6.0],
+            [18, 12.0]
           ]
         },
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
@@ -18785,56 +18973,56 @@
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z11,
+            1.0,
             ["b"],
-            @case_width-path_medium_z11,
+            1.5,
             ["c"],
-            @case_width-path_wide_z11,
+            2.0,
             ["d"],
-            @case_width-path_widest_z11,
-            @case_width-path_medium_z11
+            2.0,
+            1.5
           ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z14,
+            1.3,
             ["b"],
-            @case_width-path_medium_z14,
+            2.0,
             ["c"],
-            @case_width-path_wide_z14,
+            3.0,
             ["d"],
-            @case_width-path_widest_z14,
-            @case_width-path_medium_z14
+            3.0,
+            2.0
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z16,
+            3.0,
             ["b"],
-            @case_width-path_medium_z16,
+            6.0,
             ["c"],
-            @case_width-path_wide_z16,
+            9.0,
             ["d"],
-            @case_width-path_widest_z16,
-            @case_width-path_medium_z16
+            9.0,
+            6.0
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @case_width-path_narrow_z18,
+            5.0,
             ["b"],
-            @case_width-path_medium_z18,
+            9.0,
             ["c"],
-            @case_width-path_wide_z18,
+            15.0,
             ["d"],
-            @case_width-path_widest_z18,
-            @case_width-path_medium_z18
+            15.0,
+            9.0
           ]
         ],
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
@@ -18885,11 +19073,11 @@
           "match",
           ["get", "mtb_winter"],
           ["1"],
-          @color-mtb:winter_1,
+          "#75e009",
           ["2", "yes"],
-          @color-mtb:winter_2,
+          "#d7dc00",
           ["3"],
-          @color-mtb:winter_null,
+          "#ffffff",
 
         ],
         "line-width": [
@@ -18957,6 +19145,86 @@
       }
     },
     {
+      "id": "bridge-track-case-(gr-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": false,
+        "trailmap:winter_hc_light": false,
+        "trailmap:winter_dark": false,
+        "trailmap:winter_hc_dark": false,
+
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-track-case-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["==", "brunnel", "bridge"],
+        ["any", ["in", "class", "track"], ["==", "width_cat", "d"]],
+        ["has", "mtb_scale"],
+        ["!in", "mtb_scale", "-1"],
+        ["!in", "subclass", "cycleway"],
+        ["!=", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "mtb_scale"],
+          ["0-"],
+          "hsl(168, 90%, 41%)",
+          ["0"],
+          "hsl(90, 92%, 46%)",
+          ["1"],
+          "hsl(61, 100%, 43%)",
+          ["2"],
+          "hsl(36, 99%, 62%)",
+          ["3"],
+          "hsl(355, 100%, 65%)",
+          ["4"],
+          "hsl(302, 91%, 47%)",
+          ["5"],
+          "hsl(285, 100%, 39%)",
+          ["6"],
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 100%)"
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
+      }
+    },
+    {
       "id": "bridge-track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
@@ -18977,6 +19245,9 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
+        "trailmap:high_contrast": "no",
+        "trailmap:mtb_winter": false,
+        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-track-case",
@@ -18999,31 +19270,30 @@
           "match",
           ["get", "mtb_scale"],
           ["0-"],
-          @color-mtb:scale_0-,
+          "hsl(168, 90%, 41%)",
           ["0"],
-          @color-mtb:scale_0,
+          "hsl(90, 92%, 46%)",
           ["1"],
-          @color-mtb:scale_1,
+          "hsl(61, 100%, 43%)",
           ["2"],
-          @color-mtb:scale_2,
+          "hsl(36, 99%, 62%)",
           ["3"],
-          @color-mtb:scale_3,
+          "hsl(355, 100%, 63%)",
           ["4"],
-          @color-mtb:scale_4,
+          "hsl(302, 91%, 47%)",
           ["5"],
-          @color-mtb:scale_5,
+          "hsl(285, 100%, 39%)",
           ["6"],
-          @color-mtb:scale_6,
-          @color-mtb:scale_null
+          "hsl(285, 100%, 34%)",
+          "hsl(0, 0%, 0%)"
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @case_width-track_default_z10],
-            [12, @case_width-track_default_z12],
-            [14, @case_width-track_default_z14],
-            [16, @case_width-track_default_z16],
-            [18, @case_width-track_default_z18]
+            [11, 1.5],
+            [14, 3],
+            [16, 9],
+            [18, 15]
           ]
         },
         "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
@@ -19097,56 +19367,56 @@
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z12,
+            0.4,
             ["b"],
-            @line_width-path_medium_z12,
+            0.6,
             ["c"],
-            @line_width-path_wide_z12,
+            1.2,
             ["d"],
-            @line_width-path_widest_z12,
-            @line_width-path_medium_z12
+            1.2,
+            0.6
           ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z14,
+            0.8,
             ["b"],
-            @line_width-path_medium_z14,
+            1.0,
             ["c"],
-            @line_width-path_wide_z14,
+            1.8,
             ["d"],
-            @line_width-path_widest_z14,
-            @line_width-path_medium_z14
+            1.8,
+            1.0
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z16,
+            1.0,
             ["b"],
-            @line_width-path_medium_z16,
+            1.8,
             ["c"],
-            @line_width-path_wide_z16,
+            3.0,
             ["d"],
-            @line_width-path_widest_z16,
-            @line_width-path_medium_z16
+            3.0,
+            1.8
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            @line_width-path_narrow_z18,
+            2.0,
             ["b"],
-            @line_width-path_medium_z18,
+            3.5,
             ["c"],
-            @line_width-path_wide_z18,
+            5.5,
             ["d"],
-            @line_width-path_widest_z18,
-            @line_width-path_medium_z18
+            5.5,
+            3.5
           ]
         ],
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
@@ -19197,11 +19467,11 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [10, @line_width-track_default_z10],
-            [12, @line_width-track_default_z12],
-            [14, @line_width-track_default_z14],
-            [16, @line_width-track_default_z16],
-            [18, @line_width-track_default_z18]
+            [10, 0.4],
+            [12, 0.8],
+            [14, 1.3],
+            [16, 3.5],
+            [18, 7.0]
           ]
         },
         "line-opacity": {
@@ -19384,14 +19654,14 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-offset": {
@@ -19453,14 +19723,14 @@
         "line-cap": "butt"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         },
         "line-offset": {
@@ -19531,15 +19801,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [6, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_paved_or_uk_z12],
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [12, 1.5],
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         }
       }
@@ -19605,15 +19875,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [1, 0.8],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_unpaved_z12],
-            [14, @line_width-cycleway_unpaved_z14],
-            [16, @line_width-cycleway_unpaved_z16],
-            [18, @line_width-cycleway_unpaved_z18]
+            [12, 2.2],
+            [14, 2.7],
+            [16, 4.5],
+            [18, 9.0]
           ]
         }
       }
@@ -19658,15 +19928,15 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": @color-cycleway_line,
+        "line-color": "#3046d7",
         "line-dasharray": [2.5, 1.5],
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, @line_width-cycleway_paved_or_uk_z12],
-            [14, @line_width-cycleway_paved_or_uk_z14],
-            [16, @line_width-cycleway_paved_or_uk_z16],
-            [18, @line_width-cycleway_paved_or_uk_z18]
+            [12, 1.5],
+            [14, 1.8],
+            [16, 3.0],
+            [18, 6.0]
           ]
         }
       }
@@ -23053,12 +23323,12 @@
           ["linear"],
           ["zoom"],
           16,
-          @color-label_place_poi-level_123_and_additions_farzoom,
+          "#666666",
           18,
-          @color-label_place_poi-level_123_and_additions_default
+          "#212121"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -23135,12 +23405,12 @@
           ["linear"],
           ["zoom"],
           16,
-          @color-label_place_poi-level_123_and_additions_farzoom,
+          "#666666",
           17,
-          @color-label_place_poi-level_123_and_additions_default
+          "#212121"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -23218,12 +23488,12 @@
           ["linear"],
           ["zoom"],
           15,
-          @color-label_place_poi-level_123_and_additions_farzoom,
+          "#666666",
           16,
-          @color-label_place_poi-level_123_and_additions_default
+          "#212121"
         ],
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
@@ -23330,9 +23600,9 @@
             [13.3, 1]
           ]
         },
-        "text-color": @color-label_place_poi-level_123_and_additions_default,
+        "text-color": "#212121",
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_place_poi-level_123_and_additions,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-opacity": {
           "stops": [
@@ -23476,8 +23746,8 @@
         }
       },
       "paint": {
-        "text-color": @color-label_highway_path,
-        "text-halo-color": @color-label_halo_highway_path,
+        "text-color": "#3c322a",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2
       }
     },
@@ -23532,8 +23802,8 @@
         }
       },
       "paint": {
-        "text-color": @color-label_highway_path,
-        "text-halo-color": @color-label_halo_highway_path,
+        "text-color": "#3c322a",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.5
       }
     },
@@ -23596,8 +23866,8 @@
         }
       },
       "paint": {
-        "text-color": @color-label_highway_minor,
-        "text-halo-color": @color-label_halo_highway_minor,
+        "text-color": "#3c322a",
+        "text-halo-color": "#ffffff",
         "text-halo-blur": 0.2,
         "text-halo-width": 2
       }
@@ -23657,8 +23927,8 @@
         }
       },
       "paint": {
-        "text-color": @color-label_highway_trunk_primary_secondary_tertiary,
-        "text-halo-color": @color-label_halo_highway_trunk_primary_secondary_tertiary,
+        "text-color": "#3c322a",
+        "text-halo-color": "#ffffff",
         "text-halo-blur": 0.3,
         "text-halo-width": 2
       }
@@ -23846,13 +24116,13 @@
           "match",
           ["get", "access"],
           ["no"],
-          @color-label_parking_no,
+          "#ff003c",
           ["yes"],
-          @color-label_parking_yes,
-          @color-label_parking_default
+          "#ffffff",
+          "#000000"
         ],
         "text-halo-width": ["match", ["get", "access"], ["yes"], 0, 1],
-        "text-halo-color": @color-label_parking_yes,
+        "text-halo-color": "#ffffff",
         "text-opacity": [
           "interpolate",
           ["linear"],
@@ -25897,8 +26167,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_other,
-        "text-halo-color": @color-label_halo_place_other,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1
       }
     },
@@ -25949,8 +26219,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_suburb_hamlet,
-        "text-halo-color": @color-label_halo_place_suburb_hamlet,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.4
       }
     },
@@ -26001,8 +26271,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_village,
-        "text-halo-color": @color-label_halo_place_village,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.4
       }
     },
@@ -26068,8 +26338,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": @color-label_place_village,
-        "text-halo-color": @color-label_halo_place_village,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.2
       }
     },
@@ -26122,8 +26392,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_town,
-        "text-halo-color": @color-label_halo_place_town,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.8
       }
     },
@@ -26191,8 +26461,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": @color-label_place_town,
-        "text-halo-color": @color-label_halo_place_town,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.2
       }
     },
@@ -26246,8 +26516,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_city,
-        "text-halo-color": @color-label_halo_place_city,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 2,
         "text-opacity": {
           "stops": [
@@ -26325,8 +26595,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": @color-label_place_city,
-        "text-halo-color": @color-label_halo_place_city,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -26395,8 +26665,8 @@
             [4.5, 1]
           ]
         },
-        "text-color": @color-label_place_capital,
-        "text-halo-color": @color-label_halo_place_capital,
+        "text-color": "#262626",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -26455,9 +26725,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_protected_area,
+        "text-color": "#666666",
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_place_protected_area,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1
       }
     },
@@ -26512,8 +26782,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_state,
-        "text-halo-color": @color-label_halo_place_state,
+        "text-color": "#663333",
+        "text-halo-color": "#cccccc",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -26576,9 +26846,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_country_other,
+        "text-color": "#323243",
         "text-halo-blur": 1,
-        "text-halo-color": @color-label_halo_place_country_other,
+        "text-halo-color": "#cccccc",
         "text-halo-width": 2
       }
     },
@@ -26633,9 +26903,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_country_minor,
+        "text-color": "#323243",
         "text-halo-blur": 1,
-        "text-halo-color": @color-label_halo_place_country_minor,
+        "text-halo-color": "#cccccc",
         "text-halo-width": 2
       }
     },
@@ -26690,9 +26960,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_country_medium,
+        "text-color": "#323243",
         "text-halo-blur": 1,
-        "text-halo-color": @color-label_halo_place_country_medium,
+        "text-halo-color": "#cccccc",
         "text-halo-width": 2
       }
     },
@@ -26747,9 +27017,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": @color-label_place_country_major,
+        "text-color": "#323243",
         "text-halo-blur": 1,
-        "text-halo-color": @color-label_halo_place_country_major,
+        "text-halo-color": "#cccccc",
         "text-halo-width": 2
       }
     },
@@ -26989,9 +27259,9 @@
           11,
           ["case", ["<=", ["get", "rank"], 4], 1, 0]
         ],
-        "text-color": @color-label_peak,
+        "text-color": "#212121",
         "text-halo-blur": 0.5,
-        "text-halo-color": @color-label_halo_peak,
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1,
         "text-opacity": [
           "interpolate",
