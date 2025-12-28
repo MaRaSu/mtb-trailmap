@@ -12900,9 +12900,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-parking_aisle-line",
@@ -12926,8 +12923,8 @@
         "line-color": [
           "case",
           ["==", ["get", "surface"], "unpaved"],
-          "hsl(39, 32%, 54%)",
-          "hsl(40, 2%, 65%)"
+          @color-parking_aisle_line_unpaved,
+          @color-parking_aisle_line_paved_or_uk
         ],
         "line-width": {
           "base": 1,
@@ -13289,7 +13286,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [4, 0.8],
+        "line-dasharray": [@dasharray-tertiary_case_medium_dash, @dasharray-tertiary_case_medium_gap],
         "line-opacity": {
           "stops": [
             [6, 0],
@@ -13383,7 +13380,7 @@
             [20, 17]
           ]
         },
-        "line-dasharray": [1.2, 0.8],
+        "line-dasharray": [@dasharray-tertiary_case_rough_dash, @dasharray-tertiary_case_rough_gap],
         "line-opacity": {
           "stops": [
             [6, 0],
