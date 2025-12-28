@@ -12637,8 +12637,8 @@
         }
       }
     },
-    {
-      "id": "highway-raceway-case-(def-all-osm)",
+        {
+      "id": "highway-raceway-case_smooth-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": true,
@@ -12658,89 +12658,40 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-raceway-case",
+        "trailmap:id_legacy": "hw-raceway-case-cat_ab-gr",
         "trailmap:country": "all"
       },
       "source": "osm",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 11,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
         ["!=", "brunnel", "tunnel"],
-        ["in", "class", "raceway", "raceway_construction"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "hsl(39, 32%, 54%)",
-          "hsl(40, 2%, 65%)"
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [10, 2],
-            [12, 2.5],
-            [14, 2.8],
-            [20, 11]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [10, 0],
-            [10.5, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-raceway-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-raceway-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!=", "brunnel", "tunnel"],
-        ["in", "class", "raceway", "raceway_construction"]
+        ["==", "class", "raceway"],
+        [
+          "in",
+          "surface_raw",
+          "asphalt",
+          "chipseal",
+          "concrete",
+          "concrete:lanes",
+          "concrete:plates",
+          "paved",
+          "paving_stones",
+          "bricks",
+          "cobblestone",
+          "compacted",
+          "fine_gravel",
+          "grass_paver",
+          "metal",
+          "metal_grid",
+          "rubber",
+          "unhewn_cobblestone",
+          "wood"
+        ]
       ],
       "layout": {
         "visibility": "none",
@@ -12749,24 +12700,181 @@
       },
       "paint": {
         "line-color": [
-          "case",
-          ["==", ["get", "surface"], "unpaved"],
-          "hsl(40, 87%, 21%)",
-          "hsl(0, 0%, 29%)"
+          "match",
+          ["get", "surface_raw"],
+          [
+            "bricks",
+            "cobblestone",
+            "compacted",
+            "fine_gravel",
+            "grass_paver",
+            "metal",
+            "metal_grid",
+            "rubber",
+            "unhewn_cobblestone",
+            "wood"
+          ],
+          @color-raceway_case_unpaved_default,
+          @color-raceway_case_paved_or_uk_default
         ],
         "line-width": {
           "base": 1,
           "stops": [
-            [10, 2],
-            [12, 3.5],
-            [14, 4.5],
-            [20, 20]
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
           ]
         },
         "line-opacity": {
           "stops": [
-            [10, 0],
-            [10.5, 1]
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-raceway-case_medium-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-raceway-case-cat_c-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "raceway"],
+        [
+          "any",
+          [
+            "in",
+            "surface_raw",
+            "dirt",
+            "earth",
+            "grass",
+            "gravel",
+            "ground",
+            "pebblestone",
+            "unpaved",
+            "woodchips"
+          ],
+          ["!has", "surface_raw"]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": @color-raceway_case_unpaved_default,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-dasharray": [@dasharray-raceway_case_medium_dash, @dasharray-raceway_case_medium_gap8],
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-raceway-case_rough-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-raceway-case-cat_d-gr",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["!=", "brunnel", "tunnel"],
+        ["==", "class", "raceway"],
+        [
+          "in",
+          "surface_raw",
+          "mud",
+          "rock",
+          "sand",
+          "shells",
+          "stepping_stones"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": @color-raceway_case_unpaved_default,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [11, 1],
+            [12, 1.2],
+            [14, 2.4],
+            [20, 10]
+          ]
+        },
+        "line-dasharray": [@dasharray-raceway_case_rough_dash, @dasharray-raceway_case_rough_gap8],
+        "line-opacity": {
+          "stops": [
+            [11, 0],
+            [11.5, 1]
           ]
         }
       }
