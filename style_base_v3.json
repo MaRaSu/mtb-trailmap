@@ -1017,8 +1017,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, @opacity-landcover_scrub_mid],
+            [14, @opacity-landcover_scrub_full]
           ]
         }
       }
@@ -1061,8 +1061,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full1]
+            [12, @opacity-landcover_scrub_mid],
+            [14, @opacity-landcover_scrub_full1]
           ]
         }
       }
@@ -1105,8 +1105,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, @opacity-landcover_scrub_mid],
+            [14, @opacity-landcover_scrub_full]
           ]
         }
       }
@@ -1149,8 +1149,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_scrub_mid5],
-            [14, @fill-opacity-landcover_scrub_full]
+            [12, @opacity-landcover_scrub_mid5],
+            [14, @opacity-landcover_scrub_full]
           ]
         }
       }
@@ -1193,8 +1193,8 @@
         "fill-opacity": {
           "stops": [
             [11, 0],
-            [12, @fill-opacity-landcover_clearcut_mid],
-            [14, @fill-opacity-landcover_clearcut_full]
+            [12, @opacity-landcover_clearcut_mid],
+            [14, @opacity-landcover_clearcut_full]
           ]
         }
       }
@@ -1396,8 +1396,8 @@
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, @fill-opacity-landcover_field_mid],
-            [14, @fill-opacity-landcover_field_full]
+            [10, @opacity-landcover_field_mid],
+            [14, @opacity-landcover_field_full]
           ]
         }
       }
@@ -1445,8 +1445,8 @@
         "fill-opacity": {
           "stops": [
             [9, 0],
-            [10, @fill-opacity-landcover_field_mid],
-            [14, @fill-opacity-landcover_field_full]
+            [10, @opacity-landcover_field_mid],
+            [14, @opacity-landcover_field_full]
           ]
         }
       }
@@ -1496,7 +1496,7 @@
         "fill-opacity": {
           "stops": [
             [12, 0],
-            [13, @fill-opacity-landuse_sport_play_full]
+            [13, @opacity-landuse_sport_play_full]
           ]
         }
       }
@@ -3416,7 +3416,7 @@
           "tm_vihr_mml_38300_maatuva_vesialue",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": @opacity-landcover_wetland_full
       }
     },
     {
@@ -3479,7 +3479,7 @@
           "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": @opacity-landcover_wetland_full
       }
     },
     {
@@ -3536,7 +3536,7 @@
           "tm_valk_mml_38300_maatuva_vesialue",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": @opacity-landcover_wetland_full
       }
     },
     {
@@ -3598,7 +3598,7 @@
           "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": @fill-opacity-landcover_wetland_full
+        "fill-opacity": @opacity-landcover_wetland_full
       }
     },
     {
@@ -6688,7 +6688,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-inner_full]
+            [12, @opacity-portected_area_outline-inner_full]
           ]
         },
         "line-width": {
@@ -6744,7 +6744,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-outer_full]
+            [12, @opacity-portected_area_outline-outer_full]
           ]
         },
         "line-width": {
@@ -6915,7 +6915,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-inner_full]
+            [12, @opacity-portected_area_outline-inner_full]
           ]
         },
         "line-width": {
@@ -6965,7 +6965,7 @@
         "line-opacity": {
           "stops": [
             [10, 0],
-            [12, @fill-opacity-portected_area_outline-outer_full]
+            [12, @opacity-portected_area_outline-outer_full]
           ]
         },
         "line-width": {
@@ -9811,9 +9811,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-line-bv-farzoom",
@@ -9852,8 +9849,8 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [0.8, 1.5],
-        "line-width": 0.6,
+        "line-dasharray": [@dasharray-path_badvis_farzoom_dash, @dasharray-path_badvis_farzoom_gap],
+        "line-width": @line_width-path_default_farzoom,
         "line-opacity": ["case", ["has", "noexit"], 0.4, 1]
       }
     },
@@ -9878,9 +9875,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-line-gv-farzoom",
@@ -9915,8 +9909,8 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [2.5, 2],
-        "line-width": 0.6,
+        "line-dasharray": [@dasharray-path_goodvis_farzoom_dash, @dasharray-path_goodvis_farzoom_gap],
+        "line-width": @line_width-path_default_farzoom,
         "line-opacity": ["case", ["has", "noexit"], 0.4, 1]
       }
     },
@@ -9941,9 +9935,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-line-bv",
@@ -9976,7 +9967,7 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [0.8, 1.5],
+        "line-dasharray": [@dasharray-path_badvis_default_dash, @dasharray-path_badvis_default_gap],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -10070,9 +10061,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-cat_a-line-gv",
@@ -10106,7 +10094,7 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [5.3, 3.8],
+        "line-dasharray": [@dasharray-path_goodvis_narrow_dash, @dasharray-path_goodvis_narrow_gap],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -10152,9 +10140,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-cat_b_uk-line-gv",
@@ -10188,7 +10173,7 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [3.5, 2.5],
+        "line-dasharray": [@dasharray-path_goodvis_medium_dash, @dasharray-path_goodvis_medium_gap],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -10234,9 +10219,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "hw-path-cat_c-line-gv",
@@ -10270,7 +10252,7 @@
       },
       "paint": {
         "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [2.1, 1.5],
+        "line-dasharray": [@dasharray-path_goodvis_wide_dash, @dasharray-path_goodvis_wide_gap5],
         "line-width": [
           "interpolate",
           ["linear"],
@@ -10284,83 +10266,6 @@
           18,
           @line_width-path_wide_z18
         ],
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          ["case", ["has", "noexit"], 0.4, 0],
-          12.5,
-          ["case", ["has", "noexit"], 0.4, 1]
-        ]
-      }
-    },
-    {
-      "id": "highway-path-line_allvis_allwidths-(wnt-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": false,
-        "trailmap:mtb_hc_light": false,
-        "trailmap:mtb_dark": false,
-        "trailmap:mtb_hc_dark": false,
-        "trailmap:gravel_light": false,
-        "trailmap:gravel_hc_light": false,
-        "trailmap:gravel_dark": false,
-        "trailmap:gravel_hc_dark": false,
-        "trailmap:road_light": false,
-        "trailmap:road_hc_light": false,
-        "trailmap:road_dark": false,
-        "trailmap:road_hc_dark": false,
-        "trailmap:winter_light": false,
-        "trailmap:winter_hc_light": false,
-        "trailmap:winter_dark": false,
-        "trailmap:winter_hc_dark": false,
-
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-path-line-winter",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        ["in", "class", "path", "footway"],
-        ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
-        ["!in", "cycleway_left", "yes"],
-        ["!in", "cycleway_right", "yes"],
-        [
-          "any",
-          ["!has", "bicycle"],
-          ["==", "bicycle", "yes"],
-          ["all", ["!=", "bicycle", "no"], ["==", "foot", "yes"]],
-          ["has", "mtb_scale"],
-          ["==", "subclass", "bridleway"]
-        ],
-        ["any", ["!=", "subclass", "footway"], ["has", "mtb_scale"]],
-        ["!in", "width_cat", "d"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(0, 0%, 0%)",
-        "line-dasharray": [2.5, 2],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [12, 0.6],
-            [14, 1],
-            [16, 1.8],
-            [18, 2.4]
-          ]
-        },
         "line-opacity": [
           "interpolate",
           ["linear"],
@@ -18897,7 +18802,7 @@
             [18, 15]
           ]
         },
-        "line-opacity": ["case", ["has", "mtb_scale"], 1, 0]
+        "line-opacity": 1
       }
     },
     {
