@@ -175,9 +175,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "background",
@@ -211,9 +208,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global",
@@ -260,9 +254,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-glacier",
@@ -315,9 +306,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-mml-taajama",
@@ -336,7 +324,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "hsl(29, 34%, 88%)"
+        "fill-color": "#ebe0d6"
       }
     },
     {
@@ -379,7 +367,7 @@
             ]
           ]
         },
-        "fill-color": "hsl(60, 67%, 99%)",
+        "fill-color": "#e9eddf",
         "fill-opacity": 1
       }
     },
@@ -403,9 +391,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-residential",
@@ -448,9 +433,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-commercial",
@@ -501,9 +483,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-industrial",
@@ -559,9 +538,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-cemetery",
@@ -602,9 +578,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-hospital",
@@ -645,9 +618,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-school",
@@ -691,9 +661,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-railway",
@@ -734,9 +701,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "parking_area-fill",
@@ -779,9 +743,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "wood",
@@ -850,9 +811,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-quarry-mml",
@@ -896,9 +854,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-quarry-osm",
@@ -939,9 +894,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landuse-storage",
@@ -982,9 +934,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-grass",
@@ -1061,9 +1010,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-allotments",
@@ -1105,9 +1051,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-ice-shelf",
@@ -1160,9 +1103,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-sand",
@@ -1207,9 +1147,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scrub_mml",
@@ -1236,11 +1173,11 @@
             ],
             [
               12,
-              0.5
+              0.25
             ],
             [
               14,
-              1
+              0.5
             ]
           ]
         }
@@ -1266,9 +1203,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scrub_mml-nowoods",
@@ -1295,11 +1229,11 @@
             ],
             [
               12,
-              0.5
+              0.25
             ],
             [
               14,
-              1
+              0.51
             ]
           ]
         }
@@ -1325,9 +1259,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scrub_osm",
@@ -1354,11 +1285,11 @@
             ],
             [
               12,
-              0.5
+              0.25
             ],
             [
               14,
-              1
+              0.5
             ]
           ]
         }
@@ -1384,9 +1315,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scrub_osm-nowoods",
@@ -1401,7 +1329,7 @@
         "scrub"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
@@ -1413,11 +1341,11 @@
             ],
             [
               12,
-              0.5
+              0.255
             ],
             [
               14,
-              1
+              0.5
             ]
           ]
         }
@@ -1443,9 +1371,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-clearcut_mml",
@@ -1472,11 +1397,11 @@
             ],
             [
               12,
-              0.5
+              0.25
             ],
             [
               14,
-              1
+              0.5
             ]
           ]
         }
@@ -1502,9 +1427,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:group": "bedrock",
@@ -1547,9 +1469,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:group": "bedrock",
@@ -1591,9 +1510,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scree-osm",
@@ -1635,9 +1551,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-scree-mml",
@@ -1780,7 +1693,23 @@
           ],
           "#f5e9a3",
           "#e5eda1"
-        ]
+        ],
+        "fill-opacity": {
+          "stops": [
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              0.5
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
       }
     },
     {
@@ -4388,9 +4317,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "landcover-wetland",
@@ -4446,7 +4372,7 @@
           "tm_vihr_mml_38300_maatuva_vesialue",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": 1
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4534,7 +4460,7 @@
           "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": 1
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4614,7 +4540,7 @@
           "tm_valk_mml_38300_maatuva_vesialue",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": 1
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4662,7 +4588,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": [
@@ -4699,127 +4625,9 @@
             "mangrove"
           ],
           "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          "tm_valk_mml_35300_soistuma"
-        ],
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "landcover-wetland-nowoods-(gr-fin-mml_topo)",
-      "type": "fill",
-      "source": "mml_topo",
-      "source-layer": "maasto_alue",
-      "minzoom": 11,
-      "filter": [
-        "in",
-        "kohdeluokka",
-        35300,
-        35411,
-        35412,
-        35421,
-        35422,
-        38300
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-pattern": [
-          "match",
-          [
-            "get",
-            "kohdeluokka"
-          ],
-          [
-            35300
-          ],
-          "tm_valk_mml_35300_soistuma",
-          [
-            35411
-          ],
-          "tm_valk_mml_35411_suo_helppokulkuinen_puuton",
-          [
-            35412
-          ],
-          "tm_valk_mml_35412_suo_helppokulkuinen_metsaa_kasvava",
-          [
-            35421
-          ],
-          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          [
-            35422
-          ],
-          "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          [
-            38300
-          ],
-          "tm_valk_mml_38300_maatuva_vesialue",
           "tm_valk_mml_35300_soistuma"
         ],
         "fill-opacity": 0.5
-      }
-    },
-    {
-      "id": "landcover-wetland-nowoods-(gr-global-osm)",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landcover",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        [
-          "in",
-          "class",
-          "wetland"
-        ],
-        [
-          "!in",
-          "subclass",
-          "heath",
-          "fell"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-pattern": [
-          "match",
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "marsh"
-          ],
-          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          [
-            "saltmarsh"
-          ],
-          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          [
-            "fen"
-          ],
-          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          [
-            "wet_meadow"
-          ],
-          "tm_valk_mml_35421_suo_vaikeakulkuinen_puuton",
-          [
-            "swamp"
-          ],
-          "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          [
-            "bog"
-          ],
-          "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          [
-            "mangrove"
-          ],
-          "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
-          "tm_valk_mml_35300_soistuma"
-        ],
-        "fill-opacity": 1
       }
     },
     {
@@ -9334,9 +9142,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-fill-osm",
@@ -9421,9 +9226,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-inner-osm",
@@ -9452,7 +9254,7 @@
             ],
             [
               12,
-              0.4
+              0.2
             ]
           ]
         },
@@ -9491,9 +9293,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-outer-osm",
@@ -9522,7 +9321,7 @@
             ],
             [
               12,
-              1
+              0.5
             ]
           ]
         },
@@ -9574,9 +9373,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-fill-osm",
@@ -9653,9 +9449,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-fill-mml",
@@ -9740,9 +9533,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-inner-mml",
@@ -9771,7 +9561,7 @@
             ],
             [
               12,
-              0.4
+              0.2
             ]
           ]
         },
@@ -9810,9 +9600,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "protected_area-outline-outer-mml",
@@ -9841,7 +9628,7 @@
             ],
             [
               12,
-              1
+              0.5
             ]
           ]
         },
@@ -13508,7 +13295,7 @@
             [
               "d"
             ],
-            1.6,
+            3.6,
             1.2
           ],
           16,
@@ -13533,7 +13320,7 @@
             [
               "d"
             ],
-            2.4,
+            7.5,
             1.6
           ],
           18,
@@ -13558,7 +13345,7 @@
             [
               "d"
             ],
-            3.6,
+            12,
             2.4
           ]
         ],
@@ -17763,7 +17550,7 @@
       }
     },
     {
-      "id": "highway-service-case-(def-all-osm)",
+      "id": "highway-service-case_smooth-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": true,
@@ -17782,318 +17569,11 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-service-case",
+        "trailmap:id_legacy": "hw-service-cat_ab-case-gr",
         "trailmap:country": "all"
       },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "service",
-          "service_construction"
-        ],
-        [
-          "!in",
-          "service",
-          "parking_aisle",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          12,
-          [
-            "case",
-            [
-              "==",
-              [
-                "get",
-                "surface"
-              ],
-              "unpaved"
-            ],
-            "hsl(40, 45%, 50%)",
-            "hsl(0, 0%, 50%)"
-          ],
-          13.5,
-          [
-            "case",
-            [
-              "==",
-              [
-                "get",
-                "surface"
-              ],
-              "unpaved"
-            ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 40%)"
-          ]
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              0.4
-            ],
-            [
-              11,
-              1
-            ],
-            [
-              12,
-              1.5
-            ],
-            [
-              13,
-              2
-            ],
-            [
-              14,
-              3.4
-            ],
-            [
-              20,
-              13
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              9,
-              0
-            ],
-            [
-              10,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-service-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-service-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "service",
-          "service_construction"
-        ],
-        [
-          "!in",
-          "service",
-          "parking_aisle",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          [
-            "==",
-            [
-              "get",
-              "surface"
-            ],
-            "unpaved"
-          ],
-          "hsl(40, 87%, 21%)",
-          "hsl(0, 0%, 0%)"
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              3
-            ],
-            [
-              12,
-              3.5
-            ],
-            [
-              14,
-              4.5
-            ],
-            [
-              16,
-              7
-            ],
-            [
-              20,
-              20
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              10,
-              0
-            ],
-            [
-              10.5,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-service-case-(wnt-all-osm)",
-      "type": "line",
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "in",
-          "class",
-          "service",
-          "service_construction"
-        ],
-        [
-          "!in",
-          "service",
-          "parking_aisle",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              10,
-              2
-            ],
-            [
-              12,
-              2.8
-            ],
-            [
-              14,
-              3.4
-            ],
-            [
-              20,
-              13
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              10,
-              0
-            ],
-            [
-              10.5,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-service-case_smooth-(gr-all-osm)",
-      "type": "line",
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 10,
@@ -18144,7 +17624,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -18176,8 +17656,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "hsl(40, 45%, 50%)",
-            "hsl(0, 0%, 50%)"
+            "#b99346",
+            "#808080"
           ],
           12,
           [
@@ -18198,8 +17678,8 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 50%)"
+            "#644507",
+            "#404040"
           ]
         ],
         "line-width": {
@@ -18242,8 +17722,30 @@
       }
     },
     {
-      "id": "highway-service-case_medium-(gr-all-osm)",
+      "id": "highway-service-case_medium-(def-all-osm)",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-service-cat_c-case-gr",
+        "trailmap:country": "all"
+      },
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 10,
@@ -18292,7 +17794,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt",
         "line-join": "round"
       },
@@ -18306,9 +17808,9 @@
             "zoom"
           ],
           11,
-          "hsl(40, 45%, 50%)",
+          "#b99346",
           12,
-          "hsl(40, 87%, 21%)"
+          "#644507"
         ],
         "line-width": {
           "base": 1,
@@ -18354,8 +17856,30 @@
       }
     },
     {
-      "id": "highway-service-case_rough-(gr-all-osm)",
+      "id": "highway-service-case_rough-(def-all-osm)",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-service-cat_d-case-gr",
+        "trailmap:country": "all"
+      },
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 10,
@@ -18408,9 +17932,9 @@
             "zoom"
           ],
           11,
-          "hsl(40, 45%, 50%)",
+          "#b99346",
           12,
-          "hsl(40, 87%, 21%)"
+          "#644507"
         ],
         "line-width": {
           "base": 1,
@@ -18437,6 +17961,10 @@
             ]
           ]
         },
+        "line-dasharray": [
+          1.2,
+          0.8
+        ],
         "line-opacity": {
           "stops": [
             [
@@ -18448,15 +17976,11 @@
               1
             ]
           ]
-        },
-        "line-dasharray": [
-          1.2,
-          0.8
-        ]
+        }
       }
     },
     {
-      "id": "highway-driveway-case-(def-all-osm)",
+      "id": "highway-driveway-case_smooth-(def-all-osm)",
       "type": "line",
       "metadata": {
         "trailmap:mtb_light": true,
@@ -18475,289 +17999,11 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-driveway-case",
+        "trailmap:id_legacy": "hw-driveway-case-cat_ab-gr",
         "trailmap:country": "all"
       },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "==",
-          "service",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          12,
-          [
-            "case",
-            [
-              "==",
-              [
-                "get",
-                "surface"
-              ],
-              "unpaved"
-            ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 50%)"
-          ],
-          14,
-          [
-            "case",
-            [
-              "==",
-              [
-                "get",
-                "surface"
-              ],
-              "unpaved"
-            ],
-            "hsl(40, 87%, 21%)",
-            "hsl(0, 0%, 40%)"
-          ]
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              12,
-              0.5
-            ],
-            [
-              13,
-              1
-            ],
-            [
-              14,
-              2.4
-            ],
-            [
-              20,
-              10
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.5,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-driveway-case-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-driveway-case-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "==",
-          "service",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          [
-            "==",
-            [
-              "get",
-              "surface"
-            ],
-            "unpaved"
-          ],
-          "hsl(40, 87%, 21%)",
-          "hsl(0, 0%, 0%)"
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              11,
-              1.2
-            ],
-            [
-              12,
-              2
-            ],
-            [
-              14,
-              4
-            ],
-            [
-              16,
-              6
-            ],
-            [
-              20,
-              16
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.5,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-driveway-case-(wnt-all-osm)",
-      "type": "line",
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "!=",
-          "brunnel",
-          "tunnel"
-        ],
-        [
-          "==",
-          "service",
-          "driveway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              11,
-              1
-            ],
-            [
-              12,
-              1.2
-            ],
-            [
-              14,
-              2.4
-            ],
-            [
-              20,
-              10
-            ]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [
-              11,
-              0
-            ],
-            [
-              11.5,
-              1
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-driveway-case_smooth-(gr-all-osm)",
-      "type": "line",
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 11,
@@ -18801,7 +18047,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
@@ -18824,8 +18070,8 @@
             "unhewn_cobblestone",
             "wood"
           ],
-          "hsl(40, 87%, 21%)",
-          "hsl(0, 0%, 25%)"
+          "#644507",
+          "#404040"
         ],
         "line-width": {
           "base": 1,
@@ -18863,8 +18109,30 @@
       }
     },
     {
-      "id": "highway-driveway-case_medium-(gr-all-osm)",
+      "id": "highway-driveway-case_medium-(def-all-osm)",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-driveway-case-cat_c-gr",
+        "trailmap:country": "all"
+      },
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 11,
@@ -18906,12 +18174,12 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsl(40, 87%, 21%)",
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -18952,8 +18220,30 @@
       }
     },
     {
-      "id": "highway-driveway-case_rough-(gr-all-osm)",
+      "id": "highway-driveway-case_rough-(def-all-osm)",
       "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "hw-driveway-case-cat_d-gr",
+        "trailmap:country": "all"
+      },
       "source": "osm",
       "source-layer": "transportation",
       "minzoom": 11,
@@ -18985,12 +18275,12 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "butt",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "hsl(40, 87%, 21%)",
+        "line-color": "#644507",
         "line-width": {
           "base": 1,
           "stops": [
@@ -19014,7 +18304,7 @@
         },
         "line-dasharray": [
           1.2,
-          0.8
+          0.88
         ],
         "line-opacity": {
           "stops": [
@@ -28860,7 +28150,7 @@
             [
               "d"
             ],
-            1.6,
+            3.6,
             1.2
           ],
           16,
@@ -28885,7 +28175,7 @@
             [
               "d"
             ],
-            2.4,
+            7.5,
             1.6
           ],
           18,
@@ -28910,7 +28200,7 @@
             [
               "d"
             ],
-            3.6,
+            12,
             2.4
           ]
         ],
