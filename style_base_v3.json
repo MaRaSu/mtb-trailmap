@@ -15279,7 +15279,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-piste_trail_ski_case,
         "line-width": {
           "base": 1,
           "stops": [
@@ -15331,7 +15331,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-piste_trail_ski_case,
         "line-width": {
           "base": 1,
           "stops": [
@@ -15402,7 +15402,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(267, 100%, 50%)",
+        "line-color": @color-piste_trail_ski_line_osm,
         "line-width": [
           "interpolate",
           ["linear"],
@@ -15496,7 +15496,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(267, 100%, 50%)",
+        "line-color": @color-piste_trail_ski_line_osm,
         "line-width": [
           "interpolate",
           ["linear"],
@@ -15566,7 +15566,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(326, 65%, 45%)",
+        "line-color": @color-piste_trail_ski_line_lipas,
         "line-width": {
           "base": 1,
           "stops": [
@@ -15638,7 +15638,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-piste_trail_ski_center,
         "line-width": {
           "base": 1,
           "stops": [
@@ -15690,7 +15690,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": @color-piste_trail_ski_center,
         "line-width": {
           "base": 1,
           "stops": [
@@ -15756,7 +15756,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(267, 100%, 50%)",
+        "text-color": @color-piste_trail_ski_line_osm,
         "text-opacity": {
           "stops": [
             [13, 0],

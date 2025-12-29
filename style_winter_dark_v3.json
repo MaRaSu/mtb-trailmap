@@ -5658,7 +5658,7 @@
               ],
               "unpaved"
             ],
-            "#644507",
+            "#000000",
             "#000000"
           ],
           13,
@@ -5855,7 +5855,7 @@
               ],
               "unpaved"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           13,
@@ -6164,10 +6164,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "hsl(0, 0%, 50%)"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           11,
@@ -6219,10 +6219,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
-                "#644507"
+                "#808080",
+                "#808080"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           12,
@@ -12299,12 +12299,6 @@
           "tunnel"
         ],
         [
-          "!in",
-          "mtb_winter",
-          "-1",
-          "no"
-        ],
-        [
           "in",
           "class",
           "path",
@@ -14765,7 +14759,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -14963,7 +14957,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           12,
@@ -15131,7 +15125,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           12,
@@ -15292,7 +15286,7 @@
             "unhewn_cobblestone",
             "wood"
           ],
-          "#644507",
+          "#808080",
           "#808080"
         ],
         12,
@@ -15471,7 +15465,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#000000",
             "#000000"
           ],
           12,
@@ -15623,7 +15617,7 @@
             "zoom"
           ],
           11,
-          "#644507",
+          "#000000",
           12,
           "#000000"
         ],
@@ -15747,7 +15741,7 @@
             "zoom"
           ],
           11,
-          "#644507",
+          "#000000",
           12,
           "#000000"
         ],
@@ -16879,7 +16873,7 @@
             ],
             "unpaved"
           ],
-          "#af9564",
+          "#a8a6a4",
           "#a8a6a4"
         ],
         "line-width": {
@@ -17049,10 +17043,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           11,
@@ -17104,10 +17098,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           12,
@@ -17331,7 +17325,7 @@
               "no"
             ],
             "#bd430f",
-            "#644507"
+            "#808080"
           ],
           11,
           [
@@ -17345,7 +17339,7 @@
               "no"
             ],
             "#bd430f",
-            "#644507"
+            "#808080"
           ],
           12,
           [
@@ -17487,7 +17481,7 @@
               "no"
             ],
             "#bd430f",
-            "#644507"
+            "#808080"
           ],
           11,
           [
@@ -17501,7 +17495,7 @@
               "no"
             ],
             "#bd430f",
-            "#644507"
+            "#808080"
           ],
           12,
           [
@@ -17672,7 +17666,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -17727,7 +17721,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -17939,7 +17933,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -17994,7 +17988,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -18210,7 +18204,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -18617,7 +18611,7 @@
                 "shells",
                 "stepping_stones"
               ],
-              "#eddfca",
+              "#ffffff",
               "#ffffff"
             ],
             "#ffffff"
@@ -18735,9 +18729,9 @@
               "paving_stones"
             ],
             "#ffffff",
-            "#eddfca"
+            "#ffffff"
           ],
-          "#eddfca"
+          "#ffffff"
         ],
         "line-opacity": {
           "stops": [
@@ -18843,9 +18837,9 @@
               "paving_stones"
             ],
             "#ffffff",
-            "#eddfca"
+            "#ffffff"
           ],
-          "#eddfca"
+          "#ffffff"
         ],
         "line-opacity": {
           "stops": [
@@ -18955,9 +18949,9 @@
               "paving_stones"
             ],
             "#ffffff",
-            "#eddfca"
+            "#ffffff"
           ],
-          "#eddfca"
+          "#ffffff"
         ],
         "line-opacity": {
           "stops": [
@@ -19069,9 +19063,9 @@
               "paving_stones"
             ],
             "#ffffff",
-            "#eddfca"
+            "#ffffff"
           ],
-          "#eddfca"
+          "#ffffff"
         ],
         "line-opacity": {
           "stops": [
@@ -19202,7 +19196,7 @@
               "shells",
               "stepping_stones"
             ],
-            "#eddfca",
+            "#ffffff",
             "#ffffff"
           ],
           "#ffffff"
@@ -19343,10 +19337,10 @@
                 "shells",
                 "stepping_stones"
               ],
-              "#eddfca",
+              "#ffffff",
               "#ffffff"
             ],
-            "#eddfca"
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -19493,7 +19487,7 @@
                 "shells",
                 "stepping_stones"
               ],
-              "#eddfca",
+              "#ffffff",
               "#ffffff"
             ],
             "#ffffff"
@@ -19652,7 +19646,7 @@
                 "shells",
                 "stepping_stones"
               ],
-              "#eddfca",
+              "#ffffff",
               "#ffffff"
             ],
             "#ffffff"
@@ -19808,7 +19802,7 @@
                 "shells",
                 "stepping_stones"
               ],
-              "#eddfca",
+              "#ffffff",
               "#ffffff"
             ],
             "#ffffff"
@@ -20460,27 +20454,27 @@
       "paint": {
         "line-color": "#3046d7",
         "line-dasharray": [
-          1,
-          0.5
+          6,
+          1.5
         ],
         "line-width": {
           "base": 1.2,
           "stops": [
             [
               12,
-              2.2
+              1.5
             ],
             [
               14,
-              2.7
+              1.8
             ],
             [
               16,
-              4.5
+              3
             ],
             [
               18,
-              9
+              6
             ]
           ]
         },
@@ -20627,7 +20621,7 @@
       "paint": {
         "line-color": "#3046d7",
         "line-dasharray": [
-          2.5,
+          6,
           1.5
         ],
         "line-width": {
@@ -20666,35 +20660,119 @@
       }
     },
     {
-      "id": "highway-cycleway-line_unknown-(def-all-osm-hc)",
+      "id": "access-bicycle_winter-no-(wnt-all-osm)",
       "type": "line",
       "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
         "trailmap:winter_light": true,
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-cycleway-line-unknown-hc",
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "forbidden-bicycle-winter",
         "trailmap:country": "all"
       },
       "source": "osm",
       "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "mtb_winter",
+          "no",
+          "-1"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(346, 100%, 50%)",
+        "line-dasharray": [
+          0.2,
+          0.5
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              4
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              16,
+              8
+            ],
+            [
+              18,
+              16
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "piste-trail_ski-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "skiing-case",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
       "minzoom": 11,
       "filter": [
         "all",
@@ -20705,119 +20783,132 @@
         ],
         [
           "!in",
-          "brunnel",
           "bridge",
-          "tunnel"
-        ],
-        [
-          "any",
-          [
-            "in",
-            "subclass",
-            "cycleway",
-            "pedestrian"
-          ],
-          [
-            "all",
-            [
-              "==",
-              "subclass",
-              "footway"
-            ],
-            [
-              "==",
-              "bicycle",
-              "yes"
-            ],
-            [
-              "!has",
-              "mtb_scale"
-            ]
-          ],
-          [
-            "all",
-            [
-              "==",
-              "cycleway_left",
-              "yes"
-            ],
-            [
-              "==",
-              "cycleway_right",
-              "yes"
-            ],
-            [
-              "in",
-              "highway",
-              "path",
-              "track"
-            ],
-            [
-              "!has",
-              "mtb_scale"
-            ]
-          ]
+          "1",
+          "yes"
         ],
         [
           "!in",
-          "surface_raw",
-          "paved",
-          "asphalt",
-          "concrete",
-          "paving_stones",
-          "sett",
-          "unhewn_cobblestone",
-          "cobblestone",
-          "bricks",
-          "wood",
-          "unpaved",
-          "compacted",
-          "fine_gravel",
-          "gravel",
-          "shells",
-          "rock",
-          "pebblestone",
-          "ground",
-          "dirt",
-          "earth",
-          "grass",
-          "grass_paver",
-          "metal_grid",
-          "mud",
-          "sand",
-          "woodchips",
-          "snow",
-          "ice"
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "halfpipe",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
         ]
       ],
       "layout": {
-        "visibility": "none",
-        "line-cap": "butt"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(232, 68%, 52%)",
-        "line-dasharray": [
-          2.5,
-          1.5
-        ],
+        "line-color": "#000000",
         "line-width": {
-          "base": 1.2,
+          "base": 1,
           "stops": [
             [
               12,
-              1.5
+              5
             ],
             [
               14,
-              2.5
+              8
             ],
             [
               16,
-              4
+              11
             ],
             [
               18,
-              10
+              20
+            ]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          1
+        ]
+      }
+    },
+    {
+      "id": "piste-trail_ski-case-(wnt-all-lipas_routes)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas",
+        "trailmap:id_legacy": "skiing-case-lipas",
+        "trailmap:country": "all"
+      },
+      "source": "lipas_routes",
+      "source-layer": "lipas_reitit",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "tyyppikood",
+          4402,
+          4440
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              5
+            ],
+            [
+              14,
+              8
+            ],
+            [
+              16,
+              11
+            ],
+            [
+              18,
+              20
             ]
           ]
         },
@@ -20833,6 +20924,1024 @@
             ]
           ]
         }
+      }
+    },
+    {
+      "id": "piste-trail_ski-line_base-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "skiing-line-base",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "halfpipe",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#7300ff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            1,
+            2.8
+          ],
+          14,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            1.6,
+            4.5
+          ],
+          16,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            2.4,
+            7
+          ],
+          18,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            4,
+            14
+          ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          [
+            "case",
+            [
+              "in",
+              "fatbike",
+              [
+                "get",
+                "class"
+              ]
+            ],
+            0,
+            [
+              "case",
+              [
+                "in",
+                "hike",
+                [
+                  "get",
+                  "class"
+                ]
+              ],
+              0,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "piste-trail_ski-line_base_bicycle_ok-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike"
+        ],
+        [
+          "any",
+          [
+            "!in",
+            "class",
+            "downhill",
+            "halfpipe",
+            "nordic",
+            "skitour",
+            "sled",
+            "sleigh",
+            "ice_skate",
+            "snow_park",
+            "playground",
+            "ski_jump",
+            "connection",
+            "proposed"
+          ],
+          [
+            "any",
+            [
+              "in",
+              "bicycle_winter",
+              "designated",
+              "yes"
+            ],
+            [
+              "in",
+              "mtb_winter",
+              "1",
+              "2",
+              "3",
+              "yes"
+            ],
+            [
+              "in",
+              "foot_winter",
+              "designated",
+              "yes"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#7300ff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.8,
+          14,
+          4.5,
+          16,
+          7,
+          18,
+          14
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          [
+            "case",
+            [
+              "in",
+              "fatbike",
+              [
+                "get",
+                "class"
+              ]
+            ],
+            1,
+            [
+              "case",
+              [
+                "in",
+                "hike",
+                [
+                  "get",
+                  "class"
+                ]
+              ],
+              1,
+              0
+            ]
+          ]
+        ],
+        "line-dasharray": [
+          1,
+          0.75
+        ]
+      }
+    },
+    {
+      "id": "piste-trail_ski-line_base-(wnt-all-lipas_routes)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas",
+        "trailmap:id_legacy": "skiing-line-base-lipas",
+        "trailmap:country": "all"
+      },
+      "source": "lipas_routes",
+      "source-layer": "lipas_reitit",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "tyyppikood",
+          4402,
+          4440
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#bd287d",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              2.8
+            ],
+            [
+              14,
+              4.5
+            ],
+            [
+              16,
+              7
+            ],
+            [
+              18,
+              14
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "piste-trail_ski-line_center-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "skiing-line-center",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "ice_skate",
+          "downhill",
+          "halfpipe",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1.4
+            ],
+            [
+              16,
+              2.2
+            ],
+            [
+              18,
+              4
+            ]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          1
+        ]
+      }
+    },
+    {
+      "id": "piste-trail_ski-line_center-(wnt-all-lipas_routes)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-lipas",
+        "trailmap:id_legacy": "skiing-line-center-lipas",
+        "trailmap:country": "all"
+      },
+      "source": "lipas_routes",
+      "source-layer": "lipas_reitit",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "tyyppikood",
+          4402,
+          4440
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1.4
+            ],
+            [
+              16,
+              2.2
+            ],
+            [
+              18,
+              4
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "piste-trail_ski-direction-(wnt-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "skiing-direction",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "oneway",
+          1,
+          -1
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "match",
+          [
+            "get",
+            "oneway"
+          ],
+          [
+            1
+          ],
+          ">",
+          [
+            -1
+          ],
+          "<",
+          ""
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-keep-upright": false,
+        "symbol-placement": "line",
+        "symbol-spacing": 30,
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              14,
+              14
+            ],
+            [
+              16,
+              24
+            ],
+            [
+              18,
+              48
+            ]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "#7300ff",
+        "text-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "piste-trail_hike_fatbike-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "piste-bicycle-case",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "hike",
+          "fatbike",
+          "fatbike;hike",
+          "hike;fatbike"
+        ],
+        [
+          "any",
+          [
+            "all",
+            [
+              "has",
+              "grooming"
+            ],
+            [
+              "!in",
+              "grooming",
+              "backcountry"
+            ]
+          ],
+          [
+            "has",
+            "mtb_winter"
+          ]
+        ],
+        [
+          "!in",
+          "bicycle",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "-1"
+        ],
+        [
+          "!in",
+          "bicycle_winter",
+          "no"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "grooming"
+          ],
+          "hsl(168, 90%, 41%)",
+          [
+            "match",
+            [
+              "get",
+              "mtb_winter"
+            ],
+            [
+              "1"
+            ],
+            "hsl(90, 92%, 46%)",
+            [
+              "2",
+              "yes"
+            ],
+            "hsl(61, 100%, 43%)",
+            "hsl(36, 99%, 62%)"
+          ]
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              2.5
+            ],
+            [
+              14,
+              4.5
+            ],
+            [
+              16,
+              9
+            ],
+            [
+              18,
+              15
+            ]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.5,
+          0,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "id": "piste-trail_hike_fatbike-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "piste-bicycle-line",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "hike",
+          "fatbike",
+          "fatbike;hike",
+          "hike;fatbike"
+        ],
+        [
+          "!in",
+          "bicycle",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "-1"
+        ],
+        [
+          "!in",
+          "bicycle_winter",
+          "no"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(0, 0%, 0%)",
+        "line-dasharray": [
+          2.5,
+          2
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            0.4,
+            [
+              "b"
+            ],
+            0.6,
+            [
+              "c"
+            ],
+            1.2,
+            0.6
+          ],
+          14,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            0.8,
+            [
+              "b"
+            ],
+            1.2,
+            [
+              "c"
+            ],
+            1.8,
+            1.2
+          ],
+          16,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            1,
+            [
+              "b"
+            ],
+            2,
+            [
+              "c"
+            ],
+            3,
+            2
+          ],
+          18,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            2,
+            [
+              "b"
+            ],
+            4,
+            [
+              "c"
+            ],
+            5.5,
+            4
+          ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.5,
+          0,
+          11,
+          1
+        ]
       }
     },
     {
@@ -22449,7 +23558,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -22504,7 +23613,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -22708,10 +23817,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "hsl(0, 0%, 50%)"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           11,
@@ -22763,10 +23872,10 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
-                "#644507"
+                "#808080",
+                "#808080"
               ],
-              "#644507"
+              "#808080"
             ]
           ],
           12,
@@ -22973,7 +24082,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -23028,7 +24137,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -23230,7 +24339,7 @@
                   "shells",
                   "stepping_stones"
                 ],
-                "#644507",
+                "#808080",
                 "#808080"
               ],
               "#808080"
@@ -23526,7 +24635,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           12,
@@ -23695,7 +24804,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           12,
@@ -23858,7 +24967,7 @@
               "unhewn_cobblestone",
               "wood"
             ],
-            "#644507",
+            "#808080",
             "#808080"
           ],
           12,
@@ -24162,12 +25271,6 @@
           "bridge"
         ],
         [
-          "!in",
-          "mtb_winter",
-          "-1",
-          "no"
-        ],
-        [
           "in",
           "class",
           "path",
@@ -24180,7 +25283,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -25225,19 +26328,19 @@
           "stops": [
             [
               12,
-              2.2
+              1.5
             ],
             [
               14,
-              2.7
+              1.8
             ],
             [
               16,
-              4.5
+              3
             ],
             [
               18,
-              9
+              6
             ]
           ]
         }
@@ -26955,6 +28058,857 @@
           1,
           1
         ]
+      }
+    },
+    {
+      "id": "bridge_piste-trail_hike_fatbike-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-piste-bicycle-case",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "yes",
+          "1"
+        ],
+        [
+          "in",
+          "class",
+          "hike",
+          "fatbike",
+          "fatbike;hike",
+          "hike;fatbike"
+        ],
+        [
+          "any",
+          [
+            "all",
+            [
+              "has",
+              "grooming"
+            ],
+            [
+              "!in",
+              "grooming",
+              "backcountry"
+            ]
+          ],
+          [
+            "has",
+            "mtb_winter"
+          ]
+        ],
+        [
+          "!in",
+          "bicycle",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "-1"
+        ],
+        [
+          "!in",
+          "bicycle_winter",
+          "no"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "grooming"
+          ],
+          "hsl(168, 90%, 41%)",
+          [
+            "match",
+            [
+              "get",
+              "mtb_winter"
+            ],
+            [
+              "1"
+            ],
+            "hsl(90, 92%, 46%)",
+            [
+              "2",
+              "yes"
+            ],
+            "hsl(61, 100%, 43%)",
+            "hsl(36, 99%, 62%)"
+          ]
+        ],
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              2.5
+            ],
+            [
+              14,
+              4.5
+            ],
+            [
+              16,
+              9
+            ],
+            [
+              18,
+              15
+            ]
+          ]
+        },
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.5,
+          0,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge_piste-trail_hike_fatbike-line-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "bridge-piste-bicycle-line",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "yes",
+          "1"
+        ],
+        [
+          "in",
+          "class",
+          "hike",
+          "fatbike",
+          "fatbike;hike",
+          "hike;fatbike"
+        ],
+        [
+          "has",
+          "grooming"
+        ],
+        [
+          "!in",
+          "bicycle",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "no"
+        ],
+        [
+          "!in",
+          "mtb_winter",
+          "-1"
+        ],
+        [
+          "!in",
+          "bicycle_winter",
+          "no"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(0, 0%, 0%)",
+        "line-dasharray": [
+          2.5,
+          2
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            0.4,
+            [
+              "b"
+            ],
+            0.6,
+            [
+              "c"
+            ],
+            1.2,
+            0.6
+          ],
+          14,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            0.8,
+            [
+              "b"
+            ],
+            1.2,
+            [
+              "c"
+            ],
+            1.8,
+            1.2
+          ],
+          16,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            1,
+            [
+              "b"
+            ],
+            2,
+            [
+              "c"
+            ],
+            3,
+            2
+          ],
+          18,
+          [
+            "match",
+            [
+              "get",
+              "width_cat"
+            ],
+            [
+              "a"
+            ],
+            2,
+            [
+              "b"
+            ],
+            4,
+            [
+              "c"
+            ],
+            5.5,
+            4
+          ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.5,
+          0,
+          11,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge_piste-trail_ski-case-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "bridge-skiing-case",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(0, 0%, 100%)",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              4
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              16,
+              7
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              0.8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "bridge_piste-trail_ski-line_base-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "bridge-skiing-line-base",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(267, 100%, 50%)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            1,
+            2.8
+          ],
+          14,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            1.6,
+            4.5
+          ],
+          16,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            2.4,
+            7
+          ],
+          18,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "ice_skate"
+            ],
+            4,
+            14
+          ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          [
+            "case",
+            [
+              "in",
+              "fatbike",
+              [
+                "get",
+                "class"
+              ]
+            ],
+            0,
+            [
+              "case",
+              [
+                "in",
+                "hike",
+                [
+                  "get",
+                  "class"
+                ]
+              ],
+              0,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "bridge_piste-trail_ski-line_base_bicycle_ok-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike"
+        ],
+        [
+          "any",
+          [
+            "!in",
+            "class",
+            "downhill",
+            "nordic",
+            "skitour",
+            "sled",
+            "sleigh",
+            "ice_skate",
+            "snow_park",
+            "playground",
+            "ski_jump",
+            "connection",
+            "proposed"
+          ],
+          [
+            "any",
+            [
+              "in",
+              "bicycle_winter",
+              "designated",
+              "yes"
+            ],
+            [
+              "in",
+              "mtb_winter",
+              "1",
+              "2",
+              "3",
+              "yes"
+            ],
+            [
+              "in",
+              "foot_winter",
+              "designated",
+              "yes"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(267, 100%, 50%)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.8,
+          14,
+          4.5,
+          16,
+          7,
+          18,
+          14
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0,
+          12,
+          [
+            "case",
+            [
+              "in",
+              "fatbike",
+              [
+                "get",
+                "class"
+              ]
+            ],
+            1,
+            [
+              "case",
+              [
+                "in",
+                "hike",
+                [
+                  "get",
+                  "class"
+                ]
+              ],
+              1,
+              0
+            ]
+          ]
+        ],
+        "line-dasharray": [
+          1,
+          0.75
+        ]
+      }
+    },
+    {
+      "id": "bridge_piste-trail_ski-line_center-(wnt-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": false,
+        "trailmap:mtb_hc_dark": false,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": false,
+        "trailmap:gravel_hc_dark": false,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": false,
+        "trailmap:road_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:group": "skiing-osm",
+        "trailmap:id_legacy": "bridge-skiing-line-center",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "piste_ext",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "bridge",
+          "1",
+          "yes"
+        ],
+        [
+          "!in",
+          "class",
+          "hike",
+          "fatbike",
+          "hike;fatbike",
+          "fatbike;hike",
+          "ice_skate",
+          "downhill",
+          "snow_park",
+          "playground",
+          "ski_jump",
+          "proposed"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(0, 0%, 100%)",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1.8
+            ],
+            [
+              16,
+              3
+            ]
+          ]
+        },
+        "line-opacity": {
+          "stops": [
+            [
+              11,
+              0
+            ],
+            [
+              12,
+              1
+            ]
+          ]
+        }
       }
     },
     {
