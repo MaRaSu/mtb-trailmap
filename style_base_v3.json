@@ -15815,15 +15815,17 @@
         "line-color": [
           "case",
           ["has", "grooming"],
-          "hsl(168, 90%, 41%)",
+          @color-mtb:winter_groomed,
           [
-            "match",
-            ["get", "mtb_winter"],
-            ["1"],
-            "hsl(90, 92%, 46%)",
-            ["2", "yes"],
-            "hsl(61, 100%, 43%)",
-            "hsl(36, 99%, 62%)"
+          "match",
+          ["get", "mtb_winter"],
+          ["1"],
+          @color-mtb:winter_1,
+          ["2", "yes"],
+          @color-mtb:winter_2,
+          ["3"],
+          @color-mtb:winter_3,
+          @color-mtb:winter_null
           ]
         ],
         "line-width": {
