@@ -23323,9 +23323,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "airport-label-major",
@@ -23349,9 +23346,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 40%)",
+        "text-color": @color-label_airport_major,
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_airport_major,
         "text-halo-width": 1
       }
     },
@@ -23376,9 +23373,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "parking-icons",
@@ -23522,9 +23516,9 @@
           18,
           ["literal", [19.5, 6.5]]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": @color-label_parking_default,
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_parking,
         "text-opacity": {
           "stops": [
             [15.5, 0],
@@ -23600,9 +23594,9 @@
           18,
           ["literal", [17, 5]]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": @color-label_parking_default,
         "text-halo-width": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color":@color-label_halo_parking,
         "text-opacity": {
           "stops": [
             [15.5, 0],
@@ -23678,9 +23672,9 @@
           18,
           ["literal", [19.6, -6.5]]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": @color-label_parking_default,
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": @color-label_halo_parking,
         "text-opacity": {
           "stops": [
             [15.5, 0],

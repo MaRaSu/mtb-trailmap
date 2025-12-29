@@ -20806,7 +20806,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#cccccc",
         "line-width": {
           "base": 1,
           "stops": [
@@ -20890,7 +20890,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#cccccc",
         "line-width": {
           "base": 1,
           "stops": [
@@ -21394,7 +21394,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#cccccc",
         "line-width": {
           "base": 1,
           "stops": [
@@ -21478,7 +21478,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#cccccc",
         "line-width": {
           "base": 1,
           "stops": [
@@ -31380,9 +31380,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "airport-label-major",
@@ -31417,9 +31414,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 40%)",
+        "text-color": "#999999",
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-halo-width": 1
       }
     },
@@ -31443,9 +31440,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "parking-icons",
@@ -31750,9 +31744,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#ffffff",
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-opacity": {
           "stops": [
             [
@@ -31882,9 +31876,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#ffffff",
         "text-halo-width": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-opacity": {
           "stops": [
             [
@@ -32013,9 +32007,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#ffffff",
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#000000",
         "text-opacity": {
           "stops": [
             [
