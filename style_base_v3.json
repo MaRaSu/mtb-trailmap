@@ -1062,7 +1062,7 @@
           "stops": [
             [11, 0],
             [12, @opacity-landcover_scrub_mid],
-            [14, @opacity-landcover_scrub_full1]
+            [14, @opacity-landcover_scrub_full]
           ]
         }
       }
@@ -17334,9 +17334,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": false,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "bridge-tertiary-case-gr",
