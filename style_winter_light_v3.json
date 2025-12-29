@@ -1079,7 +1079,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#f5eebc",
+        "fill-color": "#ede9ca",
         "fill-opacity": 1
       }
     },
@@ -1578,8 +1578,8 @@
             ],
             32611
           ],
-          "#f7eeb7",
-          "#edf2bb"
+          "#f0eac7",
+          "#e8ebca"
         ],
         "fill-opacity": {
           "stops": [
@@ -1647,8 +1647,8 @@
             ],
             "farmland"
           ],
-          "#f7eeb7",
-          "#edf2bb"
+          "#f0eac7",
+          "#e8ebca"
         ],
         "fill-opacity": {
           "stops": [
@@ -3569,7 +3569,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#bfd9f2"
+        "fill-color": "#ceddeb"
       }
     },
     {
@@ -3631,7 +3631,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "#bfd9f2"
+        "fill-color": "#ceddeb"
       }
     },
     {
@@ -3692,7 +3692,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#bfd9f2"
+        "fill-color": "#ceddeb"
       }
     },
     {
@@ -3741,7 +3741,7 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-color": "#bfd9f2"
+        "fill-color": "#ceddeb"
       }
     },
     {
@@ -3786,7 +3786,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#bfd9f2",
+        "fill-color": "#ceddeb",
         "fill-opacity": 0.7
       }
     },
@@ -4634,7 +4634,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-dasharray": [
           2,
           4
@@ -4703,7 +4703,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -4768,7 +4768,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-dasharray": [
           4,
           3
@@ -4827,7 +4827,7 @@
         "visibility": "none"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-width": [
           "interpolate",
           [
@@ -4945,7 +4945,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-width": [
           "interpolate",
           [
@@ -5076,7 +5076,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-width": {
           "base": 1.3,
           "stops": [
@@ -5147,7 +5147,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-dasharray": [
           4,
           3
@@ -5221,7 +5221,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -5287,7 +5287,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#bfd9f2",
+        "line-color": "#ceddeb",
         "line-dasharray": [
           3,
           2.5
@@ -20806,7 +20806,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1,
           "stops": [
@@ -20890,7 +20890,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1,
           "stops": [
@@ -20987,7 +20987,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(267, 100%, 50%)",
+        "line-color": "#7300ff",
         "line-width": [
           "interpolate",
           [
@@ -21188,7 +21188,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(267, 100%, 50%)",
+        "line-color": "#7300ff",
         "line-width": [
           "interpolate",
           [
@@ -21296,7 +21296,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(326, 65%, 45%)",
+        "line-color": "#bd287d",
         "line-width": {
           "base": 1,
           "stops": [
@@ -21394,7 +21394,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1,
           "stops": [
@@ -21478,7 +21478,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 100%)",
+        "line-color": "#ffffff",
         "line-width": {
           "base": 1,
           "stops": [
@@ -21600,7 +21600,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(267, 100%, 50%)",
+        "text-color": "#7300ff",
         "text-opacity": {
           "stops": [
             [
@@ -21708,7 +21708,7 @@
             "has",
             "grooming"
           ],
-          "hsl(168, 90%, 41%)",
+          "#0ac5a0",
           [
             "match",
             [
@@ -21718,13 +21718,17 @@
             [
               "1"
             ],
-            "hsl(90, 92%, 46%)",
+            "#75e009",
             [
               "2",
               "yes"
             ],
-            "hsl(61, 100%, 43%)",
-            "hsl(36, 99%, 62%)"
+            "#d7dc00",
+            [
+              "3"
+            ],
+            "#feb13e",
+            "#ffffff"
           ]
         ],
         "line-width": {
@@ -31376,9 +31380,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "airport-label-major",
@@ -31413,9 +31414,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 40%)",
+        "text-color": "#666666",
         "text-halo-blur": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1
       }
     },
@@ -31439,9 +31440,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "parking-icons",
@@ -31746,9 +31744,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#000000",
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#ffffff",
         "text-opacity": {
           "stops": [
             [
@@ -31878,9 +31876,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#000000",
         "text-halo-width": 0.5,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#ffffff",
         "text-opacity": {
           "stops": [
             [
@@ -32009,9 +32007,9 @@
             ]
           ]
         ],
-        "text-color": "hsl(0, 0%, 0%)",
+        "text-color": "#000000",
         "text-halo-width": 1,
-        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-color": "#ffffff",
         "text-opacity": {
           "stops": [
             [
@@ -32046,9 +32044,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "obstacle-fallen_tree-line",
@@ -32120,9 +32115,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "obstacle-fallen_tree-point",
@@ -32195,9 +32187,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "barrier-log-point",
@@ -32278,9 +32267,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "barrier-log-line",
@@ -32360,9 +32346,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "ford-point",
@@ -32450,9 +32433,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": true,
         "trailmap:id_legacy": "ford-line",
