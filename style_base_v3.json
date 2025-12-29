@@ -14948,7 +14948,7 @@
       },
       "paint": {
         "line-color": @color-cycleway_line,
-        "line-dasharray": [6, 1.5],
+        "line-dasharray": [@dasharray-cycleway_paved_default_dash, @dasharray-cycleway_paved_default_gap],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -15045,7 +15045,7 @@
       },
       "paint": {
         "line-color": @color-cycleway_line,
-        "line-dasharray": [1, 0.5],
+        "line-dasharray": [@dasharray-cycleway_unpaved_default_dash, @dasharray-cycleway_unpaved_default_gap],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -15151,7 +15151,7 @@
       },
       "paint": {
         "line-color": @color-cycleway_line,
-        "line-dasharray": [2.5, 1.5],
+        "line-dasharray": [@dasharray-cycleway_unknown_default_dash, @dasharray-cycleway_unknown_default_gap],
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -15159,223 +15159,6 @@
             [14, @line_width-cycleway_paved_or_uk_z14],
             [16, @line_width-cycleway_paved_or_uk_z16],
             [18, @line_width-cycleway_paved_or_uk_z18]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-cycleway-line_unknown-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-cycleway-line-unknown-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "any",
-          ["in", "subclass", "cycleway", "pedestrian"],
-          [
-            "all",
-            ["==", "subclass", "footway"],
-            ["==", "bicycle", "yes"],
-            ["!has", "mtb_scale"]
-          ],
-          [
-            "all",
-            ["==", "cycleway_left", "yes"],
-            ["==", "cycleway_right", "yes"],
-            ["in", "highway", "path", "track"],
-            ["!has", "mtb_scale"]
-          ]
-        ],
-        [
-          "!in",
-          "surface_raw",
-          "paved",
-          "asphalt",
-          "concrete",
-          "paving_stones",
-          "sett",
-          "unhewn_cobblestone",
-          "cobblestone",
-          "bricks",
-          "wood",
-          "unpaved",
-          "compacted",
-          "fine_gravel",
-          "gravel",
-          "shells",
-          "rock",
-          "pebblestone",
-          "ground",
-          "dirt",
-          "earth",
-          "grass",
-          "grass_paver",
-          "metal_grid",
-          "mud",
-          "sand",
-          "woodchips",
-          "snow",
-          "ice"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt"
-      },
-      "paint": {
-        "line-color": "hsl(232, 68%, 52%)",
-        "line-dasharray": [2.5, 1.5],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [12, 1.5],
-            [14, 2.5],
-            [16, 4],
-            [18, 10]
-          ]
-        },
-        "line-opacity": {
-          "stops": [
-            [11, 0],
-            [12, 1]
-          ]
-        }
-      }
-    },
-    {
-      "id": "highway-cycleway-line_unknown-(gr-all-osm)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": false,
-        "trailmap:mtb_hc_light": false,
-        "trailmap:mtb_dark": false,
-        "trailmap:mtb_hc_dark": false,
-        "trailmap:gravel_light": false,
-        "trailmap:gravel_hc_light": false,
-        "trailmap:gravel_dark": false,
-        "trailmap:gravel_hc_dark": false,
-        "trailmap:road_light": false,
-        "trailmap:road_hc_light": false,
-        "trailmap:road_dark": false,
-        "trailmap:road_hc_dark": false,
-        "trailmap:winter_light": false,
-        "trailmap:winter_hc_light": false,
-        "trailmap:winter_dark": false,
-        "trailmap:winter_hc_dark": false,
-
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "hw-cycleway-line-unknown-gr",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
-        [
-          "any",
-          ["in", "subclass", "cycleway", "pedestrian"],
-          [
-            "all",
-            ["==", "subclass", "footway"],
-            ["==", "bicycle", "yes"],
-            ["!has", "mtb_scale"]
-          ],
-          [
-            "all",
-            ["==", "cycleway_left", "yes"],
-            ["==", "cycleway_right", "yes"],
-            ["in", "highway", "path", "track"],
-            ["!has", "mtb_scale"]
-          ]
-        ],
-        [
-          "!in",
-          "surface_raw",
-          "paved",
-          "asphalt",
-          "concrete",
-          "paving_stones",
-          "sett",
-          "unhewn_cobblestone",
-          "cobblestone",
-          "bricks",
-          "wood",
-          "unpaved",
-          "compacted",
-          "fine_gravel",
-          "gravel",
-          "shells",
-          "rock",
-          "pebblestone",
-          "ground",
-          "dirt",
-          "earth",
-          "grass",
-          "grass_paver",
-          "metal_grid",
-          "mud",
-          "sand",
-          "woodchips",
-          "snow",
-          "ice"
-        ]
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt"
-      },
-      "paint": {
-        "line-color": "hsl(232, 68%, 52%)",
-        "line-dasharray": [2.5, 1.5],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [12, 1.6],
-            [14, 2.2],
-            [17, 4]
           ]
         },
         "line-opacity": {
@@ -15402,14 +15185,11 @@
         "trailmap:road_hc_light": false,
         "trailmap:road_dark": false,
         "trailmap:road_hc_dark": false,
-        "trailmap:winter_light": false,
-        "trailmap:winter_hc_light": false,
-        "trailmap:winter_dark": false,
-        "trailmap:winter_hc_dark": false,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "no",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "forbidden-bicycle-winter",
@@ -15424,7 +15204,7 @@
         ["in", "mtb_winter", "no", "-1"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "hsl(346, 100%, 50%)",
