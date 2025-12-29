@@ -12239,6 +12239,7 @@
         [
           "!in",
           "subclass",
+          "footway",
           "cycleway"
         ],
         [
@@ -29490,9 +29491,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "water-name-waterway",
@@ -29527,8 +29525,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(209, 27%, 24%)",
-        "text-opacity": 0.6,
+        "text-color": "#000000",
+        "text-opacity": 1,
         "text-halo-color": "hsla(0, 0%, 100%, 0.7)",
         "text-halo-width": 1.2
       }
@@ -29553,9 +29551,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -29599,7 +29594,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(209, 27%, 24%)",
+        "text-color": "#000000",
+        "text-opacity": 1,
         "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
         "text-halo-width": 1.5
       }
@@ -29624,9 +29620,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "water-name-ocean",
@@ -29661,7 +29654,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(210, 73%, 68%)",
+        "text-color": "#000000",
+        "text-opacity": 1,
         "text-halo-color": "hsla(0, 0%, 100%, 0.7)",
         "text-halo-width": 1.5
       }
@@ -30253,7 +30247,7 @@
             "zoom"
           ],
           16,
-          "#666666",
+          "#000000",
           18,
           "#212121"
         ],
@@ -30400,7 +30394,7 @@
             "zoom"
           ],
           16,
-          "#666666",
+          "#000000",
           17,
           "#212121"
         ],
@@ -30549,7 +30543,7 @@
             "zoom"
           ],
           15,
-          "#666666",
+          "#000000",
           16,
           "#212121"
         ],
@@ -31346,7 +31340,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#666666",
+        "text-color": "#000000",
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -34187,8 +34181,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1
       }
     },
@@ -34254,8 +34248,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.4
       }
     },
@@ -34320,8 +34314,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.4
       }
     },
@@ -34410,8 +34404,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2
       }
     },
@@ -34481,8 +34475,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.8
       }
     },
@@ -34577,8 +34571,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2
       }
     },
@@ -34660,8 +34654,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 2,
         "text-opacity": {
           "stops": [
@@ -34778,8 +34772,8 @@
         "visibility": "none"
       },
       "paint": {
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -34885,8 +34879,8 @@
             ]
           ]
         },
-        "text-color": "#262626",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -34964,7 +34958,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#666666",
+        "text-color": "#000000",
         "text-halo-blur": 0.5,
         "text-halo-color": "#ffffff",
         "text-halo-width": 1
@@ -35035,8 +35029,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#663333",
-        "text-halo-color": "#cccccc",
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 1.2,
         "text-opacity": {
           "stops": [
@@ -35129,9 +35123,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#323243",
+        "text-color": "#000000",
         "text-halo-blur": 1,
-        "text-halo-color": "#cccccc",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 2
       }
     },
@@ -35204,9 +35198,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#323243",
+        "text-color": "#000000",
         "text-halo-blur": 1,
-        "text-halo-color": "#cccccc",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 2
       }
     },
@@ -35279,9 +35273,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#323243",
+        "text-color": "#000000",
         "text-halo-blur": 1,
-        "text-halo-color": "#cccccc",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 2
       }
     },
@@ -35354,9 +35348,9 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "#323243",
+        "text-color": "#000000",
         "text-halo-blur": 1,
-        "text-halo-color": "#cccccc",
+        "text-halo-color": "#ffffff",
         "text-halo-width": 2
       }
     },

@@ -22076,9 +22076,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "water-name-waterway",
@@ -22100,8 +22097,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(209, 27%, 24%)",
-        "text-opacity": 0.6,
+        "text-color": @color-label_waterway,
+        "text-opacity": @opacity-label_waterway,
         "text-halo-color": "hsla(0, 0%, 100%, 0.7)",
         "text-halo-width": 1.2
       }
@@ -22127,9 +22124,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -22158,7 +22152,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(209, 27%, 24%)",
+        "text-color": @color-label_lake_etc,
+        "text-opacity": @opacity-label_lake_etc,
         "text-halo-color": "hsla(0, 0%, 100%, 0.8)",
         "text-halo-width": 1.5
       }
@@ -22184,9 +22179,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "water-name-ocean",
@@ -22207,7 +22199,8 @@
         "visibility": "visible"
       },
       "paint": {
-        "text-color": "hsl(210, 73%, 68%)",
+        "text-color": @color-label_ocean,
+        "text-opacity": @opacity-label_ocean,
         "text-halo-color": "hsla(0, 0%, 100%, 0.7)",
         "text-halo-width": 1.5
       }
