@@ -726,7 +726,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-antialias": {
@@ -1173,7 +1173,7 @@
         39120
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
@@ -1229,7 +1229,7 @@
         "scrub"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -1285,7 +1285,7 @@
         "scrub"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
@@ -4309,7 +4309,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-pattern": [
@@ -4393,7 +4393,7 @@
         38300
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": [
@@ -4476,7 +4476,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-pattern": [

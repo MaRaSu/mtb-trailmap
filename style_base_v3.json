@@ -684,7 +684,7 @@
         ["==", "class", "rock"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": @default_visibility-landcover-wood
       },
       "paint": {
         "fill-antialias": {
@@ -1010,7 +1010,7 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 39120],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-scrub-default
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -1054,7 +1054,7 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 39120],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-scrub-nowoods
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
@@ -1098,7 +1098,7 @@
       "minzoom": 11,
       "filter": ["==", "subclass", "scrub"],
       "layout": {
-        "visibility": "visible"
+        "visibility": @default_visibility-landcover-scrub-default
       },
       "paint": {
         "fill-pattern": "tm_vihr_mml_varvikko_osm_scrub",
@@ -1142,7 +1142,7 @@
       "minzoom": 11,
       "filter": ["==", "subclass", "scrub"],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-scrub-nowoods
       },
       "paint": {
         "fill-pattern": "tm_valk_mml_varvikko_osm_scrub",
@@ -3396,7 +3396,7 @@
       "minzoom": 11,
       "filter": ["in", "kohdeluokka", 35300, 35411, 35412, 35421, 35422, 38300],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-wetland-default
       },
       "paint": {
         "fill-pattern": [
@@ -3457,7 +3457,7 @@
         ["!in", "subclass", "heath", "fell"]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": @default_visibility-landcover-wetland-default
       },
       "paint": {
         "fill-pattern": [
@@ -3516,7 +3516,7 @@
       "minzoom": 11,
       "filter": ["in", "kohdeluokka", 35300, 35411, 35412, 35421, 35422, 38300],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-wetland-nowoods
       },
       "paint": {
         "fill-pattern": [
@@ -3576,7 +3576,7 @@
         ["!in", "subclass", "heath", "fell"]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": @default_visibility-landcover-wetland-nowoods
       },
       "paint": {
         "fill-pattern": [
