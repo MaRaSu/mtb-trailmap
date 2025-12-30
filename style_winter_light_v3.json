@@ -1189,7 +1189,7 @@
             ],
             [
               14,
-              0.31
+              0.3
             ]
           ]
         }
@@ -15985,7 +15985,7 @@
       ],
       "layout": {
         "visibility": "visible",
-        "line-cap": "butt",
+        "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
@@ -32010,6 +32010,150 @@
             [
               16,
               1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-fixme-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:group": "fixme",
+        "trailmap:id_legacy": "fixme-icons",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "minzoom": 13,
+      "filter": [
+        "==",
+        "class",
+        "fixme"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "case",
+          [
+            "==",
+            [
+              "get",
+              "subclass"
+            ],
+            "continue"
+          ],
+          "tm_fixme-continue",
+          "tm_fixme-other"
+        ],
+        "icon-size": {
+          "stops": [
+            [
+              13,
+              0.22
+            ],
+            [
+              17,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "poi-noexit-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb_light": true,
+        "trailmap:mtb_hc_light": true,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": true,
+        "trailmap:gravel_hc_light": true,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": true,
+        "trailmap:road_hc_light": true,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:group": "fixme",
+        "trailmap:id_legacy": "noexit-icons",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "poi_ext",
+      "minzoom": 13,
+      "filter": [
+        "==",
+        "class",
+        "noexit"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-allow-overlap": true,
+        "icon-image": "tm_noexit",
+        "icon-size": {
+          "stops": [
+            [
+              13,
+              0.2
+            ],
+            [
+              17,
+              1
+            ]
+          ]
+        }
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [
+              13,
+              0
+            ],
+            [
+              13.5,
+              0.75
             ]
           ]
         }
