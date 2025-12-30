@@ -22044,6 +22044,10 @@
           "base": 1,
           "stops": [
             [
+              12,
+              1.2
+            ],
+            [
               14,
               1.7
             ],
@@ -22065,7 +22069,7 @@
           [
             "zoom"
           ],
-          14,
+          12,
           [
             "match",
             [
@@ -22075,11 +22079,11 @@
             [
               "a"
             ],
-            -1,
+            -3,
             [
               "b"
             ],
-            -2.5,
+            -3,
             [
               "c"
             ],
@@ -22088,146 +22092,7 @@
               "d"
             ],
             -3,
-            -2.5
-          ],
-          16,
-          [
-            "match",
-            [
-              "get",
-              "width_cat"
-            ],
-            [
-              "a"
-            ],
-            -4,
-            [
-              "b"
-            ],
-            -7,
-            [
-              "c"
-            ],
-            -10,
-            [
-              "d"
-            ],
-            -10,
-            -7
-          ],
-          18,
-          [
-            "match",
-            [
-              "get",
-              "width_cat"
-            ],
-            [
-              "a"
-            ],
-            -8,
-            [
-              "b"
-            ],
-            -13,
-            [
-              "c"
-            ],
-            -18,
-            [
-              "d"
-            ],
-            -18,
-            -13
-          ]
-        ]
-      }
-    },
-    {
-      "id": "obstacle-vegetation-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "obstacle_vegetation-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "obstacle",
-          "vegetation"
-        ],
-        [
-          "in",
-          "class",
-          "path",
-          "track",
-          "footway",
-          "cycleway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(89, 100%, 28%)",
-        "line-dasharray": [
-          1,
-          1
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              3
-            ],
-            [
-              16,
-              3.8
-            ],
-            [
-              18,
-              12
-            ]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
+            -3
           ],
           14,
           [
@@ -22239,7 +22104,7 @@
             [
               "a"
             ],
-            -3,
+            -4,
             [
               "b"
             ],
@@ -22251,7 +22116,7 @@
             [
               "d"
             ],
-            -5,
+            -4,
             -4
           ],
           16,
@@ -22264,7 +22129,7 @@
             [
               "a"
             ],
-            -9,
+            -13.5,
             [
               "b"
             ],
@@ -22272,11 +22137,11 @@
             [
               "c"
             ],
-            -15,
+            -13.5,
             [
               "d"
             ],
-            -15,
+            -13.5,
             -13.5
           ],
           18,
@@ -22289,7 +22154,7 @@
             [
               "a"
             ],
-            -14,
+            -19.5,
             [
               "b"
             ],
@@ -22297,11 +22162,11 @@
             [
               "c"
             ],
-            -27,
+            -19.5,
             [
               "d"
             ],
-            -27,
+            -19.5,
             -19.5
           ]
         ]
@@ -22372,6 +22237,10 @@
           "base": 1.2,
           "stops": [
             [
+              12,
+              1.2
+            ],
+            [
               14,
               1.7
             ],
@@ -22393,7 +22262,7 @@
           [
             "zoom"
           ],
-          14,
+          12,
           [
             "match",
             [
@@ -22403,11 +22272,11 @@
             [
               "a"
             ],
-            1,
+            3,
             [
               "b"
             ],
-            2.5,
+            3,
             [
               "c"
             ],
@@ -22416,146 +22285,7 @@
               "d"
             ],
             3,
-            2.5
-          ],
-          16,
-          [
-            "match",
-            [
-              "get",
-              "width_cat"
-            ],
-            [
-              "a"
-            ],
-            4,
-            [
-              "b"
-            ],
-            6,
-            [
-              "c"
-            ],
-            8,
-            [
-              "d"
-            ],
-            8,
-            6
-          ],
-          18,
-          [
-            "match",
-            [
-              "get",
-              "width_cat"
-            ],
-            [
-              "a"
-            ],
-            6,
-            [
-              "b"
-            ],
-            11,
-            [
-              "c"
-            ],
-            16,
-            [
-              "d"
-            ],
-            16,
-            11
-          ]
-        ]
-      }
-    },
-    {
-      "id": "surface-mud-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "surface_mud-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "LineString"
-        ],
-        [
-          "==",
-          "surface_raw",
-          "mud"
-        ],
-        [
-          "in",
-          "class",
-          "path",
-          "track",
-          "footway",
-          "cycleway"
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(208, 100%, 41%)",
-        "line-dasharray": [
-          1,
-          1
-        ],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              14,
-              3
-            ],
-            [
-              16,
-              3.8
-            ],
-            [
-              18,
-              12
-            ]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
+            3
           ],
           14,
           [
@@ -22567,7 +22297,7 @@
             [
               "a"
             ],
-            3,
+            4,
             [
               "b"
             ],
@@ -22579,7 +22309,7 @@
             [
               "d"
             ],
-            5,
+            4,
             4
           ],
           16,
@@ -22592,7 +22322,7 @@
             [
               "a"
             ],
-            9,
+            13.5,
             [
               "b"
             ],
@@ -22600,11 +22330,11 @@
             [
               "c"
             ],
-            15,
+            13.5,
             [
               "d"
             ],
-            15,
+            13.5,
             13.5
           ],
           18,
@@ -22617,7 +22347,7 @@
             [
               "a"
             ],
-            14,
+            19.5,
             [
               "b"
             ],
@@ -22625,11 +22355,11 @@
             [
               "c"
             ],
-            27,
+            19.5,
             [
               "d"
             ],
-            27,
+            19.5,
             19.5
           ]
         ]

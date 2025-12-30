@@ -16021,6 +16021,7 @@
         "line-width": {
           "base": 1,
           "stops": [
+            [12, 1.2],
             [14, 1.7],
             [16, 2.8],
             [18, 8]
@@ -16030,148 +16031,61 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            @line_offset-path_narrow_vegetation_z12,
+            ["b"],
+            @line_offset-path_medium_vegetation_z12,
+            ["c"],
+            @line_offset-path_wide_vegetation_z12,
+            ["d"],
+            @line_offset-path_widest_vegetation_z12,
+            @line_offset-path_medium_vegetation_z12
+          ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            -1,
+            @line_offset-path_narrow_vegetation_z14,
             ["b"],
-            -2.5,
+            @line_offset-path_medium_vegetation_z14,
             ["c"],
-            -3,
+            @line_offset-path_wide_vegetation_z14,
             ["d"],
-            -3,
-            -2.5
+            @line_offset-path_widest_vegetation_z14,
+            @line_offset-path_medium_vegetation_z14
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            -4,
+            @line_offset-path_narrow_vegetation_z16,
             ["b"],
-            -7,
+            @line_offset-path_medium_vegetation_z16,
             ["c"],
-            -10,
+            @line_offset-path_wide_vegetation_z16,
             ["d"],
-            -10,
-            -7
+            @line_offset-path_widest_vegetation_z16,
+            @line_offset-path_medium_vegetation_z16
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            -8,
+            @line_offset-path_narrow_vegetation_z18,
             ["b"],
-            -13,
+            @line_offset-path_medium_vegetation_z18,
             ["c"],
-            -18,
+            @line_offset-path_wide_vegetation_z18,
             ["d"],
-            -18,
-            -13
-          ]
-        ]
-      }
-    },
-    {
-      "id": "obstacle-vegetation-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "obstacle_vegetation-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["==", "obstacle", "vegetation"],
-        ["in", "class", "path", "track", "footway", "cycleway"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(89, 100%, 28%)",
-        "line-dasharray": [1, 1],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 3],
-            [16, 3.8],
-            [18, 12]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -3,
-            ["b"],
-            -4,
-            ["c"],
-            -4,
-            ["d"],
-            -5,
-            -4
-          ],
-          16,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -9,
-            ["b"],
-            -13.5,
-            ["c"],
-            -15,
-            ["d"],
-            -15,
-            -13.5
-          ],
-          18,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            -14,
-            ["b"],
-            -19.5,
-            ["c"],
-            -27,
-            ["d"],
-            -27,
-            -19.5
+            @line_offset-path_widest_vegetation_z18,
+            @line_offset-path_medium_vegetation_z18
           ]
         ]
       }
@@ -16223,6 +16137,7 @@
         "line-width": {
           "base": 1.2,
           "stops": [
+            [12, 1.2],
             [14, 1.7],
             [16, 2.8],
             [18, 5]
@@ -16232,148 +16147,61 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          [
+            "match",
+            ["get", "width_cat"],
+            ["a"],
+            @line_offset-path_narrow_mud_z12,
+            ["b"],
+            @line_offset-path_medium_mud_z12,
+            ["c"],
+            @line_offset-path_wide_mud_z12,
+            ["d"],
+            @line_offset-path_widest_mud_z12,
+            @line_offset-path_medium_mud_z12
+          ],
           14,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            1,
+            @line_offset-path_narrow_mud_z14,
             ["b"],
-            2.5,
+            @line_offset-path_medium_mud_z14,
             ["c"],
-            3,
+            @line_offset-path_wide_mud_z14,
             ["d"],
-            3,
-            2.5
+            @line_offset-path_widest_mud_z14,
+            @line_offset-path_medium_mud_z14
           ],
           16,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            4,
+            @line_offset-path_narrow_mud_z16,
             ["b"],
-            6,
+            @line_offset-path_medium_mud_z16,
             ["c"],
-            8,
+            @line_offset-path_wide_mud_z16,
             ["d"],
-            8,
-            6
+            @line_offset-path_widest_mud_z16,
+            @line_offset-path_medium_mud_z16
           ],
           18,
           [
             "match",
             ["get", "width_cat"],
             ["a"],
-            6,
+            @line_offset-path_narrow_mud_z18,
             ["b"],
-            11,
+            @line_offset-path_medium_mud_z18,
             ["c"],
-            16,
+            @line_offset-path_wide_mud_z18,
             ["d"],
-            16,
-            11
-          ]
-        ]
-      }
-    },
-    {
-      "id": "surface-mud-(def-all-osm-hc)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb_light": true,
-        "trailmap:mtb_hc_light": true,
-        "trailmap:mtb_dark": true,
-        "trailmap:mtb_hc_dark": true,
-        "trailmap:gravel_light": true,
-        "trailmap:gravel_hc_light": true,
-        "trailmap:gravel_dark": true,
-        "trailmap:gravel_hc_dark": true,
-        "trailmap:road_light": true,
-        "trailmap:road_hc_light": true,
-        "trailmap:road_dark": true,
-        "trailmap:road_hc_dark": true,
-        "trailmap:winter_light": true,
-        "trailmap:winter_hc_light": true,
-        "trailmap:winter_dark": true,
-        "trailmap:winter_hc_dark": true,
-
-        "trailmap:high_contrast": "exclusive",
-        "trailmap:mtb_winter": false,
-        "trailmap:gravel": false,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": true,
-        "trailmap:id_legacy": "surface_mud-hc",
-        "trailmap:country": "all"
-      },
-      "source": "osm",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["==", "surface_raw", "mud"],
-        ["in", "class", "path", "track", "footway", "cycleway"]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsl(208, 100%, 41%)",
-        "line-dasharray": [1, 1],
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [14, 3],
-            [16, 3.8],
-            [18, 12]
-          ]
-        },
-        "line-offset": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            3,
-            ["b"],
-            4,
-            ["c"],
-            4,
-            ["d"],
-            5,
-            4
-          ],
-          16,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            9,
-            ["b"],
-            13.5,
-            ["c"],
-            15,
-            ["d"],
-            15,
-            13.5
-          ],
-          18,
-          [
-            "match",
-            ["get", "width_cat"],
-            ["a"],
-            14,
-            ["b"],
-            19.5,
-            ["c"],
-            27,
-            ["d"],
-            27,
-            19.5
+            @line_offset-path_widest_mud_z18,
+            @line_offset-path_medium_mud_z18
           ]
         ]
       }
