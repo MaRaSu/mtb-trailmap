@@ -9612,6 +9612,60 @@
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 1]
       }
     },
+        {
+      "id": "highway-path_track-noexit-case-(def-all-osm)",
+      "type": "line",
+      "metadata": {
+        "trailmap:mtb_light": false,
+        "trailmap:mtb_hc_light": false,
+        "trailmap:mtb_dark": true,
+        "trailmap:mtb_hc_dark": true,
+        "trailmap:gravel_light": false,
+        "trailmap:gravel_hc_light": false,
+        "trailmap:gravel_dark": true,
+        "trailmap:gravel_hc_dark": true,
+        "trailmap:road_light": false,
+        "trailmap:road_hc_light": false,
+        "trailmap:road_dark": true,
+        "trailmap:road_hc_dark": true,
+        "trailmap:winter_light": true,
+        "trailmap:winter_hc_light": true,
+        "trailmap:winter_dark": true,
+        "trailmap:winter_hc_dark": true,
+
+        "trailmap:mapper": false,
+        "trailmap:ways_only": true,
+        "trailmap:id_legacy": "none",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["==", "$type", "LineString"],
+        ["in", "class", "path", "track"],
+        ["!in", "subclass", "footway", "cycleway"],
+        ["==", "noexit", 1]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": @color-path_track_noexit,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [10, 2],
+            [11, 3],
+            [14, 4],
+            [16, 9],
+            [18, 15]
+          ]
+        },
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.5, 0.5]
+      }
+    },
     {
       "id": "highway-path_track-ways_only-case-(def-all-osm)",
       "type": "line",
