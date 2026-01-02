@@ -12009,8 +12009,8 @@
         },
         "line-opacity": {
           "stops": [
-            [11, 0],
-            [11.5, 1]
+            [10, 0],
+            [11.0, 1]
           ]
         }
       }
@@ -12154,8 +12154,8 @@
         "line-dasharray": [@dasharray-driveway_case_rough_dash, @dasharray-driveway_case_rough_gap8],
         "line-opacity": {
           "stops": [
-            [11, 0],
-            [11.5, 1]
+            [10, 0],
+            [11.0, 1]
           ]
         }
       }
@@ -12251,8 +12251,8 @@
         },
         "line-opacity": {
           "stops": [
-            [11, 0],
-            [11.5, 1]
+            [10, 0],
+            [11.0, 1]
           ]
         }
       }
