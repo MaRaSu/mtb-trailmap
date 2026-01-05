@@ -16018,10 +16018,10 @@
         "line-width": {
           "base": 1,
           "stops": [
-            [12, 1.2],
-            [14, 1.7],
-            [16, 2.8],
-            [18, 8]
+            [12, @line_width-path_track_all_vegetation_z12],
+            [14, @line_width-path_track_all_vegetation_z14],
+            [16, @line_width-path_track_all_vegetation_z16],
+            [18, @line_width-path_track_all_vegetation_z18]
           ]
         },
         "line-offset": [
@@ -16134,10 +16134,10 @@
         "line-width": {
           "base": 1.2,
           "stops": [
-            [12, 1.2],
-            [14, 1.7],
-            [16, 2.8],
-            [18, 5]
+            [12, @line_width-path_track_all_mud_z12],
+            [14, @line_width-path_track_all_mud_z14],
+            [16, @line_width-path_track_all_mud_z16],
+            [18, @line_width-path_track_all_mud_z18]
           ]
         },
         "line-offset": [
@@ -21975,7 +21975,7 @@
       "paint": {
         "text-color": @color-label_waterway,
         "text-opacity": @opacity-label_waterway,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.7)",
+        "text-halo-color": @color-label_halo_waterway,
         "text-halo-width": 1.2
       }
     },
