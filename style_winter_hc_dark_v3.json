@@ -4260,7 +4260,7 @@
           "tm_vihr_mml_38300_maatuva_vesialue",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": 0.3
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4348,7 +4348,7 @@
           "tm_vihr_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_vihr_mml_35300_soistuma"
         ],
-        "fill-opacity": 0.3
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4428,7 +4428,7 @@
           "tm_valk_mml_38300_maatuva_vesialue",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": 0.3
+        "fill-opacity": 0.5
       }
     },
     {
@@ -4451,9 +4451,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -4515,7 +4512,7 @@
           "tm_valk_mml_35422_suo_vaikeakulkuinen_metsaa_kasvava",
           "tm_valk_mml_35300_soistuma"
         ],
-        "fill-opacity": 0.3
+        "fill-opacity": 0.5
       }
     },
     {
@@ -15937,11 +15934,11 @@
         "line-opacity": {
           "stops": [
             [
-              11,
+              10,
               0
             ],
             [
-              11.5,
+              11,
               1
             ]
           ]
@@ -16149,11 +16146,11 @@
         "line-opacity": {
           "stops": [
             [
-              11,
+              10,
               0
             ],
             [
-              11.5,
+              11,
               1
             ]
           ]
@@ -16278,11 +16275,11 @@
         "line-opacity": {
           "stops": [
             [
-              11,
+              10,
               0
             ],
             [
-              11.5,
+              11,
               1
             ]
           ]
@@ -30914,15 +30911,15 @@
           "stops": [
             [
               14,
-              10
+              12
             ],
             [
               16,
-              13
+              15
             ],
             [
               18,
-              22
+              26
             ]
           ]
         }
@@ -31008,19 +31005,19 @@
           "stops": [
             [
               13,
-              10
+              12
             ],
             [
               14,
-              11
-            ],
-            [
-              16,
               14
             ],
             [
+              16,
+              18
+            ],
+            [
               18,
-              26
+              30
             ]
           ]
         }
@@ -34133,15 +34130,15 @@
           "stops": [
             [
               8,
-              8
-            ],
-            [
-              10,
               9
             ],
             [
+              10,
+              10
+            ],
+            [
               14,
-              14
+              16
             ]
           ]
         },
@@ -34200,15 +34197,15 @@
           "stops": [
             [
               8,
-              9
-            ],
-            [
-              10,
               10
             ],
             [
+              10,
+              12
+            ],
+            [
               14,
-              16
+              18
             ]
           ]
         },
@@ -34242,9 +34239,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -34266,15 +34260,15 @@
           "stops": [
             [
               8,
-              11
-            ],
-            [
-              10,
               12
             ],
             [
+              10,
+              14
+            ],
+            [
               14,
-              16
+              20
             ]
           ]
         },
@@ -34308,9 +34302,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "fin"
@@ -34356,15 +34347,15 @@
           "stops": [
             [
               8,
-              9
+              12
             ],
             [
               10,
-              10
+              14
             ],
             [
               14,
-              14
+              20
             ]
           ]
         },
@@ -34398,9 +34389,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-town",
@@ -34423,19 +34411,19 @@
           "stops": [
             [
               6,
-              10
+              11
             ],
             [
               8,
-              12
+              14
             ],
             [
               10,
-              13
+              16
             ],
             [
               14,
-              20
+              24
             ]
           ]
         },
@@ -34469,9 +34457,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-town",
@@ -34519,19 +34504,19 @@
           "stops": [
             [
               6,
-              10
+              11
             ],
             [
               8,
-              12
+              14
             ],
             [
               10,
-              13
+              16
             ],
             [
               14,
-              20
+              24
             ]
           ]
         },
@@ -34565,9 +34550,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-city",
@@ -34599,23 +34581,23 @@
           "stops": [
             [
               4,
-              8
+              9
             ],
             [
               6,
-              10
+              11
             ],
             [
               8,
-              13
+              16
             ],
             [
               10,
-              15
+              18
             ],
             [
               14,
-              24
+              28
             ]
           ]
         },
@@ -34660,9 +34642,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "fin"
@@ -34717,23 +34696,23 @@
           "stops": [
             [
               4,
-              8
+              9
             ],
             [
               6,
-              10
+              11
             ],
             [
               8,
-              13
+              16
             ],
             [
               10,
-              15
+              18
             ],
             [
               14,
-              24
+              28
             ]
           ]
         },
@@ -34820,15 +34799,15 @@
           "stops": [
             [
               5,
-              12
-            ],
-            [
-              7,
               14
             ],
             [
+              7,
+              18
+            ],
+            [
               11,
-              24
+              28
             ]
           ]
         },

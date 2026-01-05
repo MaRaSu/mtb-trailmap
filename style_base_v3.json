@@ -3560,9 +3560,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": false,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -23042,9 +23039,9 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 10],
-            [16, 13],
-            [18, 22]
+            [14, @text_size-label_highway_minor_z14],
+            [16, @text_size-label_highway_minor_z16],
+            [18, @text_size-label_highway_minor_z18]
           ]
         }
       },
@@ -23102,10 +23099,10 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [13, 10],
-            [14, 11],
-            [16, 14],
-            [18, 26]
+            [13, @text_size-label_highway_trunk_primary_secondary_tertiary_z13],
+            [14, @text_size-label_highway_trunk_primary_secondary_tertiary_z14],
+            [16, @text_size-label_highway_trunk_primary_secondary_tertiary_z16],
+            [18, @text_size-label_highway_trunk_primary_secondary_tertiary_z18]
           ]
         }
       },
@@ -25310,9 +25307,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 8],
-            [10, 9],
-            [14, 14]
+            [8, @text_size-label_place_other_z8],
+            [10, @text_size-label_place_other_z10],
+            [14, @text_size-label_place_other_z14]
           ]
         },
         "text-max-width": 8,
@@ -25362,9 +25359,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 9],
-            [10, 10],
-            [14, 16]
+            [8, @text_size-label_place_suburb_hamlet_z8],
+            [10, @text_size-label_place_suburb_hamlet_z10],
+            [14, @text_size-label_place_suburb_hamlet_z14 ]
           ]
         },
         "text-max-width": 8,
@@ -25398,9 +25395,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "global"
@@ -25414,9 +25408,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 11],
-            [10, 12],
-            [14, 16]
+            [8, @text_size-label_place_village_z8],
+            [10, @text_size-label_place_village_z10],
+            [14, @text_size-label_place_village_z14]
           ]
         },
         "text-max-width": 8,
@@ -25450,9 +25444,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "fin"
@@ -25481,9 +25472,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [8, 9],
-            [10, 10],
-            [14, 14]
+            [8, @text_size-label_place_village_z8],
+            [10, @text_size-label_place_village_z10],
+            [14, @text_size-label_place_village_z14]
           ]
         },
         "text-max-width": 8,
@@ -25517,9 +25508,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-town",
@@ -25534,10 +25522,10 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [6, 10],
-            [8, 12],
-            [10, 13],
-            [14, 20]
+            [6, @text_size-label_place_town_z6],
+            [8, @text_size-label_place_town_z8],
+            [10, @text_size-label_place_town_z10],
+            [14, @text_size-label_place_town_z14]
           ]
         },
         "text-max-width": 8,
@@ -25571,9 +25559,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-town",
@@ -25603,10 +25588,10 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [6, 10],
-            [8, 12],
-            [10, 13],
-            [14, 20]
+            [6, @text_size-label_place_town_z6],
+            [8, @text_size-label_place_town_z8],
+            [10, @text_size-label_place_town_z10],
+            [14, @text_size-label_place_town_z14]
           ]
         },
         "text-max-width": 8,
@@ -25640,9 +25625,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "place-city",
@@ -25658,11 +25640,11 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [4, 8],
-            [6, 10],
-            [8, 13],
-            [10, 15],
-            [14, 24]
+            [4, @text_size-label_place_city_z4],
+            [6, @text_size-label_place_city_z6],
+            [8, @text_size-label_place_city_z8],
+            [10, @text_size-label_place_city_z10],
+            [14, @text_size-label_place_city_z14]
           ]
         },
         "text-allow-overlap": false,
@@ -25701,9 +25683,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:country": "fin"
@@ -25737,11 +25716,11 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [4, 8],
-            [6, 10],
-            [8, 13],
-            [10, 15],
-            [14, 24]
+            [4, @text_size-label_place_city_z4],
+            [6, @text_size-label_place_city_z6],
+            [8, @text_size-label_place_city_z8],
+            [10, @text_size-label_place_city_z10],
+            [14, @text_size-label_place_city_z14]
           ]
         },
         "text-allow-overlap": false,
@@ -25803,9 +25782,9 @@
         "text-size": {
           "base": 1.2,
           "stops": [
-            [5, 12],
-            [7, 14],
-            [11, 24]
+            [5, @text_size-label_place_capital_z5],
+            [7, @text_size-label_place_capital_z7],
+            [11, @text_size-label_place_capital_z11]
           ]
         },
         "text-allow-overlap": true,
