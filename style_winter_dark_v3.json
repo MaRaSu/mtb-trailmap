@@ -28215,9 +28215,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "power-pylon",
@@ -28232,7 +28229,7 @@
         22392
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-image": "tm_mml_22392_suurjannitelinjan_pylvas",
         "icon-size": 0.5
       },
@@ -28260,9 +28257,6 @@
         "trailmap:winter_hc_light": true,
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "power-line-minor",
@@ -28277,10 +28271,10 @@
         22312
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
+        "line-color": "#ababab",
         "line-opacity": {
           "stops": [
             [
@@ -28345,10 +28339,10 @@
         22311
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
+        "line-color": "#ababab",
         "line-opacity": {
           "stops": [
             [

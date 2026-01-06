@@ -21194,9 +21194,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "power-pylon",
@@ -21207,7 +21204,7 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22392],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "icon-image": "tm_mml_22392_suurjannitelinjan_pylvas",
         "icon-size": 0.5
       },
@@ -21236,9 +21233,6 @@
         "trailmap:winter_dark": true,
         "trailmap:winter_hc_dark": true,
 
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
         "trailmap:mapper": true,
         "trailmap:ways_only": false,
         "trailmap:id_legacy": "power-line-minor",
@@ -21249,10 +21243,10 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22312],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
+        "line-color": @color-power_line_all,
         "line-opacity": {
           "stops": [
             [14, 0],
@@ -21302,10 +21296,10 @@
       "minzoom": 11,
       "filter": ["==", "kohdeluokka", 22311],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
-        "line-color": "hsl(0, 0%, 33%)",
+        "line-color": @color-power_line_all,
         "line-opacity": {
           "stops": [
             [11, 0],
