@@ -22664,7 +22664,7 @@
       "layout": {
         "icon-image": "road_{ref_length}",
         "icon-rotation-alignment": "viewport",
-        "icon-size": 0.8,
+        "icon-size": @icon_size-label_highway_roadnumber_non_us,
         "symbol-placement": {
           "base": 1,
           "stops": [
@@ -22674,9 +22674,9 @@
         },
         "symbol-spacing": 200,
         "text-field": "{ref}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": [@text_font-label_highway_roadnumber_non_us],
         "text-rotation-alignment": "viewport",
-        "text-size": 8,
+        "text-size": @text_size-label_highway_roadnumber_non_us,
         "visibility": "visible"
       },
       "paint": {}

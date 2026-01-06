@@ -29711,7 +29711,7 @@
       "layout": {
         "icon-image": "road_{ref_length}",
         "icon-rotation-alignment": "viewport",
-        "icon-size": 0.8,
+        "icon-size": 1,
         "symbol-placement": {
           "base": 1,
           "stops": [
@@ -29728,10 +29728,10 @@
         "symbol-spacing": 200,
         "text-field": "{ref}",
         "text-font": [
-          "Noto Sans Regular"
+          "Noto Sans Bold"
         ],
         "text-rotation-alignment": "viewport",
-        "text-size": 8,
+        "text-size": 10,
         "visibility": "visible"
       },
       "paint": {}
