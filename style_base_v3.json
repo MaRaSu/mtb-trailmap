@@ -22429,9 +22429,9 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 9],
-            [16, 11],
-            [18, 18]
+            [14, @textsize-label_highway_path_z14],
+            [16, @textsize-label_highway_path_z16],
+            [18, @textsize-label_highway_path_z18]
           ]
         }
       },
@@ -22485,9 +22485,9 @@
         "text-size": {
           "base": 1,
           "stops": [
-            [14, 9],
-            [16, 11],
-            [18, 18]
+            [14, @textsize-label_highway_path_z14],
+            [16, @textsize-label_highway_path_z16],
+            [18, @textsize-label_highway_path_z18]
           ]
         }
       },
