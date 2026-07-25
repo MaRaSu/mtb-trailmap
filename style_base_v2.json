@@ -44,11 +44,11 @@
       "maxzoom": 18,
       "url": "https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=cgK0etF04PfrXscBmDSY"
     },
-    "maptiler_hillshade": {
+    "mapterhorn_hillshade": {
       "type": "raster",
       "maxzoom": 12,
       "minzoom": 9,
-      "url": "https://api.maptiler.com/tiles/hillshade/tiles.json?key=cgK0etF04PfrXscBmDSY"
+      "url": "https://terrain.trailmap.fi/data/eu_hillshade.json"
     },
     "maptiler_hillshade_lowzoom": {
       "type": "raster",
@@ -56,17 +56,17 @@
       "minzoom": 3,
       "url": "https://api.maptiler.com/tiles/hand-drawn-hillshade/tiles.json?key=cgK0etF04PfrXscBmDSY"
     },
-    "maptiler_contours": {
+    "mapterhorn_contours": {
       "type": "vector",
       "maxzoom": 14,
       "minzoom": 10,
-      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=cgK0etF04PfrXscBmDSY"
+      "url": "https://terrain.trailmap.fi/data/eu_contours.json"
     },
-    "maptiler_contours_2": {
+    "mapterhorn_contours_2": {
       "type": "vector",
-      "maxzoom": 13,
+      "maxzoom": 14,
       "minzoom": 10,
-      "url": "https://api.maptiler.com/tiles/contours-v2/tiles.json?key=cgK0etF04PfrXscBmDSY"
+      "url": "https://terrain.trailmap.fi/data/eu_contours.json"
     },
     "maptiler_terrain_rgb": {
       "url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=cgK0etF04PfrXscBmDSY",
@@ -1316,7 +1316,7 @@
         "trailmap:country": ["global", "!nor"],
         "trailmap:premium": "navi"
       },
-      "source": "maptiler_contours",
+      "source": "mapterhorn_contours",
       "source-layer": "contour",
       "minzoom": 8,
       "maxzoom": 20,
@@ -1351,7 +1351,7 @@
         "trailmap:country": ["global", "!nor"],
         "trailmap:premium": "navi"
       },
-      "source": "maptiler_contours",
+      "source": "mapterhorn_contours",
       "source-layer": "contour",
       "minzoom": 13,
       "maxzoom": 20,
@@ -1395,7 +1395,7 @@
         "trailmap:country": ["global", "!nor"],
         "trailmap:premium": "free"
       },
-      "source": "maptiler_contours_2",
+      "source": "mapterhorn_contours_2",
       "source-layer": "contour",
       "minzoom": 8,
       "maxzoom": 20,
@@ -1430,7 +1430,7 @@
         "trailmap:country": ["global", "!nor"],
         "trailmap:premium": "free"
       },
-      "source": "maptiler_contours_2",
+      "source": "mapterhorn_contours_2",
       "source-layer": "contour",
       "minzoom": 13,
       "maxzoom": 20,
@@ -1473,7 +1473,7 @@
         "trailmap:group": "contour",
         "trailmap:country": ["nor"]
       },
-      "source": "maptiler_contours",
+      "source": "mapterhorn_contours",
       "source-layer": "contour",
       "minzoom": 8,
       "maxzoom": 11,
@@ -1902,7 +1902,7 @@
         "trailmap:group": "hillshade",
         "trailmap:country": ["global", "!nor"]
       },
-      "source": "maptiler_hillshade",
+      "source": "mapterhorn_hillshade",
       "minzoom": 9,
       "layout": {
         "visibility": "none"
@@ -1939,7 +1939,7 @@
         "trailmap:country": "nor",
         "trailmap:premium": "free"
       },
-      "source": "maptiler_hillshade",
+      "source": "mapterhorn_hillshade",
       "minzoom": 9,
       "layout": {
         "visibility": "none"
