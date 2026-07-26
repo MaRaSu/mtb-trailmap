@@ -1313,7 +1313,7 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "contour",
-        "trailmap:country": ["global", "!nor"],
+        "trailmap:country": "global",
         "trailmap:premium": "navi"
       },
       "source": "mapterhorn_contours",
@@ -1348,7 +1348,7 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "contour",
-        "trailmap:country": ["global", "!nor"],
+        "trailmap:country": "global",
         "trailmap:premium": "navi"
       },
       "source": "mapterhorn_contours",
@@ -1392,7 +1392,7 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "contour",
-        "trailmap:country": ["global", "!nor"],
+        "trailmap:country": "global",
         "trailmap:premium": "free"
       },
       "source": "mapterhorn_contours_2",
@@ -1427,7 +1427,7 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "contour",
-        "trailmap:country": ["global", "!nor"],
+        "trailmap:country": "global",
         "trailmap:premium": "free"
       },
       "source": "mapterhorn_contours_2",
@@ -1438,406 +1438,6 @@
       "layout": {
         "visibility": "none",
         "text-field": ["to-string", ["get", "height"]],
-        "text-font": ["Noto Sans Regular"],
-        "text-size": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          12,
-          8,
-          16,
-          18
-        ],
-        "symbol-placement": "line",
-        "text-allow-overlap": true,
-        "text-padding": 2,
-        "text-anchor": "center"
-      },
-      "paint": {
-        "text-color": "hsl(30, 31%, 43%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 1,
-        "text-opacity": 1
-      }
-    },
-    {
-      "id": "maptiler_contours-mainline-filler-(def-nor-maptiler_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "mapterhorn_contours",
-      "source-layer": "contour",
-      "minzoom": 8,
-      "maxzoom": 11,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          ["case", ["==", ["get", "nth_line"], 10], 1.5, 0.7],
-          20,
-          ["case", ["==", ["get", "nth_line"], 10], 10, 4.5]
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z12_mainline-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 11,
-      "maxzoom": 12.5,
-      "filter": ["==", "Index4", 1],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          0.8,
-          20,
-          10
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z12_line-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 11.8,
-      "maxzoom": 12.5,
-      "filter": ["all", ["==", "Index3", 1], ["==", "Index4", 0]],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          0.4,
-          20,
-          4.5
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z13_mainline-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 12.5,
-      "maxzoom": 14,
-      "filter": ["==", "Index4", 1],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          1.5,
-          20,
-          10
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z13_line-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 12.5,
-      "maxzoom": 14,
-      "filter": ["all", ["==", "Index2", 1], ["==", "Index4", 0]],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.3,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          0.7,
-          20,
-          4.5
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z15_mainline-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 14,
-      "maxzoom": 16,
-      "filter": ["==", "Index3", 1],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          1.5,
-          20,
-          10
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z15_line-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 14,
-      "maxzoom": 16,
-      "filter": ["all", ["==", "Index1", 1], ["==", "Index3", 0]],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          0.7,
-          20,
-          4.5
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z16_mainline-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 16,
-      "maxzoom": 20,
-      "filter": ["==", "Index2", 1],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          1.5,
-          20,
-          10
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-z16_line-(def-nor-esri_contours)",
-      "type": "line",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 16,
-      "maxzoom": 20,
-      "filter": ["==", "Index2", 0],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": "hsla(36, 45%, 45%, 0.8)",
-        "line-opacity": 0.35,
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          6,
-          0.7,
-          20,
-          4.5
-        ]
-      }
-    },
-    {
-      "id": "esri_contours-label-n100-(def-nor-esri_contours)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 13,
-      "maxzoom": 15.5,
-      "filter": ["all", ["==", "Index4", 1]],
-      "layout": {
-        "text-field": "{Contour} {Unit}",
-        "visibility": "none",
-        "text-font": ["Noto Sans Regular"],
-        "text-size": [
-          "interpolate",
-          ["exponential", 1.55],
-          ["zoom"],
-          12,
-          8,
-          16,
-          18
-        ],
-        "symbol-placement": "line",
-        "text-allow-overlap": true,
-        "text-padding": 2,
-        "text-anchor": "center"
-      },
-      "paint": {
-        "text-color": "hsl(30, 31%, 43%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 1,
-        "text-opacity": 1
-      }
-    },
-    {
-      "id": "esri_contours-label-n50-(def-nor-esri_contours)",
-      "type": "symbol",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "contour",
-        "trailmap:country": ["nor"]
-      },
-      "source": "esri_contours",
-      "source-layer": "Contour",
-      "minzoom": 15.5,
-      "maxzoom": 20,
-      "filter": ["all", ["==", "Index3", 1]],
-      "layout": {
-        "text-field": "{Contour} {Unit}",
-        "visibility": "none",
         "text-font": ["Noto Sans Regular"],
         "text-size": [
           "interpolate",
@@ -1900,7 +1500,7 @@
         "trailmap:mapper": false,
         "trailmap:ways_only": false,
         "trailmap:group": "hillshade",
-        "trailmap:country": ["global", "!nor"]
+        "trailmap:country": "global"
       },
       "source": "mapterhorn_hillshade",
       "minzoom": 9,
@@ -1921,44 +1521,6 @@
             [11, 0.45],
             [13, 0.55],
             [15, 0.65]
-          ]
-        }
-      }
-    },
-    {
-      "id": "maptiler_hillshade-(def-nor-maptiler_hillshade)",
-      "type": "raster",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "hillshade",
-        "trailmap:country": "nor",
-        "trailmap:premium": "free"
-      },
-      "source": "mapterhorn_hillshade",
-      "minzoom": 9,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-brightness-min": {
-          "stops": [
-            [9, 0.5],
-            [12, 0.6],
-            [16, 0.75]
-          ]
-        },
-        "raster-opacity": {
-          "stops": [
-            [9, 0.15],
-            [10, 0.25],
-            [11.5, 0.35],
-            [13, 0.4],
-            [15, 0.45]
           ]
         }
       }
@@ -1992,50 +1554,6 @@
             [9, 0.2]
           ]
         }
-      }
-    },
-    {
-      "id": "mapbox_hillshade_rgb-(def-nor-mapbox_hillshade)",
-      "type": "hillshade",
-      "metadata": {
-        "trailmap:mtb": true,
-        "trailmap:high_contrast": "yes",
-        "trailmap:mtb_winter": true,
-        "trailmap:gravel": true,
-        "trailmap:mapper": false,
-        "trailmap:ways_only": false,
-        "trailmap:group": "hillshade",
-        "trailmap:country": "nor",
-        "trailmap:premium": "navi"
-      },
-      "source": "mapbox_terrain_rgb",
-      "minzoom": 9,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "hillshade-accent-color": "hsl(98, 35%, 86%)",
-        "hillshade-exaggeration": {
-          "stops": [
-            [6, 0.3],
-            [14, 0.3],
-            [15, 0.4]
-          ]
-        },
-        "hillshade-highlight-color": "hsl(20, 13%, 90%)",
-        "hillshade-shadow-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          9,
-          "hsl(9, 3%, 100%)",
-          11,
-          "hsl(9, 3%, 70%)",
-          13,
-          "hsl(9, 0%, 35%)",
-          15.5,
-          "hsl(9, 3%, 50%)"
-        ]
       }
     },
     {
