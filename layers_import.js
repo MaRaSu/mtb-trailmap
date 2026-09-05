@@ -93,10 +93,23 @@ async function processFile(csvPath, jsonPath, csvDelimiter) {
       }
       return acc;
     }, {});
-    itemMetadata["trailmap:country"] = item["country"];
-
     const jsonLayerIndex = jsonContent.layers.findIndex((layer) => layer.id === item.id_orig);
     const jsonLayer = jsonContent.layers[jsonLayerIndex];
+
+    // The spreadsheet's "country" column comes from the layer id, which can only
+    // hold a single token. Layers whose metadata carries an array -- the
+    // ["global", "!swe", ...] exclusion form -- would lose every exclusion on a
+    // round trip, so those keep whatever the JSON already has. That also makes
+    // the country column read-only for those layers: edit them in the JSON.
+    const existingCountry = jsonLayer?.metadata?.["trailmap:country"];
+    if (Array.isArray(existingCountry)) {
+      itemMetadata["trailmap:country"] = existingCountry;
+      console.log(
+        `Keeping array country metadata for ${item.id_orig}: ${JSON.stringify(existingCountry)}`
+      );
+    } else {
+      itemMetadata["trailmap:country"] = item["country"];
+    }
 
     let newLayer;
     if (jsonLayer) {

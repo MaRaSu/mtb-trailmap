@@ -1,5 +1,23 @@
 const booleanMetadataKeys = ["mtb", "gravel", "mtb_winter", "mapper", "ways_only"];
 
+// trailmap:country selects which viewed country a layer belongs to. The app
+// (buildMapStyleV2) accepts a single token or an array of them, where a token is
+// "all", "global", "none" or a lowercase ISO_A3 country code. "global" matches
+// every non-Finland country, so a layer replaced by national data needs the
+// paired form ["global", "!swe"] on the layer it replaces.
+//
+// The "!" exclusion is compared against the viewed country, so it is only
+// meaningful on a country code or on "global" (CountryMode.Global). "!all" and
+// "!none" can never fire in either the app or layers_configure.js and are
+// rejected here rather than silently ignored.
+const countryTokenPattern = /^(?:all|none|global|[a-z]{3}|!global|!(?!all$)[a-z]{3})$/;
+
+function isValidCountryMetadata(value) {
+  const tokens = Array.isArray(value) ? value : [value];
+  if (tokens.length === 0) return false;
+  return tokens.every((token) => typeof token === "string" && countryTokenPattern.test(token));
+}
+
 function splitLayerId(id) {
   //id is a string. Split string first by "-(" and process first part by splitting by "-"
   // then process the second part by removing ")" and splitting by "-"
@@ -70,7 +88,7 @@ function validateJson(jsonContent) {
 
     if (
       metadata["trailmap:country"] &&
-      !["fin", "all", "global"].includes(metadata["trailmap:country"])
+      !isValidCountryMetadata(metadata["trailmap:country"])
     ) {
       console.log(`Invalid metadata value: ${layer.id} for country`);
     }

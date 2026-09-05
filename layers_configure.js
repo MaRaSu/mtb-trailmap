@@ -9,6 +9,28 @@ if (!filePath || !variantTag) {
   process.exit(1);
 }
 
+// trailmap:country may be a single token or an array of them, where "!xxx"
+// excludes a country. Mirrors buildMapStyleV2 in the app:
+//   - "all" matches every country
+//   - "global" matches every country except Finland (the app derives this as
+//     countryFilter, which is "fin" in Finland and "global" everywhere else)
+//   - a bare country code matches that country
+//   - "!xxx" excludes that country and wins whatever its position in the array
+// Before this, the comparison was a plain string equality against
+// [countryTag, "all"], which dropped every "global" layer from every generated
+// variant and hid array-valued layers for all countries alike.
+// See also isValidCountryMetadata in common_module.js.
+function isCountryVisible(value, countryTag) {
+  const tokens = Array.isArray(value) ? value : [value];
+  const countryFilter = countryTag === "fin" ? "fin" : "global";
+  let visible = false;
+  for (const token of tokens) {
+    if (token === countryTag || token === "all" || token === countryFilter) visible = true;
+    if (token === `!${countryTag}`) return false;
+  }
+  return visible;
+}
+
 // Function to read JSON file
 function readJSONFile(filePath) {
   try {
@@ -50,7 +72,7 @@ function processFile(filePath, variantTag, countryTag, hcTag) {
     if (countryTag) {
       const countryRealTag = "trailmap:country";
       countryVisible = layer.metadata.hasOwnProperty(countryRealTag)
-        ? [countryTag, "all"].includes(layer.metadata[countryRealTag])
+        ? isCountryVisible(layer.metadata[countryRealTag], countryTag)
         : true;
     }
 
