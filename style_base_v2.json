@@ -29907,12 +29907,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30002,12 +29997,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30187,7 +30177,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30256,7 +30246,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30631,7 +30621,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30720,7 +30710,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30800,12 +30790,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -30891,12 +30876,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31088,7 +31068,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31157,7 +31137,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31519,7 +31499,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31606,7 +31586,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31682,7 +31662,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31768,7 +31748,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31829,12 +31809,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31896,12 +31871,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -31964,7 +31934,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -32027,7 +31997,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -32227,7 +32197,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -32303,7 +32273,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -32913,12 +32883,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -32977,7 +32942,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33079,7 +33044,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33130,7 +33095,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33180,7 +33145,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33264,12 +33229,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33325,7 +33285,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33427,7 +33387,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "base": 1.2,
@@ -33523,12 +33483,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": [
-          "case",
-          ["has", "nimi_fin"],
-          ["get", "nimi_fin"],
-          ["get", "nimi_swe"]
-        ],
+        "text-field": ["format", ["coalesce", ["get", "nimi_fin"], ["get", "nimi_swe"], ["get", "nimi_sme"], ["get", "nimi_smn"], ["get", "nimi_sms"]], {}, ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["concat", "\n", ["get", "nimi_sme"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]], ["concat", ["case", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], " / ", "\n"], ["get", "nimi_smn"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}, ["case", ["all", ["has", "nimi_sms"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"], ["has", "nimi_smn"]]], ["concat", ["case", ["any", ["all", ["has", "nimi_sme"], ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]]], ["all", ["has", "nimi_smn"], ["any", ["any", ["has", "nimi_fin"], ["has", "nimi_swe"]], ["has", "nimi_sme"]]]], " / ", "\n"], ["get", "nimi_sms"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -33588,7 +33543,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
@@ -33706,7 +33661,7 @@
           "top-left",
           "top-right"
         ],
-        "text-field": ["get", "name"],
+        "text-field": ["format", ["get", "name"], {}, ["case", ["has", "name_alt"], ["concat", "\n", ["get", "name_alt"]], ""], {"font-scale": 0.8, "text-font": ["literal", ["Noto Sans Italic"]]}],
         "text-font": ["Noto Sans Regular"],
         "text-max-width": 8,
         "text-size": {
