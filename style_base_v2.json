@@ -229,6 +229,7 @@
       "id": "landcover-glacier-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -259,6 +260,7 @@
       "id": "landcover-glacier-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -289,6 +291,7 @@
       "id": "landcover-glacier-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -319,6 +322,7 @@
       "id": "landuse-built_up-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -344,6 +348,7 @@
       "id": "landuse-built_up-woodmask-(def-fin-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -381,6 +386,7 @@
       "id": "landuse-built_up-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -405,6 +411,7 @@
       "id": "landuse-built_up-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -429,6 +436,7 @@
       "id": "landuse-built_up-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -453,6 +461,7 @@
       "id": "landuse-built_up-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -483,6 +492,7 @@
       "id": "landuse-residential-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -507,6 +517,7 @@
       "id": "landuse-commercial-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -536,6 +547,7 @@
       "id": "landuse-industrial-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -575,6 +587,7 @@
       "id": "landuse-cemetery-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -599,6 +612,7 @@
       "id": "landuse-hospital-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -623,6 +637,7 @@
       "id": "landuse-school-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -647,6 +662,7 @@
       "id": "landuse-railway-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -671,6 +687,7 @@
       "id": "landuse-parking_area-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -697,6 +714,7 @@
       "id": "landcover-wood-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -735,6 +753,7 @@
       "id": "landcover-open_land-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -769,6 +788,7 @@
       "id": "landcover-heath-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -799,6 +819,7 @@
       "id": "landcover-forest-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -832,6 +853,7 @@
       "id": "landcover-open_land-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -862,6 +884,7 @@
       "id": "landcover-forest-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -895,6 +918,7 @@
       "id": "landcover-open_land-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -929,6 +953,7 @@
       "id": "landcover-forest-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -962,6 +987,7 @@
       "id": "landcover-open_land-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -992,6 +1018,7 @@
       "id": "landcover-forest-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -1031,6 +1058,7 @@
       "id": "landcover-mountain_birch-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -1064,6 +1092,7 @@
       "id": "landuse-quarry-(def-all-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1088,6 +1117,7 @@
       "id": "landuse-quarry-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1112,6 +1142,7 @@
       "id": "landuse-quarry-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1135,6 +1166,7 @@
       "id": "landuse-quarry-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1158,6 +1190,7 @@
       "id": "landuse-quarry-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1181,6 +1214,7 @@
       "id": "landcover-peat-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1204,6 +1238,7 @@
       "id": "landuse-quarry-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1227,6 +1262,7 @@
       "id": "landuse-storage-(def-all-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1251,6 +1287,7 @@
       "id": "landuse-industrial-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1278,6 +1315,7 @@
       "id": "landuse-industrial-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1301,6 +1339,7 @@
       "id": "landuse-industrial-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1324,6 +1363,7 @@
       "id": "landuse-industrial-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1347,6 +1387,7 @@
       "id": "landcover-grass-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -1384,6 +1425,7 @@
       "id": "landcover-allotments-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1409,6 +1451,7 @@
       "id": "landcover-ice_shelf-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1439,6 +1482,7 @@
       "id": "landcover-sand-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -1464,6 +1508,7 @@
       "id": "landcover-dune-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -1488,6 +1533,7 @@
       "id": "landcover-scrub-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1519,6 +1565,7 @@
       "id": "landcover-scrub-nowoods-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1550,6 +1597,7 @@
       "id": "landcover-scrub-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1581,6 +1629,7 @@
       "id": "landcover-scrub-nowoods-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1612,6 +1661,7 @@
       "id": "landcover-scrub-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1642,6 +1692,7 @@
       "id": "landcover-scrub-nowoods-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1672,6 +1723,7 @@
       "id": "landcover-scrub-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1702,6 +1754,7 @@
       "id": "landcover-scrub-nowoods-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1732,6 +1785,7 @@
       "id": "landcover-bare_mountain-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1756,6 +1810,7 @@
       "id": "landcover-scrub-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1786,6 +1841,7 @@
       "id": "landcover-scrub-nowoods-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1816,6 +1872,7 @@
       "id": "landcover-clearcut-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1847,6 +1904,7 @@
       "id": "landcover-bare_rock-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1873,6 +1931,7 @@
       "id": "landcover-bare_rock-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1898,6 +1957,7 @@
       "id": "landcover-bare_rock-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1923,6 +1983,7 @@
       "id": "landcover-scree-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1948,6 +2009,7 @@
       "id": "landcover-scree-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1973,6 +2035,7 @@
       "id": "landcover-boulder_field-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -1997,6 +2060,7 @@
       "id": "landcover-field-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2034,6 +2098,7 @@
       "id": "landcover-field-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:gravel": false,
@@ -2063,6 +2128,7 @@
       "id": "landcover-field-(gr-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2099,6 +2165,7 @@
       "id": "landcover-field-(gr-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2134,6 +2201,7 @@
       "id": "landcover-horticulture-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2165,6 +2233,7 @@
       "id": "landcover-horticulture-(gr-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2195,6 +2264,7 @@
       "id": "landcover-field-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2226,6 +2296,7 @@
       "id": "landcover-field-(gr-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2256,6 +2327,7 @@
       "id": "landcover-field-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2287,6 +2359,7 @@
       "id": "landcover-field-(gr-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2317,6 +2390,7 @@
       "id": "landcover-field-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2348,6 +2422,7 @@
       "id": "landcover-field-(gr-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -2378,6 +2453,7 @@
       "id": "landuse-sport_play-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -2415,6 +2491,7 @@
       "id": "landuse-area_borders-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3247,6 +3324,8 @@
       "id": "landcover-wetland-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:group": "water-start",
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3272,6 +3351,8 @@
       "id": "landcover-wetland-nowoods-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:group": "water-start",
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -3296,6 +3377,8 @@
       "id": "landcover-wetland-nowoods-(gr-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:group": "water-start",
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -3320,6 +3403,8 @@
       "id": "water-ocean-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:group": "water-start",
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3345,6 +3430,8 @@
       "id": "water-ocean-(def-all-osm-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:group": "water-start",
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3370,6 +3457,7 @@
       "id": "water-lake-(def-fin-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3402,6 +3490,7 @@
       "id": "water-lake-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3433,6 +3522,7 @@
       "id": "water-lake-(def-fin-osm-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3465,6 +3555,7 @@
       "id": "water-lake-(def-global-osm-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3496,6 +3587,7 @@
       "id": "water-lake-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3525,6 +3617,7 @@
       "id": "water-lake-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3549,6 +3642,7 @@
       "id": "water-lake-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3577,6 +3671,7 @@
       "id": "water-lake-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3601,6 +3696,7 @@
       "id": "water-lake-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3625,6 +3721,7 @@
       "id": "water-lake-(def-fin-mml_topo-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3654,6 +3751,7 @@
       "id": "water-lake-(def-dnk-dnk_topo-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3678,6 +3776,7 @@
       "id": "water-lake-(def-nor-nor_topo-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3706,6 +3805,7 @@
       "id": "water-lake-(def-est-est_topo-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3730,6 +3830,7 @@
       "id": "water-lake-(def-swe-swe_topo-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -3754,6 +3855,7 @@
       "id": "water-intermittent-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -3781,6 +3883,7 @@
       "id": "water-intermittent-(def-all-osm-hc)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -4142,6 +4245,7 @@
       "id": "landcover-wetland-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4184,6 +4288,7 @@
       "id": "landcover-wetland-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4231,6 +4336,7 @@
       "id": "landcover-wetland-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4256,6 +4362,7 @@
       "id": "landcover-wetland-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4287,6 +4394,7 @@
       "id": "landcover-wetland-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4318,6 +4426,7 @@
       "id": "landcover-wetland-nowoods-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4359,6 +4468,7 @@
       "id": "landcover-wetland-nowoods-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4405,6 +4515,7 @@
       "id": "landcover-wetland-nowoods-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4429,6 +4540,7 @@
       "id": "landcover-wetland-nowoods-(def-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4459,6 +4571,7 @@
       "id": "landcover-wetland-nowoods-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4489,6 +4602,7 @@
       "id": "landcover-wetland-nowoods-(gr-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -4530,6 +4644,7 @@
       "id": "landcover-wetland-nowoods-(gr-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -4576,6 +4691,7 @@
       "id": "landcover-wetland-nowoods-(gr-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -4600,6 +4716,7 @@
       "id": "landcover-wetland-nowoods-(gr-est-est_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -4630,6 +4747,7 @@
       "id": "landcover-wetland-nowoods-(gr-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "wetland",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -4660,6 +4778,7 @@
       "id": "waterway-tunnel-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -4697,6 +4816,7 @@
       "id": "waterway-other-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4733,6 +4853,7 @@
       "id": "waterway-other_intermittent-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4770,6 +4891,7 @@
       "id": "waterway-ditch-(def-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4814,6 +4936,7 @@
       "id": "waterway-ditch-(def-global-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4857,6 +4980,7 @@
       "id": "waterway-ditch-(def-swe-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -4900,6 +5024,7 @@
       "id": "waterway-ditch-(def-fin-mml_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -4944,6 +5069,7 @@
       "id": "waterway-ditch-(def-global-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -4987,6 +5113,7 @@
       "id": "waterway-ditch-(def-swe-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5030,6 +5157,7 @@
       "id": "waterway-stream-(def-swe-swe_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5073,6 +5201,7 @@
       "id": "waterway-stream-(def-swe-swe_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5116,6 +5245,7 @@
       "id": "waterway-ditch-(def-dnk-dnk_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5159,6 +5289,7 @@
       "id": "waterway-ditch-(def-dnk-dnk_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5202,6 +5333,7 @@
       "id": "waterway-stream-(def-dnk-dnk_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5245,6 +5377,7 @@
       "id": "waterway-stream-(def-dnk-dnk_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5288,6 +5421,7 @@
       "id": "waterway-ditch-(def-est-est_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5331,6 +5465,7 @@
       "id": "waterway-ditch-(def-est-est_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5374,6 +5509,7 @@
       "id": "waterway-stream-(def-est-est_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5417,6 +5553,7 @@
       "id": "waterway-stream-(def-est-est_topo-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5460,6 +5597,7 @@
       "id": "waterway-stream-linetype-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5498,6 +5636,7 @@
       "id": "waterway-stream-linetype-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5536,6 +5675,7 @@
       "id": "waterway-stream-linetype_intermittent-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -5574,6 +5714,7 @@
       "id": "waterway-river-linetype-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -5610,6 +5751,7 @@
       "id": "waterway-river-linetype-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -5646,6 +5788,7 @@
       "id": "waterway-river-linetype_intermittent-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "water",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -6110,6 +6253,7 @@
       "id": "tunnel-service-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -6287,6 +6431,7 @@
       "id": "tunnel-minor-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -7238,6 +7383,7 @@
       "id": "tunnel-cycleway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -7300,6 +7446,7 @@
       "id": "tunnel-cycleway-line-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
@@ -7361,6 +7508,7 @@
       "id": "tunnel-path-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -7418,6 +7566,7 @@
       "id": "tunnel-track_case-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
@@ -7481,6 +7630,7 @@
       "id": "tunnel-track-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -7532,6 +7682,7 @@
       "id": "tunnel-footway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -7584,6 +7735,7 @@
       "id": "tunnel-footway-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -7756,6 +7908,7 @@
       "id": "tunnel-service-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -7838,6 +7991,7 @@
       "id": "tunnel-minor-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8226,6 +8380,7 @@
       "id": "protected_area-fill-(def-global-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8274,6 +8429,7 @@
       "id": "protected_area-outline-inner-(def-global-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8317,6 +8473,7 @@
       "id": "protected_area-outline-outer-(def-global-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8367,6 +8524,7 @@
       "id": "protected_area-fill-(def-fin-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8413,6 +8571,7 @@
       "id": "protected_area-fill-(def-fin-mml_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8455,6 +8614,7 @@
       "id": "protected_area-outline-inner-(def-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8492,6 +8652,7 @@
       "id": "protected_area-outline-outer-(def-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8536,6 +8697,7 @@
       "id": "protected_area-fill-(def-dnk-dnk_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8590,6 +8752,7 @@
       "id": "protected_area-outline-inner-(def-dnk-dnk_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8639,6 +8802,7 @@
       "id": "protected_area-outline-outer-(def-dnk-dnk_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8695,6 +8859,7 @@
       "id": "protected_area-fill-(def-nor-nor_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8740,6 +8905,7 @@
       "id": "protected_area-outline-inner-(def-nor-nor_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8780,6 +8946,7 @@
       "id": "protected_area-outline-outer-(def-nor-nor_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8827,6 +8994,7 @@
       "id": "protected_area-fill-(def-swe-swe_topo)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8880,6 +9048,7 @@
       "id": "protected_area-outline-inner-(def-swe-swe_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8928,6 +9097,7 @@
       "id": "protected_area-outline-outer-(def-swe-swe_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -8983,6 +9153,7 @@
       "id": "military_area-fill-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9013,6 +9184,7 @@
       "id": "military_area-outline-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9050,6 +9222,7 @@
       "id": "border_zone-fill-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9086,6 +9259,7 @@
       "id": "border_zone-outline-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9122,6 +9296,7 @@
       "id": "aeroway-taxiway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9156,6 +9331,7 @@
       "id": "aeroway-runway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9190,6 +9366,7 @@
       "id": "aeroway-area-(def-all-osm)",
       "type": "fill",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9225,6 +9402,7 @@
       "id": "aeroway-taxiway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9269,6 +9447,7 @@
       "id": "aeroway-runway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "land",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -9613,6 +9792,7 @@
       "id": "access-bicycle-no-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -9713,6 +9893,7 @@
       "id": "access-bicycle-no-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -9814,6 +9995,7 @@
       "id": "access-bicycle-discouraged-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -9911,6 +10093,7 @@
       "id": "access-bicycle-discouraged-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -10008,6 +10191,7 @@
       "id": "access-any-no-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -10103,6 +10287,7 @@
       "id": "access-any-no-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -10199,6 +10384,7 @@
       "id": "access-any-discouraged-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -10294,6 +10480,7 @@
       "id": "access-any-discouraged-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -10963,6 +11150,7 @@
       "id": "highway-path-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11091,6 +11279,7 @@
       "id": "highway-path-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -11218,6 +11407,7 @@
       "id": "highway-path-case-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11345,6 +11535,7 @@
       "id": "highway-track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11420,6 +11611,7 @@
       "id": "highway-track-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -11494,6 +11686,7 @@
       "id": "highway-track-case-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11570,6 +11763,7 @@
       "id": "highway-path_track-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -11622,6 +11816,7 @@
       "id": "highway-path_track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11664,6 +11859,7 @@
       "id": "highway-cycleway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -11717,6 +11913,7 @@
       "id": "highway-cycleway-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -11770,6 +11967,7 @@
       "id": "highway-cycleway-case-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11822,6 +12020,7 @@
       "id": "highway-mml_path-line-(mmlways-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -11858,6 +12057,7 @@
       "id": "highway-path-line_badvis_farzoom-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -11909,6 +12109,7 @@
       "id": "highway-path-line_goodvis_farzoom-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -11956,6 +12157,7 @@
       "id": "highway-path-line_badvis-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12069,6 +12271,7 @@
       "id": "highway-path-line_badvis-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -12182,6 +12385,7 @@
       "id": "highway-path-line_badvis-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12299,6 +12503,7 @@
       "id": "highway-path-line_goodvis_narrow-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12365,6 +12570,7 @@
       "id": "highway-path-line_goodvis_medium_or_unknown-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12431,6 +12637,7 @@
       "id": "highway-path-line_goodvis_wide-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12497,6 +12704,7 @@
       "id": "highway-path-line_goodvis_allwidths-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -12593,6 +12801,7 @@
       "id": "highway-path-line_goodvis_allwidths-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12693,6 +12902,7 @@
       "id": "highway-path-line_allvis_allwidths-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -12754,6 +12964,7 @@
       "id": "highway-mml_track-(mmlways-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -12791,6 +13002,7 @@
       "id": "highway-track-line_goodvis-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -12850,6 +13062,7 @@
       "id": "highway-track-line_badvis-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -12909,6 +13122,7 @@
       "id": "highway-track-line_goodvis-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -12964,6 +13178,7 @@
       "id": "highway-track-line_badvis-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -13019,6 +13234,7 @@
       "id": "highway-track-line_goodvis-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -13077,6 +13293,7 @@
       "id": "highway-track-line_badvis-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -13135,6 +13352,7 @@
       "id": "highway-footway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -13187,6 +13405,7 @@
       "id": "highway-footway-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -13239,6 +13458,7 @@
       "id": "sidewalk-footway-line_left-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -13292,6 +13512,7 @@
       "id": "sidewalk-footway-line_left-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -13345,6 +13566,7 @@
       "id": "sidewalk-footway-line_right-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -13398,6 +13620,7 @@
       "id": "sidewalk-footway-line_right-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -13451,6 +13674,7 @@
       "id": "highway-steps-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -13490,6 +13714,7 @@
       "id": "highway-steps-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -13953,6 +14178,7 @@
       "id": "highway-minor-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14020,6 +14246,7 @@
       "id": "highway-minor-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -14073,6 +14300,7 @@
       "id": "highway-minor-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -14120,6 +14348,7 @@
       "id": "highway-minor-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14231,6 +14460,7 @@
       "id": "highway-minor-case_medium-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14304,6 +14534,7 @@
       "id": "highway-minor-case_rough-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14370,6 +14601,7 @@
       "id": "highway-mml_service_or_minor-line-(mmlways-fin-mml_topo)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14411,6 +14643,7 @@
       "id": "highway-service-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14478,6 +14711,7 @@
       "id": "highway-service-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -14531,6 +14765,7 @@
       "id": "highway-service-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -14578,6 +14813,7 @@
       "id": "highway-service-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14689,6 +14925,7 @@
       "id": "highway-service-case_medium-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14762,6 +14999,7 @@
       "id": "highway-service-case_rough-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14828,6 +15066,7 @@
       "id": "highway-driveway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -14892,6 +15131,7 @@
       "id": "highway-driveway-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -14944,6 +15184,7 @@
       "id": "highway-driveway-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -14990,6 +15231,7 @@
       "id": "highway-driveway-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15074,6 +15316,7 @@
       "id": "highway-driveway-case_medium-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15137,6 +15380,7 @@
       "id": "highway-driveway-case_rough-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15193,6 +15437,7 @@
       "id": "highway-busway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15244,6 +15489,7 @@
       "id": "highway-busway-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -15296,6 +15542,7 @@
       "id": "highway-busway-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -15342,6 +15589,7 @@
       "id": "highway-busway-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15426,6 +15674,7 @@
       "id": "highway-busway-case_medium-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15489,6 +15738,7 @@
       "id": "highway-busway-case_rough-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -15545,6 +15795,7 @@
       "id": "highway-raceway-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -15596,6 +15847,7 @@
       "id": "highway-raceway-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -15647,6 +15899,7 @@
       "id": "highway-parking_aisle-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -17788,6 +18041,7 @@
       "id": "highway-driveway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -17867,6 +18121,7 @@
       "id": "highway-driveway-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -17946,6 +18201,7 @@
       "id": "highway-driveway-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -17990,6 +18246,7 @@
       "id": "highway-driveway-line-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -18053,6 +18310,7 @@
       "id": "highway-busway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -18132,6 +18390,7 @@
       "id": "highway-busway-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -18211,6 +18470,7 @@
       "id": "highway-busway-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -18255,6 +18515,7 @@
       "id": "highway-busway-line-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -18318,6 +18579,7 @@
       "id": "highway-service-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
@@ -18400,6 +18662,7 @@
       "id": "highway-service-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -18447,6 +18710,7 @@
       "id": "highway-service-line-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -18513,6 +18777,7 @@
       "id": "highway-minor-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": false,
@@ -18595,6 +18860,7 @@
       "id": "highway-minor-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -18641,6 +18907,7 @@
       "id": "highway-minor-line-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -18706,6 +18973,7 @@
       "id": "highway-raceway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -19814,6 +20082,7 @@
       "id": "sidewalk-cycleway-line_left_paved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -19868,6 +20137,7 @@
       "id": "sidewalk-cycleway-line_left_paved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -19922,6 +20192,7 @@
       "id": "sidewalk-cycleway-line_right_paved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -19976,6 +20247,7 @@
       "id": "sidewalk-cycleway-line_right_paved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -20030,6 +20302,7 @@
       "id": "highway-cycleway-line_paved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20105,6 +20378,7 @@
       "id": "highway-cycleway-line_paved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -20181,6 +20455,7 @@
       "id": "highway-cycleway-line_paved-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -20256,6 +20531,7 @@
       "id": "highway-cycleway-line_unpaved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20339,6 +20615,7 @@
       "id": "highway-cycleway-line_unpaved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -20423,6 +20700,7 @@
       "id": "highway-cycleway-line_unpaved-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -20506,6 +20784,7 @@
       "id": "highway-cycleway-line_unknown-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20598,6 +20877,7 @@
       "id": "highway-cycleway-line_unknown-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -20691,6 +20971,7 @@
       "id": "highway-cycleway-line_unknown-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -20783,6 +21064,7 @@
       "id": "access-bicycle_winter-no-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20827,6 +21109,7 @@
       "id": "piste-trail_ski-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20880,6 +21163,7 @@
       "id": "piste-trail_ski-case-(wnt-all-lipas_routes)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -20924,6 +21208,7 @@
       "id": "piste-trail_ski-line_base-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -20994,6 +21279,7 @@
       "id": "piste-trail_ski-line_base_bicycle_ok-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21076,6 +21362,7 @@
       "id": "piste-trail_ski-line_base-(wnt-all-lipas_routes)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -21120,6 +21407,7 @@
       "id": "piste-trail_ski-line_center-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21174,6 +21462,7 @@
       "id": "piste-trail_ski-line_center-(wnt-all-lipas_routes)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -21262,6 +21551,7 @@
       "id": "piste-trail_hike_fatbike-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21322,6 +21612,7 @@
       "id": "piste-trail_hike_fatbike-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21389,6 +21680,7 @@
       "id": "obstacle-vegetation-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21474,6 +21766,7 @@
       "id": "obstacle-vegetation-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -21559,6 +21852,7 @@
       "id": "surface-mud-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -21644,6 +21938,7 @@
       "id": "surface-mud-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -23385,6 +23680,7 @@
       "id": "bridge-minor-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -23451,6 +23747,7 @@
       "id": "bridge-minor-case_smooth-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -23562,6 +23859,7 @@
       "id": "bridge-minor-case_medium-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -23635,6 +23933,7 @@
       "id": "bridge-minor-case_rough-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -23701,6 +24000,7 @@
       "id": "bridge-path_track_footway_cycleway-railings-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -23739,6 +24039,7 @@
       "id": "bridge-path_track_footway_cycleway-railings-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -23778,6 +24079,7 @@
       "id": "bridge-path_track_footway_cycleway-floor-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -23816,6 +24118,7 @@
       "id": "bridge-path_track_footway_cycleway-floor-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -23855,6 +24158,7 @@
       "id": "bridge-path-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -23967,6 +24271,7 @@
       "id": "bridge-path-case-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24079,6 +24384,7 @@
       "id": "bridge-path-case-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -24191,6 +24497,7 @@
       "id": "bridge-path_track-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24293,6 +24600,7 @@
       "id": "bridge-track-case-(gr-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -24357,6 +24665,7 @@
       "id": "bridge-track-case-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": false,
@@ -24416,6 +24725,7 @@
       "id": "bridge-path-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24483,6 +24793,7 @@
       "id": "bridge-path-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24573,6 +24884,7 @@
       "id": "bridge-track-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24618,6 +24930,7 @@
       "id": "bridge-track-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24664,6 +24977,7 @@
       "id": "bridge-footway-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24713,6 +25027,7 @@
       "id": "bridge-footway-line-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24764,6 +25079,7 @@
       "id": "bridge-cycleway-line_paved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24815,6 +25131,7 @@
       "id": "bridge-cycleway-line_paved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24866,6 +25183,7 @@
       "id": "bridge-cycleway-line_unpaved-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -24926,6 +25244,7 @@
       "id": "bridge-cycleway-line_unpaved-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -24986,6 +25305,7 @@
       "id": "bridge-cycleway-line_unknown-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -25025,6 +25345,7 @@
       "id": "bridge-cycleway-line_unknown-(def-all-osm-hc)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "exclusive",
         "trailmap:mtb_winter": false,
@@ -25417,6 +25738,7 @@
       "id": "bridge-minor-line-(def-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": true,
         "trailmap:high_contrast": "yes",
         "trailmap:mtb_winter": true,
@@ -26416,6 +26738,7 @@
       "id": "bridge_piste-trail_hike_fatbike-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -26477,6 +26800,7 @@
       "id": "bridge_piste-trail_hike_fatbike-line-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -26546,6 +26870,7 @@
       "id": "bridge_piste-trail_ski-case-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -26602,6 +26927,7 @@
       "id": "bridge_piste-trail_ski-line_base-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -26671,6 +26997,7 @@
       "id": "bridge_piste-trail_ski-line_base_bicycle_ok-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
@@ -26752,6 +27079,7 @@
       "id": "bridge_piste-trail_ski-line_center-(wnt-all-osm)",
       "type": "line",
       "metadata": {
+        "trailmap:muted": "minor-way",
         "trailmap:mtb": false,
         "trailmap:high_contrast": "no",
         "trailmap:mtb_winter": true,
