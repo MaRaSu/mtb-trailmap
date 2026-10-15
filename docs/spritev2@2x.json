@@ -1811,5 +1811,19 @@
     "width": 64,
     "x": 512,
     "y": 896
+  },
+  "spring_11": {
+    "height": 34,
+    "pixelRatio": 2,
+    "width": 34,
+    "x": 484,
+    "y": 4
+  },
+  "poi-spring": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 514,
+    "y": 216
   }
 }
