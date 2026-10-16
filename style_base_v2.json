@@ -34755,13 +34755,105 @@
       "source-layer": "barrier_ext",
       "minzoom": 13,
       "filter": [
-        "in",
-        "class",
-        "gate",
-        "kissing_gate",
-        "lift_gate",
-        "sliding_gate",
-        "swing_gate"
+        "all",
+        [
+          "match",
+          ["get", "class"],
+          ["gate", "kissing_gate", "lift_gate", "sliding_gate", "swing_gate"],
+          true,
+          false
+        ],
+        [
+          "!",
+          [
+            "any",
+            ["==", ["get", "way"], "passage"],
+            [
+              "all",
+              ["==", ["get", "way"], "driveway"],
+              ["==", ["get", "access"], "no"],
+              ["!=", ["get", "bicycle"], "yes"],
+              ["!=", ["get", "foot"], "yes"],
+              ["!", ["has", "way_named"]]
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "icon-image": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "access"], "no"],
+            ["!=", ["get", "bicycle"], "yes"],
+            ["!=", ["get", "foot"], "yes"]
+          ],
+          "tm_gate-noaccess",
+          [
+            "any",
+            ["==", ["get", "access"], "yes"],
+            ["==", ["get", "bicycle"], "yes"],
+            ["==", ["get", "foot"], "yes"]
+          ],
+          "tm_gate-yesaccess",
+          "tm_gate"
+        ],
+        "icon-size": {
+          "stops": [
+            [14, 0.3],
+            [15, 0.5],
+            [18, 1]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [13.5, 0],
+            [14, 1]
+          ]
+        }
+      }
+    },
+    {
+      "id": "barrier-pointtype-late-(def-all-osm)",
+      "type": "symbol",
+      "metadata": {
+        "trailmap:mtb": true,
+        "trailmap:high_contrast": "yes",
+        "trailmap:mtb_winter": true,
+        "trailmap:gravel": true,
+        "trailmap:mapper": true,
+        "trailmap:ways_only": false,
+        "trailmap:id_legacy": "barrier-pointtype-late",
+        "trailmap:country": "all"
+      },
+      "source": "osm",
+      "source-layer": "barrier_ext",
+      "minzoom": 16.2,
+      "filter": [
+        "all",
+        [
+          "match",
+          ["get", "class"],
+          ["gate", "kissing_gate", "lift_gate", "sliding_gate", "swing_gate"],
+          true,
+          false
+        ],
+        [
+          "any",
+          ["==", ["get", "way"], "passage"],
+          [
+            "all",
+            ["==", ["get", "way"], "driveway"],
+            ["==", ["get", "access"], "no"],
+            ["!=", ["get", "bicycle"], "yes"],
+            ["!=", ["get", "foot"], "yes"],
+            ["!", ["has", "way_named"]]
+          ]
+        ]
       ],
       "layout": {
         "icon-image": [
