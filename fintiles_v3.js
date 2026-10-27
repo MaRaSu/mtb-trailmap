@@ -64,10 +64,20 @@ const MTK = "© Maanmittauslaitos, Maastotietokanta, CC BY 4.0";
 const NIMISTO = "Nimistö © MML";
 const MAPTERHORN = "Hillshade © Mapterhorn, CC BY";
 
-// The vector archives' national extent with a margin (MTK reaches 19.04 W at sea,
-// 31.598 E, 70.095 N); the relief raster uses its own archive bounds.
-const VECTOR_BOUNDS = [19.0, 59.4, 31.65, 70.1];
-const RELIEF_BOUNDS = [19.08, 59.45, 31.59, 70.09];
+// Each archive's own bounds, as its TileJSON on vector.trailmap.fi gives them (the
+// Finland v2 build, R-0160-5, 2026-10-27). Clients request no tiles outside them.
+const BOUNDS = {
+  finland_topo: [19.08, 59.48, 31.59, 70.09],
+  finland_contours: [19.08, 59.7, 31.59, 70.09],
+  finland_buildings: [19.08, 59.7, 31.59, 70.09],
+  finland_ways: [19.08, 59.44, 31.59, 70.09],
+  // Masked to fell country (europe-tiles finland_vector config/fell_region_4326.geojson,
+  // south edge 62.846); tiles outside the mask answer 404, so the bounds stop clients
+  // asking in southern Finland. The TileJSON still says 59.45. Every existing tile
+  // reaches north of 62.84 (live probe z8-10, 2026-10-27: southmost at z8 spans
+  // 62.27-62.92).
+  fin_relief_hillshade: [19.08, 62.84, 31.59, 70.09],
+};
 
 function vectorSource(archive, attribution) {
   return {
@@ -75,7 +85,7 @@ function vectorSource(archive, attribution) {
     tiles: [`${BASE}/${archive}/{z}/{x}/{y}.pbf`],
     minzoom: 0,
     maxzoom: 14,
-    bounds: VECTOR_BOUNDS,
+    bounds: BOUNDS[archive],
     attribution,
   };
 }
@@ -197,7 +207,7 @@ if (!mmlv2) {
     tileSize: 256,
     minzoom: 8,
     maxzoom: 10,
-    bounds: RELIEF_BOUNDS,
+    bounds: BOUNDS[HS_LOW_SOURCE],
     attribution: MAPTERHORN,
   };
   layers.splice(i, 0, {

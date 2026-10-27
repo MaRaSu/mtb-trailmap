@@ -26,10 +26,10 @@
       "minzoom": 0,
       "maxzoom": 14,
       "bounds": [
-        19,
-        59.4,
-        31.65,
-        70.1
+        19.08,
+        59.48,
+        31.59,
+        70.09
       ],
       "attribution": "© Maanmittauslaitos, Maastotietokanta, CC BY 4.0; Nimistö © MML"
     },
@@ -261,10 +261,10 @@
       "minzoom": 0,
       "maxzoom": 14,
       "bounds": [
-        19,
-        59.4,
-        31.65,
-        70.1
+        19.08,
+        59.7,
+        31.59,
+        70.09
       ],
       "attribution": "© Maanmittauslaitos, Maastotietokanta, CC BY 4.0"
     },
@@ -276,10 +276,10 @@
       "minzoom": 0,
       "maxzoom": 14,
       "bounds": [
-        19,
-        59.4,
-        31.65,
-        70.1
+        19.08,
+        59.7,
+        31.59,
+        70.09
       ],
       "attribution": "© Maanmittauslaitos, Maastotietokanta, CC BY 4.0"
     },
@@ -291,10 +291,10 @@
       "minzoom": 0,
       "maxzoom": 14,
       "bounds": [
-        19,
-        59.4,
-        31.65,
-        70.1
+        19.08,
+        59.44,
+        31.59,
+        70.09
       ],
       "attribution": "© Maanmittauslaitos, Maastotietokanta, CC BY 4.0"
     },
@@ -308,7 +308,7 @@
       "maxzoom": 10,
       "bounds": [
         19.08,
-        59.45,
+        62.84,
         31.59,
         70.09
       ],
