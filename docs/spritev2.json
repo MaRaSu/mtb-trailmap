@@ -1825,5 +1825,47 @@
     "width": 32,
     "x": 257,
     "y": 108
+  },
+  "mmlhc_varvikko": {
+    "height": 16,
+    "pixelRatio": 1,
+    "width": 16,
+    "x": 0,
+    "y": 512
+  },
+  "mmlhc_varvikko_fine": {
+    "height": 12,
+    "pixelRatio": 1,
+    "width": 12,
+    "x": 18,
+    "y": 512
+  },
+  "mmlhc_avoin_metsamaa": {
+    "height": 16,
+    "pixelRatio": 1,
+    "width": 16,
+    "x": 32,
+    "y": 512
+  },
+  "mmlhc_avoin_metsamaa_fine": {
+    "height": 12,
+    "pixelRatio": 1,
+    "width": 12,
+    "x": 50,
+    "y": 512
+  },
+  "mmlhc_suo_vaikea": {
+    "height": 16,
+    "pixelRatio": 1,
+    "width": 16,
+    "x": 64,
+    "y": 512
+  },
+  "mmlhc_kivikko": {
+    "height": 24,
+    "pixelRatio": 1,
+    "width": 24,
+    "x": 82,
+    "y": 512
   }
 }
