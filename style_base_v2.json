@@ -12096,7 +12096,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "tunnel"],
+        ["!=", "brunnel", "tunnel"],
         ["==", "class", "path"],
         ["!=", "subclass", "corridor"],
         ["!has", "mtb_scale"],
@@ -12148,7 +12148,7 @@
       "filter": [
         "all",
         ["==", "$type", "LineString"],
-        ["!in", "brunnel", "bridge", "tunnel"],
+        ["!=", "brunnel", "tunnel"],
         ["in", "class", "path", "footway"],
         ["!has", "mtb_scale"],
         ["!in", "subclass", "cycleway", "pedestrian", "steps", "corridor"],
@@ -24926,6 +24926,8 @@
           "interpolate",
           ["linear"],
           ["zoom"],
+          12,
+          ["match", ["get", "width_cat"], ["a"], 0.4, ["b"], 0.6, ["c"], 1, 0.6],
           14,
           [
             "match",
@@ -24943,7 +24945,7 @@
           18,
           ["match", ["get", "width_cat"], ["a"], 2, ["b"], 3.5, ["c"], 5.5, 3.5]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 12.5, 1]
       }
     },
     {
@@ -25034,7 +25036,7 @@
           18,
           ["match", ["get", "width_cat"], ["a"], 3, ["b"], 5.2, ["c"], 8.2, 5.2]
         ],
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 13, 1]
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 12.5, 1]
       }
     },
     {
@@ -25146,7 +25148,7 @@
       },
       "source": "osm",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -25168,16 +25170,20 @@
         "line-width": {
           "base": 1.2,
           "stops": [
+            [12, 0.8],
             [14, 1.5],
             [17, 3.5]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [13, 0],
-            [14, 1]
-          ]
-        }
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12,
+          ["case", ["has", "noexit"], 0.4, 1]
+        ]
       }
     },
     {
@@ -25196,7 +25202,7 @@
       },
       "source": "osm",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "LineString"],
@@ -25224,12 +25230,15 @@
             [18, 6]
           ]
         },
-        "line-opacity": {
-          "stops": [
-            [13, 0],
-            [14, 1]
-          ]
-        }
+        "line-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11.5,
+          ["case", ["has", "noexit"], 0.4, 0],
+          12,
+          ["case", ["has", "noexit"], 0.4, 1]
+        ]
       }
     },
     {
