@@ -1951,5 +1951,26 @@
     "width": 14,
     "x": 122,
     "y": 536
+  },
+  "mmlhc_sym_32715": {
+    "height": 10,
+    "pixelRatio": 1,
+    "width": 14,
+    "x": 0,
+    "y": 550
+  },
+  "mmlhc_sym_44591": {
+    "height": 4,
+    "pixelRatio": 1,
+    "width": 20,
+    "x": 15,
+    "y": 550
+  },
+  "mmlhc_sym_45200": {
+    "height": 16,
+    "pixelRatio": 1,
+    "width": 14,
+    "x": 36,
+    "y": 550
   }
 }
