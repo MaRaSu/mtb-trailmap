@@ -34985,11 +34985,49 @@
       "filter": [
         "all",
         [
-          "match",
-          ["get", "class"],
-          ["gate", "kissing_gate", "lift_gate", "sliding_gate", "swing_gate"],
-          true,
-          false
+          "any",
+          [
+            "match",
+            ["get", "class"],
+            ["gate", "kissing_gate", "lift_gate", "sliding_gate", "swing_gate"],
+            true,
+            false
+          ],
+          [
+            "all",
+            ["==", ["geometry-type"], "Point"],
+            ["!=", ["get", "class"], "log"],
+            [
+              "any",
+              [
+                "match",
+                ["get", "class"],
+                ["door", "full-height_turnstile", "fence", "wall", "hedge"],
+                true,
+                false
+              ],
+              [
+                "!",
+                [
+                  "any",
+                  ["==", ["get", "bicycle"], "yes"],
+                  [
+                    "all",
+                    ["!", ["has", "bicycle"]],
+                    [
+                      "any",
+                      ["==", ["get", "access"], "yes"],
+                      [
+                        "all",
+                        ["!=", ["get", "access"], "no"],
+                        ["!=", ["get", "locked"], "yes"]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
         ],
         [
           "!",
@@ -35011,20 +35049,111 @@
         "icon-image": [
           "case",
           [
+            "any",
+            [
+              "match",
+              ["get", "class"],
+              ["door", "full-height_turnstile", "fence", "wall", "hedge"],
+              true,
+              false
+            ],
+            [
+              "all",
+              ["==", ["get", "bicycle"], "no"],
+              ["==", ["get", "foot"], "no"]
+            ],
+            [
+              "all",
+              ["==", ["get", "locked"], "yes"],
+              ["==", ["get", "access"], "no"],
+              ["!", ["has", "bicycle"]]
+            ]
+          ],
+          [
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-refuse-gate",
+            "tm_barrier-refuse"
+          ],
+          [
+            "any",
+            ["==", ["get", "bicycle"], "yes"],
+            [
+              "all",
+              ["!", ["has", "bicycle"]],
+              [
+                "any",
+                ["==", ["get", "access"], "yes"],
+                [
+                  "all",
+                  ["!=", ["get", "access"], "no"],
+                  ["!=", ["get", "locked"], "yes"]
+                ]
+              ]
+            ]
+          ],
+          [
+            "case",
+            [
+              "any",
+              ["==", ["get", "access"], "yes"],
+              ["==", ["get", "bicycle"], "yes"],
+              ["==", ["get", "foot"], "yes"]
+            ],
+            "tm_gate-yesaccess",
+            "tm_gate"
+          ],
+          [
             "all",
             ["==", ["get", "access"], "no"],
             ["!=", ["get", "bicycle"], "yes"],
             ["!=", ["get", "foot"], "yes"]
           ],
-          "tm_gate-noaccess",
           [
-            "any",
-            ["==", ["get", "access"], "yes"],
-            ["==", ["get", "bicycle"], "yes"],
-            ["==", ["get", "foot"], "yes"]
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-ask-gate",
+            "tm_barrier-ask"
           ],
-          "tm_gate-yesaccess",
-          "tm_gate"
+          [
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-neutral-gate",
+            "tm_barrier-neutral"
+          ]
         ],
         "icon-size": {
           "stops": [
@@ -35087,20 +35216,111 @@
         "icon-image": [
           "case",
           [
+            "any",
+            [
+              "match",
+              ["get", "class"],
+              ["door", "full-height_turnstile", "fence", "wall", "hedge"],
+              true,
+              false
+            ],
+            [
+              "all",
+              ["==", ["get", "bicycle"], "no"],
+              ["==", ["get", "foot"], "no"]
+            ],
+            [
+              "all",
+              ["==", ["get", "locked"], "yes"],
+              ["==", ["get", "access"], "no"],
+              ["!", ["has", "bicycle"]]
+            ]
+          ],
+          [
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-refuse-gate",
+            "tm_barrier-refuse"
+          ],
+          [
+            "any",
+            ["==", ["get", "bicycle"], "yes"],
+            [
+              "all",
+              ["!", ["has", "bicycle"]],
+              [
+                "any",
+                ["==", ["get", "access"], "yes"],
+                [
+                  "all",
+                  ["!=", ["get", "access"], "no"],
+                  ["!=", ["get", "locked"], "yes"]
+                ]
+              ]
+            ]
+          ],
+          [
+            "case",
+            [
+              "any",
+              ["==", ["get", "access"], "yes"],
+              ["==", ["get", "bicycle"], "yes"],
+              ["==", ["get", "foot"], "yes"]
+            ],
+            "tm_gate-yesaccess",
+            "tm_gate"
+          ],
+          [
             "all",
             ["==", ["get", "access"], "no"],
             ["!=", ["get", "bicycle"], "yes"],
             ["!=", ["get", "foot"], "yes"]
           ],
-          "tm_gate-noaccess",
           [
-            "any",
-            ["==", ["get", "access"], "yes"],
-            ["==", ["get", "bicycle"], "yes"],
-            ["==", ["get", "foot"], "yes"]
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-ask-gate",
+            "tm_barrier-ask"
           ],
-          "tm_gate-yesaccess",
-          "tm_gate"
+          [
+            "match",
+            ["get", "class"],
+            [
+              "gate",
+              "kissing_gate",
+              "lift_gate",
+              "sliding_gate",
+              "swing_gate",
+              "wicket_gate",
+              "hampshire_gate",
+              "bump_gate",
+              "sliding_beam"
+            ],
+            "tm_barrier-neutral-gate",
+            "tm_barrier-neutral"
+          ]
         ],
         "icon-size": {
           "stops": [
