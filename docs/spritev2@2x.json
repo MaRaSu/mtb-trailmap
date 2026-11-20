@@ -1972,5 +1972,47 @@
     "width": 28,
     "x": 72,
     "y": 1100
+  },
+  "tm_barrier-refuse-gate": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 0,
+    "y": 1132
+  },
+  "tm_barrier-refuse": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 64,
+    "y": 1132
+  },
+  "tm_barrier-ask-gate": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 128,
+    "y": 1132
+  },
+  "tm_barrier-ask": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 192,
+    "y": 1132
+  },
+  "tm_barrier-neutral-gate": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 256,
+    "y": 1132
+  },
+  "tm_barrier-neutral": {
+    "height": 64,
+    "pixelRatio": 2,
+    "width": 64,
+    "x": 320,
+    "y": 1132
   }
 }
